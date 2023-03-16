@@ -41,8 +41,8 @@ def strpattern(vername,new_flags,old_flags):
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
     l = printLine()
     rd=""
-    
-    rd = f"*⚠️{vername}⚠️*\nNo Flags updates"   
+
+    rd = f"*⚠️{vername}⚠️*\nNo Flags updates\n{l}\n"   
     if len(nf):
         rd = f"*⚠️{vername}⚠️*\n"
         rd = f'{rd}\n__Added__'
