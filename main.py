@@ -39,14 +39,16 @@ def strpattern(vername,new_flags,old_flags):
     of = of.replace('.','\\.').replace('-','\\-')
 
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
-    rd = f"*⚠️{vername}⚠️*\nNo Flags updates"
     l = printLine()
+    rd=""
+    
+    rd = f"*⚠️{vername}⚠️*\nNo Flags updates"   
     if len(nf):
         rd = f"*⚠️{vername}⚠️*\n"
         rd = f'{rd}\n__Added__'
         rd = f'{rd}\n{nf}'
         rd = f'{rd}\n{l}\n'
-    rd = f'{rd}[Updated & Removed flags]({commit_link})\n{l}\n'
+    rd = f'{rd}[Updated and Removed flags]({commit_link})\n{l}\n'
     # if len(of):
     #     rd = f'{rd}\n__Removed__'
     #     rd = f'{rd}\n{of}'
