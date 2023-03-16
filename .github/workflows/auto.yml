@@ -31,7 +31,7 @@ jobs:
     - name: Check and Download XAPK
       id: vars
       run: |        
-        echo "TYPE=$flags_{{ github.event.client_payload.vername_type }}.json" >> $GITHUB_OUTPUT       
+        echo "TYPE=flags_${{ github.event.client_payload.vername_type }}.json" >> $GITHUB_OUTPUT       
         wget ${{ env.LINK }}/twitter/${{ github.event.client_payload.vername_type }} -O app.xapk
              
         
