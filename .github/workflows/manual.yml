@@ -1,0 +1,70 @@
+name: Features - Manual
+
+
+on:
+  workflow_dispatch:
+    inputs:
+      my_input:
+        description: 'Enter the version (stable/beta/alpha)'
+        required: true
+ 
+ 
+
+jobs:
+  convert-and-extract:
+    runs-on: ubuntu-latest
+    env:
+      MAIL_ID: ${{ secrets.MAIL_ID }}
+      NAME: ${{ secrets.NAME }}
+      LINK: ${{ secrets.LINK }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+
+    - name: Check and Download XAPK
+      id: vars
+      run: |
+        v=$(echo "${{ github.event.inputs.my_input }}" | tr '[:upper:]' '[:lower:]')
+        echo "TYPE=flags_$v.json" >> $GITHUB_OUTPUT
+        wget ${{ env.LINK }}/twitter/$v -O app.xapk
+             
+        
+    - name: Extract file from APK
+      run: |        
+        mkdir -p extracted
+        unzip -j app.xapk com.twitter.android.apk -d extracted/
+        unzip -qq app.xapk 'manifest.json' -d extracted/
+        unzip -j extracted/com.twitter.android.apk res/raw/feature_switch_manifest
+        
+        
+        
+    - name: Copy files
+      run: |
+        mkdir -p dummy
+        cp extracted/manifest.json dummy/manifest.json
+        cp ${{ steps.vars.outputs.TYPE }} dummy/${{ steps.vars.outputs.TYPE }}
+        
+        mv feature_switch_manifest feature_data.json
+        mv feature_data.json ${{ steps.vars.outputs.TYPE }}
+        cp ${{ steps.vars.outputs.TYPE }} dummy/feature_data.json
+          
+    
+    - name: Delete files
+      run: |                 
+          rm -f app.xapk        
+          rm -rf __pycache__
+        
+        
+    - name: Add extracted file to Git
+      run: |    
+        VERNAME=$(jq -r '.version_name' dummy/manifest.json)
+        rm -rf extracted
+        git config --global user.email "${{ env.MAIL_ID }}"
+        git config --global user.name "${{ env.NAME }}"
+        git pull
+        git add .
+        git commit -m "$VERNAME"
+        git push
+        rm -rf dummy
