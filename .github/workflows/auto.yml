@@ -86,5 +86,5 @@ jobs:
     - name: Run Python script
       run: |           
         VERNAME=$(jq -r '.version_name' dummy/manifest.json)
-        python main.py $VERNAME dummy/${{ steps.vars.outputs.TYPE }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }}
+        python main.py $VERNAME dummy/${{ steps.vars.outputs.TYPE }} ${{ github.event.client_payload.msg_id }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }}
         rm -rf dummy

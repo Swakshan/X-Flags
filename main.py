@@ -1,12 +1,11 @@
 import json
 from pprint import pprint
 import os,sys
-from tele import sendMsg
+from tele import sendMsg,editMsg
 
 USERNAME = "Swakshan"
 REPO_NAME = "Twitter-Android-Flags"
 SHA = os.environ.get('GIT_COMMIT_SHA')
-
 
 
 def printJson(data):
@@ -26,29 +25,35 @@ def strpattern(vername,new_flags,old_flags):
     for f in new_flags:
         name = f
         value = new_flags[f]
-        nf = f'• `{name}` : {value}\n{nf}'
+        # nf = f'• `{name}` : {value}\n{nf}'
+        nf = f'• `{name}`\n{nf}'
     
-    of = ""
-    for f in old_flags:
-        name = f
-        value = old_flags[f]['value']
-        of = f'• `{name}`\n{of}'
+    # of = ""
+    # for f in old_flags:
+    #     name = f
+    #     value = old_flags[f]['value']
+    #     of = f'• `{name}`\n{of}'
 
+    version_name = vername
     vername = vername.replace('.','\\.').replace('-','\\-')
     nf = nf.replace('.','\\.').replace('-','\\-')
     of = of.replace('.','\\.').replace('-','\\-')
 
+    pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
+    download_link = f'https://apkcombo.com/search/com.twitter.android/download/phone-{version_name}-apk'
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
     l = printLine()
     rd=""
 
-    rd = f"*⚠️{vername}⚠️*\nNo Flags updates\n{l}\n"   
+    rd = f"*⚠️{vername}⚠️*"
     if len(nf):
-        rd = f"*⚠️{vername}⚠️*\n"
-        rd = f'{rd}\n__Added__'
-        rd = f'{rd}\n{nf}'
-        rd = f'{rd}\n{l}\n'
+        rd = f'{rd}\n\n__Added__'
+        rd = f'{rd}\n{nf}\n{l}'
+    else:
+         rd = f"{rd}\nNo New Flags\n{l}\n"
     rd = f'{rd}[Updated and Removed flags]({commit_link})\n{l}\n'
+    rd = f'{rd}[Download Link]({download_link}) \\|[Other Versions]({pin_link})\n{l}'
+    
     # if len(of):
     #     rd = f'{rd}\n__Removed__'
     #     rd = f'{rd}\n{of}'
@@ -59,7 +64,11 @@ def strpattern(vername,new_flags,old_flags):
 
 vername = sys.argv[1]
 old_file_name = sys.argv[2]
-flags_channel_id = "-1001977930895"
+msg_id = sys.argv[3]
+
+pin_msg = "23"
+channel_id = "1977930895"
+flags_channel_id = "-100"+channel_id
 feature_data_file_name = "dummy/feature_data.json"
 
 old_features = readJson(old_file_name)
@@ -79,4 +88,8 @@ for feat in new_features_configs:
 strmsg = strpattern(vername,new_features_configs_2,old_features_configs)
 # print(strmsg)
 if len(strmsg):
-    sendMsg(chat_id=flags_channel_id,text=strmsg,tag=vername)
+    try:
+        editMsg(chat_id=flags_channel_id,msgId=msg_id,text=strmsg,tag=vername)
+    except Exception as e:
+        sendMsg(chat_id=flags_channel_id,text=strmsg,tag=vername)
+        print(str(e))
