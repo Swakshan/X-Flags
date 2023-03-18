@@ -45,14 +45,15 @@ def strpattern(vername,new_flags,old_flags):
     l = printLine()
     rd=""
 
-    rd = f"*⚠️{vername}⚠️*"
+    rd = f"*⚠️{vername}⚠️*\n"
+    rd = f'{rd}\n[Download Link]({download_link}) \\|[Other Versions]({pin_link})\n{l}'
     if len(nf):
-        rd = f'{rd}\n\n__Added__'
+        rd = f'{rd}\n__Flags Added__'
         rd = f'{rd}\n{nf}\n{l}'
     else:
-         rd = f"{rd}\nNo New Flags\n{l}\n"
-    rd = f'{rd}[Updated and Removed flags]({commit_link})\n{l}\n'
-    rd = f'{rd}[Download Link]({download_link}) \\|[Other Versions]({pin_link})\n{l}'
+         rd = f"{rd}\nNo New Flags\n{l}"
+    rd = f'{rd}\n[Updated and Removed flags]({commit_link})\n{l}\n'
+    
     
     # if len(of):
     #     rd = f'{rd}\n__Removed__'
