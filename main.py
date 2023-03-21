@@ -37,7 +37,7 @@ def strpattern(vername,new_flags,old_flags):
     version_name = vername
     vername = vername.replace('.','\\.').replace('-','\\-')
     nf = nf.replace('.','\\.').replace('-','\\-')
-    of = of.replace('.','\\.').replace('-','\\-')
+    # of = of.replace('.','\\.').replace('-','\\-')
 
     pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
     download_link = f'https://apkcombo.com/search/com.twitter.android/download/phone-{version_name}-apk'
