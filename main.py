@@ -67,7 +67,7 @@ vername = sys.argv[1]
 old_file_name = sys.argv[2]
 msg_id = sys.argv[3]
 
-pin_msg = "23"
+pin_msg = "24"
 channel_id = "1977930895"
 flags_channel_id = "-100"+channel_id
 feature_data_file_name = "dummy/feature_data.json"
