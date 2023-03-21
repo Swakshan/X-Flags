@@ -90,7 +90,7 @@ strmsg = strpattern(vername,new_features_configs_2,old_features_configs)
 # print(strmsg)
 if len(strmsg):
     try:
-        editMsg(chat_id=flags_channel_id,msgId=msg_id,text=strmsg,tag=vername)
+        editMsg(chat_id=flags_channel_id,msgId=msg_id,txt=strmsg,tag=vername)
     except Exception as e:
         sendMsg(chat_id=flags_channel_id,text=strmsg,tag=vername)
         print(str(e))
