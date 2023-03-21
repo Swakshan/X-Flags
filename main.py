@@ -25,8 +25,9 @@ def strpattern(vername,new_flags,old_flags):
     for f in new_flags:
         name = f
         value = new_flags[f]
-        # nf = f'• `{name}` : {value}\n{nf}'
-        nf = f'• `{name}`\n{nf}'
+        ty = type(value).__name__
+        nf = f'• `{name}` :{ty}\n{nf}'
+        # nf = f'• `{name}`\n{nf}'
     
     # of = ""
     # for f in old_flags:
