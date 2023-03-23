@@ -76,7 +76,7 @@ def editMsg(chat_id,msgId,txt="Edited"):
         pkjson = req.json()
         if req.status_code==200:
             new_msg_id = pkjson['result']['message_id']
-            pinMsg(chat_id,new_msg_id)
+            # pinMsg(chat_id,new_msg_id)
             return new_msg_id
         else:
             print("Cant Edit in Tele")
