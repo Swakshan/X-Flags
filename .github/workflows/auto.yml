@@ -7,84 +7,53 @@ on:
  
 
 jobs:
-  convert-and-extract:
+  download-and-extract:
     runs-on: ubuntu-latest
     env:
-      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       MAIL_ID: ${{ secrets.MAIL_ID }}
       NAME: ${{ secrets.NAME }}
-      LINK: ${{ secrets.LINK }}
+      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+      CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+      PIN_MSG: ${{ secrets.CHANNEL_ID }}
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    
     
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
    
+
     - name: Install modules
       run: |
-        pip install requests
+        pip install -r requirements.txt
 
-    - name: Check and Download XAPK
-      id: vars
+
+    - name: Download & Extract
       run: |        
-        echo "TYPE=flags_${{ github.event.client_payload.vername_type }}.json" >> $GITHUB_OUTPUT       
-        wget ${{ env.LINK }}/twitter/${{ github.event.client_payload.vername_type }} -O app.xapk
-             
-        
-    - name: Extract file from APK
-      run: |        
-        mkdir -p extracted
-        unzip -j app.xapk com.twitter.android.apk -d extracted/
-        unzip -qq app.xapk 'manifest.json' -d extracted/
-        unzip -j extracted/com.twitter.android.apk res/raw/feature_switch_manifest
+        python main.py ${{ github.event.client_payload.vername_type }}
         
         
-        
-    - name: Copy files
-      run: |
-        mkdir -p dummy
-        cp extracted/manifest.json dummy/manifest.json
-        cp ${{ steps.vars.outputs.TYPE }} dummy/${{ steps.vars.outputs.TYPE }}
-        
-        mv feature_switch_manifest feature_data.json
-        mv feature_data.json ${{ steps.vars.outputs.TYPE }}
-        cp ${{ steps.vars.outputs.TYPE }} dummy/feature_data.json
-     
-    
-    
-    
-    - name: Delete files
-      run: |                 
-          rm -f app.xapk       
-          rm -rf __pycache__
-
-         
-        
-
 
     - name: Add extracted file to Git
       run: |
-    
-        VERNAME=$(jq -r '.version_name' dummy/manifest.json)
-        rm -rf extracted
+        vername=$(jq -r '.version_name' manifest.json)
         git config --global user.email "${{ env.MAIL_ID }}"
         git config --global user.name "${{ env.NAME }}"
         git pull
         git add .
-        git commit -m "$VERNAME"
+        git commit -m "${vername}"
         git push
 
 
-    - name: Expose git commit data
+    - name: Commit data
       uses: rlespinasse/git-commit-data-action@v1
     
       
-    - name: Run Python script
-      run: |           
-        VERNAME=$(jq -r '.version_name' dummy/manifest.json)
-        python main.py $VERNAME dummy/${{ steps.vars.outputs.TYPE }} ${{ github.event.client_payload.msg_id }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }}
-        rm -rf dummy
+    - name: Changes to Telegram
+      run: |
+        vername=$(jq -r '.version_name' manifest.json)       
+        python changes.py $vername ${{ github.event.client_payload.msg_id }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}

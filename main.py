@@ -1,97 +1,132 @@
-import json
+import requests,json,os,shutil,sys
+from apkcombo import ApkCombo
+from tqdm import tqdm
+import zipfile
 from pprint import pprint
-import os,sys
-from tele import sendMsg,editMsg
-
-USERNAME = "Swakshan"
-REPO_NAME = "Twitter-Android-Flags"
-SHA = os.environ.get('GIT_COMMIT_SHA')
 
 
-def printJson(data):
-    print(json.dumps(data,indent=4))
+typ = sys.argv[1]
 
 
-def readJson(filename):
-    f = open(filename)
-    return json.load(f)
+DUMMY_FOLDER = './dummy/'
+ZIP_FILE = DUMMY_FOLDER+'app.zip'
 
-def printLine():
-    return "*\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-*"
+EXTRACT_FOLDER = DUMMY_FOLDER+'Extracted/'
+MAIN_FOLDER = DUMMY_FOLDER+'main/'
 
-def strpattern(vername,new_flags,old_flags):
-    
-    nf = ""
-    for f in new_flags:
-        name = f
-        value = new_flags[f]
-        ty = type(value).__name__
-        nf = f'• `{name}` :{ty}\n{nf}'
-        # nf = f'• `{name}`\n{nf}'
-    
-    # of = ""
-    # for f in old_flags:
-    #     name = f
-    #     value = old_flags[f]['value']
-    #     of = f'• `{name}`\n{of}'
+old_file_name = MAIN_FOLDER+'old_feature_data.json'
+new_file_name = MAIN_FOLDER+'new_feature_data.json'
+VERSION_NUMBER = 0
 
-    version_name = vername
-    vername = vername.replace('.','\\.').replace('-','\\-')
-    nf = nf.replace('.','\\.').replace('-','\\-')
-    # of = of.replace('.','\\.').replace('-','\\-')
-
-    pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
-    download_link = f'https://apkcombo.com/search/com.twitter.android/download/phone-{version_name}-apk'
-    commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
-    l = printLine()
-    rd=""
-
-    rd = f"*⚠️{vername}⚠️*\n"
-    rd = f'{rd}\n[Download Link]({download_link}) \\|[Other Versions]({pin_link})\n{l}'
-    if len(nf):
-        rd = f'{rd}\n__Flags Added__'
-        rd = f'{rd}\n{nf}\n{l}'
-    else:
-         rd = f"{rd}\nNo New Flags\n{l}"
-    rd = f'{rd}\n[Updated and Removed flags]({commit_link})\n{l}\n'
-    
-    
-    # if len(of):
-    #     rd = f'{rd}\n__Removed__'
-    #     rd = f'{rd}\n{of}'
-    #     rd = f'{rd}\n{l}\n'
-
-    return rd
+if os.path.exists(DUMMY_FOLDER):
+    shutil.rmtree(DUMMY_FOLDER)
+os.makedirs(MAIN_FOLDER)
 
 
-vername = sys.argv[1]
-old_file_name = sys.argv[2]
-msg_id = sys.argv[3]
 
-pin_msg = "24"
-channel_id = "1977930895"
-flags_channel_id = "-100"+channel_id
-feature_data_file_name = "dummy/feature_data.json"
+def downloader(url):
+    response = requests.get(url, stream=True)
 
-old_features = readJson(old_file_name)
-new_features = readJson(feature_data_file_name)
+    total_size_in_bytes= int(response.headers.get('content-length', 0))
+    block_size = 1024 # 1 Kibibyte
 
-old_features_configs = old_features['default']['config']
-new_features_configs = new_features['default']['config']
-
-new_features_configs_2 = {}
-for feat in new_features_configs:
-    if not feat in old_features_configs:
-        new_features_configs_2[feat] = new_features_configs[feat]['value']
-        continue
-    old_features_configs.pop(feat)
+    progress_bar = tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True)
+    with open(ZIP_FILE, 'wb') as file:
+        for data in response.iter_content(block_size):
+            progress_bar.update(len(data))
+            file.write(data)
+    progress_bar.close()
 
 
-strmsg = strpattern(vername,new_features_configs_2,old_features_configs)
-# print(strmsg)
-if len(strmsg):
+def unzipper():
     try:
-        editMsg(chat_id=flags_channel_id,msgId=msg_id,txt=strmsg)
+        feature_file = False
+        zip_obj =  zipfile.ZipFile(ZIP_FILE, 'r')    
+        file_list = zip_obj.namelist()
+        if "com.twitter.android.apk" in file_list:
+            zip_obj.extract("com.twitter.android.apk", path=EXTRACT_FOLDER)
+            zip_obj =  zipfile.ZipFile(EXTRACT_FOLDER+"com.twitter.android.apk", 'r')
+            feature_file = True
+            
+            
+        
+        elif "res/raw/feature_switch_manifest" in file_list:
+            feature_file = True
+
+        if feature_file:
+            zip_obj.extract("res/raw/feature_switch_manifest", path=EXTRACT_FOLDER)
+            os.rename(EXTRACT_FOLDER+'res/raw/feature_switch_manifest',new_file_name)
+            return True
     except Exception as e:
-        sendMsg(chat_id=flags_channel_id,text=strmsg,tag=vername)
         print(str(e))
+
+    return False
+
+
+def downTwt(typ):
+    appName = "Twitter"
+    try:  
+        app = "com.twitter.android"
+        prinData = ""
+
+        # if ("apkcombo.com" or 'apkcombo-com' in downLink) and not rd['status']: #sts is false and downlink has apkcombo
+        apkC = ApkCombo(pkgName=app)
+        l = apkC.versions()
+        # pprint(l)
+        if l['status']:
+            data = l['data']
+            ty = data[typ.lower()]
+            typ = ty['vername']
+            l = apkC.getApk(typ,"xapk")
+            if l['status']:
+                d = l['data']
+                downLink = d['link']
+                fileName = f"{typ}.{d['apktype']}"
+                print(f"Downloading: {fileName}")
+                downloader(downLink)
+                # pprint(d)
+                return typ
+            else:
+                prinData = "version not Found"
+        else:
+            prinData  = "type not Found"
+        print(prinData)
+    except Exception as e:
+        print(str(e))
+    return False
+
+def main(typ):
+    try:
+        typ = typ.lower()
+        version_number = downTwt(typ)
+        if not version_number:
+            return False
+        
+        existsing_flag_file = f'flags_{typ}.json'
+        shutil.copyfile(existsing_flag_file,MAIN_FOLDER+'old_feature_data.json')
+        
+        s = unzipper()
+        if not s:
+            return False
+        os.remove(existsing_flag_file)
+        shutil.copy(new_file_name,existsing_flag_file)
+        
+        f = open('manifest.json','w')
+        f.write(json.dumps({'version_name':version_number}))
+        f.close()
+
+        return True
+    except Exception as e:
+        print(str(e))
+
+    return False
+    
+s = main(typ)
+print(s)
+    
+    
+        
+    # shutil.copyfile(EXTRACT_FOLDER+'res/raw/feature_switch_manifest',MAIN_FOLDER+'feature_data.json')
+    #     return False
+    # apk = EXTRACT_FOLDER+''
+    # if os.path.exists(apk):
