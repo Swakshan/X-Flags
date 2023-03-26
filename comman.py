@@ -43,7 +43,7 @@ def strpattern(vername,new_flags,old_flags):
     channel_id = channel_id.replace('-100','')
     pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
     download_link = f'https://apkcombo.com/search/com.twitter.android/download/phone-{version_name}-apk'
-    commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
+    commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
     l = printLine()
     rd=""
 
