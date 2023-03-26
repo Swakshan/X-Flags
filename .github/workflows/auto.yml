@@ -14,7 +14,7 @@ jobs:
       NAME: ${{ secrets.NAME }}
       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-      PIN_MSG: ${{ secrets.CHANNEL_ID }}
+      PIN_MSG: ${{ secrets.PIN_MSG }}
 
     steps:
     - name: Checkout code
