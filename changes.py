@@ -29,11 +29,12 @@ def changes(vername):
 
     strmsg = strpattern(vername,new_features_configs_2,old_features_configs)
     # print(strmsg)
+    ch_id = "-100"+channel_id
     if len(strmsg):
         try:
-            editMsg(chat_id=channel_id,msgId=msg_id,txt=strmsg)
+            editMsg(chat_id=ch_id,msgId=msg_id,txt=strmsg)
         except Exception as e:
-            sendMsg(chat_id=channel_id,text=strmsg,tag=vername)
+            sendMsg(chat_id=ch_id,text=strmsg,tag=vername)
             print(str(e))
 
 changes(vername)

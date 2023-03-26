@@ -4,8 +4,8 @@ USERNAME = "Swakshan"
 REPO_NAME = "Twitter-Android-Flags"
 SHA = os.environ.get('GIT_COMMIT_SHA')
 channel_id =  os.environ.get('CHANNEL_ID')#"-1001977930895"
-# pin_msg =  os.environ.get('PIN_MSG')
-pin_msg =  24
+pin_msg =  os.environ.get('PIN_MSG')
+# pin_msg =  24
 
 
 def printJson(data):
@@ -40,7 +40,6 @@ def strpattern(vername,new_flags,old_flags):
     nf = nf.replace('.','\\.').replace('-','\\-')
     # of = of.replace('.','\\.').replace('-','\\-')
 
-    channel_id = channel_id.replace('-100','')
     pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
     download_link = f'https://apkcombo.com/search/com.twitter.android/download/phone-{version_name}-apk'
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
