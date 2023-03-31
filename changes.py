@@ -2,16 +2,13 @@ from comman import *
 from tele import sendMsg,editMsg
 import sys
 
-DUMMY_FOLDER = './dummy/'
-MAIN_FOLDER = DUMMY_FOLDER+'main/'
 
-vername = sys.argv[1]
-msg_id = sys.argv[2]
+msg_id = sys.argv[1]
 
 old_file_name = MAIN_FOLDER+'old_feature_data.json'
 new_file_name = MAIN_FOLDER+'new_feature_data.json'
 
-def changes(vername):
+def changes():
     old_features = readJson(old_file_name)
     new_features = readJson(new_file_name)
 
@@ -27,14 +24,14 @@ def changes(vername):
         old_features_configs.pop(feat)
 
 
-    strmsg = strpattern(vername,new_features_configs_2,old_features_configs)
+    strmsg = strpattern(new_features_configs_2,old_features_configs)
     # print(strmsg)
     ch_id = "-100"+channel_id
     if len(strmsg):
         try:
             editMsg(chat_id=ch_id,msgId=msg_id,txt=strmsg)
         except Exception as e:
-            sendMsg(chat_id=ch_id,text=strmsg,tag=vername)
+            sendMsg(chat_id=ch_id,text=strmsg,tag='')
             print(str(e))
 
-changes(vername)
+changes()

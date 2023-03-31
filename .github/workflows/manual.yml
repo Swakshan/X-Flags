@@ -7,6 +7,9 @@ on:
       type_input:
         description: 'Enter the version (stable/beta/alpha)'
         required: true
+      source_input:
+        description: 'Source of APK [apt(Aptoide) / apkc(ApkCombo)]'
+        required: true
  
  
 
@@ -30,9 +33,9 @@ jobs:
     - name: Download & Extract
       run: | 
         vername_type=$(echo "${{ github.event.inputs.type_input }}" | tr '[:upper:]' '[:lower:]')
-        python main.py $vername_type
+        src=$(echo "${{ github.event.inputs.source_input }}" | tr '[:upper:]' '[:lower:]')
+        python main.py $vername_type $src
               
-        
 
     - name: Add extracted file to Git
       run: |

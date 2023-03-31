@@ -1,8 +1,18 @@
-name: Features - Auto
+name: Features - Manual (Tele)
+
 
 on:
-  repository_dispatch:
-    types: [update-event]
+  workflow_dispatch:
+    inputs:
+      type_input:
+        description: 'Enter the version (stable/beta/alpha)'
+        required: true
+      source_input:
+        description: 'Source [apt(Aptoide) / apkc(ApkCombo)]'
+        required: true
+      msg_id_input:
+        description: 'Message ID'
+        required: true
  
  
 
@@ -20,12 +30,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     
-    
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-   
 
     - name: Install modules
       run: |
@@ -33,10 +37,11 @@ jobs:
 
 
     - name: Download & Extract
-      run: |        
-        python main.py ${{ github.event.client_payload.vername_type }} apt
-        
-        
+      run: | 
+        vername_type=$(echo "${{ github.event.inputs.type_input }}" | tr '[:upper:]' '[:lower:]')
+        src=$(echo "${{ github.event.inputs.source_input }}" | tr '[:upper:]' '[:lower:]')
+        python main.py $vername_type $src
+              
 
     - name: Add extracted file to Git
       run: |
@@ -48,11 +53,10 @@ jobs:
         git commit -m "${vername}"
         git push
 
-
     - name: Commit data
       uses: rlespinasse/git-commit-data-action@v1
     
-      
+  
     - name: Changes to Telegram
-      run: |      
-        python changes.py ${{ github.event.client_payload.msg_id }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}
+      run: |   
+        python changes.py ${{ github.event.inputs.msg_id_input }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}
