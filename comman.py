@@ -41,9 +41,9 @@ def strpattern(new_flags,old_flags):
     apkc_link = f'https://apkcombo.com/search/com.twitter.android/download/phone-{vername}-apk'
     apkm_vername = vername.replace('.','-')
     apkm_link = f'https://www.apkmirror.com/apk/twitter-inc/twitter/twitter-{apkm_vername}-release/'
-    linkRow = f'[ApkCombo]({apkc_link}) \\|[APKMirror]({apkm_link})\n'
+    linkRow = f'[ApkCombo]({apkc_link}) \\| [APKMirror]({apkm_link})\n'
     if down_link:
-        linkRow = f'[Aptiode]({down_link}) \\|{linkRow}'
+        linkRow = f'[Aptiode]({down_link}) \\| {linkRow}'
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
     l = printLine()
     rd=""

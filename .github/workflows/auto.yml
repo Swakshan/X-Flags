@@ -34,7 +34,7 @@ jobs:
 
     - name: Download & Extract
       run: |        
-        python main.py ${{ github.event.client_payload.vername_type }} apt
+        python main.py ${{ github.event.client_payload.vername_type }} ${{ github.event.client_payload.src }}
         
         
 
