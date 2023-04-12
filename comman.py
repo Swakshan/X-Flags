@@ -1,5 +1,6 @@
 import os,json
 
+APP_NAME = "Twitter"
 PKG_NAME = 'com.twitter.android'
 DUMMY_FOLDER = './dummy/'
 ZIP_FILE = DUMMY_FOLDER+'app.zip'
@@ -33,6 +34,7 @@ def printLine():
 def strpattern(new_flags):
     manifest_file = readJson('manifest.json')
     vername = manifest_file['version_name']
+    vercode = manifest_file['vercode']
     down_link = manifest_file['download_link']
     nf = ""
     for f in new_flags:
@@ -57,7 +59,7 @@ def strpattern(new_flags):
     l = printLine()
     rd=""
 
-    rd = f"*⚠️{vername}⚠️*\n"
+    rd = f"*⚠️{vername}⚠️*\n__vercode__:```{vercode}```\n"
     rd = f'{rd}\n{linkRow}\n[Other Version Details]({pin_link})\n{l}'
     if len(nf):
         rd = f'{rd}\n__Flags Added__'

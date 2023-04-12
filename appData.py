@@ -173,6 +173,7 @@ class Aptiode():
                 
 
                 data['vername'] = vername
+                data['vercode'] = vercode
                 data['type'] = typ
                 data['apk-type'] = apk_type
                 data['upd'] = updtime

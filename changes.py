@@ -1,4 +1,5 @@
-from comman import *
+from comman import old_file_name,new_file_name,channel_id
+from comman import readJson,strpattern
 from tele import sendMsg,editMsg
 import sys
 

@@ -2,9 +2,9 @@ import requests,json,os,shutil,sys,zipfile
 from appData import ApkCombo, Aptiode
 from tqdm import tqdm
 from pprint import pprint
-from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,new_file_name,PKG_NAME
+from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name
 
-VER = "v3.5 - added play store link"
+VER = "v3.6 - code cleaning & added vercode"
 
 typ = sys.argv[1]
 source = sys.argv[2]
@@ -57,28 +57,25 @@ def unzipper():
 
 
 def downTwt(typ):
-    appName = "Twitter"
     try:
-        app = "com.twitter.android"
         prinData = ""
-
-        # if ("apkcombo.com" or 'apkcombo-com' in downLink) and not rd['status']: #sts is false and downlink has apkcombo
-        apkC = ApkCombo(pkgName=app)
+        apkC = ApkCombo(pkgName=PKG_NAME)
         l = apkC.versions()
         # pprint(l)
         if l['status']:
             data = l['data']
             ty = data[typ.lower()]
-            typ = ty['vername']
-            l = apkC.getApk(typ, "xapk")
+            
+            vername = ty['vername']
+            l = apkC.getApk(vername, "xapk")
             if l['status']:
                 d = l['data']
+                vercode = d['vercode']
                 downLink = d['link']
-                fileName = f"{typ}.{d['apktype']}"
+                fileName = f"{vername}.{d['apktype']}"
                 print(f"Downloading: {fileName}")
                 downloader(downLink)
-                # pprint(d)
-                return typ,downLink
+                return [vername,vercode,False]# if apkcombo dont save the link
             else:
                 prinData = "version not Found"
         else:
@@ -90,23 +87,22 @@ def downTwt(typ):
 
 
 def downTwt2(typ):
-    appName = "Twitter"
     try:
-        app = "com.twitter.android"
         prinData = ""
 
-        apt = Aptiode(pkgName=app)
+        apt = Aptiode(pkgName=PKG_NAME)
         l = apt.versions()
         # pprint(l)
         if l['status']:
             data = l['data']
             ty = data[typ.lower()]
-            typ = ty['vername']
+            vername = ty['vername']
+            vercode = ty['vercode']
             downLink = ty['link']
-            fileName = f"{typ}.{ty['apk-type']}"
+            fileName = f"{vername}.{ty['apk-type']}"
             print(f"Downloading: {fileName}")
             downloader(downLink)
-            return typ,downLink
+            return [vername,vercode,downLink]
         else:
             prinData = "type not Found"
         print(prinData)
@@ -118,19 +114,16 @@ def downTwt2(typ):
 def main(typ):
     try:
         typ = typ.lower()
-        version_number = False
-        downLink = ""
+        down_data = [False,False,False] #vername,vercode,downLink
         if source == "apt":
-            version_number,downLink = downTwt2(typ)
+            down_data = downTwt2(typ)
         else:
-            version_number,downLink = downTwt(typ)
-            downLink = False # if apkcombo dont save the link
-        if not version_number:
+            down_data = downTwt(typ)
+        if not down_data[0]: 
             return False
-
+        
         existsing_flag_file = f'flags_{typ}.json'
-        shutil.copyfile(existsing_flag_file, MAIN_FOLDER +
-                        'old_feature_data.json')
+        shutil.copyfile(existsing_flag_file, old_file_name)
 
         s = unzipper()
         if not s:
@@ -139,7 +132,7 @@ def main(typ):
         shutil.copy(new_file_name, existsing_flag_file)
 
         f = open('manifest.json', 'w')
-        d = {'version_name': version_number,'download_link':downLink}
+        d = {'version_name': down_data[0],'vercode': down_data[1],'download_link':down_data[2]}
         f.write(json.dumps(d))
         f.close()
 
