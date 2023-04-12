@@ -14,11 +14,8 @@ new_file_name = MAIN_FOLDER+'new_feature_data.json'
 USERNAME = "Swakshan"
 REPO_NAME = "Twitter-Android-Flags"
 SHA = os.environ.get('GIT_COMMIT_SHA')
-channel_id =  os.environ.get('CHANNEL_ID')#"-1001977930895"
+channel_id =  os.environ.get('CHANNEL_ID')
 pin_msg =  os.environ.get('PIN_MSG')
-# pin_msg =  24
-DUMMY_FOLDER = './dummy/'
-MAIN_FOLDER = DUMMY_FOLDER+'main/'
 
 def printJson(data):
     print(json.dumps(data,indent=4))
