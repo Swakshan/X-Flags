@@ -1,5 +1,16 @@
 import os,json
 
+PKG_NAME = 'com.twitter.android'
+DUMMY_FOLDER = './dummy/'
+ZIP_FILE = DUMMY_FOLDER+'app.zip'
+
+EXTRACT_FOLDER = DUMMY_FOLDER+'Extracted/'
+MAIN_FOLDER = DUMMY_FOLDER+'main/'
+
+old_file_name = MAIN_FOLDER+'old_feature_data.json'
+new_file_name = MAIN_FOLDER+'new_feature_data.json'
+
+
 USERNAME = "Swakshan"
 REPO_NAME = "Twitter-Android-Flags"
 SHA = os.environ.get('GIT_COMMIT_SHA')
@@ -38,10 +49,11 @@ def strpattern(new_flags,old_flags):
 
     pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
     
-    apkc_link = f'https://apkcombo.com/search/com.twitter.android/download/phone-{vername}-apk'
+    ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
+    apkc_link = f'https://apkcombo.com/search/{PKG_NAME}/download/phone-{vername}-apk'
     apkm_vername = vername.replace('.','-')
     apkm_link = f'https://www.apkmirror.com/apk/twitter-inc/twitter/twitter-{apkm_vername}-release/'
-    linkRow = f'[ApkCombo]({apkc_link}) \\| [APKMirror]({apkm_link})\n'
+    linkRow = f'[Play Store]({ps_link})\n[ApkCombo]({apkc_link}) \\| [APKMirror]({apkm_link})\n'
     if down_link:
         linkRow = f'[Aptiode]({down_link}) \\| {linkRow}'
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
