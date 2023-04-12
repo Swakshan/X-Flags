@@ -5,9 +5,6 @@ import sys
 
 msg_id = sys.argv[1]
 
-old_file_name = MAIN_FOLDER+'old_feature_data.json'
-new_file_name = MAIN_FOLDER+'new_feature_data.json'
-
 def changes():
     old_features = readJson(old_file_name)
     new_features = readJson(new_file_name)

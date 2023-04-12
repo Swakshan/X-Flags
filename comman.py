@@ -33,7 +33,7 @@ def readJson(filename):
 def printLine():
     return "*\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-*"
 
-def strpattern(new_flags,old_flags):
+def strpattern(new_flags):
     manifest_file = readJson('manifest.json')
     vername = manifest_file['version_name']
     down_link = manifest_file['download_link']
