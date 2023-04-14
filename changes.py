@@ -22,7 +22,7 @@ def changes():
         old_features_configs.pop(feat)
 
 
-    strmsg = strpattern(new_features_configs_2,old_features_configs)
+    strmsg = strpattern(new_features_configs_2)
     # print(strmsg)
     ch_id = "-100"+channel_id
     if len(strmsg):
