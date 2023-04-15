@@ -4,7 +4,7 @@
 A repo that keeps track of feature flags present in different builds of twitter application and automatically update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
 
 
-## Latest Features Flags
+## Latest Feature Flags
 
 - [Alpha build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_alpha.json)
 - [Beta build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_beta.json)
