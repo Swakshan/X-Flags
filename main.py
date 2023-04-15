@@ -4,7 +4,7 @@ from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name
 
-VER = "v3.6 - code cleaning & added vercode: bug fix"
+VER = "v3.7 - code cleaning & added vercode: bug fix : added ReadMe"
 
 typ = sys.argv[1]
 source = sys.argv[2]
