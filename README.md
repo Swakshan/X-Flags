@@ -13,13 +13,13 @@ A repo that keeps track of feature flags present in different builds of twitter 
 
 ## FAQ
 
-#### How to enable flags without root ?
+#### How to enable the flags ?
 
 The flags are present in **"feature_switch_manifest"** file, located at **"res/raw/"** inside the apk/apks file. We can modify the file and re-patch the apk.
 
 #### Is there a simplier way ?
 
-We can you xposed/lsposed module like [TwiFucker](https://github.com/Dr-TSNG/TwiFucker).
+We can use xposed/lsposed module like [TwiFucker](https://github.com/Dr-TSNG/TwiFucker).
 
 #### How to get notified when there is a build released ?
 
