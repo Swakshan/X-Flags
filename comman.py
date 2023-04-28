@@ -10,6 +10,7 @@ MAIN_FOLDER = DUMMY_FOLDER+'main/'
 
 old_file_name = MAIN_FOLDER+'old_feature_data.json'
 new_file_name = MAIN_FOLDER+'new_feature_data.json'
+manifest_file_name = "manifest.json"
 
 
 USERNAME = "Swakshan"
@@ -35,7 +36,7 @@ def printLine():
     return "*\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-*"
 
 def strpattern(new_flags):
-    manifest_file = readJson('manifest.json')
+    manifest_file = readJson(manifest_file_name)
     vername = manifest_file['version_name']
     vercode = manifest_file['vercode']
     down_link = manifest_file['download_link']
@@ -61,6 +62,7 @@ def strpattern(new_flags):
 
     if vername=="web":
         linkRow = f"[Web Link]({WEB_LINK})"
+        vername = vername.title()
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
     l = printLine()
     rd=""

@@ -5,10 +5,10 @@ on:
   workflow_dispatch:
     inputs:
       type_input:
-        description: 'Enter the version (stable/beta/alpha)'
+        description: 'Enter the version (stable/beta/alpha/web)'
         required: true
       source_input:
-        description: 'Source of APK [apt(Aptoide) / apkc(ApkCombo)]'
+        description: 'Source of APK [apt(Aptoide) / apkc(ApkCombo) / web(Web)]'
         required: true
  
  

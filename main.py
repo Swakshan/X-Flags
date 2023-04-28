@@ -2,9 +2,9 @@ import requests,json,os,shutil,sys,zipfile
 from appData import ApkCombo, Aptiode,TwtWeb
 from tqdm import tqdm
 from pprint import pprint
-from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG
+from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
 
-VER = "v4 : Added Web"
+VER = "v4.1 : Added Web : bug fixes"
 
 
 typ="web"
@@ -18,6 +18,10 @@ if os.path.exists(DUMMY_FOLDER):
     shutil.rmtree(DUMMY_FOLDER)
 os.makedirs(MAIN_FOLDER)
 
+def makeJsonFile(fileName,data):
+    f = open(fileName, 'w')
+    f.write(json.dumps(data,indent=4))
+    f.close()
 
 def downloader(url):
     response = requests.get(url, stream=True)
@@ -126,10 +130,8 @@ def main(typ):
             existsing_flag_file = f'flags_{typ}.json'
             os.rename(existsing_flag_file, old_file_name)
             # os.remove(existsing_flag_file)
-            f = open(existsing_flag_file, 'w')
-            d = twt.featureSwitches()
-            f.write(json.dumps(d))
-            f.close()
+            fs = twt.featureSwitches()
+            makeJsonFile(existsing_flag_file,fs)
             shutil.copy(existsing_flag_file, new_file_name)
             down_data = [typ,version,False]
 
@@ -150,11 +152,9 @@ def main(typ):
                 return False
             os.remove(existsing_flag_file)
             shutil.copy(new_file_name, existsing_flag_file)
-
-        f = open('manifest.json', 'w')
+        
         d = {'version_name': down_data[0],'vercode': down_data[1],'download_link':down_data[2]}
-        f.write(json.dumps(d))
-        f.close()
+        makeJsonFile(manifest_file_name,d)
 
         return True
     except Exception as e:

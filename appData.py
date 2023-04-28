@@ -200,9 +200,14 @@ class TwtWeb():
         url = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="+WEB_LINK
         req = requests.get(url, headers=hdr)
         if req.status_code != 200:
-            self.webData = False
+            url = "https://api.allorigins.win/raw?url="+WEB_LINK
+            req = requests.get(url, headers=hdr)
+            if req.status_code != 200:
+                self.webData = False
+            else:
+                self.webData = req.text
         else:
-            self.webData = req.text  # bs(req.text,'html.parser')
+            self.webData = req.text
 
     def jsonFinder(self, startData):
         endData = '};'
