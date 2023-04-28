@@ -9,6 +9,7 @@ A repo that keeps track of feature flags present in different builds of twitter 
 - [Alpha build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_alpha.json)
 - [Beta build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_beta.json)
 - [Stable build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_stable.json)
+- [Web build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_web.json)
 
 
 ## FAQ

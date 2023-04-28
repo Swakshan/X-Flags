@@ -1,13 +1,17 @@
 import requests,json,os,shutil,sys,zipfile
-from appData import ApkCombo, Aptiode
+from appData import ApkCombo, Aptiode,TwtWeb
 from tqdm import tqdm
 from pprint import pprint
-from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name
+from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG
 
-VER = "v3.7 - code cleaning & added vercode: bug fix : added ReadMe"
+VER = "v4 : Added Web"
 
-typ = sys.argv[1]
-source = sys.argv[2]
+
+typ="web"
+source="web"
+if not DEBUG:
+    typ = sys.argv[1]
+    source = sys.argv[2]
 
 
 if os.path.exists(DUMMY_FOLDER):
@@ -115,21 +119,37 @@ def main(typ):
     try:
         typ = typ.lower()
         down_data = [False,False,False] #vername,vercode,downLink
-        if source == "apt":
-            down_data = downTwt2(typ)
-        else:
-            down_data = downTwt(typ)
-        if not down_data[0]: 
-            return False
-        
-        existsing_flag_file = f'flags_{typ}.json'
-        shutil.copyfile(existsing_flag_file, old_file_name)
+        if typ=="web":
+            twt = TwtWeb()
+            version,sha = twt.version()
 
-        s = unzipper()
-        if not s:
-            return False
-        os.remove(existsing_flag_file)
-        shutil.copy(new_file_name, existsing_flag_file)
+            existsing_flag_file = f'flags_{typ}.json'
+            os.rename(existsing_flag_file, old_file_name)
+            # os.remove(existsing_flag_file)
+            f = open(existsing_flag_file, 'w')
+            d = twt.featureSwitches()
+            f.write(json.dumps(d))
+            f.close()
+            shutil.copy(existsing_flag_file, new_file_name)
+            down_data = [typ,version,False]
+
+        else:
+            
+            if source == "apt":
+                down_data = downTwt2(typ)
+            else:
+                down_data = downTwt(typ)
+            if not down_data[0]: 
+                return False
+            
+            existsing_flag_file = f'flags_{typ}.json'
+            shutil.copyfile(existsing_flag_file, old_file_name)
+
+            s = unzipper()
+            if not s:
+                return False
+            os.remove(existsing_flag_file)
+            shutil.copy(new_file_name, existsing_flag_file)
 
         f = open('manifest.json', 'w')
         d = {'version_name': down_data[0],'vercode': down_data[1],'download_link':down_data[2]}

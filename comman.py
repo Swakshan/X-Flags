@@ -17,6 +17,9 @@ REPO_NAME = "Twitter-Android-Flags"
 SHA = os.environ.get('GIT_COMMIT_SHA')
 channel_id =  os.environ.get('CHANNEL_ID')
 pin_msg =  os.environ.get('PIN_MSG')
+DEBUG  =  0#os.environ.get('DEBUG')
+
+WEB_LINK = 'https://twitter.com/'
 
 def printJson(data):
     print(json.dumps(data,indent=4))
@@ -55,6 +58,9 @@ def strpattern(new_flags):
     linkRow = f'[Play Store]({ps_link})\n[ApkCombo]({apkc_link}) \\| [APKMirror]({apkm_link})\n'
     if down_link:
         linkRow = f'[Aptiode]({down_link}) \\| {linkRow}'
+
+    if vername=="web":
+        linkRow = f"[Web Link]({WEB_LINK})"
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
     l = printLine()
     rd=""
@@ -67,11 +73,4 @@ def strpattern(new_flags):
     else:
          rd = f"{rd}\nNo New Flags\n{l}"
     rd = f'{rd}\n[Updated and Removed flags]({commit_link})\n{l}\n'
-    
-    
-    # if len(of):
-    #     rd = f'{rd}\n__Removed__'
-    #     rd = f'{rd}\n{of}'
-    #     rd = f'{rd}\n{l}\n'
-
     return rd
