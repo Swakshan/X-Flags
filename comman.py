@@ -61,7 +61,7 @@ def strpattern(new_flags):
         linkRow = f'[Aptiode]({down_link}) \\| {linkRow}'
 
     if vername=="web":
-        linkRow = f"[Web Link]({WEB_LINK})"
+        linkRow = f"[Web Link]({WEB_LINK})\n"
         vername = vername.title()
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
     l = printLine()
