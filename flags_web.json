@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "ba69fa11eb4119669061dd66081683c75aa73358",
+        "feature_set_token": "14514c65d51e50ad23ea6ce8ab62d79ec1ad9cc0",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -813,6 +813,9 @@
             "longform_notetweets_consumption_enabled": {
                 "value": true
             },
+            "longform_notetweets_inline_media_enabled": {
+                "value": false
+            },
             "longform_notetweets_max_tweet_per_thread": {
                 "value": 25
             },
@@ -1470,6 +1473,9 @@
             "responsive_web_ocf_reportflow_profiles_enabled": {
                 "value": true
             },
+            "responsive_web_ocf_reportflow_promoted_enabled": {
+                "value": false
+            },
             "responsive_web_ocf_reportflow_spaces_enabled": {
                 "value": false
             },
@@ -1783,7 +1789,7 @@
                 "value": false
             },
             "rweb_home_perf_client_prefetch_mode": {
-                "value": "all"
+                "value": "none"
             },
             "rweb_home_perf_client_prefetch_timeout_ms": {
                 "value": 0
@@ -2087,11 +2093,14 @@
             "super_follow_exclusive_tweet_creation_api_enabled": {
                 "value": true
             },
+            "super_follow_onboarding_application_perks_enabled": {
+                "value": false
+            },
             "super_follow_onboarding_application_redesign_enabled": {
                 "value": false
             },
             "super_follow_onboarding_blue_verified_requirement_enabled": {
-                "value": false
+                "value": true
             },
             "super_follow_onboarding_granular_pricing_enabled": {
                 "value": true
@@ -2103,7 +2112,7 @@
                 "value": false
             },
             "super_follow_subscriptions_tax_calculation_enabled": {
-                "value": false
+                "value": true
             },
             "super_follow_tweet_label_redesign_enabled": {
                 "value": true
