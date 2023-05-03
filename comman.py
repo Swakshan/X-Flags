@@ -35,12 +35,17 @@ def readJson(filename):
 def printLine():
     return "*\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-*"
 
-def strpattern(new_flags):
+def strpattern(flag_data):
     manifest_file = readJson(manifest_file_name)
     vername = manifest_file['version_name']
     vercode = manifest_file['vercode']
     down_link = manifest_file['download_link']
+    hash_value = manifest_file['hash']
     nf = ""
+    
+    new_flags = flag_data['added']
+    old_flags = flag_data['removed']
+    upd_flags = flag_data['updated']
     for f in new_flags:
         name = f
         value = new_flags[f]
@@ -48,8 +53,8 @@ def strpattern(new_flags):
         nf = f'• `{name}` :{ty}\n{nf}'
     vername = vername.replace('.','\\.').replace('-','\\-')
     nf = nf.replace('.','\\.').replace('-','\\-')
-    # of = of.replace('.','\\.').replace('-','\\-')
 
+    commit_link_str = f"{len(upd_flags)} Flags Updated & {len(old_flags)} Flags Removed"
     pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
     
     ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
@@ -74,5 +79,5 @@ def strpattern(new_flags):
         rd = f'{rd}\n{nf}\n{l}'
     else:
          rd = f"{rd}\nNo New Flags\n{l}"
-    rd = f'{rd}\n[Updated and Removed flags]({commit_link})\n{l}\n'
+    rd = f'{rd}\n[{commit_link_str}]({commit_link})\n{l}\n'
     return rd

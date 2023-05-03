@@ -1,5 +1,5 @@
 
-# Twitter Android Flags
+# Twitter Flags
 
 A repo that keeps track of feature flags present in different builds of twitter application and automatically update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
 

@@ -1,4 +1,4 @@
-from comman import old_file_name,new_file_name,channel_id
+from comman import old_file_name,new_file_name,channel_id,DEBUG
 from comman import readJson,strpattern
 from tele import sendMsg,editMsg
 import sys
@@ -18,15 +18,22 @@ def changes():
             return False
 
         new_features_configs_2 = {}
+        upd_features_configs = []
         for feat in new_features_configs:
-            if not feat in old_features_configs:
+            if not feat in old_features_configs:  # if new flag is not present on old flag list
                 new_features_configs_2[feat] = new_features_configs[feat]['value']
                 continue
+            elif new_features_configs[feat]['value'] != old_features_configs[feat]['value']: # if flag has value update
+                upd_features_configs.append(feat)
             old_features_configs.pop(feat)
 
+        flag_data = {"added": new_features_configs_2,
+                        "updated": upd_features_configs,
+                        "removed": old_features_configs}
 
-        strmsg = strpattern(new_features_configs_2)
-        # print(strmsg)
+        strmsg = strpattern(flag_data)
+        if DEBUG:
+            return strmsg
         ch_id = "-100"+channel_id
         if len(strmsg):
             try:

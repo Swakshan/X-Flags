@@ -4,7 +4,7 @@ from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
 
-VER = "v4.1 : Added Web : bug fixes"
+VER = "v4.5 : formatted commit text"
 
 
 typ="web"
@@ -121,12 +121,13 @@ def downTwt2(typ):
 
 def main(typ):
     try:
+        hash_value = False
         typ = typ.lower()
         down_data = [False,False,False] #vername,vercode,downLink
         if typ=="web":
             twt = TwtWeb()
             version,sha = twt.version()
-
+            hash_value = sha
             existsing_flag_file = f'flags_{typ}.json'
             os.rename(existsing_flag_file, old_file_name)
             # os.remove(existsing_flag_file)
@@ -153,7 +154,7 @@ def main(typ):
             os.remove(existsing_flag_file)
             shutil.copy(new_file_name, existsing_flag_file)
         
-        d = {'version_name': down_data[0],'vercode': down_data[1],'download_link':down_data[2]}
+        d = {'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2]}
         makeJsonFile(manifest_file_name,d)
 
         return True
