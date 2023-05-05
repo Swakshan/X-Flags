@@ -54,7 +54,7 @@ def strpattern(flag_data):
     vername = vername.replace('.','\\.').replace('-','\\-')
     nf = nf.replace('.','\\.').replace('-','\\-')
 
-    commit_link_str = f"{len(upd_flags)} Flags Updated & {len(old_flags)} Flags Removed"
+    commit_link_str = f"{len(upd_flags)} Flags Updated and {len(old_flags)} Flags Removed"
     pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
     
     ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
