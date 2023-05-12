@@ -65,14 +65,16 @@ def strpattern(flag_data):
     if down_link:
         linkRow = f'[Aptiode]({down_link}) \\| {linkRow}'
 
+    vercode_str = f"__vercode__:```{vercode}```"
     if vername=="web":
         linkRow = f"[Web Link]({WEB_LINK})\n"
         vername = vername.title()
+        vercode_str = f"__hash__:```{hash_value}```"
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
     l = printLine()
     rd=""
 
-    rd = f"*⚠️{vername}⚠️*\n__vercode__:```{vercode}```\n"
+    rd = f"*⚠️{vername}⚠️*\n{vercode_str}\n"
     rd = f'{rd}\n{linkRow}\n[Other Version Details]({pin_link})\n{l}'
     if len(nf):
         rd = f'{rd}\n__Flags Added__'
