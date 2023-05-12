@@ -197,7 +197,7 @@ class Aptiode():
 
 class TwtWeb():
     def __init__(self) -> None:
-        url = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="+WEB_LINK
+        url = "https://unblockweb.one/?cdURL="+WEB_LINK
         req = requests.get(url, headers=hdr)
         if req.status_code != 200:
             url = "https://api.allorigins.win/raw?url="+WEB_LINK
