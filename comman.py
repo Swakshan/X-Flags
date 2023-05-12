@@ -12,7 +12,6 @@ old_file_name = MAIN_FOLDER+'old_feature_data.json'
 new_file_name = MAIN_FOLDER+'new_feature_data.json'
 manifest_file_name = "manifest.json"
 
-
 USERNAME = "Swakshan"
 REPO_NAME = "Twitter-Android-Flags"
 SHA = os.environ.get('GIT_COMMIT_SHA')
@@ -21,6 +20,7 @@ pin_msg =  os.environ.get('PIN_MSG')
 DEBUG  =  0#os.environ.get('DEBUG')
 
 WEB_LINK = 'https://twitter.com/'
+M_WEB_LINK = 'https://m.twitter.com/'
 
 def printJson(data):
     print(json.dumps(data,indent=4))

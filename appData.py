@@ -5,10 +5,10 @@ from user_agent import generate_user_agent
 from pprint import pprint
 from urllib.parse import unquote
 from datetime import datetime
-from comman import WEB_LINK
+from comman import WEB_LINK,M_WEB_LINK
 
 
-hdr = {'User-Agent': generate_user_agent()}
+hdr = {'User-Agent': generate_user_agent(os="android")}
 
 
 class ApkCombo():
@@ -197,10 +197,10 @@ class Aptiode():
 
 class TwtWeb():
     def __init__(self) -> None:
-        url = "https://unblockweb.one/?cdURL="+WEB_LINK
+        url = M_WEB_LINK
         req = requests.get(url, headers=hdr)
         if req.status_code != 200:
-            url = "https://api.allorigins.win/raw?url="+WEB_LINK
+            url = "https://api.allorigins.win/raw?url="+M_WEB_LINK
             req = requests.get(url, headers=hdr)
             if req.status_code != 200:
                 self.webData = False

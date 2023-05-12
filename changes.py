@@ -1,8 +1,8 @@
-from comman import old_file_name,new_file_name,channel_id,DEBUG
+from comman import old_file_name,new_file_name,channel_id,DEBUG,PROXY_URL
 from comman import readJson,strpattern
 from tele import sendMsg,editMsg
 import sys
-
+from urllib.parse import unquote
 
 msg_id = sys.argv[1]
 
@@ -20,10 +20,12 @@ def changes():
         new_features_configs_2 = {}
         upd_features_configs = []
         for feat in new_features_configs:
+            new_features_config_value = new_features_configs[feat]['value']
+        
             if not feat in old_features_configs:  # if new flag is not present on old flag list
-                new_features_configs_2[feat] = new_features_configs[feat]['value']
+                new_features_configs_2[feat] = new_features_config_value
                 continue
-            elif new_features_configs[feat]['value'] != old_features_configs[feat]['value']: # if flag has value update
+            elif new_features_config_value != old_features_configs[feat]['value']: # if flag has value update
                 upd_features_configs.append(feat)
             old_features_configs.pop(feat)
 
