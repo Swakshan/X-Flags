@@ -1,4 +1,4 @@
-from comman import old_file_name,new_file_name,channel_id,DEBUG,PROXY_URL
+from comman import old_file_name,new_file_name,channel_id,DEBUG
 from comman import readJson,strpattern
 from tele import sendMsg,editMsg
 import sys
