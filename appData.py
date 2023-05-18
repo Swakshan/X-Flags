@@ -120,8 +120,9 @@ class ApkCombo():
             vercode = pS.find('span', attrs={'class': 'vercode'})
             vercode = vercode.text[1:len(
                 vercode.text)-1] if not vercode is None else '0'
-            apkType = pS.find('span', attrs={'class': 'type-apk'}).text
-
+            
+            apkType = pS.find('span', attrs={'class': 'vtype'}).text.strip().lower()
+            
             wData = {
                 'link': unquote(link),
                 'vercode': vercode,

@@ -4,7 +4,7 @@ from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
 
-VER = "v4.57 : text formating"
+VER = "v4.58 : text formating : apk type bug"
 
 typ="web"
 source="web"
