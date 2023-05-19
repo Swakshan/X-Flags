@@ -44,5 +44,9 @@ jobs:
         git config --global user.name "${{ env.NAME }}"
         git pull
         git add .
-        git commit -m "${vername}"
-        git push
+        if git diff --quiet --exit-code; then
+          echo "No changes to commit. Skipping push."
+        else
+          git commit -m "${vername}"
+          git push
+        fi
