@@ -63,6 +63,8 @@ jobs:
           echo "PUSH=0" >> $GITHUB_OUTPUT
         fi
     
+    - name: Commit data
+      uses: rlespinasse/git-commit-data-action@v1
   
     - name: Changes to Telegram
       run: |   
