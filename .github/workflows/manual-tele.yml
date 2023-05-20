@@ -44,21 +44,24 @@ jobs:
               
 
     - name: Add extracted file to Git
+      id: vars
       run: |
-        vername=$(jq -r '.version_name' manifest.json)
-        git config --global user.email "${{ env.MAIL_ID }}"
-        git config --global user.name "${{ env.NAME }}"
-        git pull
-        git add .
-        if git diff --quiet --exit-code; then
-          echo "No changes to commit. Skipping push."
-        else
+        git fetch
+        CHANGES=$(git diff --name-only origin/main)
+        if [ -n "$CHANGES" ]; then
+          echo "Changes found."
+          vername=$(jq -r '.version_name' manifest.json)
+          git config --global user.email "${{ env.MAIL_ID }}"
+          git config --global user.name "${{ env.NAME }}"
+          git pull
+          git add .
           git commit -m "${vername}"
           git push
+          echo "PUSH=1" >> $GITHUB_OUTPUT
+        else
+          echo "No changes found."
+          echo "PUSH=0" >> $GITHUB_OUTPUT
         fi
-
-    - name: Commit data
-      uses: rlespinasse/git-commit-data-action@v1
     
   
     - name: Changes to Telegram
