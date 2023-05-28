@@ -4,8 +4,14 @@ name: Features - Manual (Tele)
 on:
   workflow_dispatch:
     inputs:
-      type_input:
-        description: 'Enter the version (stable/beta/alpha/web)'
+      vername_input:
+        description: 'Enter the vername'
+        required: true
+      vercode_input:
+        description: 'Enter the vercode'
+        required: true
+      downLink_input:
+        description: 'Enter Download Link'
         required: true
       source_input:
         description: 'Source [apt(Aptoide) / apkc(ApkCombo) / web(Web)]'
@@ -38,9 +44,11 @@ jobs:
 
     - name: Download & Extract
       run: | 
-        vername_type=$(echo "${{ github.event.inputs.type_input }}" | tr '[:upper:]' '[:lower:]')
+        vername_type=$(echo "${{ github.event.inputs.vername_input }}" | tr '[:upper:]' '[:lower:]')
         src=$(echo "${{ github.event.inputs.source_input }}" | tr '[:upper:]' '[:lower:]')
-        python main.py $vername_type $src
+        vercode=$(echo "${{ github.event.inputs.vercode_input }}" | tr '[:upper:]' '[:lower:]')
+        downLink=$(echo "${{ github.event.inputs.downLink_input }}" | tr '[:upper:]' '[:lower:]')
+        python main.py $vername_type $src $vercode $downLink
               
 
     - name: Add extracted file to Git

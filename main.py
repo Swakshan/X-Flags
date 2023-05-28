@@ -4,13 +4,15 @@ from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
 
-VER = "v4.61 : commit issue"
+VER = "v5 : Manual download link support"
 
-typ="web"
-source="web"
-if not DEBUG:
-    typ = sys.argv[1]
-    source = sys.argv[2]
+
+# typ="web"
+# source="web"
+# down_link = ""
+
+
+
 
 
 if os.path.exists(DUMMY_FOLDER):
@@ -22,7 +24,8 @@ def makeJsonFile(fileName,data):
     f.write(json.dumps(data,indent=4))
     f.close()
 
-def downloader(url):
+def downloader(url,fileName=""):
+    print(f"Downloading: {fileName}")
     response = requests.get(url, stream=True)
 
     total_size_in_bytes = int(response.headers.get('content-length', 0))
@@ -80,8 +83,7 @@ def downTwt(typ):
                 vercode = d['vercode']
                 downLink = d['link']
                 fileName = f"{vername}.{d['apktype']}"
-                print(f"Downloading: {fileName}")
-                downloader(downLink)
+                downloader(downLink,fileName)
                 return [vername,vercode,False]# if apkcombo dont save the link
             else:
                 prinData = "version not Found"
@@ -107,8 +109,7 @@ def downTwt2(typ):
             vercode = ty['vercode']
             downLink = ty['link']
             fileName = f"{vername}.{ty['apk-type']}"
-            print(f"Downloading: {fileName}")
-            downloader(downLink)
+            downloader(downLink,fileName)
             return [vername,vercode,downLink]
         else:
             prinData = "type not Found"
@@ -118,11 +119,18 @@ def downTwt2(typ):
     return False
 
 
-def main(typ):
+def main():
+    if not DEBUG:
+        vername = sys.argv[1]
+        source = sys.argv[2]
+        vercode = sys.argv[3]
+        down_link = sys.argv[4]
     try:
         hash_value = False
-        typ = typ.lower()
+        typ = "stable" if "release" in vername else "beta" if "beta" in vername else "alpha" if "alpha" in vername else "web"
         down_data = [False,False,False] #vername,vercode,downLink
+      
+  
         if typ=="web":
             twt = TwtWeb()
             version,sha = twt.version()
@@ -134,15 +142,21 @@ def main(typ):
             makeJsonFile(existsing_flag_file,fs)
             shutil.copy(existsing_flag_file, new_file_name)
             down_data = [typ,version,False]
-
-        else:
+        
+        
             
-            if source == "apt":
-                down_data = downTwt2(typ)
+        else:
+            if source=="manual":
+                fileName = f"{vername}.apk"
+                downloader(down_link,fileName)
+                down_data = [vername,vercode,False]
             else:
-                down_data = downTwt(typ)
-            if not down_data[0]: 
-                return False
+                if source == "apt":
+                    down_data = downTwt2(typ)
+                else:
+                    down_data = downTwt(typ)
+                if not down_data[0]: 
+                    return False
             
             existsing_flag_file = f'flags_{typ}.json'
             shutil.copyfile(existsing_flag_file, old_file_name)
@@ -152,7 +166,7 @@ def main(typ):
                 return False
             os.remove(existsing_flag_file)
             shutil.copy(new_file_name, existsing_flag_file)
-        
+            
         d = {'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2]}
         makeJsonFile(manifest_file_name,d)
 
@@ -163,5 +177,5 @@ def main(typ):
     return False
 
 
-s = main(typ)
+s = main()
 print(s)
