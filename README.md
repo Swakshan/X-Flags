@@ -1,7 +1,7 @@
 
 # X (Twitter) Flags
 
-A repo that keeps track of feature flags present in different builds of X (Twitter) application and automatically update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
+A repo that keeps track of feature flags present in different builds of X (Twitter) and automatically update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
 
 
 ## Latest Feature Flags
