@@ -1,7 +1,7 @@
 
-# Twitter Flags
+# X (Twitter) Flags
 
-A repo that keeps track of feature flags present in different builds of twitter application and automatically update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
+A repo that keeps track of feature flags present in different builds of X (Twitter) application and automatically update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
 
 
 ## Latest Feature Flags
@@ -16,7 +16,7 @@ A repo that keeps track of feature flags present in different builds of twitter 
 
 #### How to enable the flags ?
 
-The flags are present in **"feature_switch_manifest"** file, located at **"res/raw/"** inside the apk/apks file. We can modify the file and re-patch the apk.
+The flags are present in **"feature_switch_manifest"** file, located at **"res/raw/"** inside the apk/apks file. We can modify the file and re-build the apk.
 
 #### Is there a simplier way ?
 
@@ -30,7 +30,7 @@ Check out my [Telegram Channel](https://telegram.me/twitter_app_flags) to keep t
 
 Feature flags are used by twitter employees to test new features before they are released to public. **Use it at your own risk.**
 
-#### Is there a web version ?
+#### Is there a way to modify flags in web version ?
 
 Yes. Check out [secret-twitter-features](https://github.com/yaroslav-n/secret-twitter-features) by [Yaroslav](https://twitter.com/512x512/)
 
@@ -49,5 +49,5 @@ Not that I am aware of :(
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/therealswak/)
 
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/swak_12)
+[![X (twitter)](https://img.shields.io/badge/X%20(Twitter)-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/swak_12)
 
