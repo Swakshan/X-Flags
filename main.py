@@ -4,7 +4,7 @@ from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
 
-VER = "v5.1 : Manual download link support : Updated ReadMe"
+VER = "v5.12 : Manual download link support : Updated ReadMe : apkmirror link update"
 
 
 # typ="web"

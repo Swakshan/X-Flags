@@ -60,7 +60,7 @@ def strpattern(flag_data):
     ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
     apkc_link = f'https://apkcombo.com/search/{PKG_NAME}/download/phone-{vername}-apk'
     apkm_vername = vername.replace('.','-')
-    apkm_link = f'https://www.apkmirror.com/apk/twitter-inc/twitter/twitter-{apkm_vername}-release/'
+    apkm_link = f'https://www.apkmirror.com/apk/x-corp/x/twitter-{apkm_vername}-release/'
     linkRow = f'[Play Store]({ps_link})\n[ApkCombo]({apkc_link}) \\| [APKMirror]({apkm_link})\n'
     if down_link:
         linkRow = f'[Aptiode]({down_link}) \\| {linkRow}'
