@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "c652d7babcfc0fecdb9f686047883a27e2417e9c",
+        "feature_set_token": "0f7529108b0318d46fb1c1384a20645718d3b387",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -451,6 +451,9 @@
             "card_compose_preview_retry_max": {
                 "value": 5
             },
+            "card_detail_compact_enabled": {
+                "value": false
+            },
             "conversation_controls_change_enabled": {
                 "value": true
             },
@@ -600,14 +603,23 @@
             "enable_label_appealing_sensitive_content_enabled": {
                 "value": false
             },
+            "explore_relaunch_enable_auto_play": {
+                "value": false
+            },
             "explore_relaunch_enable_immersive_web": {
                 "value": false
             },
             "explore_relaunch_enable_immersive_web_navigation_button": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_enabled": {
                 "value": false
+            },
+            "explore_relaunch_max_video_loop_count": {
+                "value": 2
+            },
+            "explore_relaunch_max_video_loop_threshold_sec": {
+                "value": 2
             },
             "explore_relaunch_onboarding_bar_show_count": {
                 "value": 100000
@@ -751,10 +763,10 @@
                 "value": false
             },
             "hidden_profile_subscriptions_enabled": {
-                "value": false
+                "value": true
             },
             "hidden_profile_subscriptions_settings_enabled": {
-                "value": false
+                "value": true
             },
             "highlights_tweets_action_enabled": {
                 "value": true
@@ -788,6 +800,9 @@
             },
             "identity_verification_debadging_notification_enabled": {
                 "value": true
+            },
+            "identity_verification_hide_verified_label_settings_enabled": {
+                "value": false
             },
             "identity_verification_intake_enabled": {
                 "value": false
@@ -1875,6 +1890,9 @@
             "rweb_home_perf_client_prefetch_timeout_ms": {
                 "value": 0
             },
+            "rweb_lists_discovery_list_mixer_enabled": {
+                "value": false
+            },
             "rweb_lists_global_search_enabled": {
                 "value": false
             },
@@ -2141,6 +2159,9 @@
             "subscriptions_feature_1014": {
                 "value": true
             },
+            "subscriptions_feature_1015": {
+                "value": false
+            },
             "subscriptions_feature_article_composer": {
                 "value": false
             },
@@ -2148,7 +2169,7 @@
                 "value": true
             },
             "subscriptions_is_blue_verified_hide_checkmark_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_long_video_rweb_new_copy_enabled": {
                 "value": true
