@@ -9,7 +9,7 @@ import js2py
 from comman import WEB_LINK,M_WEB_LINK,TWT_SW_URL
 
 
-hdr = {'User-Agent': generate_user_agent(os="android")}
+hdr = {'User-Agent': generate_user_agent()}
 
 
 class ApkCombo():

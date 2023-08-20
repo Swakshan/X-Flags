@@ -32,7 +32,7 @@ Feature flags are used by twitter employees to test new features before they are
 
 #### Is there a way to modify flags in web version ?
 
-Yes. Check out [secret-twitter-features](https://github.com/yaroslav-n/x-feature-flags) by [Yaroslav](https://twitter.com/512x512/)
+Yes. Check out [x-feature-flags](https://github.com/yaroslav-n/x-feature-flags) by [Yaroslav](https://twitter.com/512x512/)
 
 #### Is there way for iOS users?
 
