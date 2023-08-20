@@ -34,7 +34,7 @@ jobs:
 
     - name: Download & Extract
       run: |        
-        python main.py ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.src }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }}
+        python src/main.py ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.src }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }}
         
         
 
@@ -63,4 +63,4 @@ jobs:
       
     - name: Changes to Telegram
       run: |      
-        python changes.py ${{ github.event.client_payload.msg_id }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}
+        python src/changes.py ${{ github.event.client_payload.msg_id }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}

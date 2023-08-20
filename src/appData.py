@@ -5,7 +5,8 @@ from user_agent import generate_user_agent
 from pprint import pprint
 from urllib.parse import unquote
 from datetime import datetime
-from comman import WEB_LINK,M_WEB_LINK
+import js2py
+from comman import WEB_LINK,M_WEB_LINK,TWT_SW_URL
 
 
 hdr = {'User-Agent': generate_user_agent(os="android")}
@@ -198,43 +199,34 @@ class Aptiode():
 
 class TwtWeb():
     def __init__(self) -> None:
-        url = M_WEB_LINK
-        req = requests.get(url, headers=hdr)
-        if req.status_code != 200:
-            url = "https://api.allorigins.win/raw?url="+M_WEB_LINK
-            req = requests.get(url, headers=hdr)
-            if req.status_code != 200:
-                self.webData = False
-            else:
-                self.webData = req.text
-        else:
-            self.webData = req.text
+        req = requests.get(TWT_SW_URL,headers=hdr)
+        res = req.text
 
-    def jsonFinder(self, startData):
-        endData = '};'
-        pS = self.webData
-        if not pS:
-            return False
-        s = pS.find(startData)+len(startData)+1
-        e = pS[s:].find(endData)+1+s
-        data = pS[s:e]
-        return json.loads(data)
+        sHint = 'self.__META_DATA__ = '
+        eHint = "}"
+        s = res.find(sHint)+len(sHint)
+        e = res[s:].find(eHint)+s+1
+        self.config = json.loads(res[s:e])
 
+                
+        txt = res[res.find("["):res.find("]")+1]
+        js_list = json.loads(txt)
+
+        for item in js_list:
+          if "feature-" in item:
+            self.FS_URL = item
+            break
+    
     def version(self):
-        startData = 'window.__META_DATA__'
-        rd = self.jsonFinder(startData)
-        if not rd:
-            return rd, False
+        rd = self.config
 
         sha = rd['sha']
-        version = rd['cookies']['version']
-        return version, sha
+        version = int(datetime.now().timestamp())
+        return sha, version
 
     def featureSwitches(self):
-        startData = 'window.__INITIAL_STATE__'
-        fs = self.jsonFinder(startData)['featureSwitch']
-        configs = fs['defaultConfig']
-        fs_token = fs['featureSetToken']
-        if not fs:
-            return False
-        return {"default": {'feature_set_token':fs_token,'config': configs}}
+      req = requests.get(self.FS_URL,headers=hdr)
+      res = req.text.replace("!0","true").replace("!1","false")
+      fs = js2py.eval_js(res).to_dict()
+      rd = {"default":fs}
+      return rd

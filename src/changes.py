@@ -11,9 +11,12 @@ def changes():
         old_features = readJson(old_file_name)
         new_features = readJson(new_file_name)
 
-        old_features_configs = old_features['default']['config']
-        new_features_configs = new_features['default']['config']
+        old_features = old_features['default']
+        new_features = new_features['default']
 
+        old_features_configs = old_features['config']
+        new_features_configs = new_features['config']
+        
         if not new_features_configs:
             return False
 

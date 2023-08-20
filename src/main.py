@@ -3,26 +3,25 @@ from appData import ApkCombo, Aptiode,TwtWeb
 from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
+from comman import makeJsonFile
 
-VER = "v5.12 : Manual download link support : Updated ReadMe : apkmirror link update"
-
-
-# typ="web"
-# source="web"
-# down_link = ""
+VER = "v6 : Code refactor & repo name change"
 
 
+vername = "web"
+source = "manual"
+vercode = "estdyfutyf35"
+down_link = ""
 
-
+vername = vername.lower()
+source = source.lower()
+vercode = vercode.lower()
 
 if os.path.exists(DUMMY_FOLDER):
     shutil.rmtree(DUMMY_FOLDER)
 os.makedirs(MAIN_FOLDER)
 
-def makeJsonFile(fileName,data):
-    f = open(fileName, 'w')
-    f.write(json.dumps(data,indent=4))
-    f.close()
+
 
 def downloader(url,fileName=""):
     print(f"Downloading: {fileName}")
@@ -120,12 +119,13 @@ def downTwt2(typ):
 
 
 def main():
-    if not DEBUG:
+    if len(sys.argv)>1:
         vername = sys.argv[1]
         source = sys.argv[2]
         vercode = sys.argv[3]
         down_link = sys.argv[4]
     try:
+        
         hash_value = False
         typ = "stable" if "release" in vername else "beta" if "beta" in vername else "alpha" if "alpha" in vername else "web"
         down_data = [False,False,False] #vername,vercode,downLink
@@ -133,12 +133,13 @@ def main():
   
         if typ=="web":
             twt = TwtWeb()
-            version,sha = twt.version()
+            sha,version = twt.version()
             hash_value = sha
             existsing_flag_file = f'flags_{typ}.json'
             os.rename(existsing_flag_file, old_file_name)
             # os.remove(existsing_flag_file)
             fs = twt.featureSwitches()
+
             makeJsonFile(existsing_flag_file,fs)
             shutil.copy(existsing_flag_file, new_file_name)
             down_data = [typ,version,False]

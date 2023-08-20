@@ -1,7 +1,7 @@
 import requests,json
 import os,sys
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
@@ -12,7 +12,8 @@ def printJson(data):
 tele_api_send_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage?chat_id={chat_id}&text={text}&disable_web_page_preview=1&parse_mode=MarkdownV2'
 tele_api_edit_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/editMessageText?chat_id={chat_id}&message_id={message_id}&text={text}&disable_web_page_preview=1&parse_mode=MarkdownV2'
 
-def sendMsg(chat_id,text="",tag="untitled"):    
+def sendMsg(chat_id,text="",tag="untitled"):
+    text = text.replace('.','\\.').replace('-','\\-').replace('|','\\|')
     api = tele_api_send_msg.format(chat_id=chat_id,text = text)
     try:
         req = requests.post(api)
@@ -33,6 +34,7 @@ def sendMsg(chat_id,text="",tag="untitled"):
         return False
 
 def editMsg(chat_id,msgId,txt="Edited"):
+    text = text.replace('.','\\.').replace('-','\\-').replace('|','\\|')
     api = tele_api_edit_msg.format(chat_id=chat_id,message_id=msgId,text=txt)
     req = requests.post(api)
     try:

@@ -1,5 +1,7 @@
 import os,json
 
+DEBUG  =  0
+
 APP_NAME = "Twitter"
 PKG_NAME = 'com.twitter.android'
 DUMMY_FOLDER = './dummy/'
@@ -13,18 +15,23 @@ new_file_name = MAIN_FOLDER+'new_feature_data.json'
 manifest_file_name = "manifest.json"
 
 USERNAME = "Swakshan"
-REPO_NAME = "Twitter-Android-Flags"
+REPO_NAME = "X-Flags"
 SHA = os.environ.get('GIT_COMMIT_SHA')
 channel_id =  os.environ.get('CHANNEL_ID')
 pin_msg =  os.environ.get('PIN_MSG')
-DEBUG  =  0#os.environ.get('DEBUG')
+
 
 WEB_LINK = 'https://twitter.com/'
 M_WEB_LINK = 'https://m.twitter.com/'
+TWT_SW_URL = f"{WEB_LINK}sw.js"
 
 def printJson(data):
     print(json.dumps(data,indent=4))
 
+def makeJsonFile(fileName,data):
+    f = open(fileName, 'w')
+    json.dump(data,f,indent=4)
+    f.close()
 
 def readJson(filename):
     f = open(filename,'r')
@@ -33,7 +40,25 @@ def readJson(filename):
     return d
 
 def printLine():
-    return "*\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-*"
+    return "*--------------*"
+
+def commitLinkFormat(flag_data):
+    def countFormat(count):
+        if not count:
+            return False
+        
+        f = "Flags" if count>1 else "Flag"
+        return f"{count} {f}"
+    
+    msg = ""
+    for func in ('added','removed','updated'):
+        flags = flag_data[func]
+        fStr = countFormat(len(flags))
+        if fStr:
+            msg = f"{msg} and {fStr} {func.title()}"
+    
+    msg = msg[5:] if len(msg) else "Repo Link"
+    return msg
 
 def strpattern(flag_data):
     manifest_file = readJson(manifest_file_name)
@@ -43,38 +68,36 @@ def strpattern(flag_data):
     hash_value = manifest_file['hash']
     nf = ""
     
+
     new_flags = flag_data['added']
-    old_flags = flag_data['removed']
-    upd_flags = flag_data['updated']
     for f in new_flags:
         name = f
         value = new_flags[f]
         ty = type(value).__name__
         nf = f'• `{name}` :{ty}\n{nf}'
-    vername = vername.replace('.','\\.').replace('-','\\-')
-    nf = nf.replace('.','\\.').replace('-','\\-')
 
-    commit_link_str = f"{len(upd_flags)} Flags Updated and {len(old_flags)} Flags Removed"
+    commit_link_str = commitLinkFormat(flag_data)
     pin_link = f"https://t.me/c/{channel_id}/{pin_msg}"
     
     ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
     apkc_link = f'https://apkcombo.com/search/{PKG_NAME}/download/phone-{vername}-apk'
+    apkf_link = f'https://apkflash.com/apk/app/{PKG_NAME}/twitter/download/{vername}'
+
     apkm_vername = vername.replace('.','-')
     apkm_link = f'https://www.apkmirror.com/apk/x-corp/x/twitter-{apkm_vername}-release/'
-    linkRow = f'[Play Store]({ps_link})\n[ApkCombo]({apkc_link}) \\| [APKMirror]({apkm_link})\n'
-    if down_link:
-        linkRow = f'[Aptiode]({down_link}) \\| {linkRow}'
 
-    vercode_str = f"__vercode__: ```{vercode}```"
+    linkRow = f'[Play Store]({ps_link}) | [APKMirror]({apkm_link})\n[APKCombo]({apkc_link}) | [APKFlash]({apkf_link})\n'
+    if down_link:
+        linkRow = f'[Aptoide]({down_link})\n{linkRow}*\\[⚠️APK from Aptoide is known for crashes⚠️\\]*\n.'
+
+    vercode_str = f"__vercode__:\n`{vercode}`"
     if vername=="web":
         linkRow = f"[Web Link]({WEB_LINK})\n"
         vername = vername.title()
-        vercode_str = f"__hash__: ```{hash_value}```"
+        vercode_str = f"__hash__:\n`{hash_value}`"
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=unified"
     l = printLine()
-    rd=""
-
-    rd = f"*⚠️{vername}⚠️*\n{vercode_str}\n"
+    rd = f"⚠️`{vername}`⚠️\n{vercode_str}\n"
     rd = f'{rd}\n{linkRow}\n[Other Version Details]({pin_link})\n{l}'
     if len(nf):
         rd = f'{rd}\n__Flags Added__'

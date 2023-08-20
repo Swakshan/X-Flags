@@ -1,15 +1,15 @@
 
 # X (Twitter) Flags
 
-A repo that keeps track of feature flags present in different builds of X (Twitter) and automatically update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
+A repo that keeps track of feature flags from different builds of 𝕏 (Twitter) and update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
 
 
 ## Latest Feature Flags
 
-- [Alpha build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_alpha.json)
-- [Beta build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_beta.json)
-- [Stable build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_stable.json)
-- [Web build](https://github.com/Swakshan/Twitter-Android-Flags/blob/main/flags_web.json)
+- [Alpha build](https://github.com/Swakshan/X-Flags/blob/main/flags_alpha.json)
+- [Beta build](https://github.com/Swakshan/X-Flags/blob/main/flags_beta.json)
+- [Stable build](https://github.com/Swakshan/X-Flags/blob/main/flags_stable.json)
+- [Web build](https://github.com/Swakshan/X-Flags/blob/main/flags_web.json)
 
 
 ## FAQ
@@ -32,9 +32,9 @@ Feature flags are used by twitter employees to test new features before they are
 
 #### Is there a way to modify flags in web version ?
 
-Yes. Check out [secret-twitter-features](https://github.com/yaroslav-n/secret-twitter-features) by [Yaroslav](https://twitter.com/512x512/)
+Yes. Check out [secret-twitter-features](https://github.com/yaroslav-n/x-feature-flags) by [Yaroslav](https://twitter.com/512x512/)
 
-#### Is there an iOS version ?
+#### Is there way for iOS users?
 
 Not that I am aware of :(
 
@@ -49,5 +49,5 @@ Not that I am aware of :(
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/therealswak/)
 
-[![X (twitter)](https://img.shields.io/badge/X%20(Twitter)-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/swak_12)
+[![𝕏 (twitter)](https://img.shields.io/badge/%20X%20(Twitter)-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/swak_12)
 

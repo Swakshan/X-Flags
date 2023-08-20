@@ -43,12 +43,8 @@ jobs:
 
 
     - name: Download & Extract
-      run: | 
-        vername_type=$(echo "${{ github.event.inputs.vername_input }}" | tr '[:upper:]' '[:lower:]')
-        src=$(echo "${{ github.event.inputs.source_input }}" | tr '[:upper:]' '[:lower:]')
-        vercode=$(echo "${{ github.event.inputs.vercode_input }}" | tr '[:upper:]' '[:lower:]')
-        downLink=$(echo "${{ github.event.inputs.downLink_input }}" | tr '[:upper:]' '[:lower:]')
-        python main.py $vername_type $src $vercode $downLink
+      run: |
+        python src/main.py $vername_type $src $vercode $downLink
               
 
     - name: Add extracted file to Git
@@ -76,4 +72,4 @@ jobs:
   
     - name: Changes to Telegram
       run: |   
-        python changes.py ${{ github.event.inputs.msg_id_input }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}
+        python src/changes.py ${{ github.event.inputs.msg_id_input }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}
