@@ -34,7 +34,7 @@ def sendMsg(chat_id,text="",tag="untitled"):
         return False
 
 def editMsg(chat_id,msgId,txt="Edited"):
-    text = text.replace('.','\\.').replace('-','\\-').replace('|','\\|')
+    txt = txt.replace('.','\\.').replace('-','\\-').replace('|','\\|')
     api = tele_api_edit_msg.format(chat_id=chat_id,message_id=msgId,text=txt)
     req = requests.post(api)
     try:
