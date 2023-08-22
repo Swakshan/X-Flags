@@ -5,7 +5,7 @@ from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
 from comman import makeJsonFile
 
-VER = "v6 : Code refactor & repo name change"
+VER = "v6.01 : Code refactor & repo name change : removed env loader"
 
 
 vername = "web"
