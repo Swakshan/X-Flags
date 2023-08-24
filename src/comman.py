@@ -13,6 +13,7 @@ MAIN_FOLDER = DUMMY_FOLDER+'main/'
 old_file_name = MAIN_FOLDER+'old_feature_data.json'
 new_file_name = MAIN_FOLDER+'new_feature_data.json'
 manifest_file_name = "manifest.json"
+NEW_FLAG_LIMIT = 25
 
 USERNAME = "Swakshan"
 REPO_NAME = "X-Flags"
@@ -28,7 +29,7 @@ TWT_SW_URL = f"{WEB_LINK}sw.js"
 def printJson(data):
     print(json.dumps(data,indent=4))
 
-def makeJsonFile(fileName,data):
+def writeJson(fileName,data):
     f = open(fileName, 'w')
     json.dump(data,f,indent=4)
     f.close()
@@ -66,14 +67,14 @@ def strpattern(flag_data):
     vercode = manifest_file['vercode']
     down_link = manifest_file['download_link']
     hash_value = manifest_file['hash']
-    nf = ""
-    
 
-    new_flags = flag_data['added']
+    
+    nf = ""
+    new_flags = dict(list(flag_data['added'].items())[:NEW_FLAG_LIMIT])
     for f in new_flags:
         name = f
         value = new_flags[f]
-        ty = type(value).__name__
+        ty = type(value).__name__ if value!="experiment" else "exp"
         nf = f'• `{name}` :{ty}\n{nf}'
 
     commit_link_str = commitLinkFormat(flag_data)

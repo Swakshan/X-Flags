@@ -3,9 +3,9 @@ from appData import ApkCombo, Aptiode,TwtWeb
 from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name
-from comman import makeJsonFile
+from comman import writeJson
 
-VER = "v6.01 : Code refactor & repo name change : removed env loader"
+VER = "v6.1 : Code refactor & repo name change : removed env loader : added exp flags and flag limit"
 
 
 vername = "web"
@@ -140,7 +140,7 @@ def main():
             # os.remove(existsing_flag_file)
             fs = twt.featureSwitches()
 
-            makeJsonFile(existsing_flag_file,fs)
+            writeJson(existsing_flag_file,fs)
             shutil.copy(existsing_flag_file, new_file_name)
             down_data = [typ,version,False]
         
@@ -169,7 +169,7 @@ def main():
             shutil.copy(new_file_name, existsing_flag_file)
             
         d = {'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2]}
-        makeJsonFile(manifest_file_name,d)
+        writeJson(manifest_file_name,d)
 
         return True
     except Exception as e:
