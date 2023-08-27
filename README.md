@@ -6,10 +6,17 @@ A repo that keeps track of feature flags from different builds of 𝕏 (Twitter)
 
 ## Latest Feature Flags
 
-- [Alpha build](https://github.com/Swakshan/X-Flags/blob/main/flags_alpha.json)
-- [Beta build](https://github.com/Swakshan/X-Flags/blob/main/flags_beta.json)
-- [Stable build](https://github.com/Swakshan/X-Flags/blob/main/flags_stable.json)
-- [Web build](https://github.com/Swakshan/X-Flags/blob/main/flags_web.json)
+* **Android**
+    - [Alpha Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_android_alpha.json)
+    - [Beta Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_android_beta.json)
+    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_android_stable.json)
+
+* **iOS**
+    - [Stable Flags: iPhone](https://github.com/Swakshan/X-Flags/blob/main/flags_iphone_stable.json)
+    - [Stable Flags: iPad](https://github.com/Swakshan/X-Flags/blob/main/flags_ipad_stable.json)
+
+* **Web**
+    - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_web.json)
 
 
 ## FAQ
@@ -36,7 +43,7 @@ Yes. Check out [x-feature-flags](https://github.com/yaroslav-n/x-feature-flags) 
 
 #### Is there way for iOS users?
 
-Not that I am aware of :(
+Flags are present inside the ipa as json format. Modify them, resign the ipa file and install the ipa. (Might require a jailbroken device)
 
 ## My Other Works
 

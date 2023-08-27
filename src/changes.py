@@ -1,7 +1,7 @@
-from comman import old_file_name,new_file_name,channel_id,DEBUG
+from comman import old_file_name,new_file_name,CHANNEL_ID,DEBUG,new_file_ipad_name,old_file_ipad_name
 from comman import readJson,strpattern
 from tele import sendMsg,editMsg
-import sys
+import sys,os
 from urllib.parse import unquote
 
 msg_id = sys.argv[1]
@@ -15,8 +15,8 @@ def changes():
         if "defaultValue" in config:
             return config['defaultValue']
         return ""
-        
-    try:
+    
+    def flagChanges(old_file_name,new_file_name):
         old_features = readJson(old_file_name)
         new_features = readJson(new_file_name)
 
@@ -36,7 +36,7 @@ def changes():
 
         if not new_features_configs:
             return False
-
+        
         new_features_configs_2 = {}
         upd_features_configs = []
         for feat in new_features_configs:
@@ -49,20 +49,34 @@ def changes():
                 upd_features_configs.append(feat)
             old_features_configs.pop(feat)
 
-        flag_data = {"added": new_features_configs_2,
-                    "updated": upd_features_configs,
-                    "removed": old_features_configs
-                    }
+        return {"added": new_features_configs_2,
+                "updated": upd_features_configs,
+                "removed": old_features_configs
+                }
         
-        strmsg = strpattern(flag_data)
+    try:
+        flag_data_2 = False
+        flag_data = flagChanges(old_file_name,new_file_name)
+        if not flag_data:
+            return False
+
+        if os.path.exists(new_file_ipad_name):
+            flag_data_2 = flagChanges(old_file_ipad_name,new_file_ipad_name)
+        
+        strmsg = strpattern(flag_data,flag_data_2)
+        ch_id = "-100"+CHANNEL_ID
         if DEBUG:
-            return strmsg
-        ch_id = "-100"+channel_id
+            print(strmsg)
+            # return strmsg
+            pass
         if len(strmsg):
             try:
-                editMsg(chat_id=ch_id,msgId=msg_id,txt=strmsg)
+                if int(msg_id):
+                    editMsg(chat_id=ch_id,msgId=msg_id,txt=strmsg)
+                else:
+                    sendMsg(chat_id=ch_id,text=strmsg)
             except Exception as e:
-                sendMsg(chat_id=ch_id,text=strmsg,tag='')
+                sendMsg(chat_id=ch_id,text=strmsg)
                 print(str(e))
     except Exception as e:
         print(str(e))

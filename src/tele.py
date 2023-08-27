@@ -1,10 +1,7 @@
 import requests,json
 import os,sys
-# from dotenv import load_dotenv
-# load_dotenv()
+from comman import BOT_TOKEN
 
-
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
 def printJson(data):
     print(json.dumps(data,indent=4))
