@@ -43,7 +43,8 @@ Yes. Check out [x-feature-flags](https://github.com/yaroslav-n/x-feature-flags) 
 
 #### Is there way for iOS users?
 
-Flags are present inside the ipa file as json format. Modify them, resign the ipa file and install it. (Might require a jailbroken device)
+Flags are present inside the ipa file as json format. Extract the ipa file Modify the flags, rezip the ipa file and install it.
+In case of non-jailbroken devices you can use [AltStore](https://altstore.io/), [Sideloadly](https://sideloadly.io/) etc
 
 ## My Other Works
 

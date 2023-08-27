@@ -142,5 +142,8 @@ def strpattern(flag_data,flag_data_2):
          rd = f"{rd}\nNo New Flags\n{l}"
     rd = f'{rd}\n[{commit_link_str}]({commit_link})\n{l}'
     if commit_link_str_2:
+        rd = f'{rd}\n_iPhone:_\n[{commit_link_str}]({commit_link})\n'
         rd = f'{rd}\n_iPad:_\n[{commit_link_str_2}]({commit_link})\n{l}'
+    else:
+        rd = f'{rd}\n[{commit_link_str}]({commit_link})\n{l}'
     return rd
