@@ -75,7 +75,7 @@ def commitLinkFormat(flag_data):
         return f"{count} {f}"
     
     msg = ""
-    for func in ('added','removed','updated'):
+    for func in ('added','updated','removed'):
         flags = flag_data[func]
         fStr = countFormat(len(flags))
         if fStr:

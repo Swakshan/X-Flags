@@ -43,7 +43,7 @@ Yes. Check out [x-feature-flags](https://github.com/yaroslav-n/x-feature-flags) 
 
 #### Is there way for iOS users?
 
-Flags are present inside the ipa as json format. Modify them, resign the ipa file and install the ipa. (Might require a jailbroken device)
+Flags are present inside the ipa file as json format. Modify them, resign the ipa file and install it. (Might require a jailbroken device)
 
 ## My Other Works
 
