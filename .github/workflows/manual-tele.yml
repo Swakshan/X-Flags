@@ -44,7 +44,7 @@ jobs:
 
     - name: Download & Extract
       run: |
-        python src/main.py $vername_type $src $vercode $downLink
+        python src/main.py ${{ github.event.inputs.vername_input }} ${{ github.event.inputs.source_input }} ${{ github.event.inputs.vercode_input }} ${{ github.event.inputs.downLink_input }}
               
 
     - name: Add extracted file to Git
