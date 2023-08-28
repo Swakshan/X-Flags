@@ -5,7 +5,7 @@ from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from comman import writeJson
 
-VER = "v7.1 : Code refactor & Added iOS support : Rearrange flag order & Updated ReadMe"
+VER = "v7.15 : Code refactor & Added iOS support : Rearrange flag order & Updated ReadMe : input logic"
 
 
 vername = "web"
@@ -13,9 +13,7 @@ source = "web"
 vercode = ""
 down_link = ""
 
-vername = vername.lower()
-source = source.lower()
-vercode = vercode.lower()
+
 
 if not DEBUG:
     if os.path.exists(DUMMY_FOLDER):
@@ -150,6 +148,9 @@ def main():
         source = sys.argv[2]
         vercode = sys.argv[3]
         down_link = sys.argv[4]
+    vername = vername.lower()
+    source = source.lower()
+    vercode = vercode.lower()
     try:    
         hash_value = False
         typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
