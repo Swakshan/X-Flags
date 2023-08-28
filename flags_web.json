@@ -396,6 +396,9 @@
             "c9s_timelines_default_selection": {
                 "value": "latest"
             },
+            "c9s_timelines_top_latest_enabled": {
+                "value": true
+            },
             "c9s_unread_indicator_global_enabled": {
                 "value": true
             },
@@ -1161,12 +1164,6 @@
             },
             "responsive_web_reader_extended_menu": {
                 "value": true
-            },
-            "responsive_web_reply_nudge_copy_version": {
-                "value": 0
-            },
-            "responsive_web_reply_nudge_supported_languages": {
-                "value": []
             },
             "responsive_web_search_home_page_design_variation": {
                 "value": ""
@@ -2749,7 +2746,7 @@
                 "type": "string"
             },
             "c9s_timelines_top_latest_enabled": {
-                "defaultValue": false,
+                "defaultValue": true,
                 "name": "c9s_timelines_top_latest_enabled",
                 "type": "boolean"
             },
@@ -2858,6 +2855,14 @@
                     "require_click_sources_nudge"
                 ],
                 "name": "community_notes_read_sources_nudge_16495",
+                "type": "experiment"
+            },
+            "community_top_tab_16527": {
+                "enumeration_values": [
+                    "control",
+                    "treatment"
+                ],
+                "name": "community_top_tab_16527",
                 "type": "experiment"
             },
             "conversation_controls_change_enabled": {
@@ -3557,6 +3562,10 @@
             },
             "dsa_encrypted_dms_report_flow_enabled": {
                 "name": "dsa_encrypted_dms_report_flow_enabled",
+                "type": "string"
+            },
+            "dsa_profile_report_flow_enabled": {
+                "name": "dsa_profile_report_flow_enabled",
                 "type": "string"
             },
             "dsa_report_flow_enabled": {
@@ -5098,6 +5107,11 @@
                 "name": "responsive_web_ad_revenue_sharing_number_of_impressions",
                 "type": "number"
             },
+            "responsive_web_ad_revenue_sharing_pay_period_enabled": {
+                "defaultValue": false,
+                "name": "responsive_web_ad_revenue_sharing_pay_period_enabled",
+                "type": "boolean"
+            },
             "responsive_web_ad_revenue_sharing_payout_account_notice_enabled": {
                 "defaultValue": false,
                 "name": "responsive_web_ad_revenue_sharing_payout_account_notice_enabled",
@@ -5966,9 +5980,8 @@
                 "type": "boolean"
             },
             "responsive_web_original_tweet_nudge_show_nudge": {
-                "defaultValue": false,
                 "name": "responsive_web_original_tweet_nudge_show_nudge",
-                "type": "boolean"
+                "type": "string"
             },
             "responsive_web_original_tweet_nudge_supported_languages": {
                 "defaultValue": [
@@ -6040,31 +6053,6 @@
             "responsive_web_repeat_profile_visits_notifications_enabled": {
                 "defaultValue": false,
                 "name": "responsive_web_repeat_profile_visits_notifications_enabled",
-                "type": "boolean"
-            },
-            "responsive_web_reply_nudge_copy_version": {
-                "defaultValue": 0,
-                "name": "responsive_web_reply_nudge_copy_version",
-                "type": "number"
-            },
-            "responsive_web_reply_nudge_enabled": {
-                "defaultValue": false,
-                "name": "responsive_web_reply_nudge_enabled",
-                "type": "boolean"
-            },
-            "responsive_web_reply_nudge_show_nudge": {
-                "defaultValue": false,
-                "name": "responsive_web_reply_nudge_show_nudge",
-                "type": "boolean"
-            },
-            "responsive_web_reply_nudge_supported_languages": {
-                "defaultValue": [],
-                "name": "responsive_web_reply_nudge_supported_languages",
-                "type": "object"
-            },
-            "responsive_web_reply_nudge_testing_keyword": {
-                "defaultValue": false,
-                "name": "responsive_web_reply_nudge_testing_keyword",
                 "type": "boolean"
             },
             "responsive_web_reply_storm_enabled": {
@@ -6612,7 +6600,7 @@
             "rweb_panning_nav_16489": {
                 "enumeration_values": [
                     "control",
-                    "enabled"
+                    "holdback"
                 ],
                 "name": "rweb_panning_nav_16489",
                 "type": "experiment"
@@ -9147,6 +9135,6 @@
                 "type": "experiment"
             }
         },
-        "feature_set_token": "cdb5a557ab2c56b7e63b945bb06e43cf299e3b49"
+        "feature_set_token": "77f0793c19eec4ea1d586f4ade5112b2001cabb9"
     }
 }
