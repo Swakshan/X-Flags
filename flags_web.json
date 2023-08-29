@@ -866,6 +866,9 @@
             "responsive_web_ad_revenue_sharing_number_of_impressions": {
                 "value": 5
             },
+            "responsive_web_ad_revenue_sharing_pay_period_enabled": {
+                "value": true
+            },
             "responsive_web_alt_text_nudges_enabled": {
                 "value": true
             },
@@ -1280,6 +1283,9 @@
             },
             "rweb_home_perf_client_prefetch_timeout_ms": {
                 "value": 0
+            },
+            "rweb_lists_discovery_list_mixer_enabled": {
+                "value": true
             },
             "rweb_lists_global_search_enabled": {
                 "value": true
@@ -4333,14 +4339,6 @@
                 "name": "list_tweets_on_home_10244",
                 "type": "experiment"
             },
-            "lists_discovery_list_mixer_16515": {
-                "enumeration_values": [
-                    "control",
-                    "treatment"
-                ],
-                "name": "lists_discovery_list_mixer_16515",
-                "type": "experiment"
-            },
             "live_event_audiospaces_enabled": {
                 "name": "live_event_audiospaces_enabled",
                 "type": "string"
@@ -5108,7 +5106,7 @@
                 "type": "number"
             },
             "responsive_web_ad_revenue_sharing_pay_period_enabled": {
-                "defaultValue": false,
+                "defaultValue": true,
                 "name": "responsive_web_ad_revenue_sharing_pay_period_enabled",
                 "type": "boolean"
             },
@@ -6553,7 +6551,7 @@
                 "type": "number"
             },
             "rweb_lists_discovery_list_mixer_enabled": {
-                "defaultValue": false,
+                "defaultValue": true,
                 "name": "rweb_lists_discovery_list_mixer_enabled",
                 "type": "boolean"
             },
@@ -9135,6 +9133,6 @@
                 "type": "experiment"
             }
         },
-        "feature_set_token": "77f0793c19eec4ea1d586f4ade5112b2001cabb9"
+        "feature_set_token": "bd51690e81cefc98c188d63d7c9181203872aabc"
     }
 }
