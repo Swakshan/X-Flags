@@ -483,6 +483,9 @@
             "creator_monetization_web_tips_onboarding_enabled": {
                 "value": false
             },
+            "creator_subscriptions_email_share_enabled": {
+                "value": false
+            },
             "creator_subscriptions_subscribe_action_tweet_menu_enabled": {
                 "value": true
             },
@@ -3848,8 +3851,9 @@
                 "type": "string"
             },
             "creator_subscriptions_email_share_enabled": {
+                "defaultValue": false,
                 "name": "creator_subscriptions_email_share_enabled",
-                "type": "string"
+                "type": "boolean"
             },
             "creator_subscriptions_subscribe_action_tweet_menu_enabled": {
                 "defaultValue": true,
@@ -5863,6 +5867,10 @@
                 "defaultValue": false,
                 "name": "responsive_web_ad_revenue_sharing_setup_enabled",
                 "type": "boolean"
+            },
+            "responsive_web_ad_revenue_sharing_total_earnings_enabled": {
+                "name": "responsive_web_ad_revenue_sharing_total_earnings_enabled",
+                "type": "string"
             },
             "responsive_web_alt_text_nudges_enabled": {
                 "defaultValue": true,
@@ -9876,6 +9884,6 @@
                 "type": "experiment"
             }
         },
-        "feature_set_token": "46d5c12fab3aadf5ddc285ca3b77e48b04eaff35"
+        "feature_set_token": "b63d5b9a96aac97b65eba391c3252ba37927c2af"
     }
 }
