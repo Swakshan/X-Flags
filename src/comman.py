@@ -63,6 +63,12 @@ def readJson(filename):
     f.close()
     return d
 
+def readFile(filename):
+    f = open(filename,'r',encoding='utf-8')
+    d = f.read()
+    f.close()
+    return d
+
 def printLine():
     return "*--------------*"
 
@@ -75,7 +81,7 @@ def commitLinkFormat(flag_data):
         return f"{count} {f}"
     
     msg = ""
-    for func in ('added','updated','removed'):
+    for func in flag_data:
         flags = flag_data[func]
         fStr = countFormat(len(flags))
         if fStr:

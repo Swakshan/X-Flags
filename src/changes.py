@@ -20,19 +20,18 @@ def changes():
         old_features = readJson(old_file_name)
         new_features = readJson(new_file_name)
 
-        old_features = old_features['default']
-        new_features = new_features['default']
+        if "default" in new_features:
+            old_features = old_features['default']
+            new_features = new_features['default']
 
         old_features_configs = old_features['config']
         new_features_configs = new_features['config']
         
+        old_features_configs_debug = {}
+        new_features_configs_debug = {}
         if "debug" in old_features:
             old_features_configs_debug = old_features['debug']
-            old_features_configs = {**old_features_configs,**old_features_configs_debug}
-
-        if "debug" in new_features:
             new_features_configs_debug = new_features['debug']
-            new_features_configs = {**new_features_configs,**new_features_configs_debug}
 
         if not new_features_configs:
             return False
@@ -49,11 +48,24 @@ def changes():
                 upd_features_configs.append(feat)
             old_features_configs.pop(feat)
 
+        
+        debug_features_config = []
+        if len(new_features_configs_debug):
+            for feat in new_features_configs_debug:
+                if feat in old_features_configs_debug:
+                    continue
+                if feat in upd_features_configs or feat in new_features_configs_2:
+                    continue
+                
+                debug_features_config.append(feat)
+
+
+
         return {"added": new_features_configs_2,
+                "debug": debug_features_config,
                 "updated": upd_features_configs,
                 "removed": old_features_configs
-                }
-        
+                }  
     try:
         flag_data_2 = False
         flag_data = flagChanges(old_file_name,new_file_name)
@@ -68,7 +80,7 @@ def changes():
         if DEBUG:
             print(strmsg)
             # return strmsg
-            pass
+            return True
         if len(strmsg):
             try:
                 if int(msg_id):

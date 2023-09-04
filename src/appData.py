@@ -7,6 +7,7 @@ from urllib.parse import unquote
 from datetime import datetime
 import js2py
 from comman import WEB_LINK,M_WEB_LINK,TWT_SW_URL
+from comman import readFile,writeJson,old_file_name,new_file_name
 
 
 hdr = {'User-Agent': generate_user_agent()}
@@ -226,7 +227,7 @@ class TwtWeb():
 
     def featureSwitches(self):
       req = requests.get(self.FS_URL,headers=hdr)
-      res = req.text.replace("!0","true").replace("!1","false")
+      res = req.text   
+      res = res.replace("!0","true").replace("!1","false")
       fs = js2py.eval_js(res).to_dict()
-      rd = {"default":fs}
-      return rd
+      return fs
