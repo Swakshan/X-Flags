@@ -7,7 +7,6 @@ from urllib.parse import unquote
 from datetime import datetime
 import js2py
 from comman import WEB_LINK,M_WEB_LINK,TWT_SW_URL
-from comman import readFile,writeJson,old_file_name,new_file_name
 
 
 hdr = {'User-Agent': generate_user_agent()}
