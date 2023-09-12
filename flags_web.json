@@ -470,6 +470,12 @@
         "dm_education_flags_prompt": {
             "value": false
         },
+        "dm_encrypted_franking_sending_enabled": {
+            "value": false
+        },
+        "dm_encrypted_franking_verification_enabled": {
+            "value": false
+        },
         "dm_inbox_search_groups_bucket_size": {
             "value": 5
         },
@@ -508,6 +514,9 @@
         },
         "dont_mention_me_view_api_enabled": {
             "value": true
+        },
+        "dsa_encrypted_dms_report_flow_enabled": {
+            "value": false
         },
         "dsa_report_flow_enabled": {
             "value": false
@@ -3905,6 +3914,20 @@
             "name": "dm_education_flags_prompt",
             "type": "boolean"
         },
+        "dm_encrypted_franking_report_enabled": {
+            "name": "dm_encrypted_franking_report_enabled",
+            "type": "string"
+        },
+        "dm_encrypted_franking_sending_enabled": {
+            "defaultValue": false,
+            "name": "dm_encrypted_franking_sending_enabled",
+            "type": "boolean"
+        },
+        "dm_encrypted_franking_verification_enabled": {
+            "defaultValue": false,
+            "name": "dm_encrypted_franking_verification_enabled",
+            "type": "boolean"
+        },
         "dm_inbox_search_additional_pages_count": {
             "name": "dm_inbox_search_additional_pages_count",
             "type": "string"
@@ -4112,8 +4135,9 @@
             "type": "string"
         },
         "dsa_encrypted_dms_report_flow_enabled": {
+            "defaultValue": false,
             "name": "dsa_encrypted_dms_report_flow_enabled",
-            "type": "string"
+            "type": "boolean"
         },
         "dsa_profile_report_flow_enabled": {
             "name": "dsa_profile_report_flow_enabled",
@@ -9623,5 +9647,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "541f4106ca5ac71c6c54ff3e188db77a9858c9e7"
+    "feature_set_token": "8ffdb5d1bd10ed9f7b25df868d796354ec51b1c6"
 }
