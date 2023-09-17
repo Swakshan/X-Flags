@@ -305,9 +305,6 @@
         "blue_business_multi_affiliates_ui_enabled": {
             "value": false
         },
-        "blue_business_subscriptions_management_page_updates_enabled": {
-            "value": true
-        },
         "blue_business_username_change_prompt_enabled": {
             "value": true
         },
@@ -970,6 +967,9 @@
         },
         "recruiting_jobs_list_consumption_enabled": {
             "value": true
+        },
+        "recruiting_jobs_list_search_enabled": {
+            "value": false
         },
         "recruiting_verified_orgs_admin_enabled": {
             "value": false
@@ -1717,9 +1717,6 @@
         "responsive_web_twitter_blue_verified_badge_ntab_empty_state_enabled": {
             "value": true
         },
-        "responsive_web_twitter_blue_verified_badge_settings_blue_verified_features_enabled": {
-            "value": true
-        },
         "responsive_web_unsupported_entry_tombstone": {
             "value": false
         },
@@ -2093,9 +2090,6 @@
         "subscriptions_long_video_upload": {
             "value": true
         },
-        "subscriptions_management_enabled": {
-            "value": true
-        },
         "subscriptions_marketing_page_annual_redesign_content_enabled": {
             "value": true
         },
@@ -2127,7 +2121,7 @@
             "value": true
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_verification_info_verified_since_enabled": {
             "value": true
@@ -3045,9 +3039,8 @@
             "type": "string"
         },
         "blue_business_subscriptions_management_page_updates_enabled": {
-            "defaultValue": true,
             "name": "blue_business_subscriptions_management_page_updates_enabled",
-            "type": "boolean"
+            "type": "string"
         },
         "blue_business_username_change_prompt_enabled": {
             "defaultValue": true,
@@ -5551,8 +5544,9 @@
             "type": "boolean"
         },
         "recruiting_jobs_list_search_enabled": {
+            "defaultValue": false,
             "name": "recruiting_jobs_list_search_enabled",
-            "type": "string"
+            "type": "boolean"
         },
         "recruiting_verified_orgs_admin_enabled": {
             "defaultValue": false,
@@ -6880,9 +6874,8 @@
             "type": "boolean"
         },
         "responsive_web_twitter_blue_verified_badge_settings_blue_verified_features_enabled": {
-            "defaultValue": true,
             "name": "responsive_web_twitter_blue_verified_badge_settings_blue_verified_features_enabled",
-            "type": "boolean"
+            "type": "string"
         },
         "responsive_web_unsupported_entry_tombstone": {
             "defaultValue": false,
@@ -7831,9 +7824,8 @@
             "type": "boolean"
         },
         "subscriptions_management_enabled": {
-            "defaultValue": true,
             "name": "subscriptions_management_enabled",
-            "type": "boolean"
+            "type": "string"
         },
         "subscriptions_marketing_page_annual_redesign_content_enabled": {
             "defaultValue": true,
@@ -7966,7 +7958,7 @@
             "type": "string"
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
-            "defaultValue": false,
+            "defaultValue": true,
             "name": "subscriptions_verification_info_is_identity_verified_enabled",
             "type": "boolean"
         },
@@ -9634,5 +9626,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "61c8491db19723040cb908ddf1dcb0ed432c1cf9"
+    "feature_set_token": "a9e3b6641d835f50bbe3e3d6084c7f374f954776"
 }
