@@ -50,7 +50,8 @@ class Releases(Enum):
 
 
 def printJson(data):
-    print(json.dumps(data,indent=4))
+    if type(data)==dict and type(data)==list:
+        print(json.dumps(data,indent=4))
 
 def writeJson(fileName,data):
     f = open(fileName, 'w')
@@ -83,7 +84,10 @@ def commitLinkFormat(flag_data):
     msg = ""
     for func in flag_data:
         flags = flag_data[func]
-        fStr = countFormat(len(flags))
+        lf = len(flags)
+        if func in ['added','debug'] and lf<NEW_FLAG_LIMIT:
+            continue
+        fStr = countFormat(lf)
         if fStr:
             msg = f"{msg} and {fStr} {func.title()}"
     
@@ -98,13 +102,18 @@ def strpattern(flag_data,flag_data_2):
     hash_value = manifest_file['hash']
     platform = manifest_file['os']
     
-    nf = ""
+    nf = "";df=""
     new_flags = dict(list(flag_data['added'].items())[:NEW_FLAG_LIMIT])
     for f in new_flags:
-        name = f
         value = new_flags[f]
-        ty = type(value).__name__ if value!="experiment" else "exp"
-        nf = f'• `{name}` :{ty}\n{nf}'
+        ty = type(value).__name__
+        nf = f'• `{f}` :{ty}\n{nf}'
+    nfC = len(new_flags)
+
+    debug_flags = flag_data['debug'][:NEW_FLAG_LIMIT]
+    for f in debug_flags:
+        df = f'• `{f}`\n{df}'
+    dfC = len(debug_flags)
 
     commit_link_str = commitLinkFormat(flag_data)
     commit_link_str_2 = False
@@ -141,10 +150,13 @@ def strpattern(flag_data,flag_data_2):
     rd = f"⚠️`{vername}`⚠️\n"
     rd = rd if not len(vercode_str) else f"{rd}{vercode_str}\n"
     rd = f'{rd}\n{linkRow}\n[Other Version Details]({pin_link})\n{l}'
-    if len(nf):
-        rd = f'{rd}\n__Flags Added__'
+    if nfC:
+        rd = f'{rd}\n__New Flags__'
         rd = f'{rd}\n{nf}\n{l}'
-    else:
+    if dfC:
+        rd = f'{rd}\n__New Debug Flags__'
+        rd = f'{rd}\n{df}\n{l}'
+    elif not nfC and not dfC:
          rd = f"{rd}\nNo New Flags\n{l}"
     if commit_link_str_2:
         rd = f'{rd}\n_iPhone:_\n[{commit_link_str}]({commit_link})\n'

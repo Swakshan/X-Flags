@@ -20,18 +20,23 @@ def changes():
         old_features = readJson(old_file_name)
         new_features = readJson(new_file_name)
 
+        old_features_configs_debug = {}
+        new_features_configs_debug = {}
+        if "debug" in old_features:
+            old_features_configs_debug = old_features['debug']
+            new_features_configs_debug = new_features['debug']
+        elif "experiment_names" in old_features:
+            old_features_configs_debug = old_features['experiment_names']
+            new_features_configs_debug = new_features['experiment_names']
+
         if "default" in new_features:
             old_features = old_features['default']
             new_features = new_features['default']
 
         old_features_configs = old_features['config']
         new_features_configs = new_features['config']
+
         
-        old_features_configs_debug = {}
-        new_features_configs_debug = {}
-        if "debug" in old_features:
-            old_features_configs_debug = old_features['debug']
-            new_features_configs_debug = new_features['debug']
 
         if not new_features_configs:
             return False
@@ -56,7 +61,6 @@ def changes():
                     continue
                 if feat in upd_features_configs or feat in new_features_configs_2:
                     continue
-                
                 debug_features_config.append(feat)
 
 
@@ -78,6 +82,7 @@ def changes():
         strmsg = strpattern(flag_data,flag_data_2)
         ch_id = "-100"+CHANNEL_ID
         if DEBUG:
+            # return flag_data
             print(strmsg)
             # return strmsg
             return True
@@ -94,4 +99,4 @@ def changes():
         print(str(e))
         return False
 
-changes()
+# changes()
