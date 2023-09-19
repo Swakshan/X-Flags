@@ -2,7 +2,6 @@ from comman import old_file_name,new_file_name,CHANNEL_ID,DEBUG,new_file_ipad_na
 from comman import readJson,strpattern
 from tele import sendMsg,editMsg
 import sys,os
-from urllib.parse import unquote
 
 msg_id = sys.argv[1]
 
@@ -99,4 +98,4 @@ def changes():
         print(str(e))
         return False
 
-# changes()
+changes()
