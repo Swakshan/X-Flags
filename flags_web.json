@@ -500,6 +500,9 @@
         "dm_settings_info_page_allow_subscriber_messages_setting_enabled": {
             "value": false
         },
+        "dm_settings_info_page_device_list_enabled": {
+            "value": false
+        },
         "dm_share_sheet_send_individually_max_count": {
             "value": 20
         },
@@ -753,6 +756,9 @@
             "value": false
         },
         "identity_verification_settings_enabled": {
+            "value": false
+        },
+        "immersive_viewer_enable_profile_viewer": {
             "value": false
         },
         "krs_registration_enabled": {
@@ -3507,6 +3513,14 @@
             "name": "community_notes_read_sources_nudge_16495",
             "type": "experiment"
         },
+        "community_top_tab_sticky_16556": {
+            "enumeration_values": [
+                "control",
+                "top_sticky_disabled"
+            ],
+            "name": "community_top_tab_sticky_16556",
+            "type": "experiment"
+        },
         "conversation_controls_change_enabled": {
             "defaultValue": true,
             "name": "conversation_controls_change_enabled",
@@ -4009,8 +4023,9 @@
             "type": "string"
         },
         "dm_settings_info_page_device_list_enabled": {
+            "defaultValue": false,
             "name": "dm_settings_info_page_device_list_enabled",
-            "type": "string"
+            "type": "boolean"
         },
         "dm_settings_info_page_enabled": {
             "name": "dm_settings_info_page_enabled",
@@ -4843,6 +4858,11 @@
         "identity_verification_settings_enabled": {
             "defaultValue": false,
             "name": "identity_verification_settings_enabled",
+            "type": "boolean"
+        },
+        "immersive_viewer_enable_profile_viewer": {
+            "defaultValue": false,
+            "name": "immersive_viewer_enable_profile_viewer",
             "type": "boolean"
         },
         "inline_player_scroller_removal_13362": {
@@ -7060,6 +7080,10 @@
             "enumeration_values": [],
             "name": "rweb_gif_hashtag_highlight_13196",
             "type": "experiment"
+        },
+        "rweb_home_bookmark_in_action_bar_enabled": {
+            "name": "rweb_home_bookmark_in_action_bar_enabled",
+            "type": "string"
         },
         "rweb_home_compact_timeline_enabled": {
             "defaultValue": false,
@@ -9626,5 +9650,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "a9e3b6641d835f50bbe3e3d6084c7f374f954776"
+    "feature_set_token": "dba4ab724ba0bf88b4326e1c3a9a5f11d548f50a"
 }
