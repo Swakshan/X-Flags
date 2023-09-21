@@ -1,6 +1,6 @@
 {
   "default" : {
-    "feature_set_token" : "556a4365ec3c4d9d43920f66d40a5450f31f9314",
+    "feature_set_token" : "378e6fc0312e789db33ec0e511bcc697add8db44",
     "config" : {
       "2fa_temporary_password_enabled" : {
         "value" : false
@@ -102,6 +102,12 @@
         "value" : false
       },
       "av_chat_notification_routing_enabled" : {
+        "value" : false
+      },
+      "av_chat_user_settings_api_enabled" : {
+        "value" : false
+      },
+      "av_chat_user_settings_ui_enabled" : {
         "value" : false
       },
       "background_fetch_enabled" : {
@@ -1497,6 +1503,9 @@
         "value" : true
       },
       "hidden_profile_likes_settings_enabled" : {
+        "value" : true
+      },
+      "hidden_profile_subscriptions_enabled" : {
         "value" : false
       },
       "hidden_profile_subscriptions_settings_enabled" : {
@@ -1745,7 +1754,7 @@
       "hometimeline_pinned_tabs_communities_enabled" : {
         "value" : false
       },
-      "hometimeline_pinned_tabs_urp_enabled" : {
+      "hometimeline_pinned_tabs_pinned_timelines_enabled" : {
         "value" : false
       },
       "http_config_hostmap" : {
@@ -1777,9 +1786,6 @@
       },
       "identity_verification_consent_opt_in_by_default_enabled" : {
         "value" : true
-      },
-      "identity_verification_consent_regulations_enabled" : {
-        "value" : false
       },
       "identity_verification_hide_verified_label_settings_enabled" : {
         "value" : false
@@ -1840,6 +1846,9 @@
       },
       "immersive_video_chrome_fade_in_duration" : {
         "value" : 0.3
+      },
+      "immersive_video_hide_chrome_when_video_starts" : {
+        "value" : false
       },
       "immersive_video_maintain_paused_after_scrub" : {
         "value" : false
@@ -2098,6 +2107,9 @@
       },
       "ios_internal_protocol_handler_parser_result_navigation_enabled" : {
         "value" : true
+      },
+      "ios_live_video_require_verified_to_chat" : {
+        "value" : false
       },
       "ios_load_tavui_image_assets_asynchronously_enabled" : {
         "value" : true
@@ -2885,6 +2897,9 @@
       "media_autoplay_view_threshold_content_ms" : {
         "value" : 3000.0
       },
+      "media_download_user_preference_enabled" : {
+        "value" : true
+      },
       "media_download_video_enabled" : {
         "value" : true
       },
@@ -3539,6 +3554,9 @@
       "ssp_ads_google_native_ad_enabled" : {
         "value" : false
       },
+      "ssp_ads_native_ad_unit_id" : {
+        "value" : ""
+      },
       "ssp_ads_rtb_image_ad_item_enabled" : {
         "value" : false
       },
@@ -3643,6 +3661,9 @@
       },
       "subscriptions_marketing_page_rearragement" : {
         "value" : "control"
+      },
+      "subscriptions_premium_tiers_marketing_page_enabled" : {
+        "value" : false
       },
       "subscriptions_product_feature_list_api_enabled" : {
         "value" : false
@@ -4257,7 +4278,7 @@
         "value" : true
       },
       "vit_verified_followers_view_enabled" : {
-        "value" : false
+        "value" : true
       },
       "vod_docking_full_screen_disable_autoplay" : {
         "value" : true
@@ -4593,7 +4614,7 @@
   "requires_restart" : [ ],
   "supports_accessibility" : [ ],
   "versions" : {
-    "feature_switches" : "758b319a90ba9a14ec4fd60a207a5a29c459ae7c",
-    "experiments" : "758b319a90ba9a14ec4fd60a207a5a29c459ae7c"
+    "feature_switches" : "2832f533699aa9235006c3cfd9f0d141cba8f8ad",
+    "experiments" : "2832f533699aa9235006c3cfd9f0d141cba8f8ad"
   }
 }
