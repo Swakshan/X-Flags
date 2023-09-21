@@ -629,6 +629,9 @@
         "gryphon_blue_only_enabled": {
             "value": true
         },
+        "gryphon_faster_cell_entrance": {
+            "value": false
+        },
         "gryphon_fps_tracking_enabled": {
             "value": true
         },
@@ -4453,6 +4456,11 @@
             "name": "gryphon_blue_only_enabled",
             "type": "boolean"
         },
+        "gryphon_faster_cell_entrance": {
+            "defaultValue": false,
+            "name": "gryphon_faster_cell_entrance",
+            "type": "boolean"
+        },
         "gryphon_fps_tracking_enabled": {
             "defaultValue": true,
             "name": "gryphon_fps_tracking_enabled",
@@ -7762,6 +7770,10 @@
             "name": "subscriptions_feature_1015",
             "type": "string"
         },
+        "subscriptions_feature_account_analytics": {
+            "name": "subscriptions_feature_account_analytics",
+            "type": "string"
+        },
         "subscriptions_feature_article_composer": {
             "defaultValue": false,
             "name": "subscriptions_feature_article_composer",
@@ -7771,6 +7783,18 @@
             "defaultValue": true,
             "name": "subscriptions_feature_can_hide_checkmark",
             "type": "boolean"
+        },
+        "subscriptions_feature_hide_your_likes": {
+            "name": "subscriptions_feature_hide_your_likes",
+            "type": "string"
+        },
+        "subscriptions_feature_highlights": {
+            "name": "subscriptions_feature_highlights",
+            "type": "string"
+        },
+        "subscriptions_feature_id_verification": {
+            "name": "subscriptions_feature_id_verification",
+            "type": "string"
         },
         "subscriptions_feature_labs_1001": {
             "name": "subscriptions_feature_labs_1001",
@@ -7803,6 +7827,10 @@
         },
         "subscriptions_feature_labs_1006_b": {
             "name": "subscriptions_feature_labs_1006_b",
+            "type": "string"
+        },
+        "subscriptions_feature_media_studio": {
+            "name": "subscriptions_feature_media_studio",
             "type": "string"
         },
         "subscriptions_gating_bypass": {
@@ -9622,5 +9650,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "9b32109bc1bcd1c4cab534ce79b4d21f71a00137"
+    "feature_set_token": "5e5bc23c4e42e6729b02b5e673ae8f7d1197212a"
 }
