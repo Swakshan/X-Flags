@@ -1,6 +1,6 @@
 {
   "default" : {
-    "feature_set_token" : "ccb327db462b97fbf1fbf35f4d50296270ea0a4f",
+    "feature_set_token" : "11aa255f418c75bd765c6725c7ef92909fed49a5",
     "config" : {
       "2fa_temporary_password_enabled" : {
         "value" : false
@@ -1757,6 +1757,9 @@
       "hometimeline_pinned_tabs_pinned_timelines_enabled" : {
         "value" : false
       },
+      "hometimeline_pinned_tabs_settings_enabled" : {
+        "value" : false
+      },
       "http_config_hostmap" : {
         "value" : [ ]
       },
@@ -1842,19 +1845,19 @@
         "value" : 2.0
       },
       "immersive_video_big_centered_play_button" : {
-        "value" : false
+        "value" : true
       },
       "immersive_video_chrome_fade_in_duration" : {
-        "value" : 0.3
+        "value" : 0.1
       },
       "immersive_video_hide_chrome_when_video_starts" : {
-        "value" : false
+        "value" : true
       },
       "immersive_video_maintain_paused_after_scrub" : {
-        "value" : false
+        "value" : true
       },
       "immersive_video_show_progress_and_duration" : {
-        "value" : false
+        "value" : true
       },
       "in_app_purchase_enabled" : {
         "value" : true
@@ -2109,7 +2112,7 @@
         "value" : true
       },
       "ios_live_video_require_verified_to_chat" : {
-        "value" : false
+        "value" : true
       },
       "ios_load_tavui_image_assets_asynchronously_enabled" : {
         "value" : true
@@ -3474,7 +3477,7 @@
         "value" : 3.0
       },
       "skadnetwork_integration_4_ios_enabled" : {
-        "value" : false
+        "value" : true
       },
       "smbo_legacy_pac_is_in_follow_position_test" : {
         "value" : false
@@ -3665,6 +3668,9 @@
       "subscriptions_premium_tiers_marketing_page_enabled" : {
         "value" : false
       },
+      "subscriptions_premium_tiers_switching_enabled" : {
+        "value" : false
+      },
       "subscriptions_product_feature_list_api_enabled" : {
         "value" : false
       },
@@ -3730,12 +3736,6 @@
       },
       "suspended_profile_tombstone_enabled" : {
         "value" : true
-      },
-      "tab_bar_visibility_alpha_on_scroll_end_enabled" : {
-        "value" : true
-      },
-      "tab_bar_visibility_alpha_on_scroll_end_transparency" : {
-        "value" : 0.5
       },
       "tabbed_explore_enabled" : {
         "value" : false
@@ -4614,7 +4614,7 @@
   "requires_restart" : [ ],
   "supports_accessibility" : [ ],
   "versions" : {
-    "feature_switches" : "20a382bcbdc5d3ea5f92e80abeeacb1d637490ce",
-    "experiments" : "20a382bcbdc5d3ea5f92e80abeeacb1d637490ce"
+    "feature_switches" : "dcabfd8ecd4634dfce390a4db379bba8f8ff1aa8",
+    "experiments" : "dcabfd8ecd4634dfce390a4db379bba8f8ff1aa8"
   }
 }
