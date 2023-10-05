@@ -396,7 +396,7 @@
             "value": false
         },
         "card_detail_compact_enabled": {
-            "value": false
+            "value": true
         },
         "conversation_controls_limited_replies_consumption_configuration": {
             "value": "no_reply"
@@ -420,7 +420,7 @@
             "value": false
         },
         "creator_subscriptions_connect_tab_enabled": {
-            "value": false
+            "value": true
         },
         "creator_subscriptions_email_share_enabled": {
             "value": true
@@ -923,6 +923,9 @@
         "promoted_badge_placement_position": {
             "value": ""
         },
+        "recruiting_global_jobs_search_enabled": {
+            "value": false
+        },
         "recruiting_job_page_consumption_enabled": {
             "value": true
         },
@@ -930,6 +933,9 @@
             "value": true
         },
         "recruiting_jobs_list_search_enabled": {
+            "value": false
+        },
+        "recruiting_jobs_list_share_enabled": {
             "value": false
         },
         "recruiting_verified_orgs_admin_enabled": {
@@ -3344,8 +3350,16 @@
             "name": "c9s_user_typeahead_delay_millis",
             "type": "string"
         },
+        "card_detail_compact_16577": {
+            "enumeration_values": [
+                "control",
+                "production"
+            ],
+            "name": "card_detail_compact_16577",
+            "type": "experiment"
+        },
         "card_detail_compact_enabled": {
-            "defaultValue": false,
+            "defaultValue": true,
             "name": "card_detail_compact_enabled",
             "type": "boolean"
         },
@@ -3593,7 +3607,7 @@
             "type": "string"
         },
         "creator_subscriptions_connect_tab_enabled": {
-            "defaultValue": false,
+            "defaultValue": true,
             "name": "creator_subscriptions_connect_tab_enabled",
             "type": "boolean"
         },
@@ -5369,8 +5383,9 @@
             "type": "string"
         },
         "recruiting_global_jobs_search_enabled": {
+            "defaultValue": false,
             "name": "recruiting_global_jobs_search_enabled",
-            "type": "string"
+            "type": "boolean"
         },
         "recruiting_job_page_consumption_enabled": {
             "defaultValue": true,
@@ -5385,6 +5400,11 @@
         "recruiting_jobs_list_search_enabled": {
             "defaultValue": false,
             "name": "recruiting_jobs_list_search_enabled",
+            "type": "boolean"
+        },
+        "recruiting_jobs_list_share_enabled": {
+            "defaultValue": false,
+            "name": "recruiting_jobs_list_share_enabled",
             "type": "boolean"
         },
         "recruiting_verified_orgs_admin_enabled": {
@@ -7585,6 +7605,10 @@
             "name": "subscriptions_marketing_page_multiple_tiers_content_enabled",
             "type": "string"
         },
+        "subscriptions_marketing_page_multiple_tiers_content_v2_enabled": {
+            "name": "subscriptions_marketing_page_multiple_tiers_content_v2_enabled",
+            "type": "string"
+        },
         "subscriptions_marketing_page_plus_product_enabled": {
             "name": "subscriptions_marketing_page_plus_product_enabled",
             "type": "string"
@@ -7611,6 +7635,10 @@
         },
         "subscriptions_onboarding_from_ocf_enabled": {
             "name": "subscriptions_onboarding_from_ocf_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_tiers_default_product": {
+            "name": "subscriptions_premium_tiers_default_product",
             "type": "string"
         },
         "subscriptions_premium_tiers_gating_update_enabled": {
@@ -9349,5 +9377,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "b914702cea75348f476527676919ac03b11b1f3e"
+    "feature_set_token": "48e59407509b9dd80c813cfebdffe510f3ea043c"
 }
