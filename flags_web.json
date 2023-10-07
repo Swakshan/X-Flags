@@ -1151,9 +1151,6 @@
         "responsive_web_creator_preferences_previews_enabled_setting": {
             "value": true
         },
-        "responsive_web_csrf_clientside_enabled": {
-            "value": true
-        },
         "responsive_web_dcm_2_enabled": {
             "value": true
         },
@@ -1499,6 +1496,9 @@
         "responsive_web_report_page_not_found": {
             "value": false
         },
+        "responsive_web_restrict_max_timeline_tweet_height": {
+            "value": true
+        },
         "responsive_web_scroller_top_positioning_enabled": {
             "value": false
         },
@@ -1510,6 +1510,9 @@
         },
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "value": true
+        },
+        "responsive_web_show_similar_posts_pivots_enabled": {
+            "value": false
         },
         "responsive_web_sidebar_ttf_enabled": {
             "value": false
@@ -1997,6 +2000,9 @@
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": false
+        },
+        "subscriptions_premium_tiers_default_product": {
+            "value": "BlueVerifiedPlus"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "value": false
@@ -5783,11 +5789,6 @@
             "name": "responsive_web_creator_preferences_previews_enabled_setting",
             "type": "boolean"
         },
-        "responsive_web_csrf_clientside_enabled": {
-            "defaultValue": true,
-            "name": "responsive_web_csrf_clientside_enabled",
-            "type": "boolean"
-        },
         "responsive_web_dcm_2_enabled": {
             "defaultValue": true,
             "name": "responsive_web_dcm_2_enabled",
@@ -6384,6 +6385,11 @@
             "name": "responsive_web_report_page_not_found",
             "type": "boolean"
         },
+        "responsive_web_restrict_max_timeline_tweet_height": {
+            "defaultValue": true,
+            "name": "responsive_web_restrict_max_timeline_tweet_height",
+            "type": "boolean"
+        },
         "responsive_web_scroller_top_positioning_enabled": {
             "defaultValue": false,
             "name": "responsive_web_scroller_top_positioning_enabled",
@@ -6402,6 +6408,11 @@
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "defaultValue": true,
             "name": "responsive_web_share_only_tweet_url_omit_title_and_text",
+            "type": "boolean"
+        },
+        "responsive_web_show_similar_posts_pivots_enabled": {
+            "defaultValue": false,
+            "name": "responsive_web_show_similar_posts_pivots_enabled",
             "type": "boolean"
         },
         "responsive_web_sidebar_ttf_enabled": {
@@ -7314,11 +7325,6 @@
             "name": "spaces_search_holdback_12894",
             "type": "experiment"
         },
-        "spacing_3_15889": {
-            "enumeration_values": [],
-            "name": "spacing_3_15889",
-            "type": "experiment"
-        },
         "standardized_nudges_misinfo": {
             "defaultValue": true,
             "name": "standardized_nudges_misinfo",
@@ -7638,11 +7644,12 @@
             "type": "string"
         },
         "subscriptions_premium_tiers_default_product": {
+            "defaultValue": "BlueVerifiedPlus",
             "name": "subscriptions_premium_tiers_default_product",
             "type": "string"
         },
-        "subscriptions_premium_tiers_gating_update_enabled": {
-            "name": "subscriptions_premium_tiers_gating_update_enabled",
+        "subscriptions_premium_tiers_ios_v3_redesign_enabled": {
+            "name": "subscriptions_premium_tiers_ios_v3_redesign_enabled",
             "type": "string"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
@@ -9377,5 +9384,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "48e59407509b9dd80c813cfebdffe510f3ea043c"
+    "feature_set_token": "190337b6a1e4cecc37b09325b645359376b50ccc"
 }
