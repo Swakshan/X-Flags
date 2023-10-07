@@ -230,3 +230,11 @@ class TwtWeb():
       res = res.replace("!0","true").replace("!1","false")
       fs = js2py.eval_js(res).to_dict()
       return fs
+
+def webfeatureSwitches(hash):
+      FS_URL = f"https://abs.twimg.com/responsive-web/client-web-legacy/feature-switch-manifest.{hash}.js"
+      req = requests.get(FS_URL,headers=hdr)
+      res = req.text   
+      res = res.replace("!0","true").replace("!1","false")
+      fs = js2py.eval_js(res).to_dict()
+      return fs

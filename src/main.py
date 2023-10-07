@@ -1,11 +1,11 @@
 import requests,json,os,shutil,sys,zipfile
-from appData import ApkCombo, Aptiode,TwtWeb
+from appData import ApkCombo, Aptiode,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from comman import writeJson
 
-VER = "v7.19 : Code refactor & Added iOS support : Rearrange flag order & Updated ReadMe : input logic : workflow upd : double flag line bug fix : separated debug flags : print style update"
+VER = "v7.2 : refactor web featureswitch"
 
 
 vername = "web"
@@ -150,7 +150,7 @@ def main():
         down_link = sys.argv[4]
     vername = vername.lower()
     source = source.lower()
-    vercode = vercode.lower()
+    # vercode = vercode.lower()
     try:    
         hash_value = False
         typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
@@ -158,17 +158,15 @@ def main():
         down_data = [False,False,False] #vername,vercode,downLink
         
         if platform==Platform.WEB.value:
-            twt = TwtWeb()
-            sha,version = twt.version()
+            sha,fs_hash = vercode.split(":")
             hash_value = sha
             existsing_flag_file = f'flags_{typ}.json'
             os.rename(existsing_flag_file, old_file_name)
-            # os.remove(existsing_flag_file)
-            fs = twt.featureSwitches()
 
+            fs = webfeatureSwitches(fs_hash)
             writeJson(existsing_flag_file,fs)
             shutil.copy(existsing_flag_file, new_file_name)
-            down_data = [typ,version,False]
+            down_data = [typ,fs_hash,False]
         
         elif platform==Platform.IOS.value:
             fileName = "x.ipa"
