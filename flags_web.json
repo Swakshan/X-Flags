@@ -1511,6 +1511,9 @@
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "value": true
         },
+        "responsive_web_show_similar_posts_count": {
+            "value": 50
+        },
         "responsive_web_show_similar_posts_pivots_enabled": {
             "value": false
         },
@@ -1644,9 +1647,6 @@
             "value": false
         },
         "responsive_web_user_badge_education_get_verified_button_enabled": {
-            "value": true
-        },
-        "responsive_web_verified_followers_tab_enabled": {
             "value": true
         },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
@@ -6419,8 +6419,9 @@
             "type": "boolean"
         },
         "responsive_web_show_similar_posts_count": {
+            "defaultValue": 50,
             "name": "responsive_web_show_similar_posts_count",
-            "type": "string"
+            "type": "number"
         },
         "responsive_web_show_similar_posts_pivots_enabled": {
             "defaultValue": false,
@@ -6671,11 +6672,6 @@
         "responsive_web_user_badge_education_redesign_enabled": {
             "name": "responsive_web_user_badge_education_redesign_enabled",
             "type": "string"
-        },
-        "responsive_web_verified_followers_tab_enabled": {
-            "defaultValue": true,
-            "name": "responsive_web_verified_followers_tab_enabled",
-            "type": "boolean"
         },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
             "defaultValue": 3000,
@@ -9388,5 +9384,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "ea347111f7e00ab9ddb9bbbe28b7dcb824535cdd"
+    "feature_set_token": "9ea6191fbdde4e061f60f7a2bb85c5ddddb6339b"
 }
