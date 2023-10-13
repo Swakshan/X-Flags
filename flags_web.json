@@ -992,9 +992,6 @@
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "value": 5
         },
-        "responsive_web_ad_revenue_sharing_pay_period_enabled": {
-            "value": true
-        },
         "responsive_web_ad_revenue_sharing_payout_account_notice_enabled": {
             "value": false
         },
@@ -5511,9 +5508,8 @@
             "type": "number"
         },
         "responsive_web_ad_revenue_sharing_pay_period_enabled": {
-            "defaultValue": true,
             "name": "responsive_web_ad_revenue_sharing_pay_period_enabled",
-            "type": "boolean"
+            "type": "string"
         },
         "responsive_web_ad_revenue_sharing_payout_account_notice_enabled": {
             "defaultValue": false,
@@ -6421,6 +6417,10 @@
             "defaultValue": true,
             "name": "responsive_web_share_only_tweet_url_omit_title_and_text",
             "type": "boolean"
+        },
+        "responsive_web_show_similar_posts_count": {
+            "name": "responsive_web_show_similar_posts_count",
+            "type": "string"
         },
         "responsive_web_show_similar_posts_pivots_enabled": {
             "defaultValue": false,
@@ -7548,10 +7548,6 @@
             "name": "subscriptions_feature_labs_1004",
             "type": "boolean"
         },
-        "subscriptions_feature_labs_1005": {
-            "name": "subscriptions_feature_labs_1005",
-            "type": "string"
-        },
         "subscriptions_feature_labs_1006": {
             "name": "subscriptions_feature_labs_1006",
             "type": "string"
@@ -7621,10 +7617,6 @@
         },
         "subscriptions_marketing_page_multiple_tiers_content_enabled": {
             "name": "subscriptions_marketing_page_multiple_tiers_content_enabled",
-            "type": "string"
-        },
-        "subscriptions_marketing_page_multiple_tiers_content_v2_enabled": {
-            "name": "subscriptions_marketing_page_multiple_tiers_content_v2_enabled",
             "type": "string"
         },
         "subscriptions_marketing_page_plus_product_enabled": {
@@ -9396,5 +9388,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "9032837ddb3dafec64fac91750464fcbf32c048a"
+    "feature_set_token": "ea347111f7e00ab9ddb9bbbe28b7dcb824535cdd"
 }
