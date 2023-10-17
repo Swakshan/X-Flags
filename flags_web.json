@@ -395,6 +395,9 @@
         "c9s_timelines_top_latest_stickiness_enabled": {
             "value": false
         },
+        "c9s_tweet_anatomy_moderator_badge_enabled": {
+            "value": false
+        },
         "card_detail_compact_enabled": {
             "value": true
         },
@@ -933,10 +936,10 @@
             "value": true
         },
         "recruiting_jobs_list_search_enabled": {
-            "value": false
+            "value": true
         },
         "recruiting_jobs_list_share_enabled": {
-            "value": false
+            "value": true
         },
         "recruiting_verified_orgs_admin_enabled": {
             "value": false
@@ -1663,9 +1666,6 @@
         },
         "responsive_web_verified_organizations_paid_to_invoice_enabled": {
             "value": false
-        },
-        "responsive_web_verified_organizations_upgrade_enabled": {
-            "value": true
         },
         "responsive_web_video_pcomplete_enabled": {
             "value": true
@@ -3313,8 +3313,9 @@
             "type": "string"
         },
         "c9s_tweet_anatomy_moderator_badge_enabled": {
+            "defaultValue": false,
             "name": "c9s_tweet_anatomy_moderator_badge_enabled",
-            "type": "string"
+            "type": "boolean"
         },
         "c9s_tweet_community_selector_enabled": {
             "name": "c9s_tweet_community_selector_enabled",
@@ -3368,6 +3369,14 @@
             "defaultValue": true,
             "name": "card_detail_compact_enabled",
             "type": "boolean"
+        },
+        "communities_mod_label_16584": {
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ],
+            "name": "communities_mod_label_16584",
+            "type": "experiment"
         },
         "community_notes_read_sources_nudge_16495": {
             "enumeration_values": [
@@ -5408,12 +5417,12 @@
             "type": "boolean"
         },
         "recruiting_jobs_list_search_enabled": {
-            "defaultValue": false,
+            "defaultValue": true,
             "name": "recruiting_jobs_list_search_enabled",
             "type": "boolean"
         },
         "recruiting_jobs_list_share_enabled": {
-            "defaultValue": false,
+            "defaultValue": true,
             "name": "recruiting_jobs_list_share_enabled",
             "type": "boolean"
         },
@@ -6707,9 +6716,8 @@
             "type": "boolean"
         },
         "responsive_web_verified_organizations_upgrade_enabled": {
-            "defaultValue": true,
             "name": "responsive_web_verified_organizations_upgrade_enabled",
-            "type": "boolean"
+            "type": "string"
         },
         "responsive_web_video_pcomplete_enabled": {
             "defaultValue": true,
@@ -9388,5 +9396,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "4e64f0cbcecfa067f22a42f619163ee82a78ec28"
+    "feature_set_token": "5151c9db2b63efc75288fe7fdba53c375fb08de7"
 }
