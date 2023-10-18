@@ -396,7 +396,7 @@
             "value": false
         },
         "c9s_tweet_anatomy_moderator_badge_enabled": {
-            "value": false
+            "value": true
         },
         "card_detail_compact_enabled": {
             "value": true
@@ -1409,6 +1409,9 @@
         "responsive_web_nft_avatar": {
             "value": true
         },
+        "responsive_web_not_a_bot_signups_enabled": {
+            "value": false
+        },
         "responsive_web_oauth2_consent_flow_enabled": {
             "value": true
         },
@@ -2003,6 +2006,9 @@
         },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerifiedPlus"
+        },
+        "subscriptions_premium_tiers_encrypted_dms_gating_update_enabled": {
+            "value": false
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "value": false
@@ -3313,7 +3319,7 @@
             "type": "string"
         },
         "c9s_tweet_anatomy_moderator_badge_enabled": {
-            "defaultValue": false,
+            "defaultValue": true,
             "name": "c9s_tweet_anatomy_moderator_badge_enabled",
             "type": "boolean"
         },
@@ -6252,6 +6258,11 @@
             "name": "responsive_web_nft_avatar_help_link",
             "type": "string"
         },
+        "responsive_web_not_a_bot_signups_enabled": {
+            "defaultValue": false,
+            "name": "responsive_web_not_a_bot_signups_enabled",
+            "type": "boolean"
+        },
         "responsive_web_oauth2_consent_flow_enabled": {
             "defaultValue": true,
             "name": "responsive_web_oauth2_consent_flow_enabled",
@@ -6680,6 +6691,10 @@
         },
         "responsive_web_user_badge_education_redesign_enabled": {
             "name": "responsive_web_user_badge_education_redesign_enabled",
+            "type": "string"
+        },
+        "responsive_web_verified_organizations_advertising_enabled": {
+            "name": "responsive_web_verified_organizations_advertising_enabled",
             "type": "string"
         },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
@@ -7658,6 +7673,15 @@
         "subscriptions_premium_tiers_default_product": {
             "defaultValue": "BlueVerifiedPlus",
             "name": "subscriptions_premium_tiers_default_product",
+            "type": "string"
+        },
+        "subscriptions_premium_tiers_encrypted_dms_gating_update_enabled": {
+            "defaultValue": false,
+            "name": "subscriptions_premium_tiers_encrypted_dms_gating_update_enabled",
+            "type": "boolean"
+        },
+        "subscriptions_premium_tiers_gating_update_enabled": {
+            "name": "subscriptions_premium_tiers_gating_update_enabled",
             "type": "string"
         },
         "subscriptions_premium_tiers_ios_v3_redesign_enabled": {
@@ -9396,5 +9420,5 @@
             "type": "experiment"
         }
     },
-    "feature_set_token": "5151c9db2b63efc75288fe7fdba53c375fb08de7"
+    "feature_set_token": "b33194a28d13056cde16afea453f00a2be6a63bb"
 }
