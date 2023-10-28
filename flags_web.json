@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "36b16ed4d22c27abeeac9551cf601ae25b14d2f7",
+    "feature_set_token": "d0856be4b73bcac7cbe3fda55a9770fd539436d9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2009,7 +2009,7 @@
             "value": true
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_premium_tiers_switching_enabled": {
             "value": false
@@ -4201,6 +4201,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "explore_relaunch_broadcast_support_enabled": {
+            "name": "explore_relaunch_broadcast_support_enabled",
+            "type": "string"
+        },
         "focused_timeline_actions_onboarding_likes": {
             "name": "focused_timeline_actions_onboarding_likes",
             "type": "number",
@@ -5152,6 +5156,10 @@
             "name": "media_async_upload_longer_video_resolution_selector",
             "type": "boolean",
             "defaultValue": true
+        },
+        "media_async_upload_longer_dm_video_max_video_duration": {
+            "name": "media_async_upload_longer_dm_video_max_video_duration",
+            "type": "string"
         },
         "media_edge_to_edge_android_increased_list_margin": {
             "name": "media_edge_to_edge_android_increased_list_margin",
@@ -7720,7 +7728,7 @@
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_premium_tiers_switching_enabled": {
             "name": "subscriptions_premium_tiers_switching_enabled",
@@ -9410,6 +9418,10 @@
             "name": "xprofile_consumption_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xprofile_emojis_enabled": {
+            "name": "xprofile_emojis_enabled",
+            "type": "string"
         },
         "zazu_report_flow_13359": {
             "name": "zazu_report_flow_13359",
