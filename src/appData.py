@@ -5,7 +5,6 @@ from user_agent import generate_user_agent
 from pprint import pprint
 from urllib.parse import unquote
 from datetime import datetime
-import js2py
 from comman import WEB_LINK,M_WEB_LINK,TWT_SW_URL
 
 
@@ -225,16 +224,25 @@ class TwtWeb():
         return sha, version
 
     def featureSwitches(self):
+      fs = ""
       req = requests.get(self.FS_URL,headers=hdr)
       res = req.text   
       res = res.replace("!0","true").replace("!1","false")
-      fs = js2py.eval_js(res).to_dict()
+    #   fs = js2py.eval_js(res).to_dict()
       return fs
 
+
 def webfeatureSwitches(hash):
-      FS_URL = f"https://abs.twimg.com/responsive-web/client-web-legacy/feature-switch-manifest.{hash}.js"
+      FS_URL = f"https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.{hash}.js"
       req = requests.get(FS_URL,headers=hdr)
-      res = req.text   
+      res = req.text
+      res = res[res.find("{"):res.find("}}};")]
+
       res = res.replace("!0","true").replace("!1","false")
-      fs = js2py.eval_js(res).to_dict()
+      res = res.replace("},",'},"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
+      res = res.replace("feature_set_token:",'"feature_set_token":').replace(',config:',',"config":').replace(',"debug:',',"debug":').replace(',enumeration_values',',"enumeration_values"')
+      res = res.replace('"":','":')
+      res = res+"}}}"
+
+      fs = json.loads(res)
       return fs

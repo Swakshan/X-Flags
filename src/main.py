@@ -5,7 +5,7 @@ from pprint import pprint
 from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from comman import writeJson
 
-VER = "v7.2 : refactor web featureswitch"
+VER = "v7.23 : web featureswitch regex"
 
 
 vername = "web"
