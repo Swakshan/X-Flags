@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d0856be4b73bcac7cbe3fda55a9770fd539436d9",
+    "feature_set_token": "5724e05a34a3d05a84ada0c21e418c017df061ec",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2478,6 +2478,9 @@
             "value": false
         },
         "xprofile_editing_enabled": {
+            "value": false
+        },
+        "xprofile_emojis_enabled": {
             "value": false
         }
     },
@@ -9421,7 +9424,8 @@
         },
         "xprofile_emojis_enabled": {
             "name": "xprofile_emojis_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "zazu_report_flow_13359": {
             "name": "zazu_report_flow_13359",
