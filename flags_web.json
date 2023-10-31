@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5724e05a34a3d05a84ada0c21e418c017df061ec",
+    "feature_set_token": "800ce24e1b186fbc9699e4879e4eb81082746928",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2102,10 +2102,10 @@
             "value": true
         },
         "trusted_friends_dash_discovery_enabled": {
-            "value": true
+            "value": false
         },
         "trusted_friends_tweet_creation_enabled": {
-            "value": true
+            "value": false
         },
         "tweet_awards_web_coin_purchase_enabled": {
             "value": false
@@ -2247,6 +2247,20 @@
             ]
         },
         "tweet_limited_actions_config_community_tweet_non_member": {
+            "value": [
+                "embed",
+                "like",
+                "pin_to_profile",
+                "react",
+                "reply",
+                "reply_down_vote",
+                "retweet",
+                "share_tweet_via",
+                "vote_on_poll",
+                "highlight"
+            ]
+        },
+        "tweet_limited_actions_config_community_tweet_non_member_closed_community": {
             "value": [
                 "embed",
                 "like",
@@ -8260,7 +8274,7 @@
         "trusted_friends_dash_discovery_enabled": {
             "name": "trusted_friends_dash_discovery_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "trusted_friends_audience_control_exp_variant": {
             "name": "trusted_friends_audience_control_exp_variant",
@@ -8283,7 +8297,7 @@
         "trusted_friends_tweet_creation_enabled": {
             "name": "trusted_friends_tweet_creation_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "trusted_friends_api_enabled": {
             "name": "trusted_friends_api_enabled",
@@ -8495,6 +8509,22 @@
         },
         "tweet_limited_actions_config_community_tweet_non_member": {
             "name": "tweet_limited_actions_config_community_tweet_non_member",
+            "type": "object",
+            "defaultValue": [
+                "embed",
+                "like",
+                "pin_to_profile",
+                "react",
+                "reply",
+                "reply_down_vote",
+                "retweet",
+                "share_tweet_via",
+                "vote_on_poll",
+                "highlight"
+            ]
+        },
+        "tweet_limited_actions_config_community_tweet_non_member_closed_community": {
+            "name": "tweet_limited_actions_config_community_tweet_non_member_closed_community",
             "type": "object",
             "defaultValue": [
                 "embed",
