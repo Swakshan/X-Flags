@@ -1,6 +1,6 @@
 {
   "default" : {
-    "feature_set_token" : "ed35e9ed0bbeda730d7bf7387c8aa9ca78166336",
+    "feature_set_token" : "8400164f81584b133f7413a55a8f78999e657736",
     "config" : {
       "2fa_temporary_password_enabled" : {
         "value" : false
@@ -93,19 +93,19 @@
         "value" : false
       },
       "av_chat_dms_call_menu_enabled" : {
-        "value" : false
+        "value" : true
       },
       "av_chat_ios_pushkit_token_registration_enabled" : {
-        "value" : false
+        "value" : true
       },
       "av_chat_notification_routing_enabled" : {
-        "value" : false
+        "value" : true
       },
       "av_chat_user_settings_api_enabled" : {
         "value" : true
       },
       "av_chat_user_settings_ui_enabled" : {
-        "value" : false
+        "value" : true
       },
       "background_fetch_enabled" : {
         "value" : false
@@ -204,7 +204,7 @@
         "value" : false
       },
       "c9s_community_hashtags_enabled" : {
-        "value" : true
+        "value" : false
       },
       "c9s_community_question_box_enabled" : {
         "value" : true
@@ -1029,7 +1029,7 @@
         "value" : true
       },
       "creator_subscriptions_follow_button_tweet_detail_enabled" : {
-        "value" : false
+        "value" : true
       },
       "creator_subscriptions_subscribe_button_tweet_detail_enabled" : {
         "value" : true
@@ -1746,7 +1746,7 @@
         "value" : true
       },
       "hometimeline_pinned_tabs_settings_enabled" : {
-        "value" : false
+        "value" : true
       },
       "http_config_hostmap" : {
         "value" : [ ]
@@ -1833,6 +1833,9 @@
         "value" : 2.0
       },
       "immersive_video_status_linkable_timestamps" : {
+        "value" : true
+      },
+      "immersive_video_vertical_ads_cta" : {
         "value" : false
       },
       "in_app_purchase_enabled" : {
@@ -2661,7 +2664,7 @@
         "value" : true
       },
       "legacy_client_event_denylist_ios" : {
-        "value" : [ "::::become_inactive", "::::navigate", ":::app_backgrounded:cache_purge", ":::memory_warning:cache_purge", "::image_attachment::impression", "::image_attachment::navigate", "app:::portrait:time_in_orientation", "gallery::gallery:photo:dismiss", "gallery::gallery:photo:impression", "gallery::gallery:photo:navigate", "gallery::gallery:photo:swipe_down", "home::::hydration_failed", "home::::navigate", "home:::tab:tap_scroll_to_top", "home::foreground::hoist_timeline_nonvisible_content", "home::launch::hoist_timeline_nonvisible_content", "home::non_visible:tweet:hoist", "home::stream::minimum_spacing_ad_removal_drop_info", "home:home:::navigate", "profile::::navigate", "profile:::search_icon:impression", "profile:tweets:::impression", "profile:tweets:::navigate", "search:search:search_box:typeahead:impression", "tweet::::navigate", "tweet:::autotag:disabled", "tweet::suggest_unknown::navigate", "tweet:inline_reply:::impression", "tweet:inline_reply:::navigate", "tweet:inline_reply::close:click" ]
+        "value" : [ "::::become_inactive", "::::navigate", ":::app_backgrounded:cache_purge", ":::memory_warning:cache_purge", "::image_attachment::impression", "::image_attachment::navigate", "app:::portrait:time_in_orientation", "gallery::gallery:photo:dismiss", "gallery::gallery:photo:impression", "gallery::gallery:photo:navigate", "gallery::gallery:photo:swipe_down", "home::::hydration_failed", "home::::navigate", "home::foreground::hoist_timeline_nonvisible_content", "home::launch::hoist_timeline_nonvisible_content", "home::non_visible:tweet:hoist", "home::stream::minimum_spacing_ad_removal_drop_info", "home:home:::navigate", "profile::::navigate", "profile:::search_icon:impression", "profile:tweets:::impression", "profile:tweets:::navigate", "search:search:search_box:typeahead:impression", "tweet::::navigate", "tweet:::autotag:disabled", "tweet::suggest_unknown::navigate", "tweet:inline_reply:::impression", "tweet:inline_reply:::navigate", "tweet:inline_reply::close:click" ]
       },
       "legacy_global_configuration_non_username_paths" : {
         "value" : [ "about", "account", "accounts", "activity", "announcements", "anywhere", "api_rules", "api_terms", "apirules", "apps", "auth", "badges", "blog", "buttons", "contacts", "devices", "direct_messages", "download", "downloads", "edit_announcements", "explore", "faq", "favorites", "find_sources", "find_users", "followers", "following", "friend_request", "friendrequest", "friends", "goodies", "help", "home", "i", "im_account", "inbox", "invitations", "invite", "jobs", "list", "login", "logo", "logout", "me", "mentions", "messages", "mockview", "newtwitter", "notifications", "nudge", "oauth", "phoenix_search", "positions", "privacy", "public_timeline", "related_tweets", "replies", "retweeted_of_mine", "retweets", "retweets_by_others", "rules", "safety", "saved_searches", "search", "sent", "sessions", "settings", "share", "signup", "signin", "similar_to", "statistics", "terms", "tos", "translate", "trends", "tweetbutton", "twttr", "update_discoverability", "users", "welcome", "who_to_follow", "widgets", "zendesk_auth", "media_signup" ]
@@ -3064,9 +3067,6 @@
       },
       "onboarding_bonus_follow_profile_navigation_enabled" : {
         "value" : true
-      },
-      "onboarding_connect_tab_dash_enabled" : {
-        "value" : false
       },
       "onboarding_connect_tab_urt_graphql_enabled" : {
         "value" : true
@@ -3555,7 +3555,7 @@
         "value" : true
       },
       "subscriptions_account_analytics_enabled" : {
-        "value" : false
+        "value" : true
       },
       "subscriptions_annual_subscription_signup_enabled" : {
         "value" : true
@@ -3672,10 +3672,10 @@
         "value" : "BlueVerifiedPlus"
       },
       "subscriptions_premium_tiers_encrypted_dms_gating_update_enabled" : {
-        "value" : false
+        "value" : true
       },
       "subscriptions_premium_tiers_gating_update_enabled" : {
-        "value" : false
+        "value" : true
       },
       "subscriptions_premium_tiers_marketing_page_enabled" : {
         "value" : false
@@ -4638,7 +4638,7 @@
   "requires_restart" : [ ],
   "supports_accessibility" : [ ],
   "versions" : {
-    "feature_switches" : "dbd66393154b83ef6496614da1ea57c92c2318a5",
-    "experiments" : "dbd66393154b83ef6496614da1ea57c92c2318a5"
+    "feature_switches" : "25d1b2b055b94616ab34f06105ae511be93cdc85",
+    "experiments" : "25d1b2b055b94616ab34f06105ae511be93cdc85"
   }
 }
