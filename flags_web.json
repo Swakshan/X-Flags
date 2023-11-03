@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "deb2e2a24d556b8f9ccda26d20a74c501956a3bb",
+    "feature_set_token": "b67834f7b105620c9957951b653e5e0d1e3fc5e7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -340,6 +340,9 @@
             "value": false
         },
         "c9s_community_hashtags_carousel_enabled": {
+            "value": false
+        },
+        "c9s_community_hashtags_enabled": {
             "value": false
         },
         "c9s_community_question_box_enabled": {
@@ -3047,7 +3050,8 @@
         },
         "c9s_community_hashtags_enabled": {
             "name": "c9s_community_hashtags_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "c9s_community_hashtags_carousel_enabled": {
             "name": "c9s_community_hashtags_carousel_enabled",
@@ -3393,10 +3397,6 @@
             "name": "c9s_nav_list_activity_details_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "c9s_community_detail_sorting_enabled": {
-            "name": "c9s_community_detail_sorting_enabled",
-            "type": "string"
         },
         "card_detail_compact_enabled": {
             "name": "card_detail_compact_enabled",
