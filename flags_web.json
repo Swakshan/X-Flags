@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b67834f7b105620c9957951b653e5e0d1e3fc5e7",
+    "feature_set_token": "85a394329f2a020f1dd5c7d599b3849e1588b735",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1116,6 +1116,9 @@
         "responsive_web_carousel_v2_media_detail_enabled": {
             "value": false
         },
+        "responsive_web_chat_enabled": {
+            "value": false
+        },
         "responsive_web_collection_ads_enabled": {
             "value": true
         },
@@ -1680,11 +1683,6 @@
         "responsive_web_video_trimmer_enabled": {
             "value": false
         },
-        "responsive_web_zipkin_api_requests_paths_allowlist": {
-            "value": [
-                "/2/timeline/home.json"
-            ]
-        },
         "rito_safety_mode_blocked_profile_enabled": {
             "value": true
         },
@@ -1708,6 +1706,9 @@
         },
         "rweb_home_bookmark_in_action_bar_enabled": {
             "value": true
+        },
+        "rweb_home_compact_inline_composer_enabled": {
+            "value": false
         },
         "rweb_home_compact_timeline_enabled": {
             "value": false
@@ -3397,6 +3398,10 @@
             "name": "c9s_nav_list_activity_details_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "c9s_community_list_setting_enabled": {
+            "name": "c9s_community_list_setting_enabled",
+            "type": "string"
         },
         "card_detail_compact_enabled": {
             "name": "card_detail_compact_enabled",
@@ -5975,6 +5980,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_chat_enabled": {
+            "name": "responsive_web_chat_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_client_backoff_10535": {
             "name": "responsive_web_client_backoff_10535",
             "type": "experiment",
@@ -6939,17 +6949,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_zipkin_api_requests_enabled": {
-            "name": "responsive_web_zipkin_api_requests_enabled",
-            "type": "string"
-        },
-        "responsive_web_zipkin_api_requests_paths_allowlist": {
-            "name": "responsive_web_zipkin_api_requests_paths_allowlist",
-            "type": "object",
-            "defaultValue": [
-                "/2/timeline/home.json"
-            ]
-        },
         "rito_safety_mode_blocked_profile_enabled": {
             "name": "rito_safety_mode_blocked_profile_enabled",
             "type": "boolean",
@@ -7034,6 +7033,19 @@
             "name": "rweb_home_refetch_on_refocus_min_delay_seconds",
             "type": "number",
             "defaultValue": 60
+        },
+        "rweb_home_compact_inline_composer_enabled": {
+            "name": "rweb_home_compact_inline_composer_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_home_compact_inline_composer_16614": {
+            "name": "rweb_home_compact_inline_composer_16614",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "holdback"
+            ]
         },
         "rweb_home_mixer_enable_social_context_filter_social_contexts": {
             "name": "rweb_home_mixer_enable_social_context_filter_social_contexts",
@@ -7423,10 +7435,7 @@
         "single_sign_on_rweb_12529": {
             "name": "single_sign_on_rweb_12529",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "smbo_legacy_pac_is_in_follow_position_test": {
             "name": "smbo_legacy_pac_is_in_follow_position_test",
