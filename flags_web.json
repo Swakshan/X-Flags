@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "43b2d957b94e5db14880d1f6fe9b6bb86432cb93",
+    "feature_set_token": "616a7325d8f31b0a970f210d89697ec7529f1783",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -337,13 +337,13 @@
             "value": true
         },
         "c9s_community_composer_hashtag_suggestions_enabled": {
-            "value": false
+            "value": true
         },
         "c9s_community_hashtags_carousel_enabled": {
-            "value": false
+            "value": true
         },
         "c9s_community_hashtags_enabled": {
-            "value": false
+            "value": true
         },
         "c9s_community_list_setting_enabled": {
             "value": false
@@ -2270,13 +2270,11 @@
         "tweet_limited_actions_config_community_tweet_non_member_closed_community": {
             "value": [
                 "embed",
-                "like",
                 "pin_to_profile",
                 "react",
                 "reply",
                 "reply_down_vote",
                 "retweet",
-                "share_tweet_via",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -2289,7 +2287,6 @@
                 "reply",
                 "reply_down_vote",
                 "retweet",
-                "share_tweet_via",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -3056,17 +3053,17 @@
         "c9s_community_hashtags_enabled": {
             "name": "c9s_community_hashtags_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "c9s_community_hashtags_carousel_enabled": {
             "name": "c9s_community_hashtags_carousel_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "c9s_community_composer_hashtag_suggestions_enabled": {
             "name": "c9s_community_composer_hashtag_suggestions_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "c9s_community_question_box_enabled": {
             "name": "c9s_community_question_box_enabled",
@@ -8702,13 +8699,11 @@
             "type": "object",
             "defaultValue": [
                 "embed",
-                "like",
                 "pin_to_profile",
                 "react",
                 "reply",
                 "reply_down_vote",
                 "retweet",
-                "share_tweet_via",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -8723,7 +8718,6 @@
                 "reply",
                 "reply_down_vote",
                 "retweet",
-                "share_tweet_via",
                 "vote_on_poll",
                 "highlight"
             ]
