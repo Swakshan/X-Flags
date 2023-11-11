@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bba23e5c24b4115ddc0bae729a87da4a2d401547",
+    "feature_set_token": "b71bfac0d4b50fd2734bbe80a4da9d3b5221317d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -630,6 +630,9 @@
         "gryphon_hide_quick_promote": {
             "value": false
         },
+        "gryphon_live_timelines_enabled": {
+            "value": false
+        },
         "gryphon_motion": {
             "value": false
         },
@@ -1138,7 +1141,7 @@
             "value": false
         },
         "responsive_web_composer_autosave_initial_ms": {
-            "value": 20000.0
+            "value": 5000.0
         },
         "responsive_web_composer_configurable_video_player_enabled": {
             "value": false
@@ -4542,6 +4545,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "gryphon_live_timelines_enabled": {
+            "name": "gryphon_live_timelines_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "gryphon_motion": {
             "name": "gryphon_motion",
             "type": "boolean",
@@ -5655,6 +5663,18 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "recruiting_admin_federated_job_reads": {
+            "name": "recruiting_admin_federated_job_reads",
+            "type": "string"
+        },
+        "recruiting_util_federated_job": {
+            "name": "recruiting_util_federated_job",
+            "type": "string"
+        },
+        "recruiting_async_federated_job": {
+            "name": "recruiting_async_federated_job",
+            "type": "string"
+        },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
             "type": "boolean",
@@ -6015,7 +6035,7 @@
         "responsive_web_composer_autosave_initial_ms": {
             "name": "responsive_web_composer_autosave_initial_ms",
             "type": "number",
-            "defaultValue": 20000.0
+            "defaultValue": 5000.0
         },
         "responsive_web_composer_autosave_debounce_ms": {
             "name": "responsive_web_composer_autosave_debounce_ms",
