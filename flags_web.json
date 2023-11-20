@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "572e1022f3e42e3d2fe2fecdd286af7b72852d60",
+    "feature_set_token": "969486c449235bbe7c789347f642eed4ea29ec33",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -943,7 +943,7 @@
             "value": ""
         },
         "recruiting_global_jobs_search_enabled": {
-            "value": false
+            "value": true
         },
         "recruiting_job_page_consumption_enabled": {
             "value": true
@@ -1123,7 +1123,7 @@
             "value": false
         },
         "responsive_web_chat_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_collection_ads_enabled": {
             "value": true
@@ -1626,12 +1626,6 @@
         "responsive_web_twitter_article_tweet_consumption_enabled": {
             "value": false
         },
-        "responsive_web_twitter_article_tweet_own_notes_enabled": {
-            "value": false
-        },
-        "responsive_web_twitter_article_v2_apis_enabled": {
-            "value": false
-        },
         "responsive_web_twitter_article_view_enabled": {
             "value": true
         },
@@ -2003,6 +1997,9 @@
         "subscriptions_feature_labs_1004": {
             "value": true
         },
+        "subscriptions_inapp_grok": {
+            "value": false
+        },
         "subscriptions_long_video_rweb_new_copy_enabled": {
             "value": true
         },
@@ -2011,6 +2008,9 @@
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
+        },
+        "subscriptions_marketing_page_upsell_enabled": {
+            "value": false
         },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerifiedPlus"
@@ -2022,7 +2022,7 @@
             "value": true
         },
         "subscriptions_premium_tiers_switching_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_sign_up_enabled": {
             "value": false
@@ -5652,7 +5652,7 @@
         "recruiting_global_jobs_search_enabled": {
             "name": "recruiting_global_jobs_search_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "recruiting_admin_federated_job_writes": {
             "name": "recruiting_admin_federated_job_writes",
@@ -6009,7 +6009,7 @@
         "responsive_web_chat_enabled": {
             "name": "responsive_web_chat_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_client_backoff_10535": {
             "name": "responsive_web_client_backoff_10535",
@@ -6782,8 +6782,7 @@
         },
         "responsive_web_twitter_article_tweet_own_notes_enabled": {
             "name": "responsive_web_twitter_article_tweet_own_notes_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_twitter_article_compose_enabled": {
             "name": "responsive_web_twitter_article_compose_enabled",
@@ -6823,8 +6822,7 @@
         },
         "responsive_web_twitter_article_v2_apis_enabled": {
             "name": "responsive_web_twitter_article_v2_apis_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_twitter_article_seed_tweet_enabled": {
             "name": "responsive_web_twitter_article_seed_tweet_enabled",
@@ -7082,6 +7080,14 @@
             "name": "rweb_master_detail_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_master_detail_16636": {
+            "name": "rweb_master_detail_16636",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "experiment"
+            ]
         },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
@@ -7868,6 +7874,11 @@
             "name": "subscriptions_feature_send_dm_to_support_via_settings",
             "type": "string"
         },
+        "subscriptions_inapp_grok": {
+            "name": "subscriptions_inapp_grok",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
             "type": "boolean",
@@ -7933,6 +7944,11 @@
             "name": "subscriptions_marketing_page_simplified_features_enabled",
             "type": "string"
         },
+        "subscriptions_marketing_page_upsell_enabled": {
+            "name": "subscriptions_marketing_page_upsell_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_marketing_page_product_background_basic": {
             "name": "subscriptions_marketing_page_product_background_basic",
             "type": "string"
@@ -7953,7 +7969,7 @@
         "subscriptions_premium_tiers_switching_enabled": {
             "name": "subscriptions_premium_tiers_switching_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_premium_tiers_default_product": {
             "name": "subscriptions_premium_tiers_default_product",
