@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "969486c449235bbe7c789347f642eed4ea29ec33",
+    "feature_set_token": "2b95c435c60da61cdba43489d3fef6cd5c0ee328",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1123,7 +1123,7 @@
             "value": false
         },
         "responsive_web_chat_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_collection_ads_enabled": {
             "value": true
@@ -1654,7 +1654,7 @@
             "value": true
         },
         "responsive_web_verified_organizations_advertising_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
             "value": 3000.0
@@ -6009,7 +6009,7 @@
         "responsive_web_chat_enabled": {
             "name": "responsive_web_chat_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_client_backoff_10535": {
             "name": "responsive_web_client_backoff_10535",
@@ -6951,7 +6951,7 @@
         "responsive_web_verified_organizations_advertising_enabled": {
             "name": "responsive_web_verified_organizations_advertising_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
@@ -7878,6 +7878,10 @@
             "name": "subscriptions_inapp_grok",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_inapp_grok_backend_override": {
+            "name": "subscriptions_inapp_grok_backend_override",
+            "type": "string"
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
