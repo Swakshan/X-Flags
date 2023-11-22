@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2b95c435c60da61cdba43489d3fef6cd5c0ee328",
+    "feature_set_token": "abc25d8253fbf0bbb2217c627e8d951e63c752bc",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1621,7 +1621,7 @@
             "value": false
         },
         "responsive_web_twitter_article_title_limit": {
-            "value": 200
+            "value": 100
         },
         "responsive_web_twitter_article_tweet_consumption_enabled": {
             "value": false
@@ -1999,6 +1999,12 @@
         },
         "subscriptions_inapp_grok": {
             "value": false
+        },
+        "subscriptions_inapp_grok_video_upsell": {
+            "value": ""
+        },
+        "subscriptions_inapp_grok_video_upsell_light": {
+            "value": ""
         },
         "subscriptions_long_video_rweb_new_copy_enabled": {
             "value": true
@@ -6847,7 +6853,7 @@
         "responsive_web_twitter_article_title_limit": {
             "name": "responsive_web_twitter_article_title_limit",
             "type": "number",
-            "defaultValue": 200
+            "defaultValue": 100
         },
         "responsive_web_twitter_article_content_debounce_ms": {
             "name": "responsive_web_twitter_article_content_debounce_ms",
@@ -7882,6 +7888,16 @@
         "subscriptions_inapp_grok_backend_override": {
             "name": "subscriptions_inapp_grok_backend_override",
             "type": "string"
+        },
+        "subscriptions_inapp_grok_video_upsell": {
+            "name": "subscriptions_inapp_grok_video_upsell",
+            "type": "string",
+            "defaultValue": ""
+        },
+        "subscriptions_inapp_grok_video_upsell_light": {
+            "name": "subscriptions_inapp_grok_video_upsell_light",
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
