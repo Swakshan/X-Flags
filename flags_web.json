@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "abc25d8253fbf0bbb2217c627e8d951e63c752bc",
+    "feature_set_token": "289a7c09071371fb1ee3c41d473843133783dfe7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2003,6 +2003,9 @@
         "subscriptions_inapp_grok_video_upsell": {
             "value": ""
         },
+        "subscriptions_inapp_grok_video_upsell_dim": {
+            "value": ""
+        },
         "subscriptions_inapp_grok_video_upsell_light": {
             "value": ""
         },
@@ -2818,10 +2821,7 @@
         "ad_indicator_placement_16481": {
             "name": "ad_indicator_placement_16481",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "ads_spacing_client_fallback_minimum_spacing": {
             "name": "ads_spacing_client_fallback_minimum_spacing",
@@ -7896,6 +7896,11 @@
         },
         "subscriptions_inapp_grok_video_upsell_light": {
             "name": "subscriptions_inapp_grok_video_upsell_light",
+            "type": "string",
+            "defaultValue": ""
+        },
+        "subscriptions_inapp_grok_video_upsell_dim": {
+            "name": "subscriptions_inapp_grok_video_upsell_dim",
             "type": "string",
             "defaultValue": ""
         },
