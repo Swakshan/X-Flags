@@ -1,6 +1,6 @@
 {
   "default" : {
-    "feature_set_token" : "e117f22ab89910637c2cb468ca1ef7f120bb250c",
+    "feature_set_token" : "a389fa5d57513872ebd2912aeed0dee144c0a698",
     "config" : {
       "2fa_temporary_password_enabled" : {
         "value" : false
@@ -25,6 +25,12 @@
       },
       "account_teams_ui_enabled" : {
         "value" : false
+      },
+      "ad_cycle_cache_url" : {
+        "value" : "https:\/\/twitter.com\/i\/grok"
+      },
+      "ad_cycle_cache_value" : {
+        "value" : 0.0
       },
       "ad_formats_always_display_promoted_tweet_status_view_in_multi_status_slideshow" : {
         "value" : true
@@ -1541,9 +1547,6 @@
       "home_timeline_app_launch_performance_prefetch_top_cursor_quality_of_service" : {
         "value" : 0.0
       },
-      "home_timeline_bottom_backoff_max_interval_ms" : {
-        "value" : 300000.0
-      },
       "home_timeline_bottom_cursor_tweet_distance_trigger" : {
         "value" : 10.0
       },
@@ -1577,9 +1580,6 @@
       "home_timeline_foreground_request_check_enabled" : {
         "value" : false
       },
-      "home_timeline_improved_navigation_enabled" : {
-        "value" : false
-      },
       "home_timeline_like_reactivity_enabled" : {
         "value" : true
       },
@@ -1604,9 +1604,6 @@
       "home_timeline_navigation_clear_cache_min_entries" : {
         "value" : 10.0
       },
-      "home_timeline_navigation_include_seen_ids_minutes_since_impression" : {
-        "value" : -1.0
-      },
       "home_timeline_navigation_inline_replies_popover_sheet_enabled" : {
         "value" : false
       },
@@ -1614,7 +1611,7 @@
         "value" : 0.0
       },
       "home_timeline_navigation_scroll_indicator_enabled" : {
-        "value" : false
+        "value" : true
       },
       "home_timeline_navigation_tap_home_icon_to_refresh_enabled" : {
         "value" : false
@@ -1688,9 +1685,6 @@
       "home_timeline_start_at_top_exclude_poor_network_enabled" : {
         "value" : false
       },
-      "home_timeline_start_at_top_explicit_loader_enabled" : {
-        "value" : false
-      },
       "home_timeline_start_at_top_failure_threshold" : {
         "value" : 0.0
       },
@@ -1721,12 +1715,6 @@
       "home_timeline_start_at_top_timeout_length" : {
         "value" : 1.0
       },
-      "home_timeline_start_at_top_uprank_unseen_tweets_enabled" : {
-        "value" : false
-      },
-      "home_timeline_start_at_top_uprank_unseen_tweets_list_count_needed" : {
-        "value" : 0.0
-      },
       "home_timeline_sticky_new_tweets_pill_all_enabled" : {
         "value" : true
       },
@@ -1735,24 +1723,6 @@
       },
       "home_timeline_sticky_new_tweets_pill_manual_refresh_duration" : {
         "value" : 120.0
-      },
-      "home_timeline_uprank_unseen_tweets_delay_ms" : {
-        "value" : 500.0
-      },
-      "home_timeline_uprank_unseen_tweets_enabled" : {
-        "value" : false
-      },
-      "home_timeline_uprank_unseen_tweets_max_age_minutes" : {
-        "value" : 525600.0
-      },
-      "home_timeline_uprank_unseen_tweets_max_count" : {
-        "value" : 10.0
-      },
-      "home_timeline_uprank_unseen_tweets_max_count_ptr" : {
-        "value" : 10.0
-      },
-      "home_timeline_uprank_unseen_tweets_ptr_enabled" : {
-        "value" : false
       },
       "home_timeline_warm_start_min_background_minutes" : {
         "value" : 15.0
@@ -1863,7 +1833,7 @@
         "value" : true
       },
       "immersive_video_vertical_ads_cta" : {
-        "value" : false
+        "value" : true
       },
       "in_app_purchase_enabled" : {
         "value" : true
@@ -3554,6 +3524,12 @@
       "spaces_user_fetcher_precaching_limit" : {
         "value" : 30.0
       },
+      "spaces_video_consumption_enabled" : {
+        "value" : false
+      },
+      "spaces_video_creation_enabled" : {
+        "value" : false
+      },
       "ssp_ads_dsp_client_context_enabled" : {
         "value" : false
       },
@@ -4671,7 +4647,7 @@
   "requires_restart" : [ ],
   "supports_accessibility" : [ ],
   "versions" : {
-    "feature_switches" : "5269a8c9457e93df4dcfbed82fe4c579d7fd80da",
-    "experiments" : "5269a8c9457e93df4dcfbed82fe4c579d7fd80da"
+    "feature_switches" : "3ac1bcaaf6535facf6a9d785d12e604aa47fceea",
+    "experiments" : "3ac1bcaaf6535facf6a9d785d12e604aa47fceea"
   }
 }
