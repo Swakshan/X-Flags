@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "289a7c09071371fb1ee3c41d473843133783dfe7",
+    "feature_set_token": "67d5a4d3938451f05c9091c85a664ec2ce75a950",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -398,6 +398,9 @@
         },
         "c9s_timelines_default_selection": {
             "value": "latest"
+        },
+        "c9s_timelines_media_tab_enabled": {
+            "value": false
         },
         "c9s_timelines_top_latest_stickiness_enabled": {
             "value": false
@@ -2000,6 +2003,9 @@
         "subscriptions_inapp_grok": {
             "value": false
         },
+        "subscriptions_inapp_grok_default_mode": {
+            "value": "fun"
+        },
         "subscriptions_inapp_grok_video_upsell": {
             "value": ""
         },
@@ -3413,6 +3419,11 @@
             "name": "c9s_community_list_setting_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "c9s_timelines_media_tab_enabled": {
+            "name": "c9s_timelines_media_tab_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "card_detail_compact_enabled": {
             "name": "card_detail_compact_enabled",
@@ -7880,6 +7891,10 @@
             "name": "subscriptions_feature_send_dm_to_support_via_settings",
             "type": "string"
         },
+        "subscriptions_feature_premium_jobs": {
+            "name": "subscriptions_feature_premium_jobs",
+            "type": "string"
+        },
         "subscriptions_inapp_grok": {
             "name": "subscriptions_inapp_grok",
             "type": "boolean",
@@ -7906,7 +7921,8 @@
         },
         "subscriptions_inapp_grok_default_mode": {
             "name": "subscriptions_inapp_grok_default_mode",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "fun"
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
