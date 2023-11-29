@@ -1,5 +1,5 @@
-from comman import old_file_name,new_file_name,CHANNEL_ID,DEBUG,new_file_ipad_name,old_file_ipad_name
-from comman import readJson,strpattern
+from common import old_file_name,new_file_name,CHANNEL_ID,DEBUG,new_file_ipad_name,old_file_ipad_name
+from common import readJson,strpattern,get_exception
 from tele import sendMsg,editMsg
 import sys,os
 
@@ -52,23 +52,33 @@ def changes():
                 upd_features_configs.append(feat)
             old_features_configs.pop(feat)
 
-        
-        debug_features_config = []
+        new_debug_features_configs = []
+        removed_debug_features_configs = list(old_features_configs_debug.keys())
         if len(new_features_configs_debug):
             for feat in new_features_configs_debug:
-                if feat in old_features_configs_debug:
+                if feat in old_features_configs_debug: #if new feat is present in old exp
+                    removed_debug_features_configs.remove(feat)
                     continue
-                if feat in upd_features_configs or feat in new_features_configs_2:
+                if feat in upd_features_configs or feat in new_features_configs_2: #if feat is already present in add or up list
+                    # print(
+                    if feat in removed_debug_features_configs:
+                        removed_debug_features_configs.remove(feat)
                     continue
-                debug_features_config.append(feat)
 
+                new_debug_features_configs.append(feat)
 
-
-        return {"added": new_features_configs_2,
-                "debug": debug_features_config,
-                "updated": upd_features_configs,
-                "removed": old_features_configs
-                }  
+        return {
+                "flags":{
+                    "added": new_features_configs_2,
+                    "updated": upd_features_configs,
+                    "removed": old_features_configs
+                        },
+                "debug_flags":{
+                    "added":new_debug_features_configs,
+                    "removed":removed_debug_features_configs
+                    }
+                } 
+    
     try:
         flag_data_2 = False
         flag_data = flagChanges(old_file_name,new_file_name)
@@ -93,9 +103,9 @@ def changes():
                     sendMsg(chat_id=ch_id,text=strmsg)
             except Exception as e:
                 sendMsg(chat_id=ch_id,text=strmsg)
-                print(str(e))
+                print(get_exception())
     except Exception as e:
-        print(str(e))
+        print(get_exception())
         return False
 
 changes()

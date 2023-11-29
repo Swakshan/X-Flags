@@ -1,13 +1,16 @@
 import os,json
 from enum import Enum
-# from dotenv import load_dotenv
-# load_dotenv()
-
+from sys import exc_info
+from traceback import format_exception
 
 def getEnv(key):
     return os.environ.get(key)
 
 DEBUG  =  0
+
+if DEBUG:
+    from dotenv import load_dotenv
+    load_dotenv()
 
 APP_NAME = "Twitter"
 PKG_NAME = 'com.twitter.android'
@@ -48,10 +51,13 @@ class Releases(Enum):
     STABLE = "stable"
     WEB = "web"
 
+def get_exception():
+    etype, value, tb = exc_info()
+    info, error = format_exception(etype, value, tb)[-2:]
+    return f'Exception in: {info}: {error}'
 
 def printJson(data):
-    if type(data)==dict and type(data)==list:
-        print(json.dumps(data,indent=4))
+    print(json.dumps(data,indent=4))
 
 def writeJson(fileName,data):
     f = open(fileName, 'w')
@@ -74,27 +80,30 @@ def printLine():
     return "*--------------*"
 
 def commitLinkFormat(flag_data):
-    def countFormat(count):
+    def countFormat(count,ns="Flags"):
         if not count:
             return False
         
-        f = "Flags" if count>1 else "Flag"
+        f = ns if count>1 else ns[:-1]
         return f"{count} {f}"
     
     msg = ""
-    for func in flag_data:
-        flags = flag_data[func]
-        lf = len(flags)
-        if func in ['added','debug'] and lf<NEW_FLAG_LIMIT:
-            continue
-        fStr = countFormat(lf)
-        if fStr:
-            msg = f"{msg} and {fStr} {func.title()}"
+    for key in flag_data:
+        flag_det = flag_data[key]
+        ns = key.title().replace("_"," ")
+        for func in flag_det:
+            flags = flag_det[func]
+            lf = len(flags)
+            if func == "added" and lf<NEW_FLAG_LIMIT:
+                continue
+            fStr = countFormat(lf,ns)
+            if fStr:
+                msg = f"{msg} and {fStr} {func.title()}"
     
     msg = msg[5:] if len(msg) else "Repo Link"
     return msg
 
-def strpattern(flag_data,flag_data_2):
+def strpattern(flag_details,flag_details_2):
     manifest_file = readJson(manifest_file_name)
     vername = manifest_file['version_name']
     vercode = manifest_file['vercode']
@@ -103,6 +112,7 @@ def strpattern(flag_data,flag_data_2):
     platform = manifest_file['os']
     
     nf = "";df=""
+    flag_data = flag_details['flags']
     new_flags = dict(list(flag_data['added'].items())[:NEW_FLAG_LIMIT])
     for f in new_flags:
         value = new_flags[f]
@@ -110,12 +120,13 @@ def strpattern(flag_data,flag_data_2):
         nf = f'• `{f}` :{ty}\n{nf}'
     nfC = len(new_flags)
 
-    debug_flags = flag_data['debug'][:NEW_FLAG_LIMIT]
+    debug_flag_data =flag_details['debug_flags']
+    debug_flags = debug_flag_data['added'][:NEW_FLAG_LIMIT]
     for f in debug_flags:
         df = f'• `{f}`\n{df}'
     dfC = len(debug_flags)
 
-    commit_link_str = commitLinkFormat(flag_data)
+    commit_link_str = commitLinkFormat(flag_details)
     commit_link_str_2 = False
     pin_link = f"https://t.me/c/{CHANNEL_ID}/{PIN_MSG}"
     platformRow = f"_Platform_: `{platform.title()}`"
@@ -141,8 +152,8 @@ def strpattern(flag_data,flag_data_2):
     elif platform.lower() == Platform.IOS.value:
         platformRow = f"_Platform_: `{platform.upper()}`"
         linkRow = f"[App Store]({APP_STORE_LINK})\n"
-        if flag_data_2:
-            commit_link_str_2 = commitLinkFormat(flag_data_2)
+        if flag_details_2:
+            commit_link_str_2 = commitLinkFormat(flag_details_2)
 
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
     l = printLine()

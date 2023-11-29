@@ -1,6 +1,6 @@
 import requests,json
 import os,sys
-from comman import BOT_TOKEN
+from common import BOT_TOKEN,get_exception
 
 
 def printJson(data):
@@ -27,7 +27,7 @@ def sendMsg(chat_id,text="",tag="untitled"):
         print(printData)
         return rd
     except Exception as e:
-        print(str(e))
+        print(get_exception())
         return False
 
 def editMsg(chat_id,msgId,txt="Edited"):
@@ -46,5 +46,5 @@ def editMsg(chat_id,msgId,txt="Edited"):
             new_msg_id = False
         return new_msg_id
     except Exception as e:
-        print(str(e))
+        print(get_exception())
         return False

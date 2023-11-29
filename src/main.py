@@ -2,10 +2,10 @@ import requests,json,os,shutil,sys,zipfile
 from appData import ApkCombo, Aptiode,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
-from comman import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
-from comman import writeJson
+from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
+from common import writeJson,get_exception
 
-VER = "v7.23 : web featureswitch regex"
+VER = "v7.5 : debug flags logic refactor,fix exception handling"
 
 
 vername = "web"
@@ -45,7 +45,7 @@ def unzipper(platform):
                 os.rename(EXTRACT_FOLDER +src, new_name)
                 return True
             except Exception as e:
-                print(str(e))
+                print(get_exception())
                 return False
 
         feature_file = False
@@ -83,7 +83,7 @@ def unzipper(platform):
             return rd1 and rd2
         return False
     except Exception as e:
-        print(str(e))
+        print(get_exception())
 
     return False
 
@@ -113,7 +113,7 @@ def downTwt(typ):
             prinData = "type not Found"
         print(prinData)
     except Exception as e:
-        print(str(e))
+        print(get_exception())
     return False
 
 
@@ -137,7 +137,7 @@ def downTwt2(typ):
             prinData = "type not Found"
         print(prinData)
     except Exception as e:
-        print(str(e))
+        print(get_exception())
     return False
 
 
@@ -215,7 +215,7 @@ def main():
 
         return True
     except Exception as e:
-        print(str(e))
+        print(get_exception())
 
     return False
 
