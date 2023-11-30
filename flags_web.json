@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "18b0d485d4ed4ab6cd5c0e308af0abf8ee32a794",
+    "feature_set_token": "7e3968c0c4e152a187104c9e44c0236034eb178e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1149,12 +1149,6 @@
         "responsive_web_composer_configurable_video_player_enabled": {
             "value": false
         },
-        "responsive_web_continue_as_always_enabled": {
-            "value": false
-        },
-        "responsive_web_continue_as_param_enabled": {
-            "value": true
-        },
         "responsive_web_convert_card_video_to_gif_enabled": {
             "value": false
         },
@@ -1934,9 +1928,6 @@
         "standardized_nudges_misinfo": {
             "value": true
         },
-        "stateful_login_intent_enabled": {
-            "value": true
-        },
         "subscriptions_blue_premium_labeling_enabled": {
             "value": true
         },
@@ -2005,6 +1996,9 @@
         },
         "subscriptions_inapp_grok_default_mode": {
             "value": "fun"
+        },
+        "subscriptions_inapp_grok_upsell_enabled": {
+            "value": false
         },
         "subscriptions_inapp_grok_video_upsell": {
             "value": ""
@@ -6068,16 +6062,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_continue_as_param_enabled": {
-            "name": "responsive_web_continue_as_param_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "responsive_web_continue_as_always_enabled": {
-            "name": "responsive_web_continue_as_always_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "responsive_web_convert_card_video_to_gif_enabled": {
             "name": "responsive_web_convert_card_video_to_gif_enabled",
             "type": "boolean",
@@ -7613,23 +7597,6 @@
             "name": "standardized_nudges_toxicity",
             "type": "string"
         },
-        "stateful_login_enabled": {
-            "name": "stateful_login_enabled",
-            "type": "string"
-        },
-        "stateful_login_intent_enabled": {
-            "name": "stateful_login_intent_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "stateful_login_ocf_background_enabled": {
-            "name": "stateful_login_ocf_background_enabled",
-            "type": "string"
-        },
-        "stateful_login_smart_lock_enabled": {
-            "name": "stateful_login_smart_lock_enabled",
-            "type": "string"
-        },
         "subscriptions_charge_interval_consumption": {
             "name": "subscriptions_charge_interval_consumption",
             "type": "string"
@@ -7918,6 +7885,15 @@
             "name": "subscriptions_inapp_grok_video_upsell_dim",
             "type": "string",
             "defaultValue": ""
+        },
+        "subscriptions_inapp_grok_nux_enabled": {
+            "name": "subscriptions_inapp_grok_nux_enabled",
+            "type": "string"
+        },
+        "subscriptions_inapp_grok_upsell_enabled": {
+            "name": "subscriptions_inapp_grok_upsell_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_inapp_grok_default_mode": {
             "name": "subscriptions_inapp_grok_default_mode",
