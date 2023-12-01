@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7b6aed0b1cfe94636a159a99614a2f5c8e566444",
+    "feature_set_token": "ca68af3a70345419c20bc848aa7eae78819f0409",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1996,6 +1996,9 @@
         },
         "subscriptions_inapp_grok_default_mode": {
             "value": "fun"
+        },
+        "subscriptions_inapp_grok_nux_enabled": {
+            "value": false
         },
         "subscriptions_inapp_grok_upsell_enabled": {
             "value": false
@@ -7895,7 +7898,8 @@
         },
         "subscriptions_inapp_grok_nux_enabled": {
             "name": "subscriptions_inapp_grok_nux_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_inapp_grok_upsell_enabled": {
             "name": "subscriptions_inapp_grok_upsell_enabled",
