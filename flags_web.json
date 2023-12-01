@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7e3968c0c4e152a187104c9e44c0236034eb178e",
+    "feature_set_token": "7b6aed0b1cfe94636a159a99614a2f5c8e566444",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -5484,6 +5484,16 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "one_directional_scroll_16618": {
+            "name": "one_directional_scroll_16618",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "t1",
+                "t1_4_ads_space",
+                "t1_5_ads_space"
+            ]
+        },
         "papago_translation_from_korean_entity_protected_14527": {
             "name": "papago_translation_from_korean_entity_protected_14527",
             "type": "experiment",
@@ -7113,10 +7123,7 @@
         "rweb_panning_nav_16489": {
             "name": "rweb_panning_nav_16489",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "holdback"
-            ]
+            "enumeration_values": []
         },
         "rweb_quick_promote_boost_enabled": {
             "name": "rweb_quick_promote_boost_enabled",
@@ -9590,10 +9597,7 @@
         "web_immersive_viewer_autoplay_16490": {
             "name": "web_immersive_viewer_autoplay_16490",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "holdback"
-            ]
+            "enumeration_values": []
         },
         "web_repeat_profile_visit_notifications_15195": {
             "name": "web_repeat_profile_visit_notifications_15195",
