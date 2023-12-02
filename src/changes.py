@@ -52,8 +52,8 @@ def changes():
                 upd_features_configs.append(feat)
             old_features_configs.pop(feat)
 
-        new_debug_features_configs = []
-        removed_debug_features_configs = list(old_features_configs_debug.keys())
+        new_debug_features_configs = [];
+        removed_debug_features_configs = old_features_configs_debug if type(old_features_configs_debug) == list else list(old_features_configs_debug.keys())
         if len(new_features_configs_debug):
             for feat in new_features_configs_debug:
                 if feat in old_features_configs_debug: #if new feat is present in old exp
@@ -108,4 +108,5 @@ def changes():
         print(get_exception())
         return False
 
-changes()
+if not DEBUG:
+    changes()
