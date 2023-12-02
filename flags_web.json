@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ca68af3a70345419c20bc848aa7eae78819f0409",
+    "feature_set_token": "aac2991e104b03f98770625a2e72f0b4635ec9e9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -960,6 +960,9 @@
         "recruiting_jobs_list_share_enabled": {
             "value": true
         },
+        "recruiting_premium_jobs_enabled": {
+            "value": false
+        },
         "recruiting_verified_orgs_admin_enabled": {
             "value": false
         },
@@ -1650,9 +1653,6 @@
         "responsive_web_user_badge_education_get_verified_button_enabled": {
             "value": true
         },
-        "responsive_web_verified_organizations_advertising_enabled": {
-            "value": true
-        },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
             "value": 3000.0
         },
@@ -1989,6 +1989,9 @@
             "value": true
         },
         "subscriptions_feature_labs_1004": {
+            "value": true
+        },
+        "subscriptions_feature_premium_jobs": {
             "value": true
         },
         "subscriptions_inapp_grok": {
@@ -5701,7 +5704,8 @@
         },
         "recruiting_premium_jobs_enabled": {
             "name": "recruiting_premium_jobs_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
@@ -6964,8 +6968,7 @@
         },
         "responsive_web_verified_organizations_advertising_enabled": {
             "name": "responsive_web_verified_organizations_advertising_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
@@ -7870,7 +7873,8 @@
         },
         "subscriptions_feature_premium_jobs": {
             "name": "subscriptions_feature_premium_jobs",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "subscriptions_inapp_grok": {
             "name": "subscriptions_inapp_grok",
