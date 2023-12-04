@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "aac2991e104b03f98770625a2e72f0b4635ec9e9",
+    "feature_set_token": "f1a3504b6e522236ddeb1f7cacac625eb8a1ffb5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1575,6 +1575,9 @@
         "responsive_web_trends_setting_new_endpoints": {
             "value": true
         },
+        "responsive_web_trends_ui_top_articles": {
+            "value": false
+        },
         "responsive_web_tweet_analytics_m2_enabled": {
             "value": false
         },
@@ -1999,6 +2002,9 @@
         },
         "subscriptions_inapp_grok_default_mode": {
             "value": "fun"
+        },
+        "subscriptions_inapp_grok_enable_roast_me_prompt": {
+            "value": true
         },
         "subscriptions_inapp_grok_nux_enabled": {
             "value": false
@@ -5496,8 +5502,7 @@
             "enumeration_values": [
                 "control",
                 "t1",
-                "t1_4_ads_space",
-                "t1_5_ads_space"
+                "t1_4_ads_space"
             ]
         },
         "papago_translation_from_korean_entity_protected_14527": {
@@ -6763,6 +6768,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_trends_ui_top_articles": {
+            "name": "responsive_web_trends_ui_top_articles",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_tweet_analytics_m2_enabled": {
             "name": "responsive_web_tweet_analytics_m2_enabled",
             "type": "boolean",
@@ -7914,6 +7924,11 @@
             "name": "subscriptions_inapp_grok_default_mode",
             "type": "string",
             "defaultValue": "fun"
+        },
+        "subscriptions_inapp_grok_enable_roast_me_prompt": {
+            "name": "subscriptions_inapp_grok_enable_roast_me_prompt",
+            "type": "boolean",
+            "defaultValue": true
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
