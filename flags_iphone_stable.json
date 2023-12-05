@@ -1,6 +1,6 @@
 {
   "default" : {
-    "feature_set_token" : "a389fa5d57513872ebd2912aeed0dee144c0a698",
+    "feature_set_token" : "9d62909e2a9d351093cdee155e2b2b3c6b10f525",
     "config" : {
       "2fa_temporary_password_enabled" : {
         "value" : false
@@ -28,9 +28,6 @@
       },
       "ad_cycle_cache_url" : {
         "value" : "https:\/\/twitter.com\/i\/grok"
-      },
-      "ad_cycle_cache_value" : {
-        "value" : 0.0
       },
       "ad_formats_always_display_promoted_tweet_status_view_in_multi_status_slideshow" : {
         "value" : true
@@ -115,6 +112,9 @@
       },
       "av_chat_ios_pushkit_token_registration_enabled" : {
         "value" : true
+      },
+      "av_chat_ios_pushkit_unregistration_setting_enabled" : {
+        "value" : false
       },
       "av_chat_notification_routing_enabled" : {
         "value" : true
@@ -339,12 +339,6 @@
         "value" : true
       },
       "c9s_timelines_reload_on_session_start_enabled" : {
-        "value" : false
-      },
-      "c9s_timelines_top_latest_enabled" : {
-        "value" : true
-      },
-      "c9s_timelines_top_latest_stickiness_enabled" : {
         "value" : false
       },
       "c9s_tweet_anatomy_conversation_enabled" : {
@@ -851,8 +845,8 @@
       "commerce_initiative_shopping_home_enabled" : {
         "value" : false
       },
-      "communities_community_detail_sorting_enabled" : {
-        "value" : true
+      "communities_show_broadcast_option_in_composer" : {
+        "value" : false
       },
       "composer_canvas_editor_enabled" : {
         "value" : false
@@ -1574,6 +1568,9 @@
       "home_timeline_feedback_immediate_dismiss_treatment" : {
         "value" : "home_ranked_excluding_ads"
       },
+      "home_timeline_fetch_newer_on_navigate_min_minutes" : {
+        "value" : -1.0
+      },
       "home_timeline_first_position_ad_prevention_enabled" : {
         "value" : false
       },
@@ -1632,6 +1629,12 @@
         "value" : false
       },
       "home_timeline_pull_to_refresh_animation_foreground_enabled" : {
+        "value" : false
+      },
+      "home_timeline_pull_to_refresh_animation_latest_enabled" : {
+        "value" : false
+      },
+      "home_timeline_pull_to_refresh_animation_navigate_enabled" : {
         "value" : false
       },
       "home_timeline_retry_load_bottom_backoff_growth_factor_seconds" : {
@@ -1725,13 +1728,10 @@
         "value" : 120.0
       },
       "home_timeline_warm_start_min_background_minutes" : {
-        "value" : 15.0
+        "value" : -1.0
       },
       "home_timelines_debug_rapid_reload_logging_enabled" : {
         "value" : false
-      },
-      "hometimeline_pinned_tabs_communities_enabled" : {
-        "value" : true
       },
       "hometimeline_pinned_tabs_community_banner_enabled" : {
         "value" : false
@@ -2353,6 +2353,9 @@
       },
       "ios_tav_hls_url_additional_query_parameter_value" : {
         "value" : "2"
+      },
+      "ios_tav_is_delta_hls_manifest_enabled" : {
+        "value" : false
       },
       "ios_tav_is_video_quality_selection_enabled" : {
         "value" : false
@@ -3659,6 +3662,15 @@
       "subscriptions_gating_bypass" : {
         "value" : true
       },
+      "subscriptions_inapp_grok" : {
+        "value" : false
+      },
+      "subscriptions_inapp_grok_default_mode" : {
+        "value" : "fun"
+      },
+      "subscriptions_inapp_grok_upsell_enabled" : {
+        "value" : false
+      },
       "subscriptions_infrastructure_migration_enabled" : {
         "value" : false
       },
@@ -4647,7 +4659,7 @@
   "requires_restart" : [ ],
   "supports_accessibility" : [ ],
   "versions" : {
-    "feature_switches" : "3ac1bcaaf6535facf6a9d785d12e604aa47fceea",
-    "experiments" : "3ac1bcaaf6535facf6a9d785d12e604aa47fceea"
+    "feature_switches" : "9fcff8e91098f7563ead0a2b2a87a1550c104cbc",
+    "experiments" : "9fcff8e91098f7563ead0a2b2a87a1550c104cbc"
   }
 }
