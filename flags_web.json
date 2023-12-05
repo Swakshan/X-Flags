@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ef672a7c18c96b53448df7407b596c801af319cb",
+    "feature_set_token": "b58c62a9f7e366e4457d71757d0b8cb823f80522",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -410,6 +410,9 @@
         },
         "card_detail_compact_enabled": {
             "value": true
+        },
+        "communities_show_broadcast_option_in_composer": {
+            "value": false
         },
         "conversation_controls_limited_replies_consumption_configuration": {
             "value": "no_reply"
@@ -1997,6 +2000,12 @@
         "subscriptions_feature_labs_1004": {
             "value": true
         },
+        "subscriptions_feature_organization_affiliates": {
+            "value": true
+        },
+        "subscriptions_feature_organization_x_hiring": {
+            "value": true
+        },
         "subscriptions_feature_premium_jobs": {
             "value": true
         },
@@ -3446,6 +3455,19 @@
                 "control",
                 "production"
             ]
+        },
+        "communities_community_detail_sorting_enabled": {
+            "name": "communities_community_detail_sorting_enabled",
+            "type": "string"
+        },
+        "communities_show_broadcast_option_in_composer": {
+            "name": "communities_show_broadcast_option_in_composer",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "communities_sticky_broadcast_option_in_composer": {
+            "name": "communities_sticky_broadcast_option_in_composer",
+            "type": "string"
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -7891,6 +7913,16 @@
         },
         "subscriptions_feature_premium_jobs": {
             "name": "subscriptions_feature_premium_jobs",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "subscriptions_feature_organization_affiliates": {
+            "name": "subscriptions_feature_organization_affiliates",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "subscriptions_feature_organization_x_hiring": {
+            "name": "subscriptions_feature_organization_x_hiring",
             "type": "boolean",
             "defaultValue": true
         },
