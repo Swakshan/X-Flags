@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8821002201648f36943949386e667335a78b2515",
+    "feature_set_token": "2086a8e836659fcecedd1620c1dc55bf4caff528",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -791,6 +791,9 @@
         },
         "longform_ad_free_articles_badging_enabled": {
             "value": false
+        },
+        "longform_notetweets_composer_upsell_enabled": {
+            "value": true
         },
         "longform_notetweets_composition_without_claims_enabled": {
             "value": false
@@ -1909,6 +1912,9 @@
         },
         "spaces_2022_h2_spaces_communities": {
             "value": true
+        },
+        "spaces_incognito_consumption_default": {
+            "value": false
         },
         "spaces_incognito_consumption_enabled": {
             "value": false
@@ -5241,7 +5247,8 @@
         },
         "longform_notetweets_composer_upsell_enabled": {
             "name": "longform_notetweets_composer_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "longform_reader_mode_view_in_reader_mode_entry_button_enabled": {
             "name": "longform_reader_mode_view_in_reader_mode_entry_button_enabled",
@@ -7568,7 +7575,8 @@
         },
         "spaces_incognito_consumption_default": {
             "name": "spaces_incognito_consumption_default",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "spaces_search_holdback_12894": {
             "name": "spaces_search_holdback_12894",
@@ -7695,6 +7703,10 @@
         },
         "subscriptions_account_analytics_enabled": {
             "name": "subscriptions_account_analytics_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_plus_upsell_enabled": {
+            "name": "subscriptions_premium_plus_upsell_enabled",
             "type": "string"
         },
         "subscriptions_blue_premium_labeling_enabled": {
