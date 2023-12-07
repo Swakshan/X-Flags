@@ -136,13 +136,18 @@ def strpattern(flag_details,flag_details_2):
         ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
         apkc_link = f'https://apkcombo.com/search/{PKG_NAME}/download/phone-{vername}-apk'
         apkf_link = f'https://apkflash.com/apk/app/{PKG_NAME}/twitter/download/{vername}'
-
+        apkp_link = f'https://d.apkpure.com/b/APK/{PKG_NAME}?versionCode={vercode}'
         apkm_vername = vername.replace('.','-')
         apkm_link = f'https://www.apkmirror.com/apk/x-corp/x/twitter-{apkm_vername}-release/'
 
         linkRow = f'[Play Store]({ps_link}) | [APKMirror]({apkm_link})\n[APKCombo]({apkc_link}) | [APKFlash]({apkf_link})\n'
+        if "release" in vername:
+            linkRow = f'{linkRow}[APKPure]({apkp_link})'
         if down_link:
-            linkRow = f'[Aptoide]({down_link})\n{linkRow}*\\[⚠️APK from Aptoide is known for crashes⚠️\\]*\n'
+            linkRow = f'{linkRow} | [Aptoide]({down_link})\n*\\[⚠️APK from Aptoide is known for crashes⚠️\\]*\n'
+        else:
+            linkRow = linkRow+'\n' #add new line at end
+
                 
     elif platform.lower() == Platform.WEB.value:
         vername = vername.title()

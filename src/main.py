@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,get_exception
 
-VER = "v7.55 : debug flags logic refactor,fix exception handling : Debug flag err, debug check"
+VER = "v7.56 : debug flags logic refactor,fix exception handling : Debug flag err, debug check : added APKPure"
 
 
 vername = "web"
