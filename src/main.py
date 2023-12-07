@@ -3,9 +3,9 @@ from appData import ApkCombo, Aptiode,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
-from common import writeJson,get_exception
+from common import writeJson,readJson,get_exception
 
-VER = "v7.56 : debug flags logic refactor,fix exception handling : Debug flag err, debug check : added APKPure"
+VER = "v7.6 : format flags"
 
 
 vername = "web"
@@ -34,7 +34,8 @@ def unzipper(platform):
         def extract(src,new_name):
             try:
                 zip_obj.extract(src,path=EXTRACT_FOLDER)
-                os.rename(EXTRACT_FOLDER +src, new_name)
+                fg = readJson(EXTRACT_FOLDER +src)
+                writeJson(new_name,fg)
                 return True
             except Exception as e:
                 print(get_exception())
@@ -51,8 +52,7 @@ def unzipper(platform):
 
             if apk_name in file_list:
                 zip_obj.extract(apk_name, path=EXTRACT_FOLDER)
-                zip_obj = zipfile.ZipFile(
-                    EXTRACT_FOLDER+apk_name, 'r')
+                zip_obj = zipfile.ZipFile(EXTRACT_FOLDER+apk_name, 'r')
                 feature_file = True
 
             elif FLAG_FILE in file_list:
