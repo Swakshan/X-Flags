@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "279b9168e3620b4df37a19ce40d39e6a874c9b99",
+    "feature_set_token": "7dddc63015144432a5571933502bdf9c95db72f6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -394,7 +394,7 @@
             "value": false
         },
         "c9s_tab_visibility": {
-            "value": "members_only"
+            "value": "always"
         },
         "c9s_timelines_default_selection": {
             "value": "latest"
@@ -3302,7 +3302,7 @@
         "c9s_tab_visibility": {
             "name": "c9s_tab_visibility",
             "type": "string",
-            "defaultValue": "members_only"
+            "defaultValue": "always"
         },
         "c9s_timelines_default_selection": {
             "name": "c9s_timelines_default_selection",
@@ -3460,6 +3460,10 @@
             "name": "communities_sticky_broadcast_option_in_composer",
             "type": "string"
         },
+        "communities_community_detail_media_tab_enabled": {
+            "name": "communities_community_detail_media_tab_enabled",
+            "type": "string"
+        },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
             "type": "experiment",
@@ -3471,10 +3475,7 @@
         "community_notes_read_sources_nudge_16495": {
             "name": "community_notes_read_sources_nudge_16495",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "soft_click_sources_nudge"
-            ]
+            "enumeration_values": []
         },
         "community_top_tab_sticky_16556": {
             "name": "community_top_tab_sticky_16556",
@@ -5504,15 +5505,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "one_directional_scroll_16618": {
-            "name": "one_directional_scroll_16618",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "t1",
-                "t1_4_ads_space"
-            ]
-        },
         "papago_translation_from_korean_entity_protected_14527": {
             "name": "papago_translation_from_korean_entity_protected_14527",
             "type": "experiment",
@@ -5719,6 +5711,10 @@
             "name": "recruiting_premium_jobs_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "recruiting_federate_everything_else": {
+            "name": "recruiting_federate_everything_else",
+            "type": "string"
         },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
