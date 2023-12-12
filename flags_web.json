@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "09fd0c1e54f617bc334a2ce19aafbff4f21f3366",
+    "feature_set_token": "c13d7af2e8b18db42cdc8d2fa2e7d99320a39569",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1305,14 +1305,8 @@
         "responsive_web_hevc_upload_preview_enabled": {
             "value": false
         },
-        "responsive_web_home_pinned_timelines_enabled": {
-            "value": true
-        },
         "responsive_web_home_pinned_timelines_prefetch_enabled": {
             "value": false
-        },
-        "responsive_web_home_pinned_timelines_settings_enabled": {
-            "value": true
         },
         "responsive_web_impression_tracker_refactor_enabled": {
             "value": true
@@ -1615,6 +1609,9 @@
             "value": true
         },
         "responsive_web_twitter_blue_subscriptions_disabled": {
+            "value": false
+        },
+        "responsive_web_twitter_blue_upsell_posts": {
             "value": false
         },
         "responsive_web_twitter_blue_upsell_right_column": {
@@ -6293,13 +6290,11 @@
         },
         "responsive_web_home_pinned_timelines_enabled": {
             "name": "responsive_web_home_pinned_timelines_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_home_pinned_timelines_settings_enabled": {
             "name": "responsive_web_home_pinned_timelines_settings_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_home_pinned_timelines_prefetch_enabled": {
             "name": "responsive_web_home_pinned_timelines_prefetch_enabled",
@@ -6851,7 +6846,8 @@
         },
         "responsive_web_twitter_blue_upsell_posts": {
             "name": "responsive_web_twitter_blue_upsell_posts",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_twitter_blue_verified_badge_is_enabled": {
             "name": "responsive_web_twitter_blue_verified_badge_is_enabled",
@@ -9612,10 +9608,7 @@
         "web_immersive_remove_nav_buttons_16507": {
             "name": "web_immersive_remove_nav_buttons_16507",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "without_nav_buttons"
-            ]
+            "enumeration_values": []
         },
         "web_immersive_viewer_autoplay_16490": {
             "name": "web_immersive_viewer_autoplay_16490",
