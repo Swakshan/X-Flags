@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a0eef1574e7531da473bacdad1650b039e3b2993",
+    "feature_set_token": "37fe3c6df3891ea3fd2b27b211ffb89b150db7e3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1648,6 +1648,9 @@
             "value": false
         },
         "responsive_web_verified_organizations_paid_to_invoice_enabled": {
+            "value": false
+        },
+        "responsive_web_verified_organizations_skip_welcome_screen": {
             "value": false
         },
         "responsive_web_verified_organizations_tiers_enabled": {
@@ -6946,7 +6949,8 @@
         },
         "responsive_web_verified_organizations_skip_welcome_screen": {
             "name": "responsive_web_verified_organizations_skip_welcome_screen",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
