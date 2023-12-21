@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "37fe3c6df3891ea3fd2b27b211ffb89b150db7e3",
+    "feature_set_token": "a90413a28217c6263fec68ea844068f1cbbe5839",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1705,6 +1705,9 @@
             "value": true
         },
         "rweb_master_detail_enabled": {
+            "value": false
+        },
+        "rweb_no_scroll_sidenav": {
             "value": false
         },
         "rweb_panning_nav_behavior": {
@@ -7092,6 +7095,11 @@
                 "experiment"
             ]
         },
+        "rweb_no_scroll_sidenav": {
+            "name": "rweb_no_scroll_sidenav",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
             "type": "experiment",
@@ -9616,6 +9624,10 @@
         },
         "voice_rooms_topics_tagging_consumption_enabled": {
             "name": "voice_rooms_topics_tagging_consumption_enabled",
+            "type": "string"
+        },
+        "voice_rooms_incognito_joining_enabled": {
+            "name": "voice_rooms_incognito_joining_enabled",
             "type": "string"
         },
         "web_device_follow_without_follow_15235": {
