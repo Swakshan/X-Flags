@@ -31,6 +31,7 @@ jobs:
       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
       PIN_MSG: ${{ secrets.PIN_MSG }}
+      DEBUG: ${{ secrets.DEBUG }}
 
     steps:
     - name: Checkout code
@@ -44,7 +45,7 @@ jobs:
 
     - name: Download & Extract
       run: |
-        python src/main.py ${{ github.event.inputs.vername_input }} ${{ github.event.inputs.source_input }} ${{ github.event.inputs.vercode_input }} ${{ github.event.inputs.downLink_input }}
+        python src/main.py ${{ github.event.inputs.vername_input }} ${{ github.event.inputs.source_input }} ${{ github.event.inputs.vercode_input }} ${{ github.event.inputs.downLink_input }} ${{ env.DEBUG }}
               
 
     - name: Add extracted file to Git
@@ -72,4 +73,4 @@ jobs:
   
     - name: Changes to Telegram
       run: |   
-        python src/changes.py ${{ github.event.inputs.msg_id_input }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }}
+        python src/changes.py ${{ github.event.inputs.msg_id_input }} ${{ env.GIT_COMMIT_SHA }} ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.PIN_MSG }} ${{ env.DEBUG }}

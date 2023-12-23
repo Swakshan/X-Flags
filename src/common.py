@@ -2,15 +2,12 @@ import os,json
 from enum import Enum
 from sys import exc_info
 from traceback import format_exception
+from dotenv import load_dotenv
+load_dotenv()
 
 def getEnv(key):
     return os.environ.get(key)
-
-DEBUG  =  0
-
-if DEBUG:
-    from dotenv import load_dotenv
-    load_dotenv()
+  
 
 APP_NAME = "Twitter"
 PKG_NAME = 'com.twitter.android'
@@ -29,6 +26,7 @@ NEW_FLAG_LIMIT = 25
 
 USERNAME = "Swakshan"
 REPO_NAME = "X-Flags"
+DEBUG  =  int(getEnv("DEBUG"))
 SHA = getEnv('GIT_COMMIT_SHA')
 CHANNEL_ID =  getEnv('CHANNEL_ID')
 PIN_MSG =  getEnv('PIN_MSG')
@@ -111,6 +109,18 @@ def strpattern(flag_details,flag_details_2):
     hash_value = manifest_file['hash']
     platform = manifest_file['os']
     
+    global linkRow,linkCount
+    linkRow = "";linkCount=0
+    def linkRowFormer(name,link):
+        global linkRow,linkCount
+        tempLink = f'[{name}]({link})'
+        linkRow+=tempLink
+        if linkCount%2==0:
+            linkRow+=" | "
+        else:
+            linkRow+="\n"
+        linkCount+=1
+
     nf = "";df=""
     flag_data = flag_details['flags']
     new_flags = dict(list(flag_data['added'].items())[:NEW_FLAG_LIMIT])
@@ -140,13 +150,18 @@ def strpattern(flag_details,flag_details_2):
         apkm_vername = vername.replace('.','-')
         apkm_link = f'https://www.apkmirror.com/apk/x-corp/x/twitter-{apkm_vername}-release/'
 
-        linkRow = f'[Play Store]({ps_link}) | [APKMirror]({apkm_link})\n[APKCombo]({apkc_link}) | [APKFlash]({apkf_link})\n'
+        linkRowFormer("Play Store",ps_link)
+        linkRowFormer("APKMirror",apkm_link)
+        linkRowFormer("APKCombo",apkc_link)
+        linkRowFormer("APKFlash",apkf_link)
+        # linkRow = f'[Play Store]({ps_link}) | [APKMirror]({apkm_link})\n[APKCombo]({apkc_link}) | [APKFlash]({apkf_link})\n'
         if "release" in vername:
-            linkRow = f'{linkRow}[APKPure]({apkp_link})'
+            linkRowFormer("APKPure",apkp_link)
         if down_link:
-            linkRow = f'{linkRow} | [Aptoide]({down_link})\n*\\[⚠️APK from Aptoide is known for crashes⚠️\\]*\n'
-        else:
-            linkRow = linkRow+'\n' #add new line at end
+            linkRowFormer("Aptoide",down_link)
+            linkRow = f'{linkRow}\n*\\[⚠️APK from Aptoide is known for crashes⚠️\\]*\n'
+        
+        linkRow = linkRow+"\n" if linkRow[-2]=="|" else linkRow
 
                 
     elif platform.lower() == Platform.WEB.value:
