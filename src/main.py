@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception
 
-VER = "v7.7 : format links & added debug env"
+VER = "v7.72 : format links & added debug env : Upd download links"
 
 
 vername = "web"
