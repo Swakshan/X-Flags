@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "05e35fb46630ca4841f058b697b8b67a58ace893",
+    "feature_set_token": "03117684d5b5da5f3d4b917e70284b3e47bba116",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1290,6 +1290,9 @@
         "responsive_web_grok_prompt_deeplink_enabled": {
             "value": false
         },
+        "responsive_web_grok_share_enabled": {
+            "value": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "value": false
         },
@@ -1703,9 +1706,6 @@
         },
         "rweb_master_detail_enabled": {
             "value": false
-        },
-        "rweb_no_scroll_sidenav": {
-            "value": true
         },
         "rweb_panning_nav_behavior": {
             "value": true
@@ -6278,6 +6278,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_share_enabled": {
+            "name": "responsive_web_grok_share_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -7083,19 +7088,6 @@
             "name": "rweb_master_detail_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "rweb_master_detail_16636": {
-            "name": "rweb_master_detail_16636",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "experiment"
-            ]
-        },
-        "rweb_no_scroll_sidenav": {
-            "name": "rweb_no_scroll_sidenav",
-            "type": "boolean",
-            "defaultValue": true
         },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
