@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "38f54941e0ae3d330e1f41a18f6a2d5f5722c811",
+    "feature_set_token": "576f3efc1917d870739a1fc66b7bf7525b66c0cd",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1293,6 +1293,9 @@
         "responsive_web_grok_share_enabled": {
             "value": false
         },
+        "responsive_web_grok_trends_design_enabled": {
+            "value": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "value": false
         },
@@ -1641,6 +1644,9 @@
         "responsive_web_verified_organizations_free_to_invoice_enabled": {
             "value": false
         },
+        "responsive_web_verified_organizations_full_access_annual_enabled": {
+            "value": false
+        },
         "responsive_web_verified_organizations_invoice_enabled": {
             "value": false
         },
@@ -1649,9 +1655,6 @@
         },
         "responsive_web_verified_organizations_paid_to_invoice_enabled": {
             "value": false
-        },
-        "responsive_web_verified_organizations_skip_welcome_screen": {
-            "value": true
         },
         "responsive_web_video_pcomplete_enabled": {
             "value": true
@@ -6277,6 +6280,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_trends_design_enabled": {
+            "name": "responsive_web_grok_trends_design_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -6906,7 +6914,8 @@
         },
         "responsive_web_verified_organizations_full_access_annual_enabled": {
             "name": "responsive_web_verified_organizations_full_access_annual_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_verified_organizations_m2_enabled": {
             "name": "responsive_web_verified_organizations_m2_enabled",
@@ -6951,8 +6960,7 @@
         },
         "responsive_web_verified_organizations_skip_welcome_screen": {
             "name": "responsive_web_verified_organizations_skip_welcome_screen",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
