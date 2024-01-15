@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e8d7fd16f2e5907ebf16cf83d6ad01f510a6ad5e",
+    "feature_set_token": "d3c60348b93cea2acb3372717d9e47a647f6a5fd",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -951,6 +951,9 @@
         "recruiting_job_page_consumption_enabled": {
             "value": true
         },
+        "recruiting_job_recommendations_enabled": {
+            "value": false
+        },
         "recruiting_jobs_list_consumption_enabled": {
             "value": true
         },
@@ -1569,9 +1572,6 @@
         "responsive_web_tweet_analytics_video_metrics_v2_enabled": {
             "value": true
         },
-        "responsive_web_tweetdeck_menu_item_enabled": {
-            "value": true
-        },
         "responsive_web_twitter_article_block_limit": {
             "value": 10000.0
         },
@@ -1705,6 +1705,9 @@
             "value": true
         },
         "rweb_master_detail_enabled": {
+            "value": false
+        },
+        "rweb_mixed_media_uploads_enabled": {
             "value": false
         },
         "rweb_panning_nav_behavior": {
@@ -4429,6 +4432,10 @@
             "name": "explore_relaunch_broadcast_support_enabled",
             "type": "string"
         },
+        "explore_relaunch_broadcast_support_for_certain_videos_enabled": {
+            "name": "explore_relaunch_broadcast_support_for_certain_videos_enabled",
+            "type": "string"
+        },
         "focused_timeline_actions_onboarding_likes": {
             "name": "focused_timeline_actions_onboarding_likes",
             "type": "number",
@@ -5715,6 +5722,15 @@
             "name": "recruiting_federate_everything_else",
             "type": "string"
         },
+        "recruiting_job_recommendations_enabled": {
+            "name": "recruiting_job_recommendations_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "recruiting_pin_job_enabled": {
+            "name": "recruiting_pin_job_enabled",
+            "type": "string"
+        },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
             "type": "boolean",
@@ -6761,11 +6777,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "responsive_web_tweetdeck_menu_item_enabled": {
-            "name": "responsive_web_tweetdeck_menu_item_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "responsive_web_twitter_article_character_limit": {
             "name": "responsive_web_twitter_article_character_limit",
             "type": "number",
@@ -6912,10 +6923,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "responsive_web_verified_organizations_tiers_enabled": {
-            "name": "responsive_web_verified_organizations_tiers_enabled",
-            "type": "string"
-        },
         "responsive_web_verified_organizations_full_access_annual_enabled": {
             "name": "responsive_web_verified_organizations_full_access_annual_enabled",
             "type": "boolean",
@@ -6960,10 +6967,6 @@
         },
         "responsive_web_verified_organizations_advertising_enabled": {
             "name": "responsive_web_verified_organizations_advertising_enabled",
-            "type": "string"
-        },
-        "responsive_web_verified_organizations_skip_welcome_screen": {
-            "name": "responsive_web_verified_organizations_skip_welcome_screen",
             "type": "string"
         },
         "responsive_web_video_pcomplete_enabled": {
@@ -7095,6 +7098,11 @@
         },
         "rweb_master_detail_enabled": {
             "name": "rweb_master_detail_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_mixed_media_uploads_enabled": {
+            "name": "rweb_mixed_media_uploads_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -7960,6 +7968,10 @@
         },
         "subscriptions_inapp_grok_analyze": {
             "name": "subscriptions_inapp_grok_analyze",
+            "type": "string"
+        },
+        "subscriptions_inapp_grok_version": {
+            "name": "subscriptions_inapp_grok_version",
             "type": "string"
         },
         "subscriptions_marketing_page_include_tax_enabled": {
