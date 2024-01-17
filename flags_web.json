@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d3c60348b93cea2acb3372717d9e47a647f6a5fd",
+    "feature_set_token": "81ac2075624658f99f2d3d363589b6f012bf9c5a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -962,6 +962,9 @@
         },
         "recruiting_jobs_list_share_enabled": {
             "value": true
+        },
+        "recruiting_pin_job_enabled": {
+            "value": false
         },
         "recruiting_premium_jobs_enabled": {
             "value": false
@@ -5729,7 +5732,8 @@
         },
         "recruiting_pin_job_enabled": {
             "name": "recruiting_pin_job_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
@@ -6969,6 +6973,10 @@
             "name": "responsive_web_verified_organizations_advertising_enabled",
             "type": "string"
         },
+        "responsive_web_verified_organizations_multiple_ad_coupons_enabled": {
+            "name": "responsive_web_verified_organizations_multiple_ad_coupons_enabled",
+            "type": "string"
+        },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
             "type": "boolean",
@@ -7748,6 +7756,10 @@
         },
         "subscriptions_in_app_manage_subscriptions": {
             "name": "subscriptions_in_app_manage_subscriptions",
+            "type": "string"
+        },
+        "subscriptions_advanced_search_enabled": {
+            "name": "subscriptions_advanced_search_enabled",
             "type": "string"
         },
         "subscriptions_blue_premium_labeling_enabled": {
@@ -9640,6 +9652,10 @@
         },
         "voice_rooms_incognito_joining_enabled": {
             "name": "voice_rooms_incognito_joining_enabled",
+            "type": "string"
+        },
+        "voice_rooms_web_space_creation": {
+            "name": "voice_rooms_web_space_creation",
             "type": "string"
         },
         "web_device_follow_without_follow_15235": {
