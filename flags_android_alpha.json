@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "efa0afb45f669ce9057223be52261ed9ef1dabad",
+        "feature_set_token": "7b31d65d5355603829e703d846c67814c7dabd0a",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -292,9 +292,6 @@
                 "value": true
             },
             "ad_formats_instream_redesign_android_enabled": {
-                "value": true
-            },
-            "ad_formats_instream_redesign_full_screen_android_enabled": {
                 "value": true
             },
             "ad_formats_legacy_iac_standard_click_listener_enabled": {
@@ -778,9 +775,6 @@
                 "value": false
             },
             "android_enable_inline_reply_in_push_notifications": {
-                "value": true
-            },
-            "android_enable_messaging_style_push_notifications": {
                 "value": true
             },
             "android_enable_o_edit_text_optimization": {
@@ -1353,9 +1347,6 @@
             "android_tweet_detail_activity_tweet_view_holder_pool_enabled": {
                 "value": false
             },
-            "android_tweet_detail_refactor_enabled": {
-                "value": true
-            },
             "android_tweet_detail_text_mute_enabled": {
                 "value": false
             },
@@ -1412,9 +1403,6 @@
             },
             "android_unified_image_variants_capped_scale": {
                 "value": 2.0
-            },
-            "android_urt_geo_enabled": {
-                "value": true
             },
             "android_urt_request_home_timeline_debug_sanitization_enabled": {
                 "value": true
@@ -2313,13 +2301,13 @@
                 "value": false
             },
             "communities_community_detail_sorting_enabled": {
-                "value": false
+                "value": true
             },
             "communities_show_broadcast_option_in_composer": {
-                "value": false
+                "value": true
             },
             "communities_sticky_broadcast_option_in_composer": {
-                "value": false
+                "value": true
             },
             "composer_android_hide_keyboard_less_enabled": {
                 "value": true
@@ -2382,22 +2370,22 @@
                 "value": true
             },
             "creator_android_nft_avatar_consumption_enabled": {
-                "value": true
+                "value": false
             },
             "creator_android_nft_avatar_consumption_nux_enabled": {
                 "value": false
             },
             "creator_android_nft_avatar_creation_enabled": {
-                "value": true
+                "value": false
             },
             "creator_android_nft_avatar_tab_enabled": {
                 "value": false
             },
             "creator_coinbase_deeplink_url_template": {
-                "value": "https://go.cb-w.com/dapp?cb_url=https%3A%2F%2Fton.twitter.com%2Ftwitter-assets%2Ftw-wallet%2Fverify%2Findex.html%3Fc%3D{{token}}%26cb%3Dtrue"
+                "value": ""
             },
             "creator_image_preserve_circle_rounding_strategy": {
-                "value": true
+                "value": false
             },
             "creator_is_nft_verification_ga_enabled": {
                 "value": false
@@ -2412,14 +2400,7 @@
                 "value": true
             },
             "creator_nft_allowed_wallets_android": {
-                "value": [
-                    "coinbase",
-                    "metamask",
-                    "rainbow",
-                    "trust",
-                    "argent",
-                    "ledger"
-                ]
+                "value": []
             },
             "creator_nft_avatar_help_link": {
                 "value": "https://help.twitter.com/using-twitter/twitter-blue-labs#nft"
@@ -2434,7 +2415,7 @@
                 "value": 15.0
             },
             "creator_nft_verified_avatar_treatment_enabled": {
-                "value": true
+                "value": false
             },
             "creator_subscriptions_email_share_enabled": {
                 "value": true
@@ -2458,7 +2439,7 @@
                 ]
             },
             "creator_wallet_connect_client_url_template": {
-                "value": "https://ton.twitter.com/twitter-assets/mobile-wallet-connect-v4/dist/index.html?b={{bridge_url}}"
+                "value": ""
             },
             "dash_region_specific_de_media_transparency_items_enabled": {
                 "value": false
@@ -2555,20 +2536,11 @@
                     "\ud83d\ude37:mask"
                 ]
             },
-            "dm_reactions_emoji_picker_enabled": {
-                "value": true
-            },
             "dm_reactions_frequency_weight": {
                 "value": 0.7
             },
             "dm_reactions_recency_weight": {
                 "value": 30.0
-            },
-            "dm_replies_long_press_to_reply_enabled": {
-                "value": true
-            },
-            "dm_replies_ui_rendering_enabled": {
-                "value": true
             },
             "dm_secret_conversations_enabled": {
                 "value": false
@@ -3644,7 +3616,7 @@
                 "value": true
             },
             "recruiting_jobs_list_consumption_enabled": {
-                "value": false
+                "value": true
             },
             "replies_section_cursors_enabled": {
                 "value": false
@@ -4011,6 +3983,9 @@
             "ssp_ads_google_native_ad_v2_enabled": {
                 "value": false
             },
+            "ssp_ads_log_errors": {
+                "value": false
+            },
             "ssp_ads_native_ad_unit_id": {
                 "value": ""
             },
@@ -4106,6 +4081,9 @@
             },
             "subscriptions_inapp_grok_upsell_enabled": {
                 "value": false
+            },
+            "subscriptions_inapp_grok_version": {
+                "value": "0.1"
             },
             "subscriptions_marketing_page_disable_new_subscriptions": {
                 "value": false
@@ -4242,9 +4220,6 @@
                     "bitcoin",
                     "ethereum"
                 ]
-            },
-            "topic_icons_enabled": {
-                "value": false
             },
             "topic_landing_page_enabled": {
                 "value": true
@@ -4943,7 +4918,6 @@
         "mr_global_user_retention_holdback_10725",
         "unified_events_ml_ranker_non_us_9499",
         "ad_formats_android_flybys_6875",
-        "sectioning_transparency_experiment_bystander_12951",
         "unified_card_playable_android_12346",
         "android_growth_performance_holdback_optimize_fragment_registry_arg_maps_15805",
         "android_enable_inline_reply_in_push_notifications_10192",
@@ -5057,7 +5031,6 @@
         "android_skip_validation_from_persist_16176",
         "tweet_card_consumer_experiment_9435",
         "home_timeline_spheres_sticky_tabs_enabled_holdback_16232",
-        "signals_reactions_turkey_12809",
         "spaces_holdback_11943",
         "unified_card_android_sdc_vs_mdc_13954",
         "personalization_holdback_2023h1_14799",
@@ -5092,7 +5065,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "8cc4627a9a48f3671861114d53a2589f983cbba0",
-        "experiments": "8cc4627a9a48f3671861114d53a2589f983cbba0"
+        "feature_switches": "aa773dae63d8e46b316f70ec59984558e099151a",
+        "experiments": "aa773dae63d8e46b316f70ec59984558e099151a"
     }
 }
