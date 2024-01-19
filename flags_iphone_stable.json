@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "481cb5f4447cf88859da72911248478f8a938607",
+        "feature_set_token": "eeed1126aa4bde4826442e9aa1bf20b908863894",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -1279,9 +1279,6 @@
             "composer_canvas_editor_text_mode_enabled": {
                 "value": false
             },
-            "composer_canvas_editor_tweet_takes_entrypoint": {
-                "value": []
-            },
             "composer_discounted_links": {
                 "value": 0.0
             },
@@ -1351,23 +1348,11 @@
             "consideration_sso_password_management": {
                 "value": false
             },
-            "continue_watching_free_consume": {
-                "value": false
-            },
-            "continue_watching_free_persist": {
-                "value": false
-            },
             "continue_watching_persist_after_progress_seconds": {
                 "value": 5.0
             },
             "continue_watching_persist_minimum_duration_seconds": {
                 "value": 180.0
-            },
-            "continue_watching_premium_consume": {
-                "value": false
-            },
-            "continue_watching_premium_persist": {
-                "value": false
             },
             "conversation_controls_change_enabled": {
                 "value": true
@@ -1403,22 +1388,22 @@
                 "value": false
             },
             "creator_coinbase_deeplink_url_template": {
-                "value": "https://go.cb-w.com/dapp?cb_url=https%3A%2F%2Fton.twitter.com%2Ftwitter-assets%2Ftw-wallet%2Fverify%2Findex.html%3Fc%3D{{token}}%26cb%3Dtrue"
+                "value": ""
             },
             "creator_is_nft_avatar_preview_enabled": {
-                "value": true
+                "value": false
             },
             "creator_is_nft_verification_ga_enabled": {
                 "value": false
             },
             "creator_is_nft_verification_with_twitter_blue_enabled": {
-                "value": true
+                "value": false
             },
             "creator_is_wallet_connect_qr_navigation_item_enabled": {
                 "value": true
             },
             "creator_metamask_deeplink_url_template": {
-                "value": "https://metamask.app.link/dapp/ton.twitter.com/twitter-assets/tw-wallet-dl/verify/index.html?c={{token}}"
+                "value": ""
             },
             "creator_monetization_dashboard_enabled": {
                 "value": true
@@ -1435,21 +1420,11 @@
             "creator_monetization_super_follows_enabled": {
                 "value": false
             },
-            "creator_monetization_super_follows_management_enabled": {
-                "value": false
-            },
             "creator_monetization_super_follows_onboarding_enabled": {
                 "value": false
             },
             "creator_nft_allowed_wallets": {
-                "value": [
-                    "coinbase",
-                    "rainbow",
-                    "metamask",
-                    "ledger",
-                    "argent",
-                    "trust"
-                ]
+                "value": []
             },
             "creator_nft_avatar_help_link": {
                 "value": "https://help.twitter.com/using-twitter/twitter-blue-labs#nft"
@@ -1520,7 +1495,7 @@
                 ]
             },
             "creator_wallet_connect_client_url_template": {
-                "value": "https://ton.twitter.com/twitter-assets/mobile-wallet-connect-v4/dist/index.html?b={{bridge_url}}"
+                "value": ""
             },
             "cs2_user_builder_enabled": {
                 "value": false
@@ -1845,23 +1820,11 @@
             "feature_switches_configs_quality_control_enabled": {
                 "value": false
             },
-            "fleets_ios_alt_text_input_enabled": {
-                "value": true
-            },
-            "fleets_ios_composer_text_scaler_enabled": {
-                "value": true
-            },
-            "fleets_ios_dm_settings_enabled": {
-                "value": false
-            },
             "fleets_ios_fleetline_option": {
                 "value": "4c0fa276-1c13-4bdf-a78d-071938b934ad"
             },
             "fleets_ios_hide_if_no_content": {
                 "value": true
-            },
-            "fleets_ios_horizontal_default_composer": {
-                "value": "camera_roll"
             },
             "fleets_ios_live_enabled": {
                 "value": false
@@ -1869,14 +1832,8 @@
             "fleets_ios_live_pipeline_enabled": {
                 "value": false
             },
-            "fleets_ios_post_button_text": {
-                "value": "fleet"
-            },
             "fleets_ios_refresh_interval": {
                 "value": 300.0
-            },
-            "fleets_ios_stickers_enabled": {
-                "value": true
             },
             "focused_timeline_actions_onboarding_likes": {
                 "value": 0.0
@@ -8890,7 +8847,7 @@
                 "value": true
             },
             "spaces_speakers_lifecycle_logs_enabled": {
-                "value": false
+                "value": true
             },
             "spaces_user_fetcher_precaching_limit": {
                 "value": 30.0
@@ -9231,27 +9188,6 @@
             },
             "traffic_should_persist_trafficmap": {
                 "value": true
-            },
-            "tweet_awards_by_category_threshold": {
-                "value": 30.0
-            },
-            "tweet_awards_is_status_awards_nux_enabled": {
-                "value": false
-            },
-            "tweet_awards_is_status_awards_summary_enabled": {
-                "value": false
-            },
-            "tweet_awards_is_status_inline_awards_button_enabled": {
-                "value": false
-            },
-            "tweet_awards_monetization_webview_enabled": {
-                "value": true
-            },
-            "tweet_awards_tweet_api_enabled": {
-                "value": false
-            },
-            "tweet_awards_tweet_details_summary_row_limit": {
-                "value": 3.0
             },
             "tweet_convo_ads_spine_click_logging_enabled": {
                 "value": true
@@ -10372,7 +10308,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "e19b729606d1d827ba39664cde84aa7ea8ff5c0d",
-        "experiments": "e19b729606d1d827ba39664cde84aa7ea8ff5c0d"
+        "feature_switches": "b5299fa241fe425d6777ef71818fbd1b20243b46",
+        "experiments": "b5299fa241fe425d6777ef71818fbd1b20243b46"
     }
 }
