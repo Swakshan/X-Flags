@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f05979c411f7910ba6603f14881824cdac32b7e4",
+    "feature_set_token": "3942ea75defd386c4a1fd267893ba35d6eef0277",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2507,6 +2507,9 @@
         },
         "voice_rooms_typeahead_audiospace_ring_enabled": {
             "value": true
+        },
+        "voice_rooms_web_space_creation": {
+            "value": false
         },
         "web_image_large_webp_variants": {
             "value": false
@@ -9669,7 +9672,8 @@
         },
         "voice_rooms_web_space_creation": {
             "name": "voice_rooms_web_space_creation",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "web_device_follow_without_follow_15235": {
             "name": "web_device_follow_without_follow_15235",
