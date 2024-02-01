@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "05e654c69500836f0f0cbc04eeb7fdb9627e6e11",
+    "feature_set_token": "761bffeb920ddebda8c7e6298339547f07252ec8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -352,7 +352,7 @@
             "value": true
         },
         "c9s_community_searchtags_enabled": {
-            "value": false
+            "value": true
         },
         "c9s_community_tweet_search_enabled": {
             "value": true
@@ -1157,9 +1157,6 @@
         },
         "responsive_web_composer_autosave_enabled": {
             "value": false
-        },
-        "responsive_web_composer_autosave_initial_ms": {
-            "value": 5000.0
         },
         "responsive_web_composer_configurable_video_player_enabled": {
             "value": false
@@ -3449,7 +3446,7 @@
         "c9s_community_searchtags_enabled": {
             "name": "c9s_community_searchtags_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "card_detail_compact_enabled": {
             "name": "card_detail_compact_enabled",
@@ -6106,8 +6103,7 @@
         },
         "responsive_web_composer_autosave_initial_ms": {
             "name": "responsive_web_composer_autosave_initial_ms",
-            "type": "number",
-            "defaultValue": 5000.0
+            "type": "string"
         },
         "responsive_web_composer_autosave_debounce_ms": {
             "name": "responsive_web_composer_autosave_debounce_ms",
@@ -7935,6 +7931,10 @@
             "name": "subscriptions_feature_premium_jobs",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_feature_advanced_search": {
+            "name": "subscriptions_feature_advanced_search",
+            "type": "string"
         },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
