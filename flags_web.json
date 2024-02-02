@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "761bffeb920ddebda8c7e6298339547f07252ec8",
+    "feature_set_token": "e3e48cf5ae36756915e3c009f8b046ab912c9e86",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -416,6 +416,9 @@
         },
         "communities_show_broadcast_option_in_composer": {
             "value": true
+        },
+        "communities_topics_enabled": {
+            "value": false
         },
         "conversation_controls_my_subscribers_enabled": {
             "value": true
@@ -1295,6 +1298,9 @@
         },
         "responsive_web_graphql_timeline_navigation_enabled": {
             "value": true
+        },
+        "responsive_web_grok_opt_out_enabled": {
+            "value": false
         },
         "responsive_web_grok_prompt_deeplink_enabled": {
             "value": false
@@ -3478,6 +3484,11 @@
             "name": "communities_community_detail_media_tab_enabled",
             "type": "string"
         },
+        "communities_topics_enabled": {
+            "name": "communities_topics_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
             "type": "experiment",
@@ -4454,6 +4465,10 @@
         },
         "explore_relaunch_broadcast_support_for_certain_videos_enabled": {
             "name": "explore_relaunch_broadcast_support_for_certain_videos_enabled",
+            "type": "string"
+        },
+        "explore_relaunch_broadcast_support_for_live_without_chat_enabled": {
+            "name": "explore_relaunch_broadcast_support_for_live_without_chat_enabled",
             "type": "string"
         },
         "focused_timeline_actions_onboarding_likes": {
@@ -6323,7 +6338,8 @@
         },
         "responsive_web_grok_opt_out_enabled": {
             "name": "responsive_web_grok_opt_out_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
