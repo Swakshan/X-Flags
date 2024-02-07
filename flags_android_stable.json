@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "45eb0eb5efb7be30a6c40023736f7cdbe17df78f",
+        "feature_set_token": "d02009c1bce921111f772d69452b1a35d73b5d12",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -876,9 +876,6 @@
             "android_gambling_ads_opt_out_enabled": {
                 "value": false
             },
-            "android_global_navigation_communities_dash_enabled": {
-                "value": false
-            },
             "android_global_navigation_dash_entry_in_bottom_nav": {
                 "value": false
             },
@@ -1570,7 +1567,7 @@
                 "value": true
             },
             "articles_consumption_enabled": {
-                "value": false
+                "value": true
             },
             "articles_preview_cover_image_default": {
                 "value": "https://abs.twimg.com/responsive-web/client-web/ArticlePlaceholder.884af8aa.png"
@@ -1611,11 +1608,17 @@
             "av_chat_user_settings_ui_enabled": {
                 "value": true
             },
+            "av_chat_user_settings_ui_show_everyone_option": {
+                "value": false
+            },
             "b2c_feedback_display_tweet_button_min_score_csat": {
                 "value": 4.0
             },
             "b2c_feedback_display_tweet_button_min_score_nps": {
                 "value": 8.0
+            },
+            "birdwatch_condensed_tweet_consumption_enabled": {
+                "value": false
             },
             "birdwatch_consumption_enabled": {
                 "value": false
@@ -2767,9 +2770,6 @@
             "graphql_email_notification_settings_mutation_enabled": {
                 "value": true
             },
-            "graphql_timeline_v2_bookmark_timeline": {
-                "value": true
-            },
             "graphql_timeline_v2_user_favorites_by_time_timeline": {
                 "value": true
             },
@@ -2958,6 +2958,9 @@
             },
             "hometimeline_pinned_tabs_settings_enabled": {
                 "value": true
+            },
+            "hometimeline_pinned_tabs_sorting_enabled": {
+                "value": false
             },
             "http_config_data_insensitive_countries": {
                 "value": [
@@ -3242,7 +3245,7 @@
                 "value": 600.0
             },
             "media_async_upload_longer_video_max_video_duration": {
-                "value": 10860.0
+                "value": 14460.0
             },
             "media_async_upload_longer_video_upsale_trim_enabled": {
                 "value": true
@@ -3264,6 +3267,9 @@
             },
             "media_autoplay_view_threshold_content_ms": {
                 "value": 3000.0
+            },
+            "media_download_user_preference_enabled": {
+                "value": true
             },
             "media_download_video_enabled": {
                 "value": true
@@ -5065,7 +5071,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "ddd3433dc390638eeea523e709ad9b529f18082f",
-        "experiments": "ddd3433dc390638eeea523e709ad9b529f18082f"
+        "feature_switches": "f02685b58a37fd03465b9d4a11cb144781e22211",
+        "experiments": "f02685b58a37fd03465b9d4a11cb144781e22211"
     }
 }
