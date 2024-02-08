@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ee347641adc6a953a9ff2c8bb110b31aaa1a0419",
+    "feature_set_token": "3457f78534a0dce9f5fbedf44a8c388647cbcc37",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -432,6 +432,12 @@
         "creator_monetization_profile_subscription_tweets_tab_enabled": {
             "value": true
         },
+        "creator_monetization_settings_revamp": {
+            "value": false
+        },
+        "creator_monetization_video_ads_onboarding": {
+            "value": false
+        },
         "creator_monetization_web_tips_dashboard_enabled": {
             "value": false
         },
@@ -847,7 +853,7 @@
             "value": 600
         },
         "media_async_upload_longer_video_max_video_duration": {
-            "value": 10860
+            "value": 14460
         },
         "media_async_upload_longer_video_max_video_size": {
             "value": 8388608
@@ -1298,6 +1304,9 @@
         },
         "responsive_web_graphql_timeline_navigation_enabled": {
             "value": true
+        },
+        "responsive_web_grok_delete_conversations_enabled": {
+            "value": false
         },
         "responsive_web_grok_opt_out_enabled": {
             "value": false
@@ -2478,6 +2487,9 @@
         "voice_rooms_discovery_page_enabled": {
             "value": false
         },
+        "voice_rooms_employee_only_enabled": {
+            "value": false
+        },
         "voice_rooms_end_screen_participants": {
             "value": true
         },
@@ -2498,9 +2510,6 @@
         },
         "voice_rooms_search_results_page_audiospace_ring_enabled": {
             "value": false
-        },
-        "voice_rooms_sharing_listening_data_with_followers_setting_enabled": {
-            "value": true
         },
         "voice_rooms_speaking_enabled": {
             "value": true
@@ -3756,11 +3765,13 @@
         },
         "creator_monetization_settings_revamp": {
             "name": "creator_monetization_settings_revamp",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "creator_monetization_video_ads_onboarding": {
             "name": "creator_monetization_video_ads_onboarding",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "creator_subscriptions_subscriber_count_enabled": {
             "name": "creator_subscriptions_subscriber_count_enabled",
@@ -5355,7 +5366,7 @@
         "media_async_upload_longer_video_max_video_duration": {
             "name": "media_async_upload_longer_video_max_video_duration",
             "type": "number",
-            "defaultValue": 10860
+            "defaultValue": 14460
         },
         "media_async_upload_amplify_duration_threshold": {
             "name": "media_async_upload_amplify_duration_threshold",
@@ -6335,6 +6346,11 @@
         },
         "responsive_web_grok_opt_out_enabled": {
             "name": "responsive_web_grok_opt_out_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_delete_conversations_enabled": {
+            "name": "responsive_web_grok_delete_conversations_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -9426,7 +9442,8 @@
         },
         "voice_rooms_employee_only_enabled": {
             "name": "voice_rooms_employee_only_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "voice_rooms_scheduled_spaces_condensed_footer_layout_enabled": {
             "name": "voice_rooms_scheduled_spaces_condensed_footer_layout_enabled",
@@ -9481,8 +9498,7 @@
         },
         "voice_rooms_sharing_listening_data_with_followers_setting_enabled": {
             "name": "voice_rooms_sharing_listening_data_with_followers_setting_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "voice_rooms_podcast_following_enabled": {
             "name": "voice_rooms_podcast_following_enabled",
@@ -9834,6 +9850,10 @@
             "name": "xprofile_emojis_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xprofile_work_history_enabled": {
+            "name": "xprofile_work_history_enabled",
+            "type": "string"
         },
         "zazu_report_flow_13359": {
             "name": "zazu_report_flow_13359",
