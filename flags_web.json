@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "204bd7a18b4990ddaaf8c5dbdcc11ef663b8e974",
+    "feature_set_token": "bf3e92392cab6c3a8dbb448e738f1fcd12ca0257",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -562,6 +562,9 @@
             "value": false
         },
         "enable_label_appealing_sensitive_content_enabled": {
+            "value": false
+        },
+        "explore_graphql_enabled": {
             "value": false
         },
         "explore_relaunch_enable_auto_play": {
@@ -1392,12 +1395,6 @@
         "responsive_web_login_signup_sheet_app_install_cta_enabled": {
             "value": true
         },
-        "responsive_web_media_download_video_enabled": {
-            "value": false
-        },
-        "responsive_web_media_sensitive_allow_download_video": {
-            "value": false
-        },
         "responsive_web_media_upload_limit_2g": {
             "value": 250
         },
@@ -2060,6 +2057,9 @@
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
         },
+        "subscriptions_premium_hub_enabled": {
+            "value": false
+        },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerifiedPlus"
         },
@@ -2494,12 +2494,6 @@
             "value": false
         },
         "voice_rooms_end_screen_participants": {
-            "value": true
-        },
-        "voice_rooms_expanded_dock": {
-            "value": true
-        },
-        "voice_rooms_expanded_dock_reactions": {
             "value": true
         },
         "voice_rooms_host_analytics_enabled": {
@@ -3510,10 +3504,7 @@
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "community_notes_read_sources_nudge_16495": {
             "name": "community_notes_read_sources_nudge_16495",
@@ -4337,6 +4328,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "explore_graphql_enabled": {
+            "name": "explore_graphql_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "explore_relaunch_enable_immersive_web": {
             "name": "explore_relaunch_enable_immersive_web",
             "type": "boolean",
@@ -4489,6 +4485,10 @@
         },
         "explore_relaunch_broadcast_support_for_live_without_chat_enabled": {
             "name": "explore_relaunch_broadcast_support_for_live_without_chat_enabled",
+            "type": "string"
+        },
+        "explore_relaunch_broadcast_support_chat_enabled": {
+            "name": "explore_relaunch_broadcast_support_chat_enabled",
             "type": "string"
         },
         "focused_timeline_actions_onboarding_likes": {
@@ -6494,16 +6494,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "responsive_web_media_download_video_enabled": {
-            "name": "responsive_web_media_download_video_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "responsive_web_media_sensitive_allow_download_video": {
-            "name": "responsive_web_media_sensitive_allow_download_video",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "responsive_web_media_upload_limit_slow_2g": {
             "name": "responsive_web_media_upload_limit_slow_2g",
             "type": "number",
@@ -8145,6 +8135,11 @@
             "name": "subscriptions_marketing_page_disclaimer_update_enabled",
             "type": "string"
         },
+        "subscriptions_premium_hub_enabled": {
+            "name": "subscriptions_premium_hub_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "boolean",
@@ -9408,8 +9403,7 @@
         },
         "voice_rooms_expanded_dock": {
             "name": "voice_rooms_expanded_dock",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "voice_rooms_tip_jar_enabled": {
             "name": "voice_rooms_tip_jar_enabled",
@@ -9500,8 +9494,7 @@
         },
         "voice_rooms_expanded_dock_reactions": {
             "name": "voice_rooms_expanded_dock_reactions",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "voice_rooms_share_scheduled_space_creation_enabled": {
             "name": "voice_rooms_share_scheduled_space_creation_enabled",
