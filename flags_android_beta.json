@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "ae79edc0f3948c501ac67b9a93d555b1f8777caf",
+        "feature_set_token": "4830e063106dfdc05dddb65b2da7c4b8f9d5e992",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -984,12 +984,6 @@
             "android_hydra_media_player_enabled": {
                 "value": false
             },
-            "android_iap_billing_client_6_enable": {
-                "value": true
-            },
-            "android_iap_billing_client_6_override_enable": {
-                "value": false
-            },
             "android_immersive_media_player_initial_mute_state": {
                 "value": false
             },
@@ -1359,18 +1353,6 @@
             "android_tweet_quote_on_tweet_detail_with_non_compliant_interstitial_enabled": {
                 "value": false
             },
-            "android_tweet_uploader_lock_enhanced_tweets_only_enabled": {
-                "value": false
-            },
-            "android_tweet_uploader_max_lock_duration": {
-                "value": 1200.0
-            },
-            "android_tweet_uploader_wake_lock_enabled": {
-                "value": true
-            },
-            "android_tweet_uploader_wifi_lock_enabled": {
-                "value": true
-            },
             "android_tweet_view_holder_pool_should_prewarmup": {
                 "value": true
             },
@@ -1547,6 +1529,9 @@
             },
             "android_xiaomi_reflection_on_notification_object": {
                 "value": true
+            },
+            "app_attest_enabled": {
+                "value": false
             },
             "app_event_track_non_referred_install_enabled": {
                 "value": false
@@ -2369,50 +2354,14 @@
             "convo_card_remove_card_click_enabled": {
                 "value": true
             },
-            "creator_android_nft_avatar_consumption_enabled": {
-                "value": false
-            },
-            "creator_android_nft_avatar_consumption_nux_enabled": {
-                "value": false
-            },
-            "creator_android_nft_avatar_creation_enabled": {
-                "value": false
-            },
-            "creator_android_nft_avatar_tab_enabled": {
-                "value": false
-            },
-            "creator_coinbase_deeplink_url_template": {
-                "value": ""
-            },
             "creator_image_preserve_circle_rounding_strategy": {
                 "value": false
-            },
-            "creator_is_nft_verification_ga_enabled": {
-                "value": false
-            },
-            "creator_metamask_deeplink_url_template": {
-                "value": ""
             },
             "creator_monetization_dashboard_enabled": {
                 "value": true
             },
             "creator_monetization_profile_subscription_tweets_tab_enabled": {
                 "value": true
-            },
-            "creator_nft_allowed_wallets_android": {
-                "value": []
-            },
-            "creator_nft_avatar_help_link": {
-                "value": "https://help.twitter.com/using-twitter/twitter-blue-labs#nft"
-            },
-            "creator_nft_is_owners_metadata_enabled": {
-                "value": false
-            },
-            "creator_nft_picker_nft_collections_page_size": {
-                "value": 10.0
-            },
-            "creator_nft_picker_nfts_page_size": {
-                "value": 15.0
             },
             "creator_nft_verified_avatar_treatment_enabled": {
                 "value": false
@@ -2432,15 +2381,6 @@
             "creator_subscriptions_tweet_preview_enabled": {
                 "value": true
             },
-            "creator_unsupported_nft_file_extensions": {
-                "value": [
-                    "svg",
-                    "mp4"
-                ]
-            },
-            "creator_wallet_connect_client_url_template": {
-                "value": ""
-            },
             "dash_region_specific_de_media_transparency_items_enabled": {
                 "value": false
             },
@@ -2454,6 +2394,9 @@
                 "value": false
             },
             "database_delete_on_upgrade_with_htl_prefetch": {
+                "value": false
+            },
+            "dm_android_send_messages_with_workmanager": {
                 "value": false
             },
             "dm_conversation_labels_max_pinned_count": {
@@ -2821,6 +2764,9 @@
             "home_timeline_bottom_cursor_max_retries": {
                 "value": 3.0
             },
+            "home_timeline_disable_home_scroll_position_restoration_on_cold_launch_enabled": {
+                "value": false
+            },
             "home_timeline_dup_tweet_against_impression_cache_enabled": {
                 "value": true
             },
@@ -2963,7 +2909,7 @@
                 "value": true
             },
             "hometimeline_pinned_tabs_sorting_enabled": {
-                "value": false
+                "value": true
             },
             "http_config_data_insensitive_countries": {
                 "value": [
@@ -3248,7 +3194,7 @@
                 "value": 600.0
             },
             "media_async_upload_longer_video_max_video_duration": {
-                "value": 10860.0
+                "value": 14460.0
             },
             "media_async_upload_longer_video_upsale_trim_enabled": {
                 "value": true
@@ -4065,9 +4011,6 @@
                 "value": true
             },
             "subscriptions_feature_labs_1002": {
-                "value": true
-            },
-            "subscriptions_feature_labs_1003": {
                 "value": true
             },
             "subscriptions_feature_labs_1004": {
@@ -5074,7 +5017,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "df8f95d6fdd4ad6dab731c9f944eb20f6f48f9d5",
-        "experiments": "df8f95d6fdd4ad6dab731c9f944eb20f6f48f9d5"
+        "feature_switches": "6690e6b9faa2dc4b4eb26616f9198f63adae41f9",
+        "experiments": "6690e6b9faa2dc4b4eb26616f9198f63adae41f9"
     }
 }
