@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0d5cb095037431de035b5d3b87b18d47536f9aed",
+    "feature_set_token": "f0ab837d7e82528ad5e062232a7f149e59be8cca",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1326,6 +1326,9 @@
         "responsive_web_grok_share_enabled": {
             "value": false
         },
+        "responsive_web_grok_share_rendering_enabled": {
+            "value": false
+        },
         "responsive_web_grok_trends_design_enabled": {
             "value": false
         },
@@ -1729,6 +1732,9 @@
             "value": 60
         },
         "rweb_master_detail_enabled": {
+            "value": false
+        },
+        "rweb_meetings_enabled": {
             "value": false
         },
         "rweb_mixed_media_uploads_enabled": {
@@ -2563,6 +2569,9 @@
             "value": false
         },
         "xprofile_emojis_enabled": {
+            "value": false
+        },
+        "xprofile_work_history_enabled": {
             "value": false
         }
     },
@@ -6374,6 +6383,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_share_rendering_enabled": {
+            "name": "responsive_web_grok_share_rendering_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -7161,6 +7175,11 @@
         },
         "rweb_master_detail_enabled": {
             "name": "rweb_master_detail_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_meetings_enabled": {
+            "name": "rweb_meetings_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -7985,6 +8004,10 @@
         },
         "subscriptions_feature_advanced_search": {
             "name": "subscriptions_feature_advanced_search",
+            "type": "string"
+        },
+        "subscriptions_feature_id_verification": {
+            "name": "subscriptions_feature_id_verification",
             "type": "string"
         },
         "subscriptions_feature_organization_affiliates": {
@@ -9870,7 +9893,8 @@
         },
         "xprofile_work_history_enabled": {
             "name": "xprofile_work_history_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "zazu_report_flow_13359": {
             "name": "zazu_report_flow_13359",
