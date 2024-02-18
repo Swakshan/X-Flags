@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f0ab837d7e82528ad5e062232a7f149e59be8cca",
+    "feature_set_token": "930d6fff5ba7d88dd3054d664dd67188312ee265",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -416,6 +416,9 @@
         },
         "communities_show_broadcast_option_in_composer": {
             "value": true
+        },
+        "communities_topic_carousel_enabled": {
+            "value": false
         },
         "communities_topic_display": {
             "value": false
@@ -3511,7 +3514,8 @@
         },
         "communities_topic_carousel_enabled": {
             "name": "communities_topic_carousel_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -7184,6 +7188,10 @@
             "name": "rweb_mixed_media_uploads_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_mixed_media_uploads_cap": {
+            "name": "rweb_mixed_media_uploads_cap",
+            "type": "string"
         },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
