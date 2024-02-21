@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "3a73582b4bdd96319b3e0053add146ddd57b8229",
+        "feature_set_token": "b9453e344a24f880eacdd766f74c5bf15c2a70d1",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -984,12 +984,6 @@
             "android_hydra_media_player_enabled": {
                 "value": false
             },
-            "android_iap_billing_client_6_enable": {
-                "value": true
-            },
-            "android_iap_billing_client_6_override_enable": {
-                "value": false
-            },
             "android_immersive_media_player_initial_mute_state": {
                 "value": false
             },
@@ -1533,6 +1527,9 @@
             "android_xiaomi_reflection_on_notification_object": {
                 "value": true
             },
+            "app_attest_enabled": {
+                "value": false
+            },
             "app_event_track_non_referred_install_enabled": {
                 "value": false
             },
@@ -1585,7 +1582,7 @@
                 "value": true
             },
             "av_chat_enhanced_calls_privacy_enabled": {
-                "value": false
+                "value": true
             },
             "av_chat_notification_routing_enabled": {
                 "value": true
@@ -1651,7 +1648,7 @@
                 "value": true
             },
             "bookmarks_in_timelines_enabled": {
-                "value": false
+                "value": true
             },
             "bouncer_url_whitelist_entrances": {
                 "value": [
@@ -2354,50 +2351,14 @@
             "convo_card_remove_card_click_enabled": {
                 "value": true
             },
-            "creator_android_nft_avatar_consumption_enabled": {
-                "value": false
-            },
-            "creator_android_nft_avatar_consumption_nux_enabled": {
-                "value": false
-            },
-            "creator_android_nft_avatar_creation_enabled": {
-                "value": false
-            },
-            "creator_android_nft_avatar_tab_enabled": {
-                "value": false
-            },
-            "creator_coinbase_deeplink_url_template": {
-                "value": ""
-            },
             "creator_image_preserve_circle_rounding_strategy": {
                 "value": false
-            },
-            "creator_is_nft_verification_ga_enabled": {
-                "value": false
-            },
-            "creator_metamask_deeplink_url_template": {
-                "value": ""
             },
             "creator_monetization_dashboard_enabled": {
                 "value": true
             },
             "creator_monetization_profile_subscription_tweets_tab_enabled": {
                 "value": true
-            },
-            "creator_nft_allowed_wallets_android": {
-                "value": []
-            },
-            "creator_nft_avatar_help_link": {
-                "value": "https://help.twitter.com/using-twitter/twitter-blue-labs#nft"
-            },
-            "creator_nft_is_owners_metadata_enabled": {
-                "value": false
-            },
-            "creator_nft_picker_nft_collections_page_size": {
-                "value": 10.0
-            },
-            "creator_nft_picker_nfts_page_size": {
-                "value": 15.0
             },
             "creator_nft_verified_avatar_treatment_enabled": {
                 "value": false
@@ -2416,15 +2377,6 @@
             },
             "creator_subscriptions_tweet_preview_enabled": {
                 "value": true
-            },
-            "creator_unsupported_nft_file_extensions": {
-                "value": [
-                    "svg",
-                    "mp4"
-                ]
-            },
-            "creator_wallet_connect_client_url_template": {
-                "value": ""
             },
             "dash_region_specific_de_media_transparency_items_enabled": {
                 "value": false
@@ -3074,7 +3026,7 @@
                 "value": 0.0
             },
             "immersive_video_status_linkable_timestamps": {
-                "value": false
+                "value": true
             },
             "include_blocked_by_and_blocking_in_requests_enabled": {
                 "value": true
@@ -4056,9 +4008,6 @@
                 "value": true
             },
             "subscriptions_feature_labs_1002": {
-                "value": true
-            },
-            "subscriptions_feature_labs_1003": {
                 "value": true
             },
             "subscriptions_feature_labs_1004": {
@@ -5065,7 +5014,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "233ff8752280dba7987f41ccd33327123686b7ac",
-        "experiments": "233ff8752280dba7987f41ccd33327123686b7ac"
+        "feature_switches": "4adf39a0065f8572a41612cdc8c323986cf94c7c",
+        "experiments": "4adf39a0065f8572a41612cdc8c323986cf94c7c"
     }
 }
