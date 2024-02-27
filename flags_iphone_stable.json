@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "d7ee99a2fce6c1d1b7ec1ef893fd8f2adc97f9f1",
+        "feature_set_token": "b88296ab5c309721520096693bfe68a02044e477",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -334,6 +334,9 @@
             "animation_decoding_warning_duration": {
                 "value": 0.1
             },
+            "app_attest_enabled": {
+                "value": false
+            },
             "app_event_track_open_app_delay": {
                 "value": 0.0
             },
@@ -372,6 +375,9 @@
             },
             "av_chat_user_settings_ui_enabled": {
                 "value": true
+            },
+            "av_chat_user_settings_ui_show_everyone_option": {
+                "value": false
             },
             "background_fetch_enabled": {
                 "value": false
@@ -1796,6 +1802,9 @@
             "explore_relaunch_auto_refresh_timeout_minutes": {
                 "value": 5.0
             },
+            "explore_relaunch_broadcast_support_chat_enabled": {
+                "value": false
+            },
             "explore_relaunch_broadcast_support_enabled": {
                 "value": false
             },
@@ -1803,7 +1812,7 @@
                 "value": true
             },
             "explore_relaunch_broadcast_support_for_live_without_chat_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_enabled": {
                 "value": false
@@ -2314,6 +2323,12 @@
             },
             "image_pipeline_uiv_scale_limit": {
                 "value": 2.0
+            },
+            "immersive_video_big_centered_play_button": {
+                "value": true
+            },
+            "immersive_video_hide_chrome_when_video_starts": {
+                "value": true
             },
             "immersive_video_status_linkable_timestamps": {
                 "value": true
@@ -10098,7 +10113,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "a7540b4352f8dad0c0e6df16a63c39e374cd8ab6",
-        "experiments": "a7540b4352f8dad0c0e6df16a63c39e374cd8ab6"
+        "feature_switches": "eeaff869fe3538398729589b4dda7929acd0a2ad",
+        "experiments": "eeaff869fe3538398729589b4dda7929acd0a2ad"
     }
 }
