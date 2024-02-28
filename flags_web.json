@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2832e8f4eac52fcd31b973a85dded048dc3046c5",
+    "feature_set_token": "38ce8a59660780e0a39c7097c257d1956eadd765",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1210,7 +1210,7 @@
             "value": true
         },
         "responsive_web_edit_active_subscription_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_edit_tweet_api_enabled": {
             "value": true
@@ -1325,6 +1325,9 @@
         },
         "responsive_web_grok_share_rendering_enabled": {
             "value": true
+        },
+        "responsive_web_grok_sticky_mode_enabled": {
+            "value": false
         },
         "responsive_web_grok_trends_design_enabled": {
             "value": false
@@ -1734,8 +1737,8 @@
         "rweb_meetings_enabled": {
             "value": false
         },
-        "rweb_mixed_media_uploads_enabled": {
-            "value": false
+        "rweb_mixed_media_uploads_cap": {
+            "value": 4
         },
         "rweb_panning_nav_behavior": {
             "value": true
@@ -2064,7 +2067,7 @@
             "value": true
         },
         "subscriptions_premium_hub_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerifiedPlus"
@@ -6225,7 +6228,7 @@
         "responsive_web_edit_active_subscription_enabled": {
             "name": "responsive_web_edit_active_subscription_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_edit_tweet_enabled": {
             "name": "responsive_web_edit_tweet_enabled",
@@ -6369,7 +6372,8 @@
         },
         "responsive_web_grok_sticky_mode_enabled": {
             "name": "responsive_web_grok_sticky_mode_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -7184,12 +7188,12 @@
         },
         "rweb_mixed_media_uploads_enabled": {
             "name": "rweb_mixed_media_uploads_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_mixed_media_uploads_cap": {
             "name": "rweb_mixed_media_uploads_cap",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 4
         },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
@@ -8188,7 +8192,7 @@
         "subscriptions_premium_hub_enabled": {
             "name": "subscriptions_premium_hub_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
