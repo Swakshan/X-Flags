@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "516f4e45a5eed30308c908d6a3680dddbea382e5",
+    "feature_set_token": "b4cd4ab9c4d27f39c9e1a4c36b463ff4b708ee2a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1692,6 +1692,9 @@
         "responsive_web_video_trimmer_enabled": {
             "value": false
         },
+        "responsive_web_x_translation_enabled": {
+            "value": false
+        },
         "rito_safety_mode_blocked_profile_enabled": {
             "value": true
         },
@@ -1742,6 +1745,9 @@
         },
         "rweb_panning_nav_behavior": {
             "value": true
+        },
+        "rweb_picture_in_picture_enabled": {
+            "value": false
         },
         "rweb_quick_promote_boost_enabled": {
             "value": false
@@ -2501,9 +2507,6 @@
         },
         "voice_rooms_employee_only_enabled": {
             "value": false
-        },
-        "voice_rooms_end_screen_participants": {
-            "value": true
         },
         "voice_rooms_host_analytics_enabled": {
             "value": true
@@ -4792,6 +4795,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "hiring_recommendations_rweb_16700": {
+            "name": "hiring_recommendations_rweb_16700",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "default_rate"
+            ]
+        },
         "home_low_coverage_sources_holdback_15899": {
             "name": "home_low_coverage_sources_holdback_15899",
             "type": "experiment",
@@ -7067,6 +7078,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_x_translation_enabled": {
+            "name": "responsive_web_x_translation_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rito_safety_mode_blocked_profile_enabled": {
             "name": "rito_safety_mode_blocked_profile_enabled",
             "type": "boolean",
@@ -7222,6 +7238,11 @@
             "name": "rweb_panning_nav_16489",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "rweb_picture_in_picture_enabled": {
+            "name": "rweb_picture_in_picture_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_quick_promote_boost_enabled": {
             "name": "rweb_quick_promote_boost_enabled",
@@ -9546,8 +9567,7 @@
         },
         "voice_rooms_end_screen_participants": {
             "name": "voice_rooms_end_screen_participants",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "voice_rooms_expanded_dock_reactions": {
             "name": "voice_rooms_expanded_dock_reactions",
