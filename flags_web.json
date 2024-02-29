@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "38ce8a59660780e0a39c7097c257d1956eadd765",
+    "feature_set_token": "516f4e45a5eed30308c908d6a3680dddbea382e5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1957,6 +1957,9 @@
         },
         "standardized_nudges_misinfo": {
             "value": true
+        },
+        "subscriptions_block_ad_upsell_enabled": {
+            "value": false
         },
         "subscriptions_blue_premium_labeling_enabled": {
             "value": true
@@ -7862,7 +7865,8 @@
         },
         "subscriptions_block_ad_upsell_enabled": {
             "name": "subscriptions_block_ad_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "name": "subscriptions_mute_ad_upsell_enabled",
