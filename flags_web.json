@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "92ac781b5d4b08f815e3c18346fcbb15b3d93a9f",
+    "feature_set_token": "d24f741ac7164acde4917caeecefd2724cfcc11e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2010,7 +2010,7 @@
             "value": true
         },
         "subscriptions_feature_article_composer": {
-            "value": false
+            "value": true
         },
         "subscriptions_feature_can_hide_checkmark": {
             "value": true
@@ -2074,6 +2074,9 @@
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
+        },
+        "subscriptions_mute_ad_upsell_enabled": {
+            "value": false
         },
         "subscriptions_premium_hub_enabled": {
             "value": true
@@ -3513,6 +3516,14 @@
             "name": "communities_topic_carousel_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "communities_enable_explore_tab": {
+            "name": "communities_enable_explore_tab",
+            "type": "string"
+        },
+        "communities_enable_explore_topic_carousel": {
+            "name": "communities_enable_explore_topic_carousel",
+            "type": "string"
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -7852,7 +7863,8 @@
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "name": "subscriptions_mute_ad_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_report_ad_upsell_enabled": {
             "name": "subscriptions_report_ad_upsell_enabled",
@@ -7978,7 +7990,7 @@
         "subscriptions_feature_article_composer": {
             "name": "subscriptions_feature_article_composer",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_feature_can_hide_checkmark": {
             "name": "subscriptions_feature_can_hide_checkmark",
