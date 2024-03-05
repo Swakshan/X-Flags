@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d24f741ac7164acde4917caeecefd2724cfcc11e",
+    "feature_set_token": "9c66cc9df2a8e1117182da1a11311ca8c6547a5d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2039,6 +2039,9 @@
         "subscriptions_feature_premium_jobs": {
             "value": true
         },
+        "subscriptions_hide_ad_upsell_enabled": {
+            "value": false
+        },
         "subscriptions_inapp_grok": {
             "value": false
         },
@@ -2076,7 +2079,7 @@
             "value": true
         },
         "subscriptions_mute_ad_upsell_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_premium_hub_enabled": {
             "value": true
@@ -7854,7 +7857,8 @@
         },
         "subscriptions_hide_ad_upsell_enabled": {
             "name": "subscriptions_hide_ad_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_block_ad_upsell_enabled": {
             "name": "subscriptions_block_ad_upsell_enabled",
@@ -7864,7 +7868,7 @@
         "subscriptions_mute_ad_upsell_enabled": {
             "name": "subscriptions_mute_ad_upsell_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_report_ad_upsell_enabled": {
             "name": "subscriptions_report_ad_upsell_enabled",
