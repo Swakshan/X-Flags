@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9c66cc9df2a8e1117182da1a11311ca8c6547a5d",
+    "feature_set_token": "530a133da853ef5703ede04d1d846d1f858b2ba7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -413,6 +413,9 @@
         },
         "card_detail_compact_enabled": {
             "value": true
+        },
+        "communities_enable_explore_tab": {
+            "value": false
         },
         "communities_show_broadcast_option_in_composer": {
             "value": true
@@ -2040,7 +2043,7 @@
             "value": true
         },
         "subscriptions_hide_ad_upsell_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_inapp_grok": {
             "value": false
@@ -3522,7 +3525,8 @@
         },
         "communities_enable_explore_tab": {
             "name": "communities_enable_explore_tab",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "communities_enable_explore_topic_carousel": {
             "name": "communities_enable_explore_topic_carousel",
@@ -4805,14 +4809,6 @@
             "name": "highlights_tweets_upsell_on_pin_action_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "hiring_recommendations_rweb_16700": {
-            "name": "hiring_recommendations_rweb_16700",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "default_rate"
-            ]
         },
         "home_low_coverage_sources_holdback_15899": {
             "name": "home_low_coverage_sources_holdback_15899",
@@ -7858,7 +7854,7 @@
         "subscriptions_hide_ad_upsell_enabled": {
             "name": "subscriptions_hide_ad_upsell_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_block_ad_upsell_enabled": {
             "name": "subscriptions_block_ad_upsell_enabled",
