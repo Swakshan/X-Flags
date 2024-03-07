@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "86fec77a584476016f1d0e84ce0f20656effcce1",
+    "feature_set_token": "2be51590d09db55b1b3a567b17396f09eff1b2d1",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2098,6 +2098,9 @@
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "value": true
+        },
+        "subscriptions_report_ad_upsell_enabled": {
+            "value": false
         },
         "subscriptions_sign_up_enabled": {
             "value": false
@@ -4523,6 +4526,10 @@
         },
         "explore_relaunch_broadcast_support_chat_enabled": {
             "name": "explore_relaunch_broadcast_support_chat_enabled",
+            "type": "string"
+        },
+        "explore_relaunch_broadcast_replace_viewers_to_views_enabled": {
+            "name": "explore_relaunch_broadcast_replace_viewers_to_views_enabled",
             "type": "string"
         },
         "focused_timeline_actions_onboarding_likes": {
@@ -7876,7 +7883,8 @@
         },
         "subscriptions_report_ad_upsell_enabled": {
             "name": "subscriptions_report_ad_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_block_ad_on_completion_upsell_enabled": {
             "name": "subscriptions_block_ad_on_completion_upsell_enabled",
