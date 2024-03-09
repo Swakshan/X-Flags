@@ -1,10 +1,7 @@
 {
     "default": {
-        "feature_set_token": "3df197d2c278bf4126d76e24013fcca81aca1d65",
+        "feature_set_token": "7c593cb9ced91ca4e01d693743bd900ba049fed7",
         "config": {
-            "2fa_temporary_password_enabled": {
-                "value": false
-            },
             "aaid_reset_prompt_enabled": {
                 "value": true
             },
@@ -1260,9 +1257,6 @@
             "android_retain_scroll_pos_on_recreation": {
                 "value": false
             },
-            "android_save_password_prompt_enabled": {
-                "value": true
-            },
             "android_schema_checker_enabled": {
                 "value": false
             },
@@ -1703,6 +1697,9 @@
             "c9s_community_hashtags_enabled": {
                 "value": true
             },
+            "c9s_community_searchtags_enabled": {
+                "value": false
+            },
             "c9s_community_tweet_search_enabled": {
                 "value": true
             },
@@ -1771,9 +1768,6 @@
             },
             "c9s_moderation_enabled": {
                 "value": true
-            },
-            "c9s_nav_list_activity_details_enabled": {
-                "value": false
             },
             "c9s_notification_settings_enabled": {
                 "value": true
@@ -2291,6 +2285,9 @@
             "communities_community_detail_sorting_enabled": {
                 "value": true
             },
+            "communities_enable_explore_tab": {
+                "value": false
+            },
             "communities_show_broadcast_option_in_composer": {
                 "value": true
             },
@@ -2298,10 +2295,10 @@
                 "value": true
             },
             "communities_topic_display": {
-                "value": false
+                "value": true
             },
             "communities_topics_enabled": {
-                "value": false
+                "value": true
             },
             "composer_android_hide_keyboard_less_enabled": {
                 "value": true
@@ -3027,6 +3024,9 @@
             },
             "identity_verification_landing_page_enabled": {
                 "value": true
+            },
+            "identity_verification_passkey_settings_enabled": {
+                "value": false
             },
             "identity_verification_settings_enabled": {
                 "value": true
@@ -5024,5 +5024,9 @@
         "android_xiaomi_badging_experiment_8611",
         "android_growth_performance_holdback_b_enabled_15207"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "afd9f737d687f13097bb6941375de2fc4754e45b",
+        "experiments": "afd9f737d687f13097bb6941375de2fc4754e45b"
+    }
 }
