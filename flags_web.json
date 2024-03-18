@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5a1e8ab1173c9dac61f2c65c6d88ef916b6fdad2",
+    "feature_set_token": "2ba3138ca343145502040c7b23a76fb2b11407b0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -997,6 +997,9 @@
             "value": false
         },
         "recruiting_premium_jobs_enabled": {
+            "value": false
+        },
+        "recruiting_search_filters_enabled": {
             "value": false
         },
         "recruiting_verified_orgs_admin_enabled": {
@@ -2086,6 +2089,9 @@
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "value": true
+        },
+        "subscriptions_premium_experiment_nav_text": {
+            "value": false
         },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerifiedPlus"
@@ -5827,7 +5833,8 @@
         },
         "recruiting_search_filters_enabled": {
             "name": "recruiting_search_filters_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
@@ -8198,6 +8205,11 @@
             "name": "subscriptions_marketing_page_display_monthly_price",
             "type": "string"
         },
+        "subscriptions_premium_experiment_nav_text": {
+            "name": "subscriptions_premium_experiment_nav_text",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "boolean",
@@ -9804,6 +9816,14 @@
             "name": "web_immersive_viewer_autoplay_16490",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "web_premium_upsell_nav_item_16709": {
+            "name": "web_premium_upsell_nav_item_16709",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "challenger"
+            ]
         },
         "web_repeat_profile_visit_notifications_15195": {
             "name": "web_repeat_profile_visit_notifications_15195",
