@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "afecd213c10f187b82384191f6ec0bbf8b820e2b",
+        "feature_set_token": "ff1dd3aedb186257ef652e6f14f119b542f37633",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1255,7 +1255,7 @@
                 "value": false
             },
             "android_retain_scroll_pos_on_recreation": {
-                "value": false
+                "value": true
             },
             "android_schema_checker_enabled": {
                 "value": false
@@ -2291,6 +2291,9 @@
             "communities_sticky_broadcast_option_in_composer": {
                 "value": true
             },
+            "communities_topic_carousel_enabled": {
+                "value": false
+            },
             "communities_topic_display": {
                 "value": true
             },
@@ -3151,9 +3154,6 @@
             "login_verification_push_destination_enabled": {
                 "value": true
             },
-            "login_verification_totp_generator_enabled": {
-                "value": true
-            },
             "longform_notetweets_composition_without_claims_enabled": {
                 "value": false
             },
@@ -3523,9 +3523,6 @@
                 "value": false
             },
             "profile_foundations_header_fields_hidden": {
-                "value": false
-            },
-            "profile_foundations_timeline_filters_enabled": {
                 "value": false
             },
             "profile_invalid_name_bio_regex": {
@@ -3962,6 +3959,9 @@
             "subscriptions_blue_verified_edit_profile_error_message_enabled": {
                 "value": true
             },
+            "subscriptions_blue_verified_eligibility_check_api_enabled": {
+                "value": true
+            },
             "subscriptions_blue_verified_eligibility_check_enabled": {
                 "value": true
             },
@@ -4048,6 +4048,9 @@
             },
             "subscriptions_marketing_page_disclaimer_update_enabled": {
                 "value": true
+            },
+            "subscriptions_marketing_page_display_monthly_price": {
+                "value": false
             },
             "subscriptions_premium_tiers_default_product": {
                 "value": "BlueVerifiedPlus"
@@ -4976,6 +4979,7 @@
         "android_skip_statuses_7456",
         "android_growth_performance_holdback_enabled_14581",
         "professional_viewer_holdback_13026",
+        "android_cold_start_auto_refresh_16706",
         "birdwatch_crowd_13489",
         "tweet_details_remove_status_groups_query_15714",
         "traffic_android_cached_dns_holdback_11351",
@@ -5023,7 +5027,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "aba50d22d242d700338938485194f98cfdbcfc53",
-        "experiments": "aba50d22d242d700338938485194f98cfdbcfc53"
+        "feature_switches": "f5f989314b7973df2b0b44d19bb473375b933a29",
+        "experiments": "f5f989314b7973df2b0b44d19bb473375b933a29"
     }
 }
