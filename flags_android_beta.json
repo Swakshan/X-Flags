@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "082a779ba64648f99b8505654eb118b1a1c463c0",
+        "feature_set_token": "b136c3c7de154f1f715a463ec1b9ddcde75e1075",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -840,12 +840,6 @@
             "android_firebase_perf_monitoring_enabled": {
                 "value": true
             },
-            "android_fleets_composer_text_scaler_enabled": {
-                "value": true
-            },
-            "android_fleets_enabled": {
-                "value": false
-            },
             "android_fleets_expanded_spacebar_items_enabled": {
                 "value": true
             },
@@ -1302,6 +1296,12 @@
             "android_status_groups_removal_android_tweet_detail_remove_db_tweet_load": {
                 "value": false
             },
+            "android_system_dns_cache_enabled": {
+                "value": false
+            },
+            "android_system_dns_synchronized_map_enabled": {
+                "value": false
+            },
             "android_tabbed_explore_enabled": {
                 "value": false
             },
@@ -1484,6 +1484,9 @@
             },
             "android_video_transcode_720p_h264_remux_max_width": {
                 "value": 1280.0
+            },
+            "android_video_transcode_compute_audio_pts_enabled": {
+                "value": false
             },
             "android_video_transcode_copy_enabled": {
                 "value": false
@@ -5028,5 +5031,9 @@
         "android_xiaomi_badging_experiment_8611",
         "android_growth_performance_holdback_b_enabled_15207"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "61be6a9ef978546d02887cb290b2ca1531b60c2f",
+        "experiments": "61be6a9ef978546d02887cb290b2ca1531b60c2f"
+    }
 }
