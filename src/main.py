@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception
 
-VER = "v7.72 : format links & added debug env : Upd download links"
+VER = "v7.75 : json Flag for ios"
 
 
 vername = "web"
@@ -14,19 +14,23 @@ vercode = ""
 down_link = ""
 
 
-def downloader(url,fileName=""):
+def downloader(url,fileName="",isJson=False):
     print(f"Downloading: {fileName}")
     response = requests.get(url, stream=True)
+    if not isJson:
+        total_size_in_bytes = int(response.headers.get('content-length', 0))
+        block_size = 1024  # 1 Kibibyte
 
-    total_size_in_bytes = int(response.headers.get('content-length', 0))
-    block_size = 1024  # 1 Kibibyte
-
-    progress_bar = tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True)
-    with open(ZIP_FILE, 'wb') as file:
-        for data in response.iter_content(block_size):
-            progress_bar.update(len(data))
-            file.write(data)
-    progress_bar.close()
+        progress_bar = tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True)
+        with open(ZIP_FILE, 'wb') as file:
+            for data in response.iter_content(block_size):
+                progress_bar.update(len(data))
+                file.write(data)
+        progress_bar.close()
+    else:
+        js = response.json()
+        writeJson(fileName,js)
+    
 
 
 def unzipper(platform):
@@ -163,10 +167,14 @@ def main():
         elif platform==Platform.IOS.value:
             fileName = "x.ipa"
             vercode = ""
-            downloader(down_link,fileName)
-            s = unzipper(platform)
-            if not s:
-                return False
+            if ".json" in down_link:
+                downloader(url=down_link,fileName=new_file_name,isJson=True)
+                downloader(url=down_link,fileName=new_file_ipad_name,isJson=True)
+            else:
+                downloader(down_link,fileName)
+                s = unzipper(platform)
+                if not s:
+                    return False
             
             existsing_flag_file = f'flags_iphone_{typ}.json'
             os.rename(existsing_flag_file, old_file_name)
