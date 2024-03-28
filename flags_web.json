@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "176af9cc2a3eff1d6a90eaf0ce39eb0344092929",
+    "feature_set_token": "15579cad35a1edcc9e619ed7254c7b5cb4f80480",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -418,10 +418,10 @@
             "value": true
         },
         "communities_adult_content_setting_display": {
-            "value": false
+            "value": true
         },
         "communities_adult_content_setting_enabled": {
-            "value": false
+            "value": true
         },
         "communities_enable_explore_tab": {
             "value": false
@@ -1641,6 +1641,9 @@
         "responsive_web_twitter_article_cover_aspect_ratio_5_2": {
             "value": true
         },
+        "responsive_web_twitter_article_markdown_block_limit": {
+            "value": 10
+        },
         "responsive_web_twitter_article_markdown_enabled": {
             "value": false
         },
@@ -2127,9 +2130,6 @@
             "value": "BlueVerifiedPlus"
         },
         "subscriptions_premium_tiers_encrypted_dms_gating_update_enabled": {
-            "value": true
-        },
-        "subscriptions_premium_tiers_marketing_page_enabled": {
             "value": true
         },
         "subscriptions_report_ad_upsell_enabled": {
@@ -3599,12 +3599,12 @@
         "communities_adult_content_setting_display": {
             "name": "communities_adult_content_setting_display",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "communities_adult_content_setting_enabled": {
             "name": "communities_adult_content_setting_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -7040,7 +7040,8 @@
         },
         "responsive_web_twitter_article_markdown_block_limit": {
             "name": "responsive_web_twitter_article_markdown_block_limit",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 10
         },
         "responsive_web_twitter_blue_subscriptions_disabled": {
             "name": "responsive_web_twitter_blue_subscriptions_disabled",
@@ -8321,8 +8322,7 @@
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "subscriptions_premium_tiers_switching_enabled": {
             "name": "subscriptions_premium_tiers_switching_enabled",
