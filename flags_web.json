@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "15579cad35a1edcc9e619ed7254c7b5cb4f80480",
+    "feature_set_token": "0fa7841cfec7be87a7f69331ae86c7aa6c0f9bb0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2089,6 +2089,9 @@
         },
         "subscriptions_inapp_grok_disable_links": {
             "value": true
+        },
+        "subscriptions_inapp_grok_early_access_enabled": {
+            "value": false
         },
         "subscriptions_inapp_grok_enable_roast_me_prompt": {
             "value": true
@@ -8219,7 +8222,8 @@
         },
         "subscriptions_inapp_grok_early_access_enabled": {
             "name": "subscriptions_inapp_grok_early_access_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
