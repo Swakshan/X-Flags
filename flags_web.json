@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "83c4541bc27e2fae5426ab76413a120d5000e2c4",
+    "feature_set_token": "b9d2a68075dbf0e8337c669b1d3454de45d1e737",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1596,6 +1596,9 @@
         "responsive_web_suppress_app_button_banner_suppressed": {
             "value": false
         },
+        "responsive_web_temporary_ocf_x_migration": {
+            "value": false
+        },
         "responsive_web_timeline_cover_killswitch_enabled": {
             "value": false
         },
@@ -1812,6 +1815,9 @@
         "rweb_spaceclient_v2_enabled": {
             "value": "false"
         },
+        "rweb_tipjar_consumption_enabled": {
+            "value": false
+        },
         "rweb_tweets_boosting_enabled": {
             "value": false
         },
@@ -1999,6 +2005,9 @@
         },
         "spaces_incognito_consumption_enabled": {
             "value": true
+        },
+        "spaces_video_creation_enabled": {
+            "value": false
         },
         "standardized_nudges_misinfo": {
             "value": true
@@ -6912,6 +6921,11 @@
             "type": "experiment",
             "enumeration_values": []
         },
+        "responsive_web_temporary_ocf_x_migration": {
+            "name": "responsive_web_temporary_ocf_x_migration",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_timeline_cover_killswitch_enabled": {
             "name": "responsive_web_timeline_cover_killswitch_enabled",
             "type": "boolean",
@@ -7376,6 +7390,11 @@
             "type": "string",
             "defaultValue": "false"
         },
+        "rweb_tipjar_consumption_enabled": {
+            "name": "rweb_tipjar_consumption_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_tweet_detail_font_size_holdback_16263": {
             "name": "rweb_tweet_detail_font_size_holdback_16263",
             "type": "experiment",
@@ -7805,6 +7824,31 @@
             "name": "spaces_search_holdback_12894",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "spaces_video_creation_enabled": {
+            "name": "spaces_video_creation_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "spaces_video_consumption_enabled": {
+            "name": "spaces_video_consumption_enabled",
+            "type": "string"
+        },
+        "spaces_video_admins_enabled": {
+            "name": "spaces_video_admins_enabled",
+            "type": "string"
+        },
+        "spaces_video_speakers_enabled": {
+            "name": "spaces_video_speakers_enabled",
+            "type": "string"
+        },
+        "spaces_video_follow_speaker_local_enabled": {
+            "name": "spaces_video_follow_speaker_local_enabled",
+            "type": "string"
+        },
+        "spaces_video_follow_speaker_remote_publisher_enabled": {
+            "name": "spaces_video_follow_speaker_remote_publisher_enabled",
+            "type": "string"
         },
         "standardized_nudges_misinfo": {
             "name": "standardized_nudges_misinfo",
