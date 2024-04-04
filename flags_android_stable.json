@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "76fe22b41c3eab6eb89ee34cb2776e55b4c545b6",
+        "feature_set_token": "f59a8260145f8bfef1809781aaff60669dde7a90",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -549,9 +549,6 @@
             "android_audio_room_scheduling_enabled": {
                 "value": true
             },
-            "android_audio_room_use_graphql": {
-                "value": false
-            },
             "android_audio_rooms_max_participants_list_size": {
                 "value": 500.0
             },
@@ -574,7 +571,7 @@
                 "value": true
             },
             "android_audio_spaces_dash_enabled": {
-                "value": false
+                "value": true
             },
             "android_audio_spaces_default_starting_filter": {
                 "value": ""
@@ -1050,6 +1047,9 @@
             "android_media_playback_skip_ad_watch_requirement_ms": {
                 "value": 0.0
             },
+            "android_media_repo_transcoding_timeout_minutes": {
+                "value": 3.0
+            },
             "android_mediaplayer_metric_ticking_playback_enabled": {
                 "value": true
             },
@@ -1299,6 +1299,9 @@
             "android_system_dns_synchronized_map_enabled": {
                 "value": false
             },
+            "android_system_dns_timeout_ms": {
+                "value": 15000.0
+            },
             "android_tabbed_explore_enabled": {
                 "value": false
             },
@@ -1497,9 +1500,6 @@
             "android_video_transcode_exoplayer_decoder_selection_enabled": {
                 "value": false
             },
-            "android_video_transcode_force_audio_transcode_enabled": {
-                "value": true
-            },
             "android_video_transcode_force_surface_workaround_enabled": {
                 "value": true
             },
@@ -1556,6 +1556,9 @@
             },
             "articles_preview_cover_image_default": {
                 "value": "https://abs.twimg.com/responsive-web/client-web/ArticlePlaceholder.884af8aa.png"
+            },
+            "articles_timeline_profile_tab_enabled": {
+                "value": false
             },
             "audio_transcription_subtitles_voice_enabled": {
                 "value": true
@@ -2283,15 +2286,18 @@
                 "value": false
             },
             "communities_adult_content_setting_display": {
-                "value": false
+                "value": true
             },
             "communities_adult_content_setting_enabled": {
-                "value": false
+                "value": true
             },
             "communities_community_detail_sorting_enabled": {
                 "value": true
             },
             "communities_enable_explore_tab": {
+                "value": false
+            },
+            "communities_enable_explore_topic_carousel": {
                 "value": false
             },
             "communities_show_broadcast_option_in_composer": {
@@ -4707,9 +4713,6 @@
             "vit_unlimited_profile_tweets_timeline_non_verified_users_enabled": {
                 "value": false
             },
-            "vit_verified_followers_view_enabled": {
-                "value": true
-            },
             "vod_autoplay_start_min_visible_fraction": {
                 "value": 0.01
             },
@@ -5036,7 +5039,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "d3605d15bc100c569d5d4ad9f7cb6f066d050b7f",
-        "experiments": "d3605d15bc100c569d5d4ad9f7cb6f066d050b7f"
+        "feature_switches": "2b11613f0c8546d21de22b6b82e9094d16af71f4",
+        "experiments": "2b11613f0c8546d21de22b6b82e9094d16af71f4"
     }
 }
