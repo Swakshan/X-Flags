@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "6845c239c75812554b82d457cad66ac09a062326",
+        "feature_set_token": "e5ae0ac1953ce58e1df48fd375a95c737e7901a2",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -571,7 +571,7 @@
                 "value": true
             },
             "android_audio_spaces_dash_enabled": {
-                "value": false
+                "value": true
             },
             "android_audio_spaces_default_starting_filter": {
                 "value": ""
@@ -1297,10 +1297,13 @@
                 "value": false
             },
             "android_system_dns_cache_enabled": {
-                "value": false
+                "value": true
             },
             "android_system_dns_synchronized_map_enabled": {
                 "value": false
+            },
+            "android_system_dns_timeout_ms": {
+                "value": 15000.0
             },
             "android_tabbed_explore_enabled": {
                 "value": false
@@ -2286,15 +2289,18 @@
                 "value": false
             },
             "communities_adult_content_setting_display": {
-                "value": false
+                "value": true
             },
             "communities_adult_content_setting_enabled": {
-                "value": false
+                "value": true
             },
             "communities_community_detail_sorting_enabled": {
                 "value": true
             },
             "communities_enable_explore_tab": {
+                "value": false
+            },
+            "communities_enable_explore_topic_carousel": {
                 "value": false
             },
             "communities_show_broadcast_option_in_composer": {
@@ -4329,24 +4335,6 @@
                     "cloudfront.twprobe.net/images/boomerang/image-3.png"
                 ]
             },
-            "trusted_friends_api_enabled": {
-                "value": true
-            },
-            "trusted_friends_consumption_enabled": {
-                "value": true
-            },
-            "trusted_friends_copy_variant": {
-                "value": "change_copy"
-            },
-            "trusted_friends_dash_discovery_enabled": {
-                "value": false
-            },
-            "trusted_friends_dash_discovery_tooltip_enabled": {
-                "value": false
-            },
-            "trusted_friends_tweet_creation_enabled": {
-                "value": false
-            },
             "tweet_analytics_enabled": {
                 "value": true
             },
@@ -5036,7 +5024,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "092195010bcede74bc92c168d6e0825ac8a6ef52",
-        "experiments": "092195010bcede74bc92c168d6e0825ac8a6ef52"
+        "feature_switches": "a26742ff0d3cce4d8c86b261665c7e3191303ac1",
+        "experiments": "a26742ff0d3cce4d8c86b261665c7e3191303ac1"
     }
 }
