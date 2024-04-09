@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d329ed9a246d264c20c7a0b6bfba90bc2841b7b3",
+    "feature_set_token": "e7197a18ff6f6b456a481b860a8a347026c1aa65",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1821,6 +1821,9 @@
         "rweb_spaceclient_v2_enabled": {
             "value": "false"
         },
+        "rweb_spaces_invite_search_enabled": {
+            "value": false
+        },
         "rweb_tipjar_consumption_enabled": {
             "value": false
         },
@@ -2011,6 +2014,9 @@
         },
         "spaces_incognito_consumption_enabled": {
             "value": true
+        },
+        "spaces_video_consumption_enabled": {
+            "value": false
         },
         "spaces_video_creation_enabled": {
             "value": false
@@ -7413,6 +7419,11 @@
             "type": "string",
             "defaultValue": "false"
         },
+        "rweb_spaces_invite_search_enabled": {
+            "name": "rweb_spaces_invite_search_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_tipjar_consumption_enabled": {
             "name": "rweb_tipjar_consumption_enabled",
             "type": "boolean",
@@ -7855,7 +7866,8 @@
         },
         "spaces_video_consumption_enabled": {
             "name": "spaces_video_consumption_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "spaces_video_admins_enabled": {
             "name": "spaces_video_admins_enabled",
