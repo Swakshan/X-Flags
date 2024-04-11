@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a50a2b1eec269a1fd6b73a4e4ce95f310ba72f78",
+    "feature_set_token": "e9e77f995f925d4aa435f62cc63c52a479113a77",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -908,9 +908,6 @@
         },
         "media_edge_to_edge_content_enabled": {
             "value": false
-        },
-        "media_visibility_treatments_blurred_media_interstitial_enabled": {
-            "value": true
         },
         "network_layer_503_backoff_mode": {
             "value": "host"
@@ -2117,9 +2114,6 @@
         "subscriptions_inapp_grok_disable_links": {
             "value": true
         },
-        "subscriptions_inapp_grok_early_access_enabled": {
-            "value": false
-        },
         "subscriptions_inapp_grok_enable_roast_me_prompt": {
             "value": true
         },
@@ -2525,7 +2519,7 @@
             "value": true
         },
         "tweet_with_visibility_results_prefer_gql_media_interstitial_enabled": {
-            "value": true
+            "value": false
         },
         "tweetypie_unmention_optimization_enabled": {
             "value": true
@@ -5607,11 +5601,6 @@
             "name": "media_edge_to_edge_large_text_enabled",
             "type": "string"
         },
-        "media_visibility_treatments_blurred_media_interstitial_enabled": {
-            "name": "media_visibility_treatments_blurred_media_interstitial_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "mr_logged_out_web_notifs_15050": {
             "name": "mr_logged_out_web_notifs_15050",
             "type": "experiment",
@@ -8316,8 +8305,7 @@
         },
         "subscriptions_inapp_grok_early_access_enabled": {
             "name": "subscriptions_inapp_grok_early_access_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
@@ -8578,6 +8566,10 @@
             "name": "super_follow_subscriptions_tax_calculation_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "super_follow_user_subscription_enabled": {
+            "name": "super_follow_user_subscription_enabled",
+            "type": "string"
         },
         "super_follow_onboarding_granular_pricing_enabled": {
             "name": "super_follow_onboarding_granular_pricing_enabled",
@@ -9358,7 +9350,7 @@
         "tweet_with_visibility_results_prefer_gql_media_interstitial_enabled": {
             "name": "tweet_with_visibility_results_prefer_gql_media_interstitial_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "tweetypie_unmention_optimization_enabled": {
             "name": "tweetypie_unmention_optimization_enabled",
