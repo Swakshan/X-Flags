@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "30e25f778d407e5174a3baea0996e2a2d4524d8a",
+    "feature_set_token": "ccc63bb7b41d1a7eb8e713ff370988ff1f603dd0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -430,6 +430,9 @@
             "value": false
         },
         "communities_enable_explore_topic_carousel": {
+            "value": false
+        },
+        "communities_home_top_timeline_enabled": {
             "value": false
         },
         "communities_show_broadcast_option_in_composer": {
@@ -1456,6 +1459,9 @@
             "value": false
         },
         "responsive_web_messages_next_enabled": {
+            "value": false
+        },
+        "responsive_web_messages_related_enabled": {
             "value": false
         },
         "responsive_web_messages_search_enabled": {
@@ -3649,7 +3655,8 @@
         },
         "communities_home_top_timeline_enabled": {
             "name": "communities_home_top_timeline_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -6710,6 +6717,11 @@
             "name": "responsive_web_messages_search_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_messages_related_enabled": {
+            "name": "responsive_web_messages_related_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_mobile_app_spotlight_v1_config": {
             "name": "responsive_web_mobile_app_spotlight_v1_config",
