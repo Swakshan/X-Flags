@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fd5ef3d1ce2c17b1d0eae6f0bd0c959b26ddc815",
+    "feature_set_token": "8a551b90d817e17fea55c7de1b20ebec771c2cea",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -312,9 +312,6 @@
         "blue_business_multi_affiliates_ui_enabled": {
             "value": false
         },
-        "blue_business_tier_switching_enabled": {
-            "value": false
-        },
         "blue_business_username_change_prompt_enabled": {
             "value": true
         },
@@ -400,9 +397,6 @@
             "value": false
         },
         "c9s_question_editing_box_enabled": {
-            "value": true
-        },
-        "c9s_spotlight_creation_enabled": {
             "value": true
         },
         "c9s_ssr_enabled": {
@@ -1006,7 +1000,7 @@
             "value": ""
         },
         "recruiting_admin_currencies_enabled": {
-            "value": true
+            "value": false
         },
         "recruiting_global_jobs_search_enabled": {
             "value": true
@@ -1033,16 +1027,16 @@
             "value": true
         },
         "recruiting_search_filters_enabled": {
-            "value": true
+            "value": false
         },
         "recruiting_verified_orgs_admin_enabled": {
-            "value": true
+            "value": false
         },
         "recruiting_verified_orgs_ats_integration_enabled": {
-            "value": true
+            "value": false
         },
         "recruiting_verified_orgs_enroll_allowed": {
-            "value": true
+            "value": false
         },
         "report_center_mvp_r1_enabled": {
             "value": true
@@ -1082,9 +1076,6 @@
         },
         "responsive_web_account_access_language_lo_splash_sidebar": {
             "value": "control"
-        },
-        "responsive_web_account_analytics_timeframe_enabled": {
-            "value": false
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "value": true
@@ -1668,14 +1659,14 @@
         "responsive_web_twitter_article_code_block_enabled": {
             "value": true
         },
-        "responsive_web_twitter_article_code_language_typeahead_enabled": {
-            "value": false
-        },
         "responsive_web_twitter_article_content_debounce_ms": {
             "value": 3000.0
         },
-        "responsive_web_twitter_article_latex_enabled": {
+        "responsive_web_twitter_article_insert_enabled": {
             "value": true
+        },
+        "responsive_web_twitter_article_latex_enabled": {
+            "value": false
         },
         "responsive_web_twitter_article_markdown_block_limit": {
             "value": 10
@@ -3181,11 +3172,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "blue_business_tier_switching_enabled": {
-            "name": "blue_business_tier_switching_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "blue_longer_video_enabled": {
             "name": "blue_longer_video_enabled",
             "type": "boolean",
@@ -3454,8 +3440,7 @@
         },
         "c9s_spotlight_creation_enabled": {
             "name": "c9s_spotlight_creation_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "c9s_spotlight_consumption_enabled": {
             "name": "c9s_spotlight_consumption_enabled",
@@ -4664,6 +4649,10 @@
             "name": "explore_relaunch_broadcast_support_for_live_without_chat_enabled",
             "type": "string"
         },
+        "explore_relaunch_broadcast_support_chat_enabled": {
+            "name": "explore_relaunch_broadcast_support_chat_enabled",
+            "type": "string"
+        },
         "explore_relaunch_broadcast_replace_viewers_to_views_enabled": {
             "name": "explore_relaunch_broadcast_replace_viewers_to_views_enabled",
             "type": "string"
@@ -4802,7 +4791,10 @@
         "grok_upsell_hold_back_16664": {
             "name": "grok_upsell_hold_back_16664",
             "type": "experiment",
-            "enumeration_values": []
+            "enumeration_values": [
+                "control",
+                "holdback"
+            ]
         },
         "gryphon_accountsync_polling_interval_ms": {
             "name": "gryphon_accountsync_polling_interval_ms",
@@ -5887,7 +5879,7 @@
         "recruiting_verified_orgs_admin_enabled": {
             "name": "recruiting_verified_orgs_admin_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "recruiting_jobs_list_consumption_enabled": {
             "name": "recruiting_jobs_list_consumption_enabled",
@@ -5897,12 +5889,12 @@
         "recruiting_verified_orgs_enroll_allowed": {
             "name": "recruiting_verified_orgs_enroll_allowed",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "recruiting_verified_orgs_ats_integration_enabled": {
             "name": "recruiting_verified_orgs_ats_integration_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "recruiting_job_page_consumption_enabled": {
             "name": "recruiting_job_page_consumption_enabled",
@@ -5962,12 +5954,12 @@
         "recruiting_admin_currencies_enabled": {
             "name": "recruiting_admin_currencies_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "recruiting_search_filters_enabled": {
             "name": "recruiting_search_filters_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
@@ -6080,15 +6072,6 @@
             "name": "responsive_web_account_access_language_lo_splash_sidebar",
             "type": "string",
             "defaultValue": "control"
-        },
-        "responsive_web_account_analytics_enabled": {
-            "name": "responsive_web_account_analytics_enabled",
-            "type": "string"
-        },
-        "responsive_web_account_analytics_timeframe_enabled": {
-            "name": "responsive_web_account_analytics_timeframe_enabled",
-            "type": "boolean",
-            "defaultValue": false
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
@@ -7133,7 +7116,8 @@
         },
         "responsive_web_twitter_article_insert_enabled": {
             "name": "responsive_web_twitter_article_insert_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "responsive_web_twitter_article_code_block_enabled": {
             "name": "responsive_web_twitter_article_code_block_enabled",
@@ -7143,12 +7127,11 @@
         "responsive_web_twitter_article_latex_enabled": {
             "name": "responsive_web_twitter_article_latex_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_twitter_article_code_language_typeahead_enabled": {
             "name": "responsive_web_twitter_article_code_language_typeahead_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_twitter_blue_subscriptions_disabled": {
             "name": "responsive_web_twitter_blue_subscriptions_disabled",
@@ -7464,6 +7447,15 @@
             "name": "rweb_sidebar_lower_whats_happening_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_single_direction_for_you_16680": {
+            "name": "rweb_single_direction_for_you_16680",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment_1",
+                "treatment_2"
+            ]
         },
         "rweb_spaceclient_v2_enabled": {
             "name": "rweb_spaceclient_v2_enabled",
