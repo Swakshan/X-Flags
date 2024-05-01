@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "691f68f2f199549adab6f1c7248322602446a45e",
+    "feature_set_token": "ec56cc50eb6698233f7dc9658db27e11a83688bb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1350,6 +1350,9 @@
         "responsive_web_graphql_timeline_navigation_enabled": {
             "value": true
         },
+        "responsive_web_grok_chat_history_enabled": {
+            "value": false
+        },
         "responsive_web_grok_delete_conversations_enabled": {
             "value": false
         },
@@ -1462,6 +1465,9 @@
             "value": 6
         },
         "responsive_web_menu_section_divider_enabled": {
+            "value": false
+        },
+        "responsive_web_messages_continue_enabled": {
             "value": false
         },
         "responsive_web_messages_enabled": {
@@ -1666,7 +1672,7 @@
             "value": true
         },
         "responsive_web_twitter_article_code_language_typeahead_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_twitter_article_content_debounce_ms": {
             "value": 3000.0
@@ -2166,9 +2172,6 @@
             "value": true
         },
         "subscriptions_marketing_page_include_tax_enabled": {
-            "value": true
-        },
-        "subscriptions_marketing_page_redesign_enabled": {
             "value": true
         },
         "subscriptions_mute_ad_upsell_enabled": {
@@ -6565,6 +6568,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_grok_chat_history_enabled": {
+            "name": "responsive_web_grok_chat_history_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -6738,9 +6746,10 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_messages_next_enabled": {
-            "name": "responsive_web_messages_next_enabled",
-            "type": "string"
+        "responsive_web_messages_continue_enabled": {
+            "name": "responsive_web_messages_continue_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_messages_search_enabled": {
             "name": "responsive_web_messages_search_enabled",
@@ -7139,6 +7148,10 @@
             "type": "number",
             "defaultValue": 10
         },
+        "responsive_web_twitter_article_insert_enabled": {
+            "name": "responsive_web_twitter_article_insert_enabled",
+            "type": "string"
+        },
         "responsive_web_twitter_article_code_block_enabled": {
             "name": "responsive_web_twitter_article_code_block_enabled",
             "type": "boolean",
@@ -7152,7 +7165,7 @@
         "responsive_web_twitter_article_code_language_typeahead_enabled": {
             "name": "responsive_web_twitter_article_code_language_typeahead_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_twitter_blue_subscriptions_disabled": {
             "name": "responsive_web_twitter_blue_subscriptions_disabled",
@@ -8448,8 +8461,7 @@
         },
         "subscriptions_marketing_page_redesign_enabled": {
             "name": "subscriptions_marketing_page_redesign_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "subscriptions_marketing_page_upsell_enabled": {
             "name": "subscriptions_marketing_page_upsell_enabled",
