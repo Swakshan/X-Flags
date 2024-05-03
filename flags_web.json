@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ec56cc50eb6698233f7dc9658db27e11a83688bb",
+    "feature_set_token": "4bc1ab34c2596c507f8e36f09163631d43e2db18",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1081,7 +1081,7 @@
             "value": "control"
         },
         "responsive_web_account_analytics_timeframe_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "value": true
@@ -1478,6 +1478,12 @@
         },
         "responsive_web_messages_search_enabled": {
             "value": true
+        },
+        "responsive_web_messages_watch_info_enabled": {
+            "value": false
+        },
+        "responsive_web_messages_watch_info_interval_s": {
+            "value": 600
         },
         "responsive_web_mobile_app_spotlight_v1_config": {
             "value": false
@@ -2108,9 +2114,6 @@
         "subscriptions_feature_article_composer": {
             "value": true
         },
-        "subscriptions_feature_can_hide_checkmark": {
-            "value": false
-        },
         "subscriptions_feature_extend_profile": {
             "value": true
         },
@@ -2393,7 +2396,6 @@
             "value": [
                 "embed",
                 "pin_to_profile",
-                "retweet",
                 "highlight"
             ]
         },
@@ -2428,7 +2430,6 @@
                 "react",
                 "reply",
                 "reply_down_vote",
-                "retweet",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -2440,7 +2441,6 @@
                 "react",
                 "reply",
                 "reply_down_vote",
-                "retweet",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -2452,7 +2452,6 @@
                 "react",
                 "reply",
                 "reply_down_vote",
-                "retweet",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -5976,6 +5975,10 @@
             "name": "recruiting_global_jobs_hub_enabled",
             "type": "string"
         },
+        "recruiting_native_job_search_enabled": {
+            "name": "recruiting_native_job_search_enabled",
+            "type": "string"
+        },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
             "type": "boolean",
@@ -6095,7 +6098,7 @@
         "responsive_web_account_analytics_timeframe_enabled": {
             "name": "responsive_web_account_analytics_timeframe_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
@@ -6760,6 +6763,16 @@
             "name": "responsive_web_messages_related_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_messages_watch_info_enabled": {
+            "name": "responsive_web_messages_watch_info_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_messages_watch_info_interval_s": {
+            "name": "responsive_web_messages_watch_info_interval_s",
+            "type": "number",
+            "defaultValue": 600
         },
         "responsive_web_mobile_app_spotlight_v1_config": {
             "name": "responsive_web_mobile_app_spotlight_v1_config",
@@ -8266,8 +8279,7 @@
         },
         "subscriptions_feature_can_hide_checkmark": {
             "name": "subscriptions_feature_can_hide_checkmark",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "subscriptions_feature_account_analytics": {
             "name": "subscriptions_feature_account_analytics",
@@ -9255,7 +9267,6 @@
             "defaultValue": [
                 "embed",
                 "pin_to_profile",
-                "retweet",
                 "highlight"
             ]
         },
@@ -9268,7 +9279,6 @@
                 "react",
                 "reply",
                 "reply_down_vote",
-                "retweet",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -9282,7 +9292,6 @@
                 "react",
                 "reply",
                 "reply_down_vote",
-                "retweet",
                 "vote_on_poll",
                 "highlight"
             ]
@@ -9296,7 +9305,6 @@
                 "react",
                 "reply",
                 "reply_down_vote",
-                "retweet",
                 "vote_on_poll",
                 "highlight"
             ]
