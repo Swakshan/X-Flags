@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6d11f4b5b0162c57533b9fc68303bad27ae1c106",
+    "feature_set_token": "3c96096a051b53335e9a19778db83583da97df76",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1310,6 +1310,9 @@
                 "si",
                 "sk"
             ]
+        },
+        "responsive_web_exodus_enabled": {
+            "value": false
         },
         "responsive_web_explorer_ads_enabled": {
             "value": true
@@ -4667,20 +4670,20 @@
             "name": "explore_relaunch_broadcast_support_enabled",
             "type": "string"
         },
-        "explore_relaunch_broadcast_support_for_certain_videos_enabled": {
-            "name": "explore_relaunch_broadcast_support_for_certain_videos_enabled",
-            "type": "string"
-        },
-        "explore_relaunch_broadcast_support_for_live_without_chat_enabled": {
-            "name": "explore_relaunch_broadcast_support_for_live_without_chat_enabled",
-            "type": "string"
-        },
         "explore_relaunch_broadcast_replace_viewers_to_views_enabled": {
             "name": "explore_relaunch_broadcast_replace_viewers_to_views_enabled",
             "type": "string"
         },
-        "explore_relaunch_broadcast_support_chat_v2_enabled": {
-            "name": "explore_relaunch_broadcast_support_chat_v2_enabled",
+        "explore_relaunch_override_load_page_video_range_values_enabled": {
+            "name": "explore_relaunch_override_load_page_video_range_values_enabled",
+            "type": "string"
+        },
+        "explore_relaunch_override_load_page_video_range_values_lower_bound": {
+            "name": "explore_relaunch_override_load_page_video_range_values_lower_bound",
+            "type": "string"
+        },
+        "explore_relaunch_override_load_page_video_range_values_upper_bound": {
+            "name": "explore_relaunch_override_load_page_video_range_values_upper_bound",
             "type": "string"
         },
         "focused_timeline_actions_onboarding_likes": {
@@ -6468,6 +6471,11 @@
         },
         "responsive_web_enhance_cards_enabled": {
             "name": "responsive_web_enhance_cards_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_exodus_enabled": {
+            "name": "responsive_web_exodus_enabled",
             "type": "boolean",
             "defaultValue": false
         },
