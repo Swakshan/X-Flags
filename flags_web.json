@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3c96096a051b53335e9a19778db83583da97df76",
+    "feature_set_token": "f03e3e2dd0c1629e547af80a2ddfeb1417a6cb23",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -431,6 +431,9 @@
         },
         "communities_adult_content_setting_enabled": {
             "value": true
+        },
+        "communities_analytics_enabled": {
+            "value": false
         },
         "communities_enable_explore_tab": {
             "value": true
@@ -3688,6 +3691,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "communities_analytics_enabled": {
+            "name": "communities_analytics_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
             "type": "experiment",
@@ -4690,8 +4698,8 @@
             "name": "explore_relaunch_broadcast_live_notifications_and_chat_history_toasts_enabled",
             "type": "string"
         },
-        "explore_relaunch_support_chat_v2_enabled": {
-            "name": "explore_relaunch_support_chat_v2_enabled",
+        "explore_relaunch_broadcast_support_chat_v2_enabled": {
+            "name": "explore_relaunch_broadcast_support_chat_v2_enabled",
             "type": "string"
         },
         "focused_timeline_actions_onboarding_likes": {
