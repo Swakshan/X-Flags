@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "127ae53dd0d9110557c5ce7cd0ddb14ad0fbd6d3",
+    "feature_set_token": "82eb9ffcd6e113dfda7a861cacc89754befa509b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -915,9 +915,6 @@
         "media_edge_to_edge_content_enabled": {
             "value": false
         },
-        "media_visibility_treatments_blurred_media_interstitial_enabled": {
-            "value": false
-        },
         "network_layer_503_backoff_mode": {
             "value": "host"
         },
@@ -1780,7 +1777,7 @@
             "value": false
         },
         "responsive_web_vo_annual_credit_increase_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_x_translation_enabled": {
             "value": false
@@ -2552,9 +2549,6 @@
             "value": true
         },
         "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": {
-            "value": true
-        },
-        "tweet_with_visibility_results_prefer_gql_media_interstitial_enabled": {
             "value": true
         },
         "tweetypie_unmention_optimization_enabled": {
@@ -5648,11 +5642,6 @@
             "name": "media_edge_to_edge_large_text_enabled",
             "type": "string"
         },
-        "media_visibility_treatments_blurred_media_interstitial_enabled": {
-            "name": "media_visibility_treatments_blurred_media_interstitial_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "mr_logged_out_web_notifs_15050": {
             "name": "mr_logged_out_web_notifs_15050",
             "type": "experiment",
@@ -6291,6 +6280,10 @@
             "name": "responsive_web_birdwatch_read_sources_nudge",
             "type": "string",
             "defaultValue": "control"
+        },
+        "responsive_web_birdwatch_match_page_enabled": {
+            "name": "responsive_web_birdwatch_match_page_enabled",
+            "type": "string"
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -7336,7 +7329,7 @@
         "responsive_web_vo_annual_credit_increase_enabled": {
             "name": "responsive_web_vo_annual_credit_increase_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_x_translation_enabled": {
             "name": "responsive_web_x_translation_enabled",
@@ -9477,8 +9470,7 @@
         },
         "tweet_with_visibility_results_prefer_gql_media_interstitial_enabled": {
             "name": "tweet_with_visibility_results_prefer_gql_media_interstitial_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "tweetypie_unmention_optimization_enabled": {
             "name": "tweetypie_unmention_optimization_enabled",
