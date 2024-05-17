@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e133be269201f91d0efeaaa967f2a2e1b5d04c1e",
+    "feature_set_token": "127ae53dd0d9110557c5ce7cd0ddb14ad0fbd6d3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -411,14 +411,8 @@
         "c9s_tab_visibility": {
             "value": "always"
         },
-        "c9s_timelines_default_selection": {
-            "value": "latest"
-        },
         "c9s_timelines_media_tab_enabled": {
             "value": true
-        },
-        "c9s_timelines_top_latest_stickiness_enabled": {
-            "value": false
         },
         "c9s_tweet_anatomy_moderator_badge_enabled": {
             "value": true
@@ -1785,6 +1779,9 @@
         "responsive_web_video_trimmer_enabled": {
             "value": false
         },
+        "responsive_web_vo_annual_credit_increase_enabled": {
+            "value": false
+        },
         "responsive_web_x_translation_enabled": {
             "value": false
         },
@@ -2564,9 +2561,6 @@
             "value": true
         },
         "twitter_chat_communities_chat_enabled": {
-            "value": false
-        },
-        "twitter_delegate_enabled": {
             "value": false
         },
         "twitter_delegate_normal_limit": {
@@ -3483,8 +3477,7 @@
         },
         "c9s_timelines_default_selection": {
             "name": "c9s_timelines_default_selection",
-            "type": "string",
-            "defaultValue": "latest"
+            "type": "string"
         },
         "c9s_timelines_ranking_enabled": {
             "name": "c9s_timelines_ranking_enabled",
@@ -3508,8 +3501,7 @@
         },
         "c9s_timelines_top_latest_stickiness_enabled": {
             "name": "c9s_timelines_top_latest_stickiness_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "c9s_timelines_top_latest_min_members": {
             "name": "c9s_timelines_top_latest_min_members",
@@ -3700,11 +3692,6 @@
         },
         "community_notes_read_sources_nudge_16495": {
             "name": "community_notes_read_sources_nudge_16495",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "community_top_tab_sticky_16556": {
-            "name": "community_top_tab_sticky_16556",
             "type": "experiment",
             "enumeration_values": []
         },
@@ -7346,6 +7333,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_vo_annual_credit_increase_enabled": {
+            "name": "responsive_web_vo_annual_credit_increase_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_x_translation_enabled": {
             "name": "responsive_web_x_translation_enabled",
             "type": "boolean",
@@ -9508,8 +9500,7 @@
         },
         "twitter_delegate_enabled": {
             "name": "twitter_delegate_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "twitter_delegate_settings_enabled": {
             "name": "twitter_delegate_settings_enabled",
