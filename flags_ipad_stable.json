@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "153e74f96814b47f3f9fda0016914eb76e654909",
+        "feature_set_token": "180f075ed9cc3ba01c2b23b6f441e8b92f9fe31a",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -379,6 +379,15 @@
             "av_chat_enhanced_calls_privacy_enabled": {
                 "value": true
             },
+            "av_chat_groups_audio_maximum_size": {
+                "value": 8.0
+            },
+            "av_chat_groups_enabled": {
+                "value": false
+            },
+            "av_chat_groups_video_maximum_size": {
+                "value": 4.0
+            },
             "av_chat_ios_pushkit_token_registration_enabled": {
                 "value": true
             },
@@ -663,6 +672,9 @@
             },
             "c9s_user_typeahead_delay_millis": {
                 "value": 500.0
+            },
+            "camera_broadcast_chat_setting_default": {
+                "value": "off"
             },
             "card_app_cta_enabled": {
                 "value": false
@@ -1691,6 +1703,9 @@
             "dm_share_sheet_send_individually_max_count": {
                 "value": 20.0
             },
+            "dm_share_sheet_single_off_platform_section_enabled": {
+                "value": false
+            },
             "dm_verified_allow_dms_from_setting_enabled": {
                 "value": true
             },
@@ -1790,6 +1805,9 @@
             "explore_relaunch_auto_refresh_timeout_minutes": {
                 "value": 5.0
             },
+            "explore_relaunch_broadcast_live_chat_usernames_only_enabled": {
+                "value": false
+            },
             "explore_relaunch_broadcast_live_notifications_and_chat_history_toasts_enabled": {
                 "value": false
             },
@@ -1799,20 +1817,11 @@
             "explore_relaunch_enabled": {
                 "value": false
             },
-            "explore_relaunch_graphql_enabled": {
-                "value": true
-            },
             "explore_relaunch_inline_comments_enabled": {
                 "value": false
             },
             "explore_relaunch_items_left_fetch_threshold": {
                 "value": 5.0
-            },
-            "explore_relaunch_onboarding_bar_show_count": {
-                "value": 100000.0
-            },
-            "explore_relaunch_onboarding_delay_before_overlay_ms": {
-                "value": 5000.0
             },
             "explore_relaunch_open_on_trending_tab": {
                 "value": false
@@ -1825,24 +1834,6 @@
             },
             "explore_relaunch_override_load_page_video_range_values_upper_bound": {
                 "value": 3.0
-            },
-            "explore_relaunch_peek_bounce_onboarding_delay": {
-                "value": 3.0
-            },
-            "explore_relaunch_peek_bounce_onboarding_enabled": {
-                "value": false
-            },
-            "explore_relaunch_peek_bounce_onboarding_loop_count": {
-                "value": 3.0
-            },
-            "explore_relaunch_peek_bounce_onboarding_min_watch_time_sec": {
-                "value": 10.0
-            },
-            "explore_relaunch_peek_bounce_onboarding_per_video_show_count": {
-                "value": 3.0
-            },
-            "explore_relaunch_peek_bounce_onboarding_trigger_threshold": {
-                "value": 0.5
             },
             "explore_relaunch_show_personalization_options_bar": {
                 "value": true
@@ -1935,7 +1926,7 @@
                 "value": true
             },
             "grok_native_x_share_sheet": {
-                "value": false
+                "value": true
             },
             "guest_broadcasting_by_default_enabled": {
                 "value": false
@@ -2032,9 +2023,6 @@
             },
             "home_timeline_foreground_request_check_enabled": {
                 "value": false
-            },
-            "home_timeline_horizontal_paging_gestures_enabled": {
-                "value": true
             },
             "home_timeline_like_reactivity_enabled": {
                 "value": true
@@ -2324,10 +2312,10 @@
             "image_pipeline_uiv_scale_limit": {
                 "value": 2.0
             },
-            "immersive_video_big_centered_play_button": {
-                "value": true
+            "immersive_video_auto_play_next_enabled": {
+                "value": false
             },
-            "immersive_video_hide_chrome_when_video_starts": {
+            "immersive_video_big_centered_play_button": {
                 "value": true
             },
             "immersive_video_status_linkable_timestamps": {
@@ -3044,7 +3032,7 @@
                 "value": ""
             },
             "ios_ui_preroll_dismiss_button": {
-                "value": false
+                "value": true
             },
             "ios_ui_shows_vertical_scroll_indicator_enabled": {
                 "value": true
@@ -3057,9 +3045,6 @@
             },
             "ios_ui_summary_card_dominant_color_background_enabled": {
                 "value": true
-            },
-            "ios_ui_swipe_actions_enabled": {
-                "value": false
             },
             "ios_ui_transparent_status_bar": {
                 "value": true
@@ -8156,6 +8141,12 @@
             "onboarding_rux_share_to_snap_enabled": {
                 "value": true
             },
+            "onboarding_signed_out_fallback_disabled": {
+                "value": false
+            },
+            "onboarding_signed_out_fallback_flow_timeout": {
+                "value": 15.0
+            },
             "open_app_download_data_enabled": {
                 "value": true
             },
@@ -8609,16 +8600,16 @@
                 "value": false
             },
             "recruiting_global_jobs_search_enabled": {
-                "value": false
+                "value": true
             },
             "recruiting_jobs_hub_recommendations_tab_enabled": {
                 "value": false
             },
             "recruiting_jobs_list_consumption_enabled": {
-                "value": false
+                "value": true
             },
             "recruiting_native_job_search_enabled": {
-                "value": false
+                "value": true
             },
             "rehire_share_update_url_enabled": {
                 "value": true
@@ -8912,7 +8903,7 @@
                 "value": false
             },
             "spaces_video_follow_speaker_remote_publisher_enabled": {
-                "value": false
+                "value": true
             },
             "spaces_video_simulcast_enabled": {
                 "value": false
@@ -9909,7 +9900,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "1d4c33c21121ba65f6ba40226b5b1081dda9c6e1",
-        "experiments": "1d4c33c21121ba65f6ba40226b5b1081dda9c6e1"
+        "feature_switches": "d01c92ccb996064b62062f60bee663809505278f",
+        "experiments": "d01c92ccb996064b62062f60bee663809505278f"
     }
 }
