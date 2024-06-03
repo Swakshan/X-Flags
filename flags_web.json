@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0e97b6cc532f2d5b1a04b08098f0bf13f6d54e52",
+    "feature_set_token": "8729c787fd0fa3aedca55337d062f19f3353b58d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -888,6 +888,9 @@
         "media_async_upload_amplify_duration_threshold": {
             "value": 600
         },
+        "media_async_upload_longer_dm_video_max_video_duration": {
+            "value": 600
+        },
         "media_async_upload_longer_video_max_video_duration": {
             "value": 14460
         },
@@ -1126,6 +1129,9 @@
             "value": false
         },
         "responsive_web_birdwatch_country_allowed": {
+            "value": true
+        },
+        "responsive_web_birdwatch_match_page_enabled": {
             "value": true
         },
         "responsive_web_birdwatch_media_notes_enabled": {
@@ -3197,6 +3203,10 @@
             "name": "blue_business_tier_switching_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "blue_business_admin_sidebar_module_enabled": {
+            "name": "blue_business_admin_sidebar_module_enabled",
+            "type": "string"
         },
         "blue_longer_video_enabled": {
             "name": "blue_longer_video_enabled",
@@ -5652,7 +5662,8 @@
         },
         "media_async_upload_longer_dm_video_max_video_duration": {
             "name": "media_async_upload_longer_dm_video_max_video_duration",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 600
         },
         "media_edge_to_edge_android_increased_list_margin": {
             "name": "media_edge_to_edge_android_increased_list_margin",
@@ -6009,12 +6020,16 @@
             "name": "recruiting_jobs_hub_recommendations_tab_enabled",
             "type": "string"
         },
-        "recruiting_job_spotlight_native_job_detail": {
-            "name": "recruiting_job_spotlight_native_job_detail",
+        "recruiting_job_spotlight_native_job_detail_enabled": {
+            "name": "recruiting_job_spotlight_native_job_detail_enabled",
             "type": "string"
         },
-        "recruiting_job_card_native_job_detail": {
-            "name": "recruiting_job_card_native_job_detail",
+        "recruiting_job_card_native_job_detail_enabled": {
+            "name": "recruiting_job_card_native_job_detail_enabled",
+            "type": "string"
+        },
+        "recruiting_job_details_share_enabled": {
+            "name": "recruiting_job_details_share_enabled",
             "type": "string"
         },
         "report_center_mvp_r1_enabled": {
@@ -6320,7 +6335,8 @@
         },
         "responsive_web_birdwatch_match_page_enabled": {
             "name": "responsive_web_birdwatch_match_page_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
