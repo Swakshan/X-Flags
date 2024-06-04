@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8729c787fd0fa3aedca55337d062f19f3353b58d",
+    "feature_set_token": "f64223c0016eb9b5d3424435391583a6f1e88ae2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2671,19 +2671,19 @@
             "value": false
         },
         "xprofile_consumption_enabled": {
-            "value": false
+            "value": true
         },
         "xprofile_editing_enabled": {
-            "value": false
+            "value": true
         },
         "xprofile_emojis_enabled": {
-            "value": false
+            "value": true
         },
         "xprofile_work_history_consumption_enabled": {
             "value": true
         },
         "xprofile_work_history_enabled": {
-            "value": false
+            "value": true
         }
     },
     "debug": {
@@ -3206,6 +3206,10 @@
         },
         "blue_business_admin_sidebar_module_enabled": {
             "name": "blue_business_admin_sidebar_module_enabled",
+            "type": "string"
+        },
+        "blue_business_analytics": {
+            "name": "blue_business_analytics",
             "type": "string"
         },
         "blue_longer_video_enabled": {
@@ -10282,22 +10286,22 @@
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xprofile_consumption_enabled": {
             "name": "xprofile_consumption_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xprofile_emojis_enabled": {
             "name": "xprofile_emojis_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xprofile_work_history_enabled": {
             "name": "xprofile_work_history_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xprofile_work_history_consumption_enabled": {
             "name": "xprofile_work_history_consumption_enabled",
