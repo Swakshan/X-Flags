@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bd2e2b32ca5de8b85aa086581ab26d26268d4d0f",
+    "feature_set_token": "eb088007fdca152a43f409e03041747f7c3f08f8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -307,6 +307,9 @@
             "value": false
         },
         "blue_business_affiliates_list_order_setting_enabled": {
+            "value": false
+        },
+        "blue_business_analytics": {
             "value": false
         },
         "blue_business_direct_invites_enabled": {
@@ -3214,7 +3217,8 @@
         },
         "blue_business_analytics": {
             "name": "blue_business_analytics",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "blue_longer_video_enabled": {
             "name": "blue_longer_video_enabled",
@@ -6160,6 +6164,10 @@
             "name": "responsive_web_account_analytics_timeframe_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_account_analytics_timeseries_enabled": {
+            "name": "responsive_web_account_analytics_timeseries_enabled",
+            "type": "string"
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
