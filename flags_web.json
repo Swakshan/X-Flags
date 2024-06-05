@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f64223c0016eb9b5d3424435391583a6f1e88ae2",
+    "feature_set_token": "bd2e2b32ca5de8b85aa086581ab26d26268d4d0f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -302,6 +302,9 @@
         },
         "articles_rest_api_enabled": {
             "value": true
+        },
+        "blue_business_admin_sidebar_module_enabled": {
+            "value": false
         },
         "blue_business_affiliates_list_order_setting_enabled": {
             "value": false
@@ -3206,7 +3209,8 @@
         },
         "blue_business_admin_sidebar_module_enabled": {
             "name": "blue_business_admin_sidebar_module_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "blue_business_analytics": {
             "name": "blue_business_analytics",
