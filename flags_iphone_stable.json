@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "03139790052d5b4e63c5c961f47913e8590057f8",
+        "feature_set_token": "d6981599b0af8294d15500ededda764962baf0e0",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -453,6 +453,9 @@
             },
             "bookmarks_long_press_enabled": {
                 "value": true
+            },
+            "bookmarks_search_enabled": {
+                "value": false
             },
             "bookmarks_tweet_detail_count_enabled": {
                 "value": true
@@ -1799,9 +1802,6 @@
             "enterprise_app_bug_report_destination": {
                 "value": 0.0
             },
-            "explore_dynamic_chrome_enabled": {
-                "value": true
-            },
             "explore_relaunch_auto_refresh_timeout_minutes": {
                 "value": 5.0
             },
@@ -1809,7 +1809,7 @@
                 "value": false
             },
             "explore_relaunch_broadcast_live_notifications_and_chat_history_toasts_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_broadcast_support_enabled": {
                 "value": true
@@ -8602,6 +8602,15 @@
             "recruiting_global_jobs_search_enabled": {
                 "value": true
             },
+            "recruiting_job_card_native_job_detail_enabled": {
+                "value": true
+            },
+            "recruiting_job_details_share_enabled": {
+                "value": false
+            },
+            "recruiting_job_spotlight_native_job_detail_enabled": {
+                "value": true
+            },
             "recruiting_jobs_hub_recommendations_tab_enabled": {
                 "value": false
             },
@@ -9900,7 +9909,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "a710e820339dfee7a91f0ca9f021140f5db85dc3",
-        "experiments": "a710e820339dfee7a91f0ca9f021140f5db85dc3"
+        "feature_switches": "100fad3acc03a1235231a85f5f1990f1417cae97",
+        "experiments": "100fad3acc03a1235231a85f5f1990f1417cae97"
     }
 }
