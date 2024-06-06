@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "eb088007fdca152a43f409e03041747f7c3f08f8",
+    "feature_set_token": "67ce0b762e855b81deb3a13d5302fcedca00fd94",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -304,7 +304,7 @@
             "value": true
         },
         "blue_business_admin_sidebar_module_enabled": {
-            "value": false
+            "value": true
         },
         "blue_business_affiliates_list_order_setting_enabled": {
             "value": false
@@ -1149,6 +1149,9 @@
         "responsive_web_birdwatch_note_limit_enabled": {
             "value": true
         },
+        "responsive_web_birdwatch_note_request_enabled": {
+            "value": false
+        },
         "responsive_web_birdwatch_note_writing_enabled": {
             "value": false
         },
@@ -1183,7 +1186,7 @@
             "value": 10
         },
         "responsive_web_birdwatch_translation_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_card_conversion_hoisted": {
             "value": "off"
@@ -3213,7 +3216,7 @@
         "blue_business_admin_sidebar_module_enabled": {
             "name": "blue_business_admin_sidebar_module_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "blue_business_analytics": {
             "name": "blue_business_analytics",
@@ -6338,11 +6341,12 @@
         "responsive_web_birdwatch_translation_enabled": {
             "name": "responsive_web_birdwatch_translation_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_birdwatch_note_request_enabled": {
             "name": "responsive_web_birdwatch_note_request_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_birdwatch_read_sources_nudge": {
             "name": "responsive_web_birdwatch_read_sources_nudge",
@@ -10322,6 +10326,10 @@
         },
         "xprofile_private_likes": {
             "name": "xprofile_private_likes",
+            "type": "string"
+        },
+        "xprofile_v2_enabled": {
+            "name": "xprofile_v2_enabled",
             "type": "string"
         },
         "zazu_report_flow_13359": {
