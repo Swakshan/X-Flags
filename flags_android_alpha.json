@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "f59b4cb75f44a50a902426bfb6e66ba500eb1ef6",
+        "feature_set_token": "910d62740d4ac35bedc9be1a4be478a697756ff3",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1589,6 +1589,15 @@
             },
             "av_chat_enhanced_calls_privacy_enabled": {
                 "value": true
+            },
+            "av_chat_groups_audio_maximum_size": {
+                "value": 8.0
+            },
+            "av_chat_groups_enabled": {
+                "value": false
+            },
+            "av_chat_groups_video_maximum_size": {
+                "value": 4.0
             },
             "av_chat_notification_routing_enabled": {
                 "value": true
@@ -4779,7 +4788,8 @@
             "web_view_share_suppression_prefixes": {
                 "value": [
                     "https://survey.twitterfeedback.com",
-                    "https://twitter.com/account/login_verification"
+                    "https://twitter.com/account/login_verification",
+                    "https://twitter.com/settings/account/login_verification/security_keys"
                 ]
             },
             "wifi_only_mode": {
@@ -4864,6 +4874,7 @@
         "customer_journey_loggedin_incremental_holdback_2022h2_13404",
         "notifications_incremental_holdback_2022h1_12405",
         "android_growth_performance_holdback_perf_delay_video_chin_view_inflation_enabled_14844",
+        "monetization_premium_monthly_price_android_16775",
         "current_stack_follow_card_android_14711",
         "android_media_fetch_thread_usage_6877",
         "soft_interventions_engagement_nudge_m1_c_11710",
@@ -5042,7 +5053,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "17293309f4ac524ae87c4059f96f6745603ea1e5",
-        "experiments": "17293309f4ac524ae87c4059f96f6745603ea1e5"
+        "feature_switches": "1bf8944e3767a0c2c22749208ab5182fbaeee085",
+        "experiments": "1bf8944e3767a0c2c22749208ab5182fbaeee085"
     }
 }
