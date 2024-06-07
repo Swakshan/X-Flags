@@ -9,7 +9,7 @@ def printJson(data):
 tele_api_send_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage'
 tele_api_edit_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/editMessageText'
 
-spl_ch = ['__', '**',  '``', '[[', ']]', '((', '))', '~', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!' ]
+spl_ch = ['**',  '``', '[[', ']]', '((', '))', '~', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!' ]
 def santizeText(txt):
   for ch in spl_ch:
     txt = txt.replace(ch,f'\\{ch}')
