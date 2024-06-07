@@ -107,7 +107,8 @@ def strpattern(flag_details,flag_details_2):
     vercode = manifest_file['vercode']
     down_link = manifest_file['download_link']
     hash_value = manifest_file['hash']
-    platform = manifest_file['os']
+    platform = manifest_file['os'].lower()
+    release = Releases.STABLE if "web" in vername else Releases.BETA if "beta" in vername else Releases.ALPHA if "alpha" in vername else Releases.STABLE
     
     global linkRow,linkCount
     linkRow = "";linkCount=0
@@ -120,6 +121,9 @@ def strpattern(flag_details,flag_details_2):
         else:
             linkRow+="\n"
         linkCount+=1
+
+    def setHashtag(txt):
+        return "#"+txt
 
     nf = "";df=""
     flag_data = flag_details['flags']
@@ -139,9 +143,10 @@ def strpattern(flag_details,flag_details_2):
     commit_link_str = commitLinkFormat(flag_details)
     commit_link_str_2 = False
     pin_link = f"https://t.me/c/{CHANNEL_ID}/{PIN_MSG}"
-    platformRow = f"_Platform_: `{platform.title()}`"
+    # platformRow = f"_Platform_: `{platform.title()}`"
+    hastags = setHashtag(platform)+" "+setHashtag(release.value)
     vercode_str = ""
-    if platform.lower() == Platform.ANDROID.value:
+    if platform == Platform.ANDROID.value:
         vercode_str = f"__Vercode__:\n`{vercode}`" if int(vercode) else vercode_str #if not "0"
         ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
         apkc_link = f'https://apkcombo.com/search/{PKG_NAME}/download/phone-{vername}-apk'
@@ -163,17 +168,18 @@ def strpattern(flag_details,flag_details_2):
         
         linkRow = linkRow+"\n" if linkRow[-2]=="|" else linkRow
 
-                
-    elif platform.lower() == Platform.WEB.value:
-        vername = vername.title()
-        vercode_str = f"__Hash__:\n`{hash_value}`"
-        linkRow = f"[Web Link]({WEB_LINK})\n"
-
-    elif platform.lower() == Platform.IOS.value:
-        platformRow = f"_Platform_: `{platform.upper()}`"
+    elif platform == Platform.IOS.value:
+        # platformRow = f"_Platform_: `{platform.upper()}`"
         linkRow = f"[App Store]({APP_STORE_LINK})\n"
         if flag_details_2:
             commit_link_str_2 = commitLinkFormat(flag_details_2)
+     
+    elif platform == Platform.WEB.value:
+        vername = vername.title()
+        vercode_str = f"__Hash__:\n`{hash_value}`"
+        linkRow = f"[Web Link]({WEB_LINK})\n"
+        hastags = setHashtag(platform)
+
 
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
     l = printLine()
@@ -194,4 +200,5 @@ def strpattern(flag_details,flag_details_2):
         rd = f'{rd}\n_iPad:_\n[{commit_link_str_2}]({commit_link})\n{l}'
     else:
         rd = f'{rd}\n[{commit_link_str}]({commit_link})\n{l}'
+    rd = f'{rd}\n{hastags}'
     return rd
