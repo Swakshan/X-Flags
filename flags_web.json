@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "39c355e274206c35ba95fec011aa30093519192d",
+    "feature_set_token": "67ce0b762e855b81deb3a13d5302fcedca00fd94",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1086,9 +1086,6 @@
         "responsive_web_account_analytics_timeframe_enabled": {
             "value": true
         },
-        "responsive_web_account_analytics_timeseries_enabled": {
-            "value": false
-        },
         "responsive_web_ad_revenue_sharing_enabled": {
             "value": true
         },
@@ -1880,6 +1877,9 @@
         },
         "rweb_sidebar_lower_whats_happening_enabled": {
             "value": false
+        },
+        "rweb_spaceclient_v2_enabled": {
+            "value": "false"
         },
         "rweb_spaces_invite_search_enabled": {
             "value": true
@@ -3222,10 +3222,6 @@
             "name": "blue_business_analytics",
             "type": "boolean",
             "defaultValue": false
-        },
-        "blue_business_cancel_offer": {
-            "name": "blue_business_cancel_offer",
-            "type": "string"
         },
         "blue_longer_video_enabled": {
             "name": "blue_longer_video_enabled",
@@ -6174,8 +6170,7 @@
         },
         "responsive_web_account_analytics_timeseries_enabled": {
             "name": "responsive_web_account_analytics_timeseries_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
@@ -7607,6 +7602,11 @@
             "name": "rweb_sidebar_lower_whats_happening_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_spaceclient_v2_enabled": {
+            "name": "rweb_spaceclient_v2_enabled",
+            "type": "string",
+            "defaultValue": "false"
         },
         "rweb_spaces_invite_search_enabled": {
             "name": "rweb_spaces_invite_search_enabled",
