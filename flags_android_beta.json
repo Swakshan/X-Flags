@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "f59b4cb75f44a50a902426bfb6e66ba500eb1ef6",
+        "feature_set_token": "f6e6c370f5f41af601f80b41adf0a73f5343e576",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1590,6 +1590,15 @@
             "av_chat_enhanced_calls_privacy_enabled": {
                 "value": true
             },
+            "av_chat_groups_audio_maximum_size": {
+                "value": 8.0
+            },
+            "av_chat_groups_enabled": {
+                "value": false
+            },
+            "av_chat_groups_video_maximum_size": {
+                "value": 4.0
+            },
             "av_chat_notification_routing_enabled": {
                 "value": true
             },
@@ -2618,9 +2627,6 @@
                 "value": false
             },
             "error_logging_enabled": {
-                "value": true
-            },
-            "explore_dynamic_chrome_enabled": {
                 "value": true
             },
             "explore_relaunch_auto_refresh_timeout_minutes": {
@@ -3755,12 +3761,6 @@
             "self_thread_composer_tooltip_trigger_android": {
                 "value": 50.0
             },
-            "sensitive_media_settings_enabled": {
-                "value": false
-            },
-            "sensitive_tweet_warnings_enabled": {
-                "value": true
-            },
             "settings_config_gdpr_consistency": {
                 "value": true
             },
@@ -4779,7 +4779,8 @@
             "web_view_share_suppression_prefixes": {
                 "value": [
                     "https://survey.twitterfeedback.com",
-                    "https://twitter.com/account/login_verification"
+                    "https://twitter.com/account/login_verification",
+                    "https://twitter.com/settings/account/login_verification/security_keys"
                 ]
             },
             "wifi_only_mode": {
@@ -5043,7 +5044,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "2f3446416f20fe23b21383a5323f9c2f9e390f46",
-        "experiments": "2f3446416f20fe23b21383a5323f9c2f9e390f46"
+        "feature_switches": "a69ec9ddab98a2bbb67b29d8b22aaea7b28cd515",
+        "experiments": "a69ec9ddab98a2bbb67b29d8b22aaea7b28cd515"
     }
 }
