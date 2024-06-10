@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "39c355e274206c35ba95fec011aa30093519192d",
+    "feature_set_token": "39520d78efeb512233c08c34d87cac5203e94825",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2138,6 +2138,9 @@
         "subscriptions_feature_article_composer": {
             "value": true
         },
+        "subscriptions_feature_can_gift_premium": {
+            "value": false
+        },
         "subscriptions_feature_extend_profile": {
             "value": true
         },
@@ -3103,6 +3106,10 @@
             "name": "articles_preview_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "articles_native_navigation_enabled": {
+            "name": "articles_native_navigation_enabled",
+            "type": "string"
         },
         "backend_timelines_parent_group_meta_3627": {
             "name": "backend_timelines_parent_group_meta_3627",
@@ -8437,6 +8444,11 @@
         "subscriptions_feature_monetization": {
             "name": "subscriptions_feature_monetization",
             "type": "string"
+        },
+        "subscriptions_feature_can_gift_premium": {
+            "name": "subscriptions_feature_can_gift_premium",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
