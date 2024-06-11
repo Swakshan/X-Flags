@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "2bfca1be3db6177caf3f877f521ee6cf2bacf6a7",
+        "feature_set_token": "f200e39bbcfeb6de7af17fe77b378651b378762c",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -380,13 +380,13 @@
                 "value": true
             },
             "av_chat_groups_audio_maximum_size": {
-                "value": 8.0
+                "value": 0.0
             },
             "av_chat_groups_enabled": {
                 "value": false
             },
             "av_chat_groups_video_maximum_size": {
-                "value": 4.0
+                "value": 0.0
             },
             "av_chat_ios_pushkit_token_registration_enabled": {
                 "value": true
@@ -2273,6 +2273,9 @@
             "identity_verification_landing_page_enabled": {
                 "value": true
             },
+            "identity_verification_native_flow_enabled": {
+                "value": false
+            },
             "identity_verification_passkey_settings_enabled": {
                 "value": false
             },
@@ -2555,9 +2558,6 @@
             "ios_graduated_access_user_prompt_enabled": {
                 "value": true
             },
-            "ios_graphql_users_lookup_enabled": {
-                "value": true
-            },
             "ios_htl_tweet_voiceover_refactor_assert_on_string_compare_enabled": {
                 "value": false
             },
@@ -2770,6 +2770,12 @@
             "ios_profile_social_proof_refactor_enabled": {
                 "value": false
             },
+            "ios_recording_max_length_duration": {
+                "value": 0.0
+            },
+            "ios_recording_max_length_framerate_enabled": {
+                "value": false
+            },
             "ios_refining_estimated_row_heights_enabled": {
                 "value": true
             },
@@ -2849,7 +2855,7 @@
                 "value": false
             },
             "ios_tav_is_video_quality_selection_enabled": {
-                "value": false
+                "value": true
             },
             "ios_tav_lhlslib_buffer_resilience": {
                 "value": 1.9
@@ -3545,7 +3551,7 @@
             "media_tab_enabled": {
                 "value": 0.0
             },
-            "media_tab_fullscreen_button_on_timeline_video_cards": {
+            "media_tab_immersive_enabled": {
                 "value": false
             },
             "media_tab_long_form_video_show_replies": {
@@ -3553,6 +3559,9 @@
             },
             "media_tab_long_player_minimum_aspect_ratio": {
                 "value": 1.7
+            },
+            "media_tab_long_player_minimum_duration_seconds": {
+                "value": 600.0
             },
             "media_tab_long_player_swipe_auto_docks": {
                 "value": false
@@ -3567,7 +3576,7 @@
                 "value": false
             },
             "media_upload_video_quality_selector_enabled": {
-                "value": false
+                "value": true
             },
             "misinfo_label_redesign_enabled": {
                 "value": true
@@ -8142,7 +8151,7 @@
                 "value": false
             },
             "onboarding_signed_out_fallback_disabled": {
-                "value": false
+                "value": true
             },
             "onboarding_signed_out_fallback_flow_timeout": {
                 "value": 15.0
@@ -8597,7 +8606,7 @@
                 "value": false
             },
             "recruiting_global_jobs_hub_enabled": {
-                "value": false
+                "value": true
             },
             "recruiting_global_jobs_search_enabled": {
                 "value": true
@@ -8606,7 +8615,7 @@
                 "value": true
             },
             "recruiting_job_details_share_enabled": {
-                "value": false
+                "value": true
             },
             "recruiting_job_spotlight_native_job_detail_enabled": {
                 "value": true
@@ -8717,7 +8726,7 @@
                 "value": true
             },
             "search_features_advanced_search_m2_verified_filter_enabled": {
-                "value": false
+                "value": true
             },
             "search_features_empty_search_results_search_settings_link": {
                 "value": "https://mobile.twitter.com/settings/search"
@@ -8900,7 +8909,7 @@
                 "value": 30.0
             },
             "spaces_video_admins_enabled": {
-                "value": false
+                "value": true
             },
             "spaces_video_consumption_enabled": {
                 "value": true
@@ -8929,6 +8938,12 @@
             "ssp_ads_google_dsp_client_context_enabled": {
                 "value": false
             },
+            "ssp_ads_google_dsp_spotlight_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
+            },
+            "ssp_ads_google_dsp_spotlight_with_headline": {
+                "value": false
+            },
             "ssp_ads_google_gsig_count": {
                 "value": 1.0
             },
@@ -8940,6 +8955,12 @@
             },
             "ssp_ads_rtb_image_ad_item_enabled": {
                 "value": false
+            },
+            "ssp_ads_spotlight": {
+                "value": false
+            },
+            "ssp_ads_spotlight_ad_fetch_timeout_milliseconds": {
+                "value": 3000.0
             },
             "standardized_nudges_toxicity": {
                 "value": true
@@ -9876,12 +9897,15 @@
                 "value": false
             },
             "xprofile_consumption_enabled": {
-                "value": false
+                "value": true
             },
             "xprofile_editing_enabled": {
-                "value": false
+                "value": true
             },
             "xprofile_private_likes": {
+                "value": false
+            },
+            "xprofile_v2_enabled": {
                 "value": false
             },
             "zazu_native_report_flow_dms_enabled": {
@@ -9909,7 +9933,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "2f3446416f20fe23b21383a5323f9c2f9e390f46",
-        "experiments": "2f3446416f20fe23b21383a5323f9c2f9e390f46"
+        "feature_switches": "f93b15643afcfb729f82eb27845a5562f6ff23b1",
+        "experiments": "f93b15643afcfb729f82eb27845a5562f6ff23b1"
     }
 }
