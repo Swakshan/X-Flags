@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "bd27f8f85d483de0585204a99e3ea54b09ce22d0",
+        "feature_set_token": "53a423b5452783b2fef9cafcec0dcf0493afe972",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1587,6 +1587,15 @@
             "av_chat_enhanced_calls_privacy_enabled": {
                 "value": true
             },
+            "av_chat_groups_audio_maximum_size": {
+                "value": 8.0
+            },
+            "av_chat_groups_enabled": {
+                "value": false
+            },
+            "av_chat_groups_video_maximum_size": {
+                "value": 4.0
+            },
             "av_chat_notification_routing_enabled": {
                 "value": true
             },
@@ -2616,9 +2625,6 @@
             },
             "error_logging_enabled": {
                 "value": false
-            },
-            "explore_dynamic_chrome_enabled": {
-                "value": true
             },
             "explore_relaunch_auto_refresh_timeout_minutes": {
                 "value": 5.0
@@ -3752,12 +3758,6 @@
             "self_thread_composer_tooltip_trigger_android": {
                 "value": 50.0
             },
-            "sensitive_media_settings_enabled": {
-                "value": false
-            },
-            "sensitive_tweet_warnings_enabled": {
-                "value": true
-            },
             "settings_config_gdpr_consistency": {
                 "value": true
             },
@@ -4062,7 +4062,7 @@
                 "value": true
             },
             "subscriptions_inapp_grok_version": {
-                "value": "1"
+                "value": ""
             },
             "subscriptions_marketing_page_disable_new_subscriptions": {
                 "value": false
@@ -4671,7 +4671,7 @@
                 "value": true
             },
             "video_on_demand_heartbeat_interval_android": {
-                "value": 50.0
+                "value": 5.0
             },
             "videos_segmented_upload_minimum_segment_size": {
                 "value": 65536.0
@@ -4776,7 +4776,8 @@
             "web_view_share_suppression_prefixes": {
                 "value": [
                     "https://survey.twitterfeedback.com",
-                    "https://twitter.com/account/login_verification"
+                    "https://twitter.com/account/login_verification",
+                    "https://twitter.com/settings/account/login_verification/security_keys"
                 ]
             },
             "wifi_only_mode": {
@@ -4786,10 +4787,10 @@
                 "value": 0.0
             },
             "xprofile_consumption_enabled": {
-                "value": false
+                "value": true
             },
             "xprofile_private_likes": {
-                "value": false
+                "value": true
             },
             "youtube_video_hosts": {
                 "value": [
@@ -5040,7 +5041,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "252eeda935843262ea8b860283dc661ae0b1278b",
-        "experiments": "252eeda935843262ea8b860283dc661ae0b1278b"
+        "feature_switches": "d2f9da23003a6b40d4bb72545106a82154f16b1a",
+        "experiments": "d2f9da23003a6b40d4bb72545106a82154f16b1a"
     }
 }
