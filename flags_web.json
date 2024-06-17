@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "051979536d606cb8b48c1053593c4d4361dca336",
+    "feature_set_token": "d9628d1d0eda9a741f00ccfec3f17054929ca4c3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -782,6 +782,9 @@
         },
         "identity_verification_consent_opt_in_by_default_enabled": {
             "value": true
+        },
+        "identity_verification_creator_processor": {
+            "value": ""
         },
         "identity_verification_debadging_notification_enabled": {
             "value": true
@@ -2162,6 +2165,9 @@
         "subscriptions_feature_premium_jobs": {
             "value": true
         },
+        "subscriptions_gifting_help_url": {
+            "value": ""
+        },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": true
         },
@@ -3228,6 +3234,10 @@
         },
         "blue_business_analytics_affiliate_filtering_enabled": {
             "name": "blue_business_analytics_affiliate_filtering_enabled",
+            "type": "string"
+        },
+        "blue_business_display_annual_price_monthly": {
+            "name": "blue_business_display_annual_price_monthly",
             "type": "string"
         },
         "blue_longer_video_enabled": {
@@ -5266,7 +5276,8 @@
         },
         "identity_verification_creator_processor": {
             "name": "identity_verification_creator_processor",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "immersive_viewer_enable_profile_viewer": {
             "name": "immersive_viewer_enable_profile_viewer",
@@ -6178,6 +6189,10 @@
             "name": "responsive_web_account_analytics_timeseries_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_account_analytics_overview_v2": {
+            "name": "responsive_web_account_analytics_overview_v2",
+            "type": "string"
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
@@ -8278,7 +8293,8 @@
         },
         "subscriptions_gifting_help_url": {
             "name": "subscriptions_gifting_help_url",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_blue_premium_labeling_enabled": {
             "name": "subscriptions_blue_premium_labeling_enabled",
