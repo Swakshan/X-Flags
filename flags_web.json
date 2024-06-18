@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d9628d1d0eda9a741f00ccfec3f17054929ca4c3",
+    "feature_set_token": "71bcf09bad178a8af7eee8ccc554b6752c56d37d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -312,11 +312,17 @@
         "blue_business_analytics": {
             "value": true
         },
+        "blue_business_analytics_affiliate_filtering_enabled": {
+            "value": false
+        },
         "blue_business_cancel_offer": {
             "value": false
         },
         "blue_business_direct_invites_enabled": {
             "value": true
+        },
+        "blue_business_display_annual_price_monthly": {
+            "value": false
         },
         "blue_business_multi_affiliates_ui_enabled": {
             "value": false
@@ -2166,7 +2172,7 @@
             "value": true
         },
         "subscriptions_gifting_help_url": {
-            "value": ""
+            "value": "https://x.com/messages/compose?recipient_id=1399766153053061121"
         },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": true
@@ -3108,6 +3114,10 @@
             "name": "articles_native_navigation_enabled",
             "type": "string"
         },
+        "articles_suggestions_related_articles": {
+            "name": "articles_suggestions_related_articles",
+            "type": "string"
+        },
         "backend_timelines_parent_group_meta_3627": {
             "name": "backend_timelines_parent_group_meta_3627",
             "type": "experiment",
@@ -3234,10 +3244,16 @@
         },
         "blue_business_analytics_affiliate_filtering_enabled": {
             "name": "blue_business_analytics_affiliate_filtering_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "blue_business_display_annual_price_monthly": {
             "name": "blue_business_display_annual_price_monthly",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "blue_business_ads_metrics": {
+            "name": "blue_business_ads_metrics",
             "type": "string"
         },
         "blue_longer_video_enabled": {
@@ -8294,7 +8310,7 @@
         "subscriptions_gifting_help_url": {
             "name": "subscriptions_gifting_help_url",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "https://x.com/messages/compose?recipient_id=1399766153053061121"
         },
         "subscriptions_blue_premium_labeling_enabled": {
             "name": "subscriptions_blue_premium_labeling_enabled",
