@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "71bcf09bad178a8af7eee8ccc554b6752c56d37d",
+    "feature_set_token": "a37ecf1c72bce0e2e6302b77ff349cd86d0fdb6a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1091,6 +1091,9 @@
         },
         "responsive_web_account_access_language_lo_splash_sidebar": {
             "value": "control"
+        },
+        "responsive_web_account_analytics_overview_v2": {
+            "value": false
         },
         "responsive_web_account_analytics_timeframe_enabled": {
             "value": true
@@ -6216,7 +6219,8 @@
         },
         "responsive_web_account_analytics_overview_v2": {
             "name": "responsive_web_account_analytics_overview_v2",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
