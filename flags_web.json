@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e933c4d2eac9ca93073fc7ffacc8191d68a07261",
+    "feature_set_token": "b87ddf3468f38c2c782a2af6dfb74955e87ac797",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -305,6 +305,9 @@
         },
         "blue_business_admin_sidebar_module_enabled": {
             "value": true
+        },
+        "blue_business_ads_metrics": {
+            "value": false
         },
         "blue_business_affiliates_list_order_setting_enabled": {
             "value": false
@@ -3115,6 +3118,10 @@
             "name": "articles_suggestions_related_articles",
             "type": "string"
         },
+        "articles_native_navigation_timeout_seconds": {
+            "name": "articles_native_navigation_timeout_seconds",
+            "type": "string"
+        },
         "backend_timelines_parent_group_meta_3627": {
             "name": "backend_timelines_parent_group_meta_3627",
             "type": "experiment",
@@ -3251,7 +3258,8 @@
         },
         "blue_business_ads_metrics": {
             "name": "blue_business_ads_metrics",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "blue_longer_video_enabled": {
             "name": "blue_longer_video_enabled",
