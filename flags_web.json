@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "63d193625240e58616e588261399559a9aef58f0",
+    "feature_set_token": "04bad25ac575db672556de0490ce8a9354db8d61",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -793,7 +793,7 @@
             "value": true
         },
         "identity_verification_creator_processor": {
-            "value": ""
+            "value": "Stripe"
         },
         "identity_verification_debadging_notification_enabled": {
             "value": true
@@ -1099,7 +1099,7 @@
             "value": "control"
         },
         "responsive_web_account_analytics_overview_v2": {
-            "value": false
+            "value": true
         },
         "responsive_web_account_analytics_timeframe_enabled": {
             "value": true
@@ -1390,6 +1390,19 @@
             "value": true
         },
         "responsive_web_grok_delete_conversations_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_file_max_size": {
+            "value": 512000.0
+        },
+        "responsive_web_grok_file_supported_mimetypes": {
+            "value": [
+                "image/jpg",
+                "image/jpeg",
+                "image/png"
+            ]
+        },
+        "responsive_web_grok_file_upload_enabled": {
             "value": false
         },
         "responsive_web_grok_opt_out_enabled": {
@@ -1705,6 +1718,9 @@
             "value": false
         },
         "responsive_web_tweet_analytics_video_metrics_v2_enabled": {
+            "value": true
+        },
+        "responsive_web_twitter_article_batch_posts": {
             "value": true
         },
         "responsive_web_twitter_article_block_limit": {
@@ -5305,7 +5321,7 @@
         "identity_verification_creator_processor": {
             "name": "identity_verification_creator_processor",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "Stripe"
         },
         "identity_verification_vendor_idv_migration_enabled": {
             "name": "identity_verification_vendor_idv_migration_enabled",
@@ -6234,7 +6250,7 @@
         "responsive_web_account_analytics_overview_v2": {
             "name": "responsive_web_account_analytics_overview_v2",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
@@ -6401,6 +6417,10 @@
             "name": "responsive_web_birdwatch_signup_prompt_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_birdwatch_self_remove_enabled": {
+            "name": "responsive_web_birdwatch_self_remove_enabled",
+            "type": "string"
         },
         "responsive_web_birdwatch_translation_enabled": {
             "name": "responsive_web_birdwatch_translation_enabled",
@@ -6731,6 +6751,25 @@
         "responsive_web_grok_drawer_enabled": {
             "name": "responsive_web_grok_drawer_enabled",
             "type": "string"
+        },
+        "responsive_web_grok_file_upload_enabled": {
+            "name": "responsive_web_grok_file_upload_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_file_max_size": {
+            "name": "responsive_web_grok_file_max_size",
+            "type": "number",
+            "defaultValue": 512000.0
+        },
+        "responsive_web_grok_file_supported_mimetypes": {
+            "name": "responsive_web_grok_file_supported_mimetypes",
+            "type": "object",
+            "defaultValue": [
+                "image/jpg",
+                "image/jpeg",
+                "image/png"
+            ]
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -7351,7 +7390,8 @@
         },
         "responsive_web_twitter_article_batch_posts": {
             "name": "responsive_web_twitter_article_batch_posts",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "responsive_web_twitter_blue_subscriptions_disabled": {
             "name": "responsive_web_twitter_blue_subscriptions_disabled",
