@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "04bad25ac575db672556de0490ce8a9354db8d61",
+    "feature_set_token": "a18270ee5ce73c94a8d70678adca17b06ed3052a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1047,6 +1047,9 @@
         "recruiting_premium_jobs_enabled": {
             "value": true
         },
+        "recruiting_promoted_jobs_enabled": {
+            "value": false
+        },
         "recruiting_search_filters_enabled": {
             "value": true
         },
@@ -1190,6 +1193,9 @@
         },
         "responsive_web_birdwatch_require_rating_before_writing_enabled": {
             "value": true
+        },
+        "responsive_web_birdwatch_self_remove_enabled": {
+            "value": false
         },
         "responsive_web_birdwatch_signup_prompt_enabled": {
             "value": true
@@ -2200,7 +2206,7 @@
             "value": true
         },
         "subscriptions_inapp_grok_analyze": {
-            "value": false
+            "value": true
         },
         "subscriptions_inapp_grok_default_mode": {
             "value": "fun"
@@ -2231,6 +2237,9 @@
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
+        },
+        "subscriptions_marketing_page_remove_extra_step": {
+            "value": false
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "value": true
@@ -6121,6 +6130,11 @@
             "name": "recruiting_job_details_share_enabled",
             "type": "string"
         },
+        "recruiting_promoted_jobs_enabled": {
+            "name": "recruiting_promoted_jobs_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
             "type": "boolean",
@@ -6420,7 +6434,8 @@
         },
         "responsive_web_birdwatch_self_remove_enabled": {
             "name": "responsive_web_birdwatch_self_remove_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_birdwatch_translation_enabled": {
             "name": "responsive_web_birdwatch_translation_enabled",
@@ -8621,7 +8636,7 @@
         "subscriptions_inapp_grok_analyze": {
             "name": "subscriptions_inapp_grok_analyze",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_inapp_grok_version": {
             "name": "subscriptions_inapp_grok_version",
@@ -8730,6 +8745,11 @@
         },
         "subscriptions_marketing_page_remove_extra_step": {
             "name": "subscriptions_marketing_page_remove_extra_step",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_marketing_page_free_trial_enabled": {
+            "name": "subscriptions_marketing_page_free_trial_enabled",
             "type": "string"
         },
         "subscriptions_premium_experiment_nav_text": {
