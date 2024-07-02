@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "08de6736bacaeb374642ec5c8598dc0abf07c179",
+        "feature_set_token": "e907a7dca0cabaf5fb257dccde20406eed64018d",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -354,6 +354,9 @@
             },
             "articles_native_navigation_enabled": {
                 "value": false
+            },
+            "articles_native_navigation_timeout_seconds": {
+                "value": 10.0
             },
             "articles_preview_enabled": {
                 "value": true
@@ -1472,6 +1475,9 @@
             "conversation_controls_verified_only_enabled": {
                 "value": true
             },
+            "conversational_replies_ios_downvote_enabled": {
+                "value": false
+            },
             "conversational_replies_ios_pinned_replies_consumption_enabled": {
                 "value": false
             },
@@ -2052,9 +2058,6 @@
             "home_timeline_navigation_min_background_minutes": {
                 "value": 0.0
             },
-            "home_timeline_navigation_scroll_indicator_enabled": {
-                "value": true
-            },
             "home_timeline_navigation_tap_home_icon_to_refresh_enabled": {
                 "value": true
             },
@@ -2099,6 +2102,9 @@
             },
             "home_timeline_spheres_detail_page_report_list_enabled": {
                 "value": true
+            },
+            "home_timeline_spheres_detail_page_search_enabled": {
+                "value": false
             },
             "home_timeline_spheres_detail_page_sharing_enabled": {
                 "value": true
@@ -2315,9 +2321,6 @@
             },
             "image_pipeline_uiv_scale_limit": {
                 "value": 2.0
-            },
-            "immersive_video_auto_play_next_enabled": {
-                "value": true
             },
             "immersive_video_big_centered_play_button": {
                 "value": false
@@ -2552,6 +2555,9 @@
             },
             "ios_explore_settings_enabled": {
                 "value": true
+            },
+            "ios_flush_scribe_recurring_task_interval": {
+                "value": 60.0
             },
             "ios_graduated_access_fetch_enabled": {
                 "value": true
@@ -2810,6 +2816,27 @@
             "ios_spaces_device_follow_multi_select_enabled": {
                 "value": false
             },
+            "ios_status_gestures_long_press_for_menu_enabled": {
+                "value": false
+            },
+            "ios_status_gestures_remove_actions_bar_enabled": {
+                "value": false
+            },
+            "ios_status_gestures_show_view_count_top_right_enabled": {
+                "value": false
+            },
+            "ios_status_gestures_swipe_left_and_hold_for_menu_enabled": {
+                "value": false
+            },
+            "ios_status_gestures_swipe_left_and_hold_for_menu_seconds": {
+                "value": 0.35
+            },
+            "ios_status_gestures_swipe_left_to_like_enabled": {
+                "value": false
+            },
+            "ios_status_gestures_swipe_right_to_reply_enabled": {
+                "value": false
+            },
             "ios_swift_notification_handler_enabled": {
                 "value": "enabled"
             },
@@ -2957,6 +2984,9 @@
             "ios_timeline_avatar_discovery_fleets_experiment": {
                 "value": true
             },
+            "ios_timeline_avatar_discovery_live_enabled": {
+                "value": true
+            },
             "ios_timeline_avatar_discovery_spaces_animation_enabled": {
                 "value": true
             },
@@ -3002,12 +3032,6 @@
             "ios_ui_chirp_ui_font_enabled": {
                 "value": true
             },
-            "ios_ui_inline_actions_setting": {
-                "value": ""
-            },
-            "ios_ui_maintain_hidden_nav_bar_when_viewing_media": {
-                "value": true
-            },
             "ios_ui_minimum_wide_bar_width": {
                 "value": 0.0
             },
@@ -3020,9 +3044,6 @@
             "ios_ui_phone_landscape_disabled": {
                 "value": true
             },
-            "ios_ui_post_long_press_menu_style": {
-                "value": ""
-            },
             "ios_ui_shows_vertical_scroll_indicator_enabled": {
                 "value": true
             },
@@ -3031,12 +3052,6 @@
             },
             "ios_ui_standard_bar_item_inset": {
                 "value": 9.0
-            },
-            "ios_ui_view_count_in_author_view_icon_hidden": {
-                "value": false
-            },
-            "ios_ui_view_count_in_author_view_prominent_text_enabled": {
-                "value": false
             },
             "ios_ui_wide_bar_item_inset": {
                 "value": 9.0
@@ -3048,9 +3063,6 @@
                 "value": true
             },
             "ios_url_allow_webview_font_adjustment": {
-                "value": true
-            },
-            "ios_url_react_router_navigation_change_handling_enabled": {
                 "value": true
             },
             "ios_url_talon_bypass_enabled": {
@@ -3548,6 +3560,9 @@
             },
             "media_tab_long_player_minimum_duration_seconds": {
                 "value": 600.0
+            },
+            "media_tab_long_player_status_ui": {
+                "value": false
             },
             "media_tab_long_player_swipe_auto_docks": {
                 "value": false
@@ -9096,7 +9111,7 @@
                 "value": true
             },
             "subscriptions_marketing_page_display_monthly_price": {
-                "value": false
+                "value": true
             },
             "subscriptions_marketing_page_rearragement": {
                 "value": "control"
@@ -9192,9 +9207,6 @@
                 "value": false
             },
             "targeted_project_friday_enabled": {
-                "value": false
-            },
-            "timeline_curation_show_less_often_copy_change_enabled": {
                 "value": false
             },
             "timeline_display_text_model_enabled": {
@@ -9910,7 +9922,7 @@
                 "value": true
             },
             "xprofile_v2_enabled": {
-                "value": false
+                "value": true
             },
             "zazu_native_report_flow_dms_enabled": {
                 "value": false
@@ -9937,7 +9949,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "e46deca68c16ed47a5c9f366fdf2847f98103eba",
-        "experiments": "e46deca68c16ed47a5c9f366fdf2847f98103eba"
+        "feature_switches": "39d226577243fdf4f77eb9e11a97034ce249d629",
+        "experiments": "39d226577243fdf4f77eb9e11a97034ce249d629"
     }
 }
