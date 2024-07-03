@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a18270ee5ce73c94a8d70678adca17b06ed3052a",
+    "feature_set_token": "c9d3a4350ccc580f820a9ae27f8443236c61f5e3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -349,6 +349,9 @@
             "value": false
         },
         "blue_longer_video_enabled": {
+            "value": false
+        },
+        "bookmarks_search_enabled": {
             "value": false
         },
         "branded_like_preview_enabled": {
@@ -1936,6 +1939,9 @@
         "rweb_update_fatigue_switch_to_app_link": {
             "value": "BannerSwitchToApp"
         },
+        "rweb_user_audience_page_enabled": {
+            "value": false
+        },
         "rweb_video_pip_enabled": {
             "value": true
         },
@@ -3291,6 +3297,31 @@
         },
         "blue_longer_video_enabled": {
             "name": "blue_longer_video_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "bookmarks_tweet_detail_enabled": {
+            "name": "bookmarks_tweet_detail_enabled",
+            "type": "string"
+        },
+        "bookmarks_long_press_enabled": {
+            "name": "bookmarks_long_press_enabled",
+            "type": "string"
+        },
+        "bookmarks_api_state_enabled": {
+            "name": "bookmarks_api_state_enabled",
+            "type": "string"
+        },
+        "bookmarks_tweet_detail_count_enabled": {
+            "name": "bookmarks_tweet_detail_count_enabled",
+            "type": "string"
+        },
+        "bookmarks_in_timelines_enabled": {
+            "name": "bookmarks_in_timelines_enabled",
+            "type": "string"
+        },
+        "bookmarks_search_enabled": {
+            "name": "bookmarks_search_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -7772,6 +7803,11 @@
             "name": "rweb_update_fatigue_switch_to_app_link",
             "type": "string",
             "defaultValue": "BannerSwitchToApp"
+        },
+        "rweb_user_audience_page_enabled": {
+            "name": "rweb_user_audience_page_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_video_airplay_enabled": {
             "name": "rweb_video_airplay_enabled",
