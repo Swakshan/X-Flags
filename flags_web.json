@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9bea73cd11f44727c9b37bcafcc95f31ccd5b88c",
+    "feature_set_token": "26fd8fe010f18b887060e821cedd93284daedc90",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2113,6 +2113,9 @@
             "value": true
         },
         "spaces_conference_enabled": {
+            "value": false
+        },
+        "spaces_conference_opus_dtx_enabled": {
             "value": false
         },
         "spaces_incognito_consumption_default": {
@@ -8209,9 +8212,10 @@
             "name": "spaces_conference_simulcast_enabled",
             "type": "string"
         },
-        "spaces_conference_spaces_conference_opus_dtx_enabled": {
-            "name": "spaces_conference_spaces_conference_opus_dtx_enabled",
-            "type": "string"
+        "spaces_conference_opus_dtx_enabled": {
+            "name": "spaces_conference_opus_dtx_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "spaces_incognito_creation_enabled": {
             "name": "spaces_incognito_creation_enabled",
