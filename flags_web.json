@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8b5e6a81992bf4e85ed07d8f79c9cc16069d7919",
+    "feature_set_token": "9bea73cd11f44727c9b37bcafcc95f31ccd5b88c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2246,6 +2246,9 @@
         },
         "subscriptions_long_video_upload": {
             "value": true
+        },
+        "subscriptions_marketing_page_free_trial_enabled": {
+            "value": false
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
@@ -8807,7 +8810,8 @@
         },
         "subscriptions_marketing_page_free_trial_enabled": {
             "name": "subscriptions_marketing_page_free_trial_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
