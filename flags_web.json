@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2966691d2cf180340ce8e859a0be997fab53c34b",
+    "feature_set_token": "3ba8526fa91698adc3575a0f43b7b35fc2975795",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1861,6 +1861,9 @@
         "rweb_2_column_htl_prototype_virtual_scroller_enabled": {
             "value": false
         },
+        "rweb_analytics_theme": {
+            "value": false
+        },
         "rweb_client_transaction_id_enabled": {
             "value": false
         },
@@ -2266,10 +2269,13 @@
             "value": false
         },
         "subscriptions_premium_tiers_default_product": {
-            "value": "BlueVerifiedPlus"
+            "value": "BlueVerified"
         },
         "subscriptions_premium_tiers_encrypted_dms_gating_update_enabled": {
             "value": true
+        },
+        "subscriptions_premium_tiers_order_variant": {
+            "value": "default"
         },
         "subscriptions_report_ad_upsell_enabled": {
             "value": true
@@ -2279,6 +2285,9 @@
         },
         "subscriptions_stripe_testing": {
             "value": false
+        },
+        "subscriptions_upsells_right_sidebar_variant": {
+            "value": ""
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -7645,6 +7654,23 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "rweb_analytics_user_audience_page_enabled": {
+            "name": "rweb_analytics_user_audience_page_enabled",
+            "type": "string"
+        },
+        "rweb_analytics_post_audience_page_enabled": {
+            "name": "rweb_analytics_post_audience_page_enabled",
+            "type": "string"
+        },
+        "rweb_analytics_country_device_breakdown_enabled": {
+            "name": "rweb_analytics_country_device_breakdown_enabled",
+            "type": "string"
+        },
+        "rweb_analytics_theme": {
+            "name": "rweb_analytics_theme",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
             "type": "experiment",
@@ -8848,7 +8874,7 @@
         "subscriptions_premium_tiers_default_product": {
             "name": "subscriptions_premium_tiers_default_product",
             "type": "string",
-            "defaultValue": "BlueVerifiedPlus"
+            "defaultValue": "BlueVerified"
         },
         "subscriptions_premium_tiers_ios_v3_redesign_enabled": {
             "name": "subscriptions_premium_tiers_ios_v3_redesign_enabled",
@@ -8877,7 +8903,13 @@
         },
         "subscriptions_premium_tiers_order_variant": {
             "name": "subscriptions_premium_tiers_order_variant",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "default"
+        },
+        "subscriptions_upsells_right_sidebar_variant": {
+            "name": "subscriptions_upsells_right_sidebar_variant",
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
