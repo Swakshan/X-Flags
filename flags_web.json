@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d612b66a4a6ed2bf06b4028eb45e45afa124fe23",
+    "feature_set_token": "8ca4d2dc84cf81e70a65677a030bce6b82816952",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1871,6 +1871,9 @@
             "value": false
         },
         "rweb_analytics_country_device_breakdown_enabled": {
+            "value": false
+        },
+        "rweb_analytics_in_out_network_enabled": {
             "value": false
         },
         "rweb_analytics_post_audience_page_enabled": {
@@ -6025,6 +6028,16 @@
                 "variant_b"
             ]
         },
+        "premium_web_desktop_sidebar_upsell_16838": {
+            "name": "premium_web_desktop_sidebar_upsell_16838",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant_a",
+                "variant_b",
+                "variant_c"
+            ]
+        },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
             "type": "boolean",
@@ -7721,6 +7734,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "rweb_analytics_in_out_network_enabled": {
+            "name": "rweb_analytics_in_out_network_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
             "type": "experiment",
@@ -8955,6 +8973,14 @@
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
             "defaultValue": ""
+        },
+        "subscriptions_upsells_premium_home_nav": {
+            "name": "subscriptions_upsells_premium_home_nav",
+            "type": "string"
+        },
+        "subscriptions_upsells_premium_home_nav_enabled": {
+            "name": "subscriptions_upsells_premium_home_nav_enabled",
+            "type": "string"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
