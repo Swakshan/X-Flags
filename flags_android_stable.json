@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "5cf06fc053e740502b37aae172199fcdad35e53e",
+        "feature_set_token": "68c0fe1ed9e8b1bdc0b68b43c2b06858e57dd902",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3908,8 +3908,8 @@
             "ssp_ads_google_dsp_client_context_enabled": {
                 "value": false
             },
-            "ssp_ads_google_gsig_count": {
-                "value": 1.0
+            "ssp_ads_google_dsp_spotlight_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
             },
             "ssp_ads_google_native_ad_enabled": {
                 "value": false
@@ -3928,6 +3928,12 @@
             },
             "ssp_ads_rtb_image_ad_item_enabled": {
                 "value": false
+            },
+            "ssp_ads_spotlight": {
+                "value": false
+            },
+            "ssp_ads_spotlight_ad_fetch_timeout_milliseconds": {
+                "value": 6000.0
             },
             "stateful_login_enabled": {
                 "value": true
@@ -4046,8 +4052,14 @@
             "subscriptions_premium_hub_enabled": {
                 "value": false
             },
+            "subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled": {
+                "value": false
+            },
+            "subscriptions_premium_tiers_default_interval": {
+                "value": "Year"
+            },
             "subscriptions_premium_tiers_default_product": {
-                "value": "BlueVerifiedPlus"
+                "value": "BlueVerified"
             },
             "subscriptions_premium_tiers_encrypted_dms_gating_update_enabled": {
                 "value": true
@@ -4075,6 +4087,9 @@
             },
             "subscriptions_signup_product_subscription_cache_enabled": {
                 "value": false
+            },
+            "subscriptions_upsells_premium_home_nav": {
+                "value": ""
             },
             "subscriptions_verification_info_enabled": {
                 "value": true
@@ -4791,7 +4806,6 @@
     "embedded_experiments": [],
     "requires_restart": [],
     "experiment_names": [
-        "monetization_default_premium_basic_16824",
         "ad_formats_summary_large_card_uc_migration_android_11404",
         "android_hd_vod_badge_15148",
         "android_use_payload_badge_count_9378",
@@ -4997,7 +5011,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "f3799a8b24e447573818fab290ff624e45a8a610",
-        "experiments": "f3799a8b24e447573818fab290ff624e45a8a610"
+        "feature_switches": "1cd333aa790fbc7f2b1911617775249bac5199e1",
+        "experiments": "1cd333aa790fbc7f2b1911617775249bac5199e1"
     }
 }
