@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5d1ccda73833c04f76cc532af9404c8294c5f947",
+    "feature_set_token": "bdf4500e11337e1f2c49ead4dea8d944712b1164",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -450,17 +450,26 @@
         "communities_analytics_enabled": {
             "value": false
         },
+        "communities_auto_report_setting_enabled": {
+            "value": false
+        },
         "communities_enable_explore_tab": {
             "value": true
         },
         "communities_enable_explore_topic_carousel": {
             "value": true
         },
+        "communities_enable_top_posts_search": {
+            "value": false
+        },
         "communities_home_top_timeline_enabled": {
             "value": true
         },
         "communities_show_broadcast_option_in_composer": {
             "value": true
+        },
+        "communities_spam_settings_enabled": {
+            "value": false
         },
         "communities_topic_carousel_enabled": {
             "value": true
@@ -1421,7 +1430,7 @@
             "value": false
         },
         "responsive_web_grok_opt_out_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_prompt_deeplink_enabled": {
             "value": true
@@ -3826,6 +3835,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "communities_enable_top_posts_search": {
+            "name": "communities_enable_top_posts_search",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "communities_enable_explore_topic_carousel": {
             "name": "communities_enable_explore_topic_carousel",
             "type": "boolean",
@@ -3853,6 +3867,16 @@
         },
         "communities_analytics_enabled": {
             "name": "communities_analytics_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "communities_spam_settings_enabled": {
+            "name": "communities_spam_settings_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "communities_auto_report_setting_enabled": {
+            "name": "communities_auto_report_setting_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -6853,7 +6877,7 @@
         "responsive_web_grok_opt_out_enabled": {
             "name": "responsive_web_grok_opt_out_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_delete_conversations_enabled": {
             "name": "responsive_web_grok_delete_conversations_enabled",
