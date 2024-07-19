@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bdf4500e11337e1f2c49ead4dea8d944712b1164",
+    "feature_set_token": "9499f1328a91405d257fa3f1c70ff63209d1af0e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -350,9 +350,6 @@
         },
         "blue_longer_video_enabled": {
             "value": false
-        },
-        "bookmarks_search_enabled": {
-            "value": true
         },
         "branded_like_preview_enabled": {
             "value": false
@@ -1186,7 +1183,7 @@
             "value": true
         },
         "responsive_web_birdwatch_note_request_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_birdwatch_note_writing_enabled": {
             "value": false
@@ -1476,9 +1473,6 @@
         },
         "responsive_web_instream_video_redesign_enabled": {
             "value": true
-        },
-        "responsive_web_jetfuel_enabled": {
-            "value": false
         },
         "responsive_web_lbm_v2_home_enabled": {
             "value": false
@@ -2281,7 +2275,7 @@
             "value": true
         },
         "subscriptions_marketing_page_free_trial_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
@@ -3354,31 +3348,6 @@
             "name": "blue_longer_video_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "bookmarks_tweet_detail_enabled": {
-            "name": "bookmarks_tweet_detail_enabled",
-            "type": "string"
-        },
-        "bookmarks_long_press_enabled": {
-            "name": "bookmarks_long_press_enabled",
-            "type": "string"
-        },
-        "bookmarks_api_state_enabled": {
-            "name": "bookmarks_api_state_enabled",
-            "type": "string"
-        },
-        "bookmarks_tweet_detail_count_enabled": {
-            "name": "bookmarks_tweet_detail_count_enabled",
-            "type": "string"
-        },
-        "bookmarks_in_timelines_enabled": {
-            "name": "bookmarks_in_timelines_enabled",
-            "type": "string"
-        },
-        "bookmarks_search_enabled": {
-            "name": "bookmarks_search_enabled",
-            "type": "boolean",
-            "defaultValue": true
         },
         "branded_like_preview_enabled": {
             "name": "branded_like_preview_enabled",
@@ -6581,7 +6550,7 @@
         "responsive_web_birdwatch_note_request_enabled": {
             "name": "responsive_web_birdwatch_note_request_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_birdwatch_read_sources_nudge": {
             "name": "responsive_web_birdwatch_read_sources_nudge",
@@ -6985,11 +6954,6 @@
             "name": "responsive_web_instream_video_redesign_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "responsive_web_jetfuel_enabled": {
-            "name": "responsive_web_jetfuel_enabled",
-            "type": "boolean",
-            "defaultValue": false
         },
         "responsive_web_lbm_v2_home_enabled": {
             "name": "responsive_web_lbm_v2_home_enabled",
@@ -8594,6 +8558,14 @@
             "name": "subscriptions_upsell_exact_tier_enabled",
             "type": "string"
         },
+        "subscriptions_cancel_flow_enabled": {
+            "name": "subscriptions_cancel_flow_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsell_to_annual_plan_selector_enabled": {
+            "name": "subscriptions_upsell_to_annual_plan_selector_enabled",
+            "type": "string"
+        },
         "subscriptions_blue_premium_labeling_enabled": {
             "name": "subscriptions_blue_premium_labeling_enabled",
             "type": "boolean",
@@ -8942,7 +8914,7 @@
         "subscriptions_marketing_page_free_trial_enabled": {
             "name": "subscriptions_marketing_page_free_trial_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
