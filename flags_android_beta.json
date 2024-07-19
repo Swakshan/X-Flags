@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "8422c3f265339da10a37268cf6e3600350b20176",
+        "feature_set_token": "72526830a67be5d9879f01d8ef94540b8787a6e5",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3037,6 +3037,9 @@
             "image_cache_instrumentation_sample_size": {
                 "value": 0.0
             },
+            "immersive_video_auto_advance_duration_threshold": {
+                "value": -1.0
+            },
             "immersive_video_status_linkable_timestamps": {
                 "value": true
             },
@@ -3562,6 +3565,9 @@
                 "value": true
             },
             "replies_section_cursors_enabled": {
+                "value": false
+            },
+            "reply_sorting_enabled": {
                 "value": false
             },
             "report_flow_id_enabled": {
@@ -4809,7 +4815,6 @@
     "embedded_experiments": [],
     "requires_restart": [],
     "experiment_names": [
-        "monetization_default_premium_basic_16824",
         "ad_formats_summary_large_card_uc_migration_android_11404",
         "android_hd_vod_badge_15148",
         "android_use_payload_badge_count_9378",
@@ -4820,6 +4825,7 @@
         "android_lazy_ally_strings_16343",
         "tap_to_search_android_15785",
         "project_friday_global_11301",
+        "monetisation_premium_upsell_home_nav_16843",
         "android_forward_feedback_13599",
         "android_htl_audio_toggle_cro_12349",
         "spaces_2022_h2_holdback_13972",
@@ -4855,6 +4861,7 @@
         "android_tweet_detail_activity_tweet_view_holder_pool_enabled_15268",
         "android_youtube_card_16442",
         "media_selector_ordered_numbers_14598",
+        "immersive_auto_play_next_16804",
         "unified_cards_image_collection_website_ios_15245",
         "randomized_ip_0_ios_andriod_15093",
         "notifications_incremental_holdback_2023h1_14753",
@@ -5015,7 +5022,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "9ade77d12d1f80a3ff8ad79ab3da7ff8db518901",
-        "experiments": "9ade77d12d1f80a3ff8ad79ab3da7ff8db518901"
+        "feature_switches": "5191bb9803b39d01f20f94d8794ac2ac6805f832",
+        "experiments": "5191bb9803b39d01f20f94d8794ac2ac6805f832"
     }
 }
