@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "554b26d274e274cb0cccb95542319a1b27127e08",
+    "feature_set_token": "8c4c66a79ab7e5c38eeec02876e1c6b49a8459fe",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -532,6 +532,9 @@
             "value": false
         },
         "dash_region_specific_de_media_transparency_items_enabled": {
+            "value": false
+        },
+        "disallowed_reply_controls_enabled": {
             "value": false
         },
         "dm_bulk_delete_enabled": {
@@ -1852,6 +1855,9 @@
         "responsive_web_vo_annual_credit_increase_enabled": {
             "value": true
         },
+        "responsive_web_vo_basic_application_enabled": {
+            "value": false
+        },
         "responsive_web_x_translation_enabled": {
             "value": false
         },
@@ -2285,6 +2291,9 @@
         },
         "subscriptions_premium_experiment_nav_text": {
             "value": false
+        },
+        "subscriptions_premium_tiers_default_interval": {
+            "value": "Year"
         },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerified"
@@ -4213,6 +4222,15 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "disallowed_reply_controls_enabled": {
+            "name": "disallowed_reply_controls_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "disallowed_reply_controls_callout_enabled": {
+            "name": "disallowed_reply_controls_callout_enabled",
+            "type": "string"
+        },
         "dm_char_limit": {
             "name": "dm_char_limit",
             "type": "string"
@@ -4357,6 +4375,10 @@
         },
         "dm_message_body_font_size_increase_enabled": {
             "name": "dm_message_body_font_size_increase_enabled",
+            "type": "string"
+        },
+        "dm_conversation_compose_prioritize_recents_enabled": {
+            "name": "dm_conversation_compose_prioritize_recents_enabled",
             "type": "string"
         },
         "dm_conversation_labels_max_pinned_count": {
@@ -7659,6 +7681,15 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_vo_basic_application_enabled": {
+            "name": "responsive_web_vo_basic_application_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_vo_basic_application_v2": {
+            "name": "responsive_web_vo_basic_application_v2",
+            "type": "string"
+        },
         "responsive_web_x_translation_enabled": {
             "name": "responsive_web_x_translation_enabled",
             "type": "boolean",
@@ -8570,6 +8601,10 @@
             "name": "subscriptions_upsell_to_annual_plan_selector_enabled",
             "type": "string"
         },
+        "subscriptions_receipt_refresher_enabled": {
+            "name": "subscriptions_receipt_refresher_enabled",
+            "type": "string"
+        },
         "subscriptions_blue_premium_labeling_enabled": {
             "name": "subscriptions_blue_premium_labeling_enabled",
             "type": "boolean",
@@ -8957,7 +8992,8 @@
         },
         "subscriptions_premium_tiers_default_interval": {
             "name": "subscriptions_premium_tiers_default_interval",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Year"
         },
         "subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled": {
             "name": "subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled",
