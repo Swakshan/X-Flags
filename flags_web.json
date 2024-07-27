@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "31eb6eff805a987bd96b072f4a2a9170cf41e8d8",
+    "feature_set_token": "450f713e9a5ca34a83d8e26e251aecc9cf2db56e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -532,6 +532,9 @@
             "value": false
         },
         "dash_region_specific_de_media_transparency_items_enabled": {
+            "value": false
+        },
+        "disallowed_reply_controls_callout_enabled": {
             "value": false
         },
         "disallowed_reply_controls_enabled": {
@@ -2406,9 +2409,6 @@
         "traffic_rewrite_map": {
             "value": []
         },
-        "trusted_friends_audience_control_exp_variant": {
-            "value": "control"
-        },
         "trusted_friends_consumption_enabled": {
             "value": true
         },
@@ -4244,7 +4244,8 @@
         },
         "disallowed_reply_controls_callout_enabled": {
             "name": "disallowed_reply_controls_callout_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "dm_char_limit": {
             "name": "dm_char_limit",
@@ -9569,8 +9570,7 @@
         },
         "trusted_friends_audience_control_exp_variant": {
             "name": "trusted_friends_audience_control_exp_variant",
-            "type": "string",
-            "defaultValue": "control"
+            "type": "string"
         },
         "trusted_friends_dash_discovery_tooltip_enabled": {
             "name": "trusted_friends_dash_discovery_tooltip_enabled",
