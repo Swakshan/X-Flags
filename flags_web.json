@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "450f713e9a5ca34a83d8e26e251aecc9cf2db56e",
+    "feature_set_token": "df5dcb83de3c9faf8587be5d534ad31ffa80f799",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2330,6 +2330,9 @@
         },
         "subscriptions_upsells_get_verified_profile": {
             "value": false
+        },
+        "subscriptions_upsells_premium_home_nav": {
+            "value": ""
         },
         "subscriptions_upsells_right_sidebar_variant": {
             "value": ""
@@ -5889,6 +5892,16 @@
             "name": "media_edge_to_edge_large_text_enabled",
             "type": "string"
         },
+        "monetisation_premium_upsell_home_nav_16843": {
+            "name": "monetisation_premium_upsell_home_nav_16843",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "get_premium",
+                "premium",
+                "upgrade"
+            ]
+        },
         "mr_logged_out_web_notifs_15050": {
             "name": "mr_logged_out_web_notifs_15050",
             "type": "experiment",
@@ -6051,13 +6064,14 @@
                 "th"
             ]
         },
-        "premium_signup_web_mobile_product_order_16833": {
-            "name": "premium_signup_web_mobile_product_order_16833",
+        "premium_upsell_nav_bar_16850": {
+            "name": "premium_upsell_nav_bar_16850",
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "variant_a",
-                "variant_b"
+                "get_premium",
+                "premium",
+                "upgrade"
             ]
         },
         "premium_web_desktop_sidebar_upsell_16838": {
@@ -8649,6 +8663,10 @@
             "name": "subscriptions_is_already_entitled_error_message_enabled",
             "type": "string"
         },
+        "subscriptions_should_check_if_already_entitled_for_super_follow": {
+            "name": "subscriptions_should_check_if_already_entitled_for_super_follow",
+            "type": "string"
+        },
         "subscriptions_blue_premium_labeling_enabled": {
             "name": "subscriptions_blue_premium_labeling_enabled",
             "type": "boolean",
@@ -9055,7 +9073,8 @@
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_upsells_get_verified_profile": {
             "name": "subscriptions_upsells_get_verified_profile",
