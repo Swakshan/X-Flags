@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "df5dcb83de3c9faf8587be5d534ad31ffa80f799",
+    "feature_set_token": "cdbbea298dcf0d0c90a3bb4eef32f3a7c721f862",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2421,6 +2421,9 @@
         "trusted_friends_tweet_creation_enabled": {
             "value": false
         },
+        "tv_app_qrcode_login_enabled": {
+            "value": false
+        },
         "tweet_awards_web_coin_purchase_enabled": {
             "value": false
         },
@@ -4213,6 +4216,10 @@
         },
         "creator_subscriptions_subscribe_button_immersive_enabled": {
             "name": "creator_subscriptions_subscribe_button_immersive_enabled",
+            "type": "string"
+        },
+        "creator_subscriptions_polling_after_purchase_enabled": {
+            "name": "creator_subscriptions_polling_after_purchase_enabled",
             "type": "string"
         },
         "current_stack_follow_card_android_14711": {
@@ -9616,6 +9623,11 @@
         "trusted_friends_copy_variant": {
             "name": "trusted_friends_copy_variant",
             "type": "string"
+        },
+        "tv_app_qrcode_login_enabled": {
+            "name": "tv_app_qrcode_login_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "tweet_awards_htl_awards_action_bar_enabled": {
             "name": "tweet_awards_htl_awards_action_bar_enabled",
