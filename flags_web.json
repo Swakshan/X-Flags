@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6bb855badeca5a0ccf88071f63228f9215b25f1e",
+    "feature_set_token": "2e28b516dfc67f57ed0c87846d3be43038c005c8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1413,9 +1413,6 @@
         "responsive_web_grok_delete_conversations_enabled": {
             "value": true
         },
-        "responsive_web_grok_drawer_enabled": {
-            "value": false
-        },
         "responsive_web_grok_file_max_size": {
             "value": 1024000.0
         },
@@ -2789,7 +2786,7 @@
             "value": true
         },
         "web_video_transcribed_captions_enabled": {
-            "value": false
+            "value": true
         },
         "xprofile_consumption_enabled": {
             "value": true
@@ -6941,8 +6938,7 @@
         },
         "responsive_web_grok_drawer_enabled": {
             "name": "responsive_web_grok_drawer_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_file_upload_enabled": {
             "name": "responsive_web_grok_file_upload_enabled",
@@ -10765,12 +10761,7 @@
         "web_video_transcribed_captions_enabled": {
             "name": "web_video_transcribed_captions_enabled",
             "type": "boolean",
-            "defaultValue": false
-        },
-        "web_video_transcribed_captions_14830": {
-            "name": "web_video_transcribed_captions_14830",
-            "type": "experiment",
-            "enumeration_values": []
+            "defaultValue": true
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
