@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "c71888cda5167a2e91119657c23335681b4b41ea",
+        "feature_set_token": "6b017546938b2dd510dba3454895a03f5164c746",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1605,6 +1605,9 @@
             "birdwatch_home_page_enabled": {
                 "value": false
             },
+            "birdwatch_note_request_mobile_enabled": {
+                "value": false
+            },
             "birdwatch_pivot_enabled": {
                 "value": false
             },
@@ -1640,6 +1643,9 @@
             },
             "bookmarks_in_timelines_enabled": {
                 "value": true
+            },
+            "bookmarks_search_enabled": {
+                "value": false
             },
             "bouncer_url_whitelist_entrances": {
                 "value": [
@@ -2290,6 +2296,9 @@
             },
             "communities_enable_explore_topic_carousel": {
                 "value": true
+            },
+            "communities_enable_top_posts_search": {
+                "value": false
             },
             "communities_home_top_timeline_enabled": {
                 "value": true
@@ -3035,7 +3044,7 @@
                 "value": 0.0
             },
             "immersive_video_auto_advance_duration_threshold": {
-                "value": -1.0
+                "value": 5.0
             },
             "immersive_video_status_linkable_timestamps": {
                 "value": true
@@ -3917,17 +3926,20 @@
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
+            "ssp_ads_google_dsp_spotlight_with_headline": {
+                "value": false
+            },
             "ssp_ads_google_native_ad_enabled": {
                 "value": false
             },
             "ssp_ads_google_native_ad_timeout_ms": {
-                "value": 300.0
+                "value": 1000.0
             },
             "ssp_ads_google_native_ad_v2_enabled": {
                 "value": false
             },
             "ssp_ads_log_errors": {
-                "value": false
+                "value": true
             },
             "ssp_ads_native_ad_unit_id": {
                 "value": ""
@@ -4000,9 +4012,6 @@
             },
             "subscriptions_feature_account_analytics": {
                 "value": true
-            },
-            "subscriptions_feature_can_hide_checkmark": {
-                "value": false
             },
             "subscriptions_feature_hide_subscriptions": {
                 "value": true
@@ -4814,6 +4823,7 @@
     "experiment_names": [
         "ad_formats_summary_large_card_uc_migration_android_11404",
         "android_hd_vod_badge_15148",
+        "premium_upsell_home_timeline_mobile_web_16862",
         "android_use_payload_badge_count_9378",
         "android_transsion_badging_experiment_15156",
         "android_graphql_skip_api_profile_image_extensions_16230",
@@ -4917,6 +4927,7 @@
         "project_jiminy_humanization_nudge_android_11630",
         "viewcounts_everywhere_16084",
         "media_quick_reply_8079",
+        "premium_upsell_nav_bar_16850",
         "android_dynamic_ntab_14305",
         "android_o_clear_notifications_on_ntab_impression_8473",
         "android_preloaded_notifications_12303",
@@ -4993,6 +5004,7 @@
         "backend_events_global_holdback_7355",
         "search_incremental_holdback_2022h2_13463",
         "android_growth_performance_holdback_perf_optimize_video_relayout_15269",
+        "immersive_auto_play_next_android_16857",
         "android_composer_hide_keyboard_less_14893",
         "like_tweet_reactivity_all_users_15346",
         "android_prefetch_notifications_global_ex_india_13682",
@@ -5019,7 +5031,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "6501cf003a954ca7071c72c9ce66af6d85775c8b",
-        "experiments": "6501cf003a954ca7071c72c9ce66af6d85775c8b"
+        "feature_switches": "2a67f4dbc4bfdfeee4b0aa96a08d5e4363a4d6ee",
+        "experiments": "2a67f4dbc4bfdfeee4b0aa96a08d5e4363a4d6ee"
     }
 }
