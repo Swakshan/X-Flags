@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "6b3c23b68faa8e0572c028071d088b4e0720c2cc",
+        "feature_set_token": "1f2b5d465fc38fd21c2872c5498349af99b999d1",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -1530,7 +1530,7 @@
                 "value": true
             },
             "creator_subscriptions_subscribe_button_immersive_enabled": {
-                "value": false
+                "value": true
             },
             "creator_subscriptions_subscribe_button_tweet_detail_enabled": {
                 "value": true
@@ -2876,6 +2876,9 @@
             "ios_tav_is_delta_hls_manifest_enabled": {
                 "value": false
             },
+            "ios_tav_is_video_cache_enabled": {
+                "value": false
+            },
             "ios_tav_is_video_quality_selection_enabled": {
                 "value": true
             },
@@ -2952,7 +2955,7 @@
                 "value": 1.0
             },
             "ios_tav_video_settings_preserve_playback_rate_enabled": {
-                "value": false
+                "value": true
             },
             "ios_tavui_check_for_ecd_error_on_playback_error_enabled": {
                 "value": false
@@ -3060,7 +3063,7 @@
                 "value": false
             },
             "ios_ui_navigation_push_pop_animation_duration": {
-                "value": 0.0
+                "value": 0.2
             },
             "ios_ui_phone_landscape_disabled": {
                 "value": true
@@ -9164,6 +9167,9 @@
             "subscriptions_product_feature_list_persistence_store_enabled": {
                 "value": false
             },
+            "subscriptions_receipt_refresher_enabled": {
+                "value": false
+            },
             "subscriptions_settings_item_enabled": {
                 "value": true
             },
@@ -9172,6 +9178,9 @@
             },
             "subscriptions_store_kit_v2_for_one_dollar_enabled": {
                 "value": true
+            },
+            "subscriptions_store_kit_v2_for_super_follow_enabled": {
+                "value": false
             },
             "subscriptions_update_version": {
                 "value": ""
@@ -9989,5 +9998,9 @@
     },
     "embedded_experiments": [],
     "requires_restart": [],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "75ef20faf7da44ef9dc135ecf836641e26afbaf9",
+        "experiments": "75ef20faf7da44ef9dc135ecf836641e26afbaf9"
+    }
 }
