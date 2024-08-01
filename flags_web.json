@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2e28b516dfc67f57ed0c87846d3be43038c005c8",
+    "feature_set_token": "730d37f35df5386677f0a3334fb7ad19fa5dce74",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1865,7 +1865,7 @@
             "value": true
         },
         "responsive_web_vo_basic_application_v2": {
-            "value": false
+            "value": true
         },
         "responsive_web_x_translation_enabled": {
             "value": false
@@ -1883,6 +1883,9 @@
             "value": false
         },
         "rweb_2_column_htl_prototype_virtual_scroller_enabled": {
+            "value": false
+        },
+        "rweb_analytics_content_page_new_query_enabled": {
             "value": false
         },
         "rweb_analytics_country_device_breakdown_enabled": {
@@ -5906,6 +5909,16 @@
                 "upgrade"
             ]
         },
+        "monetization_premium_home_nav_upsell_global_16864": {
+            "name": "monetization_premium_home_nav_upsell_global_16864",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "premium",
+                "get_premium",
+                "upgrade"
+            ]
+        },
         "mr_logged_out_web_notifs_15050": {
             "name": "mr_logged_out_web_notifs_15050",
             "type": "experiment",
@@ -7731,7 +7744,7 @@
         "responsive_web_vo_basic_application_v2": {
             "name": "responsive_web_vo_basic_application_v2",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_x_translation_enabled": {
             "name": "responsive_web_x_translation_enabled",
@@ -7806,7 +7819,8 @@
         },
         "rweb_analytics_content_page_new_query_enabled": {
             "name": "rweb_analytics_content_page_new_query_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
@@ -8683,6 +8697,10 @@
         },
         "subscriptions_cancel_flow_final_enabled": {
             "name": "subscriptions_cancel_flow_final_enabled",
+            "type": "string"
+        },
+        "subscriptions_highlights_cancel_flow_enabled": {
+            "name": "subscriptions_highlights_cancel_flow_enabled",
             "type": "string"
         },
         "subscriptions_blue_premium_labeling_enabled": {
