@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8d85b4eeec95f296f71864db2c5508a7eb1c866d",
+    "feature_set_token": "3ead7437d71a9575c836aed23828d345435a818d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -817,7 +817,7 @@
             "value": false
         },
         "identity_verification_intake_for_blue_subscribers_enabled": {
-            "value": true
+            "value": false
         },
         "identity_verification_notable_demo_survey": {
             "value": false
@@ -5405,7 +5405,7 @@
         "identity_verification_intake_for_blue_subscribers_enabled": {
             "name": "identity_verification_intake_for_blue_subscribers_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "identity_verification_landing_page_enabled": {
             "name": "identity_verification_landing_page_enabled",
@@ -7690,6 +7690,10 @@
             "name": "responsive_web_verified_organizations_preapproved_access_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_verified_organizations_people_search_enabled": {
+            "name": "responsive_web_verified_organizations_people_search_enabled",
+            "type": "string"
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
