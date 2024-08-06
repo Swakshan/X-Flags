@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3ead7437d71a9575c836aed23828d345435a818d",
+    "feature_set_token": "0ae0424dfa3fc22a75c78c42e27bdd2bce7e38ff",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1877,9 +1877,12 @@
             "value": false
         },
         "rweb_analytics_content_page_new_query_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_country_device_breakdown_enabled": {
+            "value": false
+        },
+        "rweb_analytics_export_data_enabled": {
             "value": false
         },
         "rweb_analytics_in_out_network_enabled": {
@@ -6080,6 +6083,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "pending_checkmark_status_profile_web_16874": {
+            "name": "pending_checkmark_status_profile_web_16874",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant"
+            ]
+        },
         "premium_upsell_home_timeline_mobile_web_16862": {
             "name": "premium_upsell_home_timeline_mobile_web_16862",
             "type": "experiment",
@@ -7799,11 +7810,12 @@
         "rweb_analytics_content_page_new_query_enabled": {
             "name": "rweb_analytics_content_page_new_query_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_export_data_enabled": {
             "name": "rweb_analytics_export_data_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
@@ -9129,6 +9141,14 @@
             "name": "subscriptions_upsells_longform_sidebar_variant",
             "type": "string",
             "defaultValue": ""
+        },
+        "subscriptions_upsells_get_verified_profile_fatigue_min_interval": {
+            "name": "subscriptions_upsells_get_verified_profile_fatigue_min_interval",
+            "type": "string"
+        },
+        "subscriptions_upsells_get_verified_profile_fatigue_enabled": {
+            "name": "subscriptions_upsells_get_verified_profile_fatigue_enabled",
+            "type": "string"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
