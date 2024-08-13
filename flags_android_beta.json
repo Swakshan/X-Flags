@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "478e58758fc7dc8c3b21452ee392b216655bd558",
+        "feature_set_token": "06e786afe2f38609bd8faaab0392d60668e751fe",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1276,7 +1276,7 @@
                 "value": false
             },
             "android_system_dns_cache_enabled": {
-                "value": false
+                "value": true
             },
             "android_system_dns_synchronized_map_enabled": {
                 "value": false
@@ -2301,12 +2301,15 @@
                 "value": true
             },
             "communities_enable_top_posts_search": {
-                "value": false
+                "value": true
             },
             "communities_home_top_timeline_enabled": {
                 "value": true
             },
             "communities_show_broadcast_option_in_composer": {
+                "value": true
+            },
+            "communities_spam_settings_enabled": {
                 "value": true
             },
             "communities_sticky_broadcast_option_in_composer": {
@@ -2719,6 +2722,15 @@
             "graphql_timeline_v2_user_favorites_by_time_timeline": {
                 "value": true
             },
+            "grok_model_selector_display_description_enabled": {
+                "value": true
+            },
+            "grok_model_selector_enabled": {
+                "value": false
+            },
+            "grok_share_without_author_enabled": {
+                "value": false
+            },
             "growth_acquisition_redirect_to_login": {
                 "value": ""
             },
@@ -3011,7 +3023,7 @@
                 "value": true
             },
             "identity_verification_intake_for_blue_subscribers_enabled": {
-                "value": true
+                "value": false
             },
             "identity_verification_native_flow_enabled": {
                 "value": false
@@ -3552,6 +3564,9 @@
             "recents_use_launcher_icon_enabled": {
                 "value": true
             },
+            "recruiting_android_job_tab": {
+                "value": false
+            },
             "recruiting_jobs_list_consumption_enabled": {
                 "value": true
             },
@@ -3559,7 +3574,7 @@
                 "value": false
             },
             "reply_sorting_enabled": {
-                "value": false
+                "value": true
             },
             "report_flow_id_enabled": {
                 "value": true
@@ -4041,7 +4056,7 @@
                 "value": ""
             },
             "subscriptions_management_in_app_cancel_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_marketing_page_disable_new_subscriptions": {
                 "value": false
@@ -4093,6 +4108,15 @@
             },
             "subscriptions_signup_product_subscription_cache_enabled": {
                 "value": false
+            },
+            "subscriptions_upsells_get_verified_profile": {
+                "value": false
+            },
+            "subscriptions_upsells_get_verified_profile_fatigue_enabled": {
+                "value": true
+            },
+            "subscriptions_upsells_get_verified_profile_fatigue_min_interval": {
+                "value": 3.0
             },
             "subscriptions_upsells_premium_home_nav": {
                 "value": ""
@@ -4920,6 +4944,7 @@
         "media_quick_reply_8079",
         "premium_upsell_nav_bar_16850",
         "android_dynamic_ntab_14305",
+        "get_verified_profile_upsell_16854",
         "android_o_clear_notifications_on_ntab_impression_8473",
         "android_preloaded_notifications_12303",
         "project_friday_brazil_turkey_11604",
@@ -4964,7 +4989,6 @@
         "android_scroll_to_top_clear_cache_16550",
         "onboarding_wtf_dismiss_htl_9346",
         "home_incremental_holdback_2023h1_14678",
-        "android_dns_cache_holdback_16743",
         "silence_device_follow_push_12609",
         "android_video_transcode_exoplayer_source_14593",
         "dm_voice_messages_11154",
@@ -5023,7 +5047,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "2adc453509af4350468c193994f4f12bd9864807",
-        "experiments": "2adc453509af4350468c193994f4f12bd9864807"
+        "feature_switches": "9847ffb0902d8c90525882e594a74843765da993",
+        "experiments": "9847ffb0902d8c90525882e594a74843765da993"
     }
 }
