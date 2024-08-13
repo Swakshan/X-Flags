@@ -1,14 +1,13 @@
 import requests
 import json
 from bs4 import BeautifulSoup as bs
-from user_agent import generate_user_agent
 from pprint import pprint
 from urllib.parse import unquote
 from datetime import datetime
-from common import WEB_LINK,M_WEB_LINK,TWT_SW_URL
+from common import WEB_LINK,M_WEB_LINK,TWT_SW_URL,headers
 
 
-hdr = {'User-Agent': generate_user_agent()}
+hdr = headers()
 
 
 class ApkCombo():

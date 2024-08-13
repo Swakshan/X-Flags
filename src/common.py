@@ -1,4 +1,5 @@
 import os,json
+from user_agent import generate_user_agent
 from enum import Enum
 from sys import exc_info
 from traceback import format_exception
@@ -82,6 +83,9 @@ def vercodeGenerator(v):
     vercode = v.replace("-alpha.",vCode).replace("-beta.",vCode).replace("-release.",vCode)
     vercode = "3"+vercode.replace(".","")
     return vercode
+
+def headers():
+    return {'User-Agent': generate_user_agent()}
 
 def commitLinkFormat(flag_data):
     def countFormat(count,ns="Flags"):

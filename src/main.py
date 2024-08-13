@@ -3,9 +3,9 @@ from appData import ApkCombo,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
-from common import writeJson,readJson,get_exception,vercodeGenerator
+from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 
-VER = "v9 : Remove Aptiode function"
+VER = "v9.1 : Add header to downloader"
 
 
 vername = "web"
@@ -16,7 +16,7 @@ down_link = ""
 
 def downloader(url,fileName="",isJson=False):
     print(f"Downloading: {fileName}")
-    response = requests.get(url, stream=True)
+    response = requests.get(url, stream=True,headers=headers())
     if not isJson:
         total_size_in_bytes = int(response.headers.get('content-length', 0))
         block_size = 1024  # 1 Kibibyte
