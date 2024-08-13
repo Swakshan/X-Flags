@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 
-VER = "v9.2 : add status in manifest"
+VER = "v9.3 : minor code refactoring"
 
 
 vername = "web"
@@ -53,8 +53,10 @@ def unzipper(platform):
             FLAG_FOLDER ="res/raw"
             FLAG_FILE = f"{FLAG_FOLDER}/feature_switch_manifest" 
             apk_name = f'{PKG_NAME}.apk'
+            apk_name_2 = f'base.apk'
 
-            if apk_name in file_list:
+            if apk_name in file_list or apk_name_2 in file_list:
+                apk_name = apk_name_2 if apk_name_2 in file_list else apk_name
                 zip_obj.extract(apk_name, path=EXTRACT_FOLDER)
                 zip_obj = zipfile.ZipFile(EXTRACT_FOLDER+apk_name, 'r')
                 feature_file = True
@@ -175,20 +177,20 @@ def main():
             else:
                 down_data = downTwt(typ) #apkcombo
                 if not down_data[0]: 
-                    return False
+                    raise Exception("Error downloading")
             
             existsing_flag_file = f'flags_android_{typ}.json'
             shutil.copyfile(existsing_flag_file, old_file_name)
 
             s = unzipper(platform)
             if not s:
-                return False
+                raise Exception("Error unzipping")
             os.remove(existsing_flag_file)
             shutil.copy(new_file_name, existsing_flag_file)
+            sts = True
             
-        d = {'sts':sts,'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2],'os':platform}
+        d = {'sts':sts,'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2],'os':platform.value}
 
-        return True
     except Exception as e:
         d = {'sts':sts}
         print(get_exception())
