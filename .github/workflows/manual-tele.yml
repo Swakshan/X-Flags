@@ -26,8 +26,6 @@ jobs:
   download-and-extract:
     runs-on: ubuntu-latest
     env:
-      MAIL_ID: ${{ secrets.MAIL_ID }}
-      NAME: ${{ secrets.NAME }}
       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
       PIN_MSG: ${{ secrets.PIN_MSG }}
@@ -55,13 +53,7 @@ jobs:
         CHANGES=$(git diff --name-only origin/main)
         if [ -n "$CHANGES" ]; then
           echo "Changes found."
-          vername=$(jq -r '.version_name' manifest.json)
-          git config --global user.email "${{ env.MAIL_ID }}"
-          git config --global user.name "${{ env.NAME }}"
-          git pull
-          git add .
-          git commit -m "${vername}"
-          git push
+          python src/git.py
           echo "PUSH=1" >> $GITHUB_OUTPUT
         else
           echo "No changes found."
