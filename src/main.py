@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator
 
-VER = "v8.3 : Added vercode generation"
+VER = "v8.33 : Refactored download funtion"
 
 
 vername = "web"
@@ -100,8 +100,8 @@ def downTwt(typ):
                 d = l['data']
                 vercode = d['vercode']
                 downLink = d['link']
-                fileName = f"{vername}.{d['apktype']}"
-                downloader(downLink,fileName)
+                # fileName = f"{vername}.{d['apktype']}"
+                downloader(downLink)
                 return [vername,vercode,False]# if apkcombo dont save the link
             else:
                 prinData = "version not Found"
@@ -126,8 +126,8 @@ def downTwt2(typ):
             vername = ty['vername']
             vercode = ty['vercode']
             downLink = ty['link']
-            fileName = f"{vername}.{ty['apk-type']}"
-            downloader(downLink,fileName)
+            # fileName = f"{vername}.{ty['apk-type']}"
+            downloader(downLink)
             return [vername,vercode,downLink]
         else:
             prinData = "type not Found"
@@ -165,13 +165,12 @@ def main():
             down_data = [typ,fs_hash,False]
         
         elif platform==Platform.IOS:
-            fileName = "x.ipa"
             vercode = ""
             if ".json" in down_link:
                 downloader(url=down_link,fileName=new_file_name,isJson=True)
                 downloader(url=down_link,fileName=new_file_ipad_name,isJson=True)
             else:
-                downloader(down_link,fileName)
+                downloader(down_link)
                 s = unzipper(platform)
                 if not s:
                     return False
@@ -190,8 +189,8 @@ def main():
             
         elif platform==Platform.ANDROID:
             if source=="manual":
-                fileName = f"{vername}.apk"
-                downloader(down_link,fileName)
+                # fileName = f"{vername}.apk"
+                downloader(down_link)
                 down_data = [vername,vercode,False]
             else:
                 if source == "apt":
