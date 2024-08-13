@@ -3,7 +3,7 @@ from appData import ApkCombo, Aptiode,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
-from common import writeJson,readJson,get_exception
+from common import writeJson,readJson,get_exception,vercodeGenerator
 
 VER = "v8.2 : Added git cmd in code"
 
@@ -49,7 +49,7 @@ def unzipper(platform):
         zip_obj = zipfile.ZipFile(ZIP_FILE, 'r')
         file_list = zip_obj.namelist()
         
-        if platform == Platform.ANDROID.value:
+        if platform == Platform.ANDROID:
             FLAG_FOLDER ="res/raw"
             FLAG_FILE = f"{FLAG_FOLDER}/feature_switch_manifest" 
             apk_name = f'{PKG_NAME}.apk'
@@ -65,7 +65,7 @@ def unzipper(platform):
             if feature_file:
                 return extract(FLAG_FILE,new_file_name)
         
-        elif platform == Platform.IOS.value:
+        elif platform == Platform.IOS:
             rd1 = False;rd2 = False
             FLAG_FOLDER = "Payload/Twitter.app"
             FLAG_FILE = f"{FLAG_FOLDER}/fs_embedded_defaults_ipad_production.json" 
@@ -146,14 +146,14 @@ def main():
         down_link = sys.argv[4]
     vername = vername.lower()
     source = source.lower()
-    # vercode = vercode.lower()
+    vercode = vercodeGenerator(vername) if not(vername) else vercode #generate vercode if 0 is provided
     try:    
         hash_value = False
         typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
-        platform = Platform.WEB.value if "web" in source else Platform.IOS.value if "ios" in source else Platform.ANDROID.value
+        platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
         down_data = [False,False,False] #vername,vercode,downLink
         
-        if platform==Platform.WEB.value:
+        if platform==Platform.WEB:
             sha,fs_hash = vercode.split(":")
             hash_value = sha
             existsing_flag_file = f'flags_{typ}.json'
@@ -164,7 +164,7 @@ def main():
             shutil.copy(existsing_flag_file, new_file_name)
             down_data = [typ,fs_hash,False]
         
-        elif platform==Platform.IOS.value:
+        elif platform==Platform.IOS:
             fileName = "x.ipa"
             vercode = ""
             if ".json" in down_link:
@@ -188,7 +188,7 @@ def main():
 
             down_data = [vername,vercode,down_link]
             
-        elif platform==Platform.ANDROID.value:
+        elif platform==Platform.ANDROID:
             if source=="manual":
                 fileName = f"{vername}.apk"
                 downloader(down_link,fileName)

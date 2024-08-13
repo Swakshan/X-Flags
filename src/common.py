@@ -77,6 +77,12 @@ def readFile(filename):
 def printLine():
     return "*--------------*"
 
+def vercodeGenerator(v):
+    vCode = "20" if "alpha" in v else "10" if "beta" in v else "00"
+    vercode = v.replace("-alpha.",vCode).replace("-beta.",vCode).replace("-release.",vCode)
+    vercode = "3"+vercode.replace(".","")
+    return vercode
+
 def commitLinkFormat(flag_data):
     def countFormat(count,ns="Flags"):
         if not count:
