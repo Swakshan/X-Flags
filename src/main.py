@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 
-VER = "v9.1 : Add header to downloader"
+VER = "v9.2 : add status in manifest"
 
 
 vername = "web"
@@ -128,6 +128,7 @@ def main():
         typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
         platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
         down_data = [False,False,False] #vername,vercode,downLink
+        sts = False
         
         if platform==Platform.WEB:
             sha,fs_hash = vercode.split(":")
@@ -139,6 +140,7 @@ def main():
             writeJson(existsing_flag_file,fs)
             shutil.copy(existsing_flag_file, new_file_name)
             down_data = [typ,fs_hash,False]
+            sts = True
         
         elif platform==Platform.IOS:
             vercode = ""
@@ -162,6 +164,7 @@ def main():
             shutil.copy(new_file_ipad_name, existsing_flag_file)
 
             down_data = [vername,vercode,down_link]
+            sts = True
             
         elif platform==Platform.ANDROID:
             if source== "manual" or source == "apt":
@@ -183,14 +186,15 @@ def main():
             os.remove(existsing_flag_file)
             shutil.copy(new_file_name, existsing_flag_file)
             
-        d = {'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2],'os':platform}
-        writeJson(manifest_file_name,d)
+        d = {'sts':sts,'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2],'os':platform}
 
         return True
     except Exception as e:
+        d = {'sts':sts}
         print(get_exception())
 
-    return False
+    writeJson(manifest_file_name,d)
+    return sts
 
 if not DEBUG:
     if os.path.exists(DUMMY_FOLDER):
