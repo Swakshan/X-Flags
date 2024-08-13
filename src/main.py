@@ -1,11 +1,11 @@
 import requests,json,os,shutil,sys,zipfile
-from appData import ApkCombo, Aptiode,webfeatureSwitches
+from appData import ApkCombo,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator
 
-VER = "v8.33 : Refactored download funtion"
+VER = "v9 : Remove Aptiode function"
 
 
 vername = "web"
@@ -113,30 +113,6 @@ def downTwt(typ):
     return False
 
 
-def downTwt2(typ):
-    try:
-        prinData = ""
-
-        apt = Aptiode(pkgName=PKG_NAME)
-        l = apt.versions()
-        # pprint(l)
-        if l['status']:
-            data = l['data']
-            ty = data[typ.lower()]
-            vername = ty['vername']
-            vercode = ty['vercode']
-            downLink = ty['link']
-            # fileName = f"{vername}.{ty['apk-type']}"
-            downloader(downLink)
-            return [vername,vercode,downLink]
-        else:
-            prinData = "type not Found"
-        print(prinData)
-    except Exception as e:
-        print(get_exception())
-    return False
-
-
 def main():
     # global vername,source,vercode,down_link
     if len(sys.argv)>1:
@@ -188,15 +164,13 @@ def main():
             down_data = [vername,vercode,down_link]
             
         elif platform==Platform.ANDROID:
-            if source=="manual":
+            if source== "manual" or source == "apt":
                 # fileName = f"{vername}.apk"
                 downloader(down_link)
-                down_data = [vername,vercode,False]
+                down_link = False if source== "manual" else down_link
+                down_data = [vername,vercode,down_link]
             else:
-                if source == "apt":
-                    down_data = downTwt2(typ)
-                else:
-                    down_data = downTwt(typ)
+                down_data = downTwt(typ) #apkcombo
                 if not down_data[0]: 
                     return False
             

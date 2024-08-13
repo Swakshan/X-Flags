@@ -137,65 +137,6 @@ class ApkCombo():
         return rd
 
 
-class Aptiode():
-    def __init__(self, pkgName, limit=30):
-        self.siteUrl = f"https://ws75.aptoide.com/api/7/app/get/package_name={pkgName}/limit={limit}/aab=true"
-
-    def versions(self):
-        rd = {'appName': "", 'data': {}, "status": False}
-        try:
-            url = self.siteUrl
-            req = requests.get(url, headers=hdr)
-            if req.status_code != 200:
-                rd['reason'] = req.status_code
-                return rd
-            pkjson = req.json()
-            nodes = pkjson['nodes']
-            baseAppName = nodes['meta']['data']['name']
-
-            wData = {}
-            lists = nodes['versions']['list']
-            for item in lists:
-                data = {}
-                apk_id = item['id']
-                pkgName = item['package'].replace('.', '-')
-                store_name = item['store']['name']
-                file = item['file']
-                vername = file['vername']
-                vercode = file['vercode']
-                md5sum = file['md5sum']
-                typ = "alpha" if "alpha" in vername else "beta" if "beta" in vername else "stable"
-                apk_type = "apk"
-                updtime = file['added']
-                link = f"https://pool.apk.aptoide.com/{store_name}/{pkgName}-{vercode}-{apk_id}-{md5sum}.apk"
-
-                data['vername'] = vername
-                data['vercode'] = vercode
-                data['type'] = typ
-                data['apk-type'] = apk_type
-                data['upd'] = updtime
-                data['link'] = unquote(link)
-
-                if typ not in wData:
-                    # data = DATA(name=baseAppName,vername=vername,vercode=vercode,app_id=apk_id,typ=typ,link=link,upd=0)
-                    wData[typ] = data
-
-                if len(wData) == 3:
-                    wData[typ] = data
-                    break
-                # whole.append(data)
-
-            rd['status'] = True
-            rd['data'] = wData
-            rd['appName'] = baseAppName
-
-        except Exception as e:
-            # e = get_exception()
-            rd['status'] = False
-            rd['reason'] = str(e)
-        return rd
-
-
 class TwtWeb():
     def __init__(self) -> None:
         req = requests.get(TWT_SW_URL,headers=hdr)
