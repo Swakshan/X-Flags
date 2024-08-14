@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1390f3f3747908e5f73b1f8a6747605771eed441",
+    "feature_set_token": "e305d784b43fecaebae17be4995b3831b6ec9ab5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1732,7 +1732,7 @@
             "value": true
         },
         "responsive_web_tv_cast_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_tweet_analytics_m2_enabled": {
             "value": false
@@ -1894,7 +1894,7 @@
             "value": true
         },
         "rweb_analytics_country_device_breakdown_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_export_data_enabled": {
             "value": false
@@ -1903,13 +1903,13 @@
             "value": false
         },
         "rweb_analytics_post_audience_page_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_theme": {
             "value": false
         },
         "rweb_analytics_user_audience_page_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_client_transaction_id_enabled": {
             "value": false
@@ -2442,7 +2442,7 @@
             "value": false
         },
         "tv_app_qrcode_login_enabled": {
-            "value": false
+            "value": true
         },
         "tweet_awards_web_coin_purchase_enabled": {
             "value": false
@@ -5939,8 +5939,6 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "premium",
-                "get_premium",
                 "upgrade"
             ]
         },
@@ -6121,6 +6119,14 @@
             "enumeration_values": [
                 "control",
                 "variant"
+            ]
+        },
+        "premium_free_trial_australia_16885": {
+            "name": "premium_free_trial_australia_16885",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
             ]
         },
         "premium_upsell_home_timeline_mobile_web_16862": {
@@ -7508,7 +7514,7 @@
         "responsive_web_tv_cast_enabled": {
             "name": "responsive_web_tv_cast_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_tweet_analytics_m2_enabled": {
             "name": "responsive_web_tweet_analytics_m2_enabled",
@@ -7833,17 +7839,17 @@
         "rweb_analytics_user_audience_page_enabled": {
             "name": "rweb_analytics_user_audience_page_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_post_audience_page_enabled": {
             "name": "rweb_analytics_post_audience_page_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_country_device_breakdown_enabled": {
             "name": "rweb_analytics_country_device_breakdown_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_theme": {
             "name": "rweb_analytics_theme",
@@ -7864,6 +7870,10 @@
             "name": "rweb_analytics_export_data_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_analytics_device_breakdown_enabled": {
+            "name": "rweb_analytics_device_breakdown_enabled",
+            "type": "string"
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
@@ -9751,7 +9761,7 @@
         "tv_app_qrcode_login_enabled": {
             "name": "tv_app_qrcode_login_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "tweet_awards_htl_awards_action_bar_enabled": {
             "name": "tweet_awards_htl_awards_action_bar_enabled",
