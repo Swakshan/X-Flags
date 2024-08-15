@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c5a920700bae32b989bc09cb6892ca98b0fa3afd",
+    "feature_set_token": "04d86d55269573679aaeab59bf70d9154c4f6a6f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1429,6 +1429,9 @@
         "responsive_web_grok_file_upload_enabled": {
             "value": false
         },
+        "responsive_web_grok_in_app_learn_more": {
+            "value": "https://x.com/xai/status/1823597788573098215"
+        },
         "responsive_web_grok_model_selector_enabled": {
             "value": true
         },
@@ -1734,6 +1737,9 @@
         "responsive_web_tv_cast_enabled": {
             "value": true
         },
+        "responsive_web_tv_screen_logging_enabled": {
+            "value": false
+        },
         "responsive_web_tweet_analytics_m2_enabled": {
             "value": false
         },
@@ -1896,6 +1902,9 @@
         "rweb_analytics_country_device_breakdown_enabled": {
             "value": true
         },
+        "rweb_analytics_device_breakdown_enabled": {
+            "value": false
+        },
         "rweb_analytics_export_data_enabled": {
             "value": false
         },
@@ -1918,6 +1927,9 @@
             "value": false
         },
         "rweb_creator_analytics_enabled": {
+            "value": true
+        },
+        "rweb_dummy_audio_enabled": {
             "value": true
         },
         "rweb_enable_logged_out_search_search_bar_enabled": {
@@ -4243,6 +4255,10 @@
             "name": "creator_subscriptions_polling_after_purchase_enabled",
             "type": "string"
         },
+        "creator_subscriptions_polling_generic_enabled": {
+            "name": "creator_subscriptions_polling_generic_enabled",
+            "type": "string"
+        },
         "current_stack_follow_card_android_14711": {
             "name": "current_stack_follow_card_android_14711",
             "type": "experiment",
@@ -4998,6 +5014,14 @@
             "type": "experiment",
             "enumeration_values": []
         },
+        "get_verified_profile_16882": {
+            "name": "get_verified_profile_16882",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant"
+            ]
+        },
         "get_verified_profile_upsell_16854": {
             "name": "get_verified_profile_upsell_16854",
             "type": "experiment",
@@ -5514,6 +5538,14 @@
             "enumeration_values": [
                 "control",
                 "treatment"
+            ]
+        },
+        "ios_inreview_profile_16883": {
+            "name": "ios_inreview_profile_16883",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant"
             ]
         },
         "krs_registration_enabled": {
@@ -7044,6 +7076,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_grok_in_app_learn_more": {
+            "name": "responsive_web_grok_in_app_learn_more",
+            "type": "string",
+            "defaultValue": "https://x.com/xai/status/1823597788573098215"
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -7516,6 +7553,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_tv_screen_logging_enabled": {
+            "name": "responsive_web_tv_screen_logging_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_tweet_analytics_m2_enabled": {
             "name": "responsive_web_tweet_analytics_m2_enabled",
             "type": "boolean",
@@ -7873,7 +7915,8 @@
         },
         "rweb_analytics_device_breakdown_enabled": {
             "name": "rweb_analytics_device_breakdown_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
@@ -7897,6 +7940,11 @@
         },
         "rweb_creator_analytics_enabled": {
             "name": "rweb_creator_analytics_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "rweb_dummy_audio_enabled": {
+            "name": "rweb_dummy_audio_enabled",
             "type": "boolean",
             "defaultValue": true
         },
@@ -9144,6 +9192,10 @@
             "name": "subscriptions_marketing_page_free_trial_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_marketing_page_discounts_enabled": {
+            "name": "subscriptions_marketing_page_discounts_enabled",
+            "type": "string"
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
