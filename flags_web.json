@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "04d86d55269573679aaeab59bf70d9154c4f6a6f",
+    "feature_set_token": "c34254773736d750fd311352b336708862ecf6d6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -478,9 +478,6 @@
             "value": true
         },
         "communities_web_enable_tweet_community_results_fetch": {
-            "value": true
-        },
-        "conversation_controls_my_subscribers_enabled": {
             "value": true
         },
         "conversation_controls_verified_only_enabled": {
@@ -3949,8 +3946,7 @@
         },
         "conversation_controls_my_subscribers_enabled": {
             "name": "conversation_controls_my_subscribers_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "conversation_controls_verified_only_enabled": {
             "name": "conversation_controls_verified_only_enabled",
@@ -6143,6 +6139,10 @@
         },
         "payments_pin_enabled": {
             "name": "payments_pin_enabled",
+            "type": "string"
+        },
+        "payments_pin_keychain_enabled": {
+            "name": "payments_pin_keychain_enabled",
             "type": "string"
         },
         "pending_checkmark_status_profile_web_16874": {
