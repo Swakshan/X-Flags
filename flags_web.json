@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c34254773736d750fd311352b336708862ecf6d6",
+    "feature_set_token": "a568d28ec66f0d2e1ca4383d5c4efd419f0ccbd0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -479,12 +479,6 @@
         },
         "communities_web_enable_tweet_community_results_fetch": {
             "value": true
-        },
-        "conversation_controls_verified_only_enabled": {
-            "value": true
-        },
-        "conversational_safety_heads_up_treatment_A_enabled": {
-            "value": ""
         },
         "creator_monetization_profile_subscription_tweets_tab_enabled": {
             "value": true
@@ -1990,6 +1984,9 @@
             "value": true
         },
         "rweb_spaces_next_codec_enabled": {
+            "value": true
+        },
+        "rweb_spatial_audio_enabled": {
             "value": true
         },
         "rweb_tipjar_consumption_enabled": {
@@ -3915,52 +3912,6 @@
             "name": "community_notes_read_sources_nudge_16495",
             "type": "experiment",
             "enumeration_values": []
-        },
-        "conversation_controls_persistence_enabled": {
-            "name": "conversation_controls_persistence_enabled",
-            "type": "string"
-        },
-        "conversation_controls_highlighted_education_enabled": {
-            "name": "conversation_controls_highlighted_education_enabled",
-            "type": "string"
-        },
-        "conversation_controls_change_tooltip_enabled": {
-            "name": "conversation_controls_change_tooltip_enabled",
-            "type": "string"
-        },
-        "conversation_controls_limited_replies_creation_enabled": {
-            "name": "conversation_controls_limited_replies_creation_enabled",
-            "type": "string"
-        },
-        "conversation_controls_change_enabled": {
-            "name": "conversation_controls_change_enabled",
-            "type": "string"
-        },
-        "conversation_controls_limited_replies_consumption_configuration": {
-            "name": "conversation_controls_limited_replies_consumption_configuration",
-            "type": "string"
-        },
-        "conversation_controls_notifying_participants_enabled": {
-            "name": "conversation_controls_notifying_participants_enabled",
-            "type": "string"
-        },
-        "conversation_controls_my_subscribers_enabled": {
-            "name": "conversation_controls_my_subscribers_enabled",
-            "type": "string"
-        },
-        "conversation_controls_verified_only_enabled": {
-            "name": "conversation_controls_verified_only_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "conversational_safety_heads_up_political_enabled": {
-            "name": "conversational_safety_heads_up_political_enabled",
-            "type": "string"
-        },
-        "conversational_safety_heads_up_treatment_A_enabled": {
-            "name": "conversational_safety_heads_up_treatment_A_enabled",
-            "type": "string",
-            "defaultValue": ""
         },
         "creator_monetization_web_tips_onboarding_enabled": {
             "name": "creator_monetization_web_tips_onboarding_enabled",
@@ -8083,6 +8034,11 @@
         },
         "rweb_spaces_next_codec_enabled": {
             "name": "rweb_spaces_next_codec_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "rweb_spatial_audio_enabled": {
+            "name": "rweb_spatial_audio_enabled",
             "type": "boolean",
             "defaultValue": true
         },
