@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a568d28ec66f0d2e1ca4383d5c4efd419f0ccbd0",
+    "feature_set_token": "e06ccb94ab34bc109021f4bbf4d0ba6eb9765f98",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1002,6 +1002,9 @@
         "payments_enabled": {
             "value": false
         },
+        "payments_pin_enabled": {
+            "value": false
+        },
         "professional_launchpad_m1_enabled": {
             "value": true
         },
@@ -1897,7 +1900,7 @@
             "value": false
         },
         "rweb_analytics_export_data_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_in_out_network_enabled": {
             "value": false
@@ -5903,16 +5906,6 @@
             "name": "media_edge_to_edge_large_text_enabled",
             "type": "string"
         },
-        "monetisation_premium_upsell_home_nav_16843": {
-            "name": "monetisation_premium_upsell_home_nav_16843",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "get_premium",
-                "premium",
-                "upgrade"
-            ]
-        },
         "monetization_premium_home_nav_upsell_global_16864": {
             "name": "monetization_premium_home_nav_upsell_global_16864",
             "type": "experiment",
@@ -6090,7 +6083,8 @@
         },
         "payments_pin_enabled": {
             "name": "payments_pin_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_pin_keychain_enabled": {
             "name": "payments_pin_keychain_enabled",
@@ -6118,16 +6112,6 @@
             "enumeration_values": [
                 "control",
                 "get_premium"
-            ]
-        },
-        "premium_upsell_nav_bar_16850": {
-            "name": "premium_upsell_nav_bar_16850",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "get_premium",
-                "premium",
-                "upgrade"
             ]
         },
         "premium_web_desktop_sidebar_upsell_16838": {
@@ -7862,7 +7846,7 @@
         "rweb_analytics_export_data_enabled": {
             "name": "rweb_analytics_export_data_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_device_breakdown_enabled": {
             "name": "rweb_analytics_device_breakdown_enabled",
