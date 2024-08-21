@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7af330789865171cffbe2e18f3d6790822b96cc5",
+    "feature_set_token": "93be343e922c9309bbd4c2060c5a4fe16efd1e14",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2324,13 +2324,16 @@
         "subscriptions_long_video_upload": {
             "value": true
         },
+        "subscriptions_marketing_page_discounts_enabled": {
+            "value": false
+        },
+        "subscriptions_marketing_page_fetch_promotions": {
+            "value": true
+        },
         "subscriptions_marketing_page_free_trial_enabled": {
             "value": true
         },
         "subscriptions_marketing_page_include_tax_enabled": {
-            "value": true
-        },
-        "subscriptions_marketing_page_remove_extra_step": {
             "value": true
         },
         "subscriptions_mute_ad_upsell_enabled": {
@@ -9153,8 +9156,7 @@
         },
         "subscriptions_marketing_page_remove_extra_step": {
             "name": "subscriptions_marketing_page_remove_extra_step",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "subscriptions_marketing_page_free_trial_enabled": {
             "name": "subscriptions_marketing_page_free_trial_enabled",
@@ -9163,11 +9165,17 @@
         },
         "subscriptions_marketing_page_discounts_enabled": {
             "name": "subscriptions_marketing_page_discounts_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_button_detail_text_enabled": {
             "name": "subscriptions_marketing_page_button_detail_text_enabled",
             "type": "string"
+        },
+        "subscriptions_marketing_page_fetch_promotions": {
+            "name": "subscriptions_marketing_page_fetch_promotions",
+            "type": "boolean",
+            "defaultValue": true
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
