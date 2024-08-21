@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3104913d3602586b25c984cb421ec16252f80706",
+    "feature_set_token": "81006914404ffe36f3446d1fb29546f31dbe6106",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1425,6 +1425,9 @@
         },
         "responsive_web_grok_file_upload_enabled": {
             "value": false
+        },
+        "responsive_web_grok_image_prompts_enabled": {
+            "value": true
         },
         "responsive_web_grok_in_app_learn_more": {
             "value": "https://x.com/xai/status/1823597788573098215"
@@ -7030,7 +7033,8 @@
         },
         "responsive_web_grok_image_prompts_enabled": {
             "name": "responsive_web_grok_image_prompts_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
