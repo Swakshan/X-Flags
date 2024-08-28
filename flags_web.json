@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fb3ee60dcfdc6aab2c4979ec1b681b4617f5781a",
+    "feature_set_token": "327d5a92dacb858a7d20f1971e149e8041c3df76",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -825,6 +825,9 @@
         "immersive_viewer_enable_profile_viewer": {
             "value": false
         },
+        "insights_chart_filter_enabled": {
+            "value": false
+        },
         "krs_registration_enabled": {
             "value": false
         },
@@ -1442,7 +1445,7 @@
             "value": true
         },
         "responsive_web_grok_prompt_edit_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_share_enabled": {
             "value": true
@@ -2488,6 +2491,9 @@
         },
         "tv_app_qrcode_login_enabled": {
             "value": true
+        },
+        "tv_app_samsung_exit_configuration": {
+            "value": "EXIT"
         },
         "tweet_awards_web_coin_purchase_enabled": {
             "value": false
@@ -5521,6 +5527,11 @@
             "type": "experiment",
             "enumeration_values": []
         },
+        "insights_chart_filter_enabled": {
+            "name": "insights_chart_filter_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "interests_expereince_incremental_holdback_2022_h1_12578": {
             "name": "interests_expereince_incremental_holdback_2022_h1_12578",
             "type": "experiment",
@@ -7103,7 +7114,7 @@
         "responsive_web_grok_prompt_edit_enabled": {
             "name": "responsive_web_grok_prompt_edit_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -9878,6 +9889,11 @@
             "name": "tv_app_qrcode_login_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "tv_app_samsung_exit_configuration": {
+            "name": "tv_app_samsung_exit_configuration",
+            "type": "string",
+            "defaultValue": "EXIT"
         },
         "tweet_awards_htl_awards_action_bar_enabled": {
             "name": "tweet_awards_htl_awards_action_bar_enabled",
