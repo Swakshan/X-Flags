@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "327d5a92dacb858a7d20f1971e149e8041c3df76",
+    "feature_set_token": "52a385d3be66474029c4c27e497b1cb541fe4ccb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2346,7 +2346,7 @@
             "value": "https://abs.twimg.com/sticky/videos/inapp_light_square_v4.mp4"
         },
         "subscriptions_is_blue_verified_review_status_profile_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_long_video_rweb_new_copy_enabled": {
             "value": true
@@ -2392,6 +2392,12 @@
         },
         "subscriptions_stripe_testing": {
             "value": false
+        },
+        "subscriptions_upsells_analytics_profile_enabled": {
+            "value": false
+        },
+        "subscriptions_upsells_analytics_profile_variant": {
+            "value": ""
         },
         "subscriptions_upsells_get_verified_profile": {
             "value": false
@@ -6145,14 +6151,6 @@
             "name": "payments_pin_keychain_enabled",
             "type": "string"
         },
-        "pending_checkmark_status_profile_web_16874": {
-            "name": "pending_checkmark_status_profile_web_16874",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "variant"
-            ]
-        },
         "premium_discount_japan_16900": {
             "name": "premium_discount_japan_16900",
             "type": "experiment",
@@ -9142,7 +9140,7 @@
         "subscriptions_is_blue_verified_review_status_profile_enabled": {
             "name": "subscriptions_is_blue_verified_review_status_profile_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_is_blue_verified_review_status_hub_enabled": {
             "name": "subscriptions_is_blue_verified_review_status_hub_enabled",
@@ -9343,11 +9341,13 @@
         },
         "subscriptions_upsells_analytics_profile_variant": {
             "name": "subscriptions_upsells_analytics_profile_variant",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_upsells_analytics_profile_enabled": {
             "name": "subscriptions_upsells_analytics_profile_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
