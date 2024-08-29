@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "52a385d3be66474029c4c27e497b1cb541fe4ccb",
+    "feature_set_token": "1499ca2c4ec5f8ab5ce891faf6c8389a2fe6dbca",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -541,6 +541,9 @@
             "value": true
         },
         "dm_conversations_nsfw_media_filter_enabled": {
+            "value": false
+        },
+        "dm_edit_dms_overflow_menu_enabled": {
             "value": false
         },
         "dm_education_flags_prompt": {
@@ -1229,6 +1232,9 @@
         },
         "responsive_web_birdwatch_translation_enabled": {
             "value": true
+        },
+        "responsive_web_birdwatch_url_notes_enabled": {
+            "value": false
         },
         "responsive_web_card_conversion_hoisted": {
             "value": "off"
@@ -2791,6 +2797,9 @@
             "value": 50
         },
         "verified_phone_label_enabled": {
+            "value": false
+        },
+        "verified_vo_refreshed_advertising_screen_enabled": {
             "value": false
         },
         "video_upload_metadata_title_enabled": {
@@ -4445,6 +4454,11 @@
         "dm_message_edit_enabled": {
             "name": "dm_message_edit_enabled",
             "type": "string"
+        },
+        "dm_edit_dms_overflow_menu_enabled": {
+            "name": "dm_edit_dms_overflow_menu_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "dm_conversation_labels_max_pinned_count": {
             "name": "dm_conversation_labels_max_pinned_count",
@@ -6159,6 +6173,14 @@
                 "treatment"
             ]
         },
+        "premium_discount_us_16912": {
+            "name": "premium_discount_us_16912",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "premium_free_trial_australia_16885": {
             "name": "premium_free_trial_australia_16885",
             "type": "experiment",
@@ -6659,7 +6681,8 @@
         },
         "responsive_web_birdwatch_url_notes_enabled": {
             "name": "responsive_web_birdwatch_url_notes_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_birdwatch_note_limit_enabled": {
             "name": "responsive_web_birdwatch_note_limit_enabled",
@@ -10372,6 +10395,11 @@
             "name": "user_display_name_max_limit",
             "type": "number",
             "defaultValue": 50
+        },
+        "verified_vo_refreshed_advertising_screen_enabled": {
+            "name": "verified_vo_refreshed_advertising_screen_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "verified_phone_label_enabled": {
             "name": "verified_phone_label_enabled",
