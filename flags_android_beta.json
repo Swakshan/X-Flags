@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "84bc645078e1164781a010b7fa0ea7962a7a6045",
+        "feature_set_token": "a6dfcc8dbbd8cfa029d8236cadf5f46ab6222f0f",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -941,6 +941,9 @@
             },
             "android_hls_url_additional_query_parameter_parameter_value": {
                 "value": "1"
+            },
+            "android_home_disable_bottom_paging_policy": {
+                "value": false
             },
             "android_home_last_used_tab_min": {
                 "value": 15.0
@@ -3923,6 +3926,18 @@
             "spaces_2022_h2_spaces_communities_scheduling_enabled": {
                 "value": false
             },
+            "spaces_conference_enabled": {
+                "value": false
+            },
+            "spaces_conference_group_dm_enabled": {
+                "value": false
+            },
+            "spaces_conference_opus_dtx_enabled": {
+                "value": false
+            },
+            "spaces_conference_simulcast_enabled": {
+                "value": false
+            },
             "spaces_recording_age_restriction_enabled": {
                 "value": false
             },
@@ -3948,7 +3963,7 @@
                 "value": false
             },
             "ssp_ads_google_native_ad_timeout_ms": {
-                "value": 1000.0
+                "value": 3000.0
             },
             "ssp_ads_immersive": {
                 "value": false
@@ -3975,7 +3990,66 @@
                 "value": true
             },
             "subscriptions_allowed_currency_codes": {
-                "value": []
+                "value": [
+                    "AUD",
+                    "CAD",
+                    "EUR",
+                    "NZD",
+                    "USD",
+                    "GBP",
+                    "JPY",
+                    "SAR",
+                    "BRL",
+                    "IDR",
+                    "INR",
+                    "PLN",
+                    "SEK",
+                    "RON",
+                    "CZK",
+                    "DKK",
+                    "BGN",
+                    "HUF",
+                    "EGP",
+                    "MYR",
+                    "MXN",
+                    "NGN",
+                    "PHP",
+                    "ZAR",
+                    "KRW",
+                    "THB",
+                    "TRY",
+                    "CLP",
+                    "COP",
+                    "ILS",
+                    "NOK",
+                    "SGD",
+                    "CHF",
+                    "AED",
+                    "DZD",
+                    "BDT",
+                    "BOB",
+                    "CRC",
+                    "GEL",
+                    "HKD",
+                    "IQD",
+                    "JOD",
+                    "KZT",
+                    "MOP",
+                    "MMK",
+                    "PKR",
+                    "PYG",
+                    "PEN",
+                    "QAR",
+                    "LKR",
+                    "TWD",
+                    "TZS",
+                    "VND",
+                    "KES",
+                    "UAH",
+                    "RSD",
+                    "GHS",
+                    "MAD"
+                ]
             },
             "subscriptions_blue_premium_labeling_enabled": {
                 "value": true
@@ -4695,7 +4769,7 @@
                 "value": 5.0
             },
             "video_on_demand_heartbeat_process_seek_android": {
-                "value": false
+                "value": true
             },
             "videos_segmented_upload_minimum_segment_size": {
                 "value": 65536.0
@@ -4987,6 +5061,7 @@
         "responsive_web_client_backoff_10535",
         "tweet_card_producer_experiment_9434",
         "moments_new_share_experiment_variants_13919",
+        "get_verified_profile_android_16907",
         "ios_traffic_holdback_10048",
         "android_hls_dynamic_manifests_12518",
         "home_spaces_holdback_12863",
@@ -5060,7 +5135,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "20e0561695f47eafd5b17a335409c5910aea0347",
-        "experiments": "20e0561695f47eafd5b17a335409c5910aea0347"
+        "feature_switches": "fd407692334b7489c182c2b3153caa324031efb0",
+        "experiments": "fd407692334b7489c182c2b3153caa324031efb0"
     }
 }
