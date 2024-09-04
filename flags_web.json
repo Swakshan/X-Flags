@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6d659e2a9df4bb48bb8912ff811321c18f9522ee",
+    "feature_set_token": "43eb63554af7f92539f5c832e4d5848406ad53fb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1434,6 +1434,9 @@
         "responsive_web_grok_delete_conversations_enabled": {
             "value": true
         },
+        "responsive_web_grok_file_compression_enabled": {
+            "value": true
+        },
         "responsive_web_grok_file_max_size": {
             "value": 5242880
         },
@@ -1502,6 +1505,9 @@
         },
         "responsive_web_grok_v2_upsell_enabled": {
             "value": true
+        },
+        "responsive_web_grok_webview_file_actions_enabled": {
+            "value": false
         },
         "responsive_web_grok_webview_file_upload_enabled": {
             "value": false
@@ -1969,6 +1975,9 @@
             "value": true
         },
         "rweb_conf_merged_audio_in_enabled": {
+            "value": true
+        },
+        "rweb_conf_rnnoise_enabled": {
             "value": true
         },
         "rweb_creator_analytics_enabled": {
@@ -3211,6 +3220,17 @@
             "name": "ads_spacing_client_fallback_minimum_spacing_verified_blue",
             "type": "number",
             "defaultValue": 3
+        },
+        "analytics_preview_profile_web_16910": {
+            "name": "analytics_preview_profile_web_16910",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "multiple_metrics",
+                "profile_visits",
+                "impressions",
+                "likes"
+            ]
         },
         "arkose_challenge_open_app_dev": {
             "name": "arkose_challenge_open_app_dev",
@@ -4471,6 +4491,10 @@
             "name": "dm_edit_dms_overflow_menu_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "dm_compose_bar_v2_enabled": {
+            "name": "dm_compose_bar_v2_enabled",
+            "type": "string"
         },
         "dm_conversation_labels_max_pinned_count": {
             "name": "dm_conversation_labels_max_pinned_count",
@@ -6200,14 +6224,6 @@
                 "treatment"
             ]
         },
-        "premium_discount_us_16912": {
-            "name": "premium_discount_us_16912",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
         "premium_free_trial_australia_16885": {
             "name": "premium_free_trial_australia_16885",
             "type": "experiment",
@@ -7104,6 +7120,11 @@
                 "image/png"
             ]
         },
+        "responsive_web_grok_file_compression_enabled": {
+            "name": "responsive_web_grok_file_compression_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "responsive_web_grok_webview_file_upload_enabled": {
             "name": "responsive_web_grok_webview_file_upload_enabled",
             "type": "boolean",
@@ -7111,7 +7132,8 @@
         },
         "responsive_web_grok_webview_file_actions_enabled": {
             "name": "responsive_web_grok_webview_file_actions_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_text_selection_supported_locales": {
             "name": "responsive_web_grok_text_selection_supported_locales",
@@ -8032,6 +8054,11 @@
         },
         "rweb_conf_merged_audio_in_enabled": {
             "name": "rweb_conf_merged_audio_in_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "rweb_conf_rnnoise_enabled": {
+            "name": "rweb_conf_rnnoise_enabled",
             "type": "boolean",
             "defaultValue": true
         },
@@ -10294,6 +10321,10 @@
                 "highlight",
                 "edit_tweet"
             ]
+        },
+        "tweet_limited_actions_config_readonly_viewer": {
+            "name": "tweet_limited_actions_config_readonly_viewer",
+            "type": "string"
         },
         "tweet_with_visibility_results_parse_twvr_enabled": {
             "name": "tweet_with_visibility_results_parse_twvr_enabled",
