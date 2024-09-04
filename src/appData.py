@@ -178,8 +178,8 @@ def webfeatureSwitches(hash):
       res = req.text
       res = res[res.find("{"):res.find("}}};")]
 
-      res = res.replace("!0","true").replace("!1","false")
-      res = res.replace("},",'},\n"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
+      res = res.replace("!0","true\n").replace("!1","false\n")
+      res = res.replace("},",'},"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
       res = res.replace("feature_set_token:",'"feature_set_token":').replace(',config:',',"config":').replace(',"debug:',',"debug":').replace(',enumeration_values',',"enumeration_values"')
       res = res.replace('"":','":').replace(":.",":0.")
       res = res+"}}}"
