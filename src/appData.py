@@ -179,9 +179,9 @@ def webfeatureSwitches(hash):
       res = res[res.find("{"):res.find("}}};")]
 
       res = res.replace("!0","true").replace("!1","false")
-      res = res.replace("},",'},"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
+      res = res.replace("},",'},\n"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
       res = res.replace("feature_set_token:",'"feature_set_token":').replace(',config:',',"config":').replace(',"debug:',',"debug":').replace(',enumeration_values',',"enumeration_values"')
-      res = res.replace('"":','":')
+      res = res.replace('"":','":').replace(":.",":0.")
       res = res+"}}}"
 
       fs = json.loads(res)
