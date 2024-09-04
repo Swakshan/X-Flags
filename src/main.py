@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 
-VER = "v9.3 : minor code refactoring"
+VER = "v9.4 : web vercode bug"
 
 
 vername = "web"
@@ -116,7 +116,8 @@ def downTwt(typ):
 
 
 def main():
-    # global vername,source,vercode,down_link
+    hash_value = False
+
     if len(sys.argv)>1:
         vername = sys.argv[1]
         source = sys.argv[2]
@@ -124,11 +125,11 @@ def main():
         down_link = sys.argv[4]
     vername = vername.lower()
     source = source.lower()
-    vercode = vercodeGenerator(vername) if not(vername) else vercode #generate vercode if 0 is provided
-    try:    
-        hash_value = False
-        typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
-        platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
+    typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
+    platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
+    
+    vercode = vercodeGenerator(vername) if not(vercode) else vercode #generate vercode if 0 is provided
+    try:
         down_data = [False,False,False] #vername,vercode,downLink
         sts = False
         
