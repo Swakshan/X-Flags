@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "c3634e59357dd1f5bee34868740c18179ad4c3e1",
+        "feature_set_token": "a27fef9b9640ee819075ba2b53b33b38ece2e40e",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -942,6 +942,9 @@
             "android_hls_url_additional_query_parameter_parameter_value": {
                 "value": "1"
             },
+            "android_home_disable_bottom_paging_policy": {
+                "value": false
+            },
             "android_home_last_used_tab_min": {
                 "value": 10080.0
             },
@@ -964,7 +967,7 @@
                 "value": false
             },
             "android_iap_billing_in_app_messages_enabled": {
-                "value": false
+                "value": true
             },
             "android_immersive_media_player_initial_mute_state": {
                 "value": false
@@ -3920,6 +3923,18 @@
             "spaces_2022_h2_spaces_communities_scheduling_enabled": {
                 "value": false
             },
+            "spaces_conference_enabled": {
+                "value": false
+            },
+            "spaces_conference_group_dm_enabled": {
+                "value": false
+            },
+            "spaces_conference_opus_dtx_enabled": {
+                "value": false
+            },
+            "spaces_conference_simulcast_enabled": {
+                "value": false
+            },
             "spaces_recording_age_restriction_enabled": {
                 "value": false
             },
@@ -3945,7 +3960,7 @@
                 "value": false
             },
             "ssp_ads_google_native_ad_timeout_ms": {
-                "value": 1000.0
+                "value": 3000.0
             },
             "ssp_ads_immersive": {
                 "value": false
@@ -3972,7 +3987,66 @@
                 "value": true
             },
             "subscriptions_allowed_currency_codes": {
-                "value": []
+                "value": [
+                    "AUD",
+                    "CAD",
+                    "EUR",
+                    "NZD",
+                    "USD",
+                    "GBP",
+                    "JPY",
+                    "SAR",
+                    "BRL",
+                    "IDR",
+                    "INR",
+                    "PLN",
+                    "SEK",
+                    "RON",
+                    "CZK",
+                    "DKK",
+                    "BGN",
+                    "HUF",
+                    "EGP",
+                    "MYR",
+                    "MXN",
+                    "NGN",
+                    "PHP",
+                    "ZAR",
+                    "KRW",
+                    "THB",
+                    "TRY",
+                    "CLP",
+                    "COP",
+                    "ILS",
+                    "NOK",
+                    "SGD",
+                    "CHF",
+                    "AED",
+                    "DZD",
+                    "BDT",
+                    "BOB",
+                    "CRC",
+                    "GEL",
+                    "HKD",
+                    "IQD",
+                    "JOD",
+                    "KZT",
+                    "MOP",
+                    "MMK",
+                    "PKR",
+                    "PYG",
+                    "PEN",
+                    "QAR",
+                    "LKR",
+                    "TWD",
+                    "TZS",
+                    "VND",
+                    "KES",
+                    "UAH",
+                    "RSD",
+                    "GHS",
+                    "MAD"
+                ]
             },
             "subscriptions_blue_premium_labeling_enabled": {
                 "value": true
@@ -4692,7 +4766,7 @@
                 "value": 5.0
             },
             "video_on_demand_heartbeat_process_seek_android": {
-                "value": false
+                "value": true
             },
             "videos_segmented_upload_minimum_segment_size": {
                 "value": 65536.0
@@ -5058,7 +5132,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "78995161d3f228a048e2b925a57ffbbfe8959600",
-        "experiments": "78995161d3f228a048e2b925a57ffbbfe8959600"
+        "feature_switches": "1169de44e6a03aab71b89414412f03836840b42e",
+        "experiments": "1169de44e6a03aab71b89414412f03836840b42e"
     }
 }
