@@ -5,13 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 
-VER = "v9.4 : web vercode bug"
-
-
-vername = "web"
-source = "web"
-vercode = ""
-down_link = ""
+VER = "v10 : main code refactor"
 
 
 def downloader(url,fileName="",isJson=False):
@@ -115,21 +109,14 @@ def downTwt(typ):
     return False
 
 
-def main():
+def process(vername,source,vercode,down_link):
     hash_value = False
-
-    if len(sys.argv)>1:
-        vername = sys.argv[1]
-        source = sys.argv[2]
-        vercode = sys.argv[3]
-        down_link = sys.argv[4]
-    vername = vername.lower()
-    source = source.lower()
-    typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
-    platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
-    
-    vercode = vercodeGenerator(vername) if not(vercode) else vercode #generate vercode if 0 is provided
     try:
+        vercode = vercodeGenerator(vername) if not(vercode) else vercode #generate vercode if 0 is provided
+        
+        typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
+        platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
+
         down_data = [False,False,False] #vername,vercode,downLink
         sts = False
         
@@ -199,10 +186,21 @@ def main():
     writeJson(manifest_file_name,d)
     return sts
 
+def main():
+    if len(sys.argv)<1:
+        raise Exception("Insufficent inputs")
+    
+    vername = sys.argv[1].lower()
+    source = sys.argv[2].lower()
+    vercode = sys.argv[3]
+    down_link = sys.argv[4]
+    
+    process(vername,source,vercode,down_link)
+
+
 if not DEBUG:
     if os.path.exists(DUMMY_FOLDER):
         shutil.rmtree(DUMMY_FOLDER)
     os.makedirs(MAIN_FOLDER)
-
     s = main()
     print(s)

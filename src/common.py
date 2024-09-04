@@ -58,6 +58,17 @@ def get_exception():
 def printJson(data):
     print(json.dumps(data,indent=4))
 
+def readFile(filename):
+    f = open(filename,'r',encoding='utf-8')
+    d = f.read()
+    f.close()
+    return d
+
+def writeFile(fileName,data):
+    f = open(fileName, 'w')
+    f.write(data)
+    f.close()
+
 def writeJson(fileName,data):
     f = open(fileName, 'w')
     json.dump(data,f,indent=4)
@@ -66,12 +77,6 @@ def writeJson(fileName,data):
 def readJson(filename):
     f = open(filename,'r')
     d = json.load(f)
-    f.close()
-    return d
-
-def readFile(filename):
-    f = open(filename,'r',encoding='utf-8')
-    d = f.read()
     f.close()
     return d
 
