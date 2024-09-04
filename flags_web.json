@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "92c9ad5e810fc6000f670e7ff4129b2be6fe4760",
+    "feature_set_token": "6d659e2a9df4bb48bb8912ff811321c18f9522ee",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -828,6 +828,15 @@
         "immersive_viewer_enable_profile_viewer": {
             "value": false
         },
+        "insights_ai_trends_enabled": {
+            "value": false
+        },
+        "insights_ai_trends_limit": {
+            "value": 5
+        },
+        "insights_ai_trends_score_threshold": {
+            "value": 0.6
+        },
         "insights_chart_filter_enabled": {
             "value": false
         },
@@ -1305,6 +1314,9 @@
         "responsive_web_disconnect_third_party_sso_enabled": {
             "value": true
         },
+        "responsive_web_dm_label_enabled": {
+            "value": false
+        },
         "responsive_web_dockable_autoplay_policy_enabled": {
             "value": true
         },
@@ -1423,7 +1435,7 @@
             "value": true
         },
         "responsive_web_grok_file_max_size": {
-            "value": 1024000.0
+            "value": 5242880
         },
         "responsive_web_grok_file_supported_mimetypes": {
             "value": [
@@ -1954,7 +1966,7 @@
             "value": false
         },
         "rweb_conf_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_conf_merged_audio_in_enabled": {
             "value": true
@@ -5552,6 +5564,21 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "insights_ai_trends_enabled": {
+            "name": "insights_ai_trends_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "insights_ai_trends_limit": {
+            "name": "insights_ai_trends_limit",
+            "type": "number",
+            "defaultValue": 5
+        },
+        "insights_ai_trends_score_threshold": {
+            "name": "insights_ai_trends_score_threshold",
+            "type": "number",
+            "defaultValue": 0.6
+        },
         "interests_expereince_incremental_holdback_2022_h1_12578": {
             "name": "interests_expereince_incremental_holdback_2022_h1_12578",
             "type": "experiment",
@@ -6884,6 +6911,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_dm_label_enabled": {
+            "name": "responsive_web_dm_label_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_dockable_autoplay_policy_enabled": {
             "name": "responsive_web_dockable_autoplay_policy_enabled",
             "type": "boolean",
@@ -7061,7 +7093,7 @@
         "responsive_web_grok_file_max_size": {
             "name": "responsive_web_grok_file_max_size",
             "type": "number",
-            "defaultValue": 1024000.0
+            "defaultValue": 5242880
         },
         "responsive_web_grok_file_supported_mimetypes": {
             "name": "responsive_web_grok_file_supported_mimetypes",
@@ -7076,6 +7108,10 @@
             "name": "responsive_web_grok_webview_file_upload_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_webview_file_actions_enabled": {
+            "name": "responsive_web_grok_webview_file_actions_enabled",
+            "type": "string"
         },
         "responsive_web_grok_text_selection_supported_locales": {
             "name": "responsive_web_grok_text_selection_supported_locales",
@@ -7992,7 +8028,7 @@
         "rweb_conf_enabled": {
             "name": "rweb_conf_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_conf_merged_audio_in_enabled": {
             "name": "rweb_conf_merged_audio_in_enabled",
