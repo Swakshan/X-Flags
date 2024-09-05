@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "43eb63554af7f92539f5c832e4d5848406ad53fb",
+    "feature_set_token": "d786335909403b0bbaf1eef3183b5ecb34258067",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1978,7 +1978,7 @@
             "value": true
         },
         "rweb_conf_rnnoise_enabled": {
-            "value": true
+            "value": false
         },
         "rweb_creator_analytics_enabled": {
             "value": true
@@ -4494,6 +4494,10 @@
         },
         "dm_compose_bar_v2_enabled": {
             "name": "dm_compose_bar_v2_enabled",
+            "type": "string"
+        },
+        "dm_block_enabled": {
+            "name": "dm_block_enabled",
             "type": "string"
         },
         "dm_conversation_labels_max_pinned_count": {
@@ -8060,7 +8064,7 @@
         "rweb_conf_rnnoise_enabled": {
             "name": "rweb_conf_rnnoise_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "rweb_creator_analytics_enabled": {
             "name": "rweb_creator_analytics_enabled",
