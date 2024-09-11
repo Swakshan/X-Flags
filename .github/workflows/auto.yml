@@ -9,6 +9,11 @@ on:
 jobs:
   download-and-extract:
     runs-on: ubuntu-latest
+    env:
+      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+      CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+      PIN_MSG: ${{ secrets.PIN_MSG }}
+      DEBUG: ${{ secrets.DEBUG }}
 
     steps:
     - name: Checkout code
@@ -27,11 +32,6 @@ jobs:
 
 
     - name: Download & Extract
-      env:
-        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-        PIN_MSG: ${{ secrets.PIN_MSG }}
-        DEBUG: ${{ secrets.DEBUG }}
       run: |      
         python src/main.py ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.src }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }}
         
@@ -56,10 +56,6 @@ jobs:
       
     - name: Changes to Telegram
       env:
-        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-        PIN_MSG: ${{ secrets.PIN_MSG }}
-        DEBUG: ${{ secrets.DEBUG }}
         GIT_COMMIT_SHA: ${{secrets.GIT_COMMIT_SHA}}
       run: |      
         python src/changes.py ${{ github.event.client_payload.msg_id }}
