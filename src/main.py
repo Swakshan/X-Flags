@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 
-VER = "v10.15 : updated workflows"
+VER = "v10.16 : minor vercode update"
 
 
 def downloader(url,fileName="",isJson=False):
@@ -111,9 +111,7 @@ def downTwt(typ):
 
 def process(vername,source,vercode,down_link):
     hash_value = False
-    try:
-        vercode = vercodeGenerator(vername) if not(vercode) else vercode #generate vercode if 0 is provided
-        
+    try:        
         typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
         platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
 
@@ -133,7 +131,6 @@ def process(vername,source,vercode,down_link):
             sts = True
         
         elif platform==Platform.IOS:
-            vercode = ""
             if ".json" in down_link:
                 downloader(url=down_link,fileName=new_file_name,isJson=True)
                 downloader(url=down_link,fileName=new_file_ipad_name,isJson=True)
@@ -153,10 +150,11 @@ def process(vername,source,vercode,down_link):
             # os.remove(existsing_flag_file)
             shutil.copy(new_file_ipad_name, existsing_flag_file)
 
-            down_data = [vername,vercode,down_link]
+            down_data = [vername,"",down_link]
             sts = True
             
         elif platform==Platform.ANDROID:
+            vercode = vercodeGenerator(vername)
             if source== "manual" or source == "apt":
                 # fileName = f"{vername}.apk"
                 downloader(down_link)
