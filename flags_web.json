@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1d264d97d9bc0377afeed0a99be13d4db474adbb",
+    "feature_set_token": "91e8451e4a6e0f77a96b0b7c24fb25639ace5a88",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1713,9 +1713,6 @@
         "responsive_web_report_page_not_found": {
             "value": false
         },
-        "responsive_web_restrict_max_timeline_tweet_height": {
-            "value": true
-        },
         "responsive_web_scroller_top_positioning_enabled": {
             "value": false
         },
@@ -1972,6 +1969,9 @@
             "value": false
         },
         "rweb_conf_enabled": {
+            "value": true
+        },
+        "rweb_conf_less_video_enabled": {
             "value": true
         },
         "rweb_conf_rnnoise_enabled": {
@@ -7545,11 +7545,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_restrict_max_timeline_tweet_height": {
-            "name": "responsive_web_restrict_max_timeline_tweet_height",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "responsive_web_scroller_top_positioning_enabled": {
             "name": "responsive_web_scroller_top_positioning_enabled",
             "type": "boolean",
@@ -8056,6 +8051,11 @@
         },
         "rweb_conf_enabled": {
             "name": "rweb_conf_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "rweb_conf_less_video_enabled": {
+            "name": "rweb_conf_less_video_enabled",
             "type": "boolean",
             "defaultValue": true
         },
