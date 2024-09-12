@@ -55,7 +55,5 @@ jobs:
       uses: rlespinasse/git-commit-data-action@v1 
       
     - name: Changes to Telegram
-      env:
-        GIT_COMMIT_SHA: ${{secrets.GIT_COMMIT_SHA}}
       run: |      
-        python src/changes.py ${{ github.event.client_payload.msg_id }}
+        python src/changes.py ${{ github.event.client_payload.msg_id }} ${{secrets.GIT_COMMIT_SHA}}
