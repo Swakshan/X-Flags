@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "290a8302ebce31237483f8da32c62bb5219ee493",
+    "feature_set_token": "1d264d97d9bc0377afeed0a99be13d4db474adbb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -460,7 +460,7 @@
             "value": true
         },
         "communities_global_communities_post_search_enabled": {
-            "value": true
+            "value": false
         },
         "communities_home_top_timeline_enabled": {
             "value": true
@@ -847,7 +847,7 @@
             "value": 0.6
         },
         "insights_chart_filter_enabled": {
-            "value": false
+            "value": true
         },
         "krs_registration_enabled": {
             "value": false
@@ -1464,9 +1464,6 @@
         },
         "responsive_web_grok_in_app_learn_more": {
             "value": "https://x.com/xai/status/1823597788573098215"
-        },
-        "responsive_web_grok_model_selector_enabled": {
-            "value": true
         },
         "responsive_web_grok_opt_out_enabled": {
             "value": true
@@ -3957,7 +3954,7 @@
         "communities_global_communities_post_search_enabled": {
             "name": "communities_global_communities_post_search_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "communities_top_search_tab_enabled": {
             "name": "communities_top_search_tab_enabled",
@@ -5326,6 +5323,17 @@
             "type": "experiment",
             "enumeration_values": []
         },
+        "home_premium_grok_upsell_16930": {
+            "name": "home_premium_grok_upsell_16930",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "try_grok",
+                "grok",
+                "create",
+                "get_grok"
+            ]
+        },
         "home_timeline_compact_app_bar": {
             "name": "home_timeline_compact_app_bar",
             "type": "boolean",
@@ -5600,7 +5608,7 @@
         "insights_chart_filter_enabled": {
             "name": "insights_chart_filter_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "insights_ai_trends_enabled": {
             "name": "insights_ai_trends_enabled",
@@ -7177,8 +7185,7 @@
         },
         "responsive_web_grok_model_selector_enabled": {
             "name": "responsive_web_grok_model_selector_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_grok_v2_start_screen_enabled": {
             "name": "responsive_web_grok_v2_start_screen_enabled",
