@@ -50,6 +50,19 @@ class Releases(Enum):
     STABLE = "stable"
     WEB = "web"
 
+class Source(Enum):
+    MAN = "manual"
+    WEB = Releases.WEB.value
+    IOS = "stable_ios"
+    APT = "aptoide"
+    APKC = "apkCombo"
+    APKM = "apkMirror"
+    DK= "DontKnow"
+
+    @classmethod
+    def _missing_(Source, value):
+        return Source.DK
+
 def get_exception():
     etype, value, tb = exc_info()
     info, error = format_exception(etype, value, tb)[-2:]
@@ -122,7 +135,8 @@ def strpattern(flag_details,flag_details_2):
     vercode = manifest_file['vercode']
     down_link = manifest_file['download_link']
     hash_value = manifest_file['hash']
-    platform = manifest_file['os'].lower()
+    platform = Platform(manifest_file['os'])
+    source = Source(manifest_file['src'])
     release = Releases.STABLE if "web" in vername else Releases.BETA if "beta" in vername else Releases.ALPHA if "alpha" in vername else Releases.STABLE
     
     global linkRow,linkCount
@@ -137,8 +151,8 @@ def strpattern(flag_details,flag_details_2):
             linkRow+="\n"
         linkCount+=1
 
-    def setHashtag(txt):
-        return "#"+txt
+    def setHashtag(txt:Enum):
+        return "#"+txt.value
 
     nf = "";df=""
     flag_data = flag_details['flags']
@@ -159,9 +173,9 @@ def strpattern(flag_details,flag_details_2):
     commit_link_str_2 = False
     pin_link = f"https://t.me/c/{CHANNEL_ID}/{PIN_MSG}"
     # platformRow = f"_Platform_: `{platform.title()}`"
-    hastags = setHashtag(platform)+" "+setHashtag(release.value)
+    hastags = setHashtag(platform)+" "+setHashtag(release)
     vercode_str = ""
-    if platform == Platform.ANDROID.value:
+    if platform == Platform.ANDROID:
         vercode_str = f"__Vercode__:\n`{vercode}`" if int(vercode) else vercode_str #if not "0"
         ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
         apkc_link = f'https://apkcombo.com/search/{PKG_NAME}/download/phone-{vername}-apk'
@@ -177,19 +191,19 @@ def strpattern(flag_details,flag_details_2):
         # linkRow = f'[Play Store]({ps_link}) | [APKMirror]({apkm_link})\n[APKCombo]({apkc_link}) | [APKFlash]({apkf_link})\n'
         if "release" in vername:
             linkRowFormer("APKPure",apkp_link)
-        if down_link:
+        if source == Source.APT:
             linkRowFormer("Aptoide",down_link)
             linkRow = f'{linkRow}\n*\\[⚠️APK from Aptoide is known for crashes⚠️\\]*\n'
         
         linkRow = linkRow+"\n" if linkRow[-2]=="|" else linkRow
 
-    elif platform == Platform.IOS.value:
+    elif platform == Platform.IOS:
         # platformRow = f"_Platform_: `{platform.upper()}`"
         linkRow = f"[App Store]({APP_STORE_LINK})\n"
         if flag_details_2:
             commit_link_str_2 = commitLinkFormat(flag_details_2)
      
-    elif platform == Platform.WEB.value:
+    elif platform == Platform.WEB:
         vername = vername.title()
         vercode_str = f"__Hash__:\n`{hash_value}`"
         linkRow = f"[Web Link]({WEB_LINK})\n"
