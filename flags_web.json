@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ee4669c6a17a9da1926beb3938aa7d7a85e61279",
+    "feature_set_token": "fba8d0b959752f5c53e04a0582e8141fb1db4bee",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -460,10 +460,10 @@
             "value": true
         },
         "communities_global_communities_latest_post_search_enabled": {
-            "value": false
+            "value": true
         },
         "communities_global_communities_post_search_enabled": {
-            "value": false
+            "value": true
         },
         "communities_home_top_timeline_enabled": {
             "value": true
@@ -1474,8 +1474,8 @@
         "responsive_web_grok_opt_out_enabled": {
             "value": true
         },
-        "responsive_web_grok_prompt_deeplink_enabled": {
-            "value": true
+        "responsive_web_grok_post_image_understanding_enabled": {
+            "value": false
         },
         "responsive_web_grok_prompt_edit_enabled": {
             "value": true
@@ -1918,6 +1918,9 @@
             "value": true
         },
         "responsive_web_verified_organizations_xbusiness_enabled": {
+            "value": false
+        },
+        "responsive_web_video_autoplay_default_on": {
             "value": false
         },
         "responsive_web_video_pcomplete_enabled": {
@@ -3972,12 +3975,12 @@
         "communities_global_communities_post_search_enabled": {
             "name": "communities_global_communities_post_search_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "communities_global_communities_latest_post_search_enabled": {
             "name": "communities_global_communities_latest_post_search_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "communities_top_search_tab_enabled": {
             "name": "communities_top_search_tab_enabled",
@@ -5345,17 +5348,6 @@
             "name": "home_low_coverage_sources_holdback_15899",
             "type": "experiment",
             "enumeration_values": []
-        },
-        "home_premium_grok_upsell_16930": {
-            "name": "home_premium_grok_upsell_16930",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "try_grok",
-                "grok",
-                "create",
-                "get_grok"
-            ]
         },
         "home_timeline_compact_app_bar": {
             "name": "home_timeline_compact_app_bar",
@@ -7111,8 +7103,7 @@
         },
         "responsive_web_grok_prompt_deeplink_enabled": {
             "name": "responsive_web_grok_prompt_deeplink_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_grok_share_enabled": {
             "name": "responsive_web_grok_share_enabled",
@@ -7235,6 +7226,11 @@
             "name": "responsive_web_grok_image_prompts_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_grok_post_image_understanding_enabled": {
+            "name": "responsive_web_grok_post_image_understanding_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_prompt_edit_enabled": {
             "name": "responsive_web_grok_prompt_edit_enabled",
@@ -7723,6 +7719,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_tweet_drafts_reuse_uploaded_videos": {
+            "name": "responsive_web_tweet_drafts_reuse_uploaded_videos",
+            "type": "string"
+        },
         "responsive_web_twitter_article_character_limit": {
             "name": "responsive_web_twitter_article_character_limit",
             "type": "number",
@@ -7954,6 +7954,11 @@
         },
         "responsive_web_verified_organizations_people_search_onboarding_enabled": {
             "name": "responsive_web_verified_organizations_people_search_onboarding_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_video_autoplay_default_on": {
+            "name": "responsive_web_video_autoplay_default_on",
             "type": "boolean",
             "defaultValue": false
         },
