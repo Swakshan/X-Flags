@@ -5,7 +5,7 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name,Source
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 
-VER = "v10.2 : android logic refactor"
+VER = "v10.21 : apkc source bug fix"
 
 
 def downloader(url,fileName="",isJson=False):
@@ -159,7 +159,7 @@ def process(vername,source,vercode,down_link):
             if source == Source.MAN or source == Source.APT:
                 downloader(down_link)
                 down_data = [vername,vercode,down_link,source]
-            elif Source(source) == Source.APKC:
+            elif source == Source.APKC:
                 down_data = downTwt(typ) #apkcombo
                 if not down_data[0]: 
                     raise Exception("Error downloading via APKCombo")
