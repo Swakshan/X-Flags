@@ -55,9 +55,9 @@ class Source(Enum):
     WEB = Releases.WEB.value
     IOS = "stable_ios"
     APT = "aptoide"
-    APKC = "apkCombo"
-    APKM = "apkMirror"
-    DK= "DontKnow"
+    APKC = "apkcombo"
+    APKM = "apkmirror"
+    DK= "dontknow"
 
     @classmethod
     def _missing_(Source, value):
