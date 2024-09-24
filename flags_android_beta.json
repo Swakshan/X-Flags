@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "3120c56cae7573f91ccc27300562c5791852f866",
+        "feature_set_token": "4c6a7eb22de6870649b3a7b0a264f6b84e18eb44",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -941,6 +941,9 @@
             },
             "android_hls_url_additional_query_parameter_parameter_value": {
                 "value": "1"
+            },
+            "android_home_always_refresh_on_focus": {
+                "value": false
             },
             "android_home_disable_bottom_paging_policy": {
                 "value": true
@@ -2429,6 +2432,9 @@
             "database_delete_on_upgrade_with_htl_prefetch": {
                 "value": false
             },
+            "dm_android_open_keyboard_on_reply_or_edit": {
+                "value": false
+            },
             "dm_android_send_messages_with_workmanager": {
                 "value": false
             },
@@ -3915,7 +3921,7 @@
                 "value": ""
             },
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
-                "value": 3.0
+                "value": 4.0
             },
             "ssp_ads_rtb_image_ad_item_enabled": {
                 "value": false
@@ -4142,10 +4148,10 @@
                 "value": false
             },
             "subscriptions_upsells_get_verified_profile": {
-                "value": false
+                "value": true
             },
             "subscriptions_upsells_get_verified_profile_fatigue_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_upsells_get_verified_profile_fatigue_min_interval": {
                 "value": 2.0
@@ -4970,7 +4976,6 @@
         "ad_indicator_placement_16481",
         "android_increase_priority_magic_recs_channel_10923",
         "android_static_lo_push_badging_15710",
-        "home_premium_grok_upsell_16930",
         "project_jiminy_humanization_nudge_android_11630",
         "viewcounts_everywhere_16084",
         "media_quick_reply_8079",
@@ -5079,7 +5084,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "311e8d61114b7ad21b2420a56b932d91195f8149",
-        "experiments": "311e8d61114b7ad21b2420a56b932d91195f8149"
+        "feature_switches": "4701d0c5a7c76719fef7e1749dec892c0b989ac5",
+        "experiments": "4701d0c5a7c76719fef7e1749dec892c0b989ac5"
     }
 }
