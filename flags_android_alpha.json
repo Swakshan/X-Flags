@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "51e4e584f31671fe228290d3cda235d1ae13946f",
+        "feature_set_token": "4967597b8b713a95f4046a0ea9914b63c899cef7",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -942,6 +942,9 @@
             "android_hls_url_additional_query_parameter_parameter_value": {
                 "value": "1"
             },
+            "android_home_always_refresh_on_focus": {
+                "value": false
+            },
             "android_home_disable_bottom_paging_policy": {
                 "value": true
             },
@@ -949,7 +952,7 @@
                 "value": 15.0
             },
             "android_home_warm_start_refresh_min_background_seconds": {
-                "value": 60.0
+                "value": 0.0
             },
             "android_htl_position_metadata_capture_enabled": {
                 "value": false
@@ -2429,6 +2432,9 @@
             "database_delete_on_upgrade_with_htl_prefetch": {
                 "value": false
             },
+            "dm_android_composer_rewrite": {
+                "value": false
+            },
             "dm_android_open_keyboard_on_reply_or_edit": {
                 "value": false
             },
@@ -3104,6 +3110,9 @@
                 "value": true
             },
             "locale_override_user_scoped_enabled": {
+                "value": false
+            },
+            "location_settings_age_restriction_enabled": {
                 "value": false
             },
             "login_challenge_polling_backoff": {
@@ -3896,11 +3905,17 @@
             "ssp_ads_google_dsp_immersive_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
+            "ssp_ads_google_dsp_profile_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
+            },
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
             "ssp_ads_google_dsp_spotlight_with_headline": {
                 "value": false
+            },
+            "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
             },
             "ssp_ads_google_native_ad_enabled": {
                 "value": false
@@ -3918,7 +3933,10 @@
                 "value": ""
             },
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
-                "value": 3.0
+                "value": 4.0
+            },
+            "ssp_ads_profile": {
+                "value": false
             },
             "ssp_ads_rtb_image_ad_item_enabled": {
                 "value": false
@@ -3928,6 +3946,9 @@
             },
             "ssp_ads_spotlight_ad_fetch_timeout_milliseconds": {
                 "value": 6000.0
+            },
+            "ssp_ads_tweet_details": {
+                "value": false
             },
             "stateful_login_enabled": {
                 "value": true
@@ -4145,10 +4166,10 @@
                 "value": false
             },
             "subscriptions_upsells_get_verified_profile": {
-                "value": false
+                "value": true
             },
             "subscriptions_upsells_get_verified_profile_fatigue_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_upsells_get_verified_profile_fatigue_min_interval": {
                 "value": 2.0
@@ -5081,7 +5102,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "b9a786491f6d1f9594bbdb67d25c817ecf7ba4b9",
-        "experiments": "b9a786491f6d1f9594bbdb67d25c817ecf7ba4b9"
+        "feature_switches": "6ff0535ea44f604ddadf4ee3f5434ea6c375645f",
+        "experiments": "6ff0535ea44f604ddadf4ee3f5434ea6c375645f"
     }
 }
