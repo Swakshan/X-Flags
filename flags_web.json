@@ -7950,6 +7950,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_verified_organizations_intercom_enabled": {
+            "name": "responsive_web_verified_organizations_intercom_enabled",
+            "type": "string"
+        },
         "responsive_web_video_autoplay_default_on": {
             "name": "responsive_web_video_autoplay_default_on",
             "type": "boolean",
@@ -8186,6 +8190,14 @@
             "name": "rweb_mixed_media_uploads_cap",
             "type": "number",
             "defaultValue": 4
+        },
+        "rweb_mobile_video_autoplay_default_on_16942": {
+            "name": "rweb_mobile_video_autoplay_default_on_16942",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
