@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5c86a78186761ed65046961b7bc0c877c71b982f",
+    "feature_set_token": "bf554a9d1e4b31466ddac33c2a9468f7ccc9936d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1982,6 +1982,9 @@
         },
         "rweb_conf_less_video_enabled": {
             "value": true
+        },
+        "rweb_conf_only_enabled": {
+            "value": false
         },
         "rweb_conf_rnnoise_enabled": {
             "value": true
@@ -6485,6 +6488,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "recruiting_jetfuel_jobs_hub_enabled": {
+            "name": "recruiting_jetfuel_jobs_hub_enabled",
+            "type": "string"
+        },
         "reply_through_tweet_detail_enabled": {
             "name": "reply_through_tweet_detail_enabled",
             "type": "string"
@@ -8099,6 +8106,11 @@
             "name": "rweb_conf_less_video_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_conf_only_enabled": {
+            "name": "rweb_conf_only_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_conf_rnnoise_enabled": {
             "name": "rweb_conf_rnnoise_enabled",
