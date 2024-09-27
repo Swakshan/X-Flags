@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bf554a9d1e4b31466ddac33c2a9468f7ccc9936d",
+    "feature_set_token": "a1b3fea7b0ace6a909e4248cca98b4b43a97b831",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -328,6 +328,9 @@
             "value": true
         },
         "blue_business_multi_affiliates_ui_enabled": {
+            "value": false
+        },
+        "blue_business_simplify_signup_ui": {
             "value": false
         },
         "blue_business_tier_switching_enabled": {
@@ -1446,13 +1449,6 @@
         "responsive_web_grok_file_max_size": {
             "value": 5242880
         },
-        "responsive_web_grok_file_supported_mimetypes": {
-            "value": [
-                "image/jpg",
-                "image/jpeg",
-                "image/png"
-            ]
-        },
         "responsive_web_grok_file_upload_enabled": {
             "value": false
         },
@@ -1477,28 +1473,8 @@
         "responsive_web_grok_share_rendering_enabled": {
             "value": true
         },
-        "responsive_web_grok_text_selection_supported_locales": {
-            "value": [
-                "en",
-                "es",
-                "fr",
-                "ru",
-                "ja",
-                "it",
-                "de",
-                "zh",
-                "uk",
-                "pl",
-                "ko",
-                "hi",
-                "id",
-                "fi",
-                "fa",
-                "hy",
-                "ar",
-                "af",
-                "vi"
-            ]
+        "responsive_web_grok_text_selection_enabled": {
+            "value": true
         },
         "responsive_web_grok_trends_design_enabled": {
             "value": false
@@ -1977,7 +1953,7 @@
         "rweb_client_transaction_id_enabled": {
             "value": false
         },
-        "rweb_conf_enabled": {
+        "rweb_conf_grid_enabled": {
             "value": true
         },
         "rweb_conf_less_video_enabled": {
@@ -3500,6 +3476,11 @@
         "blue_business_analytics_time_series_enabled": {
             "name": "blue_business_analytics_time_series_enabled",
             "type": "string"
+        },
+        "blue_business_simplify_signup_ui": {
+            "name": "blue_business_simplify_signup_ui",
+            "type": "boolean",
+            "defaultValue": false
         },
         "blue_longer_video_enabled": {
             "name": "blue_longer_video_enabled",
@@ -7151,12 +7132,7 @@
         },
         "responsive_web_grok_file_supported_mimetypes": {
             "name": "responsive_web_grok_file_supported_mimetypes",
-            "type": "object",
-            "defaultValue": [
-                "image/jpg",
-                "image/jpeg",
-                "image/png"
-            ]
+            "type": "string"
         },
         "responsive_web_grok_file_compression_enabled": {
             "name": "responsive_web_grok_file_compression_enabled",
@@ -7173,30 +7149,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_text_selection_enabled": {
+            "name": "responsive_web_grok_text_selection_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "responsive_web_grok_text_selection_supported_locales": {
             "name": "responsive_web_grok_text_selection_supported_locales",
-            "type": "object",
-            "defaultValue": [
-                "en",
-                "es",
-                "fr",
-                "ru",
-                "ja",
-                "it",
-                "de",
-                "zh",
-                "uk",
-                "pl",
-                "ko",
-                "hi",
-                "id",
-                "fi",
-                "fa",
-                "hy",
-                "ar",
-                "af",
-                "vi"
-            ]
+            "type": "string"
         },
         "responsive_web_grok_model_selector_enabled": {
             "name": "responsive_web_grok_model_selector_enabled",
@@ -8097,8 +8057,8 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "rweb_conf_enabled": {
-            "name": "rweb_conf_enabled",
+        "rweb_conf_grid_enabled": {
+            "name": "rweb_conf_grid_enabled",
             "type": "boolean",
             "defaultValue": true
         },
