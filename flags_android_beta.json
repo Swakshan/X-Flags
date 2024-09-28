@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "4c6a7eb22de6870649b3a7b0a264f6b84e18eb44",
+        "feature_set_token": "8836067d096fd24890ea12b1247df38741830fb8",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -636,6 +636,9 @@
             "android_audio_wifi_lock_enabled": {
                 "value": true
             },
+            "android_auto_advance_video_toggle_visible": {
+                "value": false
+            },
             "android_automated_copyright_content_matching": {
                 "value": true
             },
@@ -943,7 +946,7 @@
                 "value": "1"
             },
             "android_home_always_refresh_on_focus": {
-                "value": false
+                "value": true
             },
             "android_home_disable_bottom_paging_policy": {
                 "value": true
@@ -2432,6 +2435,9 @@
             "database_delete_on_upgrade_with_htl_prefetch": {
                 "value": false
             },
+            "dm_android_composer_rewrite": {
+                "value": false
+            },
             "dm_android_open_keyboard_on_reply_or_edit": {
                 "value": false
             },
@@ -2746,8 +2752,11 @@
             "grok_android_ask_grok_post_details_enabled": {
                 "value": false
             },
-            "grok_inline_sharecard_image_enabled": {
+            "grok_android_native_history_enabled": {
                 "value": false
+            },
+            "grok_inline_sharecard_image_enabled": {
+                "value": true
             },
             "grok_model_selector_display_description_enabled": {
                 "value": true
@@ -3109,6 +3118,9 @@
             "locale_override_user_scoped_enabled": {
                 "value": false
             },
+            "location_settings_age_restriction_enabled": {
+                "value": false
+            },
             "login_challenge_polling_backoff": {
                 "value": 1.2
             },
@@ -3134,7 +3146,7 @@
                 "value": 4000.0
             },
             "longform_notetweets_rich_composition_enabled": {
-                "value": 0.0
+                "value": 1.0
             },
             "longform_notetweets_rich_text_read_enabled": {
                 "value": true
@@ -3870,7 +3882,7 @@
                 "value": true
             },
             "spaces_2022_h2_spaces_communities_scheduling_enabled": {
-                "value": false
+                "value": true
             },
             "spaces_conference_enabled": {
                 "value": false
@@ -3899,17 +3911,23 @@
             "ssp_ads_google_dsp_immersive_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
+            "ssp_ads_google_dsp_profile_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
+            },
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
             "ssp_ads_google_dsp_spotlight_with_headline": {
                 "value": false
             },
+            "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
+            },
             "ssp_ads_google_native_ad_enabled": {
                 "value": false
             },
             "ssp_ads_google_native_ad_timeout_ms": {
-                "value": 3000.0
+                "value": 20000.0
             },
             "ssp_ads_immersive": {
                 "value": false
@@ -3921,7 +3939,10 @@
                 "value": ""
             },
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
-                "value": 4.0
+                "value": 5.0
+            },
+            "ssp_ads_profile": {
+                "value": false
             },
             "ssp_ads_rtb_image_ad_item_enabled": {
                 "value": false
@@ -3931,6 +3952,9 @@
             },
             "ssp_ads_spotlight_ad_fetch_timeout_milliseconds": {
                 "value": 6000.0
+            },
+            "ssp_ads_tweet_details": {
+                "value": false
             },
             "stateful_login_enabled": {
                 "value": true
@@ -4830,6 +4854,9 @@
             "withhold_priority_mr_channels_new_user_days": {
                 "value": 0.0
             },
+            "xprofile_blocked_by_view_enabled": {
+                "value": false
+            },
             "xprofile_consumption_enabled": {
                 "value": true
             },
@@ -5084,7 +5111,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "4701d0c5a7c76719fef7e1749dec892c0b989ac5",
-        "experiments": "4701d0c5a7c76719fef7e1749dec892c0b989ac5"
+        "feature_switches": "4f5a01e45b3e80357b830c112a7956dd1d62bfb4",
+        "experiments": "4f5a01e45b3e80357b830c112a7956dd1d62bfb4"
     }
 }
