@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e836d4ebbe7aef325d5f555a68dd94a831e3af36",
+    "feature_set_token": "7d12570b831aef655974a8f9afbe32613ea15e26",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -927,6 +927,9 @@
         "longform_notetweets_rich_text_read_enabled": {
             "value": true
         },
+        "longform_notetweets_scheduling_non_reply_enabled": {
+            "value": false
+        },
         "longform_notetweets_tweet_storm_enabled": {
             "value": true
         },
@@ -1468,7 +1471,7 @@
             "value": true
         },
         "responsive_web_grok_text_selection_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_trends_design_enabled": {
             "value": false
@@ -1909,9 +1912,6 @@
             "value": true
         },
         "rito_safety_mode_features_enabled": {
-            "value": false
-        },
-        "rito_safety_mode_modal_prompt_enabled": {
             "value": false
         },
         "rweb_2_column_htl_prototype_virtual_scroller_enabled": {
@@ -5905,7 +5905,8 @@
         },
         "longform_notetweets_scheduling_non_reply_enabled": {
             "name": "longform_notetweets_scheduling_non_reply_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "longform_reader_mode_view_in_reader_mode_entry_button_enabled": {
             "name": "longform_reader_mode_view_in_reader_mode_entry_button_enabled",
@@ -7075,10 +7076,6 @@
             "type": "number",
             "defaultValue": 5242880
         },
-        "responsive_web_grok_file_supported_mimetypes": {
-            "name": "responsive_web_grok_file_supported_mimetypes",
-            "type": "string"
-        },
         "responsive_web_grok_file_compression_enabled": {
             "name": "responsive_web_grok_file_compression_enabled",
             "type": "boolean",
@@ -7097,11 +7094,7 @@
         "responsive_web_grok_text_selection_enabled": {
             "name": "responsive_web_grok_text_selection_enabled",
             "type": "boolean",
-            "defaultValue": true
-        },
-        "responsive_web_grok_text_selection_supported_locales": {
-            "name": "responsive_web_grok_text_selection_supported_locales",
-            "type": "string"
+            "defaultValue": false
         },
         "responsive_web_grok_model_selector_enabled": {
             "name": "responsive_web_grok_model_selector_enabled",
@@ -7913,8 +7906,7 @@
         },
         "rito_safety_mode_modal_prompt_enabled": {
             "name": "rito_safety_mode_modal_prompt_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rito_smart_mute_enabled": {
             "name": "rito_smart_mute_enabled",
