@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7d12570b831aef655974a8f9afbe32613ea15e26",
+    "feature_set_token": "acf3371768470c6638fd0480577d1ce0dafd6688",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -855,10 +855,16 @@
         "insights_chart_filter_enabled": {
             "value": true
         },
+        "insights_impressions_enabled": {
+            "value": false
+        },
         "insights_multiple_rules_enabled": {
             "value": false
         },
         "insights_previews_enabled": {
+            "value": false
+        },
+        "insights_unique_users_enabled": {
             "value": false
         },
         "krs_registration_enabled": {
@@ -926,6 +932,9 @@
         },
         "longform_notetweets_rich_text_read_enabled": {
             "value": true
+        },
+        "longform_notetweets_rich_text_timeline_enabled": {
+            "value": false
         },
         "longform_notetweets_scheduling_non_reply_enabled": {
             "value": false
@@ -1749,9 +1758,6 @@
         "responsive_web_tv_cast_enabled": {
             "value": true
         },
-        "responsive_web_tv_cast_show_controls_enabled": {
-            "value": false
-        },
         "responsive_web_tv_screen_logging_enabled": {
             "value": false
         },
@@ -1906,12 +1912,6 @@
             "value": true
         },
         "responsive_web_x_translation_enabled": {
-            "value": false
-        },
-        "rito_safety_mode_blocked_profile_enabled": {
-            "value": true
-        },
-        "rito_safety_mode_features_enabled": {
             "value": false
         },
         "rweb_2_column_htl_prototype_virtual_scroller_enabled": {
@@ -2397,10 +2397,10 @@
             "value": false
         },
         "subscriptions_upsells_analytics_profile_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_analytics_profile_variant": {
-            "value": ""
+            "value": "Impressions"
         },
         "subscriptions_upsells_get_verified_profile": {
             "value": false
@@ -3208,10 +3208,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "multiple_metrics",
-                "profile_visits",
-                "impressions",
-                "likes"
+                "holdback"
             ]
         },
         "arkose_challenge_open_app_dev": {
@@ -5633,6 +5630,16 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "insights_impressions_enabled": {
+            "name": "insights_impressions_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "insights_unique_users_enabled": {
+            "name": "insights_unique_users_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "interests_expereince_incremental_holdback_2022_h1_12578": {
             "name": "interests_expereince_incremental_holdback_2022_h1_12578",
             "type": "experiment",
@@ -5869,7 +5876,8 @@
         },
         "longform_notetweets_rich_text_timeline_enabled": {
             "name": "longform_notetweets_rich_text_timeline_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "longform_notetweets_text_kit_2_enabled": {
             "name": "longform_notetweets_text_kit_2_enabled",
@@ -7584,8 +7592,7 @@
         },
         "responsive_web_tv_cast_show_controls_enabled": {
             "name": "responsive_web_tv_cast_show_controls_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_tv_screen_logging_enabled": {
             "name": "responsive_web_tv_screen_logging_enabled",
@@ -7859,6 +7866,10 @@
             "name": "responsive_web_verified_organizations_intercom_enabled",
             "type": "string"
         },
+        "responsive_web_verified_organizations_new_signup_enabled": {
+            "name": "responsive_web_verified_organizations_new_signup_enabled",
+            "type": "string"
+        },
         "responsive_web_video_autoplay_default_on": {
             "name": "responsive_web_video_autoplay_default_on",
             "type": "boolean",
@@ -7898,36 +7909,6 @@
             "name": "responsive_web_x_translation_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "rito_safety_mode_blocked_profile_enabled": {
-            "name": "rito_safety_mode_blocked_profile_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "rito_safety_mode_modal_prompt_enabled": {
-            "name": "rito_safety_mode_modal_prompt_enabled",
-            "type": "string"
-        },
-        "rito_smart_mute_enabled": {
-            "name": "rito_smart_mute_enabled",
-            "type": "string"
-        },
-        "rito_safety_mode_features_enabled": {
-            "name": "rito_safety_mode_features_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "rito_smart_block_list_enabled": {
-            "name": "rito_smart_block_list_enabled",
-            "type": "string"
-        },
-        "rito_safety_mode_settings_enabled": {
-            "name": "rito_safety_mode_settings_enabled",
-            "type": "string"
-        },
-        "rito_smart_block_enabled": {
-            "name": "rito_smart_block_enabled",
-            "type": "string"
         },
         "rweb_2_column_htl_prototype": {
             "name": "rweb_2_column_htl_prototype",
@@ -9395,12 +9376,12 @@
         "subscriptions_upsells_analytics_profile_variant": {
             "name": "subscriptions_upsells_analytics_profile_variant",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "Impressions"
         },
         "subscriptions_upsells_analytics_profile_enabled": {
             "name": "subscriptions_upsells_analytics_profile_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
