@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e02276253a82847fb4ecfc33fc9abffb3f42d968",
+    "feature_set_token": "19a832041df09636eeb84cccd9030935f731fe94",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1876,7 +1876,7 @@
             "value": false
         },
         "responsive_web_verified_organizations_new_support_entry_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_verified_organizations_paid_to_invoice_enabled": {
             "value": false
@@ -7863,7 +7863,7 @@
         "responsive_web_verified_organizations_new_support_entry_enabled": {
             "name": "responsive_web_verified_organizations_new_support_entry_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_verified_organizations_people_search_onboarding_enabled": {
             "name": "responsive_web_verified_organizations_people_search_onboarding_enabled",
@@ -9390,6 +9390,10 @@
             "name": "subscriptions_upsells_analytics_profile_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_upsells_creator_support_post_conversation_enabled": {
+            "name": "subscriptions_upsells_creator_support_post_conversation_enabled",
+            "type": "string"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
