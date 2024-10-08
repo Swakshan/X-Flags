@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "eda2c2e8f25aaca772f99f55e2a59472495f497a",
+        "feature_set_token": "b770b3b80d64b41dcd37fc59863fb86a75f31888",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1521,6 +1521,9 @@
             "app_attest_enabled": {
                 "value": false
             },
+            "app_attest_guest_enabled": {
+                "value": false
+            },
             "app_event_track_non_referred_install_enabled": {
                 "value": false
             },
@@ -2436,7 +2439,7 @@
                 "value": true
             },
             "dm_android_open_keyboard_on_reply_or_edit": {
-                "value": false
+                "value": true
             },
             "dm_android_send_messages_with_workmanager": {
                 "value": false
@@ -2750,6 +2753,9 @@
                 "value": false
             },
             "grok_android_native_history_enabled": {
+                "value": false
+            },
+            "grok_android_native_media_view_enabled": {
                 "value": false
             },
             "grok_inline_sharecard_image_enabled": {
@@ -3147,6 +3153,9 @@
             },
             "longform_notetweets_rich_text_read_enabled": {
                 "value": true
+            },
+            "longform_notetweets_rich_text_timeline_enabled": {
+                "value": false
             },
             "longform_notetweets_tweet_storm_enabled": {
                 "value": false
@@ -3936,7 +3945,7 @@
                 "value": ""
             },
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
-                "value": 5.0
+                "value": 8.0
             },
             "ssp_ads_profile": {
                 "value": false
@@ -5108,7 +5117,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "6385a6c4b734c0f133ec73f1b534c1a4f2d2038b",
-        "experiments": "6385a6c4b734c0f133ec73f1b534c1a4f2d2038b"
+        "feature_switches": "3e54fa1839a15d8abe04fffc2697728b3923606f",
+        "experiments": "3e54fa1839a15d8abe04fffc2697728b3923606f"
     }
 }
