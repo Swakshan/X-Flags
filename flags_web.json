@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a82149d89c7feb98b50b3260196bab86816210a1",
+    "feature_set_token": "d888dbd55be6a9658d126c0f53e80c38f305a80f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1048,6 +1048,9 @@
             "value": false
         },
         "payments_pin_enabled": {
+            "value": false
+        },
+        "payments_pin_login_enabled": {
             "value": false
         },
         "professional_launchpad_m1_enabled": {
@@ -6074,6 +6077,14 @@
                 "upgrade"
             ]
         },
+        "monetization_promo_page_16965": {
+            "name": "monetization_promo_page_16965",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "new"
+            ]
+        },
         "mr_logged_out_web_notifs_15050": {
             "name": "mr_logged_out_web_notifs_15050",
             "type": "experiment",
@@ -6249,6 +6260,11 @@
         "payments_pin_keychain_enabled": {
             "name": "payments_pin_keychain_enabled",
             "type": "string"
+        },
+        "payments_pin_login_enabled": {
+            "name": "payments_pin_login_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "premium_free_trial_australia_16885": {
             "name": "premium_free_trial_australia_16885",
