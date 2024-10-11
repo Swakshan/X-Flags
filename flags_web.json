@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "27f05ec69137b5e18bd027001878e922d23ec7d2",
+    "feature_set_token": "901de0b1e4b17422e3d14a0b703133ad38ec8201",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1050,6 +1050,9 @@
         "payments_pin_login_enabled": {
             "value": false
         },
+        "payments_risk_device_sdk_enabled": {
+            "value": false
+        },
         "professional_launchpad_m1_enabled": {
             "value": true
         },
@@ -1872,6 +1875,9 @@
         "responsive_web_verified_organizations_insights_enabled": {
             "value": false
         },
+        "responsive_web_verified_organizations_intercom_enabled": {
+            "value": false
+        },
         "responsive_web_verified_organizations_invoice_enabled": {
             "value": false
         },
@@ -2415,13 +2421,13 @@
             "value": ""
         },
         "subscriptions_upsells_monetization_redesign_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_premium_home_nav": {
             "value": ""
         },
         "subscriptions_upsells_right_sidebar_variant": {
-            "value": ""
+            "value": "discount_40_percent"
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -5637,6 +5643,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "insights_impressions_chart_enabled": {
+            "name": "insights_impressions_chart_enabled",
+            "type": "string"
+        },
         "interests_expereince_incremental_holdback_2022_h1_12578": {
             "name": "interests_expereince_incremental_holdback_2022_h1_12578",
             "type": "experiment",
@@ -6249,6 +6259,11 @@
         },
         "payments_pin_login_enabled": {
             "name": "payments_pin_login_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "payments_risk_device_sdk_enabled": {
+            "name": "payments_risk_device_sdk_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -7888,7 +7903,8 @@
         },
         "responsive_web_verified_organizations_intercom_enabled": {
             "name": "responsive_web_verified_organizations_intercom_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_verified_organizations_new_signup_enabled": {
             "name": "responsive_web_verified_organizations_new_signup_enabled",
@@ -9372,7 +9388,7 @@
         "subscriptions_upsells_right_sidebar_variant": {
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "discount_40_percent"
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
@@ -9414,7 +9430,7 @@
         "subscriptions_upsells_monetization_redesign_enabled": {
             "name": "subscriptions_upsells_monetization_redesign_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
