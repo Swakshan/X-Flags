@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "daead1797d565eae1bc2ec7744861f360ebb8126",
+        "feature_set_token": "70685f24dc86bfd87d801760e9d24789bc7b3bbe",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1522,10 +1522,13 @@
                 "value": true
             },
             "app_attest_enabled": {
-                "value": false
+                "value": true
             },
             "app_attest_guest_enabled": {
                 "value": false
+            },
+            "app_attest_ocf_timeout_milliseconds": {
+                "value": 2000.0
             },
             "app_event_track_non_referred_install_enabled": {
                 "value": false
@@ -2656,6 +2659,9 @@
             "explore_tap_to_search": {
                 "value": true
             },
+            "feature_switches_configs_crashlytics_enabled": {
+                "value": false
+            },
             "feature_switches_configs_use_feature_set_token": {
                 "value": true
             },
@@ -2713,6 +2719,9 @@
             "fresco_cached_image_loading_lower_res_enabled": {
                 "value": false
             },
+            "fresco_executor_stack_enabled": {
+                "value": true
+            },
             "geo_data_provider_enabled": {
                 "value": true
             },
@@ -2759,7 +2768,7 @@
                 "value": false
             },
             "grok_android_native_media_view_enabled": {
-                "value": false
+                "value": true
             },
             "grok_inline_sharecard_image_enabled": {
                 "value": true
@@ -3948,7 +3957,10 @@
                 "value": ""
             },
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
-                "value": 5.0
+                "value": 8.0
+            },
+            "ssp_ads_preroll_enabled": {
+                "value": false
             },
             "ssp_ads_profile": {
                 "value": false
@@ -5120,7 +5132,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "8afc54533d3b919f5565f65ecf14190b3814ba80",
-        "experiments": "8afc54533d3b919f5565f65ecf14190b3814ba80"
+        "feature_switches": "ccf6f3b5ba3432294b9d0790b06f08e76d764e91",
+        "experiments": "ccf6f3b5ba3432294b9d0790b06f08e76d764e91"
     }
 }
