@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "4c37b8f255a16c67da95c8d387cf31044778ba4b",
+        "feature_set_token": "70685f24dc86bfd87d801760e9d24789bc7b3bbe",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1522,7 +1522,13 @@
                 "value": true
             },
             "app_attest_enabled": {
+                "value": true
+            },
+            "app_attest_guest_enabled": {
                 "value": false
+            },
+            "app_attest_ocf_timeout_milliseconds": {
+                "value": 2000.0
             },
             "app_event_track_non_referred_install_enabled": {
                 "value": false
@@ -2436,10 +2442,10 @@
                 "value": false
             },
             "dm_android_composer_rewrite": {
-                "value": false
+                "value": true
             },
             "dm_android_open_keyboard_on_reply_or_edit": {
-                "value": false
+                "value": true
             },
             "dm_android_send_messages_with_workmanager": {
                 "value": false
@@ -2653,6 +2659,9 @@
             "explore_tap_to_search": {
                 "value": true
             },
+            "feature_switches_configs_crashlytics_enabled": {
+                "value": false
+            },
             "feature_switches_configs_use_feature_set_token": {
                 "value": true
             },
@@ -2710,6 +2719,9 @@
             "fresco_cached_image_loading_lower_res_enabled": {
                 "value": false
             },
+            "fresco_executor_stack_enabled": {
+                "value": true
+            },
             "geo_data_provider_enabled": {
                 "value": true
             },
@@ -2754,6 +2766,9 @@
             },
             "grok_android_native_history_enabled": {
                 "value": false
+            },
+            "grok_android_native_media_view_enabled": {
+                "value": true
             },
             "grok_inline_sharecard_image_enabled": {
                 "value": true
@@ -3150,6 +3165,9 @@
             },
             "longform_notetweets_rich_text_read_enabled": {
                 "value": true
+            },
+            "longform_notetweets_rich_text_timeline_enabled": {
+                "value": false
             },
             "longform_notetweets_tweet_storm_enabled": {
                 "value": false
@@ -3939,7 +3957,10 @@
                 "value": ""
             },
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
-                "value": 5.0
+                "value": 8.0
+            },
+            "ssp_ads_preroll_enabled": {
+                "value": false
             },
             "ssp_ads_profile": {
                 "value": false
@@ -5111,7 +5132,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "3ca6061d870f03616e5bc826818264c8ecfcd746",
-        "experiments": "3ca6061d870f03616e5bc826818264c8ecfcd746"
+        "feature_switches": "80a28e13a11aae0df09e18a50ab62fb5a31a828b",
+        "experiments": "80a28e13a11aae0df09e18a50ab62fb5a31a828b"
     }
 }
