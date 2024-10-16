@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a0cfbdcc94fa9a995fb146c41d1c3dcfab1b613b",
+    "feature_set_token": "80cfcaa90a43e32fff6db395008ed370733289c5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2329,6 +2329,9 @@
         },
         "subscriptions_feature_organization_x_hiring": {
             "value": true
+        },
+        "subscriptions_feature_premium_insights": {
+            "value": false
         },
         "subscriptions_feature_premium_jobs": {
             "value": true
@@ -9137,7 +9140,8 @@
         },
         "subscriptions_feature_premium_insights": {
             "name": "subscriptions_feature_premium_insights",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
