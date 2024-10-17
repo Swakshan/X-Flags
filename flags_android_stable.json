@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "b770b3b80d64b41dcd37fc59863fb86a75f31888",
+        "feature_set_token": "92249d8ad1ef5d865e669a35afaf12d1bafff844",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1519,10 +1519,13 @@
                 "value": true
             },
             "app_attest_enabled": {
-                "value": false
+                "value": true
             },
             "app_attest_guest_enabled": {
                 "value": false
+            },
+            "app_attest_ocf_timeout_milliseconds": {
+                "value": 2000.0
             },
             "app_event_track_non_referred_install_enabled": {
                 "value": false
@@ -2653,6 +2656,9 @@
             "explore_tap_to_search": {
                 "value": true
             },
+            "feature_switches_configs_crashlytics_enabled": {
+                "value": false
+            },
             "feature_switches_configs_use_feature_set_token": {
                 "value": true
             },
@@ -2710,6 +2716,9 @@
             "fresco_cached_image_loading_lower_res_enabled": {
                 "value": false
             },
+            "fresco_executor_stack_enabled": {
+                "value": false
+            },
             "geo_data_provider_enabled": {
                 "value": true
             },
@@ -2756,7 +2765,7 @@
                 "value": false
             },
             "grok_android_native_media_view_enabled": {
-                "value": false
+                "value": true
             },
             "grok_inline_sharecard_image_enabled": {
                 "value": true
@@ -3947,6 +3956,9 @@
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
                 "value": 8.0
             },
+            "ssp_ads_preroll_enabled": {
+                "value": false
+            },
             "ssp_ads_profile": {
                 "value": false
             },
@@ -5117,7 +5129,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "825388c35ce3e83f94aed79848e6b0796b057f3a",
-        "experiments": "825388c35ce3e83f94aed79848e6b0796b057f3a"
+        "feature_switches": "8d314fcedcfd4a996189221205f539b8759a59c0",
+        "experiments": "8d314fcedcfd4a996189221205f539b8759a59c0"
     }
 }
