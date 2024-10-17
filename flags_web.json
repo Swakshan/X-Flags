@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "80cfcaa90a43e32fff6db395008ed370733289c5",
+    "feature_set_token": "c2ef4622833cccca5ab74c7b121e74a21b353f41",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -861,6 +861,9 @@
         "insights_multiple_rules_enabled": {
             "value": false
         },
+        "insights_premium_initial_days_back": {
+            "value": 3
+        },
         "insights_preview_splash_metrics_enabled": {
             "value": false
         },
@@ -868,6 +871,9 @@
             "value": false
         },
         "insights_unique_users_enabled": {
+            "value": false
+        },
+        "insights_unique_users_premium_enabled": {
             "value": false
         },
         "krs_registration_enabled": {
@@ -1483,9 +1489,6 @@
             "value": false
         },
         "responsive_web_grok_prompt_edit_enabled": {
-            "value": true
-        },
-        "responsive_web_grok_share_enabled": {
             "value": true
         },
         "responsive_web_grok_share_rendering_enabled": {
@@ -2396,6 +2399,9 @@
         "subscriptions_premium_experiment_nav_text": {
             "value": false
         },
+        "subscriptions_premium_hub_insights_block_enabled": {
+            "value": false
+        },
         "subscriptions_premium_tiers_default_interval": {
             "value": "Year"
         },
@@ -2435,8 +2441,14 @@
         "subscriptions_upsells_premium_home_nav": {
             "value": ""
         },
+        "subscriptions_upsells_radar_video_url_desktop": {
+            "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
+        },
+        "subscriptions_upsells_radar_video_url_mobile": {
+            "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
+        },
         "subscriptions_upsells_right_sidebar_variant": {
-            "value": "discount_40_percent"
+            "value": ""
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -5665,6 +5677,16 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "insights_premium_initial_days_back": {
+            "name": "insights_premium_initial_days_back",
+            "type": "number",
+            "defaultValue": 3
+        },
+        "insights_unique_users_premium_enabled": {
+            "name": "insights_unique_users_premium_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "interests_expereince_incremental_holdback_2022_h1_12578": {
             "name": "interests_expereince_incremental_holdback_2022_h1_12578",
             "type": "experiment",
@@ -7086,8 +7108,7 @@
         },
         "responsive_web_grok_share_enabled": {
             "name": "responsive_web_grok_share_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_grok_trends_design_enabled": {
             "name": "responsive_web_grok_trends_design_enabled",
@@ -8651,6 +8672,10 @@
             "name": "spaces_conference_group_dm_enabled",
             "type": "string"
         },
+        "spaces_conference_solo_mode_enabled": {
+            "name": "spaces_conference_solo_mode_enabled",
+            "type": "string"
+        },
         "spaces_dtx_opus_dtx_enabled": {
             "name": "spaces_dtx_opus_dtx_enabled",
             "type": "boolean",
@@ -9364,6 +9389,31 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "subscriptions_premium_hub_enabled": {
+            "name": "subscriptions_premium_hub_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_vo_upsell_block_enabled": {
+            "name": "subscriptions_premium_hub_vo_upsell_block_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_extended_bio_block_enabled": {
+            "name": "subscriptions_premium_hub_extended_bio_block_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_vo_support_enabled": {
+            "name": "subscriptions_premium_hub_vo_support_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_insights_block_enabled": {
+            "name": "subscriptions_premium_hub_insights_block_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_premium_hub_radar_coming_soon_card_enabled": {
+            "name": "subscriptions_premium_hub_radar_coming_soon_card_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "string"
@@ -9411,7 +9461,7 @@
         "subscriptions_upsells_right_sidebar_variant": {
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
-            "defaultValue": "discount_40_percent"
+            "defaultValue": ""
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
@@ -9454,6 +9504,16 @@
             "name": "subscriptions_upsells_monetization_redesign_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_upsells_radar_video_url_desktop": {
+            "name": "subscriptions_upsells_radar_video_url_desktop",
+            "type": "string",
+            "defaultValue": "https://abs.twimg.com/images/radar_promo_v2.mp4"
+        },
+        "subscriptions_upsells_radar_video_url_mobile": {
+            "name": "subscriptions_upsells_radar_video_url_mobile",
+            "type": "string",
+            "defaultValue": "https://abs.twimg.com/images/radar_promo_v2.mp4"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
@@ -11178,6 +11238,10 @@
             "name": "xprofile_blocked_by_view_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xprofile_jetfuel_enabled": {
+            "name": "xprofile_jetfuel_enabled",
+            "type": "string"
         },
         "zazu_report_flow_13359": {
             "name": "zazu_report_flow_13359",
