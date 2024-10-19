@@ -8,7 +8,7 @@ from common import WEB_LINK,M_WEB_LINK,TWT_SW_URL,headers
 
 
 hdr = headers()
-
+proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="
 
 class ApkCombo():
     def __init__(self, pkgName, company='', proxy=1) -> None:
@@ -136,40 +136,22 @@ class ApkCombo():
         return rd
 
 
-class TwtWeb():
-    def __init__(self) -> None:
-        req = requests.get(TWT_SW_URL,headers=hdr)
-        res = req.text
+def apkM(url):
+    url = proxyUrl+url
+    res = requests.get(url,headers=hdr)
 
-        sHint = 'self.__META_DATA__ = '
-        eHint = "}"
-        s = res.find(sHint)+len(sHint)
-        e = res[s:].find(eHint)+s+1
-        self.config = json.loads(res[s:e])
+    pS = bs(res.text,"html.parser")
+    downloadBtn = pS.find("a",{"class":"downloadButton"})
+    downloadPage = downloadBtn['href']
+    downloadBtnText = downloadBtn.text.strip().lower()
+    is_bundle = True if "apk bundle" in downloadBtnText else False
 
-                
-        txt = res[res.find("["):res.find("]")+1]
-        js_list = json.loads(txt)
+    res = requests.get(downloadPage,headers=hdr)
+    pS = bs(res.text,"html.parser")
 
-        for item in js_list:
-          if "feature-" in item:
-            self.FS_URL = item
-            break
-    
-    def version(self):
-        rd = self.config
-
-        sha = rd['sha']
-        version = int(datetime.now().timestamp())
-        return sha, version
-
-    def featureSwitches(self):
-      fs = ""
-      req = requests.get(self.FS_URL,headers=hdr)
-      res = req.text   
-      res = res.replace("!0","true").replace("!1","false")
-    #   fs = js2py.eval_js(res).to_dict()
-      return fs
+    downloadLink = pS.find("a",{'id':'download-link'})['href']
+    downloadLink = downloadLink.replace("www-apkmirror-com.translate.goog","www.apkmirror.com").replace("&_x_tr_sl=ta&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp","")
+    return is_bundle,downloadLink
 
 
 def webfeatureSwitches(hash):
