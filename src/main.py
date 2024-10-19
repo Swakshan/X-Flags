@@ -1,11 +1,12 @@
 import requests,json,os,shutil,sys,zipfile
-from appData import ApkCombo,webfeatureSwitches,apkM
+from appData import apkCombo,apkM,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
-from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,Platform,Releases,new_file_ipad_name,old_file_ipad_name,Source
+from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
+from model import DownloadData,Source,Platform,Releases
 
-VER = "v10.50 : added apkm support"
+VER = "v11 : apkm support & code refactor"
 
 
 def downloader(url,fileName="",isJson=False):
@@ -79,56 +80,46 @@ def unzipper(platform):
 
     return False
 
-
-def downTwt(typ):
-    try:
-        prinData = ""
-        apkC = ApkCombo(pkgName=PKG_NAME)
-        l = apkC.versions()
-        # pprint(l)
-        if l['status']:
-            data = l['data']
-            ty = data[typ.lower()]
-            
-            vername = ty['vername']
-            l = apkC.getApk(vername, "xapk")
-            if l['status']:
-                d = l['data']
-                vercode = d['vercode']
-                downLink = d['link']
-                # fileName = f"{vername}.{d['apktype']}"
-                downloader(downLink)
-                return [vername,vercode,False]# if apkcombo dont save the link
-            else:
-                prinData = "version not Found"
-        else:
-            prinData = "type not Found"
-        print(prinData)
-    except Exception as e:
-        print(get_exception())
-    return False
-
+def downloadAndroid(downData:DownloadData,source:Source):
+    url = downData.downLink
+    down_link = None
+    if source == Source.APKM:
+        down_link = apkM(url)
+    elif source == Source.APKC:
+        down_link = apkCombo(url)
+    elif source == Source.MAN or source == Source.APT:
+        down_link = url
+    else:
+        raise Exception("Error: Source "+ source.value +" not found")
+    
+    if down_link==None:
+        raise Exception("Download link not found")
+    print(down_link)
+    downloader(down_link)
 
 def process(vername,source,vercode,down_link):
-    hash_value = False
     try:        
         typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
         platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
         source = Source(source)
 
-        down_data = [False,False,False] #vername,vercode,downLink
+        # down_data = [False,False,False] #vername,vercode,downLink
+        down_data:DownloadData = DownloadData(vername,vercode,down_link,"")
         sts = False
         
         if platform==Platform.WEB:
             sha,fs_hash = vercode.split(":")
-            hash_value = sha
             existsing_flag_file = f'flags_{typ}.json'
             os.rename(existsing_flag_file, old_file_name)
 
             fs = webfeatureSwitches(fs_hash)
             writeJson(existsing_flag_file,fs)
             shutil.copy(existsing_flag_file, new_file_name)
-            down_data = [typ,fs_hash,False]
+            # down_data = [typ,fs_hash,False]
+            down_data.vername = typ
+            down_data.vercode = fs_hash
+            down_data.downLink = ""
+            down_data.hash = sha
             sts = True
         
         elif platform==Platform.IOS:
@@ -151,20 +142,13 @@ def process(vername,source,vercode,down_link):
             # os.remove(existsing_flag_file)
             shutil.copy(new_file_ipad_name, existsing_flag_file)
 
-            down_data = [vername,"",down_link]
+            # down_data = [vername,"",down_link]
             sts = True
             
         elif platform==Platform.ANDROID:
             vercode = vercodeGenerator(vername)
-            if source == Source.MAN or source == Source.APT:
-                downloader(down_link)
-                down_data = [vername,vercode,down_link]
-            elif source == Source.APKC:
-                down_data = downTwt(typ) #apkcombo
-                if not down_data[0]: 
-                    raise Exception("Error downloading via APKCombo")
-            else:
-                raise Exception("Error: Source "+ source.value +" not found")
+            down_data.vercode = vercode            
+            downloadAndroid(down_data,source)
             
             existsing_flag_file = f'flags_android_{typ}.json'
             shutil.copyfile(existsing_flag_file, old_file_name)
@@ -176,7 +160,7 @@ def process(vername,source,vercode,down_link):
             shutil.copy(new_file_name, existsing_flag_file)
             sts = True
             
-        d = {'sts':sts,'version_name': down_data[0],'vercode': down_data[1],'hash':hash_value,'download_link':down_data[2],'os':platform.value,'src':source.value}
+        d = {'sts':sts,'version_name': down_data.vername,'vercode': down_data.vercode,'hash':down_data.hash,'download_link':down_data.downLink,'os':platform.value,'src':source.value}
 
     except Exception as e:
         d = {'sts':sts}

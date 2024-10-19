@@ -4,6 +4,8 @@ from enum import Enum
 from sys import exc_info
 from traceback import format_exception
 from dotenv import load_dotenv
+from model import Source,Platform,Releases
+
 load_dotenv()
 
 def getEnv(key):
@@ -38,30 +40,6 @@ WEB_LINK = 'https://twitter.com/'
 M_WEB_LINK = 'https://m.twitter.com/'
 TWT_SW_URL = f"{WEB_LINK}sw.js"
 APP_STORE_LINK = "https://apps.apple.com/in/app/x/id333903271"
-
-class Platform(Enum):
-    ANDROID = "android"
-    IOS = "ios"
-    WEB = "web"
-
-class Releases(Enum):
-    ALPHA = "alpha"
-    BETA = "beta"
-    STABLE = "stable"
-    WEB = "web"
-
-class Source(Enum):
-    MAN = "manual"
-    WEB = Releases.WEB.value
-    IOS = "stable_ios"
-    APT = "aptoide"
-    APKC = "apkcombo"
-    APKM = "apkmirror"
-    DK= "dontknow"
-
-    @classmethod
-    def _missing_(Source, value):
-        return Source.DK
 
 def get_exception():
     etype, value, tb = exc_info()
