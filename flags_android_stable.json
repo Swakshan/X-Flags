@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "6b263e9bf2f8d7982400a5c27eacab1dab118bd7",
+        "feature_set_token": "29b92b606cdfc1f54eafb826c3e7e2cd91f1cb7b",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -841,7 +841,7 @@
                 "value": true
             },
             "android_follower_timelines_stack_enabled": {
-                "value": false
+                "value": true
             },
             "android_forward_feedback_enabled": {
                 "value": false
@@ -1288,7 +1288,7 @@
                 "value": true
             },
             "android_system_dns_synchronized_map_enabled": {
-                "value": false
+                "value": true
             },
             "android_system_dns_timeout_ms": {
                 "value": 15000.0
@@ -3926,14 +3926,14 @@
             "ssp_ads_google_dsp_immersive_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
+            "ssp_ads_google_dsp_immersive_client_only_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
+            },
             "ssp_ads_google_dsp_profile_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
-            },
-            "ssp_ads_google_dsp_spotlight_with_headline": {
-                "value": false
             },
             "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
@@ -3945,6 +3945,9 @@
                 "value": 3000.0
             },
             "ssp_ads_immersive": {
+                "value": false
+            },
+            "ssp_ads_immersive_client_only_integration": {
                 "value": false
             },
             "ssp_ads_log_errors": {
@@ -4154,7 +4157,7 @@
                 "value": true
             },
             "subscriptions_premium_app_icons_halloween_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_premium_hub_enabled": {
                 "value": true
@@ -4927,7 +4930,6 @@
     "experiment_names": [
         "ad_formats_summary_large_card_uc_migration_android_11404",
         "android_hd_vod_badge_15148",
-        "premium_upsell_home_timeline_mobile_web_16862",
         "android_use_payload_badge_count_9378",
         "android_transsion_badging_experiment_15156",
         "android_graphql_skip_api_profile_image_extensions_16230",
@@ -5135,7 +5137,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "f242f5dfcd92d44491f067cb32ece098645a5fe1",
-        "experiments": "f242f5dfcd92d44491f067cb32ece098645a5fe1"
+        "feature_switches": "c7adada0508193dc37fc9d6f88f7f3f5e89e9505",
+        "experiments": "c7adada0508193dc37fc9d6f88f7f3f5e89e9505"
     }
 }
