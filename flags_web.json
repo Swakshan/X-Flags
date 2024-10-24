@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "cdf1994b072e6cf4a117bc19a28c8bc07318cc4d",
+    "feature_set_token": "f6b0f464c52ab7474d40ca2d94173a30194e2c7f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -862,7 +862,7 @@
             "value": false
         },
         "insights_premium_initial_days_back": {
-            "value": 3
+            "value": 7
         },
         "insights_preview_splash_metrics_enabled": {
             "value": false
@@ -2006,6 +2006,9 @@
         },
         "rweb_mixed_media_uploads_enabled": {
             "value": true
+        },
+        "rweb_multistream_enabled": {
+            "value": false
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "value": true
@@ -5678,7 +5681,7 @@
         "insights_premium_initial_days_back": {
             "name": "insights_premium_initial_days_back",
             "type": "number",
-            "defaultValue": 3
+            "defaultValue": 7
         },
         "insights_unique_users_premium_enabled": {
             "name": "insights_unique_users_premium_enabled",
@@ -8165,6 +8168,11 @@
             "name": "rweb_mixed_media_uploads_cap",
             "type": "number",
             "defaultValue": 4
+        },
+        "rweb_multistream_enabled": {
+            "name": "rweb_multistream_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
