@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "70685f24dc86bfd87d801760e9d24789bc7b3bbe",
+        "feature_set_token": "d2a477cbf5bb28a1068ee7f3a7dfa9ebb81ef242",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -637,7 +637,7 @@
                 "value": true
             },
             "android_auto_advance_video_toggle_visible": {
-                "value": false
+                "value": true
             },
             "android_automated_copyright_content_matching": {
                 "value": true
@@ -872,9 +872,6 @@
             },
             "android_graphql_dark_read_verbose_msg_enabled": {
                 "value": false
-            },
-            "android_graphql_explore_enabled": {
-                "value": true
             },
             "android_graphql_skip_api_media_color_palette": {
                 "value": false
@@ -1294,7 +1291,7 @@
                 "value": true
             },
             "android_system_dns_synchronized_map_enabled": {
-                "value": false
+                "value": true
             },
             "android_system_dns_timeout_ms": {
                 "value": 15000.0
@@ -2460,7 +2457,7 @@
                 "value": false
             },
             "dm_edit_dms_overflow_menu_enabled": {
-                "value": false
+                "value": true
             },
             "dm_education_flags_prompt": {
                 "value": false
@@ -2517,7 +2514,7 @@
                 "value": 200.0
             },
             "dm_message_edit_enabled": {
-                "value": false
+                "value": true
             },
             "dm_reactions_config_active_reactions": {
                 "value": [
@@ -2765,7 +2762,7 @@
                 "value": false
             },
             "grok_android_native_history_enabled": {
-                "value": false
+                "value": true
             },
             "grok_android_native_media_view_enabled": {
                 "value": true
@@ -3556,7 +3553,7 @@
                 "value": true
             },
             "recruiting_android_job_tab": {
-                "value": false
+                "value": true
             },
             "recruiting_jobs_list_consumption_enabled": {
                 "value": true
@@ -3713,6 +3710,9 @@
             "search_features_safe_search_learn_more_help_link": {
                 "value": "https://support.twitter.com/articles/132700"
             },
+            "search_features_save_this_search_enabled": {
+                "value": false
+            },
             "search_graphql_migration_enabled": {
                 "value": false
             },
@@ -3724,6 +3724,9 @@
             },
             "settings_config_gdpr_consistency": {
                 "value": true
+            },
+            "settings_for_you_recommendation_enabled": {
+                "value": false
             },
             "settings_revamp_search_bar_enabled": {
                 "value": true
@@ -3920,6 +3923,9 @@
             "spaces_recording_enabled_by_default": {
                 "value": false
             },
+            "ssp_ads_android_tweet_view_reset_enabled": {
+                "value": true
+            },
             "ssp_ads_dsp_client_context_enabled": {
                 "value": false
             },
@@ -3929,14 +3935,14 @@
             "ssp_ads_google_dsp_immersive_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
+            "ssp_ads_google_dsp_immersive_client_only_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
+            },
             "ssp_ads_google_dsp_profile_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
-            },
-            "ssp_ads_google_dsp_spotlight_with_headline": {
-                "value": false
             },
             "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
@@ -3948,6 +3954,9 @@
                 "value": 3000.0
             },
             "ssp_ads_immersive": {
+                "value": false
+            },
+            "ssp_ads_immersive_client_only_integration": {
                 "value": false
             },
             "ssp_ads_log_errors": {
@@ -3973,6 +3982,9 @@
             },
             "ssp_ads_spotlight_ad_fetch_timeout_milliseconds": {
                 "value": 6000.0
+            },
+            "ssp_ads_spotlight_client_only_integration": {
+                "value": false
             },
             "ssp_ads_tweet_details": {
                 "value": false
@@ -4151,6 +4163,9 @@
                 "value": true
             },
             "subscriptions_marketing_page_display_monthly_price": {
+                "value": true
+            },
+            "subscriptions_premium_app_icons_halloween_enabled": {
                 "value": true
             },
             "subscriptions_premium_hub_enabled": {
@@ -4484,16 +4499,7 @@
             "tweet_view_constraint_layout_optimizations": {
                 "value": 265.0
             },
-            "tweet_with_visibility_results_parse_twvr_enabled": {
-                "value": true
-            },
             "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": {
-                "value": true
-            },
-            "tweet_with_visibility_results_prefer_gql_soft_interventions_enabled": {
-                "value": true
-            },
-            "tweet_with_visibility_results_prefer_gql_tweet_interstitials_enabled": {
                 "value": true
             },
             "tweetypie_unmention_optimization_enabled": {
@@ -4924,7 +4930,6 @@
     "experiment_names": [
         "ad_formats_summary_large_card_uc_migration_android_11404",
         "android_hd_vod_badge_15148",
-        "premium_upsell_home_timeline_mobile_web_16862",
         "android_use_payload_badge_count_9378",
         "android_transsion_badging_experiment_15156",
         "android_graphql_skip_api_profile_image_extensions_16230",
@@ -5132,7 +5137,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "80a28e13a11aae0df09e18a50ab62fb5a31a828b",
-        "experiments": "80a28e13a11aae0df09e18a50ab62fb5a31a828b"
+        "feature_switches": "fd3645cffea9e574875b3de89201c2e5dac224fe",
+        "experiments": "fd3645cffea9e574875b3de89201c2e5dac224fe"
     }
 }
