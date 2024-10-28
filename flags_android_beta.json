@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "5028ac6954fa81626638cbbc9db630aa0269576e",
+        "feature_set_token": "30ef646058d4660beeccc43a62a07e13a29beb19",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1291,7 +1291,7 @@
                 "value": true
             },
             "android_system_dns_synchronized_map_enabled": {
-                "value": false
+                "value": true
             },
             "android_system_dns_timeout_ms": {
                 "value": 15000.0
@@ -1522,7 +1522,7 @@
                 "value": true
             },
             "app_attest_guest_enabled": {
-                "value": false
+                "value": true
             },
             "app_attest_ocf_timeout_milliseconds": {
                 "value": 2000.0
@@ -2457,7 +2457,7 @@
                 "value": false
             },
             "dm_edit_dms_overflow_menu_enabled": {
-                "value": false
+                "value": true
             },
             "dm_education_flags_prompt": {
                 "value": false
@@ -2762,7 +2762,7 @@
                 "value": false
             },
             "grok_android_native_history_enabled": {
-                "value": false
+                "value": true
             },
             "grok_android_native_media_view_enabled": {
                 "value": true
@@ -3710,6 +3710,9 @@
             "search_features_safe_search_learn_more_help_link": {
                 "value": "https://support.twitter.com/articles/132700"
             },
+            "search_features_save_this_search_enabled": {
+                "value": false
+            },
             "search_graphql_migration_enabled": {
                 "value": false
             },
@@ -3721,6 +3724,9 @@
             },
             "settings_config_gdpr_consistency": {
                 "value": true
+            },
+            "settings_for_you_recommendation_enabled": {
+                "value": false
             },
             "settings_revamp_search_bar_enabled": {
                 "value": true
@@ -3929,14 +3935,14 @@
             "ssp_ads_google_dsp_immersive_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
+            "ssp_ads_google_dsp_immersive_client_only_ad_unit_id": {
+                "value": "/22849053685/twitter_native_ad"
+            },
             "ssp_ads_google_dsp_profile_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
-            },
-            "ssp_ads_google_dsp_spotlight_with_headline": {
-                "value": false
             },
             "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
@@ -3948,6 +3954,9 @@
                 "value": 3000.0
             },
             "ssp_ads_immersive": {
+                "value": false
+            },
+            "ssp_ads_immersive_client_only_integration": {
                 "value": false
             },
             "ssp_ads_log_errors": {
@@ -4157,7 +4166,7 @@
                 "value": true
             },
             "subscriptions_premium_app_icons_halloween_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_premium_hub_enabled": {
                 "value": true
@@ -4490,16 +4499,7 @@
             "tweet_view_constraint_layout_optimizations": {
                 "value": 265.0
             },
-            "tweet_with_visibility_results_parse_twvr_enabled": {
-                "value": true
-            },
             "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": {
-                "value": true
-            },
-            "tweet_with_visibility_results_prefer_gql_soft_interventions_enabled": {
-                "value": true
-            },
-            "tweet_with_visibility_results_prefer_gql_tweet_interstitials_enabled": {
                 "value": true
             },
             "tweetypie_unmention_optimization_enabled": {
@@ -4930,7 +4930,6 @@
     "experiment_names": [
         "ad_formats_summary_large_card_uc_migration_android_11404",
         "android_hd_vod_badge_15148",
-        "premium_upsell_home_timeline_mobile_web_16862",
         "android_use_payload_badge_count_9378",
         "android_transsion_badging_experiment_15156",
         "android_graphql_skip_api_profile_image_extensions_16230",
@@ -5138,7 +5137,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "7d5a7b49b4120f080588290a80a0232ca88ac083",
-        "experiments": "7d5a7b49b4120f080588290a80a0232ca88ac083"
+        "feature_switches": "8dde36c3018c878b99262683714c703b6e91bf62",
+        "experiments": "8dde36c3018c878b99262683714c703b6e91bf62"
     }
 }
