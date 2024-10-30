@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "56005ef65cea681c92aad5c7188696398d936a2a",
+    "feature_set_token": "338a3dced1b9dec29bfc604d909631126f06439f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1563,6 +1563,9 @@
         "responsive_web_live_commerce_enabled": {
             "value": false
         },
+        "responsive_web_live_screen_enabled": {
+            "value": false
+        },
         "responsive_web_locale_context_direction_enabled": {
             "value": true
         },
@@ -1805,6 +1808,9 @@
         },
         "responsive_web_tweet_analytics_video_metrics_v2_enabled": {
             "value": true
+        },
+        "responsive_web_tweet_drafts_threads_enabled": {
+            "value": false
         },
         "responsive_web_tweet_drafts_video_enabled": {
             "value": true
@@ -3263,6 +3269,15 @@
             "enumeration_values": [
                 "control",
                 "holdback"
+            ]
+        },
+        "analytics_promo_page_web_16990": {
+            "name": "analytics_promo_page_web_16990",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "full_blur",
+                "free_preview"
             ]
         },
         "arkose_challenge_open_app_dev": {
@@ -7319,6 +7334,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_live_screen_enabled": {
+            "name": "responsive_web_live_screen_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_locale_context_direction_enabled": {
             "name": "responsive_web_locale_context_direction_enabled",
             "type": "boolean",
@@ -7743,7 +7763,8 @@
         },
         "responsive_web_tweet_drafts_threads_enabled": {
             "name": "responsive_web_tweet_drafts_threads_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_twitter_article_character_limit": {
             "name": "responsive_web_twitter_article_character_limit",
