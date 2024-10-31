@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "338a3dced1b9dec29bfc604d909631126f06439f",
+    "feature_set_token": "c8af23b0f828a91c688967811f79330b72b4903b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1232,6 +1232,9 @@
         },
         "responsive_web_birdwatch_match_page_enabled": {
             "value": true
+        },
+        "responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff": {
+            "value": -1
         },
         "responsive_web_birdwatch_media_notes_enabled": {
             "value": true
@@ -6819,7 +6822,8 @@
         },
         "responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff": {
             "name": "responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff",
-            "type": "string"
+            "type": "number",
+            "defaultValue": -1
         },
         "responsive_web_birdwatch_netzdg_enabled": {
             "name": "responsive_web_birdwatch_netzdg_enabled",
@@ -8106,6 +8110,10 @@
             "name": "rweb_analytics_upsell_variant",
             "type": "string",
             "defaultValue": ""
+        },
+        "rweb_analytics_export_data_content_enabled": {
+            "name": "rweb_analytics_export_data_content_enabled",
+            "type": "string"
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
