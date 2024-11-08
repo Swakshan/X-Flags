@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "8d73935e70d6fb5875f0ca3eef7a5107291038fe",
+        "feature_set_token": "f5fde3fe5a68574dfbcd11a41beb6ac03d49c629",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -2442,7 +2442,7 @@
                 "value": true
             },
             "dm_android_send_messages_with_workmanager": {
-                "value": false
+                "value": true
             },
             "dm_conversation_labels_max_pinned_count": {
                 "value": 6.0
@@ -3932,9 +3932,6 @@
             "ssp_ads_google_dsp_immersive_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
-            "ssp_ads_google_dsp_immersive_client_only_ad_unit_id": {
-                "value": "/22849053685/twitter_native_ad"
-            },
             "ssp_ads_google_dsp_profile_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
@@ -3949,6 +3946,12 @@
             },
             "ssp_ads_google_native_ad_timeout_ms": {
                 "value": 3000.0
+            },
+            "ssp_ads_home_client_only_integration": {
+                "value": false
+            },
+            "ssp_ads_home_enabled": {
+                "value": false
             },
             "ssp_ads_immersive": {
                 "value": false
@@ -3971,6 +3974,9 @@
             "ssp_ads_profile": {
                 "value": false
             },
+            "ssp_ads_profile_client_only_integration_enabled": {
+                "value": false
+            },
             "ssp_ads_rtb_image_ad_item_enabled": {
                 "value": false
             },
@@ -3987,6 +3993,9 @@
                 "value": false
             },
             "ssp_ads_tweet_details": {
+                "value": false
+            },
+            "ssp_ads_tweet_details_client_only_integration": {
                 "value": false
             },
             "stateful_login_enabled": {
@@ -4882,7 +4891,7 @@
                 "value": 0.0
             },
             "xprofile_blocked_by_view_enabled": {
-                "value": false
+                "value": true
             },
             "xprofile_consumption_enabled": {
                 "value": true
@@ -5137,7 +5146,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "64c68bbcd1bc37e9c9b9f5fdae709ef06c13c9ce",
-        "experiments": "64c68bbcd1bc37e9c9b9f5fdae709ef06c13c9ce"
+        "feature_switches": "1756513fff852d537d4cd546a442aad4be9e084b",
+        "experiments": "1756513fff852d537d4cd546a442aad4be9e084b"
     }
 }
