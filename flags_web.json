@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e1adce2e461574d737af4a97e8c56841e504668b",
+    "feature_set_token": "bbcde70844ea982cb3670072bdb8c5bbc834648b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -648,11 +648,8 @@
         "explore_relaunch_enable_immersive_web_navigation_button": {
             "value": false
         },
-        "explore_relaunch_max_video_loop_count": {
-            "value": 2
-        },
         "explore_relaunch_max_video_loop_threshold_sec": {
-            "value": 6
+            "value": 5
         },
         "explore_relaunch_web_playback_bug_fix": {
             "value": true
@@ -5057,13 +5054,12 @@
         },
         "explore_relaunch_max_video_loop_count": {
             "name": "explore_relaunch_max_video_loop_count",
-            "type": "number",
-            "defaultValue": 2
+            "type": "string"
         },
         "explore_relaunch_max_video_loop_threshold_sec": {
             "name": "explore_relaunch_max_video_loop_threshold_sec",
             "type": "number",
-            "defaultValue": 6
+            "defaultValue": 5
         },
         "explore_relaunch_enable_auto_play": {
             "name": "explore_relaunch_enable_auto_play",
@@ -7346,6 +7342,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_web_results": {
+            "name": "responsive_web_grok_web_results",
+            "type": "string"
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -9311,6 +9311,10 @@
         },
         "subscriptions_feature_premium_people_search": {
             "name": "subscriptions_feature_premium_people_search",
+            "type": "string"
+        },
+        "subscriptions_feature_create_premium_content": {
+            "name": "subscriptions_feature_create_premium_content",
             "type": "string"
         },
         "subscriptions_feature_organization_affiliates": {
