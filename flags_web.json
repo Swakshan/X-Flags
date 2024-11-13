@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b10cb6979cefea9175411a0a6c1d31673f6b3aa4",
+    "feature_set_token": "23a804a4e57a549e6cba80c7dc0e559e532bb7de",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1536,6 +1536,9 @@
         "responsive_web_grok_robot_icon": {
             "value": false
         },
+        "responsive_web_grok_search_first": {
+            "value": false
+        },
         "responsive_web_grok_share_rendering_enabled": {
             "value": true
         },
@@ -1550,6 +1553,9 @@
         },
         "responsive_web_grok_v2_upsell_enabled": {
             "value": true
+        },
+        "responsive_web_grok_web_results": {
+            "value": false
         },
         "responsive_web_grok_webview_file_actions_enabled": {
             "value": false
@@ -7378,11 +7384,13 @@
         },
         "responsive_web_grok_web_results": {
             "name": "responsive_web_grok_web_results",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_search_first": {
             "name": "responsive_web_grok_search_first",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
