@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bbcde70844ea982cb3670072bdb8c5bbc834648b",
+    "feature_set_token": "7b191901a327bdf2a4b97cfef3bc251143ffef51",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1067,6 +1067,9 @@
         },
         "payments_risk_device_sdk_enabled": {
             "value": false
+        },
+        "premium_webview_paywall_offer_image_url": {
+            "value": "https://abs.twimg.com/images/anniversary-theme-image.png"
         },
         "premium_webview_paywall_offer_variant": {
             "value": "anniversary"
@@ -6420,7 +6423,8 @@
         },
         "premium_webview_paywall_offer_image_url": {
             "name": "premium_webview_paywall_offer_image_url",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "https://abs.twimg.com/images/anniversary-theme-image.png"
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -7344,6 +7348,10 @@
         },
         "responsive_web_grok_web_results": {
             "name": "responsive_web_grok_web_results",
+            "type": "string"
+        },
+        "responsive_web_grok_search_first": {
+            "name": "responsive_web_grok_search_first",
             "type": "string"
         },
         "responsive_web_hashtag_highlight_is_enabled": {
