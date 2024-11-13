@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7b191901a327bdf2a4b97cfef3bc251143ffef51",
+    "feature_set_token": "b10cb6979cefea9175411a0a6c1d31673f6b3aa4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -878,6 +878,18 @@
         },
         "ios_premium_paywall_preloaded_webview_pagesheet_modal": {
             "value": true
+        },
+        "japan_holidays_is_labor_thanks_giving_day": {
+            "value": false
+        },
+        "japan_holidays_labor_thanks_giving_day_message": {
+            "value": "\u3044\u3064\u3082\u304a\u4ed5\u4e8b\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u305f\u307e\u306b\u306f\u3086\u3063\u304f\u308a\u3057\u3066\u4e0b\u3055\u3044\u306d\u2615 \ud835\udd4f\u306e\u3054\u5229\u7528\u3082\u3044\u3064\u3082\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+        },
+        "japan_holidays_labor_thanks_giving_message_trigger": {
+            "value": [
+                "#\u52e4\u52b4\u611f\u8b1d",
+                "#\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+            ]
         },
         "krs_registration_enabled": {
             "value": false
@@ -5804,6 +5816,24 @@
             "name": "ios_premium_paywall_preloaded_webview_startup_preload_enabled",
             "type": "string"
         },
+        "japan_holidays_labor_thanks_giving_day_message": {
+            "name": "japan_holidays_labor_thanks_giving_day_message",
+            "type": "string",
+            "defaultValue": "\u3044\u3064\u3082\u304a\u4ed5\u4e8b\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u305f\u307e\u306b\u306f\u3086\u3063\u304f\u308a\u3057\u3066\u4e0b\u3055\u3044\u306d\u2615 \ud835\udd4f\u306e\u3054\u5229\u7528\u3082\u3044\u3064\u3082\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+        },
+        "japan_holidays_is_labor_thanks_giving_day": {
+            "name": "japan_holidays_is_labor_thanks_giving_day",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "japan_holidays_labor_thanks_giving_message_trigger": {
+            "name": "japan_holidays_labor_thanks_giving_message_trigger",
+            "type": "object",
+            "defaultValue": [
+                "#\u52e4\u52b4\u611f\u8b1d",
+                "#\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+            ]
+        },
         "krs_registration_enabled": {
             "name": "krs_registration_enabled",
             "type": "boolean",
@@ -9675,6 +9705,22 @@
             "name": "subscriptions_upsells_radar_video_url_mobile",
             "type": "string",
             "defaultValue": "https://abs.twimg.com/images/radar_promo_v2.mp4"
+        },
+        "subscriptions_upsells_dm_card_enabled": {
+            "name": "subscriptions_upsells_dm_card_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_dm_card_variant": {
+            "name": "subscriptions_upsells_dm_card_variant",
+            "type": "string"
+        },
+        "subscriptions_upsells_profile_card_enabled": {
+            "name": "subscriptions_upsells_profile_card_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_profile_card_variant": {
+            "name": "subscriptions_upsells_profile_card_variant",
+            "type": "string"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
