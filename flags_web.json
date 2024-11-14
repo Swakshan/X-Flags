@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "23a804a4e57a549e6cba80c7dc0e559e532bb7de",
+    "feature_set_token": "ab1c367f1009e0a64c9310021d6e786fa9ab3feb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1081,7 +1081,7 @@
             "value": false
         },
         "premium_webview_paywall_offer_image_url": {
-            "value": "https://abs.twimg.com/images/anniversary-theme-image.png"
+            "value": "https://abs.twimg.com/images/anniversary-theme-image-v2.png"
         },
         "premium_webview_paywall_offer_variant": {
             "value": "anniversary"
@@ -1258,7 +1258,7 @@
             "value": true
         },
         "responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff": {
-            "value": -1
+            "value": 2
         },
         "responsive_web_birdwatch_media_notes_enabled": {
             "value": true
@@ -1783,6 +1783,9 @@
             "value": true
         },
         "responsive_web_sidebar_ttf_enabled": {
+            "value": false
+        },
+        "responsive_web_signup_direct": {
             "value": false
         },
         "responsive_web_spud_enabled": {
@@ -2489,6 +2492,12 @@
         "subscriptions_upsells_analytics_profile_variant": {
             "value": "Impressions"
         },
+        "subscriptions_upsells_dm_card_enabled": {
+            "value": true
+        },
+        "subscriptions_upsells_dm_card_variant": {
+            "value": "thanksgiving"
+        },
         "subscriptions_upsells_get_verified_profile": {
             "value": false
         },
@@ -2500,6 +2509,12 @@
         },
         "subscriptions_upsells_premium_home_nav": {
             "value": "premium_upsell_upgrade"
+        },
+        "subscriptions_upsells_profile_card_enabled": {
+            "value": true
+        },
+        "subscriptions_upsells_profile_card_variant": {
+            "value": "anniversary"
         },
         "subscriptions_upsells_radar_video_url_desktop": {
             "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
@@ -5132,16 +5147,16 @@
             "name": "explore_relaunch_broadcast_is_live_messages_threshold_date_fix_enabled",
             "type": "string"
         },
-        "explore_relaunch__broadcast_live_chat_annotated_and_highlighted_replies_enabled": {
-            "name": "explore_relaunch__broadcast_live_chat_annotated_and_highlighted_replies_enabled",
+        "explore_relaunch_broadcast_live_chat_annotated_and_highlighted_replies_enabled": {
+            "name": "explore_relaunch_broadcast_live_chat_annotated_and_highlighted_replies_enabled",
             "type": "string"
         },
         "explore_relaunch_broadcast_chat_history_error_ignore_enabled": {
             "name": "explore_relaunch_broadcast_chat_history_error_ignore_enabled",
             "type": "string"
         },
-        "explore_relaunch_explore_relaunch_broadcast_chat_history_error_ignore_for_live_enabled": {
-            "name": "explore_relaunch_explore_relaunch_broadcast_chat_history_error_ignore_for_live_enabled",
+        "explore_relaunch_broadcast_chat_history_error_ignore_for_live_enabled": {
+            "name": "explore_relaunch_broadcast_chat_history_error_ignore_for_live_enabled",
             "type": "string"
         },
         "focused_timeline_actions_onboarding_likes": {
@@ -6460,7 +6475,7 @@
         "premium_webview_paywall_offer_image_url": {
             "name": "premium_webview_paywall_offer_image_url",
             "type": "string",
-            "defaultValue": "https://abs.twimg.com/images/anniversary-theme-image.png"
+            "defaultValue": "https://abs.twimg.com/images/anniversary-theme-image-v2.png"
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -6930,7 +6945,7 @@
         "responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff": {
             "name": "responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff",
             "type": "number",
-            "defaultValue": -1
+            "defaultValue": 2
         },
         "responsive_web_birdwatch_netzdg_enabled": {
             "name": "responsive_web_birdwatch_netzdg_enabled",
@@ -7392,6 +7407,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_post_understanding_button_enabled": {
+            "name": "responsive_web_grok_post_understanding_button_enabled",
+            "type": "string"
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -7762,6 +7781,11 @@
         },
         "responsive_web_sidebar_ttf_enabled": {
             "name": "responsive_web_sidebar_ttf_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_signup_direct": {
+            "name": "responsive_web_signup_direct",
             "type": "boolean",
             "defaultValue": false
         },
@@ -9716,19 +9740,23 @@
         },
         "subscriptions_upsells_dm_card_enabled": {
             "name": "subscriptions_upsells_dm_card_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "subscriptions_upsells_dm_card_variant": {
             "name": "subscriptions_upsells_dm_card_variant",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "thanksgiving"
         },
         "subscriptions_upsells_profile_card_enabled": {
             "name": "subscriptions_upsells_profile_card_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "subscriptions_upsells_profile_card_variant": {
             "name": "subscriptions_upsells_profile_card_variant",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "anniversary"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
