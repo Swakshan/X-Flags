@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ab1c367f1009e0a64c9310021d6e786fa9ab3feb",
+    "feature_set_token": "ce7260ebb4a06f20b37eba55c3d441c040e5d394",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1530,6 +1530,9 @@
         "responsive_web_grok_post_image_understanding_enabled": {
             "value": false
         },
+        "responsive_web_grok_post_understanding_button_enabled": {
+            "value": false
+        },
         "responsive_web_grok_prompt_edit_enabled": {
             "value": true
         },
@@ -1765,6 +1768,9 @@
             "value": false
         },
         "responsive_web_report_page_not_found": {
+            "value": false
+        },
+        "responsive_web_scheduling_threads_enabled": {
             "value": false
         },
         "responsive_web_scroller_top_positioning_enabled": {
@@ -5159,6 +5165,10 @@
             "name": "explore_relaunch_broadcast_chat_history_error_ignore_for_live_enabled",
             "type": "string"
         },
+        "explore_relaunch_forward_buffering_indication_enabled": {
+            "name": "explore_relaunch_forward_buffering_indication_enabled",
+            "type": "string"
+        },
         "focused_timeline_actions_onboarding_likes": {
             "name": "focused_timeline_actions_onboarding_likes",
             "type": "number",
@@ -7409,7 +7419,8 @@
         },
         "responsive_web_grok_post_understanding_button_enabled": {
             "name": "responsive_web_grok_post_understanding_button_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -7751,6 +7762,23 @@
         },
         "responsive_web_reply_storm_enabled": {
             "name": "responsive_web_reply_storm_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_scheduling_enabled": {
+            "name": "responsive_web_scheduling_enabled",
+            "type": "string"
+        },
+        "responsive_web_scheduling_edit_enabled": {
+            "name": "responsive_web_scheduling_edit_enabled",
+            "type": "string"
+        },
+        "responsive_web_scheduling_entry_point": {
+            "name": "responsive_web_scheduling_entry_point",
+            "type": "string"
+        },
+        "responsive_web_scheduling_threads_enabled": {
+            "name": "responsive_web_scheduling_threads_enabled",
             "type": "boolean",
             "defaultValue": false
         },
