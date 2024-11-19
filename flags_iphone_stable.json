@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "fd509267606e0b66255b0d6633321bcf03f15c37",
+        "feature_set_token": "21a7a07c26b5441449c41c15b00c14a32458486e",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -1900,9 +1900,15 @@
                 "value": 5.0
             },
             "explore_relaunch_broadcast_chat_history_error_ignore_enabled": {
-                "value": false
+                "value": true
+            },
+            "explore_relaunch_broadcast_chat_history_error_ignore_for_live_enabled": {
+                "value": true
             },
             "explore_relaunch_broadcast_is_live_messages_threshold_date_fix_enabled": {
+                "value": true
+            },
+            "explore_relaunch_broadcast_live_chat_annotated_and_highlighted_replies_enabled": {
                 "value": true
             },
             "explore_relaunch_broadcast_live_chat_usernames_only_enabled": {
@@ -1912,7 +1918,7 @@
                 "value": true
             },
             "explore_relaunch_broadcast_muted_live_messages_placeholder_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_broadcast_support_enabled": {
                 "value": true
@@ -2008,13 +2014,16 @@
                 "value": true
             },
             "grok_inline_sharecard_image_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_better_scrolling_enabled": {
                 "value": true
             },
             "grok_ios_enhanced_markdown_enabled": {
                 "value": true
+            },
+            "grok_ios_free_enabled": {
+                "value": false
             },
             "grok_ios_image_prompts_enabled": {
                 "value": true
@@ -2437,12 +2446,6 @@
                 "value": 2.0
             },
             "immersive_ios_v2_ui_enabled": {
-                "value": false
-            },
-            "immersive_ios_v2_ui_preload_replies_after_seconds": {
-                "value": 1.0
-            },
-            "immersive_ios_v2_ui_preload_replies_enabled": {
                 "value": false
             },
             "immersive_ios_v2_ui_with_tab_bar_enabled": {
@@ -2928,7 +2931,7 @@
                 "value": false
             },
             "ios_profile_analytics_upsell_impressions_threshold": {
-                "value": 20.0
+                "value": 50.0
             },
             "ios_profile_analytics_upsell_reappear_after_seconds": {
                 "value": 345600.0
@@ -9468,7 +9471,7 @@
                 "value": false
             },
             "subscriptions_inapp_grok_default_mode": {
-                "value": "fun"
+                "value": "regular"
             },
             "subscriptions_inapp_grok_upsell_enabled": {
                 "value": true
@@ -10331,7 +10334,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "63e8b1c778cee5ccca8a1ec15a29d5569af0c2d1",
-        "experiments": "63e8b1c778cee5ccca8a1ec15a29d5569af0c2d1"
+        "feature_switches": "9aaa8459b08584f418cabdd7fa5f5929b4db262a",
+        "experiments": "9aaa8459b08584f418cabdd7fa5f5929b4db262a"
     }
 }
