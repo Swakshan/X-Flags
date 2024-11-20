@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0d3e84ca00fd51af2178d25c4432e94ebb3bf0cd",
+    "feature_set_token": "5e6a2e284caee6f2fe6d58cf47a0e7fe6c9a2cdc",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -890,8 +890,10 @@
         },
         "japan_holidays_labor_thanks_giving_message_trigger": {
             "value": [
-                "#\u52e4\u52b4\u611f\u8b1d",
-                "#\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+                "\u52e4\u52b4\u611f\u8b1d",
+                "\u4ed5\u4e8b",
+                "\u52b4\u50cd",
+                "\u50cd\u304f"
             ]
         },
         "krs_registration_enabled": {
@@ -1539,6 +1541,9 @@
         "responsive_web_grok_in_app_learn_more": {
             "value": "https://x.com/xai/status/1823597788573098215"
         },
+        "responsive_web_grok_multimedia_results": {
+            "value": false
+        },
         "responsive_web_grok_opt_out_enabled": {
             "value": true
         },
@@ -2132,6 +2137,9 @@
         },
         "rweb_spaces_next_codec_enabled": {
             "value": true
+        },
+        "rweb_ssp_ads_enabled": {
+            "value": false
         },
         "rweb_timeline_inline_show_more_enabled": {
             "value": false
@@ -5886,8 +5894,10 @@
             "name": "japan_holidays_labor_thanks_giving_message_trigger",
             "type": "object",
             "defaultValue": [
-                "#\u52e4\u52b4\u611f\u8b1d",
-                "#\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+                "\u52e4\u52b4\u611f\u8b1d",
+                "\u4ed5\u4e8b",
+                "\u52b4\u50cd",
+                "\u50cd\u304f"
             ]
         },
         "krs_registration_enabled": {
@@ -7482,6 +7492,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_multimedia_results": {
+            "name": "responsive_web_grok_multimedia_results",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -8535,6 +8550,11 @@
             "name": "rweb_spaces_next_codec_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_ssp_ads_enabled": {
+            "name": "rweb_ssp_ads_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_timeline_inline_show_more_enabled": {
             "name": "rweb_timeline_inline_show_more_enabled",
