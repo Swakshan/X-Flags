@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "09e4e642a711268d77a7e912e32a895f88c551d3",
+        "feature_set_token": "c2ff525a1176676e7bcb3416d30f37b8795be172",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3043,6 +3043,18 @@
             "include_blocked_by_and_blocking_in_requests_enabled": {
                 "value": true
             },
+            "japan_holidays_is_labor_thanks_giving_day": {
+                "value": false
+            },
+            "japan_holidays_labor_thanks_giving_day_message": {
+                "value": "\u3044\u3064\u3082\u304a\u4ed5\u4e8b\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u305f\u307e\u306b\u306f\u3086\u3063\u304f\u308a\u3057\u3066\u4e0b\u3055\u3044\u306d\u2615 \ud835\udd4f\u306e\u3054\u5229\u7528\u3082\u3044\u3064\u3082\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+            },
+            "japan_holidays_labor_thanks_giving_message_trigger": {
+                "value": [
+                    "#\u52e4\u52b4\u611f\u8b1d",
+                    "#\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+                ]
+            },
             "jump_back_home_enabled": {
                 "value": true
             },
@@ -3953,10 +3965,16 @@
             "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
-            "ssp_ads_google_native_ad_enabled": {
+            "ssp_ads_google_native_ad_repository_scribe_enabled": {
                 "value": false
             },
             "ssp_ads_google_native_ad_timeout_ms": {
+                "value": 3000.0
+            },
+            "ssp_ads_google_native_ad_timeout_ms_immersive": {
+                "value": 3000.0
+            },
+            "ssp_ads_google_native_ad_timeout_ms_tweet_details": {
                 "value": 3000.0
             },
             "ssp_ads_home_client_only_integration": {
@@ -3987,9 +4005,6 @@
                 "value": false
             },
             "ssp_ads_profile_client_only_integration_enabled": {
-                "value": false
-            },
-            "ssp_ads_rtb_image_ad_item_enabled": {
                 "value": false
             },
             "ssp_ads_spotlight": {
@@ -4183,7 +4198,7 @@
             "subscriptions_marketing_page_display_monthly_price": {
                 "value": true
             },
-            "subscriptions_premium_app_icons_halloween_enabled": {
+            "subscriptions_premium_app_icons_thanksgiving_enabled": {
                 "value": true
             },
             "subscriptions_premium_hub_enabled": {
@@ -5051,7 +5066,6 @@
         "viewcounts_everywhere_16084",
         "media_quick_reply_8079",
         "android_dynamic_ntab_14305",
-        "get_verified_profile_upsell_16854",
         "android_o_clear_notifications_on_ntab_impression_8473",
         "android_preloaded_notifications_12303",
         "project_friday_brazil_turkey_11604",
@@ -5155,7 +5169,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "fc73befad77c889dd5bfa3f44680d7b730923697",
-        "experiments": "fc73befad77c889dd5bfa3f44680d7b730923697"
+        "feature_switches": "67af7d882634d7552c7989dba56a7f409252b49e",
+        "experiments": "67af7d882634d7552c7989dba56a7f409252b49e"
     }
 }
