@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "73fd0d8f2612b8f3be3e4b028684a4a143515450",
+    "feature_set_token": "059507f50bb8a1967746b929951900e9f8234038",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -883,7 +883,7 @@
             "value": true
         },
         "japan_holidays_is_labor_thanks_giving_day": {
-            "value": false
+            "value": true
         },
         "japan_holidays_labor_thanks_giving_day_message": {
             "value": "\u6bce\u65e5\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u5fd9\u3057\u3044\u65e5\u3005\u306e\u4e2d\u3067\u3082\u3001X\u3067\u606f\u629c\u304d\u3057\u3066\u304f\u3060\u3055\u3044\u306d\u2615 \u3044\u3064\u3082\u3054\u5229\u7528\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d"
@@ -893,7 +893,8 @@
                 "\u52e4\u52b4\u611f\u8b1d",
                 "\u4ed5\u4e8b",
                 "\u52b4\u50cd",
-                "\u50cd\u304f"
+                "\u50cd\u304f",
+                "\u52e4\u52b4"
             ]
         },
         "krs_registration_enabled": {
@@ -1980,7 +1981,7 @@
             "value": true
         },
         "responsive_web_verified_organizations_intercom_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_verified_organizations_invoice_enabled": {
             "value": false
@@ -5913,7 +5914,7 @@
         "japan_holidays_is_labor_thanks_giving_day": {
             "name": "japan_holidays_is_labor_thanks_giving_day",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "japan_holidays_labor_thanks_giving_message_trigger": {
             "name": "japan_holidays_labor_thanks_giving_message_trigger",
@@ -5922,7 +5923,8 @@
                 "\u52e4\u52b4\u611f\u8b1d",
                 "\u4ed5\u4e8b",
                 "\u52b4\u50cd",
-                "\u50cd\u304f"
+                "\u50cd\u304f",
+                "\u52e4\u52b4"
             ]
         },
         "krs_registration_enabled": {
@@ -8293,7 +8295,7 @@
         "responsive_web_verified_organizations_intercom_enabled": {
             "name": "responsive_web_verified_organizations_intercom_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_verified_organizations_new_signup_enabled": {
             "name": "responsive_web_verified_organizations_new_signup_enabled",
@@ -8407,6 +8409,10 @@
             "name": "rweb_analytics_export_data_content_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_analytics_xweb_overview_enabled": {
+            "name": "rweb_analytics_xweb_overview_enabled",
+            "type": "string"
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
