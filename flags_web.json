@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5e6a2e284caee6f2fe6d58cf47a0e7fe6c9a2cdc",
+    "feature_set_token": "73fd0d8f2612b8f3be3e4b028684a4a143515450",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -886,7 +886,7 @@
             "value": false
         },
         "japan_holidays_labor_thanks_giving_day_message": {
-            "value": "\u3044\u3064\u3082\u304a\u4ed5\u4e8b\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u305f\u307e\u306b\u306f\u3086\u3063\u304f\u308a\u3057\u3066\u4e0b\u3055\u3044\u306d\u2615 \ud835\udd4f\u306e\u3054\u5229\u7528\u3082\u3044\u3064\u3082\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+            "value": "\u6bce\u65e5\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u5fd9\u3057\u3044\u65e5\u3005\u306e\u4e2d\u3067\u3082\u3001X\u3067\u606f\u629c\u304d\u3057\u3066\u304f\u3060\u3055\u3044\u306d\u2615 \u3044\u3064\u3082\u3054\u5229\u7528\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d"
         },
         "japan_holidays_labor_thanks_giving_message_trigger": {
             "value": [
@@ -1547,6 +1547,9 @@
         "responsive_web_grok_opt_out_enabled": {
             "value": true
         },
+        "responsive_web_grok_pdf_upload_enabled": {
+            "value": false
+        },
         "responsive_web_grok_post_image_understanding_enabled": {
             "value": false
         },
@@ -1566,7 +1569,7 @@
             "value": true
         },
         "responsive_web_grok_show_citations": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_text_selection_enabled": {
             "value": false
@@ -2491,6 +2494,12 @@
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
         },
+        "subscriptions_marketing_page_offer_copy_enabled": {
+            "value": false
+        },
+        "subscriptions_marketing_page_offer_ends_at_msec": {
+            "value": 1733198400000.0
+        },
         "subscriptions_mute_ad_upsell_enabled": {
             "value": true
         },
@@ -3337,6 +3346,22 @@
             "name": "ad_indicator_placement_16481",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "ad_spacing_android_exp_17017": {
+            "name": "ad_spacing_android_exp_17017",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "smaller_ad_space_android"
+            ]
+        },
+        "ad_spacing_ios_exp_17016": {
+            "name": "ad_spacing_ios_exp_17016",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "smaller_ad_space_ios"
+            ]
         },
         "ads_spacing_client_fallback_minimum_spacing": {
             "name": "ads_spacing_client_fallback_minimum_spacing",
@@ -5883,7 +5908,7 @@
         "japan_holidays_labor_thanks_giving_day_message": {
             "name": "japan_holidays_labor_thanks_giving_day_message",
             "type": "string",
-            "defaultValue": "\u3044\u3064\u3082\u304a\u4ed5\u4e8b\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u305f\u307e\u306b\u306f\u3086\u3063\u304f\u308a\u3057\u3066\u4e0b\u3055\u3044\u306d\u2615 \ud835\udd4f\u306e\u3054\u5229\u7528\u3082\u3044\u3064\u3082\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+            "defaultValue": "\u6bce\u65e5\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u5fd9\u3057\u3044\u65e5\u3005\u306e\u4e2d\u3067\u3082\u3001X\u3067\u606f\u629c\u304d\u3057\u3066\u304f\u3060\u3055\u3044\u306d\u2615 \u3044\u3064\u3082\u3054\u5229\u7528\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d"
         },
         "japan_holidays_is_labor_thanks_giving_day": {
             "name": "japan_holidays_is_labor_thanks_giving_day",
@@ -7494,10 +7519,15 @@
         "responsive_web_grok_show_citations": {
             "name": "responsive_web_grok_show_citations",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_multimedia_results": {
             "name": "responsive_web_grok_multimedia_results",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_pdf_upload_enabled": {
+            "name": "responsive_web_grok_pdf_upload_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -9734,10 +9764,24 @@
         },
         "subscriptions_marketing_page_offer_copy_enabled": {
             "name": "subscriptions_marketing_page_offer_copy_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_shorter_disclaimer_enabled": {
             "name": "subscriptions_marketing_page_shorter_disclaimer_enabled",
+            "type": "string"
+        },
+        "subscriptions_marketing_page_offer_header_enabled": {
+            "name": "subscriptions_marketing_page_offer_header_enabled",
+            "type": "string"
+        },
+        "subscriptions_marketing_page_offer_ends_at_msec": {
+            "name": "subscriptions_marketing_page_offer_ends_at_msec",
+            "type": "number",
+            "defaultValue": 1733198400000.0
+        },
+        "subscriptions_marketing_page_offer_thanksgiving_enabled": {
+            "name": "subscriptions_marketing_page_offer_thanksgiving_enabled",
             "type": "string"
         },
         "subscriptions_premium_experiment_nav_text": {
