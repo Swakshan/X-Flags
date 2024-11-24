@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7f7c5c8befa1ce9a1d8fb334fe88d096afb4f87e",
+    "feature_set_token": "64189e2055f50e5db2f6b4baa79c73093af2898d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1533,6 +1533,9 @@
         "responsive_web_grok_file_upload_enabled": {
             "value": true
         },
+        "responsive_web_grok_focus_mode": {
+            "value": false
+        },
         "responsive_web_grok_general_availability": {
             "value": false
         },
@@ -1552,7 +1555,7 @@
             "value": true
         },
         "responsive_web_grok_pdf_upload_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_post_image_understanding_enabled": {
             "value": false
@@ -3359,22 +3362,6 @@
                 "ad_min_space_2",
                 "ad_min_space_1",
                 "ad_min_space_0"
-            ]
-        },
-        "ad_spacing_android_exp_17017": {
-            "name": "ad_spacing_android_exp_17017",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "smaller_ad_space_android"
-            ]
-        },
-        "ad_spacing_ios_exp_17016": {
-            "name": "ad_spacing_ios_exp_17016",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "smaller_ad_space_ios"
             ]
         },
         "ads_spacing_client_fallback_minimum_spacing": {
@@ -7544,12 +7531,21 @@
         "responsive_web_grok_pdf_upload_enabled": {
             "name": "responsive_web_grok_pdf_upload_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_backend_prompts_enabled": {
             "name": "responsive_web_grok_backend_prompts_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_focus_mode": {
+            "name": "responsive_web_grok_focus_mode",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_start_title_experiment_enabled": {
+            "name": "responsive_web_grok_start_title_experiment_enabled",
+            "type": "string"
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
