@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6d84bd0702ba85f92446424242c51cb267daa9a2",
+    "feature_set_token": "dcc4b2b1e9763fc7ad38c846f18dd6f6ad85bcf3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -883,7 +883,7 @@
             "value": true
         },
         "japan_holidays_is_labor_thanks_giving_day": {
-            "value": true
+            "value": false
         },
         "japan_holidays_labor_thanks_giving_day_message": {
             "value": "\u6bce\u65e5\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u5fd9\u3057\u3044\u65e5\u3005\u306e\u4e2d\u3067\u3082\u3001X\u3067\u606f\u629c\u304d\u3057\u3066\u304f\u3060\u3055\u3044\u306d\u2615 \u3044\u3064\u3082\u3054\u5229\u7528\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d"
@@ -2504,11 +2504,11 @@
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
         },
-        "subscriptions_marketing_page_offer_copy_enabled": {
-            "value": false
-        },
         "subscriptions_marketing_page_offer_ends_at_msec": {
             "value": 1733198400000.0
+        },
+        "subscriptions_marketing_page_web_thanksgiving_design": {
+            "value": false
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "value": true
@@ -5917,7 +5917,7 @@
         "japan_holidays_is_labor_thanks_giving_day": {
             "name": "japan_holidays_is_labor_thanks_giving_day",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "japan_holidays_labor_thanks_giving_message_trigger": {
             "name": "japan_holidays_labor_thanks_giving_message_trigger",
@@ -9788,8 +9788,7 @@
         },
         "subscriptions_marketing_page_offer_copy_enabled": {
             "name": "subscriptions_marketing_page_offer_copy_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "subscriptions_marketing_page_shorter_disclaimer_enabled": {
             "name": "subscriptions_marketing_page_shorter_disclaimer_enabled",
@@ -9807,6 +9806,11 @@
         "subscriptions_marketing_page_offer_thanksgiving_enabled": {
             "name": "subscriptions_marketing_page_offer_thanksgiving_enabled",
             "type": "string"
+        },
+        "subscriptions_marketing_page_web_thanksgiving_design": {
+            "name": "subscriptions_marketing_page_web_thanksgiving_design",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
