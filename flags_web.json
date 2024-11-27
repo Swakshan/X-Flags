@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f69f10d4eacd5b994b48c241f868d476c3b73b56",
+    "feature_set_token": "cf508baee4f4eda51af2379ef6774289e06467c7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2085,6 +2085,9 @@
         "rweb_analytics_user_audience_page_enabled": {
             "value": true
         },
+        "rweb_analytics_verified_followers_enabled": {
+            "value": false
+        },
         "rweb_client_transaction_id_enabled": {
             "value": false
         },
@@ -2559,10 +2562,10 @@
             "value": "Impressions"
         },
         "subscriptions_upsells_dm_card_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_dm_card_variant": {
-            "value": ""
+            "value": "anniversary"
         },
         "subscriptions_upsells_get_verified_button_variant": {
             "value": ""
@@ -2580,10 +2583,10 @@
             "value": "discount_40_percent"
         },
         "subscriptions_upsells_profile_card_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_profile_card_variant": {
-            "value": ""
+            "value": "anniversary"
         },
         "subscriptions_upsells_radar_video_url_desktop": {
             "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
@@ -5393,6 +5396,15 @@
                 "treatment"
             ]
         },
+        "grok_canada_analyze_button_rollout_17023": {
+            "name": "grok_canada_analyze_button_rollout_17023",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "free",
+                "free_with_button"
+            ]
+        },
         "grok_upsell_hold_back_16664": {
             "name": "grok_upsell_hold_back_16664",
             "type": "experiment",
@@ -6372,9 +6384,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment_5",
-                "treatment_10",
-                "treatment_20"
+                "treatment"
             ]
         },
         "monetization_premium_home_nav_upsell_global_16864": {
@@ -8470,7 +8480,8 @@
         },
         "rweb_analytics_verified_followers_enabled": {
             "name": "rweb_analytics_verified_followers_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
@@ -9890,6 +9901,10 @@
             "name": "subscriptions_premium_hub_people_search_block_enabled",
             "type": "string"
         },
+        "subscriptions_premium_hub_feedback_community_block_enabled": {
+            "name": "subscriptions_premium_hub_feedback_community_block_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "string"
@@ -9994,22 +10009,22 @@
         "subscriptions_upsells_dm_card_enabled": {
             "name": "subscriptions_upsells_dm_card_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_dm_card_variant": {
             "name": "subscriptions_upsells_dm_card_variant",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "anniversary"
         },
         "subscriptions_upsells_profile_card_enabled": {
             "name": "subscriptions_upsells_profile_card_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_profile_card_variant": {
             "name": "subscriptions_upsells_profile_card_variant",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "anniversary"
         },
         "subscriptions_upsells_get_verified_button_variant": {
             "name": "subscriptions_upsells_get_verified_button_variant",
