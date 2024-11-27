@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "e3aafd38d06c2db2b735ebc8a80e7abcfecd7625",
+        "feature_set_token": "bde6eaef2f743bf916b5e2c6b44d43518fa77ac6",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3056,14 +3056,15 @@
                 "value": false
             },
             "japan_holidays_labor_thanks_giving_day_message": {
-                "value": "\u3044\u3064\u3082\u304a\u4ed5\u4e8b\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u305f\u307e\u306b\u306f\u3086\u3063\u304f\u308a\u3057\u3066\u4e0b\u3055\u3044\u306d\u2615 \ud835\udd4f\u306e\u3054\u5229\u7528\u3082\u3044\u3064\u3082\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d\u306e\u65e5"
+                "value": "\u6bce\u65e5\u304a\u75b2\u308c\u69d8\u3067\u3059\u3002\u5fd9\u3057\u3044\u65e5\u3005\u306e\u4e2d\u3067\u3082\u3001X\u3067\u606f\u629c\u304d\u3057\u3066\u304f\u3060\u3055\u3044\u306d\u2615 \u3044\u3064\u3082\u3054\u5229\u7528\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83e\udef6 #\u52e4\u52b4\u611f\u8b1d"
             },
             "japan_holidays_labor_thanks_giving_message_trigger": {
                 "value": [
                     "\u52e4\u52b4\u611f\u8b1d",
                     "\u4ed5\u4e8b",
                     "\u52b4\u50cd",
-                    "\u50cd\u304f"
+                    "\u50cd\u304f",
+                    "\u52e4\u52b4"
                 ]
             },
             "jump_back_home_enabled": {
@@ -3976,6 +3977,15 @@
             "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
             },
+            "ssp_ads_google_native_ad_dsa_report_content_url": {
+                "value": ""
+            },
+            "ssp_ads_google_native_ad_dsa_report_enabled": {
+                "value": false
+            },
+            "ssp_ads_google_native_ad_report_enabled": {
+                "value": false
+            },
             "ssp_ads_google_native_ad_repository_scribe_enabled": {
                 "value": false
             },
@@ -4195,10 +4205,10 @@
                 "value": ""
             },
             "subscriptions_management_in_app_cancel_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_marketing_page_button_detail_text_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_marketing_page_disable_new_subscriptions": {
                 "value": false
@@ -4231,7 +4241,7 @@
                 "value": true
             },
             "subscriptions_premium_tiers_switching_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_product_feature_list_api_enabled": {
                 "value": false
@@ -4264,7 +4274,7 @@
                 "value": 2.0
             },
             "subscriptions_upsells_premium_home_nav": {
-                "value": "premium_upsell_upgrade"
+                "value": "premium_upsell_percent_off"
             },
             "subscriptions_verification_info_enabled": {
                 "value": true
@@ -5018,6 +5028,7 @@
         "android_notification_drawer_limit_13128",
         "arabic_toxic_reply_nudge_14746",
         "customer_journey_loggedin_incremental_holdback_2022h1_12420",
+        "ad_spacing_0123_exp_17019",
         "android_tweet_detail_activity_tweet_view_holder_pool_enabled_15268",
         "android_youtube_card_16442",
         "media_selector_ordered_numbers_14598",
@@ -5183,7 +5194,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "cb355f3427ce01c1c91799c7f66578a29d17e3aa",
-        "experiments": "cb355f3427ce01c1c91799c7f66578a29d17e3aa"
+        "feature_switches": "8a4a0417bb147d9ae03f25b4923dddbaee8c2a02",
+        "experiments": "8a4a0417bb147d9ae03f25b4923dddbaee8c2a02"
     }
 }
