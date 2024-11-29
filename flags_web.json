@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f366e3844c7362a45f30c3e61311caf7c55e3214",
+    "feature_set_token": "e18046a98c5b23fdeba3e01c340790a22d2f202a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1119,10 +1119,10 @@
         "professional_launchpad_upload_address_book": {
             "value": true
         },
-        "profile_label_improvements_pcf_account_label_enabled": {
+        "profile_label_improvements_pcf_label_in_post_enabled": {
             "value": false
         },
-        "profile_label_improvements_pcf_account_settings_enabled": {
+        "profile_label_improvements_pcf_settings_enabled": {
             "value": false
         },
         "promoted_badge_placement_position": {
@@ -1525,7 +1525,7 @@
             "value": false
         },
         "responsive_web_grok_continue_in_grok_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_delete_conversations_enabled": {
             "value": true
@@ -1537,7 +1537,7 @@
             "value": true
         },
         "responsive_web_grok_file_max_size": {
-            "value": 5242880
+            "value": 20971520
         },
         "responsive_web_grok_file_upload_enabled": {
             "value": true
@@ -6656,17 +6656,16 @@
         },
         "profile_label_improvements_pcf_account_label_enabled": {
             "name": "profile_label_improvements_pcf_account_label_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "profile_label_improvements_pcf_account_settings_enabled": {
             "name": "profile_label_improvements_pcf_account_settings_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "profile_label_improvements_pcf_settings_enabled": {
             "name": "profile_label_improvements_pcf_settings_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "profile_label_improvements_pcf_label_in_profile_enabled": {
             "name": "profile_label_improvements_pcf_label_in_profile_enabled",
@@ -6674,7 +6673,8 @@
         },
         "profile_label_improvements_pcf_label_in_post_enabled": {
             "name": "profile_label_improvements_pcf_label_in_post_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "profile_label_improvements_pcf_edit_profile_enabled": {
             "name": "profile_label_improvements_pcf_edit_profile_enabled",
@@ -7494,7 +7494,7 @@
         "responsive_web_grok_file_max_size": {
             "name": "responsive_web_grok_file_max_size",
             "type": "number",
-            "defaultValue": 5242880
+            "defaultValue": 20971520
         },
         "responsive_web_grok_file_compression_enabled": {
             "name": "responsive_web_grok_file_compression_enabled",
@@ -7638,7 +7638,11 @@
         "responsive_web_grok_continue_in_grok_enabled": {
             "name": "responsive_web_grok_continue_in_grok_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
+        },
+        "responsive_web_grok_imggen_count": {
+            "name": "responsive_web_grok_imggen_count",
+            "type": "string"
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
