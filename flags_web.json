@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "530bc44b5e3fd61dcd5210c892d16447f57561cc",
+    "feature_set_token": "72be5f88f05ba6a132f3bf094439442bb3722548",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -506,6 +506,12 @@
         },
         "creator_subscriptions_connect_tab_enabled": {
             "value": true
+        },
+        "creator_subscriptions_eligibility_impressions": {
+            "value": 5000000.0
+        },
+        "creator_subscriptions_eligibility_verified_followers": {
+            "value": 2000.0
         },
         "creator_subscriptions_email_share_enabled": {
             "value": true
@@ -2589,7 +2595,7 @@
             "value": true
         },
         "subscriptions_upsells_premium_home_nav": {
-            "value": "expiring_soon"
+            "value": "last_chance"
         },
         "subscriptions_upsells_profile_card_enabled": {
             "value": true
@@ -2604,7 +2610,7 @@
             "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
         },
         "subscriptions_upsells_right_sidebar_variant": {
-            "value": "anniversary_expiring"
+            "value": "anniversary_ending"
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -4513,6 +4519,16 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "creator_subscriptions_eligibility_verified_followers": {
+            "name": "creator_subscriptions_eligibility_verified_followers",
+            "type": "number",
+            "defaultValue": 2000.0
+        },
+        "creator_subscriptions_eligibility_impressions": {
+            "name": "creator_subscriptions_eligibility_impressions",
+            "type": "number",
+            "defaultValue": 5000000.0
+        },
         "current_stack_follow_card_android_14711": {
             "name": "current_stack_follow_card_android_14711",
             "type": "experiment",
@@ -6399,10 +6415,7 @@
         "monetization_premium_home_nav_upsell_global_16864": {
             "name": "monetization_premium_home_nav_upsell_global_16864",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "upgrade"
-            ]
+            "enumeration_values": []
         },
         "mr_logged_out_web_notifs_15050": {
             "name": "mr_logged_out_web_notifs_15050",
@@ -10000,12 +10013,12 @@
         "subscriptions_upsells_right_sidebar_variant": {
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
-            "defaultValue": "anniversary_expiring"
+            "defaultValue": "anniversary_ending"
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
             "type": "string",
-            "defaultValue": "expiring_soon"
+            "defaultValue": "last_chance"
         },
         "subscriptions_upsells_get_verified_profile": {
             "name": "subscriptions_upsells_get_verified_profile",
