@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "bde6eaef2f743bf916b5e2c6b44d43518fa77ac6",
+        "feature_set_token": "cb9f221b3bf2526bf8c390d7d2fcdeccdd776657",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -981,6 +981,9 @@
             "android_iap_billing_offers_filter_enabled": {
                 "value": true
             },
+            "android_iap_billing_offers_phrase_enabled": {
+                "value": false
+            },
             "android_immersive_media_player_initial_mute_state": {
                 "value": false
             },
@@ -1281,9 +1284,6 @@
             "android_should_use_dnd_second_gap": {
                 "value": 900.0
             },
-            "android_similar_posts_enabled": {
-                "value": true
-            },
             "android_soft_intervention_tweet_disable_autoplay_enabled": {
                 "value": true
             },
@@ -1520,6 +1520,9 @@
             },
             "android_xiaomi_reflection_on_notification_object": {
                 "value": true
+            },
+            "app_attest_client_data_enabled": {
+                "value": false
             },
             "app_attest_enabled": {
                 "value": true
@@ -2326,6 +2329,9 @@
             },
             "communities_home_top_timeline_enabled": {
                 "value": true
+            },
+            "communities_moderation_log_enabled": {
+                "value": false
             },
             "communities_show_broadcast_option_in_composer": {
                 "value": true
@@ -3552,6 +3558,12 @@
             "profile_invalid_name_bio_regex": {
                 "value": "\\uD83D\\uDD10|\\uD83D\\uDD12|\\uD83D\\uDD0F|\\uD83D\\uDD13|\\u221A|\\u237B|\\u2713|\\u2705|\\uD83D\\uDD39|\\uD83D\\uDD37|\\uD83D\\uDCA0|\\uD83D\\uDD35|\\uD83D\\uDD18|([\\u2714\\u2611][\\ufe0e\\ufe0f]?)|[\\uFFFE\\uFEFF\\uFFFF\\u202A\\u202B\\u202C\\u202D\\u202E]|[<>\"]"
             },
+            "profile_label_improvements_pcf_account_label_enabled": {
+                "value": false
+            },
+            "profile_label_improvements_pcf_account_settings_enabled": {
+                "value": false
+            },
             "profile_persistent_follow_button_enabled": {
                 "value": true
             },
@@ -4208,7 +4220,7 @@
                 "value": false
             },
             "subscriptions_marketing_page_button_detail_text_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_marketing_page_disable_new_subscriptions": {
                 "value": false
@@ -4225,9 +4237,6 @@
             "subscriptions_premium_app_icons_thanksgiving_enabled": {
                 "value": true
             },
-            "subscriptions_premium_hub_enabled": {
-                "value": true
-            },
             "subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled": {
                 "value": false
             },
@@ -4241,12 +4250,6 @@
                 "value": true
             },
             "subscriptions_premium_tiers_switching_enabled": {
-                "value": false
-            },
-            "subscriptions_product_feature_list_api_enabled": {
-                "value": false
-            },
-            "subscriptions_product_feature_list_persistence_store_enabled": {
                 "value": false
             },
             "subscriptions_retrieve_claims_delay_millis": {
@@ -4274,7 +4277,7 @@
                 "value": 2.0
             },
             "subscriptions_upsells_premium_home_nav": {
-                "value": "premium_upsell_percent_off"
+                "value": "premium_upsell_upgrade"
             },
             "subscriptions_verification_info_enabled": {
                 "value": true
@@ -5194,7 +5197,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "8a4a0417bb147d9ae03f25b4923dddbaee8c2a02",
-        "experiments": "8a4a0417bb147d9ae03f25b4923dddbaee8c2a02"
+        "feature_switches": "0c53275b1b8e92f631804fae31ce6a6f1f6ad541",
+        "experiments": "0c53275b1b8e92f631804fae31ce6a6f1f6ad541"
     }
 }
