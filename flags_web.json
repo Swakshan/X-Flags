@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "72be5f88f05ba6a132f3bf094439442bb3722548",
+    "feature_set_token": "33fd407fdb63171eb76dd388698f18c62f3710cf",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -718,6 +718,9 @@
             "value": true
         },
         "gryphon_fps_tracking_enabled": {
+            "value": true
+        },
+        "gryphon_grok_per_column": {
             "value": true
         },
         "gryphon_hide_quick_promote": {
@@ -1562,6 +1565,9 @@
         },
         "responsive_web_grok_image_prompts_enabled": {
             "value": true
+        },
+        "responsive_web_grok_imggen_count": {
+            "value": 1
         },
         "responsive_web_grok_in_app_learn_more": {
             "value": "https://x.com/xai/status/1823597788573098215"
@@ -2481,7 +2487,7 @@
             "value": "https://x.com/messages/compose?recipient_id=1399766153053061121"
         },
         "subscriptions_gifting_premium_intro_copy_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": true
@@ -2577,7 +2583,7 @@
             "value": "Impressions"
         },
         "subscriptions_upsells_dm_card_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_dm_card_variant": {
             "value": "anniversary"
@@ -2595,10 +2601,10 @@
             "value": true
         },
         "subscriptions_upsells_premium_home_nav": {
-            "value": "last_chance"
+            "value": "premium_upsell_upgrade"
         },
         "subscriptions_upsells_profile_card_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_profile_card_variant": {
             "value": "anniversary"
@@ -2610,7 +2616,7 @@
             "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
         },
         "subscriptions_upsells_right_sidebar_variant": {
-            "value": "anniversary_ending"
+            "value": ""
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -5450,6 +5456,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "gryphon_grok_per_column": {
+            "name": "gryphon_grok_per_column",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "gryphon_hide_quick_promote": {
             "name": "gryphon_hide_quick_promote",
             "type": "boolean",
@@ -7655,7 +7666,8 @@
         },
         "responsive_web_grok_imggen_count": {
             "name": "responsive_web_grok_imggen_count",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 1
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -9694,7 +9706,7 @@
         "subscriptions_gifting_premium_intro_copy_enabled": {
             "name": "subscriptions_gifting_premium_intro_copy_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_inapp_grok": {
             "name": "subscriptions_inapp_grok",
@@ -10013,12 +10025,12 @@
         "subscriptions_upsells_right_sidebar_variant": {
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
-            "defaultValue": "anniversary_ending"
+            "defaultValue": ""
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
             "type": "string",
-            "defaultValue": "last_chance"
+            "defaultValue": "premium_upsell_upgrade"
         },
         "subscriptions_upsells_get_verified_profile": {
             "name": "subscriptions_upsells_get_verified_profile",
@@ -10070,7 +10082,7 @@
         "subscriptions_upsells_dm_card_enabled": {
             "name": "subscriptions_upsells_dm_card_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_dm_card_variant": {
             "name": "subscriptions_upsells_dm_card_variant",
@@ -10080,7 +10092,7 @@
         "subscriptions_upsells_profile_card_enabled": {
             "name": "subscriptions_upsells_profile_card_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_profile_card_variant": {
             "name": "subscriptions_upsells_profile_card_variant",
@@ -11822,6 +11834,10 @@
         },
         "xprofile_jetfuel_enabled": {
             "name": "xprofile_jetfuel_enabled",
+            "type": "string"
+        },
+        "xprofile_profile_button_enabled": {
+            "name": "xprofile_profile_button_enabled",
             "type": "string"
         },
         "zazu_report_flow_13359": {
