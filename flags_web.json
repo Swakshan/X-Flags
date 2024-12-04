@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c8d86bd9c8b5cea12b43eab01674e73e9575b126",
+    "feature_set_token": "1df641ff2575d9aa82fa1ca1da1233f3ce5eba1a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1105,6 +1105,9 @@
             "value": false
         },
         "payments_risk_device_sdk_enabled": {
+            "value": false
+        },
+        "premium_content_api_read_enabled": {
             "value": false
         },
         "premium_webview_paywall_offer_image_url": {
@@ -6641,6 +6644,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "premium_content_api_read_enabled": {
+            "name": "premium_content_api_read_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "premium_webview_paywall_offer_video_url": {
             "name": "premium_webview_paywall_offer_video_url",
             "type": "string",
@@ -9691,6 +9699,10 @@
             "name": "subscriptions_feature_create_premium_content",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_feature_offline_video": {
+            "name": "subscriptions_feature_offline_video",
+            "type": "string"
         },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
