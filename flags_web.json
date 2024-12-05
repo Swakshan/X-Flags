@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1d065e4174759e6a38d846929ec19a5d4e890d43",
+    "feature_set_token": "1e6efd852503ead4528d8e7810084033d79d1b23",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -472,7 +472,7 @@
             "value": true
         },
         "communities_moderation_log_enabled": {
-            "value": false
+            "value": true
         },
         "communities_show_broadcast_option_in_composer": {
             "value": true
@@ -1618,6 +1618,9 @@
             "value": false
         },
         "responsive_web_grok_user_seconds_debug": {
+            "value": false
+        },
+        "responsive_web_grok_user_seconds_enable": {
             "value": false
         },
         "responsive_web_grok_v2_start_screen_enabled": {
@@ -3423,12 +3426,12 @@
             "type": "number",
             "defaultValue": 3
         },
-        "analytics_preview_profile_web_16910": {
-            "name": "analytics_preview_profile_web_16910",
+        "analytics_profile_upsell_web_threshold_test_17035": {
+            "name": "analytics_profile_upsell_web_threshold_test_17035",
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "holdback"
+                "low_threshold"
             ]
         },
         "analytics_promo_page_web_16990": {
@@ -4221,7 +4224,7 @@
         "communities_moderation_log_enabled": {
             "name": "communities_moderation_log_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -7684,9 +7687,10 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_grok_grok_user_seconds_enable": {
-            "name": "responsive_web_grok_grok_user_seconds_enable",
-            "type": "string"
+        "responsive_web_grok_user_seconds_enable": {
+            "name": "responsive_web_grok_user_seconds_enable",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
