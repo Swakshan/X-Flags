@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1e6efd852503ead4528d8e7810084033d79d1b23",
+    "feature_set_token": "7326565fe02075955e5b91696a06f83581818b89",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1617,10 +1617,10 @@
         "responsive_web_grok_trends_design_enabled": {
             "value": false
         },
-        "responsive_web_grok_user_seconds_debug": {
+        "responsive_web_grok_user_active_seconds_enable": {
             "value": false
         },
-        "responsive_web_grok_user_seconds_enable": {
+        "responsive_web_grok_user_seconds_debug": {
             "value": false
         },
         "responsive_web_grok_v2_start_screen_enabled": {
@@ -2088,6 +2088,9 @@
         "rweb_analytics_export_data_enabled": {
             "value": true
         },
+        "rweb_analytics_follows_over_time_widget_enabled": {
+            "value": false
+        },
         "rweb_analytics_in_out_network_enabled": {
             "value": false
         },
@@ -2099,6 +2102,9 @@
         },
         "rweb_analytics_post_audience_page_enabled": {
             "value": true
+        },
+        "rweb_analytics_posts_over_time_widget_enabled": {
+            "value": false
         },
         "rweb_analytics_theme": {
             "value": false
@@ -2213,6 +2219,9 @@
         },
         "rweb_update_fatigue_switch_to_app_link": {
             "value": "BannerSwitchToApp"
+        },
+        "rweb_video_logged_in_analytics_enabled": {
+            "value": false
         },
         "rweb_video_pip_enabled": {
             "value": true
@@ -7689,6 +7698,10 @@
         },
         "responsive_web_grok_user_seconds_enable": {
             "name": "responsive_web_grok_user_seconds_enable",
+            "type": "string"
+        },
+        "responsive_web_grok_user_active_seconds_enable": {
+            "name": "responsive_web_grok_user_active_seconds_enable",
             "type": "boolean",
             "defaultValue": false
         },
@@ -8574,6 +8587,16 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "rweb_analytics_posts_over_time_widget_enabled": {
+            "name": "rweb_analytics_posts_over_time_widget_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_analytics_follows_over_time_widget_enabled": {
+            "name": "rweb_analytics_follows_over_time_widget_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
             "type": "experiment",
@@ -8805,9 +8828,10 @@
             "type": "string",
             "defaultValue": "BannerSwitchToApp"
         },
-        "rweb_video_airplay_enabled": {
-            "name": "rweb_video_airplay_enabled",
-            "type": "string"
+        "rweb_video_logged_in_analytics_enabled": {
+            "name": "rweb_video_logged_in_analytics_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_video_pip_enabled": {
             "name": "rweb_video_pip_enabled",
