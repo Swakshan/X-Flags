@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e35d9323cf7fe29ba44c6b46f3e4c8ebdb4bf31c",
+    "feature_set_token": "c384684d111baf6c068b31ba037177105f37b992",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1528,7 +1528,7 @@
             "value": true
         },
         "responsive_web_grok_analyze_button_fetch_trends_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_animated_text_enabled": {
             "value": true
@@ -6680,6 +6680,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "payments_interest_enabled": {
+            "name": "payments_interest_enabled",
+            "type": "string"
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
@@ -7742,7 +7746,7 @@
         "responsive_web_grok_analyze_button_fetch_trends_enabled": {
             "name": "responsive_web_grok_analyze_button_fetch_trends_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_grok_user_seconds_heartbeat": {
             "name": "responsive_web_grok_user_seconds_heartbeat",
@@ -10203,6 +10207,14 @@
         },
         "subscriptions_upsells_premium_percent_off": {
             "name": "subscriptions_upsells_premium_percent_off",
+            "type": "string"
+        },
+        "subscriptions_upsells_reply_boost_enabled": {
+            "name": "subscriptions_upsells_reply_boost_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_reply_boost_variant": {
+            "name": "subscriptions_upsells_reply_boost_variant",
             "type": "string"
         },
         "subscriptions_verification_info_enabled": {
