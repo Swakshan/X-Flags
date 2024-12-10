@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "525be0d238bbcf1c3b1dcee2daba8ce2df883933",
+    "feature_set_token": "b61ac9335881d1398e25c2391899bcad40cfb7cb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2627,6 +2627,9 @@
         "subscriptions_upsells_monetization_redesign_enabled": {
             "value": true
         },
+        "subscriptions_upsells_post_composer_variant": {
+            "value": ""
+        },
         "subscriptions_upsells_premium_home_nav": {
             "value": "premium_upsell_upgrade"
         },
@@ -2641,6 +2644,12 @@
         },
         "subscriptions_upsells_radar_video_url_mobile": {
             "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
+        },
+        "subscriptions_upsells_reply_boost_enabled": {
+            "value": false
+        },
+        "subscriptions_upsells_reply_boost_variant": {
+            "value": ""
         },
         "subscriptions_upsells_right_sidebar_variant": {
             "value": ""
@@ -10075,6 +10084,10 @@
             "name": "subscriptions_premium_hub_feedback_community_block_enabled",
             "type": "string"
         },
+        "subscriptions_premium_hub_offline_video_block_enabled": {
+            "name": "subscriptions_premium_hub_offline_video_block_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "string"
@@ -10207,11 +10220,18 @@
         },
         "subscriptions_upsells_reply_boost_enabled": {
             "name": "subscriptions_upsells_reply_boost_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_reply_boost_variant": {
             "name": "subscriptions_upsells_reply_boost_variant",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
+        },
+        "subscriptions_upsells_post_composer_variant": {
+            "name": "subscriptions_upsells_post_composer_variant",
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
