@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c384684d111baf6c068b31ba037177105f37b992",
+    "feature_set_token": "525be0d238bbcf1c3b1dcee2daba8ce2df883933",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1530,6 +1530,9 @@
         "responsive_web_grok_analyze_button_fetch_trends_enabled": {
             "value": false
         },
+        "responsive_web_grok_analyze_focal_post_enabled": {
+            "value": false
+        },
         "responsive_web_grok_animated_text_enabled": {
             "value": true
         },
@@ -1585,15 +1588,6 @@
             "value": true
         },
         "responsive_web_grok_post_image_understanding_enabled": {
-            "value": false
-        },
-        "responsive_web_grok_post_understanding_button_enabled": {
-            "value": false
-        },
-        "responsive_web_grok_post_understanding_button_fetch_trends_enabled": {
-            "value": false
-        },
-        "responsive_web_grok_post_understanding_button_trends_only": {
             "value": false
         },
         "responsive_web_grok_prompt_edit_enabled": {
@@ -7661,8 +7655,7 @@
         },
         "responsive_web_grok_post_understanding_button_enabled": {
             "name": "responsive_web_grok_post_understanding_button_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_show_citations": {
             "name": "responsive_web_grok_show_citations",
@@ -7735,16 +7728,19 @@
         },
         "responsive_web_grok_post_understanding_button_fetch_trends_enabled": {
             "name": "responsive_web_grok_post_understanding_button_fetch_trends_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_post_understanding_button_trends_only": {
             "name": "responsive_web_grok_post_understanding_button_trends_only",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_analyze_button_fetch_trends_enabled": {
             "name": "responsive_web_grok_analyze_button_fetch_trends_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_analyze_focal_post_enabled": {
+            "name": "responsive_web_grok_analyze_focal_post_enabled",
             "type": "boolean",
             "defaultValue": false
         },
