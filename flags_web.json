@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b61ac9335881d1398e25c2391899bcad40cfb7cb",
+    "feature_set_token": "e6757a41975505e0682f3156629eea0fff098a81",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1531,7 +1531,7 @@
             "value": false
         },
         "responsive_web_grok_analyze_focal_post_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_animated_text_enabled": {
             "value": true
@@ -5465,21 +5465,20 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "grok_analyze_holdout_17047": {
+            "name": "grok_analyze_holdout_17047",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "with_button"
+            ]
+        },
         "grok_backend_presets_holdback_17021": {
             "name": "grok_backend_presets_holdback_17021",
             "type": "experiment",
             "enumeration_values": [
                 "control",
                 "treatment"
-            ]
-        },
-        "grok_canada_analyze_button_rollout_17023": {
-            "name": "grok_canada_analyze_button_rollout_17023",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "free",
-                "free_with_button"
             ]
         },
         "grok_onboarding_3_options_experiment_17040": {
@@ -6687,10 +6686,22 @@
             "name": "payments_interest_enabled",
             "type": "string"
         },
+        "payments_account_details_enabled": {
+            "name": "payments_account_details_enabled",
+            "type": "string"
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "premium_post_composer_upsell_variants_17046": {
+            "name": "premium_post_composer_upsell_variants_17046",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "alternative"
+            ]
         },
         "premium_webview_paywall_offer_video_url": {
             "name": "premium_webview_paywall_offer_video_url",
@@ -7261,6 +7272,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_birdwatch_note_request_sources_enabled": {
+            "name": "responsive_web_birdwatch_note_request_sources_enabled",
+            "type": "string"
+        },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
             "type": "string",
@@ -7662,10 +7677,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "responsive_web_grok_post_understanding_button_enabled": {
-            "name": "responsive_web_grok_post_understanding_button_enabled",
-            "type": "string"
-        },
         "responsive_web_grok_show_citations": {
             "name": "responsive_web_grok_show_citations",
             "type": "boolean",
@@ -7739,10 +7750,6 @@
             "name": "responsive_web_grok_post_understanding_button_fetch_trends_enabled",
             "type": "string"
         },
-        "responsive_web_grok_post_understanding_button_trends_only": {
-            "name": "responsive_web_grok_post_understanding_button_trends_only",
-            "type": "string"
-        },
         "responsive_web_grok_analyze_button_fetch_trends_enabled": {
             "name": "responsive_web_grok_analyze_button_fetch_trends_enabled",
             "type": "boolean",
@@ -7751,7 +7758,7 @@
         "responsive_web_grok_analyze_focal_post_enabled": {
             "name": "responsive_web_grok_analyze_focal_post_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_user_seconds_heartbeat": {
             "name": "responsive_web_grok_user_seconds_heartbeat",
