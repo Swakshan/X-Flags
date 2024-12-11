@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "cb9f221b3bf2526bf8c390d7d2fcdeccdd776657",
+        "feature_set_token": "ae06d9f851a55af818e90706017a713f7511a4d6",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -2331,7 +2331,7 @@
                 "value": true
             },
             "communities_moderation_log_enabled": {
-                "value": false
+                "value": true
             },
             "communities_show_broadcast_option_in_composer": {
                 "value": true
@@ -2774,13 +2774,19 @@
                 "value": false
             },
             "grok_android_free_enabled": {
-                "value": false
+                "value": true
+            },
+            "grok_android_fun_mode_switch_enabled": {
+                "value": true
+            },
+            "grok_android_history_search_enabled": {
+                "value": true
             },
             "grok_android_model_selector_upsell_enabled": {
                 "value": false
             },
             "grok_android_native_history_enabled": {
-                "value": true
+                "value": false
             },
             "grok_android_native_media_view_enabled": {
                 "value": true
@@ -2796,6 +2802,9 @@
             },
             "grok_android_tab_badge_fatigue_id": {
                 "value": "grok_badge_ga"
+            },
+            "grok_inline_sharecard_ask_grok_enabled": {
+                "value": false
             },
             "grok_inline_sharecard_image_enabled": {
                 "value": true
@@ -3537,6 +3546,9 @@
             "place_picker_new_data_provider": {
                 "value": true
             },
+            "premium_content_api_read_enabled": {
+                "value": false
+            },
             "preroll_cta_docked_media_enabled": {
                 "value": false
             },
@@ -3558,10 +3570,16 @@
             "profile_invalid_name_bio_regex": {
                 "value": "\\uD83D\\uDD10|\\uD83D\\uDD12|\\uD83D\\uDD0F|\\uD83D\\uDD13|\\u221A|\\u237B|\\u2713|\\u2705|\\uD83D\\uDD39|\\uD83D\\uDD37|\\uD83D\\uDCA0|\\uD83D\\uDD35|\\uD83D\\uDD18|([\\u2714\\u2611][\\ufe0e\\ufe0f]?)|[\\uFFFE\\uFEFF\\uFFFF\\u202A\\u202B\\u202C\\u202D\\u202E]|[<>\"]"
             },
-            "profile_label_improvements_pcf_account_label_enabled": {
+            "profile_label_improvements_pcf_edit_profile_enabled": {
                 "value": false
             },
-            "profile_label_improvements_pcf_account_settings_enabled": {
+            "profile_label_improvements_pcf_label_in_post_enabled": {
+                "value": false
+            },
+            "profile_label_improvements_pcf_label_in_profile_enabled": {
+                "value": false
+            },
+            "profile_label_improvements_pcf_settings_enabled": {
                 "value": false
             },
             "profile_persistent_follow_button_enabled": {
@@ -4217,7 +4235,7 @@
                 "value": ""
             },
             "subscriptions_management_in_app_cancel_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_marketing_page_button_detail_text_enabled": {
                 "value": false
@@ -4250,7 +4268,7 @@
                 "value": true
             },
             "subscriptions_premium_tiers_switching_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_retrieve_claims_delay_millis": {
                 "value": 2000.0
@@ -4278,6 +4296,9 @@
             },
             "subscriptions_upsells_premium_home_nav": {
                 "value": "premium_upsell_upgrade"
+            },
+            "subscriptions_upsells_premium_percent_off": {
+                "value": 40.0
             },
             "subscriptions_verification_info_enabled": {
                 "value": true
@@ -5126,7 +5147,6 @@
         "ios_traffic_holdback_10048",
         "android_hls_dynamic_manifests_12518",
         "home_spaces_holdback_12863",
-        "grok_upsell_hold_back_16664",
         "explore_longterm_holdback_10250",
         "viewport_aware_hoisting_android_14512",
         "android_custom_no_media_push_13017",
@@ -5197,7 +5217,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "0c53275b1b8e92f631804fae31ce6a6f1f6ad541",
-        "experiments": "0c53275b1b8e92f631804fae31ce6a6f1f6ad541"
+        "feature_switches": "2a2b75706dac0567e5f799de622044a71f369efd",
+        "experiments": "2a2b75706dac0567e5f799de622044a71f369efd"
     }
 }
