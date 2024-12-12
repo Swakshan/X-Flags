@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1c586c1ee32e5d6d1efe21aed138cebf9fed7f01",
+    "feature_set_token": "a0159daab3a1de788753c3484b049cde8f60ffc7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1307,6 +1307,9 @@
         },
         "responsive_web_birdwatch_note_request_enabled": {
             "value": true
+        },
+        "responsive_web_birdwatch_note_request_sources_enabled": {
+            "value": false
         },
         "responsive_web_birdwatch_note_writing_enabled": {
             "value": false
@@ -7285,7 +7288,8 @@
         },
         "responsive_web_birdwatch_note_request_sources_enabled": {
             "name": "responsive_web_birdwatch_note_request_sources_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
