@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e6757a41975505e0682f3156629eea0fff098a81",
+    "feature_set_token": "1c586c1ee32e5d6d1efe21aed138cebf9fed7f01",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1048,19 +1048,19 @@
             "value": false
         },
         "optimized_sru_parameters_client_side_timeout_ms": {
-            "value": 45000.0
+            "value": 600000.0
         },
         "optimized_sru_parameters_enabled": {
-            "value": 0
+            "value": 1
         },
         "optimized_sru_parameters_ideal_upload_time_ms": {
-            "value": 20000.0
+            "value": 80000.0
         },
         "optimized_sru_parameters_max_segment_bytes": {
             "value": 8387584
         },
         "optimized_sru_parameters_min_segment_bytes": {
-            "value": 420
+            "value": 4194304
         },
         "papago_tweet_translation_from_korean_entity_protected": {
             "value": false
@@ -2173,7 +2173,7 @@
             "value": true
         },
         "rweb_multistream_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "value": true
@@ -6576,17 +6576,17 @@
         "optimized_sru_parameters_enabled": {
             "name": "optimized_sru_parameters_enabled",
             "type": "number",
-            "defaultValue": 0
+            "defaultValue": 1
         },
         "optimized_sru_parameters_min_segment_bytes": {
             "name": "optimized_sru_parameters_min_segment_bytes",
             "type": "number",
-            "defaultValue": 420
+            "defaultValue": 4194304
         },
         "optimized_sru_parameters_ideal_upload_time_ms": {
             "name": "optimized_sru_parameters_ideal_upload_time_ms",
             "type": "number",
-            "defaultValue": 20000.0
+            "defaultValue": 80000.0
         },
         "optimized_sru_parameters_max_segment_bytes": {
             "name": "optimized_sru_parameters_max_segment_bytes",
@@ -6596,7 +6596,7 @@
         "optimized_sru_parameters_client_side_timeout_ms": {
             "name": "optimized_sru_parameters_client_side_timeout_ms",
             "type": "number",
-            "defaultValue": 45000.0
+            "defaultValue": 600000.0
         },
         "papago_translation_from_korean_entity_protected_14527": {
             "name": "papago_translation_from_korean_entity_protected_14527",
@@ -8778,7 +8778,7 @@
         "rweb_multistream_enabled": {
             "name": "rweb_multistream_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
