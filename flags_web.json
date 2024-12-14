@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7b48d9d65a673a1e6cb9bd918bafc1ab55f0751a",
+    "feature_set_token": "8fe902590198bd2fba1ecbde69701c90887ed158",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1102,9 +1102,6 @@
             "value": false
         },
         "payments_pin_login_enabled": {
-            "value": false
-        },
-        "payments_risk_device_sdk_enabled": {
             "value": false
         },
         "premium_content_api_read_enabled": {
@@ -5391,10 +5388,7 @@
         "get_verified_profile_16882": {
             "name": "get_verified_profile_16882",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "variant"
-            ]
+            "enumeration_values": []
         },
         "get_verified_profile_android_16907": {
             "name": "get_verified_profile_android_16907",
@@ -6682,8 +6676,7 @@
         },
         "payments_risk_device_sdk_enabled": {
             "name": "payments_risk_device_sdk_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_interest_enabled": {
             "name": "payments_interest_enabled",
@@ -6691,6 +6684,14 @@
         },
         "payments_account_details_enabled": {
             "name": "payments_account_details_enabled",
+            "type": "string"
+        },
+        "payments_cards_as_payment_method_enabled": {
+            "name": "payments_cards_as_payment_method_enabled",
+            "type": "string"
+        },
+        "payments_settings_documents_enabled": {
+            "name": "payments_settings_documents_enabled",
             "type": "string"
         },
         "premium_content_api_read_enabled": {
@@ -7779,6 +7780,10 @@
             "name": "responsive_web_grok_user_seconds_heartbeat",
             "type": "number",
             "defaultValue": 10000.0
+        },
+        "responsive_web_grok_img_composer": {
+            "name": "responsive_web_grok_img_composer",
+            "type": "string"
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
