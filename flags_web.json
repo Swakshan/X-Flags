@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6ab6db571fdae9fad6642853801d598a97461b3c",
+    "feature_set_token": "6b57bff7659566e356f91f1c14e0c561f95eb4ce",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1411,7 +1411,7 @@
             "value": false
         },
         "responsive_web_delete_tweet_stats_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_device_follow_without_user_follow_enabled": {
             "value": false
@@ -1572,6 +1572,9 @@
         "responsive_web_grok_image_prompts_enabled": {
             "value": true
         },
+        "responsive_web_grok_img_composer": {
+            "value": false
+        },
         "responsive_web_grok_imggen_count": {
             "value": 4
         },
@@ -1589,6 +1592,15 @@
         },
         "responsive_web_grok_post_image_understanding_enabled": {
             "value": false
+        },
+        "responsive_web_grok_profile_summary_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_profile_summary_min_followers": {
+            "value": 10000.0
+        },
+        "responsive_web_grok_profile_summary_min_posts": {
+            "value": 50
         },
         "responsive_web_grok_prompt_edit_enabled": {
             "value": true
@@ -7415,7 +7427,7 @@
         "responsive_web_delete_tweet_stats_enabled": {
             "name": "responsive_web_delete_tweet_stats_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_device_follow_without_user_follow_enabled": {
             "name": "responsive_web_device_follow_without_user_follow_enabled",
@@ -7786,12 +7798,28 @@
         },
         "responsive_web_grok_img_composer": {
             "name": "responsive_web_grok_img_composer",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_xai_icon": {
             "name": "responsive_web_grok_xai_icon",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_profile_summary_enabled": {
+            "name": "responsive_web_grok_profile_summary_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_profile_summary_min_followers": {
+            "name": "responsive_web_grok_profile_summary_min_followers",
+            "type": "number",
+            "defaultValue": 10000.0
+        },
+        "responsive_web_grok_profile_summary_min_posts": {
+            "name": "responsive_web_grok_profile_summary_min_posts",
+            "type": "number",
+            "defaultValue": 50
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
