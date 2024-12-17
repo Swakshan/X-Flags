@@ -25,8 +25,12 @@ def apkCombo(url):
 
     file_list = pS.find('ul', attrs={'class': 'file-list'})
     details = file_list.find('li')
-    link = details.find('a')['href']+'&fp=howareyou123&ip=0.0.0.0.0'
-    link = link.replace(proxyUrl, '') if proxyUrl in link else link
+    link = details.find('a')['href']
+    if "r2?u=" in link:
+        link = link.replace("https://apkcombo-com.translate.goog/r2?u=", '').replace("&_x_tr_sl=ta&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp","")
+    else:
+        link+='&fp=howareyou123&ip=0.0.0.0.0'
+        link = link.replace(proxyUrl, '')
     return unquote(link)
 
 
