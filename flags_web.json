@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6b57bff7659566e356f91f1c14e0c561f95eb4ce",
+    "feature_set_token": "91d790e5a83ca187556d686d77aa94c8d9f780f6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1377,6 +1377,9 @@
         "responsive_web_communities_slices_enabled": {
             "value": true
         },
+        "responsive_web_communityboost_form_enabled": {
+            "value": false
+        },
         "responsive_web_composer_autosave_debounce_ms": {
             "value": 2000.0
         },
@@ -2215,6 +2218,9 @@
             "value": true
         },
         "rweb_sidebar_lower_whats_happening_enabled": {
+            "value": false
+        },
+        "rweb_sourcemap_migration": {
             "value": false
         },
         "rweb_spaces_invite_search_enabled": {
@@ -7361,6 +7367,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_communityboost_form_enabled": {
+            "name": "responsive_web_communityboost_form_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_composer_autosave_enabled": {
             "name": "responsive_web_composer_autosave_enabled",
             "type": "boolean",
@@ -8805,6 +8816,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "rweb_media_carousel_17062": {
+            "name": "rweb_media_carousel_17062",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "rweb_media_carousel_enabled": {
             "name": "rweb_media_carousel_enabled",
             "type": "boolean",
@@ -8887,6 +8906,11 @@
         },
         "rweb_sidebar_lower_whats_happening_enabled": {
             "name": "rweb_sidebar_lower_whats_happening_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_sourcemap_migration": {
+            "name": "rweb_sourcemap_migration",
             "type": "boolean",
             "defaultValue": false
         },
