@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "91d790e5a83ca187556d686d77aa94c8d9f780f6",
+    "feature_set_token": "806f599231896a6ad751507ca42df46ad4299838",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1600,7 +1600,7 @@
             "value": false
         },
         "responsive_web_grok_profile_summary_min_followers": {
-            "value": 10000.0
+            "value": 1
         },
         "responsive_web_grok_profile_summary_min_posts": {
             "value": 50
@@ -2652,7 +2652,7 @@
             "value": ""
         },
         "subscriptions_upsells_premium_home_nav": {
-            "value": "premium_upsell_upgrade"
+            "value": "try_premium"
         },
         "subscriptions_upsells_profile_card_enabled": {
             "value": false
@@ -2673,7 +2673,7 @@
             "value": ""
         },
         "subscriptions_upsells_right_sidebar_variant": {
-            "value": ""
+            "value": "free_trial_premium_14_days"
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -7825,12 +7825,16 @@
         "responsive_web_grok_profile_summary_min_followers": {
             "name": "responsive_web_grok_profile_summary_min_followers",
             "type": "number",
-            "defaultValue": 10000.0
+            "defaultValue": 1
         },
         "responsive_web_grok_profile_summary_min_posts": {
             "name": "responsive_web_grok_profile_summary_min_posts",
             "type": "number",
             "defaultValue": 50
+        },
+        "responsive_web_grok_search_summary_enabled": {
+            "name": "responsive_web_grok_search_summary_enabled",
+            "type": "string"
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -10222,12 +10226,12 @@
         "subscriptions_upsells_right_sidebar_variant": {
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "free_trial_premium_14_days"
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
             "type": "string",
-            "defaultValue": "premium_upsell_upgrade"
+            "defaultValue": "try_premium"
         },
         "subscriptions_upsells_get_verified_profile": {
             "name": "subscriptions_upsells_get_verified_profile",
