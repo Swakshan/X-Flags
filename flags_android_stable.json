@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "1ffb7f90f8c1af9d8ab48e3b1cb6a70fa09f5a84",
+        "feature_set_token": "20f53b1c066201a4e93293ff1b49bf43b34e01e3",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -2780,13 +2780,13 @@
                 "value": false
             },
             "grok_android_history_search_enabled": {
-                "value": false
+                "value": true
             },
             "grok_android_model_selector_upsell_enabled": {
                 "value": false
             },
             "grok_android_native_history_enabled": {
-                "value": false
+                "value": true
             },
             "grok_android_native_media_view_enabled": {
                 "value": true
@@ -2811,6 +2811,12 @@
             },
             "grok_model_selector_display_description_enabled": {
                 "value": true
+            },
+            "grok_settings_age_restriction_enabled": {
+                "value": false
+            },
+            "grok_settings_restriction_age": {
+                "value": 18.0
             },
             "growth_acquisition_redirect_to_login": {
                 "value": ""
@@ -3992,6 +3998,9 @@
             "ssp_ads_dsp_client_context_enabled": {
                 "value": false
             },
+            "ssp_ads_expanded_app_install_card_enabled": {
+                "value": false
+            },
             "ssp_ads_google_dsp_client_context_enabled": {
                 "value": false
             },
@@ -4003,6 +4012,9 @@
             },
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
+            },
+            "ssp_ads_google_dsp_spotlight_mute_enabled": {
+                "value": false
             },
             "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
@@ -4253,7 +4265,7 @@
                 "value": true
             },
             "subscriptions_premium_app_icons_christmas": {
-                "value": false
+                "value": true
             },
             "subscriptions_premium_app_icons_japanese_new_year_enabled": {
                 "value": false
@@ -5218,5 +5230,9 @@
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "01d1b4a7baa24912304046793772018d38407abf",
+        "experiments": "01d1b4a7baa24912304046793772018d38407abf"
+    }
 }
