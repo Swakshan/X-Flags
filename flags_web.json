@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b63079d7c4619db1d1f16d0065d2fdc4b92adc1b",
+    "feature_set_token": "e7d08f00b1270b601a0c5558bd574e81f26fb6b2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1539,6 +1539,9 @@
         "responsive_web_grok_analyze_focal_post_enabled": {
             "value": false
         },
+        "responsive_web_grok_analyze_post_followups_enabled": {
+            "value": false
+        },
         "responsive_web_grok_animated_text_enabled": {
             "value": true
         },
@@ -1579,7 +1582,7 @@
             "value": true
         },
         "responsive_web_grok_img_composer": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_imggen_count": {
             "value": 4
@@ -1597,6 +1600,9 @@
             "value": true
         },
         "responsive_web_grok_post_image_understanding_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_post_understanding_button_on_all_posts": {
             "value": false
         },
         "responsive_web_grok_profile_summary_enabled": {
@@ -1636,6 +1642,9 @@
             "value": false
         },
         "responsive_web_grok_text_selection_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_text_upload_enabled": {
             "value": false
         },
         "responsive_web_grok_trends_design_enabled": {
@@ -2199,9 +2208,6 @@
         "rweb_mixed_media_uploads_enabled": {
             "value": true
         },
-        "rweb_multistream_enabled": {
-            "value": true
-        },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "value": true
         },
@@ -2547,7 +2553,7 @@
             "value": "https://x.com/messages/compose?recipient_id=1399766153053061121"
         },
         "subscriptions_gifting_premium_intro_copy_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": true
@@ -7831,7 +7837,7 @@
         "responsive_web_grok_img_composer": {
             "name": "responsive_web_grok_img_composer",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_xai_icon": {
             "name": "responsive_web_grok_xai_icon",
@@ -7868,6 +7874,21 @@
         },
         "responsive_web_grok_analyze_post_followups_enabled": {
             "name": "responsive_web_grok_analyze_post_followups_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_text_upload_enabled": {
+            "name": "responsive_web_grok_text_upload_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_post_understanding_button_on_all_posts": {
+            "name": "responsive_web_grok_post_understanding_button_on_all_posts",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_sport_cards_enabled": {
+            "name": "responsive_web_grok_sport_cards_enabled",
             "type": "string"
         },
         "responsive_web_hashtag_highlight_is_enabled": {
@@ -8881,11 +8902,6 @@
             "name": "rweb_mixed_media_uploads_cap",
             "type": "number",
             "defaultValue": 4
-        },
-        "rweb_multistream_enabled": {
-            "name": "rweb_multistream_enabled",
-            "type": "boolean",
-            "defaultValue": true
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
@@ -9947,7 +9963,7 @@
         "subscriptions_gifting_premium_intro_copy_enabled": {
             "name": "subscriptions_gifting_premium_intro_copy_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_inapp_grok": {
             "name": "subscriptions_inapp_grok",
