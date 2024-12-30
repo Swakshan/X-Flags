@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "696cd6a5fc0e1ecca65062c21e4b60168488c57e",
+    "feature_set_token": "d14d0e7ad833cea33ec98050b1589a85e366e517",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1593,6 +1593,9 @@
         "responsive_web_grok_multimedia_results": {
             "value": false
         },
+        "responsive_web_grok_new_year_prompts_enabled": {
+            "value": true
+        },
         "responsive_web_grok_opt_out_enabled": {
             "value": true
         },
@@ -1606,7 +1609,7 @@
             "value": false
         },
         "responsive_web_grok_profile_summary_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_profile_summary_min_followers": {
             "value": 1
@@ -5518,14 +5521,6 @@
                 "with_followups"
             ]
         },
-        "grok_onboarding_3_options_experiment_17040": {
-            "name": "grok_onboarding_3_options_experiment_17040",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "with_onboarding"
-            ]
-        },
         "grok_settings_age_restriction_enabled": {
             "name": "grok_settings_age_restriction_enabled",
             "type": "boolean",
@@ -7865,7 +7860,7 @@
         "responsive_web_grok_profile_summary_enabled": {
             "name": "responsive_web_grok_profile_summary_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_profile_summary_min_followers": {
             "name": "responsive_web_grok_profile_summary_min_followers",
@@ -7909,6 +7904,11 @@
             "name": "responsive_web_grok_sport_cards_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_new_year_prompts_enabled": {
+            "name": "responsive_web_grok_new_year_prompts_enabled",
+            "type": "boolean",
+            "defaultValue": true
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -8817,6 +8817,10 @@
             "name": "rweb_analytics_follows_over_time_widget_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_analytics_video_xweb_enabled": {
+            "name": "rweb_analytics_video_xweb_enabled",
+            "type": "string"
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
