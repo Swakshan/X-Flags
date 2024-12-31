@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "bf0a0e08d995d286242f150de6dd88a6e24f77ea",
+        "feature_set_token": "eca2c714a8cf85d469ca42b72d9be7f0600632d8",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -2783,16 +2783,25 @@
                 "value": false
             },
             "grok_android_history_search_enabled": {
-                "value": false
+                "value": true
             },
             "grok_android_model_selector_upsell_enabled": {
                 "value": false
             },
             "grok_android_native_history_enabled": {
-                "value": false
+                "value": true
             },
             "grok_android_native_media_view_enabled": {
                 "value": true
+            },
+            "grok_android_profile_summary_enabled": {
+                "value": true
+            },
+            "grok_android_profile_summary_min_followers": {
+                "value": 1.0
+            },
+            "grok_android_profile_summary_min_posts": {
+                "value": 30.0
             },
             "grok_android_robot_icon": {
                 "value": false
@@ -2814,6 +2823,12 @@
             },
             "grok_model_selector_display_description_enabled": {
                 "value": true
+            },
+            "grok_settings_age_restriction_enabled": {
+                "value": false
+            },
+            "grok_settings_restriction_age": {
+                "value": 18.0
             },
             "growth_acquisition_redirect_to_login": {
                 "value": ""
@@ -3995,6 +4010,9 @@
             "ssp_ads_dsp_client_context_enabled": {
                 "value": false
             },
+            "ssp_ads_expanded_app_install_card_enabled": {
+                "value": false
+            },
             "ssp_ads_google_dsp_client_context_enabled": {
                 "value": false
             },
@@ -4006,6 +4024,9 @@
             },
             "ssp_ads_google_dsp_spotlight_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
+            },
+            "ssp_ads_google_dsp_spotlight_mute_enabled": {
+                "value": false
             },
             "ssp_ads_google_dsp_tweet_details_ad_unit_id": {
                 "value": "/22849053685/twitter_native_ad"
@@ -4256,7 +4277,7 @@
                 "value": true
             },
             "subscriptions_premium_app_icons_christmas": {
-                "value": false
+                "value": true
             },
             "subscriptions_premium_app_icons_japanese_new_year_enabled": {
                 "value": false
@@ -5223,7 +5244,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "38dc615d566f208240a6f0426d4b87ab88626279",
-        "experiments": "38dc615d566f208240a6f0426d4b87ab88626279"
+        "feature_switches": "38ef84c4fc67ac4936140b5a19852b17f7fb9f32",
+        "experiments": "38ef84c4fc67ac4936140b5a19852b17f7fb9f32"
     }
 }
