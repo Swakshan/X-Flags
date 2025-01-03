@@ -6,7 +6,7 @@ from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers
 from model import DownloadData,Source,Platform,Releases
 
-VER = "v11.2 : updated apkcombo extractor"
+VER = "v11.21 : updated apkcombo"
 
 
 def downloader(url,fileName="",isJson=False):

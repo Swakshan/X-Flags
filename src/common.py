@@ -171,7 +171,7 @@ def strpattern(flag_details,flag_details_2):
     if platform == Platform.ANDROID:
         vercode_str = f"__Vercode__:\n`{vercode}`" if int(vercode) else vercode_str #if not "0"
         ps_link = 'https://play.google.com/store/apps/details?id='+PKG_NAME
-        apkc_link = f'https://apkcombo.com/search/{PKG_NAME}/download/phone-{vername}-apk'
+        apkc_link = f'https://apkcombo.app/search/{PKG_NAME}/download/phone-{vername}-apk'
         apkf_link = f'https://apkflash.com/apk/app/{PKG_NAME}/twitter/download/{vername}'
         apkp_link = f'https://d.apkpure.com/b/XAPK/{PKG_NAME}?versionCode={vercode}'
         apkm_vername = vername.replace('.','-')

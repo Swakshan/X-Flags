@@ -8,11 +8,12 @@ from common import headers
 
 hdr = headers()
 proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="
+# proxyUrl = "https://sup-proxy.zephex0-f6c.workers.dev/api-text?url="
 
 def beautifulSoup(url,proxy=1):
     if proxy:
         url = proxyUrl+url
-
+    print(url)
     req = requests.get(url, headers=hdr)
     if req.status_code != 200:
         raise Exception("page not found:\nURL: "+url)
@@ -27,7 +28,8 @@ def apkCombo(url):
     details = file_list.find('li')
     link = details.find('a')['href']
     if "r2?u=" in link:
-        link = link.replace("https://apkcombo-com.translate.goog/r2?u=", '').replace("&_x_tr_sl=ta&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp","")
+        s = link.find("r2?u=")+len("r2?u=")
+        link = link[s:].replace("&_x_tr_sl=ta&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp","")
     else:
         link+='&fp=howareyou123&ip=0.0.0.0.0'
         link = link.replace(proxyUrl, '')
