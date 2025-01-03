@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3ac7f90630b78a24fd4f5c8d4b00c0019cd592a6",
+    "feature_set_token": "9cea4b79f766da379591fe1ce8f228fb23e93410",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1593,6 +1593,9 @@
         "responsive_web_grok_in_app_learn_more": {
             "value": "https://x.com/xai/status/1823597788573098215"
         },
+        "responsive_web_grok_media_carousel_enabled": {
+            "value": true
+        },
         "responsive_web_grok_multimedia_results": {
             "value": false
         },
@@ -1612,7 +1615,7 @@
             "value": false
         },
         "responsive_web_grok_profile_summary_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_profile_summary_min_followers": {
             "value": 1
@@ -1634,6 +1637,9 @@
         },
         "responsive_web_grok_search_first": {
             "value": true
+        },
+        "responsive_web_grok_search_summary_enabled": {
+            "value": false
         },
         "responsive_web_grok_share_attachment_enabled": {
             "value": true
@@ -7865,7 +7871,7 @@
         "responsive_web_grok_profile_summary_enabled": {
             "name": "responsive_web_grok_profile_summary_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_grok_profile_summary_min_followers": {
             "name": "responsive_web_grok_profile_summary_min_followers",
@@ -7879,7 +7885,8 @@
         },
         "responsive_web_grok_search_summary_enabled": {
             "name": "responsive_web_grok_search_summary_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_sidebar_module_enabled": {
             "name": "responsive_web_grok_sidebar_module_enabled",
@@ -7922,6 +7929,15 @@
         },
         "responsive_web_grok_finance_cards_enabled": {
             "name": "responsive_web_grok_finance_cards_enabled",
+            "type": "string"
+        },
+        "responsive_web_grok_media_carousel_enabled": {
+            "name": "responsive_web_grok_media_carousel_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "responsive_web_grok_show_grok_performance_metrics": {
+            "name": "responsive_web_grok_show_grok_performance_metrics",
             "type": "string"
         },
         "responsive_web_hashtag_highlight_is_enabled": {
