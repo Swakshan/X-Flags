@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "135f92c304b70061e51c0c5db71151b2dfc03ecd",
+    "feature_set_token": "3ac7f90630b78a24fd4f5c8d4b00c0019cd592a6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1101,6 +1101,9 @@
         "payments_enabled": {
             "value": false
         },
+        "payments_interest_enabled": {
+            "value": false
+        },
         "payments_pin_enabled": {
             "value": false
         },
@@ -1633,7 +1636,7 @@
             "value": true
         },
         "responsive_web_grok_share_attachment_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_share_rendering_enabled": {
             "value": true
@@ -1684,7 +1687,7 @@
             "value": true
         },
         "responsive_web_grok_xai_icon": {
-            "value": false
+            "value": true
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "value": false
@@ -2178,6 +2181,9 @@
         "rweb_analytics_verified_followers_enabled": {
             "value": true
         },
+        "rweb_analytics_video_xweb_enabled": {
+            "value": false
+        },
         "rweb_client_transaction_id_enabled": {
             "value": false
         },
@@ -2282,6 +2288,9 @@
         },
         "rweb_update_fatigue_switch_to_app_link": {
             "value": "BannerSwitchToApp"
+        },
+        "rweb_updated_broadcast_screen": {
+            "value": false
         },
         "rweb_video_logged_in_analytics_enabled": {
             "value": true
@@ -5678,14 +5687,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "hiring_landing_page_17045": {
-            "name": "hiring_landing_page_17045",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "enabled"
-            ]
-        },
         "home_low_coverage_sources_holdback_15899": {
             "name": "home_low_coverage_sources_holdback_15899",
             "type": "experiment",
@@ -6744,7 +6745,8 @@
         },
         "payments_interest_enabled": {
             "name": "payments_interest_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_account_details_enabled": {
             "name": "payments_account_details_enabled",
@@ -7858,7 +7860,7 @@
         "responsive_web_grok_xai_icon": {
             "name": "responsive_web_grok_xai_icon",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_profile_summary_enabled": {
             "name": "responsive_web_grok_profile_summary_enabled",
@@ -7916,7 +7918,7 @@
         "responsive_web_grok_share_attachment_enabled": {
             "name": "responsive_web_grok_share_attachment_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_finance_cards_enabled": {
             "name": "responsive_web_grok_finance_cards_enabled",
@@ -8832,7 +8834,8 @@
         },
         "rweb_analytics_video_xweb_enabled": {
             "name": "rweb_analytics_video_xweb_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_card_carouselv2_non_safari_15141": {
             "name": "rweb_card_carouselv2_non_safari_15141",
@@ -9077,6 +9080,11 @@
             "name": "rweb_update_fatigue_switch_to_app_link",
             "type": "string",
             "defaultValue": "BannerSwitchToApp"
+        },
+        "rweb_updated_broadcast_screen": {
+            "name": "rweb_updated_broadcast_screen",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_video_logged_in_analytics_enabled": {
             "name": "rweb_video_logged_in_analytics_enabled",
@@ -10285,6 +10293,10 @@
         },
         "subscriptions_premium_hub_grok_card_variant": {
             "name": "subscriptions_premium_hub_grok_card_variant",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_app_icons_new_label_enabled": {
+            "name": "subscriptions_premium_hub_app_icons_new_label_enabled",
             "type": "string"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
