@@ -29,11 +29,6 @@ NEW_FLAG_LIMIT = 25
 
 USERNAME = "Swakshan"
 REPO_NAME = "X-Flags"
-DEBUG  =  int(getEnv("DEBUG"))
-SHA = getEnv('GIT_COMMIT_SHA')
-CHANNEL_ID =  getEnv('CHANNEL_ID')
-PIN_MSG =  getEnv('PIN_MSG')
-BOT_TOKEN = getEnv('BOT_TOKEN')
 
 
 WEB_LINK = 'https://twitter.com/'
@@ -132,6 +127,10 @@ def strpattern(flag_details,flag_details_2):
     source = Source(manifest_file['src'])
     release = Releases.STABLE if "web" in vername else Releases.BETA if "beta" in vername else Releases.ALPHA if "alpha" in vername else Releases.STABLE
     
+    SHA = getEnv('GIT_COMMIT_SHA')
+    CHANNEL_ID = getEnv("CHANNEL_ID")
+    PIN_MSG = getEnv("PIN_MSG")
+
     global linkRow,linkCount
     linkRow = "";linkCount=0
     def linkRowFormer(name,link):

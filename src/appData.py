@@ -8,7 +8,6 @@ from common import headers
 
 hdr = headers()
 proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="
-# proxyUrl = "https://sup-proxy.zephex0-f6c.workers.dev/api-text?url="
 
 def beautifulSoup(url,proxy=1):
     if proxy:

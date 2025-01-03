@@ -2,11 +2,11 @@ import requests,json,os,shutil,sys,zipfile
 from appData import apkCombo,apkM,webfeatureSwitches
 from tqdm import tqdm
 from pprint import pprint
-from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,DEBUG,manifest_file_name,new_file_ipad_name,old_file_ipad_name
-from common import writeJson,readJson,get_exception,vercodeGenerator,headers
+from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,manifest_file_name,new_file_ipad_name,old_file_ipad_name
+from common import writeJson,readJson,get_exception,vercodeGenerator,headers,getEnv
 from model import DownloadData,Source,Platform,Releases
 
-VER = "v11.21 : updated apkcombo"
+VER = "v11.25 : misc"
 
 
 def downloader(url,fileName="",isJson=False):
@@ -181,7 +181,7 @@ def main():
     return process(vername,source,vercode,down_link)
 
 
-if not DEBUG:
+if not int(getEnv("DEBUG")):
     if os.path.exists(DUMMY_FOLDER):
         shutil.rmtree(DUMMY_FOLDER)
     os.makedirs(MAIN_FOLDER)

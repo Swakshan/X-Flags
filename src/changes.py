@@ -1,5 +1,5 @@
-from common import old_file_name,new_file_name,CHANNEL_ID,DEBUG,new_file_ipad_name,old_file_ipad_name
-from common import readJson,strpattern,get_exception
+from common import old_file_name,new_file_name,new_file_ipad_name,old_file_ipad_name
+from common import readJson,strpattern,get_exception,getEnv
 from tele import sendMsg,editMsg
 import sys,os
 
@@ -16,6 +16,7 @@ def changes():
         return ""
     
     def flagChanges(old_file_name,new_file_name):
+
         old_features = readJson(old_file_name)
         new_features = readJson(new_file_name)
 
@@ -80,6 +81,8 @@ def changes():
                 } 
     
     try:
+        CHANNEL_ID =  getEnv("CHANNEL_ID")
+        
         flag_data_2 = False
         flag_data = flagChanges(old_file_name,new_file_name)
         if not flag_data:
@@ -90,7 +93,7 @@ def changes():
         
         strmsg = strpattern(flag_data,flag_data_2)
         ch_id = "-100"+CHANNEL_ID
-        if DEBUG:
+        if int(getEnv("DEBUG")):
             # return flag_data
             print(strmsg)
             # return strmsg
@@ -108,5 +111,5 @@ def changes():
         print(get_exception())
         return False
 
-if not DEBUG:
+if not int(getEnv("DEBUG")):
     changes()

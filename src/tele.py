@@ -1,13 +1,6 @@
-import requests,json
-import os,sys
-from common import BOT_TOKEN,get_exception
+import requests
+from common import get_exception,getEnv,printJson
 
-
-def printJson(data):
-    print(json.dumps(data,indent=4))
-
-tele_api_send_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage'
-tele_api_edit_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/editMessageText'
 
 spl_ch = ['**',  '``', '[[', ']]', '((', '))', '~', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!' ]
 def santizeText(txt):
@@ -16,6 +9,8 @@ def santizeText(txt):
   return txt
 
 def sendMsg(chat_id,text="",tag="untitled"):
+    BOT_TOKEN = getEnv("BOT_TOKEN")
+    tele_api_send_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage'
     text = santizeText(text)
     cont = {
         "chat_id":chat_id,
@@ -42,6 +37,8 @@ def sendMsg(chat_id,text="",tag="untitled"):
         return False
 
 def editMsg(chat_id,msgId,txt="Edited"):
+    BOT_TOKEN = getEnv("BOT_TOKEN")
+    tele_api_edit_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/editMessageText'
     txt = santizeText(txt)
     cont = {
         "chat_id":chat_id,
