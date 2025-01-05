@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9cea4b79f766da379591fe1ce8f228fb23e93410",
+    "feature_set_token": "17d44e566ecbf94a0b14da18fc67cba399e82aeb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1649,6 +1649,9 @@
         },
         "responsive_web_grok_show_citations": {
             "value": true
+        },
+        "responsive_web_grok_show_grok_performance_metrics": {
+            "value": false
         },
         "responsive_web_grok_sport_cards_enabled": {
             "value": false
@@ -7934,7 +7937,8 @@
         },
         "responsive_web_grok_show_grok_performance_metrics": {
             "name": "responsive_web_grok_show_grok_performance_metrics",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
