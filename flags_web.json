@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "17d44e566ecbf94a0b14da18fc67cba399e82aeb",
+    "feature_set_token": "dc176400abd982c5749fedaecb25d00216e3698f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2700,7 +2700,7 @@
             "value": ""
         },
         "subscriptions_upsells_premium_home_nav": {
-            "value": "try_premium"
+            "value": "premium_upsell_upgrade"
         },
         "subscriptions_upsells_profile_card_enabled": {
             "value": false
@@ -2721,7 +2721,7 @@
             "value": ""
         },
         "subscriptions_upsells_right_sidebar_variant": {
-            "value": "free_trial_premium_14_days"
+            "value": ""
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -3196,6 +3196,9 @@
             "value": true
         },
         "xprofile_profile_button_enabled": {
+            "value": false
+        },
+        "xprofile_section_visibility_enabled": {
             "value": false
         },
         "xprofile_work_history_consumption_enabled": {
@@ -6744,10 +6747,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "payments_risk_device_sdk_enabled": {
-            "name": "payments_risk_device_sdk_enabled",
-            "type": "string"
-        },
         "payments_interest_enabled": {
             "name": "payments_interest_enabled",
             "type": "boolean",
@@ -7940,6 +7939,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_places_card_enabled": {
+            "name": "responsive_web_grok_places_card_enabled",
+            "type": "string"
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -8728,6 +8731,10 @@
             "name": "responsive_web_verified_organizations_new_hiring_landing_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_verified_organizations_people_search_follow_enabled": {
+            "name": "responsive_web_verified_organizations_people_search_follow_enabled",
+            "type": "string"
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
@@ -10362,12 +10369,12 @@
         "subscriptions_upsells_right_sidebar_variant": {
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
-            "defaultValue": "free_trial_premium_14_days"
+            "defaultValue": ""
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
             "type": "string",
-            "defaultValue": "try_premium"
+            "defaultValue": "premium_upsell_upgrade"
         },
         "subscriptions_upsells_get_verified_profile": {
             "name": "subscriptions_upsells_get_verified_profile",
@@ -12200,7 +12207,8 @@
         },
         "xprofile_section_visibility_enabled": {
             "name": "xprofile_section_visibility_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "zazu_report_flow_13359": {
             "name": "zazu_report_flow_13359",
