@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "dc176400abd982c5749fedaecb25d00216e3698f",
+    "feature_set_token": "1eb25c6b0e66100ac5cd13ca4d4b24b827d41adf",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1608,6 +1608,9 @@
         "responsive_web_grok_pdf_upload_enabled": {
             "value": true
         },
+        "responsive_web_grok_post_composer": {
+            "value": false
+        },
         "responsive_web_grok_post_image_understanding_enabled": {
             "value": false
         },
@@ -2150,6 +2153,9 @@
         },
         "rweb_analytics_country_device_breakdown_enabled": {
             "value": true
+        },
+        "rweb_analytics_create_reply_enabled": {
+            "value": false
         },
         "rweb_analytics_device_breakdown_enabled": {
             "value": false
@@ -7943,6 +7949,11 @@
             "name": "responsive_web_grok_places_card_enabled",
             "type": "string"
         },
+        "responsive_web_grok_post_composer": {
+            "name": "responsive_web_grok_post_composer",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -8857,6 +8868,11 @@
         },
         "rweb_analytics_video_xweb_enabled": {
             "name": "rweb_analytics_video_xweb_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_analytics_create_reply_enabled": {
+            "name": "rweb_analytics_create_reply_enabled",
             "type": "boolean",
             "defaultValue": false
         },
