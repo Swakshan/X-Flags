@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c83caf35b842ce23b573b709b598fafe31052984",
+    "feature_set_token": "99a403ff3a8b85096b1449552314d42055ef1424",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1592,6 +1592,9 @@
         },
         "responsive_web_grok_in_app_learn_more": {
             "value": "https://x.com/xai/status/1823597788573098215"
+        },
+        "responsive_web_grok_location_enabled": {
+            "value": false
         },
         "responsive_web_grok_media_carousel_enabled": {
             "value": true
@@ -5539,6 +5542,14 @@
                 "with_button"
             ]
         },
+        "grok_button_on_every_post_17085": {
+            "name": "grok_button_on_every_post_17085",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "with_buttons_on_all_posts"
+            ]
+        },
         "grok_followup_buttons_under_posts_17076": {
             "name": "grok_followup_buttons_under_posts_17076",
             "type": "experiment",
@@ -7954,6 +7965,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_location_enabled": {
+            "name": "responsive_web_grok_location_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -9412,6 +9428,16 @@
                 "69:twcamp^share|twsrc^ipad|twgr^viber",
                 "70:twcamp^share|twsrc^ipad|twgr^instagram",
                 "71:twcamp^share|twsrc^ipad|twgr^linkedin"
+            ]
+        },
+        "sidebar_longform_upsell_test_17086": {
+            "name": "sidebar_longform_upsell_test_17086",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant_a",
+                "variant_b",
+                "variant_c"
             ]
         },
         "smbo_legacy_pac_is_in_follow_position_test": {
