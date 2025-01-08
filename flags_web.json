@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "99a403ff3a8b85096b1449552314d42055ef1424",
+    "feature_set_token": "560ff9e86165f9a7ff4a241480768ec49769ad37",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1021,7 +1021,7 @@
             "value": 5
         },
         "media_async_upload_max_video_duration": {
-            "value": 140
+            "value": 14460
         },
         "media_async_upload_max_video_size": {
             "value": 512
@@ -2121,6 +2121,9 @@
         "responsive_web_verified_organizations_people_search_enabled": {
             "value": false
         },
+        "responsive_web_verified_organizations_people_search_follow_enabled": {
+            "value": false
+        },
         "responsive_web_verified_organizations_people_search_onboarding_enabled": {
             "value": false
         },
@@ -2161,7 +2164,7 @@
             "value": true
         },
         "rweb_analytics_device_breakdown_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_export_data_content_enabled": {
             "value": true
@@ -2632,6 +2635,12 @@
         },
         "subscriptions_long_video_upload": {
             "value": true
+        },
+        "subscriptions_management_renew_module_api_enabled": {
+            "value": false
+        },
+        "subscriptions_management_renew_module_enabled": {
+            "value": false
         },
         "subscriptions_marketing_page_discounts_enabled": {
             "value": true
@@ -6453,7 +6462,7 @@
         "media_async_upload_max_video_duration": {
             "name": "media_async_upload_max_video_duration",
             "type": "number",
-            "defaultValue": 140
+            "defaultValue": 14460
         },
         "media_async_upload_longer_video_max_video_duration": {
             "name": "media_async_upload_longer_video_max_video_duration",
@@ -8761,7 +8770,8 @@
         },
         "responsive_web_verified_organizations_people_search_follow_enabled": {
             "name": "responsive_web_verified_organizations_people_search_follow_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
@@ -8845,7 +8855,7 @@
         "rweb_analytics_device_breakdown_enabled": {
             "name": "rweb_analytics_device_breakdown_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_nav_item_enabled": {
             "name": "rweb_analytics_nav_item_enabled",
@@ -10167,6 +10177,20 @@
         "subscriptions_is_blue_verified_review_status_hub_enabled": {
             "name": "subscriptions_is_blue_verified_review_status_hub_enabled",
             "type": "string"
+        },
+        "subscriptions_management_in_app_cancel_enabled": {
+            "name": "subscriptions_management_in_app_cancel_enabled",
+            "type": "string"
+        },
+        "subscriptions_management_renew_module_enabled": {
+            "name": "subscriptions_management_renew_module_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_management_renew_module_api_enabled": {
+            "name": "subscriptions_management_renew_module_api_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
