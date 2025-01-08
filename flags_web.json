@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "560ff9e86165f9a7ff4a241480768ec49769ad37",
+    "feature_set_token": "39ef5b382cb1348857e02cbeeddbf880bbe57473",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2637,7 +2637,7 @@
             "value": true
         },
         "subscriptions_management_renew_module_api_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_management_renew_module_enabled": {
             "value": false
@@ -6803,6 +6803,14 @@
                 "alternative"
             ]
         },
+        "premium_renew_subscription_module_17088": {
+            "name": "premium_renew_subscription_module_17088",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "premium_webview_paywall_offer_video_url": {
             "name": "premium_webview_paywall_offer_video_url",
             "type": "string",
@@ -10190,7 +10198,7 @@
         "subscriptions_management_renew_module_api_enabled": {
             "name": "subscriptions_management_renew_module_api_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
