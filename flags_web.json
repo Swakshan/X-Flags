@@ -5577,6 +5577,14 @@
             "type": "number",
             "defaultValue": 18
         },
+        "grok_universal_search_17082": {
+            "name": "grok_universal_search_17082",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "gryphon_accountsync_polling_interval_ms": {
             "name": "gryphon_accountsync_polling_interval_ms",
             "type": "number",
@@ -9455,7 +9463,8 @@
                 "control",
                 "variant_a",
                 "variant_b",
-                "variant_c"
+                "variant_c",
+                "variant_d"
             ]
         },
         "smbo_legacy_pac_is_in_follow_position_test": {
