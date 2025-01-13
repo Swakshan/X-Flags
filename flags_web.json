@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a7180ad7ad3b3e6a011ee1cbffb03b7d0b0ae031",
+    "feature_set_token": "068a67fcdd4ecef151f832cff4fb4206f898f2ef",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1621,10 +1621,10 @@
             "value": false
         },
         "responsive_web_grok_profile_summary_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_profile_summary_min_followers": {
-            "value": 1
+            "value": 200
         },
         "responsive_web_grok_profile_summary_min_posts": {
             "value": 30
@@ -2743,6 +2743,9 @@
         },
         "subscriptions_upsells_right_sidebar_variant": {
             "value": ""
+        },
+        "subscriptions_upsells_vo_nav_decoration_enabled": {
+            "value": false
         },
         "subscriptions_verification_info_is_identity_verified_enabled": {
             "value": true
@@ -7914,12 +7917,12 @@
         "responsive_web_grok_profile_summary_enabled": {
             "name": "responsive_web_grok_profile_summary_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_profile_summary_min_followers": {
             "name": "responsive_web_grok_profile_summary_min_followers",
             "type": "number",
-            "defaultValue": 1
+            "defaultValue": 200
         },
         "responsive_web_grok_profile_summary_min_posts": {
             "name": "responsive_web_grok_profile_summary_min_posts",
@@ -10577,6 +10580,11 @@
         "subscriptions_upsells_reply_boost_popup_enabled": {
             "name": "subscriptions_upsells_reply_boost_popup_enabled",
             "type": "string"
+        },
+        "subscriptions_upsells_vo_nav_decoration_enabled": {
+            "name": "subscriptions_upsells_vo_nav_decoration_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
