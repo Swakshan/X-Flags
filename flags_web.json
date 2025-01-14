@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "068a67fcdd4ecef151f832cff4fb4206f898f2ef",
+    "feature_set_token": "61ccf2463c5534c12626d79aac709a79ded3df00",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1572,6 +1572,9 @@
         "responsive_web_grok_file_upload_enabled": {
             "value": true
         },
+        "responsive_web_grok_finance_cards_enabled": {
+            "value": false
+        },
         "responsive_web_grok_focus_mode": {
             "value": true
         },
@@ -2120,6 +2123,9 @@
         },
         "responsive_web_verified_organizations_new_signup_enabled": {
             "value": true
+        },
+        "responsive_web_verified_organizations_new_year_offer_enabled": {
+            "value": false
         },
         "responsive_web_verified_organizations_paid_to_invoice_enabled": {
             "value": false
@@ -6804,6 +6810,10 @@
             "name": "payments_settings_documents_enabled",
             "type": "string"
         },
+        "payments_pin_link_payment_methods_enabled": {
+            "name": "payments_pin_link_payment_methods_enabled",
+            "type": "string"
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
@@ -7970,7 +7980,8 @@
         },
         "responsive_web_grok_finance_cards_enabled": {
             "name": "responsive_web_grok_finance_cards_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_media_carousel_enabled": {
             "name": "responsive_web_grok_media_carousel_enabled",
@@ -8815,7 +8826,8 @@
         },
         "responsive_web_verified_organizations_new_year_offer_enabled": {
             "name": "responsive_web_verified_organizations_new_year_offer_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
