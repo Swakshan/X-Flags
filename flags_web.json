@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "97d9e58f19c070034d063b07fb77e66fd45a1a1c",
+    "feature_set_token": "a853ac9963298090c38b8f8f0381ecc02effcaa6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2125,7 +2125,7 @@
             "value": true
         },
         "responsive_web_verified_organizations_new_year_offer_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_verified_organizations_paid_to_invoice_enabled": {
             "value": false
@@ -2742,6 +2742,9 @@
             "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
         },
         "subscriptions_upsells_reply_boost_enabled": {
+            "value": false
+        },
+        "subscriptions_upsells_reply_boost_popup_enabled": {
             "value": false
         },
         "subscriptions_upsells_reply_boost_variant": {
@@ -8827,7 +8830,7 @@
         "responsive_web_verified_organizations_new_year_offer_enabled": {
             "name": "responsive_web_verified_organizations_new_year_offer_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
@@ -10591,7 +10594,8 @@
         },
         "subscriptions_upsells_reply_boost_popup_enabled": {
             "name": "subscriptions_upsells_reply_boost_popup_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_vo_nav_decoration_enabled": {
             "name": "subscriptions_upsells_vo_nav_decoration_enabled",
