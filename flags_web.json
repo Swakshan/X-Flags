@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a853ac9963298090c38b8f8f0381ecc02effcaa6",
+    "feature_set_token": "5a47dfef3f556a2b6b0fe76e7fff599428b63fc3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1756,7 +1756,7 @@
             "value": false
         },
         "responsive_web_live_screen_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_locale_context_direction_enabled": {
             "value": true
@@ -2735,6 +2735,12 @@
         "subscriptions_upsells_profile_card_variant": {
             "value": "anniversary"
         },
+        "subscriptions_upsells_radar_sidebar_enabled": {
+            "value": false
+        },
+        "subscriptions_upsells_radar_sidebar_variant": {
+            "value": ""
+        },
         "subscriptions_upsells_radar_video_url_desktop": {
             "value": "https://abs.twimg.com/images/radar_promo_v2.mp4"
         },
@@ -3563,14 +3569,6 @@
             "name": "ads_spacing_client_fallback_minimum_spacing_verified_blue",
             "type": "number",
             "defaultValue": 3
-        },
-        "analytics_profile_upsell_web_threshold_test_17035": {
-            "name": "analytics_profile_upsell_web_threshold_test_17035",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "low_threshold"
-            ]
         },
         "analytics_promo_page_web_16990": {
             "name": "analytics_promo_page_web_16990",
@@ -5477,24 +5475,6 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "get_verified_button_web_17009": {
-            "name": "get_verified_button_web_17009",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "variant"
-            ]
-        },
-        "get_verified_profile_16882": {
-            "name": "get_verified_profile_16882",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "get_verified_profile_android_16907": {
-            "name": "get_verified_profile_android_16907",
-            "type": "experiment",
-            "enumeration_values": []
-        },
         "graduated_access_user_prompt_enabled": {
             "name": "graduated_access_user_prompt_enabled",
             "type": "boolean",
@@ -6585,11 +6565,6 @@
                 "treatment"
             ]
         },
-        "monetization_premium_home_nav_upsell_global_16864": {
-            "name": "monetization_premium_home_nav_upsell_global_16864",
-            "type": "experiment",
-            "enumeration_values": []
-        },
         "mr_logged_out_web_notifs_15050": {
             "name": "mr_logged_out_web_notifs_15050",
             "type": "experiment",
@@ -6822,16 +6797,16 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "premium_post_composer_upsell_variants_17046": {
-            "name": "premium_post_composer_upsell_variants_17046",
+        "premium_renew_subscription_module_17088": {
+            "name": "premium_renew_subscription_module_17088",
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "alternative"
+                "treatment"
             ]
         },
-        "premium_renew_subscription_module_17088": {
-            "name": "premium_renew_subscription_module_17088",
+        "premium_reply_boost_popup_web_17100": {
+            "name": "premium_reply_boost_popup_web_17100",
             "type": "experiment",
             "enumeration_values": [
                 "control",
@@ -6916,6 +6891,21 @@
             "name": "promoted_badge_placement_position",
             "type": "string",
             "defaultValue": ""
+        },
+        "radar_search_sidebar_upsell_test_17097": {
+            "name": "radar_search_sidebar_upsell_test_17097",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant_a",
+                "variant_b",
+                "variant_c",
+                "variant_d",
+                "variant_e",
+                "variant_f",
+                "variant_g",
+                "variant_h"
+            ]
         },
         "recruiting_verified_orgs_admin_enabled": {
             "name": "recruiting_verified_orgs_admin_enabled",
@@ -7056,17 +7046,6 @@
             "name": "reply_sorting_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "reply_boost_premium_upsell_web_17051": {
-            "name": "reply_boost_premium_upsell_web_17051",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "default",
-                "variant_a",
-                "variant_b",
-                "variant_c"
-            ]
         },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
@@ -8015,6 +7994,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_grok_chat_drawer_enabled": {
+            "name": "responsive_web_grok_chat_drawer_enabled",
+            "type": "string"
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -8114,7 +8097,7 @@
         "responsive_web_live_screen_enabled": {
             "name": "responsive_web_live_screen_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_locale_context_direction_enabled": {
             "name": "responsive_web_locale_context_direction_enabled",
@@ -10599,6 +10582,16 @@
         },
         "subscriptions_upsells_vo_nav_decoration_enabled": {
             "name": "subscriptions_upsells_vo_nav_decoration_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_upsells_radar_sidebar_variant": {
+            "name": "subscriptions_upsells_radar_sidebar_variant",
+            "type": "string",
+            "defaultValue": ""
+        },
+        "subscriptions_upsells_radar_sidebar_enabled": {
+            "name": "subscriptions_upsells_radar_sidebar_enabled",
             "type": "boolean",
             "defaultValue": false
         },
