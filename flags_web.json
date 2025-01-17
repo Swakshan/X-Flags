@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5a47dfef3f556a2b6b0fe76e7fff599428b63fc3",
+    "feature_set_token": "337cd7d1b1a2e84057cce84c37d7fc099d60ab15",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1110,6 +1110,9 @@
         "payments_pin_login_enabled": {
             "value": false
         },
+        "payments_settings_documents_enabled": {
+            "value": false
+        },
         "premium_content_api_read_enabled": {
             "value": false
         },
@@ -1554,6 +1557,9 @@
         "responsive_web_grok_backend_prompts_enabled": {
             "value": true
         },
+        "responsive_web_grok_chat_drawer_enabled": {
+            "value": false
+        },
         "responsive_web_grok_continue_in_grok_enabled": {
             "value": true
         },
@@ -1586,6 +1592,9 @@
         },
         "responsive_web_grok_history_search_enabled": {
             "value": true
+        },
+        "responsive_web_grok_image_annotation_enabled": {
+            "value": false
         },
         "responsive_web_grok_image_prompts_enabled": {
             "value": true
@@ -1924,7 +1933,7 @@
             "value": false
         },
         "responsive_web_scheduling_threads_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_scroller_top_positioning_enabled": {
             "value": false
@@ -6786,7 +6795,8 @@
         },
         "payments_settings_documents_enabled": {
             "name": "payments_settings_documents_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_pin_link_payment_methods_enabled": {
             "name": "payments_pin_link_payment_methods_enabled",
@@ -7996,7 +8006,13 @@
         },
         "responsive_web_grok_chat_drawer_enabled": {
             "name": "responsive_web_grok_chat_drawer_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_image_annotation_enabled": {
+            "name": "responsive_web_grok_image_annotation_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -8384,7 +8400,7 @@
         "responsive_web_scheduling_threads_enabled": {
             "name": "responsive_web_scheduling_threads_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_scroller_top_positioning_enabled": {
             "name": "responsive_web_scroller_top_positioning_enabled",
@@ -12201,6 +12217,14 @@
             "name": "web_immersive_viewer_autoplay_16490",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "web_redesign_17101": {
+            "name": "web_redesign_17101",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "redesign"
+            ]
         },
         "web_repeat_profile_visit_notifications_15195": {
             "name": "web_repeat_profile_visit_notifications_15195",
