@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8a242154ec14087e930527a0488136b1c26fdd03",
+    "feature_set_token": "14fc826c60076213612f53c9064f89607096ea63",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1539,6 +1539,9 @@
         "responsive_web_graphql_timeline_navigation_enabled": {
             "value": true
         },
+        "responsive_web_grok_analyze_animation": {
+            "value": false
+        },
         "responsive_web_grok_analyze_button_fetch_trends_enabled": {
             "value": false
         },
@@ -1567,6 +1570,9 @@
             "value": true
         },
         "responsive_web_grok_dev_universal_search_id_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_feed": {
             "value": false
         },
         "responsive_web_grok_feedback_label_dropdown": {
@@ -1942,7 +1948,7 @@
             "value": false
         },
         "responsive_web_scheduling_threads_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_scroller_top_positioning_enabled": {
             "value": false
@@ -8040,7 +8046,13 @@
         },
         "responsive_web_grok_feed": {
             "name": "responsive_web_grok_feed",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_analyze_animation": {
+            "name": "responsive_web_grok_analyze_animation",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -8428,7 +8440,7 @@
         "responsive_web_scheduling_threads_enabled": {
             "name": "responsive_web_scheduling_threads_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_scroller_top_positioning_enabled": {
             "name": "responsive_web_scroller_top_positioning_enabled",
