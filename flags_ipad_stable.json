@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "89c1d7a4ab9fb06d5915c99a4a8de49d835fc740",
+        "feature_set_token": "dc2048f41e409e79ff13ccfdff9ddb550a991f33",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2085,14 +2085,11 @@
             "grok_ios_image_upload_enabled": {
                 "value": true
             },
-            "grok_ios_inline_action_button": {
-                "value": false
-            },
             "grok_ios_large_grok_tab_icon_enabled": {
                 "value": true
             },
-            "grok_ios_load_preferred_prompts_from_home_enabled": {
-                "value": true
+            "grok_ios_load_preferred_prompts_from_home_for_images_enabled": {
+                "value": false
             },
             "grok_ios_mention_hydration_enabled": {
                 "value": false
@@ -2113,19 +2110,16 @@
                 "value": false
             },
             "grok_ios_profile_summary_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_profile_summary_in_menu_enabled": {
                 "value": true
             },
             "grok_ios_profile_summary_min_followers": {
-                "value": 200.0
+                "value": 50.0
             },
             "grok_ios_profile_summary_min_posts": {
-                "value": 30.0
-            },
-            "grok_ios_pushnav_enabled": {
-                "value": true
+                "value": 15.0
             },
             "grok_ios_show_nux_enabled": {
                 "value": false
@@ -2170,7 +2164,7 @@
                 "value": true
             },
             "grok_settings_age_restriction_enabled": {
-                "value": false
+                "value": true
             },
             "grok_user_search_typeahead_enabled": {
                 "value": true
@@ -3302,6 +3296,9 @@
             "ios_tav_playing_forward_buffer": {
                 "value": 8.0
             },
+            "ios_tav_retains_pip_controller_enabled": {
+                "value": false
+            },
             "ios_tav_send_cmcd_enabled": {
                 "value": true
             },
@@ -3985,6 +3982,9 @@
                 "value": true
             },
             "media_download_video_enabled": {
+                "value": true
+            },
+            "media_download_video_prompt_enabled": {
                 "value": true
             },
             "media_tab_debug_force_load_status_id": {
@@ -8694,6 +8694,9 @@
             "payments_pin_enabled": {
                 "value": false
             },
+            "payments_pin_link_payment_methods_enabled": {
+                "value": false
+            },
             "payments_pin_login_enabled": {
                 "value": false
             },
@@ -9035,6 +9038,15 @@
             },
             "pin_to_top_minimum_refresh_interval": {
                 "value": 5.0
+            },
+            "premium_business_ios_nav_promo_enabled": {
+                "value": false
+            },
+            "premium_business_ios_nav_promo_label_variant": {
+                "value": ""
+            },
+            "premium_business_ios_nav_promo_prem_plus_only_enabled": {
+                "value": false
             },
             "preroll_cta_docked_media_enabled": {
                 "value": false
@@ -9514,6 +9526,9 @@
             },
             "ssp_ads_immersive_configuration": {
                 "value": ""
+            },
+            "ssp_ads_immersive_default_video_player_enabled": {
+                "value": false
             },
             "ssp_ads_in_app_debug_menu": {
                 "value": false
@@ -10568,7 +10583,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "2fc799fe44159e69f9da33c03230afdf65a11331",
-        "experiments": "2fc799fe44159e69f9da33c03230afdf65a11331"
+        "feature_switches": "54d33de93679fcd2e648ab818be924fef1c206b4",
+        "experiments": "54d33de93679fcd2e648ab818be924fef1c206b4"
     }
 }
