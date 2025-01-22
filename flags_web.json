@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "688bbd5078fef7a8b5e53f96b6a6a283324b2619",
+    "feature_set_token": "f2ac662876bee3bc9babbae2a6fc4206338f5f56",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -9028,6 +9028,14 @@
             "name": "rweb_client_transaction_id_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_compact_trend_cell_17111": {
+            "name": "rweb_compact_trend_cell_17111",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "rweb_conf_only_enabled": {
             "name": "rweb_conf_only_enabled",
