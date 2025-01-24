@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c5c6f08de98279b926bf5c69d339c5ad01527827",
+    "feature_set_token": "d0153cd85a8ee4eb731ff3dd9049762cdceb4c6b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1636,6 +1636,9 @@
             "value": true
         },
         "responsive_web_grok_personality": {
+            "value": false
+        },
+        "responsive_web_grok_places_card_enabled": {
             "value": false
         },
         "responsive_web_grok_post_composer": {
@@ -8036,7 +8039,8 @@
         },
         "responsive_web_grok_places_card_enabled": {
             "name": "responsive_web_grok_places_card_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_post_composer": {
             "name": "responsive_web_grok_post_composer",
