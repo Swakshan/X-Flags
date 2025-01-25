@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d0153cd85a8ee4eb731ff3dd9049762cdceb4c6b",
+    "feature_set_token": "0ebace0b8ba16e9d0387574957ee2d445638f43a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1573,6 +1573,9 @@
             "value": true
         },
         "responsive_web_grok_dev_universal_search_id_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_expanded_input": {
             "value": false
         },
         "responsive_web_grok_feed": {
@@ -8097,6 +8100,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_expanded_input": {
+            "name": "responsive_web_grok_expanded_input",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -8916,6 +8924,10 @@
         },
         "responsive_web_verified_organizations_free_upgrade_promo_enabled": {
             "name": "responsive_web_verified_organizations_free_upgrade_promo_enabled",
+            "type": "string"
+        },
+        "responsive_web_verified_organizations_profile_search_redesign_enabled": {
+            "name": "responsive_web_verified_organizations_profile_search_redesign_enabled",
             "type": "string"
         },
         "responsive_web_video_pcomplete_enabled": {
