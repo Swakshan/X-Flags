@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "985541fe9f3abedaff914a812db1821bb01ae02a",
+    "feature_set_token": "81d83d4729847b6a3fe22050f4aa8552d661013e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1098,6 +1098,9 @@
                 "ja"
             ]
         },
+        "payments_account_details_enabled": {
+            "value": false
+        },
         "payments_enabled": {
             "value": false
         },
@@ -1105,6 +1108,9 @@
             "value": false
         },
         "payments_pin_enabled": {
+            "value": false
+        },
+        "payments_pin_link_payment_methods_enabled": {
             "value": false
         },
         "payments_pin_login_enabled": {
@@ -1829,6 +1835,9 @@
         },
         "responsive_web_login_signup_sheet_app_install_cta_enabled": {
             "value": true
+        },
+        "responsive_web_media_download_video_share_menu_enabled": {
+            "value": false
         },
         "responsive_web_media_upload_limit_2g": {
             "value": 250
@@ -2770,6 +2779,9 @@
         },
         "subscriptions_upsells_post_composer_variant": {
             "value": ""
+        },
+        "subscriptions_upsells_post_details_analytics_enabled": {
+            "value": false
         },
         "subscriptions_upsells_post_engagements_enabled": {
             "value": false
@@ -6841,7 +6853,8 @@
         },
         "payments_account_details_enabled": {
             "name": "payments_account_details_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_cards_as_payment_method_enabled": {
             "name": "payments_cards_as_payment_method_enabled",
@@ -6854,7 +6867,8 @@
         },
         "payments_pin_link_payment_methods_enabled": {
             "name": "payments_pin_link_payment_methods_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
@@ -8274,6 +8288,15 @@
             "name": "responsive_web_login_signup_sheet_app_install_cta_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_media_download_video_enabled": {
+            "name": "responsive_web_media_download_video_enabled",
+            "type": "string"
+        },
+        "responsive_web_media_download_video_share_menu_enabled": {
+            "name": "responsive_web_media_download_video_share_menu_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_media_upload_limit_slow_2g": {
             "name": "responsive_web_media_upload_limit_slow_2g",
@@ -10759,6 +10782,11 @@
         },
         "subscriptions_upsells_post_engagements_enabled": {
             "name": "subscriptions_upsells_post_engagements_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_upsells_post_details_analytics_enabled": {
+            "name": "subscriptions_upsells_post_details_analytics_enabled",
             "type": "boolean",
             "defaultValue": false
         },
