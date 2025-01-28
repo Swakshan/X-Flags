@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "81d83d4729847b6a3fe22050f4aa8552d661013e",
+    "feature_set_token": "fc5da395c2d0c2e6256be956aaa8071d086aca95",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -473,6 +473,9 @@
         },
         "communities_moderation_log_enabled": {
             "value": true
+        },
+        "communities_non_member_reply_enabled": {
+            "value": false
         },
         "communities_show_broadcast_option_in_composer": {
             "value": true
@@ -2160,6 +2163,9 @@
         "responsive_web_verified_organizations_free_to_invoice_enabled": {
             "value": false
         },
+        "responsive_web_verified_organizations_free_upgrade_promo_enabled": {
+            "value": false
+        },
         "responsive_web_verified_organizations_insights_enabled": {
             "value": true
         },
@@ -2584,6 +2590,9 @@
         },
         "subscriptions_blue_verified_edit_profile_error_message_enabled": {
             "value": true
+        },
+        "subscriptions_branding_checkmark_logo_enabled": {
+            "value": false
         },
         "subscriptions_enabled": {
             "value": true
@@ -4437,6 +4446,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "communities_non_member_reply_enabled": {
+            "name": "communities_non_member_reply_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
             "type": "experiment",
@@ -5254,6 +5268,14 @@
         "dont_mention_me_view_api_result_enabled": {
             "name": "dont_mention_me_view_api_result_enabled",
             "type": "string"
+        },
+        "download_video_share_menu_web_17123": {
+            "name": "download_video_share_menu_web_17123",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "dsa_report_flow_enabled": {
             "name": "dsa_report_flow_enabled",
@@ -6874,6 +6896,15 @@
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "premium_post_analytics_post_details_upsell_17122": {
+            "name": "premium_post_analytics_post_details_upsell_17122",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "direct_to_paywall",
+                "analytics_popup"
+            ]
         },
         "premium_renew_subscription_module_17088": {
             "name": "premium_renew_subscription_module_17088",
@@ -8966,7 +8997,8 @@
         },
         "responsive_web_verified_organizations_free_upgrade_promo_enabled": {
             "name": "responsive_web_verified_organizations_free_upgrade_promo_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_verified_organizations_profile_search_redesign_enabled": {
             "name": "responsive_web_verified_organizations_profile_search_redesign_enabled",
@@ -10113,6 +10145,11 @@
         "subscriptions_blue_verified_edit_profile_backend_error_message_enabled": {
             "name": "subscriptions_blue_verified_edit_profile_backend_error_message_enabled",
             "type": "string"
+        },
+        "subscriptions_branding_checkmark_logo_enabled": {
+            "name": "subscriptions_branding_checkmark_logo_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_feature_1005": {
             "name": "subscriptions_feature_1005",
