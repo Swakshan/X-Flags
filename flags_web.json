@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8842cfb8b0510919dbe9c3aed7c5e8c62372ff7f",
+    "feature_set_token": "80c498ddab07e54b58b39984933d3a8525199161",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1748,6 +1748,9 @@
         },
         "responsive_web_grok_v2_upsell_enabled": {
             "value": true
+        },
+        "responsive_web_grok_weather_card_enabled": {
+            "value": false
         },
         "responsive_web_grok_web_results": {
             "value": true
@@ -8182,7 +8185,8 @@
         },
         "responsive_web_grok_weather_card_enabled": {
             "name": "responsive_web_grok_weather_card_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
