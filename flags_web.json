@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e9e469bb3e08652cbd457270de6ebc03fe5fe9dc",
+    "feature_set_token": "4b02e75960364ee7138f42c43016a6013d59dbce",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1716,6 +1716,9 @@
         "responsive_web_grok_show_message_post_button": {
             "value": true
         },
+        "responsive_web_grok_show_message_reply_button": {
+            "value": false
+        },
         "responsive_web_grok_sport_cards_enabled": {
             "value": false
         },
@@ -2311,7 +2314,7 @@
             "value": true
         },
         "rweb_live_dock_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_master_detail_enabled": {
             "value": false
@@ -2841,7 +2844,7 @@
             "value": ""
         },
         "subscriptions_upsells_vo_nav_decoration_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_vo_nav_decoration_variant": {
             "value": "30_percent_off"
@@ -8196,6 +8199,15 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_show_message_reply_button": {
+            "name": "responsive_web_grok_show_message_reply_button",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_use_new_layout": {
+            "name": "responsive_web_grok_use_new_layout",
+            "type": "string"
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9246,18 +9258,10 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "rweb_live_dock_17108": {
-            "name": "rweb_live_dock_17108",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
         "rweb_live_dock_enabled": {
             "name": "rweb_live_dock_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_master_detail_enabled": {
             "name": "rweb_master_detail_enabled",
@@ -10827,7 +10831,7 @@
         "subscriptions_upsells_vo_nav_decoration_enabled": {
             "name": "subscriptions_upsells_vo_nav_decoration_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_radar_sidebar_variant": {
             "name": "subscriptions_upsells_radar_sidebar_variant",
@@ -10858,6 +10862,10 @@
             "name": "subscriptions_upsells_post_details_analytics_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_upsells_ios_premium_right_nav_button_variant": {
+            "name": "subscriptions_upsells_ios_premium_right_nav_button_variant",
+            "type": "string"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
