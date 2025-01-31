@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "eefb1085fa8a660d4b61bac4bad8fcffdf02612f",
+    "feature_set_token": "3c80c27b140266b9e28d853076223e42fb72d00b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1635,6 +1635,9 @@
         "responsive_web_grok_in_app_learn_more": {
             "value": "https://x.com/xai/status/1823597788573098215"
         },
+        "responsive_web_grok_links": {
+            "value": true
+        },
         "responsive_web_grok_location_enabled": {
             "value": true
         },
@@ -1717,7 +1720,7 @@
             "value": true
         },
         "responsive_web_grok_show_message_reply_button": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_sport_cards_enabled": {
             "value": false
@@ -1738,6 +1741,9 @@
             "value": false
         },
         "responsive_web_grok_tweet_translation": {
+            "value": false
+        },
+        "responsive_web_grok_use_new_layout": {
             "value": false
         },
         "responsive_web_grok_user_active_seconds_enable": {
@@ -2812,12 +2818,6 @@
         },
         "subscriptions_upsells_premium_home_nav": {
             "value": "premium_upsell_upgrade"
-        },
-        "subscriptions_upsells_profile_card_enabled": {
-            "value": false
-        },
-        "subscriptions_upsells_profile_card_variant": {
-            "value": "anniversary"
         },
         "subscriptions_upsells_radar_sidebar_enabled": {
             "value": false
@@ -8202,10 +8202,24 @@
         "responsive_web_grok_show_message_reply_button": {
             "name": "responsive_web_grok_show_message_reply_button",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_use_new_layout": {
             "name": "responsive_web_grok_use_new_layout",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_links": {
+            "name": "responsive_web_grok_links",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "responsive_web_grok_home_sport_widget_enabled": {
+            "name": "responsive_web_grok_home_sport_widget_enabled",
+            "type": "string"
+        },
+        "responsive_web_grok_home_finance_widget_enabled": {
+            "name": "responsive_web_grok_home_finance_widget_enabled",
             "type": "string"
         },
         "responsive_web_grok_api_enable_grok_host": {
@@ -10791,13 +10805,11 @@
         },
         "subscriptions_upsells_profile_card_enabled": {
             "name": "subscriptions_upsells_profile_card_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "subscriptions_upsells_profile_card_variant": {
             "name": "subscriptions_upsells_profile_card_variant",
-            "type": "string",
-            "defaultValue": "anniversary"
+            "type": "string"
         },
         "subscriptions_upsells_get_verified_button_variant": {
             "name": "subscriptions_upsells_get_verified_button_variant",
