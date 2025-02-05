@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5be5776892f81e80254aee6c959776c670f83a59",
+    "feature_set_token": "c817aae2574acc7ba3872329ad96d76817a49c38",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1588,6 +1588,9 @@
             "value": true
         },
         "responsive_web_grok_dev_universal_search_id_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_enable_chat_style_ui": {
             "value": false
         },
         "responsive_web_grok_expanded_input": {
@@ -8284,6 +8287,11 @@
             "type": "number",
             "defaultValue": 280
         },
+        "responsive_web_grok_enable_chat_style_ui": {
+            "name": "responsive_web_grok_enable_chat_style_ui",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -11998,6 +12006,14 @@
             "name": "verified_vo_refreshed_advertising_screen_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "verified_org_profile_upsell_17137": {
+            "name": "verified_org_profile_upsell_17137",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "verified_orgs_ad_credit_upsell_17113": {
             "name": "verified_orgs_ad_credit_upsell_17113",
