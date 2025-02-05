@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5ffd6671687b1e640b0d5bf7989064f1ec5f719f",
+    "feature_set_token": "5be5776892f81e80254aee6c959776c670f83a59",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1573,7 +1573,7 @@
             "value": true
         },
         "responsive_web_grok_api_enable_grok_host": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_backend_prompts_enabled": {
             "value": true
@@ -2767,6 +2767,9 @@
         },
         "subscriptions_premium_hub_insights_block_enabled": {
             "value": true
+        },
+        "subscriptions_premium_module_creator_gate_enabled": {
+            "value": false
         },
         "subscriptions_premium_module_enabled": {
             "value": false
@@ -6941,6 +6944,10 @@
             "name": "payments_one_click_flow_disabled",
             "type": "string"
         },
+        "payments_qr_code_enabled": {
+            "name": "payments_qr_code_enabled",
+            "type": "string"
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
@@ -8280,7 +8287,7 @@
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -10749,6 +10756,11 @@
         },
         "subscriptions_premium_module_enabled": {
             "name": "subscriptions_premium_module_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_premium_module_creator_gate_enabled": {
+            "name": "subscriptions_premium_module_creator_gate_enabled",
             "type": "boolean",
             "defaultValue": false
         },
