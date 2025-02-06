@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c817aae2574acc7ba3872329ad96d76817a49c38",
+    "feature_set_token": "1f10e8a5191b3c5f91c459cd3b8476a56eb71245",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1753,7 +1753,7 @@
             "value": false
         },
         "responsive_web_grok_tweet_translation_limit": {
-            "value": 280
+            "value": 560
         },
         "responsive_web_grok_use_new_layout": {
             "value": false
@@ -2050,6 +2050,9 @@
             "value": false
         },
         "responsive_web_temporary_ocf_x_migration": {
+            "value": false
+        },
+        "responsive_web_thread_media_nav_enabled": {
             "value": false
         },
         "responsive_web_timeline_cover_killswitch_enabled": {
@@ -8285,12 +8288,16 @@
         "responsive_web_grok_tweet_translation_limit": {
             "name": "responsive_web_grok_tweet_translation_limit",
             "type": "number",
-            "defaultValue": 280
+            "defaultValue": 560
         },
         "responsive_web_grok_enable_chat_style_ui": {
             "name": "responsive_web_grok_enable_chat_style_ui",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_logged_out_enabled": {
+            "name": "responsive_web_grok_logged_out_enabled",
+            "type": "string"
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -8766,6 +8773,11 @@
         },
         "responsive_web_temporary_ocf_x_migration": {
             "name": "responsive_web_temporary_ocf_x_migration",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_thread_media_nav_enabled": {
+            "name": "responsive_web_thread_media_nav_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -9464,6 +9476,14 @@
             "name": "rweb_ssp_ads_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_thread_media_nav_17145": {
+            "name": "rweb_thread_media_nav_17145",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "rweb_timeline_inline_show_more_enabled": {
             "name": "rweb_timeline_inline_show_more_enabled",
