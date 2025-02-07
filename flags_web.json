@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "299fc02a790b48d0b180822c9a54677928a993fd",
+    "feature_set_token": "b212b4aff9e12c2dbc06225a5e9be862c80a4863",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1128,11 +1128,14 @@
         "premium_content_api_read_enabled": {
             "value": false
         },
+        "premium_webview_paywall_force_premium_tier_enabled": {
+            "value": false
+        },
         "premium_webview_paywall_offer_image_url": {
             "value": "https://abs.twimg.com/images/anniversary_wide.png"
         },
         "premium_webview_paywall_offer_variant": {
-            "value": "anniversary"
+            "value": ""
         },
         "premium_webview_paywall_offer_video_url": {
             "value": "https://abs.twimg.com/images/anniversary-theme.mp4"
@@ -2194,7 +2197,7 @@
             "value": false
         },
         "responsive_web_verified_organizations_free_upgrade_promo_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_verified_organizations_insights_enabled": {
             "value": true
@@ -2763,9 +2766,9 @@
             "value": true
         },
         "subscriptions_marketing_page_offer_ends_at_msec": {
-            "value": 1733198400000.0
+            "value": 1739246400000.0
         },
-        "subscriptions_marketing_page_web_thanksgiving_design": {
+        "subscriptions_marketing_page_web_offer_header_enabled": {
             "value": false
         },
         "subscriptions_mute_ad_upsell_enabled": {
@@ -6972,10 +6975,22 @@
             "name": "payments_qr_code_enabled",
             "type": "string"
         },
+        "payments_qr_onboarding_enabled": {
+            "name": "payments_qr_onboarding_enabled",
+            "type": "string"
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "premium_module_v1_17146": {
+            "name": "premium_module_v1_17146",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "premium_post_analytics_post_details_upsell_17122": {
             "name": "premium_post_analytics_post_details_upsell_17122",
@@ -7027,12 +7042,17 @@
         "premium_webview_paywall_offer_variant": {
             "name": "premium_webview_paywall_offer_variant",
             "type": "string",
-            "defaultValue": "anniversary"
+            "defaultValue": ""
         },
         "premium_webview_paywall_offer_image_url": {
             "name": "premium_webview_paywall_offer_image_url",
             "type": "string",
             "defaultValue": "https://abs.twimg.com/images/anniversary_wide.png"
+        },
+        "premium_webview_paywall_force_premium_tier_enabled": {
+            "name": "premium_webview_paywall_force_premium_tier_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -9151,7 +9171,7 @@
         "responsive_web_verified_organizations_free_upgrade_promo_enabled": {
             "name": "responsive_web_verified_organizations_free_upgrade_promo_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_verified_organizations_profile_search_redesign_enabled": {
             "name": "responsive_web_verified_organizations_profile_search_redesign_enabled",
@@ -10736,14 +10756,14 @@
         "subscriptions_marketing_page_offer_ends_at_msec": {
             "name": "subscriptions_marketing_page_offer_ends_at_msec",
             "type": "number",
-            "defaultValue": 1733198400000.0
+            "defaultValue": 1739246400000.0
         },
         "subscriptions_marketing_page_offer_thanksgiving_enabled": {
             "name": "subscriptions_marketing_page_offer_thanksgiving_enabled",
             "type": "string"
         },
-        "subscriptions_marketing_page_web_thanksgiving_design": {
-            "name": "subscriptions_marketing_page_web_thanksgiving_design",
+        "subscriptions_marketing_page_web_offer_header_enabled": {
+            "name": "subscriptions_marketing_page_web_offer_header_enabled",
             "type": "boolean",
             "defaultValue": false
         },
