@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "cac758efc2b20151112938089c2ae54fa0838030",
+    "feature_set_token": "e725d850f60816beb4d8dbf42bca754b27217331",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1120,6 +1120,9 @@
             "value": false
         },
         "payments_pin_login_enabled": {
+            "value": false
+        },
+        "payments_qr_onboarding_enabled": {
             "value": false
         },
         "payments_settings_documents_enabled": {
@@ -2880,7 +2883,7 @@
             "value": ""
         },
         "subscriptions_upsells_right_sidebar_variant": {
-            "value": "anniversary_generic"
+            "value": "anniversary_ending"
         },
         "subscriptions_upsells_vo_nav_decoration_enabled": {
             "value": false
@@ -6977,7 +6980,8 @@
         },
         "payments_qr_onboarding_enabled": {
             "name": "payments_qr_onboarding_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
@@ -7014,7 +7018,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "holdback"
             ]
         },
         "premium_upsell_post_enagement_web_17112": {
@@ -10906,7 +10910,7 @@
         "subscriptions_upsells_right_sidebar_variant": {
             "name": "subscriptions_upsells_right_sidebar_variant",
             "type": "string",
-            "defaultValue": "anniversary_generic"
+            "defaultValue": "anniversary_ending"
         },
         "subscriptions_upsells_premium_home_nav": {
             "name": "subscriptions_upsells_premium_home_nav",
