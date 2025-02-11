@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e725d850f60816beb4d8dbf42bca754b27217331",
+    "feature_set_token": "f436cb23cb65c4e4a192d8bda9fa7f8194dda696",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -877,6 +877,9 @@
             "value": false
         },
         "insights_multiple_rules_enabled": {
+            "value": false
+        },
+        "insights_paginated_metrics_backend_enabled": {
             "value": false
         },
         "insights_premium_initial_days_back": {
@@ -2306,6 +2309,9 @@
         },
         "rweb_analytics_verified_followers_enabled": {
             "value": true
+        },
+        "rweb_analytics_video_list_v2_enabled": {
+            "value": false
         },
         "rweb_analytics_video_xweb_enabled": {
             "value": true
@@ -6225,6 +6231,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "insights_paginated_metrics_backend_enabled": {
+            "name": "insights_paginated_metrics_backend_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "interests_expereince_incremental_holdback_2022_h1_12578": {
             "name": "interests_expereince_incremental_holdback_2022_h1_12578",
             "type": "experiment",
@@ -9333,6 +9344,19 @@
             "name": "rweb_analytics_create_reply_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_analytics_audience_xweb_enabled": {
+            "name": "rweb_analytics_audience_xweb_enabled",
+            "type": "string"
+        },
+        "rweb_analytics_video_list_v2_enabled": {
+            "name": "rweb_analytics_video_list_v2_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_analytics_video_detail_enabled": {
+            "name": "rweb_analytics_video_detail_enabled",
+            "type": "string"
         },
         "rweb_cache_spacebar_enabled": {
             "name": "rweb_cache_spacebar_enabled",
