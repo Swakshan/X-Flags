@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7f19c2f1d4fdd58cc51105dd0308ec2d95de6106",
+    "feature_set_token": "3ea5583554aac69a723ba14b966e8da42c03ee6a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1882,7 +1882,7 @@
             "value": true
         },
         "responsive_web_media_download_video_share_menu_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_media_upload_limit_2g": {
             "value": 250
@@ -2871,13 +2871,13 @@
             "value": ""
         },
         "subscriptions_upsells_post_details_analytics_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_post_engagements_enabled": {
             "value": false
         },
         "subscriptions_upsells_post_engagements_variant": {
-            "value": ""
+            "value": "analytics_popup"
         },
         "subscriptions_upsells_premium_home_nav": {
             "value": "premium_upsell_upgrade"
@@ -5339,14 +5339,6 @@
             "name": "dont_mention_me_view_api_result_enabled",
             "type": "string"
         },
-        "download_video_share_menu_web_17123": {
-            "name": "download_video_share_menu_web_17123",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
         "dsa_report_flow_enabled": {
             "name": "dsa_report_flow_enabled",
             "type": "boolean",
@@ -7027,8 +7019,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "direct_to_paywall",
-                "analytics_popup"
+                "holdback"
             ]
         },
         "premium_renew_subscription_module_17088": {
@@ -7045,15 +7036,6 @@
             "enumeration_values": [
                 "control",
                 "holdback"
-            ]
-        },
-        "premium_upsell_post_enagement_web_17112": {
-            "name": "premium_upsell_post_enagement_web_17112",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "direct_to_paywall",
-                "analytics_popup"
             ]
         },
         "premium_verified_icon_logo_update_web_17126": {
@@ -8571,7 +8553,7 @@
         "responsive_web_media_download_video_share_menu_enabled": {
             "name": "responsive_web_media_download_video_share_menu_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_media_upload_limit_slow_2g": {
             "name": "responsive_web_media_upload_limit_slow_2g",
@@ -10078,6 +10060,10 @@
             "name": "spaces_conference_name_overlay_enabled",
             "type": "string"
         },
+        "spaces_conference_pip_enabled": {
+            "name": "spaces_conference_pip_enabled",
+            "type": "string"
+        },
         "spaces_dtx_opus_dtx_enabled": {
             "name": "spaces_dtx_opus_dtx_enabled",
             "type": "boolean",
@@ -10861,6 +10847,10 @@
             "name": "subscriptions_marketing_page_grok_changes_enabled",
             "type": "string"
         },
+        "subscriptions_marketing_page_new_grok_content_enabled": {
+            "name": "subscriptions_marketing_page_new_grok_content_enabled",
+            "type": "string"
+        },
         "subscriptions_offers_promotional_enabled": {
             "name": "subscriptions_offers_promotional_enabled",
             "type": "string"
@@ -11121,7 +11111,7 @@
         "subscriptions_upsells_post_engagements_variant": {
             "name": "subscriptions_upsells_post_engagements_variant",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "analytics_popup"
         },
         "subscriptions_upsells_post_engagements_enabled": {
             "name": "subscriptions_upsells_post_engagements_enabled",
@@ -11131,7 +11121,7 @@
         "subscriptions_upsells_post_details_analytics_enabled": {
             "name": "subscriptions_upsells_post_details_analytics_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_ios_premium_right_nav_button_variant": {
             "name": "subscriptions_upsells_ios_premium_right_nav_button_variant",
