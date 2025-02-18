@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3ea5583554aac69a723ba14b966e8da42c03ee6a",
+    "feature_set_token": "78fb51c3652665af07e741689a2aa45ef21a66fd",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1601,6 +1601,9 @@
         },
         "responsive_web_grok_enable_chat_style_ui": {
             "value": true
+        },
+        "responsive_web_grok_enable_file_attachment_with_search_think": {
+            "value": false
         },
         "responsive_web_grok_enable_model_tool_toggle": {
             "value": false
@@ -6955,15 +6958,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "payments_pin_keychain_enabled": {
-            "name": "payments_pin_keychain_enabled",
-            "type": "string"
-        },
-        "payments_pin_login_enabled": {
-            "name": "payments_pin_login_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "payments_interest_enabled": {
             "name": "payments_interest_enabled",
             "type": "boolean",
@@ -6998,6 +6992,11 @@
         },
         "payments_qr_onboarding_enabled": {
             "name": "payments_qr_onboarding_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "payments_pin_login_enabled": {
+            "name": "payments_pin_login_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -8392,6 +8391,11 @@
         },
         "responsive_web_grok_personality_button_enabled": {
             "name": "responsive_web_grok_personality_button_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_enable_file_attachment_with_search_think": {
+            "name": "responsive_web_grok_enable_file_attachment_with_search_think",
             "type": "boolean",
             "defaultValue": false
         },
