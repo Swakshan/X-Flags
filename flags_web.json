@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a2702eddbb7d2dba8c028ec2894c1ff5824ae8eb",
+    "feature_set_token": "f0c62df5385992ce82a42dc208c7d8859c353b27",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1676,6 +1676,9 @@
         },
         "responsive_web_grok_personality": {
             "value": true
+        },
+        "responsive_web_grok_personality_button_enabled": {
+            "value": false
         },
         "responsive_web_grok_places_card_enabled": {
             "value": false
@@ -8404,7 +8407,8 @@
         },
         "responsive_web_grok_personality_button_enabled": {
             "name": "responsive_web_grok_personality_button_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
