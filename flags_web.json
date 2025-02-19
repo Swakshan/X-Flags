@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "78fb51c3652665af07e741689a2aa45ef21a66fd",
+    "feature_set_token": "e2bcea87c393735291a7097166ea051df699e7f9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1335,6 +1335,9 @@
         "responsive_web_birdwatch_note_limit_enabled": {
             "value": true
         },
+        "responsive_web_birdwatch_note_request_download_enabled": {
+            "value": false
+        },
         "responsive_web_birdwatch_note_request_enabled": {
             "value": true
         },
@@ -2023,6 +2026,9 @@
             "value": false
         },
         "responsive_web_scheduling_threads_enabled": {
+            "value": false
+        },
+        "responsive_web_scribe_media_component": {
             "value": false
         },
         "responsive_web_scroller_top_positioning_enabled": {
@@ -7655,7 +7661,8 @@
         },
         "responsive_web_birdwatch_note_request_download_enabled": {
             "name": "responsive_web_birdwatch_note_request_download_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_birdwatch_read_sources_nudge": {
             "name": "responsive_web_birdwatch_read_sources_nudge",
@@ -8793,6 +8800,11 @@
         },
         "responsive_web_scheduling_threads_enabled": {
             "name": "responsive_web_scheduling_threads_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_scribe_media_component": {
+            "name": "responsive_web_scribe_media_component",
             "type": "boolean",
             "defaultValue": false
         },
