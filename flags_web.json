@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "621a1736597882af8211bfbef30022475929ab0d",
+    "feature_set_token": "3d381e479f6b41db8f2da1f10aca2d1326c28fe2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3309,6 +3309,12 @@
             "value": true
         },
         "vo_upsell_enabled": {
+            "value": false
+        },
+        "vo_upsell_new_business_query_enabled": {
+            "value": false
+        },
+        "vo_upsell_profile_button_enabled": {
             "value": false
         },
         "vo_upsell_profile_page_enabled": {
@@ -12278,11 +12284,13 @@
         },
         "vo_upsell_new_business_query_enabled": {
             "name": "vo_upsell_new_business_query_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "vo_upsell_profile_button_enabled": {
             "name": "vo_upsell_profile_button_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "vod_attribution_tweet_detail_pivot_enabled": {
             "name": "vod_attribution_tweet_detail_pivot_enabled",
