@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ea57b8989e2c39ca42f52cf0856b0389b40d2949",
+    "feature_set_token": "621a1736597882af8211bfbef30022475929ab0d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1135,7 +1135,7 @@
             "value": false
         },
         "premium_webview_paywall_force_premium_tier_enabled": {
-            "value": true
+            "value": false
         },
         "premium_webview_paywall_offer_image_url": {
             "value": "https://abs.twimg.com/images/anniversary_wide.png"
@@ -1717,7 +1717,7 @@
             "value": false
         },
         "responsive_web_grok_route_disabled_search_think_to_paywall": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_rtl_detection": {
             "value": true
@@ -2794,6 +2794,9 @@
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
+        },
+        "subscriptions_marketing_page_new_grok_content_enabled": {
+            "value": false
         },
         "subscriptions_marketing_page_offer_ends_at_msec": {
             "value": 1739246400000.0
@@ -7072,7 +7075,7 @@
         "premium_webview_paywall_force_premium_tier_enabled": {
             "name": "premium_webview_paywall_force_premium_tier_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_1": {
             "name": "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_1",
@@ -8412,7 +8415,7 @@
         "responsive_web_grok_route_disabled_search_think_to_paywall": {
             "name": "responsive_web_grok_route_disabled_search_think_to_paywall",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -10881,7 +10884,8 @@
         },
         "subscriptions_marketing_page_new_grok_content_enabled": {
             "name": "subscriptions_marketing_page_new_grok_content_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_offers_promotional_enabled": {
             "name": "subscriptions_offers_promotional_enabled",
