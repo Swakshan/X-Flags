@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ac9f12b7a001923c38fc989dad5d28499429de23",
+    "feature_set_token": "9c8d0b5714ce6d63287af3f279a6bf3ac2f68548",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1608,6 +1608,12 @@
         "responsive_web_grok_enable_chat_style_ui": {
             "value": true
         },
+        "responsive_web_grok_enable_file_attachment_with_deepsearch": {
+            "value": false
+        },
+        "responsive_web_grok_enable_file_attachment_with_think": {
+            "value": true
+        },
         "responsive_web_grok_enable_model_tool_toggle": {
             "value": false
         },
@@ -2035,7 +2041,7 @@
             "value": false
         },
         "responsive_web_scribe_media_component": {
-            "value": false
+            "value": true
         },
         "responsive_web_scroller_top_positioning_enabled": {
             "value": false
@@ -8431,6 +8437,16 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_enable_file_attachment_with_deepsearch": {
+            "name": "responsive_web_grok_enable_file_attachment_with_deepsearch",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_enable_file_attachment_with_think": {
+            "name": "responsive_web_grok_enable_file_attachment_with_think",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -8831,7 +8847,7 @@
         "responsive_web_scribe_media_component": {
             "name": "responsive_web_scribe_media_component",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_scroller_top_positioning_enabled": {
             "name": "responsive_web_scroller_top_positioning_enabled",
@@ -9532,14 +9548,6 @@
             "name": "rweb_media_carousel_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "rweb_media_scribe_17170": {
-            "name": "rweb_media_scribe_17170",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
         },
         "rweb_mixed_media_uploads_enabled": {
             "name": "rweb_mixed_media_uploads_enabled",
