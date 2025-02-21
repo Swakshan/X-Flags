@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2e2cf1fe86f665573ab49e04a5b4a423ebcc5fc1",
+    "feature_set_token": "ac9f12b7a001923c38fc989dad5d28499429de23",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1110,6 +1110,9 @@
         "payments_account_details_enabled": {
             "value": false
         },
+        "payments_cards_as_payment_method_enabled": {
+            "value": false
+        },
         "payments_enabled": {
             "value": false
         },
@@ -1604,9 +1607,6 @@
         },
         "responsive_web_grok_enable_chat_style_ui": {
             "value": true
-        },
-        "responsive_web_grok_enable_file_attachment_with_search_think": {
-            "value": false
         },
         "responsive_web_grok_enable_model_tool_toggle": {
             "value": false
@@ -3315,7 +3315,7 @@
             "value": false
         },
         "vo_upsell_new_business_query_enabled": {
-            "value": false
+            "value": true
         },
         "vo_upsell_profile_button_enabled": {
             "value": false
@@ -6991,7 +6991,8 @@
         },
         "payments_cards_as_payment_method_enabled": {
             "name": "payments_cards_as_payment_method_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_settings_documents_enabled": {
             "name": "payments_settings_documents_enabled",
@@ -8418,8 +8419,7 @@
         },
         "responsive_web_grok_enable_file_attachment_with_search_think": {
             "name": "responsive_web_grok_enable_file_attachment_with_search_think",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_route_disabled_search_think_to_paywall": {
             "name": "responsive_web_grok_route_disabled_search_think_to_paywall",
@@ -12230,6 +12230,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "verified_org_profile_pill_button_upsell_17174": {
+            "name": "verified_org_profile_pill_button_upsell_17174",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "verified_org_profile_upsell_17137": {
             "name": "verified_org_profile_upsell_17137",
             "type": "experiment",
@@ -12293,7 +12301,7 @@
         "vo_upsell_new_business_query_enabled": {
             "name": "vo_upsell_new_business_query_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "vo_upsell_profile_button_enabled": {
             "name": "vo_upsell_profile_button_enabled",
