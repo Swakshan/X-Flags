@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "412b8235472db0e8504ff6bd675a1be62c3651bc",
+        "feature_set_token": "3b0a2c30ccf7ec530395d412bba31963994ea704",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2065,7 +2065,7 @@
                 "value": true
             },
             "grok_ios_customization_settings_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_disable_fun_mode_enabled": {
                 "value": true
@@ -2115,6 +2115,9 @@
             "grok_ios_load_preferred_prompts_from_home_for_images_enabled": {
                 "value": false
             },
+            "grok_ios_markdown_chirp_font_enabled": {
+                "value": false
+            },
             "grok_ios_mention_hydration_enabled": {
                 "value": false
             },
@@ -2123,6 +2126,9 @@
             },
             "grok_ios_new_history_enabled": {
                 "value": true
+            },
+            "grok_ios_personalities_enabled": {
+                "value": false
             },
             "grok_ios_personalized_home_enabled": {
                 "value": false
@@ -2145,8 +2151,41 @@
             "grok_ios_profile_summary_min_posts": {
                 "value": 15.0
             },
+            "grok_ios_r_header_string": {
+                "value": "Think Harder"
+            },
+            "grok_ios_r_string": {
+                "value": "Think"
+            },
+            "grok_ios_r_timer_0": {
+                "value": "Thoughts"
+            },
+            "grok_ios_r_timer_1": {
+                "value": "Thought for"
+            },
+            "grok_ios_r_timer_2": {
+                "value": "Thinking for"
+            },
+            "grok_ios_reasoning_trace_latex_enabled": {
+                "value": true
+            },
             "grok_ios_response_links_enabled": {
                 "value": false
+            },
+            "grok_ios_s_header_string": {
+                "value": "DeepSearch"
+            },
+            "grok_ios_s_string": {
+                "value": "DeepSearch"
+            },
+            "grok_ios_s_timer_0": {
+                "value": "DeepSearch"
+            },
+            "grok_ios_s_timer_1": {
+                "value": "DeepSearched for"
+            },
+            "grok_ios_s_timer_2": {
+                "value": "DeepSearch for"
             },
             "grok_ios_show_nux_enabled": {
                 "value": false
@@ -3309,7 +3348,7 @@
                 "value": 0.0
             },
             "ios_tav_player_view_layout_v2_enabled": {
-                "value": false
+                "value": true
             },
             "ios_tav_playing_forward_buffer": {
                 "value": 8.0
@@ -3322,9 +3361,6 @@
             },
             "ios_tav_starts_on_first_eligible_variant_enabled": {
                 "value": true
-            },
-            "ios_tav_swift_avfplayertechnology_enabled": {
-                "value": false
             },
             "ios_tav_video_feature_upsell_duration_sec": {
                 "value": 0.0
@@ -3435,6 +3471,12 @@
                 "value": 604800.0
             },
             "ios_tweet_promote_button_conversation_prompt_type": {
+                "value": ""
+            },
+            "ios_tweet_promote_button_conversation_tooltip_prompt_interval_seconds": {
+                "value": 604800.0
+            },
+            "ios_tweet_promote_button_conversation_tooltip_prompt_type": {
                 "value": ""
             },
             "ios_tweet_promote_button_enabled": {
@@ -4138,6 +4180,9 @@
                 "value": true
             },
             "newscamera_tweet_background_consumption_enabled": {
+                "value": false
+            },
+            "newscamera_tweet_capture_1080p_enabled": {
                 "value": false
             },
             "ntab_graphql_api_enabled": {
@@ -9072,6 +9117,21 @@
             "premium_business_ios_nav_promo_prem_plus_only_enabled": {
                 "value": false
             },
+            "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_1": {
+                "value": ""
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_2": {
+                "value": ""
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_3": {
+                "value": ""
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_4": {
+                "value": ""
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_5": {
+                "value": ""
+            },
             "preroll_cta_docked_media_enabled": {
                 "value": false
             },
@@ -9780,7 +9840,7 @@
                 "value": false
             },
             "subscriptions_premium_app_icons_christmas": {
-                "value": true
+                "value": false
             },
             "subscriptions_premium_app_icons_japanese_new_year_enabled": {
                 "value": false
@@ -10613,7 +10673,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "b2b538555aebe9e228cb631a71df0a9e3b00fa79",
-        "experiments": "b2b538555aebe9e228cb631a71df0a9e3b00fa79"
+        "feature_switches": "148c3a1315f23d33c50a55ed212540c68b2d50e9",
+        "experiments": "148c3a1315f23d33c50a55ed212540c68b2d50e9"
     }
 }
