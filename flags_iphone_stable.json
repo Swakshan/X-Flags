@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "86cf7b191e3033a39905b4dae62cdd8e4d96c640",
+        "feature_set_token": "d806a973ba63894044e5233f3fca8b91cf98542b",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -359,7 +359,7 @@
                 "value": false
             },
             "app_attest_ocf_timeout_enabled": {
-                "value": false
+                "value": true
             },
             "app_attest_ocf_timeout_milliseconds": {
                 "value": 30000.0
@@ -2145,6 +2145,9 @@
             "grok_ios_profile_summary_min_posts": {
                 "value": 15.0
             },
+            "grok_ios_response_links_enabled": {
+                "value": false
+            },
             "grok_ios_show_nux_enabled": {
                 "value": false
             },
@@ -2716,13 +2719,13 @@
                 "value": true
             },
             "ios_client_performance_push_notification_rate_limit_events_per_interval": {
-                "value": 0.0
+                "value": 5.0
             },
             "ios_client_performance_push_notification_rate_limit_interval": {
-                "value": 0.0
+                "value": 500.0
             },
             "ios_client_performance_push_notification_rate_limit_max_events": {
-                "value": 0.0
+                "value": 1000.0
             },
             "ios_client_performance_recurring_task_service_active_account_flush_promoted_events_trigger_on_registration_enabled": {
                 "value": true
@@ -4052,9 +4055,6 @@
             },
             "media_tab_refresh_button_spam_prevention_interval": {
                 "value": 0.4
-            },
-            "media_tab_segments": {
-                "value": ""
             },
             "media_tab_show_landscape_videos_in_media_tab_enabled": {
                 "value": true
@@ -8715,10 +8715,16 @@
             "payments_enabled": {
                 "value": false
             },
+            "payments_one_click_flow_disabled": {
+                "value": false
+            },
             "payments_pin_link_payment_methods_enabled": {
                 "value": false
             },
             "payments_pin_login_enabled": {
+                "value": false
+            },
+            "payments_qr_code_enabled": {
                 "value": false
             },
             "paywall_tweets_video_creation_enabled": {
@@ -10607,7 +10613,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "c1d09488a2dc6bbc857c8ab10294ea97f12f1ff2",
-        "experiments": "c1d09488a2dc6bbc857c8ab10294ea97f12f1ff2"
+        "feature_switches": "b2b538555aebe9e228cb631a71df0a9e3b00fa79",
+        "experiments": "b2b538555aebe9e228cb631a71df0a9e3b00fa79"
     }
 }
