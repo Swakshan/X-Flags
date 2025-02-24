@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9c8d0b5714ce6d63287af3f279a6bf3ac2f68548",
+    "feature_set_token": "c700d8f737bbf46e105440192ba84c0e3aece541",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1570,7 +1570,7 @@
             "value": true
         },
         "responsive_web_grok_analysis_button_from_backend": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_analyze_animation": {
             "value": false
@@ -1637,6 +1637,9 @@
         },
         "responsive_web_grok_finance_cards_enabled": {
             "value": false
+        },
+        "responsive_web_grok_fix_same_id_reload": {
+            "value": true
         },
         "responsive_web_grok_focus_mode": {
             "value": true
@@ -8357,7 +8360,7 @@
         "responsive_web_grok_analysis_button_from_backend": {
             "name": "responsive_web_grok_analysis_button_from_backend",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_grok_show_message_reply_button": {
             "name": "responsive_web_grok_show_message_reply_button",
@@ -8444,6 +8447,11 @@
         },
         "responsive_web_grok_enable_file_attachment_with_think": {
             "name": "responsive_web_grok_enable_file_attachment_with_think",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "responsive_web_grok_fix_same_id_reload": {
+            "name": "responsive_web_grok_fix_same_id_reload",
             "type": "boolean",
             "defaultValue": true
         },
