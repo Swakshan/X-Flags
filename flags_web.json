@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e26b3511a4b3b446b5be572f06e98eb41a38badd",
+    "feature_set_token": "e1204d1cbfb902fbb6821867efa5a0f3a9b3fc62",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2789,6 +2789,9 @@
         "subscriptions_long_video_upload": {
             "value": true
         },
+        "subscriptions_management_fetch_next_billing_time": {
+            "value": false
+        },
         "subscriptions_management_renew_module_api_enabled": {
             "value": true
         },
@@ -2808,7 +2811,7 @@
             "value": true
         },
         "subscriptions_marketing_page_new_grok_content_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_marketing_page_offer_ends_at_msec": {
             "value": 1739246400000.0
@@ -10751,6 +10754,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "subscriptions_management_fetch_next_billing_time": {
+            "name": "subscriptions_management_fetch_next_billing_time",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
             "type": "boolean",
@@ -10900,7 +10908,7 @@
         "subscriptions_marketing_page_new_grok_content_enabled": {
             "name": "subscriptions_marketing_page_new_grok_content_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_offers_promotional_enabled": {
             "name": "subscriptions_offers_promotional_enabled",
