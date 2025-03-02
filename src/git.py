@@ -16,7 +16,7 @@ if s:
     run(f'git config --global user.name "{NAME}"')
     run(f'git pull')
     run(f'git add .')
-    run(f'git commit -m "{version_name}"')
+    run(f'git commit -m "🤖: {version_name}"')
     run(f'git push')
 else:
     print(f'Status : {s}')
