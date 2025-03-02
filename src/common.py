@@ -221,5 +221,5 @@ def strpattern(flag_details,flag_details_2):
         rd = f'{rd}\n_iPad:_\n[{commit_link_str_2}]({commit_link})\n{l}'
     else:
         rd = f'{rd}\n[{commit_link_str}]({commit_link})\n{l}'
-    rd = f'{rd}\n{hastags}'
+    rd = f'{rd}\n{hastags} #X'
     return rd
