@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "c2b37e66bbf3ae4e18b9844a4a270d09bc88c903",
+        "feature_set_token": "31ba36bdbfd6268ddfe879952a0cf7fa3a82c3b9",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1242,6 +1242,9 @@
             "android_promoted_log_timestamp_enabled": {
                 "value": true
             },
+            "android_quick_promote_nux_type": {
+                "value": 0.0
+            },
             "android_rebuild_pushes_after_upgrade": {
                 "value": false
             },
@@ -1681,9 +1684,6 @@
                 "value": [
                     "/account/access"
                 ]
-            },
-            "branded_like_preview_enabled": {
-                "value": false
             },
             "bulk_friend_follows_m2_carousel_enabled": {
                 "value": false
@@ -3301,6 +3301,9 @@
             "media_service_native_resize_enabled": {
                 "value": true
             },
+            "media_tab_enabled": {
+                "value": 0.0
+            },
             "media_upload_all_performance_logging_enabled": {
                 "value": true
             },
@@ -3710,6 +3713,9 @@
             "rito_safety_mode_settings_enabled": {
                 "value": false
             },
+            "rweb_quick_promote_boost_enabled": {
+                "value": false
+            },
             "saved_searches_ttl_hours": {
                 "value": 1.0
             },
@@ -4016,6 +4022,9 @@
             "spaces_conference_opus_dtx_enabled": {
                 "value": false
             },
+            "spaces_conference_pip_enabled": {
+                "value": false
+            },
             "spaces_conference_simulcast_enabled": {
                 "value": false
             },
@@ -4292,7 +4301,7 @@
                 "value": true
             },
             "subscriptions_premium_app_icons_christmas": {
-                "value": true
+                "value": false
             },
             "subscriptions_premium_app_icons_japanese_new_year_enabled": {
                 "value": false
@@ -5086,6 +5095,7 @@
         "customer_journey_loggedin_incremental_holdback_2022h2_13404",
         "notifications_incremental_holdback_2022h1_12405",
         "android_growth_performance_holdback_perf_delay_video_chin_view_inflation_enabled_14844",
+        "video_tab_holdback_17105",
         "current_stack_follow_card_android_14711",
         "android_media_fetch_thread_usage_6877",
         "soft_interventions_engagement_nudge_m1_c_11710",
@@ -5151,10 +5161,10 @@
         "home_incremental_holdback_2022h2_13443",
         "android_static_lo_notifications_14877",
         "android_wcl_holdback_11279",
+        "profile_page_upsells_swapper_17161",
         "android_database_flushing_recreate_dbs_15390",
         "ad_indicator_placement_16481",
         "android_increase_priority_magic_recs_channel_10923",
-        "ios_home_timeline_button_upsell_test_17142",
         "android_static_lo_push_badging_15710",
         "get_verified_profile_card_upsell_test_17134",
         "project_jiminy_humanization_nudge_android_11630",
@@ -5185,6 +5195,7 @@
         "lonely_birds_workstream_long_term_holdback_consumer_11996",
         "project_nah_on_home_ranked_ios_15173",
         "android_static_lo_push_rotation_15709",
+        "grok_analyze_backend_controlled_17141",
         "mr_override_notifs_relevancy_decay_v3_13161",
         "responsive_web_client_backoff_10535",
         "tweet_card_producer_experiment_9434",
@@ -5196,7 +5207,6 @@
         "viewport_aware_hoisting_android_14512",
         "android_custom_no_media_push_13017",
         "vanity_url_ad_cards_16589",
-        "phone_number_and_email_hint_in_signup_flow_14670",
         "spaces_topic_tab_14162",
         "vod_autoplay_start_min_visible_8772",
         "app_open_dynamic_delivery_11049",
@@ -5261,7 +5271,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "e27b80db64b01c038a2ebdf55896df07f3d284bb",
-        "experiments": "e27b80db64b01c038a2ebdf55896df07f3d284bb"
+        "feature_switches": "471fe7465edd2e0a8e6d91253dbcd72b2652cf95",
+        "experiments": "471fe7465edd2e0a8e6d91253dbcd72b2652cf95"
     }
 }
