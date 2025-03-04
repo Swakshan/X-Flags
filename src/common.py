@@ -205,7 +205,7 @@ def strpattern(flag_details,flag_details_2):
     commit_link = f"https://github.com/{USERNAME}/{REPO_NAME}/commit/{SHA}?diff=split"
     l = printLine()
     # rd = f"⚠️`{vername}`⚠️\n\n{platformRow}\n"
-    rd = f"⚠️`{vername}`⚠️\n"
+    rd = f"𝕏 `{vername}` 𝕏\n"
     rd = rd if not len(vercode_str) else f"{rd}{vercode_str}\n"
     rd = f'{rd}\n{linkRow}\n[Other Version Details]({pin_link})\n{l}'
     if nfC:

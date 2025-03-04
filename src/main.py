@@ -6,8 +6,7 @@ from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers,getEnv
 from model import DownloadData,Source,Platform,Releases
 
-VER = "v11.261 : Add bot indicator for git pushes"
-
+VER = "v11.262 : Change alert emoji to 𝕏"
 
 def downloader(url,fileName="",isJson=False):
     print(f"Downloading: {fileName}")
