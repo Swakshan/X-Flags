@@ -6,7 +6,7 @@ from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers,getEnv
 from model import DownloadData,Source,Platform,Releases
 
-VER = "v11.262 : Change alert emoji to 𝕏"
+VER = "v11.263 : Change commit message logic"
 
 def downloader(url,fileName="",isJson=False):
     print(f"Downloading: {fileName}")
@@ -104,6 +104,7 @@ def process(vername,source,vercode,down_link):
 
         # down_data = [False,False,False] #vername,vercode,downLink
         down_data:DownloadData = DownloadData(vername,vercode,down_link,"")
+        commitMsg = f"🤖: {vername}"
         sts = False
         
         if platform==Platform.WEB:
@@ -119,6 +120,7 @@ def process(vername,source,vercode,down_link):
             down_data.vercode = fs_hash
             down_data.downLink = ""
             down_data.hash = sha
+            commitMsg = f'{commitMsg}: {sha[:5]}'
             sts = True
         
         elif platform==Platform.IOS:
@@ -159,7 +161,7 @@ def process(vername,source,vercode,down_link):
             shutil.copy(new_file_name, existsing_flag_file)
             sts = True
             
-        d = {'sts':sts,'version_name': down_data.vername,'vercode': down_data.vercode,'hash':down_data.hash,'download_link':down_data.downLink,'os':platform.value,'src':source.value}
+        d = {'sts':sts,'commit_msg': commitMsg,'version_name': down_data.vername,'vercode': down_data.vercode,'hash':down_data.hash,'download_link':down_data.downLink,'os':platform.value,'src':source.value}
 
     except Exception as e:
         d = {'sts':sts}

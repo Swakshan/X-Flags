@@ -8,7 +8,7 @@ def run(cmd):
 sts = readJson(manifest_file_name)
 s = sts['sts']
 if s:
-    version_name = sts['version_name']
+    commitMsg = sts['commit_msg']
 
     MAIL_ID = "41898282+github-actions[bot]@users.noreply.github.com"
     NAME = "github-actions[bot]"
@@ -16,7 +16,7 @@ if s:
     run(f'git config --global user.name "{NAME}"')
     run(f'git pull')
     run(f'git add .')
-    run(f'git commit -m "🤖: {version_name}"')
+    run(f'git commit -m "{commitMsg}"')
     run(f'git push')
 else:
     print(f'Status : {s}')
