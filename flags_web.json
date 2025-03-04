@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d48e5589d5d876cb85ffcbe1e78ecd4f9b60be8f",
+    "feature_set_token": "60bc4806ac48668e4a62f68566166e766638aa8b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2365,7 +2365,7 @@
             "value": true
         },
         "rweb_analytics_video_overview_revenue_enabled": {
-            "value": true
+            "value": false
         },
         "rweb_analytics_video_xweb_enabled": {
             "value": true
@@ -8447,6 +8447,10 @@
             "type": "number",
             "defaultValue": 15
         },
+        "responsive_web_grok_enable_input_advanced_settings": {
+            "name": "responsive_web_grok_enable_input_advanced_settings",
+            "type": "string"
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9444,7 +9448,7 @@
         "rweb_analytics_video_overview_revenue_enabled": {
             "name": "rweb_analytics_video_overview_revenue_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "rweb_analytics_video_detail_revenue_enabled": {
             "name": "rweb_analytics_video_detail_revenue_enabled",
