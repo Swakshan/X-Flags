@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "eca7385e4328cd52bea36b3ae6f49bb2242276a5",
+    "feature_set_token": "dfedef4ec74dd9433beed58fce90d6382306c504",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2376,6 +2376,9 @@
         "rweb_client_transaction_id_enabled": {
             "value": false
         },
+        "rweb_conf_multi_video_enabled": {
+            "value": true
+        },
         "rweb_conf_only_enabled": {
             "value": false
         },
@@ -2489,6 +2492,9 @@
         },
         "rweb_video_pip_enabled": {
             "value": true
+        },
+        "rweb_video_screen_enabled": {
+            "value": false
         },
         "rweb_video_tagging_enabled": {
             "value": false
@@ -7019,6 +7025,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "payments_card_spend_enabled": {
+            "name": "payments_card_spend_enabled",
+            "type": "string"
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
@@ -9487,6 +9497,11 @@
                 "treatment"
             ]
         },
+        "rweb_conf_multi_video_enabled": {
+            "name": "rweb_conf_multi_video_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "rweb_conf_only_enabled": {
             "name": "rweb_conf_only_enabled",
             "type": "boolean",
@@ -9740,6 +9755,11 @@
             "name": "rweb_video_pip_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_video_screen_enabled": {
+            "name": "rweb_video_screen_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_video_timestamps_enabled": {
             "name": "rweb_video_timestamps_enabled",
