@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "3aba8173642215c1131784dc298f0e55613272f9",
+        "feature_set_token": "93ffe4c6b1e744ffc6989f4b7cd41e7afea6c072",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -280,6 +280,9 @@
             "ad_formats_immersive_app_card_enabled": {
                 "value": true
             },
+            "ad_formats_immersive_web_card_cta_enabled": {
+                "value": false
+            },
             "ad_formats_ratings_promo_image_and_video_app_card_enabled": {
                 "value": false
             },
@@ -471,6 +474,9 @@
             },
             "blue_business_subscriptions_management_page_updates_enabled": {
                 "value": true
+            },
+            "bookmarks_if_no_folders_show_all_bookmarks_enabled": {
+                "value": false
             },
             "bookmarks_search_enabled": {
                 "value": true
@@ -3132,13 +3138,13 @@
                 "value": 604800.0
             },
             "ios_profile_analytics_upsell_enabled": {
-                "value": false
+                "value": true
             },
             "ios_profile_analytics_upsell_impressions_threshold": {
                 "value": 50.0
             },
             "ios_profile_analytics_upsell_possible_enabled": {
-                "value": false
+                "value": true
             },
             "ios_profile_analytics_upsell_reappear_after_seconds": {
                 "value": 345600.0
@@ -3147,7 +3153,7 @@
                 "value": 259200.0
             },
             "ios_profile_analytics_upsell_uikit_version_enabled": {
-                "value": false
+                "value": true
             },
             "ios_profile_analytics_upsell_webview_paywall_variant": {
                 "value": ""
@@ -3163,6 +3169,15 @@
             },
             "ios_profile_social_proof_click_disabled": {
                 "value": false
+            },
+            "ios_profile_upgrade_upsell_debug_always_enabled": {
+                "value": false
+            },
+            "ios_profile_upgrade_upsell_enabled": {
+                "value": false
+            },
+            "ios_profile_upgrade_upsell_text_variant": {
+                "value": ""
             },
             "ios_refining_estimated_row_heights_enabled": {
                 "value": true
@@ -3477,13 +3492,13 @@
                 "value": 604800.0
             },
             "ios_tweet_promote_button_conversation_prompt_type": {
-                "value": ""
+                "value": "F"
             },
             "ios_tweet_promote_button_conversation_tooltip_prompt_interval_seconds": {
                 "value": 604800.0
             },
             "ios_tweet_promote_button_conversation_tooltip_prompt_type": {
-                "value": ""
+                "value": "none"
             },
             "ios_tweet_promote_button_enabled": {
                 "value": false
@@ -4068,6 +4083,21 @@
             "media_download_video_prompt_enabled": {
                 "value": false
             },
+            "media_tab_creator_icon_click_cooldown": {
+                "value": 1800.0
+            },
+            "media_tab_creator_icon_display_duration": {
+                "value": 120.0
+            },
+            "media_tab_creator_icon_enabled": {
+                "value": false
+            },
+            "media_tab_creator_icon_launch_delay": {
+                "value": 120.0
+            },
+            "media_tab_creator_icon_revert_cooldown": {
+                "value": 1800.0
+            },
             "media_tab_debug_force_load_status_id": {
                 "value": ""
             },
@@ -4089,9 +4119,6 @@
             "media_tab_long_player_minimum_duration_seconds": {
                 "value": 600.0
             },
-            "media_tab_long_player_status_ui": {
-                "value": false
-            },
             "media_tab_long_player_swipe_auto_docks": {
                 "value": false
             },
@@ -4102,6 +4129,9 @@
                 "value": false
             },
             "media_tab_profile_photos_tab_enabled": {
+                "value": false
+            },
+            "media_tab_profile_rearranged_tab_order": {
                 "value": false
             },
             "media_tab_profile_videos_tab_enabled": {
@@ -10326,6 +10356,9 @@
                     "image_carousel_website"
                 ]
             },
+            "unified_cards_web_card_cta_enabled": {
+                "value": false
+            },
             "unified_cards_web_card_redesign_variant": {
                 "value": ""
             },
@@ -10676,7 +10709,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "a93b3fb8c47cbce45c2ef0fc61da9b7f7459e81a",
-        "experiments": "a93b3fb8c47cbce45c2ef0fc61da9b7f7459e81a"
+        "feature_switches": "6df9cedac7df92a1011adebbfb734019bf8dd889",
+        "experiments": "6df9cedac7df92a1011adebbfb734019bf8dd889"
     }
 }
