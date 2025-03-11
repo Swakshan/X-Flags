@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b1485425bb3ea722f5df00fe44633232482697b3",
+    "feature_set_token": "f939b1eb1b83d643facfeaa18196b6d1f957f5a8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1622,6 +1622,9 @@
         },
         "responsive_web_grok_enable_file_attachment_with_think": {
             "value": true
+        },
+        "responsive_web_grok_enable_input_advanced_settings": {
+            "value": false
         },
         "responsive_web_grok_enable_model_tool_toggle": {
             "value": false
@@ -8485,7 +8488,8 @@
         },
         "responsive_web_grok_enable_input_advanced_settings": {
             "name": "responsive_web_grok_enable_input_advanced_settings",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_enable_deepsearch_notifications": {
             "name": "responsive_web_grok_enable_deepsearch_notifications",
