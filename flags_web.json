@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e7be84e77c0e6f36f6b1faf1691f837dca601f3f",
+    "feature_set_token": "efd9d4bfdf469f8ad5dd8d4d6ade69b05c72e815",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2922,7 +2922,7 @@
             "value": false
         },
         "subscriptions_upsells_analytics_eligibility_query_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_analytics_profile_enabled": {
             "value": true
@@ -7135,6 +7135,14 @@
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "premium_failed_payment_profile_card_17219": {
+            "name": "premium_failed_payment_profile_card_17219",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "premium_module_v1_17146": {
             "name": "premium_module_v1_17146",
@@ -11420,7 +11428,7 @@
         "subscriptions_upsells_analytics_eligibility_query_enabled": {
             "name": "subscriptions_upsells_analytics_eligibility_query_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_app_tab_bar_analytics_upsell_enabled": {
             "name": "subscriptions_upsells_app_tab_bar_analytics_upsell_enabled",
