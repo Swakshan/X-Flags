@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c8612490b3c48af9366f3db92244a7ec34095d14",
+    "feature_set_token": "39ffa2614bd0adbed5273471542fb44c94f58feb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1006,7 +1006,7 @@
             "value": false
         },
         "march_madness_brackets_enabled": {
-            "value": false
+            "value": true
         },
         "media_async_upload_amplify_duration_threshold": {
             "value": 600
@@ -1117,6 +1117,9 @@
             "value": false
         },
         "payments_enabled": {
+            "value": false
+        },
+        "payments_forward_with_enabled": {
             "value": false
         },
         "payments_interest_enabled": {
@@ -1609,7 +1612,7 @@
             "value": false
         },
         "responsive_web_grok_edit_user_images": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_enable_add_response_keepalive": {
             "value": false
@@ -2840,6 +2843,9 @@
         "subscriptions_management_failed_payment_menu_alert_enabled": {
             "value": false
         },
+        "subscriptions_management_failed_payment_message_premium_enabled": {
+            "value": false
+        },
         "subscriptions_management_failed_payment_profile_card_enabled": {
             "value": false
         },
@@ -2912,11 +2918,17 @@
         "subscriptions_stripe_testing": {
             "value": false
         },
+        "subscriptions_upsells_analytics_eligibility_query_enabled": {
+            "value": false
+        },
         "subscriptions_upsells_analytics_profile_enabled": {
             "value": true
         },
         "subscriptions_upsells_analytics_profile_variant": {
             "value": "Impressions"
+        },
+        "subscriptions_upsells_app_tab_bar_analytics_upsell_enabled": {
+            "value": false
         },
         "subscriptions_upsells_bookmarks_screen_enabled": {
             "value": false
@@ -2929,6 +2941,12 @@
         },
         "subscriptions_upsells_dm_card_variant": {
             "value": "anniversary"
+        },
+        "subscriptions_upsells_explore_sidebar_analytics_upsell_enabled": {
+            "value": false
+        },
+        "subscriptions_upsells_explore_sidebar_analytics_upsell_variant": {
+            "value": ""
         },
         "subscriptions_upsells_get_verified_button_variant": {
             "value": ""
@@ -2966,6 +2984,12 @@
         "subscriptions_upsells_premium_home_nav": {
             "value": "premium_upsell_premium"
         },
+        "subscriptions_upsells_profile_sidebar_analytics_upsell_enabled": {
+            "value": false
+        },
+        "subscriptions_upsells_profile_sidebar_analytics_upsell_variant": {
+            "value": ""
+        },
         "subscriptions_upsells_radar_sidebar_enabled": {
             "value": false
         },
@@ -2989,6 +3013,9 @@
         },
         "subscriptions_upsells_right_sidebar_variant": {
             "value": ""
+        },
+        "subscriptions_upsells_settings_analytics_upsell_enabled": {
+            "value": false
         },
         "subscriptions_upsells_verified_profile_sidebar_enabled": {
             "value": false
@@ -3815,6 +3842,17 @@
             "name": "analytics_promo_page_web_16990",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "analytics_upsell_test_17216": {
+            "name": "analytics_upsell_test_17216",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant_a",
+                "variant_b",
+                "variant_c",
+                "variant_d"
+            ]
         },
         "arkose_challenge_open_app_dev": {
             "name": "arkose_challenge_open_app_dev",
@@ -6724,7 +6762,7 @@
         "march_madness_brackets_enabled": {
             "name": "march_madness_brackets_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "media_async_upload_max_video_duration": {
             "name": "media_async_upload_max_video_duration",
@@ -7075,7 +7113,8 @@
         },
         "payments_forward_with_enabled": {
             "name": "payments_forward_with_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "premium_churn_prevention_offers_web_17199": {
             "name": "premium_churn_prevention_offers_web_17199",
@@ -8506,7 +8545,7 @@
         "responsive_web_grok_edit_user_images": {
             "name": "responsive_web_grok_edit_user_images",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_grok_file_upload_max_files": {
             "name": "responsive_web_grok_file_upload_max_files",
@@ -8532,6 +8571,10 @@
             "name": "responsive_web_grok_enable_add_response_keepalive",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_enable_memory_setting_toggle": {
+            "name": "responsive_web_grok_enable_memory_setting_toggle",
+            "type": "string"
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -10887,6 +10930,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "subscriptions_management_failed_payment_message_premium_enabled": {
+            "name": "subscriptions_management_failed_payment_message_premium_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
             "type": "boolean",
@@ -11349,33 +11397,40 @@
             "type": "string",
             "defaultValue": ""
         },
-        "subscriptions_upsells_analytics_eligbility_query_enabled": {
-            "name": "subscriptions_upsells_analytics_eligbility_query_enabled",
-            "type": "string"
+        "subscriptions_upsells_analytics_eligibility_query_enabled": {
+            "name": "subscriptions_upsells_analytics_eligibility_query_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_app_tab_bar_analytics_upsell_enabled": {
             "name": "subscriptions_upsells_app_tab_bar_analytics_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_profile_sidebar_analytics_upsell_enabled": {
             "name": "subscriptions_upsells_profile_sidebar_analytics_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_explore_sidebar_analytics_upsell_enabled": {
             "name": "subscriptions_upsells_explore_sidebar_analytics_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_settings_analytics_upsell_enabled": {
             "name": "subscriptions_upsells_settings_analytics_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_profile_sidebar_analytics_upsell_variant": {
             "name": "subscriptions_upsells_profile_sidebar_analytics_upsell_variant",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_upsells_explore_sidebar_analytics_upsell_variant": {
             "name": "subscriptions_upsells_explore_sidebar_analytics_upsell_variant",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_upsells_rweb_analytics_fallback_destination": {
             "name": "subscriptions_upsells_rweb_analytics_fallback_destination",
