@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "efd9d4bfdf469f8ad5dd8d4d6ade69b05c72e815",
+    "feature_set_token": "26f14391593fadc440c13996f55dcda11b52006d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2328,9 +2328,6 @@
         "rweb_analytics_audience_xweb_enabled": {
             "value": false
         },
-        "rweb_analytics_content_page_new_query_enabled": {
-            "value": true
-        },
         "rweb_analytics_country_device_breakdown_enabled": {
             "value": true
         },
@@ -2393,6 +2390,9 @@
         },
         "rweb_analytics_video_xweb_enabled": {
             "value": true
+        },
+        "rweb_analytics_xweb_content_page": {
+            "value": false
         },
         "rweb_cache_spacebar_enabled": {
             "value": true
@@ -9525,8 +9525,7 @@
         },
         "rweb_analytics_content_page_new_query_enabled": {
             "name": "rweb_analytics_content_page_new_query_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_export_data_enabled": {
             "name": "rweb_analytics_export_data_enabled",
@@ -9619,7 +9618,8 @@
         },
         "rweb_analytics_xweb_content_page": {
             "name": "rweb_analytics_xweb_content_page",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_cache_spacebar_enabled": {
             "name": "rweb_cache_spacebar_enabled",
