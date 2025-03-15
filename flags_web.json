@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "26f14391593fadc440c13996f55dcda11b52006d",
+    "feature_set_token": "068f0a3536ded92b0d980c7fa91c5afe1ec17f66",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1007,6 +1007,9 @@
         },
         "march_madness_brackets_enabled": {
             "value": true
+        },
+        "march_madness_brackets_enabled_login_banner": {
+            "value": false
         },
         "media_async_upload_amplify_duration_threshold": {
             "value": 600
@@ -2326,7 +2329,7 @@
             "value": false
         },
         "rweb_analytics_audience_xweb_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_country_device_breakdown_enabled": {
             "value": true
@@ -2383,7 +2386,7 @@
             "value": true
         },
         "rweb_analytics_video_overview_csv_export": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_video_overview_revenue_enabled": {
             "value": true
@@ -6771,6 +6774,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "march_madness_brackets_enabled_login_banner": {
+            "name": "march_madness_brackets_enabled_login_banner",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "media_async_upload_max_video_duration": {
             "name": "media_async_upload_max_video_duration",
             "type": "number",
@@ -9585,7 +9593,7 @@
         "rweb_analytics_audience_xweb_enabled": {
             "name": "rweb_analytics_audience_xweb_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_video_list_v2_enabled": {
             "name": "rweb_analytics_video_list_v2_enabled",
@@ -9614,7 +9622,7 @@
         "rweb_analytics_video_overview_csv_export": {
             "name": "rweb_analytics_video_overview_csv_export",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_xweb_content_page": {
             "name": "rweb_analytics_xweb_content_page",
