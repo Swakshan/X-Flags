@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "068f0a3536ded92b0d980c7fa91c5afe1ec17f66",
+    "feature_set_token": "3ba7dcd2cddf47ce7a77e1b07b3fdcc007a190e4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1008,7 +1008,7 @@
         "march_madness_brackets_enabled": {
             "value": true
         },
-        "march_madness_brackets_enabled_login_banner": {
+        "march_madness_brackets_enabled_logout_popup": {
             "value": false
         },
         "media_async_upload_amplify_duration_threshold": {
@@ -6769,13 +6769,21 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "march_madness_bracket_promo_17224": {
+            "name": "march_madness_bracket_promo_17224",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "promo"
+            ]
+        },
         "march_madness_brackets_enabled": {
             "name": "march_madness_brackets_enabled",
             "type": "boolean",
             "defaultValue": true
         },
-        "march_madness_brackets_enabled_login_banner": {
-            "name": "march_madness_brackets_enabled_login_banner",
+        "march_madness_brackets_enabled_logout_popup": {
+            "name": "march_madness_brackets_enabled_logout_popup",
             "type": "boolean",
             "defaultValue": false
         },
