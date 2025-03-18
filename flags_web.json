@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3ba7dcd2cddf47ce7a77e1b07b3fdcc007a190e4",
+    "feature_set_token": "055e5ff581485cbf6b7a9131ec3afbb71df48589",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1623,6 +1623,9 @@
         "responsive_web_grok_enable_chat_style_ui": {
             "value": true
         },
+        "responsive_web_grok_enable_deepersearch": {
+            "value": false
+        },
         "responsive_web_grok_enable_deepsearch_notifications": {
             "value": true
         },
@@ -2273,6 +2276,9 @@
         },
         "responsive_web_verified_organizations_free_upgrade_promo_enabled": {
             "value": true
+        },
+        "responsive_web_verified_organizations_idv_enabled": {
+            "value": false
         },
         "responsive_web_verified_organizations_insights_enabled": {
             "value": true
@@ -7450,6 +7456,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "reply_sort_by_likes_delayed_enabled": {
+            "name": "reply_sort_by_likes_delayed_enabled",
+            "type": "string"
+        },
         "report_center_mvp_r1_enabled": {
             "name": "report_center_mvp_r1_enabled",
             "type": "boolean",
@@ -8608,6 +8618,11 @@
             "name": "responsive_web_grok_show_grok_translated_text",
             "type": "string"
         },
+        "responsive_web_grok_enable_deepersearch": {
+            "name": "responsive_web_grok_enable_deepersearch",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9467,6 +9482,11 @@
         "responsive_web_verified_organizations_profile_search_redesign_enabled": {
             "name": "responsive_web_verified_organizations_profile_search_redesign_enabled",
             "type": "string"
+        },
+        "responsive_web_verified_organizations_idv_enabled": {
+            "name": "responsive_web_verified_organizations_idv_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
