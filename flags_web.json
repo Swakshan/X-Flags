@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "055e5ff581485cbf6b7a9131ec3afbb71df48589",
+    "feature_set_token": "3d46b11d311c60363e0b6f05000e30d01db55b3c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1598,6 +1598,9 @@
         },
         "responsive_web_grok_api_enable_grok_host": {
             "value": true
+        },
+        "responsive_web_grok_atgrok_sample_rate": {
+            "value": 0.2
         },
         "responsive_web_grok_backend_prompts_enabled": {
             "value": true
@@ -8631,6 +8634,11 @@
             "name": "responsive_web_grok_enable_deepersearch",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_atgrok_sample_rate": {
+            "name": "responsive_web_grok_atgrok_sample_rate",
+            "type": "number",
+            "defaultValue": 0.2
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
