@@ -6424,6 +6424,15 @@
             "name": "ios_premium_paywall_preloaded_webview_startup_preload_enabled",
             "type": "string"
         },
+        "ios_reply_boost_upsell_test_17222": {
+            "name": "ios_reply_boost_upsell_test_17222",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "variant_a",
+                "variant_b"
+            ]
+        },
         "japan_holidays_labor_thanks_giving_day_message": {
             "name": "japan_holidays_labor_thanks_giving_day_message",
             "type": "string",
@@ -6780,7 +6789,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "promo"
+                "holdback"
             ]
         },
         "march_madness_brackets_enabled": {
@@ -11379,11 +11388,6 @@
             "type": "string",
             "defaultValue": ""
         },
-        "subscriptions_upsells_reply_boost_popup_enabled": {
-            "name": "subscriptions_upsells_reply_boost_popup_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "subscriptions_upsells_vo_nav_decoration_enabled": {
             "name": "subscriptions_upsells_vo_nav_decoration_enabled",
             "type": "boolean",
@@ -11495,6 +11499,27 @@
         },
         "subscriptions_upsells_rweb_analytics_fallback_destination": {
             "name": "subscriptions_upsells_rweb_analytics_fallback_destination",
+            "type": "string"
+        },
+        "subscriptions_upsells_reply_boost_popup_enabled": {
+            "name": "subscriptions_upsells_reply_boost_popup_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "subscriptions_upsells_reply_boost_show_for_seconds": {
+            "name": "subscriptions_upsells_reply_boost_show_for_seconds",
+            "type": "string"
+        },
+        "subscriptions_upsells_reply_boost_reappear_after_seconds": {
+            "name": "subscriptions_upsells_reply_boost_reappear_after_seconds",
+            "type": "string"
+        },
+        "subscriptions_upsells_reply_boost_dismiss_for_seconds": {
+            "name": "subscriptions_upsells_reply_boost_dismiss_for_seconds",
+            "type": "string"
+        },
+        "subscriptions_upsells_reply_boost_button_text_variant": {
+            "name": "subscriptions_upsells_reply_boost_button_text_variant",
             "type": "string"
         },
         "subscriptions_verification_info_enabled": {
