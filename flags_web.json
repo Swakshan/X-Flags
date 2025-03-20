@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9c9c8811acb4cedda43303b4deb4c3d5021e3692",
+    "feature_set_token": "53977d25f364763241e83cadff803ac95094c3e9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1008,6 +1008,9 @@
         "march_madness_brackets_enabled": {
             "value": true
         },
+        "march_madness_brackets_enabled_loggedin_sidebar_popup": {
+            "value": false
+        },
         "march_madness_brackets_enabled_logout_popup": {
             "value": false
         },
@@ -1627,7 +1630,7 @@
             "value": true
         },
         "responsive_web_grok_enable_deepersearch": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_enable_deepsearch_notifications": {
             "value": true
@@ -1639,10 +1642,10 @@
             "value": true
         },
         "responsive_web_grok_enable_input_advanced_settings": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_enable_model_tool_toggle": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_expanded_input": {
             "value": true
@@ -3027,6 +3030,9 @@
             "value": ""
         },
         "subscriptions_upsells_right_sidebar_variant": {
+            "value": ""
+        },
+        "subscriptions_upsells_rweb_analytics_fallback_destination": {
             "value": ""
         },
         "subscriptions_upsells_settings_analytics_upsell_enabled": {
@@ -6787,6 +6793,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "march_madness_bracket_logged_in_users_promo_17232": {
+            "name": "march_madness_bracket_logged_in_users_promo_17232",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "holdback"
+            ]
+        },
         "march_madness_bracket_promo_17224": {
             "name": "march_madness_bracket_promo_17224",
             "type": "experiment",
@@ -6802,6 +6816,11 @@
         },
         "march_madness_brackets_enabled_logout_popup": {
             "name": "march_madness_brackets_enabled_logout_popup",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "march_madness_brackets_enabled_loggedin_sidebar_popup": {
+            "name": "march_madness_brackets_enabled_loggedin_sidebar_popup",
             "type": "boolean",
             "defaultValue": false
         },
@@ -8547,7 +8566,7 @@
         "responsive_web_grok_enable_model_tool_toggle": {
             "name": "responsive_web_grok_enable_model_tool_toggle",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_personality_button_enabled": {
             "name": "responsive_web_grok_personality_button_enabled",
@@ -8605,7 +8624,7 @@
         "responsive_web_grok_enable_input_advanced_settings": {
             "name": "responsive_web_grok_enable_input_advanced_settings",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_enable_deepsearch_notifications": {
             "name": "responsive_web_grok_enable_deepsearch_notifications",
@@ -8633,7 +8652,7 @@
         "responsive_web_grok_enable_deepersearch": {
             "name": "responsive_web_grok_enable_deepersearch",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_atgrok_sample_rate": {
             "name": "responsive_web_grok_atgrok_sample_rate",
@@ -11507,7 +11526,8 @@
         },
         "subscriptions_upsells_rweb_analytics_fallback_destination": {
             "name": "subscriptions_upsells_rweb_analytics_fallback_destination",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "subscriptions_upsells_reply_boost_popup_enabled": {
             "name": "subscriptions_upsells_reply_boost_popup_enabled",
