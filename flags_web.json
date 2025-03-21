@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8c1746d33b18b0b5a6b51defd959b8a9e3c03938",
+    "feature_set_token": "58ec934e379f13831b09ac5d447214db03cb93e7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2367,6 +2367,12 @@
         "rweb_analytics_in_out_network_enabled": {
             "value": false
         },
+        "rweb_analytics_live_details_enabled": {
+            "value": false
+        },
+        "rweb_analytics_live_overview_enabled": {
+            "value": false
+        },
         "rweb_analytics_nav_item_enabled": {
             "value": false
         },
@@ -2378,6 +2384,12 @@
         },
         "rweb_analytics_posts_over_time_widget_enabled": {
             "value": true
+        },
+        "rweb_analytics_spaces_details_enabled": {
+            "value": false
+        },
+        "rweb_analytics_spaces_overview_enabled": {
+            "value": false
         },
         "rweb_analytics_theme": {
             "value": false
@@ -9704,19 +9716,23 @@
         },
         "rweb_analytics_spaces_overview_enabled": {
             "name": "rweb_analytics_spaces_overview_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_analytics_live_overview_enabled": {
             "name": "rweb_analytics_live_overview_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_analytics_spaces_details_enabled": {
             "name": "rweb_analytics_spaces_details_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_analytics_live_details_enabled": {
             "name": "rweb_analytics_live_details_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_cache_spacebar_enabled": {
             "name": "rweb_cache_spacebar_enabled",
