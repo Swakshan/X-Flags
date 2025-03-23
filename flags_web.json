@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "deb1c1acf3ff72e9e4a08e99d9ee0d40ab90f6c8",
+    "feature_set_token": "e6fef7e798a39d615982305ce0c23947bffdaa63",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1686,6 +1686,9 @@
         "responsive_web_grok_general_availability": {
             "value": false
         },
+        "responsive_web_grok_highlighted_prompt_clicks_until_fatigue": {
+            "value": -1
+        },
         "responsive_web_grok_history_search_enabled": {
             "value": true
         },
@@ -2456,6 +2459,9 @@
         },
         "rweb_home_refetch_on_refocus_min_delay_seconds": {
             "value": 60
+        },
+        "rweb_jetfuel_loggedout_timeline": {
+            "value": false
         },
         "rweb_live_broadcast_rewind_enabled": {
             "value": true
@@ -7169,10 +7175,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "payments_one_click_flow_disabled": {
-            "name": "payments_one_click_flow_disabled",
-            "type": "string"
-        },
         "payments_qr_code_enabled": {
             "name": "payments_qr_code_enabled",
             "type": "string"
@@ -7196,6 +7198,10 @@
             "name": "payments_forward_with_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "payments_passkey_onboarding_enabled": {
+            "name": "payments_passkey_onboarding_enabled",
+            "type": "string"
         },
         "premium_churn_prevention_offers_web_17199": {
             "name": "premium_churn_prevention_offers_web_17199",
@@ -8683,6 +8689,11 @@
             "type": "number",
             "defaultValue": 0.2
         },
+        "responsive_web_grok_highlighted_prompt_clicks_until_fatigue": {
+            "name": "responsive_web_grok_highlighted_prompt_clicks_until_fatigue",
+            "type": "number",
+            "defaultValue": -1
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9817,6 +9828,11 @@
         },
         "rweb_home_nav_single_direction_scroll_enabled": {
             "name": "rweb_home_nav_single_direction_scroll_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_jetfuel_loggedout_timeline": {
+            "name": "rweb_jetfuel_loggedout_timeline",
             "type": "boolean",
             "defaultValue": false
         },
