@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e6fef7e798a39d615982305ce0c23947bffdaa63",
+    "feature_set_token": "4af928aae2442b55c0ab614020b54a371afe6f74",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2077,7 +2077,7 @@
             "value": true
         },
         "responsive_web_qp_two_screens_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_redux_use_fragment_enabled": {
             "value": false
@@ -2459,9 +2459,6 @@
         },
         "rweb_home_refetch_on_refocus_min_delay_seconds": {
             "value": 60
-        },
-        "rweb_jetfuel_loggedout_timeline": {
-            "value": false
         },
         "rweb_live_broadcast_rewind_enabled": {
             "value": true
@@ -3859,12 +3856,7 @@
         "ad_spacing_0123_exp_17019": {
             "name": "ad_spacing_0123_exp_17019",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "ad_min_space_2",
-                "ad_min_space_1",
-                "ad_min_space_0"
-            ]
+            "enumeration_values": []
         },
         "ads_spacing_client_fallback_minimum_spacing": {
             "name": "ads_spacing_client_fallback_minimum_spacing",
@@ -9067,7 +9059,7 @@
         "responsive_web_qp_two_screens_enabled": {
             "name": "responsive_web_qp_two_screens_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_redux_use_fragment_enabled": {
             "name": "responsive_web_redux_use_fragment_enabled",
@@ -9828,11 +9820,6 @@
         },
         "rweb_home_nav_single_direction_scroll_enabled": {
             "name": "rweb_home_nav_single_direction_scroll_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "rweb_jetfuel_loggedout_timeline": {
-            "name": "rweb_jetfuel_loggedout_timeline",
             "type": "boolean",
             "defaultValue": false
         },
