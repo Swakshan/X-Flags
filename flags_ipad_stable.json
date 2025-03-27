@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "9d1aa330f45ea022f2e6d9821f431d16370922b0",
+        "feature_set_token": "bc31ce057a55b52957971eb903e81f5515d20362",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -348,6 +348,9 @@
             },
             "animation_decoding_warning_duration": {
                 "value": 0.1
+            },
+            "app_attest_client_events_enabled": {
+                "value": true
             },
             "app_attest_enabled": {
                 "value": true
@@ -1933,7 +1936,7 @@
                 "value": 5.0
             },
             "explore_relaunch_auto_unmute_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_broadcast_chat_history_error_ignore_enabled": {
                 "value": true
@@ -4176,6 +4179,9 @@
             "media_tab_immersive_v2_for_broadcasts_enabled": {
                 "value": false
             },
+            "media_tab_immersive_v2_interactive_replies_enabled": {
+                "value": false
+            },
             "media_tab_immersive_with_tab_bar_enabled": {
                 "value": false
             },
@@ -4300,7 +4306,7 @@
                 "value": false
             },
             "newscamera_tweet_background_fullscreen_consumption_enabled": {
-                "value": false
+                "value": true
             },
             "newscamera_tweet_capture_1080p_enabled": {
                 "value": true
@@ -8880,6 +8886,9 @@
             "payments_enabled": {
                 "value": false
             },
+            "payments_forward_with_enabled": {
+                "value": false
+            },
             "payments_pin_link_payment_methods_enabled": {
                 "value": false
             },
@@ -9743,9 +9752,6 @@
             "ssp_ads_native_ads_lru_cache_count_per_timeline": {
                 "value": 8.0
             },
-            "ssp_ads_preroll_ad_tag_url": {
-                "value": ""
-            },
             "ssp_ads_preroll_enabled": {
                 "value": false
             },
@@ -10468,7 +10474,7 @@
                 "value": false
             },
             "unified_cards_web_card_redesign_variant": {
-                "value": ""
+                "value": "cta"
             },
             "unified_cards_web_view_docked_media_enabled": {
                 "value": true
@@ -10817,7 +10823,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "23e9107276c899d5e49884a698429e2f5ab540d8",
-        "experiments": "23e9107276c899d5e49884a698429e2f5ab540d8"
+        "feature_switches": "570643e74c41bf0845fbaeab45e68c32cbcc5920",
+        "experiments": "570643e74c41bf0845fbaeab45e68c32cbcc5920"
     }
 }
