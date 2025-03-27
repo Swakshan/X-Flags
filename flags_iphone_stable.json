@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "bc4147215c9442c145bfda685ed9329f7a48a435",
+        "feature_set_token": "7c4fb5b75b6a933c54938d6de15539e85a6fd8a7",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -350,10 +350,10 @@
                 "value": 0.1
             },
             "app_attest_enabled": {
-                "value": false
+                "value": true
             },
             "app_attest_guest_enabled": {
-                "value": false
+                "value": true
             },
             "app_attest_lock_enabled": {
                 "value": false
@@ -1627,6 +1627,12 @@
             "dash_items_account_analytics_new_badge_enabled": {
                 "value": false
             },
+            "dash_items_download_grok_enabled": {
+                "value": false
+            },
+            "dash_items_download_grok_index": {
+                "value": 0.0
+            },
             "dash_region_specific_de_media_transparency_items_enabled": {
                 "value": false
             },
@@ -2067,6 +2073,12 @@
             "grok_ios_better_scrolling_enabled": {
                 "value": true
             },
+            "grok_ios_blackhole_logo_enabled": {
+                "value": false
+            },
+            "grok_ios_blackhole_logo_text_enabled": {
+                "value": false
+            },
             "grok_ios_cards_sports_enabled": {
                 "value": false
             },
@@ -2240,6 +2252,9 @@
             },
             "grok_settings_age_restriction_enabled": {
                 "value": true
+            },
+            "grok_sharecard_post_preview_enabled": {
+                "value": false
             },
             "grok_user_search_typeahead_enabled": {
                 "value": true
@@ -4270,6 +4285,9 @@
                 "value": false
             },
             "newscamera_tweet_background_consumption_enabled": {
+                "value": false
+            },
+            "newscamera_tweet_background_fullscreen_consumption_enabled": {
                 "value": false
             },
             "newscamera_tweet_capture_1080p_enabled": {
@@ -9332,6 +9350,9 @@
             "related_moment_pivot_want_more_info_title_enabled": {
                 "value": false
             },
+            "reply_sort_by_likes_delayed_enabled": {
+                "value": false
+            },
             "reply_sorting_enabled": {
                 "value": true
             },
@@ -9445,6 +9466,9 @@
             },
             "sensitive_tweet_warnings_enabled": {
                 "value": true
+            },
+            "settings_2fa_management_screen": {
+                "value": "true"
             },
             "settings_for_you_recommendation_enabled": {
                 "value": false
@@ -9980,11 +10004,23 @@
             "subscriptions_upsells_premium_home_nav": {
                 "value": "premium_upsell_upgrade"
             },
+            "subscriptions_upsells_reply_boost_button_text_variant": {
+                "value": ""
+            },
+            "subscriptions_upsells_reply_boost_dismiss_for_seconds": {
+                "value": 0.0
+            },
             "subscriptions_upsells_reply_boost_enabled": {
                 "value": false
             },
             "subscriptions_upsells_reply_boost_popup_enabled": {
                 "value": false
+            },
+            "subscriptions_upsells_reply_boost_reappear_after_seconds": {
+                "value": 0.0
+            },
+            "subscriptions_upsells_reply_boost_show_for_seconds": {
+                "value": 0.0
             },
             "subscriptions_verification_info_enabled": {
                 "value": true
@@ -10766,7 +10802,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "6a40bd9436ef056f0545975fa04aa557452c01c5",
-        "experiments": "6a40bd9436ef056f0545975fa04aa557452c01c5"
+        "feature_switches": "9d400df6772d8d84afd1276fd9ceaf757e232e0f",
+        "experiments": "9d400df6772d8d84afd1276fd9ceaf757e232e0f"
     }
 }
