@@ -12,7 +12,7 @@ proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp
 def beautifulSoup(url,proxy=1):
     if proxy:
         url = proxyUrl+url
-    print(url)
+    #print(url)
     req = requests.get(url, headers=hdr)
     if req.status_code != 200:
         raise Exception("page not found:\nURL: "+url)

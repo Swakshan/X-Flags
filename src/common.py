@@ -125,6 +125,8 @@ def strpattern(flag_details,flag_details_2):
     hash_value = manifest_file['hash']
     platform = Platform(manifest_file['os'])
     source = Source(manifest_file['src'])
+    isPairip = manifest_file['isPairip']
+
     release = Releases.STABLE if "web" in vername else Releases.BETA if "beta" in vername else Releases.ALPHA if "alpha" in vername else Releases.STABLE
     
     SHA = getEnv('GIT_COMMIT_SHA')
@@ -145,6 +147,7 @@ def strpattern(flag_details,flag_details_2):
 
     def setHashtag(txt:Enum):
         return "#"+txt.value
+    
 
     nf = "";df=""
     flag_data = flag_details['flags']
@@ -163,8 +166,10 @@ def strpattern(flag_details,flag_details_2):
 
     commit_link_str = commitLinkFormat(flag_details)
     commit_link_str_2 = False
+    
     pin_link = f"https://t.me/c/{CHANNEL_ID}/{PIN_MSG}"
     # platformRow = f"_Platform_: `{platform.title()}`"
+   
     hastags = setHashtag(platform)+" "+setHashtag(release)
     vercode_str = ""
     if platform == Platform.ANDROID:
@@ -188,6 +193,13 @@ def strpattern(flag_details,flag_details_2):
             linkRow = f'{linkRow}\n*\\[⚠️APK from Aptoide is known for crashes⚠️\\]*\n'
         
         linkRow = linkRow+"\n" if linkRow[-2]=="|" else linkRow
+        
+        pairipStr = "❇️App does not contain PairipLib❇️"
+        if isPairip:
+            pairipStr = "🚫App contains PairipLib🚫"
+            
+        linkRow = f'{pairipStr}\n\n{linkRow}'
+
 
     elif platform == Platform.IOS:
         # platformRow = f"_Platform_: `{platform.upper()}`"

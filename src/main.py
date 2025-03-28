@@ -5,11 +5,12 @@ from pprint import pprint
 from common import DUMMY_FOLDER,MAIN_FOLDER,ZIP_FILE,EXTRACT_FOLDER,PKG_NAME,APP_NAME,new_file_name,old_file_name,manifest_file_name,new_file_ipad_name,old_file_ipad_name
 from common import writeJson,readJson,get_exception,vercodeGenerator,headers,getEnv
 from model import DownloadData,Source,Platform,Releases
+from apkutils import APK
 
-VER = "v11.263 : Change commit message logic"
+VER = "v11.5 : Detect pairipLib in android"
 
 def downloader(url,fileName="",isJson=False):
-    print(f"Downloading: {fileName}")
+   # print(f"Downloading: {fileName}")
     response = requests.get(url, stream=True,headers=headers())
     if not isJson:
         total_size_in_bytes = int(response.headers.get('content-length', 0))
@@ -46,13 +47,16 @@ def unzipper(platform):
         if platform == Platform.ANDROID:
             FLAG_FOLDER ="res/raw"
             FLAG_FILE = f"{FLAG_FOLDER}/feature_switch_manifest" 
-            apk_name = f'{PKG_NAME}.apk'
+            apk_name_1 = f'{PKG_NAME}.apk'
             apk_name_2 = f'base.apk'
 
-            if apk_name in file_list or apk_name_2 in file_list:
-                apk_name = apk_name_2 if apk_name_2 in file_list else apk_name
-                zip_obj.extract(apk_name, path=EXTRACT_FOLDER)
-                zip_obj = zipfile.ZipFile(EXTRACT_FOLDER+apk_name, 'r')
+            if apk_name_1 in file_list or apk_name_2 in file_list:
+                apk_name = apk_name_2 if apk_name_2 in file_list else apk_name_1
+                # Needed to change the name of the apk for pairip detection
+                temp_path  = zip_obj.extract(apk_name, path=EXTRACT_FOLDER)
+                new_path = f"{EXTRACT_FOLDER}app.apk"
+                shutil.move(temp_path, new_path)                
+                zip_obj = zipfile.ZipFile(new_path, 'r')
                 feature_file = True
 
             elif FLAG_FILE in file_list:
@@ -79,6 +83,21 @@ def unzipper(platform):
 
     return False
 
+
+def pairipDetector():
+    apkPath = ZIP_FILE
+    xapkPath = f'{EXTRACT_FOLDER}app.apk'
+    
+    if os.path.exists(xapkPath):
+        apkPath = xapkPath
+
+    apk = APK.from_file(apkPath)
+    manifest = apk.get_manifest()
+    
+    if "com.pairip.application.Application" in manifest:
+        return True
+    return False
+
 def downloadAndroid(downData:DownloadData,source:Source):
     url = downData.downLink
     down_link = None
@@ -93,11 +112,13 @@ def downloadAndroid(downData:DownloadData,source:Source):
     
     if down_link==None:
         raise Exception("Download link not found")
-    print(down_link)
+    # print(down_link)
+    print("Downloading from: "+ source.value)
     downloader(down_link)
 
 def process(vername,source,vercode,down_link):
-    try:        
+    try:
+        isPairip = False
         typ = Releases.WEB.value if "web" in vername else Releases.BETA.value if "beta" in vername else Releases.ALPHA.value if "alpha" in vername else Releases.STABLE.value
         platform = Platform.WEB if "web" in source else Platform.IOS if "ios" in source else Platform.ANDROID
         source = Source(source)
@@ -159,9 +180,11 @@ def process(vername,source,vercode,down_link):
                 raise Exception("Error unzipping")
             os.remove(existsing_flag_file)
             shutil.copy(new_file_name, existsing_flag_file)
+            
+            isPairip = pairipDetector()
             sts = True
             
-        d = {'sts':sts,'commit_msg': commitMsg,'version_name': down_data.vername,'vercode': down_data.vercode,'hash':down_data.hash,'download_link':down_data.downLink,'os':platform.value,'src':source.value}
+        d = {'sts':sts,'commit_msg': commitMsg,'version_name': down_data.vername,'vercode': down_data.vercode,'hash':down_data.hash,'download_link':down_data.downLink,'os':platform.value,'src':source.value,'isPairip':isPairip}
 
     except Exception as e:
         d = {'sts':sts}
