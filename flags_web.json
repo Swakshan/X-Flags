@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "86a9750f774bf2a3eb1a00229733be79dbd948d4",
+    "feature_set_token": "17707cf3785a3df7ff1e861430ba181419d8f983",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2061,6 +2061,9 @@
         "responsive_web_profile_header_search_button_enabled": {
             "value": true
         },
+        "responsive_web_profile_search_signup_guard": {
+            "value": false
+        },
         "responsive_web_profile_spotlight_v0_config": {
             "value": true
         },
@@ -2446,9 +2449,6 @@
             "value": true
         },
         "rweb_enable_logged_out_search_search_bar_enabled": {
-            "value": false
-        },
-        "rweb_graphql_notifications_tab_enabled": {
             "value": false
         },
         "rweb_home_compact_timeline_enabled": {
@@ -6648,6 +6648,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "logged_out_profile_search_cta_17260": {
+            "name": "logged_out_profile_search_cta_17260",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "logged_out_read_replies_pivot_17075": {
             "name": "logged_out_read_replies_pivot_17075",
             "type": "experiment",
@@ -9013,6 +9021,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_profile_search_signup_guard": {
+            "name": "responsive_web_profile_search_signup_guard",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_profile_header_search_button_enabled": {
             "name": "responsive_web_profile_header_search_button_enabled",
             "type": "boolean",
@@ -9785,11 +9798,6 @@
             "name": "rweb_gif_hashtag_highlight_13196",
             "type": "experiment",
             "enumeration_values": []
-        },
-        "rweb_graphql_notifications_tab_enabled": {
-            "name": "rweb_graphql_notifications_tab_enabled",
-            "type": "boolean",
-            "defaultValue": false
         },
         "rweb_home_compact_timeline_enabled": {
             "name": "rweb_home_compact_timeline_enabled",
@@ -11715,6 +11723,10 @@
         },
         "super_follow_user_subscription_enabled": {
             "name": "super_follow_user_subscription_enabled",
+            "type": "string"
+        },
+        "super_follow_ios_platform_availability_check_enabled": {
+            "name": "super_follow_ios_platform_availability_check_enabled",
             "type": "string"
         },
         "super_follow_onboarding_granular_pricing_enabled": {
