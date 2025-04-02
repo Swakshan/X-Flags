@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "17707cf3785a3df7ff1e861430ba181419d8f983",
+    "feature_set_token": "fa0e984c740a3c995be046eba457ccc4d6886420",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -692,21 +692,6 @@
         },
         "graphql_mutation_update_mode": {
             "value": "graphql_only"
-        },
-        "graphql_timeline_v2_bookmark_timeline": {
-            "value": true
-        },
-        "graphql_timeline_v2_user_favorites_by_time_timeline": {
-            "value": true
-        },
-        "graphql_timeline_v2_user_media_timeline": {
-            "value": true
-        },
-        "graphql_timeline_v2_user_profile_timeline": {
-            "value": true
-        },
-        "graphql_timeline_v2_user_profile_with_replies_timeline": {
-            "value": true
         },
         "grok_settings_age_restriction_enabled": {
             "value": true
@@ -1564,9 +1549,6 @@
             "value": false
         },
         "responsive_web_framerate_tracking_home_enabled": {
-            "value": false
-        },
-        "responsive_web_gaggle_site_enabled": {
             "value": false
         },
         "responsive_web_graphql_exclude_directive_enabled": {
@@ -5828,35 +5810,6 @@
             "type": "string",
             "defaultValue": "graphql_only"
         },
-        "graphql_timeline_v2_user_profile_timeline": {
-            "name": "graphql_timeline_v2_user_profile_timeline",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "graphql_timeline_v2_query_threaded_conversation_with_injections": {
-            "name": "graphql_timeline_v2_query_threaded_conversation_with_injections",
-            "type": "string"
-        },
-        "graphql_timeline_v2_user_profile_with_replies_timeline": {
-            "name": "graphql_timeline_v2_user_profile_with_replies_timeline",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "graphql_timeline_v2_user_favorites_by_time_timeline": {
-            "name": "graphql_timeline_v2_user_favorites_by_time_timeline",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "graphql_timeline_v2_bookmark_timeline": {
-            "name": "graphql_timeline_v2_bookmark_timeline",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "graphql_timeline_v2_user_media_timeline": {
-            "name": "graphql_timeline_v2_user_media_timeline",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "grok_analyze_holdout_17047": {
             "name": "grok_analyze_holdout_17047",
             "type": "experiment",
@@ -8113,11 +8066,6 @@
         },
         "responsive_web_framerate_tracking_home_enabled": {
             "name": "responsive_web_framerate_tracking_home_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "responsive_web_gaggle_site_enabled": {
-            "name": "responsive_web_gaggle_site_enabled",
             "type": "boolean",
             "defaultValue": false
         },
