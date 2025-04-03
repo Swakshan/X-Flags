@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fa0e984c740a3c995be046eba457ccc4d6886420",
+    "feature_set_token": "85b470aff63fac0463660e758409ab717e6d1f4c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2431,6 +2431,9 @@
             "value": true
         },
         "rweb_enable_logged_out_search_search_bar_enabled": {
+            "value": false
+        },
+        "rweb_graphql_notifications_tab_enabled": {
             "value": false
         },
         "rweb_home_compact_timeline_enabled": {
@@ -9754,6 +9757,11 @@
             "name": "rweb_gif_hashtag_highlight_13196",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "rweb_graphql_notifications_tab_enabled": {
+            "name": "rweb_graphql_notifications_tab_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_home_compact_timeline_enabled": {
             "name": "rweb_home_compact_timeline_enabled",
