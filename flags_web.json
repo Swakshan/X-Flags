@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "85b470aff63fac0463660e758409ab717e6d1f4c",
+    "feature_set_token": "835756c3b750256bf95808958f37693ea71e3d03",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2133,6 +2133,9 @@
         "responsive_web_temporary_ocf_x_migration": {
             "value": false
         },
+        "responsive_web_thread_media_ensure_root_urt": {
+            "value": false
+        },
         "responsive_web_thread_media_nav_enabled": {
             "value": false
         },
@@ -2405,6 +2408,9 @@
         },
         "rweb_analytics_video_overview_revenue_enabled": {
             "value": true
+        },
+        "rweb_analytics_video_overview_revenue_tab_enabled": {
+            "value": false
         },
         "rweb_analytics_video_xweb_enabled": {
             "value": true
@@ -8640,6 +8646,10 @@
             "type": "number",
             "defaultValue": -1
         },
+        "responsive_web_grok_rweb_xai_request_id_enabled": {
+            "name": "responsive_web_grok_rweb_xai_request_id_enabled",
+            "type": "string"
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9152,6 +9162,15 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_thread_media_ensure_root_urt": {
+            "name": "responsive_web_thread_media_ensure_root_urt",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_thread_media_tooltip": {
+            "name": "responsive_web_thread_media_tooltip",
+            "type": "string"
+        },
         "responsive_web_timeline_cover_killswitch_enabled": {
             "name": "responsive_web_timeline_cover_killswitch_enabled",
             "type": "boolean",
@@ -9659,7 +9678,8 @@
         },
         "rweb_analytics_video_overview_revenue_tab_enabled": {
             "name": "rweb_analytics_video_overview_revenue_tab_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_analytics_video_overview_csv_export": {
             "name": "rweb_analytics_video_overview_csv_export",
@@ -9695,6 +9715,10 @@
             "name": "rweb_analytics_post_detail_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_analytics_ios_new_webview_enabled": {
+            "name": "rweb_analytics_ios_new_webview_enabled",
+            "type": "string"
         },
         "rweb_cache_spacebar_enabled": {
             "name": "rweb_cache_spacebar_enabled",
