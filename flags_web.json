@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5eba541040c93a3d3203674dbda151e1350393f2",
+    "feature_set_token": "9eca051297dff96af3f6eb8101dcc6fdfb503ac8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1590,9 +1590,6 @@
         "responsive_web_grok_backend_prompts_enabled": {
             "value": true
         },
-        "responsive_web_grok_chat_drawer_enabled": {
-            "value": false
-        },
         "responsive_web_grok_continue_in_grok_enabled": {
             "value": true
         },
@@ -2958,7 +2955,7 @@
             "value": "Impressions"
         },
         "subscriptions_upsells_api_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_app_tab_bar_analytics_upsell_enabled": {
             "value": false
@@ -5754,6 +5751,10 @@
             "name": "explore_relaunch_non_interruptive_repost_flow_for_live_broadcasts_enabled",
             "type": "string"
         },
+        "explore_relaunch_send_immersive_stream_results_events": {
+            "name": "explore_relaunch_send_immersive_stream_results_events",
+            "type": "string"
+        },
         "focused_timeline_actions_onboarding_likes": {
             "name": "focused_timeline_actions_onboarding_likes",
             "type": "number",
@@ -8450,8 +8451,7 @@
         },
         "responsive_web_grok_chat_drawer_enabled": {
             "name": "responsive_web_grok_chat_drawer_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_image_annotation_enabled": {
             "name": "responsive_web_grok_image_annotation_enabled",
@@ -9866,6 +9866,14 @@
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_notifications_graphql_migration_17269": {
+            "name": "rweb_notifications_graphql_migration_17269",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "enabled"
+            ]
         },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
@@ -11603,7 +11611,7 @@
         "subscriptions_upsells_api_enabled": {
             "name": "subscriptions_upsells_api_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_home_nav_migration_enabled": {
             "name": "subscriptions_upsells_home_nav_migration_enabled",
