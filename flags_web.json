@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5692991f8686b512e181ba73a3046c4378d569ab",
+    "feature_set_token": "775dc0b8cb8c8072d5fc5af6f4c4241531d18007",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -785,9 +785,6 @@
         },
         "highlights_tweets_upsell_on_pin_action_enabled": {
             "value": false
-        },
-        "home_timeline_compact_app_bar": {
-            "value": true
         },
         "home_timeline_like_reactivity_enabled": {
             "value": true
@@ -2337,22 +2334,10 @@
         "rweb_analytics_audience_xweb_enabled": {
             "value": true
         },
-        "rweb_analytics_country_device_breakdown_enabled": {
-            "value": true
-        },
-        "rweb_analytics_create_reply_enabled": {
-            "value": true
-        },
-        "rweb_analytics_device_breakdown_enabled": {
-            "value": true
-        },
         "rweb_analytics_export_data_content_enabled": {
             "value": true
         },
         "rweb_analytics_export_data_enabled": {
-            "value": true
-        },
-        "rweb_analytics_follows_over_time_widget_enabled": {
             "value": true
         },
         "rweb_analytics_in_out_network_enabled": {
@@ -2367,17 +2352,8 @@
         "rweb_analytics_nav_item_enabled": {
             "value": false
         },
-        "rweb_analytics_overview_xweb_enabled": {
-            "value": true
-        },
-        "rweb_analytics_post_audience_page_enabled": {
-            "value": true
-        },
         "rweb_analytics_post_detail_enabled": {
             "value": false
-        },
-        "rweb_analytics_posts_over_time_widget_enabled": {
-            "value": true
         },
         "rweb_analytics_spaces_details_enabled": {
             "value": false
@@ -2390,33 +2366,6 @@
         },
         "rweb_analytics_upsell_variant": {
             "value": ""
-        },
-        "rweb_analytics_user_audience_page_enabled": {
-            "value": true
-        },
-        "rweb_analytics_verified_followers_enabled": {
-            "value": true
-        },
-        "rweb_analytics_video_detail_enabled": {
-            "value": true
-        },
-        "rweb_analytics_video_detail_revenue_enabled": {
-            "value": false
-        },
-        "rweb_analytics_video_list_v2_enabled": {
-            "value": true
-        },
-        "rweb_analytics_video_overview_csv_export": {
-            "value": true
-        },
-        "rweb_analytics_video_overview_revenue_enabled": {
-            "value": true
-        },
-        "rweb_analytics_video_overview_revenue_tab_enabled": {
-            "value": true
-        },
-        "rweb_analytics_video_xweb_enabled": {
-            "value": true
         },
         "rweb_analytics_xweb_content_page": {
             "value": false
@@ -2437,9 +2386,6 @@
             "value": false
         },
         "rweb_conf_rnnoise_enabled": {
-            "value": true
-        },
-        "rweb_creator_analytics_enabled": {
             "value": true
         },
         "rweb_enable_logged_out_search_search_bar_enabled": {
@@ -6048,16 +5994,6 @@
                 "treatment"
             ]
         },
-        "home_timeline_compact_app_bar": {
-            "name": "home_timeline_compact_app_bar",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "home_timeline_compact_app_bar_16605": {
-            "name": "home_timeline_compact_app_bar_16605",
-            "type": "experiment",
-            "enumeration_values": []
-        },
         "home_timeline_features_holdback_7823": {
             "name": "home_timeline_features_holdback_7823",
             "type": "experiment",
@@ -6435,10 +6371,13 @@
             "name": "ios_premium_paywall_preloaded_webview_startup_preload_enabled",
             "type": "string"
         },
-        "ios_reply_boost_upsell_test_17222": {
-            "name": "ios_reply_boost_upsell_test_17222",
+        "ios_reply_boost_upsell_holdback_17222": {
+            "name": "ios_reply_boost_upsell_holdback_17222",
             "type": "experiment",
-            "enumeration_values": []
+            "enumeration_values": [
+                "control",
+                "holdback"
+            ]
         },
         "japan_holidays_labor_thanks_giving_day_message": {
             "name": "japan_holidays_labor_thanks_giving_day_message",
@@ -9618,18 +9557,15 @@
         },
         "rweb_analytics_user_audience_page_enabled": {
             "name": "rweb_analytics_user_audience_page_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_post_audience_page_enabled": {
             "name": "rweb_analytics_post_audience_page_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_country_device_breakdown_enabled": {
             "name": "rweb_analytics_country_device_breakdown_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_theme": {
             "name": "rweb_analytics_theme",
@@ -9652,8 +9588,7 @@
         },
         "rweb_analytics_device_breakdown_enabled": {
             "name": "rweb_analytics_device_breakdown_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_nav_item_enabled": {
             "name": "rweb_analytics_nav_item_enabled",
@@ -9672,33 +9607,27 @@
         },
         "rweb_analytics_overview_xweb_enabled": {
             "name": "rweb_analytics_overview_xweb_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_verified_followers_enabled": {
             "name": "rweb_analytics_verified_followers_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_posts_over_time_widget_enabled": {
             "name": "rweb_analytics_posts_over_time_widget_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_follows_over_time_widget_enabled": {
             "name": "rweb_analytics_follows_over_time_widget_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_video_xweb_enabled": {
             "name": "rweb_analytics_video_xweb_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_create_reply_enabled": {
             "name": "rweb_analytics_create_reply_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_audience_xweb_enabled": {
             "name": "rweb_analytics_audience_xweb_enabled",
@@ -9707,33 +9636,27 @@
         },
         "rweb_analytics_video_list_v2_enabled": {
             "name": "rweb_analytics_video_list_v2_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_video_detail_enabled": {
             "name": "rweb_analytics_video_detail_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_video_overview_revenue_enabled": {
             "name": "rweb_analytics_video_overview_revenue_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_video_detail_revenue_enabled": {
             "name": "rweb_analytics_video_detail_revenue_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_analytics_video_overview_revenue_tab_enabled": {
             "name": "rweb_analytics_video_overview_revenue_tab_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_video_overview_csv_export": {
             "name": "rweb_analytics_video_overview_csv_export",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_analytics_xweb_content_page": {
             "name": "rweb_analytics_xweb_content_page",
@@ -9811,11 +9734,6 @@
         },
         "rweb_conf_rnnoise_enabled": {
             "name": "rweb_conf_rnnoise_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "rweb_creator_analytics_enabled": {
-            "name": "rweb_creator_analytics_enabled",
             "type": "boolean",
             "defaultValue": true
         },
