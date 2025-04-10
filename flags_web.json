@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "34296bb77f7e856a7d7650889780ac9ede7e3f1b",
+    "feature_set_token": "5692991f8686b512e181ba73a3046c4378d569ab",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2055,6 +2055,9 @@
         "responsive_web_qp_keyword_targeting_enabled": {
             "value": false
         },
+        "responsive_web_qp_new_payment_enabled": {
+            "value": false
+        },
         "responsive_web_qp_skip_objective_enabled": {
             "value": true
         },
@@ -2551,6 +2554,9 @@
             "value": false
         },
         "rweb_video_tagging_enabled": {
+            "value": false
+        },
+        "rweb_video_vertical_aspect_ratio_enabled": {
             "value": false
         },
         "rweb_xchat_enabled": {
@@ -3868,11 +3874,6 @@
             "name": "ads_spacing_client_fallback_minimum_spacing_verified_blue",
             "type": "number",
             "defaultValue": 3
-        },
-        "analytics_promo_page_web_16990": {
-            "name": "analytics_promo_page_web_16990",
-            "type": "experiment",
-            "enumeration_values": []
         },
         "analytics_upsell_test_17216": {
             "name": "analytics_upsell_test_17216",
@@ -9063,6 +9064,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_qp_new_payment_enabled": {
+            "name": "responsive_web_qp_new_payment_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_qp_skip_objective_enabled": {
             "name": "responsive_web_qp_skip_objective_enabled",
             "type": "boolean",
@@ -10060,6 +10066,11 @@
         "rweb_video_timestamps_enabled": {
             "name": "rweb_video_timestamps_enabled",
             "type": "string"
+        },
+        "rweb_video_vertical_aspect_ratio_enabled": {
+            "name": "rweb_video_vertical_aspect_ratio_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_video_tagging_enabled": {
             "name": "rweb_video_tagging_enabled",
