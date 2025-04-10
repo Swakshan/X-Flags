@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "775dc0b8cb8c8072d5fc5af6f4c4241531d18007",
+    "feature_set_token": "db991e833ed55edc595f05283bc8dd15959908fe",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1411,6 +1411,12 @@
             "value": true
         },
         "responsive_web_communityboost_form_enabled": {
+            "value": false
+        },
+        "responsive_web_compact_media_max_height": {
+            "value": 0
+        },
+        "responsive_web_compact_media_max_height_enabled_for_all": {
             "value": false
         },
         "responsive_web_composer_autosave_debounce_ms": {
@@ -7880,6 +7886,16 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_compact_media_max_height": {
+            "name": "responsive_web_compact_media_max_height",
+            "type": "number",
+            "defaultValue": 0
+        },
+        "responsive_web_compact_media_max_height_enabled_for_all": {
+            "name": "responsive_web_compact_media_max_height_enabled_for_all",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_composer_autosave_enabled": {
             "name": "responsive_web_composer_autosave_enabled",
             "type": "boolean",
@@ -9716,6 +9732,16 @@
             "name": "rweb_client_transaction_id_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_compact_media_17284": {
+            "name": "rweb_compact_media_17284",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "max_450",
+                "max_420",
+                "max_400"
+            ]
         },
         "rweb_conf_dev_enabled": {
             "name": "rweb_conf_dev_enabled",
