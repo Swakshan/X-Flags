@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "db991e833ed55edc595f05283bc8dd15959908fe",
+    "feature_set_token": "71ccb5852dfcd89ea0b515332f8ccf95dc493da1",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2335,7 +2335,7 @@
             "value": false
         },
         "rweb_analytics_audience_compact_mode": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_audience_xweb_enabled": {
             "value": true
@@ -2347,7 +2347,7 @@
             "value": true
         },
         "rweb_analytics_in_out_network_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_live_details_enabled": {
             "value": false
@@ -2850,7 +2850,7 @@
             "value": true
         },
         "subscriptions_marketing_page_fetch_promotions": {
-            "value": false
+            "value": true
         },
         "subscriptions_marketing_page_free_trial_enabled": {
             "value": true
@@ -5791,10 +5791,7 @@
         "grok_analyze_holdout_17047": {
             "name": "grok_analyze_holdout_17047",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "with_button"
-            ]
+            "enumeration_values": []
         },
         "grok_button_on_every_post_17085": {
             "name": "grok_button_on_every_post_17085",
@@ -9591,7 +9588,7 @@
         "rweb_analytics_in_out_network_enabled": {
             "name": "rweb_analytics_in_out_network_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_content_page_new_query_enabled": {
             "name": "rweb_analytics_content_page_new_query_enabled",
@@ -9711,7 +9708,7 @@
         "rweb_analytics_audience_compact_mode": {
             "name": "rweb_analytics_audience_compact_mode",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_cache_spacebar_enabled": {
             "name": "rweb_cache_spacebar_enabled",
@@ -11184,7 +11181,7 @@
         "subscriptions_marketing_page_fetch_promotions": {
             "name": "subscriptions_marketing_page_fetch_promotions",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_marketing_page_offer_copy_enabled": {
             "name": "subscriptions_marketing_page_offer_copy_enabled",
