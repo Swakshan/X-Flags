@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1d79d98ccd4339e8931578c04d84a996184d7af5",
+    "feature_set_token": "a96c4c7a97d1c3d023fde82fc0de74cb12531a32",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2250,9 +2250,6 @@
         "responsive_web_twitter_blue_subscriptions_disabled": {
             "value": false
         },
-        "responsive_web_twitter_blue_upsell_posts": {
-            "value": false
-        },
         "responsive_web_twitter_blue_verified_badge_ntab_empty_state_enabled": {
             "value": true
         },
@@ -2401,7 +2398,7 @@
             "value": false
         },
         "rweb_graphql_notifications_tab_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_home_compact_timeline_enabled": {
             "value": false
@@ -9374,15 +9371,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_twitter_blue_upsell_right_column": {
-            "name": "responsive_web_twitter_blue_upsell_right_column",
-            "type": "string"
-        },
-        "responsive_web_twitter_blue_upsell_posts": {
-            "name": "responsive_web_twitter_blue_upsell_posts",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "responsive_web_twitter_blue_verified_badge_is_enabled": {
             "name": "responsive_web_twitter_blue_verified_badge_is_enabled",
             "type": "string"
@@ -9788,7 +9776,7 @@
         "rweb_graphql_notifications_tab_enabled": {
             "name": "rweb_graphql_notifications_tab_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_home_compact_timeline_enabled": {
             "name": "rweb_home_compact_timeline_enabled",
@@ -9857,14 +9845,6 @@
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "rweb_notifications_graphql_migration_17269": {
-            "name": "rweb_notifications_graphql_migration_17269",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "enabled"
-            ]
         },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
@@ -11618,6 +11598,10 @@
             "name": "subscriptions_upsells_home_nav_migration_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_upsells_home_sidebar_migration_enabled": {
+            "name": "subscriptions_upsells_home_sidebar_migration_enabled",
+            "type": "string"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
