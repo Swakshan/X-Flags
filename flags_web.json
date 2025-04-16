@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1d8767ea3d8ca5c1a99c096ba48a6ecaf206457c",
+    "feature_set_token": "22b5d8496499abfc4e1dba644acf2c16a392ae1c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1006,7 +1006,7 @@
             "value": 8388608
         },
         "media_async_upload_longer_video_resolution_selector": {
-            "value": true
+            "value": false
         },
         "media_async_upload_max_avatar_gif_size": {
             "value": 5
@@ -2056,7 +2056,7 @@
             "value": true
         },
         "responsive_web_qp_full_popup_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_qp_keyword_targeting_enabled": {
             "value": false
@@ -2425,6 +2425,9 @@
             "value": false
         },
         "rweb_media_carousel_enabled": {
+            "value": false
+        },
+        "rweb_media_multi_requests_enabled": {
             "value": false
         },
         "rweb_mixed_media_uploads_cap": {
@@ -6850,7 +6853,7 @@
         "media_async_upload_longer_video_resolution_selector": {
             "name": "media_async_upload_longer_video_resolution_selector",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "media_async_upload_longer_dm_video_max_video_duration": {
             "name": "media_async_upload_longer_dm_video_max_video_duration",
@@ -9017,7 +9020,7 @@
         "responsive_web_qp_full_popup_enabled": {
             "name": "responsive_web_qp_full_popup_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_qp_keyword_targeting_enabled": {
             "name": "responsive_web_qp_keyword_targeting_enabled",
@@ -9533,6 +9536,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_verified_organizations_handles_marketing_content_enabled": {
+            "name": "responsive_web_verified_organizations_handles_marketing_content_enabled",
+            "type": "string"
+        },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
             "type": "boolean",
@@ -9828,6 +9835,11 @@
         },
         "rweb_media_carousel_enabled": {
             "name": "rweb_media_carousel_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_media_multi_requests_enabled": {
+            "name": "rweb_media_multi_requests_enabled",
             "type": "boolean",
             "defaultValue": false
         },
