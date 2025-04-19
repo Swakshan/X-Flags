@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "504fe2ca875e95c6a1a895c22d6011d01aacae0a",
+    "feature_set_token": "e43d3a8083110ceb2c36c875dea270d6ce8169d9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1917,6 +1917,9 @@
         "responsive_web_location_spotlight_v1_display": {
             "value": true
         },
+        "responsive_web_logged_out_grok_button_enabled": {
+            "value": false
+        },
         "responsive_web_logged_out_notifications_enabled": {
             "value": true
         },
@@ -1928,6 +1931,9 @@
         },
         "responsive_web_logged_out_read_replies_pivot_enabled": {
             "value": true
+        },
+        "responsive_web_logged_out_redesign_enabled": {
+            "value": false
         },
         "responsive_web_login_input_type_email_enabled": {
             "value": false
@@ -8802,6 +8808,24 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_logged_out_explore_enabled": {
+            "name": "responsive_web_logged_out_explore_enabled",
+            "type": "string"
+        },
+        "responsive_web_logged_out_explore_home_path_enabled": {
+            "name": "responsive_web_logged_out_explore_home_path_enabled",
+            "type": "string"
+        },
+        "responsive_web_logged_out_redesign_enabled": {
+            "name": "responsive_web_logged_out_redesign_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_logged_out_grok_button_enabled": {
+            "name": "responsive_web_logged_out_grok_button_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_logged_out_notifications_enabled": {
             "name": "responsive_web_logged_out_notifications_enabled",
             "type": "boolean",
@@ -9597,6 +9621,16 @@
             "name": "responsive_web_x_translation_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "revamped_login_page_web_17305": {
+            "name": "revamped_login_page_web_17305",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "old_layout_with_grok",
+                "revamped_layout",
+                "revamped_layout_with_grok"
+            ]
         },
         "rweb_analytics_user_audience_page_enabled": {
             "name": "rweb_analytics_user_audience_page_enabled",
