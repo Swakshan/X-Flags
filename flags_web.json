@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "04ef5d8ed54e4c080db97f7b0fab17ffcc23ffa4",
+    "feature_set_token": "5ebefacbe460d2f6a7d0c23dac2f081ef996602d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2423,6 +2423,9 @@
         },
         "rweb_home_refetch_on_refocus_min_delay_seconds": {
             "value": 60
+        },
+        "rweb_home_uas_enabled": {
+            "value": false
         },
         "rweb_jetfuel_sdkv2_with_x_web": {
             "value": false
@@ -9856,14 +9859,15 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "rweb_home_bookmark_in_action_bar_enabled": {
-            "name": "rweb_home_bookmark_in_action_bar_enabled",
-            "type": "string"
-        },
         "rweb_home_refetch_on_refocus_min_delay_seconds": {
             "name": "rweb_home_refetch_on_refocus_min_delay_seconds",
             "type": "number",
             "defaultValue": 60
+        },
+        "rweb_home_uas_enabled": {
+            "name": "rweb_home_uas_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_home_mixer_enable_social_context_filter_social_contexts": {
             "name": "rweb_home_mixer_enable_social_context_filter_social_contexts",
