@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "270d32b9e077a92b3dfcb13dde534781a27a7265",
+    "feature_set_token": "dd147ccfa6c98d5b5b36bb8c44fb02c963f93073",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2375,6 +2375,9 @@
         },
         "rweb_analytics_post_detail_enabled": {
             "value": true
+        },
+        "rweb_analytics_post_details_realtime_enabled": {
+            "value": false
         },
         "rweb_analytics_spaces_details_enabled": {
             "value": true
@@ -9797,7 +9800,8 @@
         },
         "rweb_analytics_post_details_realtime_enabled": {
             "name": "rweb_analytics_post_details_realtime_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_cache_spacebar_enabled": {
             "name": "rweb_cache_spacebar_enabled",
