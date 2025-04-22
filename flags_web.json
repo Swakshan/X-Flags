@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5ebefacbe460d2f6a7d0c23dac2f081ef996602d",
+    "feature_set_token": "270d32b9e077a92b3dfcb13dde534781a27a7265",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1919,6 +1919,9 @@
         },
         "responsive_web_location_spotlight_v1_display": {
             "value": true
+        },
+        "responsive_web_logged_out_blue_brand_button_enabled": {
+            "value": false
         },
         "responsive_web_logged_out_grok_button_enabled": {
             "value": false
@@ -8837,6 +8840,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_logged_out_blue_brand_button_enabled": {
+            "name": "responsive_web_logged_out_blue_brand_button_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_logged_out_notifications_enabled": {
             "name": "responsive_web_logged_out_notifications_enabled",
             "type": "boolean",
@@ -9640,7 +9648,9 @@
                 "control",
                 "old_layout_with_grok",
                 "revamped_layout",
-                "revamped_layout_with_grok"
+                "revamped_layout_with_grok",
+                "revamped_layout_blue",
+                "revamped_layout_blue_with_grok"
             ]
         },
         "rweb_analytics_user_audience_page_enabled": {
@@ -9784,6 +9794,10 @@
             "name": "rweb_analytics_audience_compact_mode",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_analytics_post_details_realtime_enabled": {
+            "name": "rweb_analytics_post_details_realtime_enabled",
+            "type": "string"
         },
         "rweb_cache_spacebar_enabled": {
             "name": "rweb_cache_spacebar_enabled",
