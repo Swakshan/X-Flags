@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6c868cf35456c1affee961e4c3b0a56c1577f2da",
+    "feature_set_token": "5c3cb2d4cafece9e6dce07374491c3c43b584b59",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1103,6 +1103,9 @@
         },
         "payments_cards_as_payment_method_enabled": {
             "value": false
+        },
+        "payments_crb_iframe_delay_msecs": {
+            "value": 1500
         },
         "payments_enabled": {
             "value": false
@@ -7162,6 +7165,11 @@
         },
         "payments_crb_iframe_delay_msecs": {
             "name": "payments_crb_iframe_delay_msecs",
+            "type": "number",
+            "defaultValue": 1500
+        },
+        "payments_transfer_methods_enabled": {
+            "name": "payments_transfer_methods_enabled",
             "type": "string"
         },
         "premium_churn_prevention_offers_web_17199": {
@@ -13484,6 +13492,10 @@
         },
         "x_jetfuel_enable_frames_on_posts": {
             "name": "x_jetfuel_enable_frames_on_posts",
+            "type": "string"
+        },
+        "x_jetfuel_android_enabled": {
+            "name": "x_jetfuel_android_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
