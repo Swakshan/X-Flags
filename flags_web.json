@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "efe89afe0a87534f5d0bf97b574891bf96ee7047",
+    "feature_set_token": "340b13ac9a6489ed496960c5ae4f265dc357830e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2867,14 +2867,17 @@
         "subscriptions_management_fetch_next_billing_time": {
             "value": true
         },
+        "subscriptions_management_query_active_price": {
+            "value": false
+        },
         "subscriptions_management_renew_module_api_enabled": {
             "value": true
         },
         "subscriptions_management_renew_module_enabled": {
             "value": true
         },
-        "subscriptions_management_tier_switch_improvements_enabled": {
-            "value": true
+        "subscriptions_management_use_active_price": {
+            "value": false
         },
         "subscriptions_marketing_page_discounts_enabled": {
             "value": true
@@ -11172,12 +11175,17 @@
         },
         "subscriptions_management_tier_switch_improvements_enabled": {
             "name": "subscriptions_management_tier_switch_improvements_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "subscriptions_management_query_active_price": {
             "name": "subscriptions_management_query_active_price",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_management_use_active_price": {
+            "name": "subscriptions_management_use_active_price",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
@@ -11768,6 +11776,10 @@
             "name": "subscriptions_upsells_premium_nav_migration_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled": {
+            "name": "subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled",
+            "type": "string"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
