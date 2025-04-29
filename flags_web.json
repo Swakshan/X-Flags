@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "504b43d896b783d2b64e7dfce9cb934bce4736f9",
+    "feature_set_token": "efe89afe0a87534f5d0bf97b574891bf96ee7047",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2901,6 +2901,9 @@
             "value": false
         },
         "subscriptions_offers_dynamic_upsells_enabled": {
+            "value": false
+        },
+        "subscriptions_offers_localized_pricing_enabled": {
             "value": false
         },
         "subscriptions_premium_experiment_nav_text": {
@@ -5849,10 +5852,7 @@
         "grok_followup_buttons_under_posts_17076": {
             "name": "grok_followup_buttons_under_posts_17076",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "with_followups"
-            ]
+            "enumeration_values": []
         },
         "grok_memory_17275": {
             "name": "grok_memory_17275",
@@ -6629,10 +6629,7 @@
         "logged_out_read_replies_pivot_17075": {
             "name": "logged_out_read_replies_pivot_17075",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "longform_ad_free_articles_badging_enabled": {
             "name": "longform_ad_free_articles_badging_enabled",
@@ -11178,6 +11175,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "subscriptions_management_query_active_price": {
+            "name": "subscriptions_management_query_active_price",
+            "type": "string"
+        },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
             "type": "boolean",
@@ -11351,6 +11352,11 @@
         },
         "subscriptions_offers_dynamic_upsells_enabled": {
             "name": "subscriptions_offers_dynamic_upsells_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_offers_localized_pricing_enabled": {
+            "name": "subscriptions_offers_localized_pricing_enabled",
             "type": "boolean",
             "defaultValue": false
         },
