@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "340b13ac9a6489ed496960c5ae4f265dc357830e",
+    "feature_set_token": "3aaced758a224396e5cba2c96c039fe80609fc80",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -275,6 +275,9 @@
         },
         "arkose_challenge_login_web_prod": {
             "value": "2F4F0B28-BC94-4271-8AD7-A51662E3C91C"
+        },
+        "arkose_challenge_onboard_prod": {
+            "value": "4CB8C8B0-40FF-439C-9D0D-9A389ADA18CB"
         },
         "arkose_challenge_open_app_dev": {
             "value": "560C66A3-C8EB-4D11-BE53-A8232734AA62"
@@ -2868,7 +2871,7 @@
             "value": true
         },
         "subscriptions_management_query_active_price": {
-            "value": false
+            "value": true
         },
         "subscriptions_management_renew_module_api_enabled": {
             "value": true
@@ -2877,7 +2880,7 @@
             "value": true
         },
         "subscriptions_management_use_active_price": {
-            "value": false
+            "value": true
         },
         "subscriptions_marketing_page_discounts_enabled": {
             "value": true
@@ -3918,7 +3921,8 @@
         },
         "arkose_challenge_onboard_prod": {
             "name": "arkose_challenge_onboard_prod",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "4CB8C8B0-40FF-439C-9D0D-9A389ADA18CB"
         },
         "arkose_challenge_lo_web_notification_dev": {
             "name": "arkose_challenge_lo_web_notification_dev",
@@ -11180,12 +11184,12 @@
         "subscriptions_management_query_active_price": {
             "name": "subscriptions_management_query_active_price",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_management_use_active_price": {
             "name": "subscriptions_management_use_active_price",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
