@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "af7cc75f0f65e3d413dc03d6f149f2d1bf7bb1ed",
+    "feature_set_token": "af7da7a7db136b11485c4bf3e571ab5deadeb33b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -847,7 +847,7 @@
             "value": 5
         },
         "insights_ai_trends_score_threshold": {
-            "value": 0.6
+            "value": 0.4
         },
         "insights_chart_filter_enabled": {
             "value": true
@@ -1108,7 +1108,7 @@
             "value": false
         },
         "payments_crb_iframe_delay_msecs": {
-            "value": 1500
+            "value": 2000.0
         },
         "payments_enabled": {
             "value": false
@@ -3471,7 +3471,7 @@
             "value": true
         },
         "vo_upsell_profile_button_enabled": {
-            "value": false
+            "value": true
         },
         "vo_upsell_profile_page_enabled": {
             "value": false
@@ -6323,7 +6323,7 @@
         "insights_ai_trends_score_threshold": {
             "name": "insights_ai_trends_score_threshold",
             "type": "number",
-            "defaultValue": 0.6
+            "defaultValue": 0.4
         },
         "insights_advanced_query_enabled": {
             "name": "insights_advanced_query_enabled",
@@ -7173,10 +7173,14 @@
         "payments_crb_iframe_delay_msecs": {
             "name": "payments_crb_iframe_delay_msecs",
             "type": "number",
-            "defaultValue": 1500
+            "defaultValue": 2000.0
         },
         "payments_transfer_methods_enabled": {
             "name": "payments_transfer_methods_enabled",
+            "type": "string"
+        },
+        "payments_transfer_funding_sources_enabled": {
+            "name": "payments_transfer_funding_sources_enabled",
             "type": "string"
         },
         "premium_churn_prevention_offers_web_17199": {
@@ -8724,6 +8728,10 @@
             "name": "responsive_web_grok_05221996",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_new_home_layout": {
+            "name": "responsive_web_grok_new_home_layout",
+            "type": "string"
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -12900,7 +12908,7 @@
         "vo_upsell_profile_button_enabled": {
             "name": "vo_upsell_profile_button_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "vod_attribution_tweet_detail_pivot_enabled": {
             "name": "vod_attribution_tweet_detail_pivot_enabled",
