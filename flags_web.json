@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d6f3bc93288e2f7245c81ee2fe49b14995a7516f",
+    "feature_set_token": "0ca6ae77a95f0c88a2c6d43d2a02b2ff2f15ea3d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1710,6 +1710,9 @@
         "responsive_web_grok_multimedia_results": {
             "value": false
         },
+        "responsive_web_grok_new_home_layout": {
+            "value": false
+        },
         "responsive_web_grok_new_icon": {
             "value": true
         },
@@ -2899,6 +2902,9 @@
         },
         "subscriptions_marketing_page_offer_ends_at_msec": {
             "value": 1739246400000.0
+        },
+        "subscriptions_marketing_page_supergrok_content_enabled": {
+            "value": false
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "value": true
@@ -7244,6 +7250,14 @@
                 "holdback"
             ]
         },
+        "premium_web_paywall_supergrok_logo_17341": {
+            "name": "premium_web_paywall_supergrok_logo_17341",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "premium_webview_paywall_offer_video_url": {
             "name": "premium_webview_paywall_offer_video_url",
             "type": "string",
@@ -8731,7 +8745,8 @@
         },
         "responsive_web_grok_new_home_layout": {
             "name": "responsive_web_grok_new_home_layout",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -10113,6 +10128,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "rweb_vertical_video_17339": {
+            "name": "rweb_vertical_video_17339",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "rweb_video_logged_in_analytics_enabled": {
             "name": "rweb_video_logged_in_analytics_enabled",
             "type": "boolean",
@@ -11359,6 +11382,11 @@
             "name": "subscriptions_marketing_page_new_grok_content_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_marketing_page_supergrok_content_enabled": {
+            "name": "subscriptions_marketing_page_supergrok_content_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_offers_promotional_enabled": {
             "name": "subscriptions_offers_promotional_enabled",
