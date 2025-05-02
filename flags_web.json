@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0ca6ae77a95f0c88a2c6d43d2a02b2ff2f15ea3d",
+    "feature_set_token": "610c982bcc8895946310b5b65468c828cffe8b1d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1823,6 +1823,9 @@
         },
         "responsive_web_grok_text_upload_enabled": {
             "value": true
+        },
+        "responsive_web_grok_trend_news_cell_enabled": {
+            "value": false
         },
         "responsive_web_grok_trends_design_enabled": {
             "value": false
@@ -8748,6 +8751,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_trend_news_cell_enabled": {
+            "name": "responsive_web_grok_trend_news_cell_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9866,16 +9874,6 @@
             "name": "rweb_client_transaction_id_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "rweb_compact_media_17284": {
-            "name": "rweb_compact_media_17284",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "max_450",
-                "max_420",
-                "max_400"
-            ]
         },
         "rweb_conf_dev_enabled": {
             "name": "rweb_conf_dev_enabled",
