@@ -5873,14 +5873,6 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "grok_memory_17275": {
-            "name": "grok_memory_17275",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
         "grok_settings_age_restriction_enabled": {
             "name": "grok_settings_age_restriction_enabled",
             "type": "boolean",
@@ -7323,6 +7315,10 @@
         },
         "premium_webview_paywall_debug_mode_enabled": {
             "name": "premium_webview_paywall_debug_mode_enabled",
+            "type": "string"
+        },
+        "premium_webview_paywall_stripe_enabled": {
+            "name": "premium_webview_paywall_stripe_enabled",
             "type": "string"
         },
         "professional_launchpad_m1_enabled": {
@@ -11972,6 +11968,10 @@
         },
         "super_follow_ios_platform_availability_check_enabled": {
             "name": "super_follow_ios_platform_availability_check_enabled",
+            "type": "string"
+        },
+        "super_follow_ios_stripe_payments": {
+            "name": "super_follow_ios_stripe_payments",
             "type": "string"
         },
         "super_follow_onboarding_granular_pricing_enabled": {
