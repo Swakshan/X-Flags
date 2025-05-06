@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "610c982bcc8895946310b5b65468c828cffe8b1d",
+    "feature_set_token": "d59e4676e2fbafa3e2ae0981255209c359cbda23",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1108,7 +1108,7 @@
             "value": false
         },
         "payments_crb_iframe_delay_msecs": {
-            "value": 2000.0
+            "value": 1000.0
         },
         "payments_enabled": {
             "value": false
@@ -1574,6 +1574,12 @@
         },
         "responsive_web_grok_add_response_num_retries": {
             "value": 0
+        },
+        "responsive_web_grok_allow_x_post_embeds": {
+            "value": false
+        },
+        "responsive_web_grok_allow_youtube_embeds": {
+            "value": false
         },
         "responsive_web_grok_analysis_button_from_backend": {
             "value": false
@@ -2095,6 +2101,9 @@
             "value": true
         },
         "responsive_web_redux_use_fragment_enabled": {
+            "value": false
+        },
+        "responsive_web_remove_qp_ad_label_enabled": {
             "value": false
         },
         "responsive_web_repeat_profile_visits_notifications_device_follow_only_version_enabled": {
@@ -7174,7 +7183,7 @@
         "payments_crb_iframe_delay_msecs": {
             "name": "payments_crb_iframe_delay_msecs",
             "type": "number",
-            "defaultValue": 2000.0
+            "defaultValue": 1000.0
         },
         "payments_transfer_methods_enabled": {
             "name": "payments_transfer_methods_enabled",
@@ -7182,6 +7191,10 @@
         },
         "payments_transfer_funding_sources_enabled": {
             "name": "payments_transfer_funding_sources_enabled",
+            "type": "string"
+        },
+        "payments_settings_notifications_enabled": {
+            "name": "payments_settings_notifications_enabled",
             "type": "string"
         },
         "premium_churn_prevention_offers_web_17199": {
@@ -8752,6 +8765,16 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_allow_x_post_embeds": {
+            "name": "responsive_web_grok_allow_x_post_embeds",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_allow_youtube_embeds": {
+            "name": "responsive_web_grok_allow_youtube_embeds",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9162,6 +9185,11 @@
         },
         "responsive_web_redux_use_fragment_enabled": {
             "name": "responsive_web_redux_use_fragment_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_remove_qp_ad_label_enabled": {
+            "name": "responsive_web_remove_qp_ad_label_enabled",
             "type": "boolean",
             "defaultValue": false
         },
