@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e8a556c6da4a5727ee0559a69fdb60f568593bac",
+    "feature_set_token": "81b0061a50dedabf4317bd4accb2c752a910c90b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2551,7 +2551,7 @@
             "value": false
         },
         "rweb_video_vertical_aspect_ratio_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_xchat_debug_enabled": {
             "value": false
@@ -3480,7 +3480,7 @@
             "value": true
         },
         "vo_upsell_enabled": {
-            "value": false
+            "value": true
         },
         "vo_upsell_new_business_query_enabled": {
             "value": true
@@ -5869,10 +5869,7 @@
         "grok_button_on_every_post_17085": {
             "name": "grok_button_on_every_post_17085",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "with_buttons_on_all_posts"
-            ]
+            "enumeration_values": []
         },
         "grok_followup_buttons_under_posts_17076": {
             "name": "grok_followup_buttons_under_posts_17076",
@@ -10147,14 +10144,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "rweb_vertical_video_17339": {
-            "name": "rweb_vertical_video_17339",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
         "rweb_video_logged_in_analytics_enabled": {
             "name": "rweb_video_logged_in_analytics_enabled",
             "type": "boolean",
@@ -10177,7 +10166,7 @@
         "rweb_video_vertical_aspect_ratio_enabled": {
             "name": "rweb_video_vertical_aspect_ratio_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_video_tagging_enabled": {
             "name": "rweb_video_tagging_enabled",
@@ -12927,7 +12916,7 @@
         "vo_upsell_enabled": {
             "name": "vo_upsell_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "vo_upsell_profile_page_enabled": {
             "name": "vo_upsell_profile_page_enabled",
