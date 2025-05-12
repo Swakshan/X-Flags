@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ac04b439c0df5bdb7b80b684ced351ee10838648",
+    "feature_set_token": "c9784ac59dd8b302a42ce3688654b273a645423d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2176,13 +2176,13 @@
             "value": false
         },
         "responsive_web_thread_media_ensure_root_urt": {
-            "value": false
+            "value": true
         },
         "responsive_web_thread_media_nav_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_thread_media_tooltip": {
-            "value": false
+            "value": true
         },
         "responsive_web_timeline_cover_killswitch_enabled": {
             "value": false
@@ -2543,6 +2543,9 @@
         },
         "rweb_video_logged_in_analytics_enabled": {
             "value": true
+        },
+        "rweb_video_max_height_applied_on_mobile": {
+            "value": false
         },
         "rweb_video_pip_enabled": {
             "value": true
@@ -9320,17 +9323,17 @@
         "responsive_web_thread_media_nav_enabled": {
             "name": "responsive_web_thread_media_nav_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_thread_media_ensure_root_urt": {
             "name": "responsive_web_thread_media_ensure_root_urt",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_thread_media_tooltip": {
             "name": "responsive_web_thread_media_tooltip",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_timeline_cover_killswitch_enabled": {
             "name": "responsive_web_timeline_cover_killswitch_enabled",
@@ -10094,14 +10097,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "rweb_thread_media_nav_17145": {
-            "name": "rweb_thread_media_nav_17145",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
         "rweb_timeline_inline_show_more_enabled": {
             "name": "rweb_timeline_inline_show_more_enabled",
             "type": "boolean",
@@ -10175,6 +10170,11 @@
             "name": "rweb_video_vertical_aspect_ratio_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_video_max_height_applied_on_mobile": {
+            "name": "rweb_video_max_height_applied_on_mobile",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_video_tagging_enabled": {
             "name": "rweb_video_tagging_enabled",
