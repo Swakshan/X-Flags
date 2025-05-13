@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a5fdffd6e13c7443e974b893c7e5d18b82589c8f",
+    "feature_set_token": "844284236a5edfdd620d80e73ed3ef8888c646a2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1132,6 +1132,9 @@
             "value": false
         },
         "payments_settings_documents_enabled": {
+            "value": false
+        },
+        "payments_transfer_methods_enabled": {
             "value": false
         },
         "premium_content_api_read_enabled": {
@@ -7187,7 +7190,8 @@
         },
         "payments_transfer_methods_enabled": {
             "name": "payments_transfer_methods_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_transfer_funding_sources_enabled": {
             "name": "payments_transfer_funding_sources_enabled",
@@ -9743,6 +9747,14 @@
                 "revamped_layout_with_grok",
                 "revamped_layout_blue",
                 "revamped_layout_blue_with_grok"
+            ]
+        },
+        "revamped_news_17375": {
+            "name": "revamped_news_17375",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
             ]
         },
         "rweb_analytics_user_audience_page_enabled": {
