@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bb0d7c98d8a1e8b080adf70c46db2acf88034d5c",
+    "feature_set_token": "e68a313fd6b2418c3349073c2de4708966b9a948",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2563,12 +2563,15 @@
             "value": false
         },
         "rweb_video_vertical_aspect_ratio_enabled": {
-            "value": true
+            "value": false
         },
         "rweb_xchat_debug_enabled": {
             "value": false
         },
         "rweb_xchat_enabled": {
+            "value": false
+        },
+        "rweb_xchat_messages_sidebar_enabled": {
             "value": false
         },
         "rweb_xchat_old_dms_inbox_item": {
@@ -3567,7 +3570,7 @@
             "value": true
         },
         "x_jetfuel_enable_test_cluster": {
-            "value": false
+            "value": true
         },
         "xprofile_blocked_by_view_enabled": {
             "value": true
@@ -10211,7 +10214,7 @@
         "rweb_video_vertical_aspect_ratio_enabled": {
             "name": "rweb_video_vertical_aspect_ratio_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "rweb_video_max_height_applied_on_mobile": {
             "name": "rweb_video_max_height_applied_on_mobile",
@@ -10235,6 +10238,11 @@
         },
         "rweb_xchat_old_dms_inbox_item": {
             "name": "rweb_xchat_old_dms_inbox_item",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_xchat_messages_sidebar_enabled": {
+            "name": "rweb_xchat_messages_sidebar_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -13613,7 +13621,7 @@
         "x_jetfuel_enable_test_cluster": {
             "name": "x_jetfuel_enable_test_cluster",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "x_jetfuel_enable_frames_on_posts": {
             "name": "x_jetfuel_enable_frames_on_posts",
