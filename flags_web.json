@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e68a313fd6b2418c3349073c2de4708966b9a948",
+    "feature_set_token": "46f29d2aa9db0ae61ce51c822176afa7f2a51b1e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2436,6 +2436,9 @@
         "rweb_conf_rnnoise_enabled": {
             "value": true
         },
+        "rweb_debugger_enabled": {
+            "value": false
+        },
         "rweb_enable_logged_out_search_search_bar_enabled": {
             "value": false
         },
@@ -2883,7 +2886,7 @@
             "value": true
         },
         "subscriptions_management_billing_label_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_management_failed_payment_api_call_enabled": {
             "value": true
@@ -2910,7 +2913,7 @@
             "value": true
         },
         "subscriptions_management_tier_switch_success_screen_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_management_use_active_price": {
             "value": true
@@ -8002,6 +8005,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_communityboost_mixed_pivot_enabled": {
+            "name": "responsive_web_communityboost_mixed_pivot_enabled",
+            "type": "string"
+        },
         "responsive_web_compact_media_max_height": {
             "name": "responsive_web_compact_media_max_height",
             "type": "number",
@@ -9964,6 +9971,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "rweb_debugger_enabled": {
+            "name": "rweb_debugger_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_enable_logged_out_search_search_bar_enabled": {
             "name": "rweb_enable_logged_out_search_search_bar_enabled",
             "type": "boolean",
@@ -11285,12 +11297,12 @@
         "subscriptions_management_tier_switch_success_screen_enabled": {
             "name": "subscriptions_management_tier_switch_success_screen_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_management_billing_label_enabled": {
             "name": "subscriptions_management_billing_label_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
