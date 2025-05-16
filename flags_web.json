@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5df770c0b78ef66c1662cdd1a80e8ba3c75fcb59",
+    "feature_set_token": "896f981b4ef10dad9fbdf99f827c25fecf9fd3d6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1420,6 +1420,9 @@
             "value": true
         },
         "responsive_web_communityboost_form_enabled": {
+            "value": false
+        },
+        "responsive_web_communityboost_mixed_pivot_enabled": {
             "value": false
         },
         "responsive_web_compact_media_max_height": {
@@ -8008,7 +8011,8 @@
         },
         "responsive_web_communityboost_mixed_pivot_enabled": {
             "name": "responsive_web_communityboost_mixed_pivot_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_compact_media_max_height": {
             "name": "responsive_web_compact_media_max_height",
