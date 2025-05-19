@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "896f981b4ef10dad9fbdf99f827c25fecf9fd3d6",
+    "feature_set_token": "1bd0fe20b1786cebc3067add486b45973aed011c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2458,7 +2458,7 @@
             "value": 60
         },
         "rweb_home_uas_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_jetfuel_sdkv2_with_x_web": {
             "value": false
@@ -2581,6 +2581,9 @@
             "value": false
         },
         "rweb_xchat_old_dms_inbox_item": {
+            "value": false
+        },
+        "rweb_xp_forwarded_for_enabled": {
             "value": false
         },
         "sc_mock_data_enabled": {
@@ -10008,7 +10011,7 @@
         "rweb_home_uas_enabled": {
             "name": "rweb_home_uas_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_home_mixer_enable_social_context_filter_social_contexts": {
             "name": "rweb_home_mixer_enable_social_context_filter_social_contexts",
@@ -10260,6 +10263,11 @@
         },
         "rweb_xchat_messages_sidebar_enabled": {
             "name": "rweb_xchat_messages_sidebar_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_xp_forwarded_for_enabled": {
+            "name": "rweb_xp_forwarded_for_enabled",
             "type": "boolean",
             "defaultValue": false
         },
