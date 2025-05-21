@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1bd0fe20b1786cebc3067add486b45973aed011c",
+    "feature_set_token": "a0fa90cd8958c4d990b650d047451c1f3cda7618",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1342,7 +1342,7 @@
             "value": true
         },
         "responsive_web_birdwatch_note_request_download_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_birdwatch_note_request_enabled": {
             "value": true
@@ -2438,6 +2438,9 @@
         },
         "rweb_conf_rnnoise_enabled": {
             "value": true
+        },
+        "rweb_debugger_bug_report_email": {
+            "value": ""
         },
         "rweb_debugger_enabled": {
             "value": false
@@ -7944,7 +7947,7 @@
         "responsive_web_birdwatch_note_request_download_enabled": {
             "name": "responsive_web_birdwatch_note_request_download_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_birdwatch_read_sources_nudge": {
             "name": "responsive_web_birdwatch_read_sources_nudge",
@@ -9991,6 +9994,11 @@
             "name": "rweb_debugger_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_debugger_bug_report_email": {
+            "name": "rweb_debugger_bug_report_email",
+            "type": "string",
+            "defaultValue": ""
         },
         "rweb_enable_logged_out_search_search_bar_enabled": {
             "name": "rweb_enable_logged_out_search_search_bar_enabled",
@@ -13016,10 +13024,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "variant_a",
-                "variant_b",
-                "variant_c",
-                "variant_d"
+                "holdback"
             ]
         },
         "vo_upsell_enabled": {
