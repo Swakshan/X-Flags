@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "7aa70b96b93aebb51aef4a13844f0eedd176ba6d",
+        "feature_set_token": "6efd8e244fdc0dd823f896fc6caba7f3030235e5",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -2561,7 +2561,7 @@
                 "value": false
             },
             "dm_secret_conversations_for_blue_verified_enabled": {
-                "value": true
+                "value": false
             },
             "dm_secret_conversations_for_graduated_access_enabled": {
                 "value": false
@@ -2860,6 +2860,9 @@
             "grok_translations_poll_translation_is_enabled": {
                 "value": false
             },
+            "grok_translations_post_auto_translation_is_enabled": {
+                "value": false
+            },
             "grok_translations_post_translation_is_enabled": {
                 "value": false
             },
@@ -3118,6 +3121,9 @@
             "include_blocked_by_and_blocking_in_requests_enabled": {
                 "value": true
             },
+            "ios_dm_dash_secret_dm_creation_disabled": {
+                "value": false
+            },
             "japan_holidays_is_labor_thanks_giving_day": {
                 "value": false
             },
@@ -3143,7 +3149,7 @@
                 "value": false
             },
             "krs_registration_enabled": {
-                "value": true
+                "value": false
             },
             "legacy_deciders_scribe_linger": {
                 "value": true
@@ -3520,6 +3526,9 @@
                 "value": false
             },
             "payments_shutdown_enabled": {
+                "value": false
+            },
+            "payments_tasks_carousel_enabled": {
                 "value": false
             },
             "people_discovery_live_sync_enabled": {
@@ -4089,7 +4098,7 @@
                 "value": false
             },
             "ssp_ads_google_native_ad_report_enabled": {
-                "value": false
+                "value": true
             },
             "ssp_ads_google_native_ad_repository_scribe_enabled": {
                 "value": false
@@ -5052,6 +5061,15 @@
             "x_jetfuel_android_enabled": {
                 "value": false
             },
+            "xchat_android_composer_w_attach_btn_left": {
+                "value": false
+            },
+            "xchat_discard_events_with_invalid_signature": {
+                "value": false
+            },
+            "xchat_max_group_size": {
+                "value": 200.0
+            },
             "xchat_send_graphql_logs": {
                 "value": false
             },
@@ -5316,7 +5334,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "5e8c266ce958a5ca19770593cf45b7b2171afadf",
-        "experiments": "5e8c266ce958a5ca19770593cf45b7b2171afadf"
+        "feature_switches": "e094e7b358dafcd026bac74ead5c62ed89e7013c",
+        "experiments": "e094e7b358dafcd026bac74ead5c62ed89e7013c"
     }
 }
