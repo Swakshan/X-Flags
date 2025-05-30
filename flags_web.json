@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "699b835c4d2827c8c9b7a3e97c173de77fabd76b",
+    "feature_set_token": "0c964d148b8da2c34268ad16d0aa3a3d97373a98",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1102,9 +1102,6 @@
             "value": false
         },
         "payments_card_spend_enabled": {
-            "value": false
-        },
-        "payments_cards_as_payment_method_enabled": {
             "value": false
         },
         "payments_crb_iframe_delay_msecs": {
@@ -2464,6 +2461,9 @@
             "value": false
         },
         "rweb_home_compact_timeline_enabled": {
+            "value": false
+        },
+        "rweb_home_jot_migrate_enabled": {
             "value": false
         },
         "rweb_home_mixer_enable_social_context_filter_social_contexts": {
@@ -7201,8 +7201,7 @@
         },
         "payments_cards_as_payment_method_enabled": {
             "name": "payments_cards_as_payment_method_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_settings_documents_enabled": {
             "name": "payments_settings_documents_enabled",
@@ -10062,6 +10061,11 @@
         },
         "rweb_home_compact_timeline_enabled": {
             "name": "rweb_home_compact_timeline_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_home_jot_migrate_enabled": {
+            "name": "rweb_home_jot_migrate_enabled",
             "type": "boolean",
             "defaultValue": false
         },
