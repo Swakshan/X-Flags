@@ -7,7 +7,7 @@ from common import writeJson,readJson,get_exception,vercodeGenerator,headers,get
 from model import DownloadData,Source,Platform,Releases
 from apkutils import APK
 
-VER = "v11.5 : Detect pairipLib in android"
+VER = "v11.51 : update version code logic"
 
 def downloader(url,fileName="",isJson=False):
    # print(f"Downloading: {fileName}")

@@ -69,11 +69,12 @@ def readJson(filename):
 def printLine():
     return "*--------------*"
 
-def vercodeGenerator(v):
-    vCode = "20" if "alpha" in v else "10" if "beta" in v else "00"
-    vercode = v.replace("-alpha.",vCode).replace("-beta.",vCode).replace("-release.",vCode)
-    vercode = "3"+vercode.replace(".","")
-    return vercode
+def vercodeGenerator(vername):
+    vCode = "20" if "alpha" in vername else "10" if "beta" in vername else "00"
+    vercode = vername.replace("-alpha.",vCode).replace("-beta.",vCode).replace("-release.",vCode)
+    sps = vercode.split(".")
+    midCode = "%02d" % int(sps[1])
+    return "3"+sps[0]+midCode+sps[len(sps)-1]
 
 def headers():
     return {
