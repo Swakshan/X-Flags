@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0c964d148b8da2c34268ad16d0aa3a3d97373a98",
+    "feature_set_token": "a0e7b9f02655732c2969616598f0fd77a1c47368",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3609,7 +3609,7 @@
             "value": true
         },
         "x_jetfuel_enable_test_cluster": {
-            "value": true
+            "value": false
         },
         "xprofile_blocked_by_view_enabled": {
             "value": true
@@ -4084,10 +4084,7 @@
         "birdwatch_crowd_13489": {
             "name": "birdwatch_crowd_13489",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "crowd"
-            ]
+            "enumeration_values": []
         },
         "blue_business_profile_image_shape_enabled": {
             "name": "blue_business_profile_image_shape_enabled",
@@ -7273,6 +7270,14 @@
             "name": "payments_settings_sections_enabled",
             "type": "string"
         },
+        "payments_address_autocomplete_enabled": {
+            "name": "payments_address_autocomplete_enabled",
+            "type": "string"
+        },
+        "payments_settings_known_devices_enabled": {
+            "name": "payments_settings_known_devices_enabled",
+            "type": "string"
+        },
         "premium_churn_prevention_offers_web_17199": {
             "name": "premium_churn_prevention_offers_web_17199",
             "type": "experiment",
@@ -10277,6 +10282,14 @@
             "name": "rweb_updated_broadcast_screen",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_user_flow_client_events_17414": {
+            "name": "rweb_user_flow_client_events_17414",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "user_flow"
+            ]
         },
         "rweb_video_logged_in_analytics_enabled": {
             "name": "rweb_video_logged_in_analytics_enabled",
@@ -13730,7 +13743,7 @@
         "x_jetfuel_enable_test_cluster": {
             "name": "x_jetfuel_enable_test_cluster",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "x_jetfuel_enable_frames_on_posts": {
             "name": "x_jetfuel_enable_frames_on_posts",
