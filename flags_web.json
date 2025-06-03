@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a8eea9c74533e65fe745795ff93446da00a35961",
+    "feature_set_token": "b4f0274d5aa73ec1b897d7cba45f21aa4d11e97e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1639,7 +1639,7 @@
             "value": false
         },
         "responsive_web_grok_enable_deepersearch": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_enable_deepsearch_notifications": {
             "value": true
@@ -1759,6 +1759,9 @@
             "value": false
         },
         "responsive_web_grok_post_image_understanding_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_post_inline_translation_is_enabled": {
             "value": false
         },
         "responsive_web_grok_post_understanding_button_on_all_posts": {
@@ -2209,6 +2212,9 @@
             "value": false
         },
         "responsive_web_timeline_relay_user_lists_enabled": {
+            "value": false
+        },
+        "responsive_web_timezone_header_enabled": {
             "value": false
         },
         "responsive_web_tracer_global_trace_sample_rate": {
@@ -8804,7 +8810,7 @@
         "responsive_web_grok_enable_deepersearch": {
             "name": "responsive_web_grok_enable_deepersearch",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_atgrok_sample_rate": {
             "name": "responsive_web_grok_atgrok_sample_rate",
@@ -8868,6 +8874,11 @@
         },
         "responsive_web_grok_poll_translation_enabled": {
             "name": "responsive_web_grok_poll_translation_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_post_inline_translation_is_enabled": {
+            "name": "responsive_web_grok_post_inline_translation_is_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -9443,6 +9454,11 @@
         },
         "responsive_web_timeline_relay_lists_management_enabled": {
             "name": "responsive_web_timeline_relay_lists_management_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_timezone_header_enabled": {
+            "name": "responsive_web_timezone_header_enabled",
             "type": "boolean",
             "defaultValue": false
         },
