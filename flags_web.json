@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a0e7b9f02655732c2969616598f0fd77a1c47368",
+    "feature_set_token": "a8eea9c74533e65fe745795ff93446da00a35961",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1639,7 +1639,7 @@
             "value": false
         },
         "responsive_web_grok_enable_deepersearch": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_enable_deepsearch_notifications": {
             "value": true
@@ -2970,7 +2970,7 @@
             "value": false
         },
         "subscriptions_marketing_page_web_refresh_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "value": true
@@ -7278,6 +7278,10 @@
             "name": "payments_settings_known_devices_enabled",
             "type": "string"
         },
+        "payments_wires_enabled": {
+            "name": "payments_wires_enabled",
+            "type": "string"
+        },
         "premium_churn_prevention_offers_web_17199": {
             "name": "premium_churn_prevention_offers_web_17199",
             "type": "experiment",
@@ -7306,14 +7310,6 @@
         },
         "premium_module_v1_17146": {
             "name": "premium_module_v1_17146",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
-        "premium_paywall_web_refresh_17409": {
-            "name": "premium_paywall_web_refresh_17409",
             "type": "experiment",
             "enumeration_values": [
                 "control",
@@ -8808,7 +8804,7 @@
         "responsive_web_grok_enable_deepersearch": {
             "name": "responsive_web_grok_enable_deepersearch",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_grok_atgrok_sample_rate": {
             "name": "responsive_web_grok_atgrok_sample_rate",
@@ -11564,7 +11560,7 @@
         "subscriptions_marketing_page_web_refresh_enabled": {
             "name": "subscriptions_marketing_page_web_refresh_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_offers_promotional_enabled": {
             "name": "subscriptions_offers_promotional_enabled",
