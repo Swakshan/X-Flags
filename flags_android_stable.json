@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "6efd8e244fdc0dd823f896fc6caba7f3030235e5",
+        "feature_set_token": "738b981be14f822ce3d32b6eadff0ea655ddc701",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -2863,6 +2863,9 @@
             "grok_translations_post_auto_translation_is_enabled": {
                 "value": false
             },
+            "grok_translations_post_inline_translation_is_enabled": {
+                "value": false
+            },
             "grok_translations_post_translation_is_enabled": {
                 "value": false
             },
@@ -3501,7 +3504,7 @@
             "onboarding_wtf_dismiss_htl_refresh_enabled": {
                 "value": false
             },
-            "payments_account_details_enabled": {
+            "payments_address_autocomplete_enabled": {
                 "value": false
             },
             "payments_card_spend_enabled": {
@@ -3522,13 +3525,13 @@
             "payments_pin_enabled": {
                 "value": false
             },
-            "payments_pin_login_enabled": {
-                "value": false
-            },
             "payments_shutdown_enabled": {
                 "value": false
             },
             "payments_tasks_carousel_enabled": {
+                "value": false
+            },
+            "payments_transfer_methods_enabled": {
                 "value": false
             },
             "people_discovery_live_sync_enabled": {
@@ -5067,6 +5070,12 @@
             "xchat_discard_events_with_invalid_signature": {
                 "value": false
             },
+            "xchat_enable_av": {
+                "value": false
+            },
+            "xchat_enable_eu_report": {
+                "value": false
+            },
             "xchat_max_group_size": {
                 "value": 200.0
             },
@@ -5334,7 +5343,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "b5dd55a7316ef37060113e85b5e6b53cb8eead6f",
-        "experiments": "b5dd55a7316ef37060113e85b5e6b53cb8eead6f"
+        "feature_switches": "8286b4be3de57e03ce4d5940b883744314cf7db8",
+        "experiments": "8286b4be3de57e03ce4d5940b883744314cf7db8"
     }
 }
