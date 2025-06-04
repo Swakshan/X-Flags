@@ -8006,6 +8006,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_birdwatch_enforce_author_user_quotas": {
+            "name": "responsive_web_birdwatch_enforce_author_user_quotas",
+            "type": "string"
+        },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
             "type": "string",
@@ -8881,6 +8885,10 @@
             "name": "responsive_web_grok_post_inline_translation_is_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_images_card_enabled": {
+            "name": "responsive_web_grok_images_card_enabled",
+            "type": "string"
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -10301,6 +10309,14 @@
             "enumeration_values": [
                 "control",
                 "user_flow"
+            ]
+        },
+        "rweb_vertical_video_17339": {
+            "name": "rweb_vertical_video_17339",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
             ]
         },
         "rweb_video_logged_in_analytics_enabled": {
