@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "a88ab0c8a5d457641cf2871195c7b40112e32660",
+        "feature_set_token": "8f1569f5ae91a9ab96e86c0c0b0db9e1926f3f27",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -2863,6 +2863,9 @@
             "grok_translations_post_auto_translation_is_enabled": {
                 "value": false
             },
+            "grok_translations_post_feedback_is_enabled": {
+                "value": false
+            },
             "grok_translations_post_inline_translation_is_enabled": {
                 "value": false
             },
@@ -3538,9 +3541,6 @@
                 "value": false
             },
             "payments_tasks_carousel_enabled": {
-                "value": false
-            },
-            "payments_transfer_methods_enabled": {
                 "value": false
             },
             "people_discovery_live_sync_enabled": {
@@ -5083,9 +5083,12 @@
                 "value": 0.0
             },
             "x_chat_android_enabled": {
-                "value": false
+                "value": true
             },
             "x_jetfuel_android_enabled": {
+                "value": false
+            },
+            "xchat_android_screenshot_detection_enabled": {
                 "value": false
             },
             "xchat_discard_events_with_invalid_signature": {
@@ -5105,6 +5108,9 @@
             },
             "xchat_max_group_size": {
                 "value": 200.0
+            },
+            "xchat_out_of_order_fanout_validation_enabled": {
+                "value": false
             },
             "xchat_send_graphql_logs": {
                 "value": false
@@ -5371,7 +5377,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "ba1bc5901b3db9f444898dd3759310594e3a2df7",
-        "experiments": "ba1bc5901b3db9f444898dd3759310594e3a2df7"
+        "feature_switches": "ebe6a82451beff7e7e69cc89a7da3dbbf1fc4282",
+        "experiments": "ebe6a82451beff7e7e69cc89a7da3dbbf1fc4282"
     }
 }
