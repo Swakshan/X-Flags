@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9553424e7545727342850f1caaae2d82fa76cda7",
+    "feature_set_token": "ef014e1d20b0be3a7c82c34aad7e80662dec0ce4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1048,7 +1048,7 @@
             "value": true
         },
         "onboarding_project_uls_enabled": {
-            "value": false
+            "value": true
         },
         "optimized_sru_parameters_client_side_timeout_ms": {
             "value": 600000.0
@@ -5618,6 +5618,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "evergreen_cross_border_ja_us_17447": {
+            "name": "evergreen_cross_border_ja_us_17447",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "evergreen"
+            ]
+        },
         "explore_graphql_enabled": {
             "name": "explore_graphql_enabled",
             "type": "boolean",
@@ -7099,7 +7107,7 @@
         "onboarding_project_uls_enabled": {
             "name": "onboarding_project_uls_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "optimized_sru_parameters_enabled": {
             "name": "optimized_sru_parameters_enabled",
