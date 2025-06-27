@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2d5fe820c05858e20cdd3367e58712438710dbf9",
+    "feature_set_token": "f094edfea64134c2c7e7e4067be4da821568bae0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1644,6 +1644,9 @@
         "responsive_web_grok_dev_universal_search_id_enabled": {
             "value": false
         },
+        "responsive_web_grok_download_favicons": {
+            "value": false
+        },
         "responsive_web_grok_edit_user_images": {
             "value": false
         },
@@ -1874,6 +1877,9 @@
         },
         "responsive_web_grok_tweet_translation_limit": {
             "value": 5000.0
+        },
+        "responsive_web_grok_use_collapsed_preview": {
+            "value": false
         },
         "responsive_web_grok_use_new_layout": {
             "value": true
@@ -5618,14 +5624,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "evergreen_cross_border_ja_us_17447": {
-            "name": "evergreen_cross_border_ja_us_17447",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "evergreen"
-            ]
-        },
         "explore_graphql_enabled": {
             "name": "explore_graphql_enabled",
             "type": "boolean",
@@ -6473,6 +6471,14 @@
         },
         "interests_incremental_holdback_2022_h1_12424": {
             "name": "interests_incremental_holdback_2022_h1_12424",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
+        "ios_no_ad_dropping_17457": {
+            "name": "ios_no_ad_dropping_17457",
             "type": "experiment",
             "enumeration_values": [
                 "control",
@@ -8917,6 +8923,16 @@
         },
         "responsive_web_grok_bio_auto_translation_is_enabled": {
             "name": "responsive_web_grok_bio_auto_translation_is_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_download_favicons": {
+            "name": "responsive_web_grok_download_favicons",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_use_collapsed_preview": {
+            "name": "responsive_web_grok_use_collapsed_preview",
             "type": "boolean",
             "defaultValue": false
         },
