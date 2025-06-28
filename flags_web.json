@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3f29726ec5ec5ef90129efd5397dd5eb55af40d5",
+    "feature_set_token": "9ed09abe45575a35366371890d62b1b5668d78d9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1713,6 +1713,9 @@
         "responsive_web_grok_history_search_enabled": {
             "value": true
         },
+        "responsive_web_grok_home_dark_enabled": {
+            "value": false
+        },
         "responsive_web_grok_image_annotation_enabled": {
             "value": true
         },
@@ -2494,6 +2497,9 @@
             "value": true
         },
         "rweb_home_nav_single_direction_scroll_enabled": {
+            "value": false
+        },
+        "rweb_home_preserve_entries_enabled": {
             "value": false
         },
         "rweb_home_refetch_on_refocus_min_delay_seconds": {
@@ -8936,6 +8942,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_home_dark_enabled": {
+            "name": "responsive_web_grok_home_dark_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9911,6 +9922,14 @@
                 "treatment"
             ]
         },
+        "rweb_ad_spacing_17460": {
+            "name": "rweb_ad_spacing_17460",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "rweb_analytics_user_audience_page_enabled": {
             "name": "rweb_analytics_user_audience_page_enabled",
             "type": "string"
@@ -10139,6 +10158,11 @@
             "name": "rweb_home_jot_migrate_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_home_preserve_entries_enabled": {
+            "name": "rweb_home_preserve_entries_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_home_refetch_on_refocus_min_delay_seconds": {
             "name": "rweb_home_refetch_on_refocus_min_delay_seconds",
