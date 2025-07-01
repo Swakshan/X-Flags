@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c8363b203b52643e300ab942b78200d5267c3e26",
+    "feature_set_token": "65e92fa6c5b4d07560e59a046793801521d2655e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1651,6 +1651,9 @@
             "value": false
         },
         "responsive_web_grok_enable_add_response_keepalive": {
+            "value": false
+        },
+        "responsive_web_grok_enable_android_image_donwload": {
             "value": false
         },
         "responsive_web_grok_enable_deepersearch": {
@@ -7336,6 +7339,14 @@
                 "holdback"
             ]
         },
+        "premium_get_verified_upsell_basic_tier_web_17332": {
+            "name": "premium_get_verified_upsell_basic_tier_web_17332",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "premium_home_nav_upgrade_upsell__variant_key_fs": {
             "name": "premium_home_nav_upgrade_upsell__variant_key_fs",
             "type": "string",
@@ -8950,6 +8961,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_enable_android_image_donwload": {
+            "name": "responsive_web_grok_enable_android_image_donwload",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -10448,12 +10464,8 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "rweb_xchat_new_db_worker_enabled": {
-            "name": "rweb_xchat_new_db_worker_enabled",
-            "type": "string"
-        },
-        "rweb_xchat_fs_worker": {
-            "name": "rweb_xchat_fs_worker",
+        "rweb_xchat_bug_report_url": {
+            "name": "rweb_xchat_bug_report_url",
             "type": "string"
         },
         "rweb_xp_forwarded_for_enabled": {
