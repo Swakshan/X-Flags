@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e45b85ea5f72dc85cbc18d9ca079da258e56337e",
+    "feature_set_token": "57f5c028339e690377c1a03a83ac776403756df2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1107,6 +1107,9 @@
         "payments_card_spend_enabled": {
             "value": false
         },
+        "payments_cheques_enabled": {
+            "value": false
+        },
         "payments_crb_iframe_delay_msecs": {
             "value": 1000.0
         },
@@ -1141,6 +1144,9 @@
             "value": false
         },
         "payments_transfer_methods_enabled": {
+            "value": false
+        },
+        "payments_wires_enabled": {
             "value": false
         },
         "payments_withdraw_wires_enabled": {
@@ -1425,6 +1431,9 @@
         "responsive_web_castle_client_event_enabled": {
             "value": false
         },
+        "responsive_web_castle_public_key": {
+            "value": "pk_AvRa79bHyJSYSQHnRpcVtzyxetSvFerx"
+        },
         "responsive_web_castle_sdk_enabled": {
             "value": false
         },
@@ -1493,9 +1502,6 @@
         },
         "responsive_web_disconnect_third_party_sso_enabled": {
             "value": true
-        },
-        "responsive_web_dm_label_enabled": {
-            "value": false
         },
         "responsive_web_dockable_autoplay_policy_enabled": {
             "value": true
@@ -1702,7 +1708,7 @@
             "value": 15
         },
         "responsive_web_grok_finance_cards_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_fix_same_id_reload": {
             "value": true
@@ -1758,9 +1764,6 @@
         "responsive_web_grok_multimedia_results": {
             "value": false
         },
-        "responsive_web_grok_new_home_layout": {
-            "value": true
-        },
         "responsive_web_grok_new_icon": {
             "value": true
         },
@@ -1802,9 +1805,6 @@
         },
         "responsive_web_grok_profile_summary_min_posts": {
             "value": 15
-        },
-        "responsive_web_grok_promo_banner": {
-            "value": false
         },
         "responsive_web_grok_prompt_edit_enabled": {
             "value": true
@@ -1867,7 +1867,7 @@
             "value": true
         },
         "responsive_web_grok_sport_cards_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_start_mobile_layout_enabled": {
             "value": true
@@ -1915,7 +1915,7 @@
             "value": false
         },
         "responsive_web_grok_weather_card_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_web_results": {
             "value": true
@@ -2610,9 +2610,6 @@
         "rweb_update_fatigue_switch_to_app_link": {
             "value": "BannerSwitchToApp"
         },
-        "rweb_updated_broadcast_screen": {
-            "value": false
-        },
         "rweb_video_logged_in_analytics_enabled": {
             "value": true
         },
@@ -3015,7 +3012,7 @@
             "value": true
         },
         "subscriptions_offers_churn_prevention_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_offers_dynamic_upsells_enabled": {
             "value": true
@@ -3028,6 +3025,9 @@
         },
         "subscriptions_premium_hub_insights_block_enabled": {
             "value": true
+        },
+        "subscriptions_premium_hub_updated_theme_enabled": {
+            "value": false
         },
         "subscriptions_premium_module_creator_gate_enabled": {
             "value": false
@@ -4693,6 +4693,14 @@
             "name": "card_detail_compact_16577",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "castle_signup_rweb_17467": {
+            "name": "castle_signup_rweb_17467",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "communities_community_detail_sorting_enabled": {
             "name": "communities_community_detail_sorting_enabled",
@@ -7338,11 +7346,13 @@
         },
         "payments_wires_enabled": {
             "name": "payments_wires_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_cheques_enabled": {
             "name": "payments_cheques_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_withdraw_wires_enabled": {
             "name": "payments_withdraw_wires_enabled",
@@ -7352,14 +7362,6 @@
         "payments_offboard_enabled": {
             "name": "payments_offboard_enabled",
             "type": "string"
-        },
-        "premium_churn_prevention_offers_web_17199": {
-            "name": "premium_churn_prevention_offers_web_17199",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
         },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
@@ -8125,6 +8127,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_castle_public_key": {
+            "name": "responsive_web_castle_public_key",
+            "type": "string",
+            "defaultValue": "pk_AvRa79bHyJSYSQHnRpcVtzyxetSvFerx"
+        },
         "responsive_web_chat_enabled": {
             "name": "responsive_web_chat_enabled",
             "type": "boolean",
@@ -8251,11 +8258,6 @@
             "name": "responsive_web_disconnect_third_party_sso_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "responsive_web_dm_label_enabled": {
-            "name": "responsive_web_dm_label_enabled",
-            "type": "boolean",
-            "defaultValue": false
         },
         "responsive_web_dockable_autoplay_policy_enabled": {
             "name": "responsive_web_dockable_autoplay_policy_enabled",
@@ -8656,7 +8658,7 @@
         "responsive_web_grok_sport_cards_enabled": {
             "name": "responsive_web_grok_sport_cards_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_share_attachment_enabled": {
             "name": "responsive_web_grok_share_attachment_enabled",
@@ -8666,7 +8668,7 @@
         "responsive_web_grok_finance_cards_enabled": {
             "name": "responsive_web_grok_finance_cards_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_media_carousel_enabled": {
             "name": "responsive_web_grok_media_carousel_enabled",
@@ -8754,7 +8756,7 @@
         "responsive_web_grok_weather_card_enabled": {
             "name": "responsive_web_grok_weather_card_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_analysis_button_from_backend": {
             "name": "responsive_web_grok_analysis_button_from_backend",
@@ -8835,8 +8837,7 @@
         },
         "responsive_web_grok_promo_banner": {
             "name": "responsive_web_grok_promo_banner",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_enable_file_attachment_with_deepsearch": {
             "name": "responsive_web_grok_enable_file_attachment_with_deepsearch",
@@ -8939,8 +8940,7 @@
         },
         "responsive_web_grok_new_home_layout": {
             "name": "responsive_web_grok_new_home_layout",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_grok_trend_news_cell_enabled": {
             "name": "responsive_web_grok_trend_news_cell_enabled",
@@ -10427,11 +10427,6 @@
             "type": "string",
             "defaultValue": "BannerSwitchToApp"
         },
-        "rweb_updated_broadcast_screen": {
-            "name": "rweb_updated_broadcast_screen",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "rweb_vertical_video_17339": {
             "name": "rweb_vertical_video_17339",
             "type": "experiment",
@@ -11741,7 +11736,7 @@
         "subscriptions_offers_churn_prevention_enabled": {
             "name": "subscriptions_offers_churn_prevention_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_offers_dynamic_upsells_enabled": {
             "name": "subscriptions_offers_dynamic_upsells_enabled",
@@ -11810,6 +11805,11 @@
         "subscriptions_premium_hub_vo_upsell_card_variant": {
             "name": "subscriptions_premium_hub_vo_upsell_card_variant",
             "type": "string"
+        },
+        "subscriptions_premium_hub_updated_theme_enabled": {
+            "name": "subscriptions_premium_hub_updated_theme_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_module_enabled": {
             "name": "subscriptions_premium_module_enabled",
