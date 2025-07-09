@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "88a3a8d13f6c04a8521d749a4a1bb5ea6a9d6a03",
+    "feature_set_token": "040cfb24a1595a2d33fe156b42a799fd3bf03eed",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2980,6 +2980,9 @@
         },
         "subscriptions_marketing_page_supergrok_content_enabled": {
             "value": true
+        },
+        "subscriptions_marketing_page_updated_supergrok_card_enabled": {
+            "value": false
         },
         "subscriptions_marketing_page_web_refresh_enabled": {
             "value": true
@@ -11522,6 +11525,10 @@
             "name": "subscriptions_marketing_page_disable_new_subscriptions",
             "type": "string"
         },
+        "subscriptions_marketing_page_grok_4_web_paywall": {
+            "name": "subscriptions_marketing_page_grok_4_web_paywall",
+            "type": "string"
+        },
         "subscriptions_marketing_page_refresh_enabled": {
             "name": "subscriptions_marketing_page_refresh_enabled",
             "type": "string"
@@ -11671,7 +11678,8 @@
         },
         "subscriptions_marketing_page_updated_supergrok_card_enabled": {
             "name": "subscriptions_marketing_page_updated_supergrok_card_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_grok_4_features_enabled": {
             "name": "subscriptions_marketing_page_grok_4_features_enabled",
