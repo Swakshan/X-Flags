@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "36b6fef979b5041efe196e0d6d7cb983d17abd9d",
+    "feature_set_token": "deea84442ddb6ddcf1faf4a39d10c3ebfd31c3e5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2613,6 +2613,9 @@
         "rweb_video_vertical_aspect_ratio_enabled": {
             "value": false
         },
+        "rweb_xchat_bug_report_url": {
+            "value": ""
+        },
         "rweb_xchat_debug_enabled": {
             "value": false
         },
@@ -3648,6 +3651,33 @@
             "value": true
         },
         "x_jetfuel_enable_test_cluster": {
+            "value": false
+        },
+        "xchat_discard_events_with_invalid_signature": {
+            "value": false
+        },
+        "xchat_enable_eu_report": {
+            "value": false
+        },
+        "xchat_enable_inbox_pills": {
+            "value": false
+        },
+        "xchat_max_group_size": {
+            "value": 200
+        },
+        "xchat_read_receipt_facepile": {
+            "value": false
+        },
+        "xchat_sign_identity_key_during_registration": {
+            "value": true
+        },
+        "xchat_sign_messages": {
+            "value": false
+        },
+        "xchat_socket_hostname": {
+            "value": "chat-ws.x.com"
+        },
+        "xchat_verify_message_signatures": {
             "value": false
         },
         "xprofile_consumption_enabled": {
@@ -7527,10 +7557,7 @@
         "profile_page_upsells_swapper_non_english_17208": {
             "name": "profile_page_upsells_swapper_non_english_17208",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "holdback"
-            ]
+            "enumeration_values": []
         },
         "project_jiminy_article_web_11673": {
             "name": "project_jiminy_article_web_11673",
@@ -10470,7 +10497,8 @@
         },
         "rweb_xchat_bug_report_url": {
             "name": "rweb_xchat_bug_report_url",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
@@ -13902,6 +13930,103 @@
         },
         "x_jetfuel_enable_v2_sdk": {
             "name": "x_jetfuel_enable_v2_sdk",
+            "type": "string"
+        },
+        "xchat_sign_messages": {
+            "name": "xchat_sign_messages",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_verify_message_signatures": {
+            "name": "xchat_verify_message_signatures",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_read_receipt_facepile": {
+            "name": "xchat_read_receipt_facepile",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_sign_identity_key_during_registration": {
+            "name": "xchat_sign_identity_key_during_registration",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "xchat_discard_events_with_invalid_signature": {
+            "name": "xchat_discard_events_with_invalid_signature",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_android_composer_w_attach_btn_left": {
+            "name": "xchat_android_composer_w_attach_btn_left",
+            "type": "string"
+        },
+        "xchat_max_group_size": {
+            "name": "xchat_max_group_size",
+            "type": "number",
+            "defaultValue": 200
+        },
+        "xchat_enable_av": {
+            "name": "xchat_enable_av",
+            "type": "string"
+        },
+        "xchat_enable_eu_report": {
+            "name": "xchat_enable_eu_report",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_enable_perf_write_ahead": {
+            "name": "xchat_enable_perf_write_ahead",
+            "type": "string"
+        },
+        "xchat_android_unified_tab_enabled": {
+            "name": "xchat_android_unified_tab_enabled",
+            "type": "string"
+        },
+        "xchat_enable_inbox_pills": {
+            "name": "xchat_enable_inbox_pills",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_android_screenshot_detection_enabled": {
+            "name": "xchat_android_screenshot_detection_enabled",
+            "type": "string"
+        },
+        "xchat_out_of_order_fanout_validation_enabled": {
+            "name": "xchat_out_of_order_fanout_validation_enabled",
+            "type": "string"
+        },
+        "xchat_socket_hostname": {
+            "name": "xchat_socket_hostname",
+            "type": "string",
+            "defaultValue": "chat-ws.x.com"
+        },
+        "xchat_exclusive_executors": {
+            "name": "xchat_exclusive_executors",
+            "type": "string"
+        },
+        "xchat_process_events_in_batch": {
+            "name": "xchat_process_events_in_batch",
+            "type": "string"
+        },
+        "xchat_screenshot_prevention_enabled": {
+            "name": "xchat_screenshot_prevention_enabled",
+            "type": "string"
+        },
+        "xchat_pull_events_in_batch": {
+            "name": "xchat_pull_events_in_batch",
+            "type": "string"
+        },
+        "xchat_throttle_badge_counts": {
+            "name": "xchat_throttle_badge_counts",
+            "type": "string"
+        },
+        "xchat_sample_observation_queries": {
+            "name": "xchat_sample_observation_queries",
+            "type": "string"
+        },
+        "xchat_send_read_events_unencrypted": {
+            "name": "xchat_send_read_events_unencrypted",
             "type": "string"
         },
         "xprofile_editing_enabled": {
