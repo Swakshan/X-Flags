@@ -9013,6 +9013,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_show_button_is_ad": {
+            "name": "responsive_web_grok_show_button_is_ad",
+            "type": "string"
+        },
+        "responsive_web_grok_show_button_send_is_ads": {
+            "name": "responsive_web_grok_show_button_send_is_ads",
+            "type": "string"
+        },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
             "type": "boolean",
@@ -12199,6 +12207,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "subscriptions_upsells_user_profile_name_migration_enabled": {
+            "name": "subscriptions_upsells_user_profile_name_migration_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_user_profile_header_migration_enabled": {
+            "name": "subscriptions_upsells_user_profile_header_migration_enabled",
+            "type": "string"
+        },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
             "type": "string"
@@ -12387,10 +12403,7 @@
         "test_brand_logo_update_on_ios_17213": {
             "name": "test_brand_logo_update_on_ios_17213",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "new_logo"
-            ]
+            "enumeration_values": []
         },
         "topic_landing_page_share_enabled": {
             "name": "topic_landing_page_share_enabled",
@@ -13227,6 +13240,14 @@
             "name": "unified_cards_image_collection_website_rweb_15246",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "upsell_api_profile_header_swap_rotation_experiment_17480": {
+            "name": "upsell_api_profile_header_swap_rotation_experiment_17480",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "upsell_api"
+            ]
         },
         "user_ad_accounts_config_enabled": {
             "name": "user_ad_accounts_config_enabled",
