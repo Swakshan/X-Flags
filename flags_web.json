@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3c3cb3bae6f7d96f71db54185b0dcfe77b3744eb",
+    "feature_set_token": "2a1d7898e88db06e746163ecb7ca22fed819a639",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1833,7 +1833,13 @@
         "responsive_web_grok_show_android_promo_banner": {
             "value": true
         },
+        "responsive_web_grok_show_button_is_ad": {
+            "value": false
+        },
         "responsive_web_grok_show_button_on_ads": {
+            "value": false
+        },
+        "responsive_web_grok_show_button_send_is_ads": {
             "value": false
         },
         "responsive_web_grok_show_cards_at_top": {
@@ -6573,10 +6579,7 @@
         "ios_reply_boost_upsell_holdback_17222": {
             "name": "ios_reply_boost_upsell_holdback_17222",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "holdback"
-            ]
+            "enumeration_values": []
         },
         "krs_registration_enabled": {
             "name": "krs_registration_enabled",
@@ -9009,11 +9012,13 @@
         },
         "responsive_web_grok_show_button_is_ad": {
             "name": "responsive_web_grok_show_button_is_ad",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_show_button_send_is_ads": {
             "name": "responsive_web_grok_show_button_send_is_ads",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_hashtag_highlight_is_enabled": {
             "name": "responsive_web_hashtag_highlight_is_enabled",
@@ -13234,14 +13239,6 @@
             "name": "unified_cards_image_collection_website_rweb_15246",
             "type": "experiment",
             "enumeration_values": []
-        },
-        "upsell_api_profile_header_swap_rotation_experiment_17480": {
-            "name": "upsell_api_profile_header_swap_rotation_experiment_17480",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "upsell_api"
-            ]
         },
         "user_ad_accounts_config_enabled": {
             "name": "user_ad_accounts_config_enabled",
