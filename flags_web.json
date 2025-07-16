@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2a1d7898e88db06e746163ecb7ca22fed819a639",
+    "feature_set_token": "81954f96bbfba968aa8370e25b89768020a84dc2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3668,10 +3668,28 @@
         "xchat_enable_inbox_pills": {
             "value": false
         },
+        "xchat_exclusive_executors": {
+            "value": false
+        },
         "xchat_max_group_size": {
             "value": 200
         },
+        "xchat_out_of_order_fanout_validation_enabled": {
+            "value": true
+        },
+        "xchat_process_events_in_batch": {
+            "value": false
+        },
+        "xchat_pull_events_in_batch": {
+            "value": false
+        },
         "xchat_read_receipt_facepile": {
+            "value": false
+        },
+        "xchat_sample_observation_queries": {
+            "value": 500
+        },
+        "xchat_send_read_events_unencrypted": {
             "value": false
         },
         "xchat_sign_identity_key_during_registration": {
@@ -3682,6 +3700,9 @@
         },
         "xchat_socket_hostname": {
             "value": "chat-ws.x.com"
+        },
+        "xchat_throttle_badge_counts": {
+            "value": false
         },
         "xchat_verify_message_signatures": {
             "value": false
@@ -14006,7 +14027,8 @@
         },
         "xchat_out_of_order_fanout_validation_enabled": {
             "name": "xchat_out_of_order_fanout_validation_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "xchat_socket_hostname": {
             "name": "xchat_socket_hostname",
@@ -14015,11 +14037,13 @@
         },
         "xchat_exclusive_executors": {
             "name": "xchat_exclusive_executors",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_process_events_in_batch": {
             "name": "xchat_process_events_in_batch",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_screenshot_prevention_enabled": {
             "name": "xchat_screenshot_prevention_enabled",
@@ -14027,19 +14051,23 @@
         },
         "xchat_pull_events_in_batch": {
             "name": "xchat_pull_events_in_batch",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_throttle_badge_counts": {
             "name": "xchat_throttle_badge_counts",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_sample_observation_queries": {
             "name": "xchat_sample_observation_queries",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 500
         },
         "xchat_send_read_events_unencrypted": {
             "name": "xchat_send_read_events_unencrypted",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
