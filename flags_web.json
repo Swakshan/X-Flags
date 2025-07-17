@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "81954f96bbfba968aa8370e25b89768020a84dc2",
+    "feature_set_token": "f939aa29088318bc6b82d9112c97ac73a7483860",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1127,6 +1127,9 @@
         },
         "payments_tasks_carousel_enabled": {
             "value": false
+        },
+        "payments_tracing_hook_url": {
+            "value": ""
         },
         "payments_transfer_methods_enabled": {
             "value": false
@@ -7375,6 +7378,19 @@
         "payments_offboard_enabled": {
             "name": "payments_offboard_enabled",
             "type": "string"
+        },
+        "payments_tracing_zipkin_enabled": {
+            "name": "payments_tracing_zipkin_enabled",
+            "type": "string"
+        },
+        "payments_tracing_errors_full_text_enabled": {
+            "name": "payments_tracing_errors_full_text_enabled",
+            "type": "string"
+        },
+        "payments_tracing_hook_url": {
+            "name": "payments_tracing_hook_url",
+            "type": "string",
+            "defaultValue": ""
         },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
@@ -14068,6 +14084,10 @@
             "name": "xchat_send_read_events_unencrypted",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xchat_enable_show_more_button": {
+            "name": "xchat_enable_show_more_button",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
