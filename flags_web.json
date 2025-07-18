@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fe09fa83aa0c051281f10a35d6ad35428f3ecba8",
+    "feature_set_token": "583b3600acfa6b8c864fad988d23e9a4c201abd8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2260,6 +2260,9 @@
             "value": true
         },
         "responsive_web_trends_ui_community_notes_enabled": {
+            "value": false
+        },
+        "responsive_web_trends_ui_enable_new_sidebar": {
             "value": false
         },
         "responsive_web_trends_ui_top_articles": {
@@ -9687,7 +9690,8 @@
         },
         "responsive_web_trends_ui_enable_new_sidebar": {
             "name": "responsive_web_trends_ui_enable_new_sidebar",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_tv_cast_enabled": {
             "name": "responsive_web_tv_cast_enabled",
