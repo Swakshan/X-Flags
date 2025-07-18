@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "295ebc9c7121b3878f52425ef51f28c4e7e45754",
+    "feature_set_token": "fe09fa83aa0c051281f10a35d6ad35428f3ecba8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3672,7 +3672,7 @@
             "value": false
         },
         "xchat_enable_inbox_pills": {
-            "value": false
+            "value": true
         },
         "xchat_exclusive_executors": {
             "value": false
@@ -6609,6 +6609,10 @@
         },
         "ios_premium_paywall_preloaded_webview_startup_preload_enabled": {
             "name": "ios_premium_paywall_preloaded_webview_startup_preload_enabled",
+            "type": "string"
+        },
+        "ios_premium_paywall_preloaded_webview_direct_upgrade_enabled": {
+            "name": "ios_premium_paywall_preloaded_webview_direct_upgrade_enabled",
             "type": "string"
         },
         "ios_reply_boost_upsell_holdback_17222": {
@@ -14026,10 +14030,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "xchat_android_composer_w_attach_btn_left": {
-            "name": "xchat_android_composer_w_attach_btn_left",
-            "type": "string"
-        },
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
             "type": "number",
@@ -14055,7 +14055,7 @@
         "xchat_enable_inbox_pills": {
             "name": "xchat_enable_inbox_pills",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_android_screenshot_detection_enabled": {
             "name": "xchat_android_screenshot_detection_enabled",
