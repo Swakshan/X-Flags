@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5953f18c36be7544f572ad69c91fffffe9d24baa",
+    "feature_set_token": "295ebc9c7121b3878f52425ef51f28c4e7e45754",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1137,9 +1137,6 @@
         "payments_wires_enabled": {
             "value": false
         },
-        "payments_withdraw_wires_enabled": {
-            "value": false
-        },
         "premium_content_api_read_enabled": {
             "value": false
         },
@@ -1636,6 +1633,12 @@
             "value": true
         },
         "responsive_web_grok_bio_auto_translation_is_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_community_note_auto_translation_is_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_community_note_translation_is_enabled": {
             "value": false
         },
         "responsive_web_grok_continue_in_grok_enabled": {
@@ -3693,7 +3696,7 @@
             "value": 500
         },
         "xchat_send_read_events_unencrypted": {
-            "value": false
+            "value": true
         },
         "xchat_sign_identity_key_during_registration": {
             "value": true
@@ -7380,8 +7383,7 @@
         },
         "payments_withdraw_wires_enabled": {
             "name": "payments_withdraw_wires_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_offboard_enabled": {
             "name": "payments_offboard_enabled",
@@ -9042,6 +9044,16 @@
         },
         "responsive_web_grok_show_cards_at_top": {
             "name": "responsive_web_grok_show_cards_at_top",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_community_note_translation_is_enabled": {
+            "name": "responsive_web_grok_community_note_translation_is_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_community_note_auto_translation_is_enabled": {
+            "name": "responsive_web_grok_community_note_auto_translation_is_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -14091,7 +14103,7 @@
         "xchat_send_read_events_unencrypted": {
             "name": "xchat_send_read_events_unencrypted",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_enable_show_more_button": {
             "name": "xchat_enable_show_more_button",
