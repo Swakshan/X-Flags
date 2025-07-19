@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "bf5f83be6d0f8b9a8a8e29689859381804928439",
+        "feature_set_token": "ff503e95733ac7b19ed9cabd65f2bcd68c6729c8",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1690,6 +1690,9 @@
                 "value": [
                     "/account/access"
                 ]
+            },
+            "branded_features_search_overlay_animations_enabled": {
+                "value": false
             },
             "bulk_friend_follows_m2_carousel_enabled": {
                 "value": false
@@ -4414,6 +4417,15 @@
             "subscriptions_upsells_profile_card_enabled": {
                 "value": false
             },
+            "subscriptions_upsells_track_interactions_enabled": {
+                "value": false
+            },
+            "subscriptions_upsells_user_profile_header_migration_enabled": {
+                "value": false
+            },
+            "subscriptions_upsells_user_profile_name_migration_enabled": {
+                "value": false
+            },
             "subscriptions_verification_info_enabled": {
                 "value": true
             },
@@ -5124,7 +5136,13 @@
             "xchat_pull_events_in_batch": {
                 "value": false
             },
+            "xchat_sample_observation_queries": {
+                "value": 500.0
+            },
             "xchat_screenshot_prevention_enabled": {
+                "value": false
+            },
+            "xchat_send_read_events_unencrypted": {
                 "value": false
             },
             "xchat_sign_identity_key_during_registration": {
@@ -5383,6 +5401,7 @@
         "android_graphql_skip_api_profile_banner_extensions_16229",
         "ntab_server_driven_display_14304",
         "unified_cards_image_collection_website_android_15244",
+        "upsell_api_profile_header_swap_rotation_experiment_17480",
         "communities_mod_label_16584",
         "targeted_project_friday_14037",
         "mr_override_notifications_global_holdback_11731",
@@ -5399,7 +5418,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "a245efea0659d5993ba2df6bd6f4aad2740f72b4",
-        "experiments": "a245efea0659d5993ba2df6bd6f4aad2740f72b4"
+        "feature_switches": "44740bde283ec02237512577c03b789f03681928",
+        "experiments": "44740bde283ec02237512577c03b789f03681928"
     }
 }
