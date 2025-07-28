@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a0916c342d3ee0da81b4ab85a14df9a1e99d234e",
+    "feature_set_token": "8f6d705fbb89495bd9df9460bf322693ee136672",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1092,6 +1092,12 @@
         "payments_card_spend_enabled": {
             "value": false
         },
+        "payments_cash_deposits_enabled": {
+            "value": false
+        },
+        "payments_cheques_deposits_enabled": {
+            "value": false
+        },
         "payments_cheques_enabled": {
             "value": false
         },
@@ -1685,6 +1691,9 @@
         },
         "responsive_web_grok_enable_model_tool_toggle": {
             "value": true
+        },
+        "responsive_web_grok_fade_in_animation_v2_enabled": {
+            "value": false
         },
         "responsive_web_grok_feed": {
             "value": false
@@ -3021,9 +3030,6 @@
             "value": true
         },
         "subscriptions_marketing_page_updated_supergrok_card_enabled": {
-            "value": true
-        },
-        "subscriptions_marketing_page_web_refresh_enabled": {
             "value": true
         },
         "subscriptions_mute_ad_upsell_enabled": {
@@ -6212,6 +6218,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "hashfetti_remove_delta_shifting_android": {
+            "name": "hashfetti_remove_delta_shifting_android",
+            "type": "string"
+        },
         "hidden_profile_subscriptions_enabled": {
             "name": "hidden_profile_subscriptions_enabled",
             "type": "boolean",
@@ -7433,11 +7443,13 @@
         },
         "payments_cheques_deposits_enabled": {
             "name": "payments_cheques_deposits_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_cash_deposits_enabled": {
             "name": "payments_cash_deposits_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
@@ -9119,6 +9131,11 @@
             "name": "responsive_web_grok_enable_model_steer_buttons",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_grok_fade_in_animation_v2_enabled": {
+            "name": "responsive_web_grok_fade_in_animation_v2_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -11863,8 +11880,7 @@
         },
         "subscriptions_marketing_page_web_refresh_enabled": {
             "name": "subscriptions_marketing_page_web_refresh_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "subscriptions_marketing_page_updated_supergrok_card_enabled": {
             "name": "subscriptions_marketing_page_updated_supergrok_card_enabled",
