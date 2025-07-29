@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a28edb0492ce4ca63636d62557410f36852d49f4",
+    "feature_set_token": "eb6e86aafd39c0ad5a0d6a7b346bb40b8789eb39",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1626,6 +1626,9 @@
         "responsive_web_grok_analyze_post_followups_enabled": {
             "value": false
         },
+        "responsive_web_grok_android_image_download_mode": {
+            "value": "default"
+        },
         "responsive_web_grok_animated_text_enabled": {
             "value": true
         },
@@ -1879,6 +1882,9 @@
             "value": true
         },
         "responsive_web_grok_show_message_reply_button": {
+            "value": true
+        },
+        "responsive_web_grok_show_translation_source_lang": {
             "value": true
         },
         "responsive_web_grok_sport_cards_enabled": {
@@ -9142,7 +9148,13 @@
         },
         "responsive_web_grok_android_image_download_mode": {
             "name": "responsive_web_grok_android_image_download_mode",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "default"
+        },
+        "responsive_web_grok_show_translation_source_lang": {
+            "name": "responsive_web_grok_show_translation_source_lang",
+            "type": "boolean",
+            "defaultValue": true
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
