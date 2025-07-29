@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8f6d705fbb89495bd9df9460bf322693ee136672",
+    "feature_set_token": "a28edb0492ce4ca63636d62557410f36852d49f4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3271,6 +3271,9 @@
         },
         "super_follow_web_onboarding_enabled": {
             "value": true
+        },
+        "system_theme_toggle_enabled": {
+            "value": false
         },
         "targeted_project_friday_enabled": {
             "value": false
@@ -9137,6 +9140,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_android_image_download_mode": {
+            "name": "responsive_web_grok_android_image_download_mode",
+            "type": "string"
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -12544,6 +12551,11 @@
             "name": "switch_to_app_banner_fatigue_low_15440",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "system_theme_toggle_enabled": {
+            "name": "system_theme_toggle_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "targeted_project_friday_enabled": {
             "name": "targeted_project_friday_enabled",
