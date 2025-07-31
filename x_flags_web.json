@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d76e08a748e247b725d1b9779b948202a7722144",
+    "feature_set_token": "72e01a4e38ba10162157e84fb0fe2ed9ecaf46a4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3279,7 +3279,7 @@
             "value": true
         },
         "system_theme_toggle_enabled": {
-            "value": false
+            "value": true
         },
         "targeted_project_friday_enabled": {
             "value": false
@@ -12563,7 +12563,7 @@
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "targeted_project_friday_enabled": {
             "name": "targeted_project_friday_enabled",
@@ -14236,6 +14236,10 @@
         },
         "xchat_enable_command_menu": {
             "name": "xchat_enable_command_menu",
+            "type": "string"
+        },
+        "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
+            "name": "xchat_hybrid_pull_eagerly_fetch_history_after_seconds",
             "type": "string"
         },
         "xprofile_editing_enabled": {
