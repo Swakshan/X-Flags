@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "7297031c9b4338096a75825ee585bbc773cd5ecb",
+        "feature_set_token": "df99ab2fba7c6dd140f9bb3d89ce301b3ca07cb4",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3552,6 +3552,9 @@
             "payments_wires_enabled": {
                 "value": false
             },
+            "payments_withdraw_wires_enabled": {
+                "value": false
+            },
             "people_discovery_live_sync_enabled": {
                 "value": true
             },
@@ -4337,7 +4340,7 @@
                 "value": ""
             },
             "subscriptions_management_in_app_cancel_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_marketing_page_button_detail_text_enabled": {
                 "value": false
@@ -4373,7 +4376,7 @@
                 "value": true
             },
             "subscriptions_premium_tiers_switching_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_retrieve_claims_delay_millis": {
                 "value": 2000.0
@@ -5290,6 +5293,7 @@
         "good_click_reactivity_all_users_15540",
         "personalization_holdback_2022_13469",
         "immersive_media_viewer_android_16367",
+        "upsell_api_user_profile_parity_test_android_17525",
         "mr_tweet_media_on_push_android_9818",
         "ads_in_tweet_conversation_m2_contrasts_13063",
         "premium_paywall_default_monthly_election_android_17444",
@@ -5363,6 +5367,7 @@
         "android_disable_bottom_paging_policy_home_16915",
         "android_video_transcode_exoplayer_source_14593",
         "dm_voice_messages_11154",
+        "upsell_api_user_profile_parity_test_ios_17521",
         "foundations_incremental_holdback_2022h1_13201",
         "android_initiate_bottom_cursor_when_all_in_viewport_16467",
         "account_search_incremental_holdback_2022h2_13500",
@@ -5412,5 +5417,9 @@
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "65bc59861ba70496cdce448bf1e90d9b6247ba63",
+        "experiments": "65bc59861ba70496cdce448bf1e90d9b6247ba63"
+    }
 }
