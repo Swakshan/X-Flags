@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "72e01a4e38ba10162157e84fb0fe2ed9ecaf46a4",
+    "feature_set_token": "2f948864e073d2a363d1bb5b92554bc787f7320e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3708,7 +3708,7 @@
             "value": false
         },
         "xchat_max_group_size": {
-            "value": 200
+            "value": 250
         },
         "xchat_process_events_in_batch": {
             "value": false
@@ -7526,6 +7526,14 @@
             "name": "premium_reply_boost_popup_web_17100",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "premium_summer_offer_clientside_upsells_web_17530": {
+            "name": "premium_summer_offer_clientside_upsells_web_17530",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "holdback"
+            ]
         },
         "premium_verified_icon_logo_update_web_17126": {
             "name": "premium_verified_icon_logo_update_web_17126",
@@ -14159,7 +14167,7 @@
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
             "type": "number",
-            "defaultValue": 200
+            "defaultValue": 250
         },
         "xchat_enable_av": {
             "name": "xchat_enable_av",
