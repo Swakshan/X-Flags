@@ -5970,6 +5970,10 @@
             "name": "explore_relaunch_immersive_prefetch_required_last_use_interval",
             "type": "string"
         },
+        "explore_relaunch_immersive_prefetch_optimization_enabled": {
+            "name": "explore_relaunch_immersive_prefetch_optimization_enabled",
+            "type": "string"
+        },
         "focused_timeline_actions_onboarding_likes": {
             "name": "focused_timeline_actions_onboarding_likes",
             "type": "number",
@@ -6845,10 +6849,7 @@
         "logged_out_profile_search_cta_17260": {
             "name": "logged_out_profile_search_cta_17260",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "logged_out_read_replies_pivot_17075": {
             "name": "logged_out_read_replies_pivot_17075",
@@ -7620,6 +7621,10 @@
             "name": "premium_webview_paywall_video_url",
             "type": "string",
             "defaultValue": "https://abs.twimg.com/videos/grok-4-key-visual.mp4"
+        },
+        "premium_webview_paywall_yen_price_truncation_enabled": {
+            "name": "premium_webview_paywall_yen_price_truncation_enabled",
+            "type": "string"
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -13423,6 +13428,14 @@
             "name": "unified_cards_image_collection_website_rweb_15246",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "upsell_api_user_profile_analytics_card_android_17526": {
+            "name": "upsell_api_user_profile_analytics_card_android_17526",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "analytics_card"
+            ]
         },
         "upsell_api_user_profile_parity_test_android_17525": {
             "name": "upsell_api_user_profile_parity_test_android_17525",
