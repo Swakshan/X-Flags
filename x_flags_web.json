@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2f948864e073d2a363d1bb5b92554bc787f7320e",
+    "feature_set_token": "6182d51828b121299b8fe462866629d86fd220fd",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1637,6 +1637,12 @@
         },
         "responsive_web_grok_backend_prompts_enabled": {
             "value": true
+        },
+        "responsive_web_grok_bio_auto_translation_in_followers_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_bio_auto_translation_in_search_is_enabled": {
+            "value": false
         },
         "responsive_web_grok_bio_auto_translation_is_enabled": {
             "value": false
@@ -6274,6 +6280,16 @@
                 "upgrade"
             ]
         },
+        "home_nav_upsell_age_gating_android_mobile_web_17535": {
+            "name": "home_nav_upsell_age_gating_android_mobile_web_17535",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "client",
+                "upsell_api_no_age_gating",
+                "upsell_api_with_age_gating"
+            ]
+        },
         "home_timeline_features_holdback_7823": {
             "name": "home_timeline_features_holdback_7823",
             "type": "experiment",
@@ -9164,6 +9180,16 @@
             "name": "responsive_web_grok_outage_banner_message",
             "type": "string",
             "defaultValue": ""
+        },
+        "responsive_web_grok_bio_auto_translation_in_followers_enabled": {
+            "name": "responsive_web_grok_bio_auto_translation_in_followers_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_bio_auto_translation_in_search_is_enabled": {
+            "name": "responsive_web_grok_bio_auto_translation_in_search_is_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -14261,6 +14287,18 @@
         },
         "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
             "name": "xchat_hybrid_pull_eagerly_fetch_history_after_seconds",
+            "type": "string"
+        },
+        "xchat_inbox_conversation_limit": {
+            "name": "xchat_inbox_conversation_limit",
+            "type": "string"
+        },
+        "xchat_inbox_conversation_event_limit": {
+            "name": "xchat_inbox_conversation_event_limit",
+            "type": "string"
+        },
+        "xchat_conversation_event_limit": {
+            "name": "xchat_conversation_event_limit",
             "type": "string"
         },
         "xprofile_editing_enabled": {
