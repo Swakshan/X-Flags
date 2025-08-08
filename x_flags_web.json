@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a6ab84f5314f34226020dc5b2237eb7e69e7d325",
+    "feature_set_token": "2cb77aa2cacea084746048e33d7715b19e2131f2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1753,6 +1753,9 @@
             "value": true
         },
         "responsive_web_grok_image_prompts_enabled": {
+            "value": true
+        },
+        "responsive_web_grok_imagine_annotation_enabled": {
             "value": true
         },
         "responsive_web_grok_img_composer": {
@@ -3607,7 +3610,7 @@
             "value": false
         },
         "unified_cards_dpa_cta_button_enabled": {
-            "value": true
+            "value": false
         },
         "unified_cards_dpa_metadata_enabled": {
             "value": true
@@ -9224,6 +9227,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_imagine_annotation_enabled": {
+            "name": "responsive_web_grok_imagine_annotation_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -13469,7 +13477,7 @@
         "unified_cards_dpa_cta_button_enabled": {
             "name": "unified_cards_dpa_cta_button_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "unified_cards_dpa_placeholder_media_key": {
             "name": "unified_cards_dpa_placeholder_media_key",
@@ -14367,6 +14375,10 @@
         },
         "xchat_user_event_limit": {
             "name": "xchat_user_event_limit",
+            "type": "string"
+        },
+        "xchat_sign_graphql_messages": {
+            "name": "xchat_sign_graphql_messages",
             "type": "string"
         },
         "xprofile_editing_enabled": {
