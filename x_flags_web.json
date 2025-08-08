@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2cb77aa2cacea084746048e33d7715b19e2131f2",
+    "feature_set_token": "f4faabc957b60c32714b12d0880e1a3662501283",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3620,6 +3620,9 @@
                 "3_1485707239990054912"
             ]
         },
+        "unified_cards_install_button_redesign_enabled": {
+            "value": false
+        },
         "user_ad_accounts_config_enabled": {
             "value": false
         },
@@ -3719,13 +3722,31 @@
         "xchat_discard_events_with_invalid_signature": {
             "value": false
         },
+        "xchat_enable_av": {
+            "value": false
+        },
+        "xchat_enable_command_menu": {
+            "value": false
+        },
         "xchat_enable_eu_report": {
+            "value": false
+        },
+        "xchat_enable_floating_theme": {
             "value": false
         },
         "xchat_enable_inbox_pills": {
             "value": true
         },
         "xchat_enable_message_requests": {
+            "value": false
+        },
+        "xchat_enable_onboarding_flow": {
+            "value": false
+        },
+        "xchat_enable_show_more_button": {
+            "value": false
+        },
+        "xchat_enabled_inbox_pill_counts": {
             "value": false
         },
         "xchat_exclusive_executors": {
@@ -3766,6 +3787,9 @@
         },
         "xchat_throttle_badge_counts": {
             "value": false
+        },
+        "xchat_user_event_limit": {
+            "value": 500
         },
         "xchat_verify_message_signatures": {
             "value": false
@@ -7514,6 +7538,10 @@
             "type": "string",
             "defaultValue": ""
         },
+        "payments_tracing_reports_enabled": {
+            "name": "payments_tracing_reports_enabled",
+            "type": "string"
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
@@ -10421,7 +10449,12 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "photo_max_450",
+                "photo_max_420",
+                "photo_max_400",
+                "photo_video_max_450",
+                "photo_video_max_420",
+                "photo_video_max_400"
             ]
         },
         "rweb_conf_dev_enabled": {
@@ -13453,6 +13486,175 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "unified_cards_component_twitter_list_details_enabled": {
+            "name": "unified_cards_component_twitter_list_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_commerce_product_enabled": {
+            "name": "unified_cards_component_commerce_product_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_follow_button_enabled": {
+            "name": "unified_cards_component_follow_button_enabled",
+            "type": "string"
+        },
+        "unified_cards_layout_swipeable_enabled": {
+            "name": "unified_cards_layout_swipeable_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_product_explorer_enabled": {
+            "name": "unified_cards_component_product_explorer_enabled",
+            "type": "string"
+        },
+        "unified_cards_layout_explorer_enabled": {
+            "name": "unified_cards_layout_explorer_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_community_details_enabled": {
+            "name": "unified_cards_component_community_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_dev_build_card_enabled": {
+            "name": "unified_cards_component_dev_build_card_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_app_store_details_enabled": {
+            "name": "unified_cards_component_app_store_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_media_gallery_enabled": {
+            "name": "unified_cards_component_media_gallery_enabled",
+            "type": "string"
+        },
+        "unified_cards_destination_app_store_with_docked_media_enabled": {
+            "name": "unified_cards_destination_app_store_with_docked_media_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_image_enabled": {
+            "name": "unified_cards_component_image_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_commerce_shop_details_enabled": {
+            "name": "unified_cards_component_commerce_shop_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_product_details_enabled": {
+            "name": "unified_cards_component_product_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_app_install_render_all_docked_media_16_9": {
+            "name": "unified_cards_app_install_render_all_docked_media_16_9",
+            "type": "string"
+        },
+        "unified_cards_component_swipeable_media_enabled": {
+            "name": "unified_cards_component_swipeable_media_enabled",
+            "type": "string"
+        },
+        "unified_cards_destination_profile_enabled": {
+            "name": "unified_cards_destination_profile_enabled",
+            "type": "string"
+        },
+        "unified_cards_new_arch_enabled": {
+            "name": "unified_cards_new_arch_enabled",
+            "type": "string"
+        },
+        "unified_cards_destination_browser_enabled": {
+            "name": "unified_cards_destination_browser_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_profile_enabled": {
+            "name": "unified_cards_component_profile_enabled",
+            "type": "string"
+        },
+        "unified_cards_destination_browser_with_docked_media_enabled": {
+            "name": "unified_cards_destination_browser_with_docked_media_enabled",
+            "type": "string"
+        },
+        "unified_cards_destination_app_store_enabled": {
+            "name": "unified_cards_destination_app_store_enabled",
+            "type": "string"
+        },
+        "unified_cards_destination_playable_enabled": {
+            "name": "unified_cards_destination_playable_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_video_enabled": {
+            "name": "unified_cards_component_video_enabled",
+            "type": "string"
+        },
+        "unified_cards_app_install_destinations_not_matching_os_fallback_enabled": {
+            "name": "unified_cards_app_install_destinations_not_matching_os_fallback_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_media_with_details_horizontal_enabled": {
+            "name": "unified_cards_component_media_with_details_horizontal_enabled",
+            "type": "string"
+        },
+        "unified_cards_enabled": {
+            "name": "unified_cards_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_commerce_drop_details_enabled": {
+            "name": "unified_cards_component_commerce_drop_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_layout_collection_enabled": {
+            "name": "unified_cards_layout_collection_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_facepile_enabled": {
+            "name": "unified_cards_component_facepile_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_details_enabled": {
+            "name": "unified_cards_component_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_profile_banner_enabled": {
+            "name": "unified_cards_component_profile_banner_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_button_group_enabled": {
+            "name": "unified_cards_component_button_group_enabled",
+            "type": "string"
+        },
+        "unified_cards_destination_app_store_overlay_enabled": {
+            "name": "unified_cards_destination_app_store_overlay_enabled",
+            "type": "string"
+        },
+        "unified_cards_install_button_redesign_enabled": {
+            "name": "unified_cards_install_button_redesign_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "unified_cards_chrome_vanity_url_label_enabled": {
+            "name": "unified_cards_chrome_vanity_url_label_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_job_details_enabled": {
+            "name": "unified_cards_component_job_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_vanity_url_supported_types": {
+            "name": "unified_cards_vanity_url_supported_types",
+            "type": "string"
+        },
+        "unified_cards_vanity_url_ignore_force_legacy": {
+            "name": "unified_cards_vanity_url_ignore_force_legacy",
+            "type": "string"
+        },
+        "unified_cards_chrome_vanity_title_label_enabled": {
+            "name": "unified_cards_chrome_vanity_title_label_enabled",
+            "type": "string"
+        },
+        "unified_cards_component_grok_share_details_enabled": {
+            "name": "unified_cards_component_grok_share_details_enabled",
+            "type": "string"
+        },
+        "unified_cards_chrome_vanity_sales_cta_enabled": {
+            "name": "unified_cards_chrome_vanity_sales_cta_enabled",
+            "type": "string"
+        },
         "unified_cards_collection_ads_convert_to_image_website_card": {
             "name": "unified_cards_collection_ads_convert_to_image_website_card",
             "type": "boolean",
@@ -14269,7 +14471,8 @@
         },
         "xchat_enable_av": {
             "name": "xchat_enable_av",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_enable_eu_report": {
             "name": "xchat_enable_eu_report",
@@ -14334,15 +14537,18 @@
         },
         "xchat_enable_show_more_button": {
             "name": "xchat_enable_show_more_button",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_enable_floating_theme": {
             "name": "xchat_enable_floating_theme",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_enable_command_menu": {
             "name": "xchat_enable_command_menu",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
             "name": "xchat_hybrid_pull_eagerly_fetch_history_after_seconds",
@@ -14366,7 +14572,8 @@
         },
         "xchat_enable_onboarding_flow": {
             "name": "xchat_enable_onboarding_flow",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_enable_message_requests": {
             "name": "xchat_enable_message_requests",
@@ -14375,11 +14582,17 @@
         },
         "xchat_user_event_limit": {
             "name": "xchat_user_event_limit",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 500
         },
         "xchat_sign_graphql_messages": {
             "name": "xchat_sign_graphql_messages",
             "type": "string"
+        },
+        "xchat_enabled_inbox_pill_counts": {
+            "name": "xchat_enabled_inbox_pill_counts",
+            "type": "boolean",
+            "defaultValue": false
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
