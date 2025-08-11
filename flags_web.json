@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f4faabc957b60c32714b12d0880e1a3662501283",
+    "feature_set_token": "49869ed50219f634135d525866cae5bc33dbf7bc",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1714,7 +1714,7 @@
             "value": true
         },
         "responsive_web_grok_file_max_size": {
-            "value": 20971520
+            "value": 33554432
         },
         "responsive_web_grok_file_upload_enabled": {
             "value": true
@@ -8629,7 +8629,7 @@
         "responsive_web_grok_file_max_size": {
             "name": "responsive_web_grok_file_max_size",
             "type": "number",
-            "defaultValue": 20971520
+            "defaultValue": 33554432
         },
         "responsive_web_grok_file_compression_enabled": {
             "name": "responsive_web_grok_file_compression_enabled",
@@ -10447,15 +10447,7 @@
         "rweb_compact_media_17284": {
             "name": "rweb_compact_media_17284",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "photo_max_450",
-                "photo_max_420",
-                "photo_max_400",
-                "photo_video_max_450",
-                "photo_video_max_420",
-                "photo_video_max_400"
-            ]
+            "enumeration_values": []
         },
         "rweb_conf_dev_enabled": {
             "name": "rweb_conf_dev_enabled",
@@ -12516,6 +12508,10 @@
             "name": "subscriptions_upsells_other_user_profile_header_migration_enabled",
             "type": "string"
         },
+        "subscriptions_upsells_home_nav_premium_tier_check_enabled": {
+            "name": "subscriptions_upsells_home_nav_premium_tier_check_enabled",
+            "type": "string"
+        },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
             "type": "string"
@@ -13653,6 +13649,10 @@
         },
         "unified_cards_chrome_vanity_sales_cta_enabled": {
             "name": "unified_cards_chrome_vanity_sales_cta_enabled",
+            "type": "string"
+        },
+        "unified_cards_details_component_remove_subtitle_logic_enabled": {
+            "name": "unified_cards_details_component_remove_subtitle_logic_enabled",
             "type": "string"
         },
         "unified_cards_collection_ads_convert_to_image_website_card": {
