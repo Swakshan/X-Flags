@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9fa56a3251c88af0a4ba25e6205efe1e743b5317",
+    "feature_set_token": "0a4a7da9765c8b9656060e1c0eb96b2ca58af91f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2023,6 +2023,9 @@
             "value": false
         },
         "responsive_web_logged_out_grok_button_enabled": {
+            "value": false
+        },
+        "responsive_web_logged_out_ios_redesign_enabled": {
             "value": false
         },
         "responsive_web_logged_out_notifications_enabled": {
@@ -9420,9 +9423,10 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_logged_out_ios_redesign_enable": {
-            "name": "responsive_web_logged_out_ios_redesign_enable",
-            "type": "string"
+        "responsive_web_logged_out_ios_redesign_enabled": {
+            "name": "responsive_web_logged_out_ios_redesign_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_logged_out_notifications_enabled": {
             "name": "responsive_web_logged_out_notifications_enabled",
@@ -10545,6 +10549,14 @@
             "name": "rweb_home_nav_single_direction_scroll_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_ios_lo_home_17564": {
+            "name": "rweb_ios_lo_home_17564",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "rweb_jetfuel_loggedout_timeline": {
             "name": "rweb_jetfuel_loggedout_timeline",
