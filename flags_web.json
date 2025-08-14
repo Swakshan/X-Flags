@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8503964d0e7db72218ac65c2701e1977c6f16170",
+    "feature_set_token": "d2392d9cfbdc3b65a2fc945ec169f71ca14dd0d2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2004,9 +2004,6 @@
         "responsive_web_live_commerce_enabled": {
             "value": false
         },
-        "responsive_web_live_screen_enabled": {
-            "value": true
-        },
         "responsive_web_locale_context_direction_enabled": {
             "value": true
         },
@@ -2018,12 +2015,6 @@
         },
         "responsive_web_location_spotlight_v1_display": {
             "value": true
-        },
-        "responsive_web_logged_out_blue_brand_button_enabled": {
-            "value": false
-        },
-        "responsive_web_logged_out_grok_button_enabled": {
-            "value": false
         },
         "responsive_web_logged_out_ios_redesign_enabled": {
             "value": false
@@ -6130,6 +6121,14 @@
             "type": "string",
             "defaultValue": "graphql_only"
         },
+        "grok_3_mini_vs_grok_2_business_classifications_verify_your_business_button_17573": {
+            "name": "grok_3_mini_vs_grok_2_business_classifications_verify_your_business_button_17573",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "grok_3_mini"
+            ]
+        },
         "grok_analyze_holdout_17047": {
             "name": "grok_analyze_holdout_17047",
             "type": "experiment",
@@ -9375,11 +9374,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_live_screen_enabled": {
-            "name": "responsive_web_live_screen_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "responsive_web_locale_context_direction_enabled": {
             "name": "responsive_web_locale_context_direction_enabled",
             "type": "boolean",
@@ -9415,13 +9409,11 @@
         },
         "responsive_web_logged_out_grok_button_enabled": {
             "name": "responsive_web_logged_out_grok_button_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_logged_out_blue_brand_button_enabled": {
             "name": "responsive_web_logged_out_blue_brand_button_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_logged_out_ios_redesign_enabled": {
             "name": "responsive_web_logged_out_ios_redesign_enabled",
@@ -10549,14 +10541,6 @@
             "name": "rweb_home_nav_single_direction_scroll_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "rweb_ios_lo_home_17564": {
-            "name": "rweb_ios_lo_home_17564",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
         },
         "rweb_jetfuel_loggedout_timeline": {
             "name": "rweb_jetfuel_loggedout_timeline",
@@ -13846,6 +13830,14 @@
             "name": "vo_upsell_profile_button_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "vo_upsell_use_grok2_classifications": {
+            "name": "vo_upsell_use_grok2_classifications",
+            "type": "string"
+        },
+        "vo_upsell_use_grok3_mini_classifications": {
+            "name": "vo_upsell_use_grok3_mini_classifications",
+            "type": "string"
         },
         "vod_attribution_tweet_detail_pivot_enabled": {
             "name": "vod_attribution_tweet_detail_pivot_enabled",
