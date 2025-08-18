@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ee0cb4156dc319c276a6c22b661f357dc7572342",
+    "feature_set_token": "60e2cfbff00f43ef082fc418aaddab62a0936830",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2601,13 +2601,7 @@
         "rweb_search_media_enabled": {
             "value": true
         },
-        "rweb_sidebar_lower_whats_happening_enabled": {
-            "value": false
-        },
         "rweb_sourcemap_migration": {
-            "value": false
-        },
-        "rweb_sourcemap_migration_enable_suggested_video": {
             "value": false
         },
         "rweb_sourcemap_migration_side_expand_by_default": {
@@ -10649,11 +10643,6 @@
             "name": "rweb_search_show_large_hashflag",
             "type": "string"
         },
-        "rweb_sidebar_lower_whats_happening_enabled": {
-            "name": "rweb_sidebar_lower_whats_happening_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "rweb_sourcemap_migration": {
             "name": "rweb_sourcemap_migration",
             "type": "boolean",
@@ -10661,8 +10650,7 @@
         },
         "rweb_sourcemap_migration_enable_suggested_video": {
             "name": "rweb_sourcemap_migration_enable_suggested_video",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_sourcemap_migration_side_expand_by_default": {
             "name": "rweb_sourcemap_migration_side_expand_by_default",
@@ -13814,10 +13802,7 @@
         "visitor_get_verified_profile_card_upsell_test_17303": {
             "name": "visitor_get_verified_profile_card_upsell_test_17303",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "holdback"
-            ]
+            "enumeration_values": []
         },
         "vo_upsell_enabled": {
             "name": "vo_upsell_enabled",
