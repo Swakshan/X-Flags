@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 from pprint import pprint
 from urllib.parse import unquote
 from datetime import datetime
-from common import headers
+from constants import headers
 
 hdr = headers()
 proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="
@@ -48,17 +48,47 @@ def apkM(url):
     return downloadLink
 
 
-def webfeatureSwitches(hash):
-      FS_URL = f"https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.{hash}.js"
-      req = requests.get(FS_URL,headers=hdr)
-      res = req.text
-      res = res[res.find("{"):res.find("}}};")]
+def xManifestSwitches(hash):
+    FS_URL = f"https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.{hash}.js"
+    req = requests.get(FS_URL,headers=hdr)
+    res = req.text
+    res = res[res.find("{"):res.find("}}};")]
 
-      res = res.replace("!0","true\n").replace("!1","false\n")
-      res = res.replace("},",'},"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
-      res = res.replace("feature_set_token:",'"feature_set_token":').replace(',config:',',"config":').replace(',"debug:',',"debug":').replace(',enumeration_values',',"enumeration_values"')
-      res = res.replace('"":','":').replace(":.",":0.")
-      res = res+"}}}"
+    res = res.replace("!0","true\n").replace("!1","false\n")
+    res = res.replace("},",'},"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
+    res = res.replace("feature_set_token:",'"feature_set_token":').replace(',config:',',"config":').replace(',"debug:',',"debug":').replace(',enumeration_values',',"enumeration_values"')
+    res = res.replace('"":','":').replace(":.",":0.")
+    res = res+"}}}"
 
-      fs = json.loads(res)
-      return fs
+    return json.loads(res)
+
+def xWebFlags():
+    link = "https://x.com"
+    url = f"{proxyUrl}{link}"
+    
+    req = requests.get(url, headers=hdr)
+    res = req.text
+
+    sHint = "window.__INITIAL_STATE__="
+    eHint = "window.__META_DATA__="
+    s = res.find(sHint) + len(sHint)
+    e = res[s:].find(eHint) + s - 1
+    fd = res[s:e]
+    flagData = json.loads(fd)
+    featureSwitch = flagData['featureSwitch']
+    token = featureSwitch["featureSetToken"]
+    
+    defaultConfig = featureSwitch['defaultConfig']
+    userFlag = featureSwitch['user']['config']
+    
+    flags = {**defaultConfig, **userFlag}
+    return {"feature_set_token":token,"config":flags}
+
+def webfeatureSwitches(hash):    
+    xFlags = xWebFlags()
+    manifestFlags = xManifestSwitches(hash)
+    flags = {**xFlags['config'],**manifestFlags['config']}
+    token = xFlags['feature_set_token']
+
+    return {"feature_set_token":token,"config":flags,"debug":manifestFlags['debug']}
+    

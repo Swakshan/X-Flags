@@ -4,16 +4,16 @@ on:
   repository_dispatch:
     types: [update-event]
  
- 
-
 jobs:
   download-and-extract:
     runs-on: ubuntu-latest
     env:
       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-      PIN_MSG: ${{ secrets.PIN_MSG }}
+      CHANNEL_NAME: ${{ secrets.CHANNEL_NAME }}
+      PIN_MSG: ${{ secrets.X_PIN_MSG }}
       DEBUG: ${{ secrets.DEBUG }}
+      SHARE_TO_TELE: ${{ secrets.SHARE_TO_TELE }}
 
     steps:
     - name: Checkout code
@@ -33,9 +33,7 @@ jobs:
 
     - name: Download & Extract
       run: |      
-        python src/main.py ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.src }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }}
-        
-        
+        python src/main.py --app ${{ github.event.client_payload.app }} --platform ${{ github.event.client_payload.platform }} --source ${{ github.event.client_payload.source }}  --vername ${{ github.event.client_payload.vername }}  --type ${{ github.event.client_payload.type }}  --downLink ${{ github.event.client_payload.downLink }}  --msgId ${{ github.event.client_payload.msgId }} ${{ env.DEBUG }}  
 
     - name: Add extracted file to Git
       id: vars
@@ -56,4 +54,4 @@ jobs:
       
     - name: Changes to Telegram
       run: |      
-        python src/changes.py ${{ github.event.client_payload.msg_id }} ${{secrets.GIT_COMMIT_SHA}}
+        python src/sendTelegram.py ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.CHANNEL_NAME }} ${{ env.X_PIN_MSG }} ${{ env.SHARE_TO_TELE }} ${{ env.DEBUG }}

@@ -4,22 +4,27 @@ name: Features - Manual (Tele)
 on:
   workflow_dispatch:
     inputs:
+      appname_input:
+        description: 'App name - X/Grok'
+        required: true     
+      type_input:
+        description: 'Release type - Stable/Beta/Alpha'
+        required: true     
+      platform_input:
+        description: 'Platform - Android/iOS/Web'
+        required: true     
+      source_input:
+        description: 'Source [apt(Aptoide) / apkc(ApkCombo) / web(Web)]'
+        required: true
       vername_input:
         description: 'Enter the vername'
-        required: true
-      vercode_input:
-        description: 'Enter the vercode'
         required: true
       downLink_input:
         description: 'Enter Download Link'
         required: true
-      source_input:
-        description: 'Source [apt(Aptoide) / apkc(ApkCombo) / web(Web)]'
-        required: true
       msg_id_input:
         description: 'Message ID'
         required: true
- 
  
 
 jobs:
@@ -28,8 +33,10 @@ jobs:
     env:
       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-      PIN_MSG: ${{ secrets.PIN_MSG }}
+      CHANNEL_NAME: ${{ secrets.CHANNEL_NAME }}
+      PIN_MSG: ${{ secrets.X_PIN_MSG }}
       DEBUG: ${{ secrets.DEBUG }}
+      SHARE_TO_TELE: ${{ secrets.SHARE_TO_TELE }}
 
     steps:
     - name: Checkout code
@@ -43,9 +50,8 @@ jobs:
 
     - name: Download & Extract
       run: |
-        python src/main.py ${{ github.event.inputs.vername_input }} ${{ github.event.inputs.source_input }} ${{ github.event.inputs.vercode_input }} ${{ github.event.inputs.downLink_input }}
-              
-
+        python src/main.py --app ${{ github.event.inputs.appname_input }} --platform ${{ github.event.inputs.platform_input }} --source ${{ github.event.inputs.source_input }}  --vername ${{ github.event.inputs.vername_input }}  --type ${{ github.event.inputs.type_input }}  --downLink ${{ github.event.inputs.downLink_input }}  --msgId ${{ github.event.inputs.msg_id_input }} ${{ env.DEBUG }}
+        
     - name: Add extracted file to Git
       id: vars
       run: |
@@ -65,4 +71,4 @@ jobs:
 
     - name: Changes to Telegram
       run: |      
-        python src/changes.py ${{ github.event.inputs.msg_id_input }} ${{secrets.GIT_COMMIT_SHA}}
+        python src/sendTelegram.py ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.CHANNEL_NAME }} ${{ env.X_PIN_MSG }} ${{ env.SHARE_TO_TELE }} ${{ env.DEBUG }}

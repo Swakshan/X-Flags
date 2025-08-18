@@ -1,14 +1,19 @@
 import os
-from common import readJson
-from common import manifest_file_name
+from basics import readJson
+from constants import MANIFEST_FILE_NAME
+from enums import Platform
+from model import DATA
 
 def run(cmd):
     os.system(cmd)
 
-sts = readJson(manifest_file_name)
-s = sts['sts']
+manifest = readJson(MANIFEST_FILE_NAME)
+s = manifest['sts']
 if s:
-    commitMsg = sts['commit_msg']
+    data:DATA = DATA.fromJSON(manifest)
+    vername = data.vername
+    vername = vername[:5] if data.platform == Platform.WEB else vername
+    commitMsg = f"🤖: {vername}"
 
     MAIL_ID = "41898282+github-actions[bot]@users.noreply.github.com"
     NAME = "github-actions[bot]"
