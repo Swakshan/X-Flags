@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "5b5738e8c68d348dd29a59f6891446b65d025ead",
+        "feature_set_token": "adf8b6f67333cc36a59cd36a819cb9dda52045ca",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -277,6 +277,9 @@
             "ad_cycle_cache_url": {
                 "value": "https://x.com/i/grok"
             },
+            "ad_dwell_android_unified_card_browser_logging_enabled": {
+                "value": false
+            },
             "ad_formats_android_in_app_browser_unsupported_domains": {
                 "value": [
                     "apps.rakuten.co.jp"
@@ -377,6 +380,15 @@
             },
             "android_account_search_readability_relationship_new_icons_enabled": {
                 "value": false
+            },
+            "android_ad_formats_appstore_details_always_compact": {
+                "value": false
+            },
+            "android_ad_formats_log_zero_height_impression_errors": {
+                "value": false
+            },
+            "android_ad_formats_skip_zero_height_impressions": {
+                "value": true
             },
             "android_ads_notification_channel_enabled": {
                 "value": true
@@ -1269,6 +1281,9 @@
             "android_retain_scroll_pos_on_recreation": {
                 "value": true
             },
+            "android_sat_mode_support_enabled": {
+                "value": false
+            },
             "android_schema_checker_enabled": {
                 "value": false
             },
@@ -1593,6 +1608,18 @@
             "av_chat_android_pip_mode_drag_threshold": {
                 "value": 150.0
             },
+            "av_chat_android_poll_signaling_backoff_interval_ms": {
+                "value": 1000.0
+            },
+            "av_chat_android_poll_signaling_interval_ms": {
+                "value": 1000.0
+            },
+            "av_chat_android_poll_signaling_maximum_interval_ms": {
+                "value": 5000.0
+            },
+            "av_chat_android_send_offer_asap_enabled": {
+                "value": false
+            },
             "av_chat_android_system_calling_enabled": {
                 "value": false
             },
@@ -1690,6 +1717,9 @@
                 "value": [
                     "/account/access"
                 ]
+            },
+            "branded_features_is_branded_likes_on_tweet_content_enabled": {
+                "value": false
             },
             "branded_features_search_overlay_animations_enabled": {
                 "value": false
@@ -2815,6 +2845,12 @@
             "grok_android_history_search_enabled": {
                 "value": true
             },
+            "grok_android_imagine_create_your_own_enabled": {
+                "value": false
+            },
+            "grok_android_imagine_make_video": {
+                "value": false
+            },
             "grok_android_model_selector_upsell_enabled": {
                 "value": false
             },
@@ -3661,7 +3697,7 @@
                 "value": false
             },
             "profile_invalid_name_bio_regex": {
-                "value": "\\uD83C\\uDD87|\\uD835\\uDD4F|\\uD83D\\uDD10|\\uD83D\\uDD12|\\uD83D\\uDD0F|\\uD83D\\uDD13|\\u221A|\\u237B|\\u2713|\\u2705|\\uD83D\\uDD39|\\uD83D\\uDD37|\\uD83D\\uDCA0|\\uD83D\\uDD35|\\uD83D\\uDD18|([\\u2714\\u2611][\\ufe0e\\ufe0f]?)|[\\uFFFE\\uFEFF\\uFFFF\\u202A\\u202B\\u202C\\u202D\\u202E]|[<>\"]"
+                "value": "\\uD835\\uDD69|\\uD83C\\uDD87|\\uD835\\uDD4F|\\uD83D\\uDD10|\\uD83D\\uDD12|\\uD83D\\uDD0F|\\uD83D\\uDD13|\\u221A|\\u237B|\\u2713|\\u2705|\\uD83D\\uDD39|\\uD83D\\uDD37|\\uD83D\\uDCA0|\\uD83D\\uDD35|\\uD83D\\uDD18|([\\u2714\\u2611][\\ufe0e\\ufe0f]?)|[\\uFFFE\\uFEFF\\uFFFF\\u202A\\u202B\\u202C\\u202D\\u202E]|[<>\"]"
             },
             "profile_label_improvements_pcf_edit_profile_enabled": {
                 "value": true
@@ -3704,9 +3740,6 @@
             },
             "promoted_event_anomaly_detector_video_website_state_machine_enabled": {
                 "value": true
-            },
-            "re_evaluate_spam_reply_is_enabled": {
-                "value": false
             },
             "recent_search_limit_count": {
                 "value": 5.0
@@ -4403,7 +4436,7 @@
                 "value": false
             },
             "subscriptions_upsells_api_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_upsells_get_verified_profile": {
                 "value": true
@@ -4415,7 +4448,7 @@
                 "value": 2.0
             },
             "subscriptions_upsells_home_nav_migration_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_upsells_premium_home_nav": {
                 "value": ""
@@ -4872,7 +4905,7 @@
                 "value": true
             },
             "unified_cards_dpa_cta_button_enabled": {
-                "value": true
+                "value": false
             },
             "unified_cards_dpa_filter_on_media_enabled": {
                 "value": true
@@ -5136,9 +5169,6 @@
             "xchat_enable_message_requests": {
                 "value": false
             },
-            "xchat_enable_perf_write_ahead": {
-                "value": false
-            },
             "xchat_exclusive_executors": {
                 "value": false
             },
@@ -5166,6 +5196,9 @@
             "xchat_screenshot_prevention_enabled": {
                 "value": false
             },
+            "xchat_sign_graphql_messages": {
+                "value": false
+            },
             "xchat_sign_identity_key_during_registration": {
                 "value": true
             },
@@ -5177,6 +5210,9 @@
             },
             "xchat_throttle_badge_counts": {
                 "value": false
+            },
+            "xchat_user_event_limit": {
+                "value": 500.0
             },
             "xchat_verify_message_signatures": {
                 "value": false
@@ -5444,7 +5480,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "2f0d982a1b5f2bf8b93ae672fe76695161d9a527",
-        "experiments": "2f0d982a1b5f2bf8b93ae672fe76695161d9a527"
+        "feature_switches": "4385da62a6bb02d5a4284279cdc1f5ea2889ea09",
+        "experiments": "4385da62a6bb02d5a4284279cdc1f5ea2889ea09"
     }
 }
