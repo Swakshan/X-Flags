@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1fbd6a1df21097b64269c38a82d0dd160bbcf54b",
+    "feature_set_token": "2bac07cdae0c0e56606cc37d064161588f9816c0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2348,6 +2348,9 @@
         },
         "responsive_web_twitter_article_markdown_enabled": {
             "value": false
+        },
+        "responsive_web_twitter_article_media_limit": {
+            "value": 25
         },
         "responsive_web_twitter_article_notes_tab_enabled": {
             "value": true
@@ -4928,6 +4931,10 @@
             "name": "communities_non_member_reply_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "communities_default_show_in_tab_bar": {
+            "name": "communities_default_show_in_tab_bar",
+            "type": "string"
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -10052,6 +10059,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_twitter_article_media_limit": {
+            "name": "responsive_web_twitter_article_media_limit",
+            "type": "number",
+            "defaultValue": 25
+        },
         "responsive_web_twitter_blue_subscriptions_disabled": {
             "name": "responsive_web_twitter_blue_subscriptions_disabled",
             "type": "boolean",
@@ -12521,6 +12533,14 @@
         },
         "subscriptions_upsells_home_nav_premium_tier_check_enabled": {
             "name": "subscriptions_upsells_home_nav_premium_tier_check_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_reset_upsell_rotation_enabled": {
+            "name": "subscriptions_upsells_reset_upsell_rotation_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_reset_upsell_rotation_key": {
+            "name": "subscriptions_upsells_reset_upsell_rotation_key",
             "type": "string"
         },
         "subscriptions_verification_info_enabled": {
