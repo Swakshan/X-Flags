@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "39cdc362795da38edd0a3679a001746c824a1226",
+    "feature_set_token": "961f09de6e8ce4998514a66f0fc25eb2aa011d4d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2296,6 +2296,9 @@
             "value": false
         },
         "responsive_web_trends_ui_enable_new_sidebar": {
+            "value": false
+        },
+        "responsive_web_trends_ui_hide_news_sidebar_on_explore": {
             "value": false
         },
         "responsive_web_trends_ui_sidebar_topic_id": {
@@ -4934,10 +4937,6 @@
             "name": "communities_non_member_reply_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "communities_default_show_in_tab_bar": {
-            "name": "communities_default_show_in_tab_bar",
-            "type": "string"
         },
         "communities_mod_label_16584": {
             "name": "communities_mod_label_16584",
@@ -9924,7 +9923,8 @@
         },
         "responsive_web_trends_ui_hide_news_sidebar_on_explore": {
             "name": "responsive_web_trends_ui_hide_news_sidebar_on_explore",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_tv_cast_enabled": {
             "name": "responsive_web_tv_cast_enabled",
@@ -13775,6 +13775,14 @@
             "enumeration_values": [
                 "control",
                 "analytics_card"
+            ]
+        },
+        "upsell_api_user_profile_get_verified_card_ios_17524": {
+            "name": "upsell_api_user_profile_get_verified_card_ios_17524",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "get_verified_card_rotation"
             ]
         },
         "upsell_api_user_profile_parity_test_android_17525": {
