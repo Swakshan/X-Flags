@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "26d5b2eaab526f2550eababe7a323f12bed0650f",
+    "feature_set_token": "e729d60047a3bc8621cac98e480cd61daae6e5c5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1932,6 +1932,9 @@
         "responsive_web_grok_tweet_translation_limit": {
             "value": 5000.0
         },
+        "responsive_web_grok_use_imagine_in_image_gen": {
+            "value": false
+        },
         "responsive_web_grok_use_new_layout": {
             "value": true
         },
@@ -2026,7 +2029,7 @@
             "value": false
         },
         "responsive_web_logged_out_ios_webview_redirect_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_logged_out_notifications_enabled": {
             "value": true
@@ -9284,6 +9287,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_grok_use_imagine_in_image_gen": {
+            "name": "responsive_web_grok_use_imagine_in_image_gen",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9444,7 +9452,7 @@
         "responsive_web_logged_out_ios_webview_redirect_enabled": {
             "name": "responsive_web_logged_out_ios_webview_redirect_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_logged_out_notifications_enabled": {
             "name": "responsive_web_logged_out_notifications_enabled",
