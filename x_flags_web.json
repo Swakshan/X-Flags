@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c28570bc8cb904ccfaa197c96daf38a55ac4ba3f",
+    "feature_set_token": "70e182ac590fa6b8445418d5ad0c0e1abe9135af",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1863,6 +1863,9 @@
         "responsive_web_grok_search_summary_sidebar": {
             "value": true
         },
+        "responsive_web_grok_send_companion_personality": {
+            "value": false
+        },
         "responsive_web_grok_share_attachment_enabled": {
             "value": true
         },
@@ -2228,6 +2231,9 @@
         },
         "responsive_web_send_cookies_metadata_enabled": {
             "value": true
+        },
+        "responsive_web_send_jetfuel_preview_image_enabled": {
+            "value": false
         },
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "value": true
@@ -9289,6 +9295,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_grok_send_companion_personality": {
+            "name": "responsive_web_grok_send_companion_personality",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9786,6 +9797,11 @@
             "name": "responsive_web_send_cookies_metadata_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_send_jetfuel_preview_image_enabled": {
+            "name": "responsive_web_send_jetfuel_preview_image_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "name": "responsive_web_share_only_tweet_url_omit_title_and_text",
@@ -14673,6 +14689,10 @@
         },
         "xchat_local_pagination_page_size": {
             "name": "xchat_local_pagination_page_size",
+            "type": "string"
+        },
+        "xchat_catch_coroutine_exceptions": {
+            "name": "xchat_catch_coroutine_exceptions",
             "type": "string"
         },
         "xprofile_editing_enabled": {
