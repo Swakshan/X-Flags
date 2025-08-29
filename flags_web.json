@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a54f18378665e0cf30f4737edbaf01b3e1ff62c1",
+    "feature_set_token": "dc4ea286f1e961e94ff2270a79905d0f0a1134a7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1089,6 +1089,9 @@
                 "ja"
             ]
         },
+        "payments_1password_history_fix_enabled": {
+            "value": true
+        },
         "payments_account_details_enabled": {
             "value": false
         },
@@ -1863,9 +1866,6 @@
         "responsive_web_grok_search_summary_sidebar": {
             "value": true
         },
-        "responsive_web_grok_send_companion_personality": {
-            "value": false
-        },
         "responsive_web_grok_share_attachment_enabled": {
             "value": true
         },
@@ -2233,7 +2233,7 @@
             "value": true
         },
         "responsive_web_send_jetfuel_preview_image_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "value": true
@@ -7554,6 +7554,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "payments_1password_history_fix_enabled": {
+            "name": "payments_1password_history_fix_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -7948,6 +7953,10 @@
         },
         "reply_sort_by_likes_delayed_enabled": {
             "name": "reply_sort_by_likes_delayed_enabled",
+            "type": "string"
+        },
+        "reply_sort_shorter_labels_enabled": {
+            "name": "reply_sort_shorter_labels_enabled",
             "type": "string"
         },
         "report_center_mvp_r1_enabled": {
@@ -9297,8 +9306,7 @@
         },
         "responsive_web_grok_send_companion_personality": {
             "name": "responsive_web_grok_send_companion_personality",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -9801,7 +9809,7 @@
         "responsive_web_send_jetfuel_preview_image_enabled": {
             "name": "responsive_web_send_jetfuel_preview_image_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "name": "responsive_web_share_only_tweet_url_omit_title_and_text",
@@ -12108,6 +12116,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "subscriptions_offers_special_perk_enabled": {
+            "name": "subscriptions_offers_special_perk_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
             "type": "boolean",
@@ -13726,6 +13738,10 @@
         },
         "unified_cards_preview_skip_details_disabled": {
             "name": "unified_cards_preview_skip_details_disabled",
+            "type": "string"
+        },
+        "unified_cards_always_skip_details_for_promoted_content": {
+            "name": "unified_cards_always_skip_details_for_promoted_content",
             "type": "string"
         },
         "unified_cards_collection_ads_convert_to_image_website_card": {
