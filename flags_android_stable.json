@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "3c3362c603813fbaa636733981cb2960261c1c1b",
+        "feature_set_token": "2c040510e8205c030f204db819850b3c9334ae3c",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -383,6 +383,12 @@
             },
             "android_ad_formats_appstore_details_always_compact": {
                 "value": false
+            },
+            "android_ad_formats_log_zero_height_impression_errors": {
+                "value": false
+            },
+            "android_ad_formats_skip_zero_height_impressions": {
+                "value": true
             },
             "android_ads_notification_channel_enabled": {
                 "value": true
@@ -1275,6 +1281,9 @@
             "android_retain_scroll_pos_on_recreation": {
                 "value": true
             },
+            "android_sat_mode_support_enabled": {
+                "value": false
+            },
             "android_schema_checker_enabled": {
                 "value": false
             },
@@ -1596,6 +1605,18 @@
             "av_chat_android_pip_mode_drag_threshold": {
                 "value": 150.0
             },
+            "av_chat_android_poll_signaling_backoff_interval_ms": {
+                "value": 1000.0
+            },
+            "av_chat_android_poll_signaling_interval_ms": {
+                "value": 1000.0
+            },
+            "av_chat_android_poll_signaling_maximum_interval_ms": {
+                "value": 5000.0
+            },
+            "av_chat_android_send_offer_asap_enabled": {
+                "value": false
+            },
             "av_chat_android_system_calling_enabled": {
                 "value": false
             },
@@ -1693,6 +1714,9 @@
                 "value": [
                     "/account/access"
                 ]
+            },
+            "branded_features_is_branded_likes_on_tweet_content_enabled": {
+                "value": false
             },
             "branded_features_search_overlay_animations_enabled": {
                 "value": false
@@ -2818,6 +2842,12 @@
             "grok_android_history_search_enabled": {
                 "value": true
             },
+            "grok_android_imagine_create_your_own_enabled": {
+                "value": false
+            },
+            "grok_android_imagine_make_video": {
+                "value": false
+            },
             "grok_android_model_selector_upsell_enabled": {
                 "value": false
             },
@@ -3664,7 +3694,7 @@
                 "value": false
             },
             "profile_invalid_name_bio_regex": {
-                "value": "\\uD83C\\uDD87|\\uD835\\uDD4F|\\uD83D\\uDD10|\\uD83D\\uDD12|\\uD83D\\uDD0F|\\uD83D\\uDD13|\\u221A|\\u237B|\\u2713|\\u2705|\\uD83D\\uDD39|\\uD83D\\uDD37|\\uD83D\\uDCA0|\\uD83D\\uDD35|\\uD83D\\uDD18|([\\u2714\\u2611][\\ufe0e\\ufe0f]?)|[\\uFFFE\\uFEFF\\uFFFF\\u202A\\u202B\\u202C\\u202D\\u202E]|[<>\"]"
+                "value": "\\uD835\\uDD69|\\uD83C\\uDD87|\\uD835\\uDD4F|\\uD83D\\uDD10|\\uD83D\\uDD12|\\uD83D\\uDD0F|\\uD83D\\uDD13|\\u221A|\\u237B|\\u2713|\\u2705|\\uD83D\\uDD39|\\uD83D\\uDD37|\\uD83D\\uDCA0|\\uD83D\\uDD35|\\uD83D\\uDD18|([\\u2714\\u2611][\\ufe0e\\ufe0f]?)|[\\uFFFE\\uFEFF\\uFFFF\\u202A\\u202B\\u202C\\u202D\\u202E]|[<>\"]"
             },
             "profile_label_improvements_pcf_edit_profile_enabled": {
                 "value": true
@@ -5136,9 +5166,6 @@
             "xchat_enable_message_requests": {
                 "value": false
             },
-            "xchat_enable_perf_write_ahead": {
-                "value": true
-            },
             "xchat_exclusive_executors": {
                 "value": false
             },
@@ -5166,6 +5193,9 @@
             "xchat_screenshot_prevention_enabled": {
                 "value": false
             },
+            "xchat_sign_graphql_messages": {
+                "value": false
+            },
             "xchat_sign_identity_key_during_registration": {
                 "value": true
             },
@@ -5177,6 +5207,9 @@
             },
             "xchat_throttle_badge_counts": {
                 "value": false
+            },
+            "xchat_user_event_limit": {
+                "value": 500.0
             },
             "xchat_verify_message_signatures": {
                 "value": false
@@ -5444,7 +5477,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "3c7e80a6b0ec1723c3f550f92d0d01e7efe91633",
-        "experiments": "3c7e80a6b0ec1723c3f550f92d0d01e7efe91633"
+        "feature_switches": "a7dcecd410c4017911abe4b9a5e3e5fe716ff48e",
+        "experiments": "a7dcecd410c4017911abe4b9a5e3e5fe716ff48e"
     }
 }
