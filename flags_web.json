@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "707141d0a893c7b0df760ed1285b3ca34122e91a",
+    "feature_set_token": "0a98e4f483f855130cb485e45f26f21704915e07",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1721,6 +1721,9 @@
         },
         "responsive_web_grok_imagine_annotation_enabled": {
             "value": true
+        },
+        "responsive_web_grok_imagine_in_composer_enabled": {
+            "value": false
         },
         "responsive_web_grok_img_composer": {
             "value": true
@@ -7484,10 +7487,7 @@
         "premium_get_verified_upsell_basic_tier_web_17332": {
             "name": "premium_get_verified_upsell_basic_tier_web_17332",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "premium_home_nav_upgrade_upsell__variant_key_fs": {
             "name": "premium_home_nav_upgrade_upsell__variant_key_fs",
@@ -9168,6 +9168,11 @@
             "name": "responsive_web_grok_send_companion_personality",
             "type": "string"
         },
+        "responsive_web_grok_imagine_in_composer_enabled": {
+            "name": "responsive_web_grok_imagine_in_composer_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -10626,10 +10631,7 @@
         "rweb_vertical_video_17339": {
             "name": "rweb_vertical_video_17339",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "rweb_video_logged_in_analytics_enabled": {
             "name": "rweb_video_logged_in_analytics_enabled",
