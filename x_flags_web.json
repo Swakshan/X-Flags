@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0a98e4f483f855130cb485e45f26f21704915e07",
+    "feature_set_token": "f68340a6a7fcdf74130961a942cd8fe9997ee63c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2228,6 +2228,9 @@
         },
         "responsive_web_tweet_analytics_video_metrics_v2_enabled": {
             "value": true
+        },
+        "responsive_web_tweet_details_prefetch_enabled": {
+            "value": false
         },
         "responsive_web_tweet_drafts_threads_enabled": {
             "value": false
@@ -5947,6 +5950,10 @@
         },
         "explore_relaunch_immersive_prefetch_optimization_enabled": {
             "name": "explore_relaunch_immersive_prefetch_optimization_enabled",
+            "type": "string"
+        },
+        "explore_relaunch_immersive_prefetch_enabled_no_impression": {
+            "name": "explore_relaunch_immersive_prefetch_enabled_no_impression",
             "type": "string"
         },
         "focused_timeline_actions_onboarding_likes": {
@@ -9848,6 +9855,11 @@
             "name": "responsive_web_tweet_analytics_video_metrics_v2_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_tweet_details_prefetch_enabled": {
+            "name": "responsive_web_tweet_details_prefetch_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_tweet_drafts_video_enabled": {
             "name": "responsive_web_tweet_drafts_video_enabled",
