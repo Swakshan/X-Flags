@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "224e05a9ca6765f21ac968fe026b2ebb9443b335",
+        "feature_set_token": "2b62669bf212bf46b2ad0085391c9db2ba07d714",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -383,6 +383,12 @@
             },
             "android_ad_formats_appstore_details_always_compact": {
                 "value": true
+            },
+            "android_ad_formats_google_play_install_referrer_enabled": {
+                "value": true
+            },
+            "android_ad_formats_google_play_install_referrer_unencoded_value": {
+                "value": "utm_source=x"
             },
             "android_ad_formats_log_zero_height_impression_errors": {
                 "value": false
@@ -1617,6 +1623,9 @@
             "av_chat_android_send_offer_asap_enabled": {
                 "value": true
             },
+            "av_chat_android_send_offer_when_disconnected_enabled": {
+                "value": false
+            },
             "av_chat_android_send_signal_analytics_enabled": {
                 "value": true
             },
@@ -2846,10 +2855,10 @@
                 "value": true
             },
             "grok_android_imagine_create_your_own_enabled": {
-                "value": false
+                "value": true
             },
             "grok_android_imagine_make_video": {
-                "value": false
+                "value": true
             },
             "grok_android_model_selector_upsell_enabled": {
                 "value": false
@@ -2939,7 +2948,7 @@
                 "value": ""
             },
             "hal_android_hearts_animations": {
-                "value": false
+                "value": true
             },
             "hal_android_hearts_one_team_animation_enabled": {
                 "value": false
@@ -3233,7 +3242,7 @@
                 ]
             },
             "linger_impression_simplified_enabled": {
-                "value": false
+                "value": true
             },
             "live_event_audiospaces_enabled": {
                 "value": false
@@ -3520,7 +3529,7 @@
                 "value": true
             },
             "on_enter_bg_force_db_save": {
-                "value": false
+                "value": true
             },
             "onboarding_address_book_report_stats": {
                 "value": true
@@ -5172,6 +5181,9 @@
             "xchat_android_screenshot_detection_enabled": {
                 "value": false
             },
+            "xchat_catch_coroutine_exceptions": {
+                "value": false
+            },
             "xchat_conversation_event_limit": {
                 "value": 200.0
             },
@@ -5506,7 +5518,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "0e88252e87ffa6217db28aceffff3398a428b1c2",
-        "experiments": "0e88252e87ffa6217db28aceffff3398a428b1c2"
+        "feature_switches": "4dd4bb6350decfa23f57aefb030c1d7d113ddb32",
+        "experiments": "4dd4bb6350decfa23f57aefb030c1d7d113ddb32"
     }
 }
