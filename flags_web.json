@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0e63528f0ed8f4828a34663a153d6b75948e19ad",
+    "feature_set_token": "b3531b290a93c94559f2f8edc30d8b9404635a39",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1122,6 +1122,9 @@
         "payments_interest_enabled": {
             "value": false
         },
+        "payments_passkey_onboarding_enabled": {
+            "value": false
+        },
         "payments_pin_enabled": {
             "value": false
         },
@@ -1486,6 +1489,9 @@
             "value": []
         },
         "responsive_web_cookie_compliance_banner_enabled": {
+            "value": false
+        },
+        "responsive_web_cookie_compliance_banner_update_enabled": {
             "value": false
         },
         "responsive_web_cookie_compliance_gingersnap_enabled": {
@@ -3529,7 +3535,7 @@
             "value": false
         },
         "unified_cards_dpa_hide_vanity": {
-            "value": false
+            "value": true
         },
         "unified_cards_dpa_metadata_enabled": {
             "value": true
@@ -7384,7 +7390,8 @@
         },
         "payments_passkey_onboarding_enabled": {
             "name": "payments_passkey_onboarding_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_tasks_carousel_enabled": {
             "name": "payments_tasks_carousel_enabled",
@@ -8356,6 +8363,11 @@
         },
         "responsive_web_cookie_compliance_banner_enabled": {
             "name": "responsive_web_cookie_compliance_banner_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_cookie_compliance_banner_update_enabled": {
+            "name": "responsive_web_cookie_compliance_banner_update_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -10609,6 +10621,14 @@
             "name": "rweb_tweet_detail_font_size_holdback_16263",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "rweb_tweet_detail_prefetch_17619": {
+            "name": "rweb_tweet_detail_prefetch_17619",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "rweb_tweets_boosting_enabled": {
             "name": "rweb_tweets_boosting_enabled",
@@ -13671,7 +13691,7 @@
         "unified_cards_dpa_hide_vanity": {
             "name": "unified_cards_dpa_hide_vanity",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "unified_cards_image_collection_website_android_15244": {
             "name": "unified_cards_image_collection_website_android_15244",
