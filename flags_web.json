@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d74153efd0e117aa85796759b0873844f5acc3ac",
+    "feature_set_token": "d8f5da55f79aeeedb7012f7b68b7d9803926ccee",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2586,9 +2586,6 @@
         "rweb_xchat_debug_enabled": {
             "value": false
         },
-        "rweb_xchat_enabled": {
-            "value": true
-        },
         "rweb_xchat_logs": {
             "value": false
         },
@@ -3652,6 +3649,9 @@
         },
         "xchat_enable_inbox_pills": {
             "value": true
+        },
+        "xchat_enable_local_pagination": {
+            "value": false
         },
         "xchat_enable_message_requests": {
             "value": false
@@ -10677,8 +10677,7 @@
         },
         "rweb_xchat_enabled": {
             "name": "rweb_xchat_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_xchat_debug_enabled": {
             "name": "rweb_xchat_debug_enabled",
@@ -14566,7 +14565,8 @@
         },
         "xchat_enable_local_pagination": {
             "name": "xchat_enable_local_pagination",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_local_pagination_page_size": {
             "name": "xchat_local_pagination_page_size",
