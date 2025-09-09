@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d8f5da55f79aeeedb7012f7b68b7d9803926ccee",
+    "feature_set_token": "4f6d8c37f6fa6438b87f8436604fce899c978bc5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3693,7 +3693,7 @@
             "value": true
         },
         "xchat_sign_messages": {
-            "value": false
+            "value": true
         },
         "xchat_socket_hostname": {
             "value": "chat-ws.x.com"
@@ -3705,7 +3705,7 @@
             "value": 500
         },
         "xchat_verify_message_signatures": {
-            "value": false
+            "value": true
         },
         "xprofile_consumption_enabled": {
             "value": true
@@ -11771,6 +11771,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "subscriptions_marketing_page_syscache_content_enabled": {
+            "name": "subscriptions_marketing_page_syscache_content_enabled",
+            "type": "string"
+        },
         "subscriptions_marketing_page_include_tax_enabled": {
             "name": "subscriptions_marketing_page_include_tax_enabled",
             "type": "boolean",
@@ -12000,6 +12004,10 @@
         },
         "subscriptions_premium_hub_vo_upsell_block_enabled": {
             "name": "subscriptions_premium_hub_vo_upsell_block_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_syscache_block_enabled": {
+            "name": "subscriptions_premium_hub_syscache_block_enabled",
             "type": "string"
         },
         "subscriptions_premium_hub_extended_bio_block_enabled": {
@@ -14414,12 +14422,12 @@
         "xchat_sign_messages": {
             "name": "xchat_sign_messages",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_verify_message_signatures": {
             "name": "xchat_verify_message_signatures",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_sign_identity_key_during_registration": {
             "name": "xchat_sign_identity_key_during_registration",
