@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6550748a1e29d8d89085c54bc8dce27b3734a053",
+    "feature_set_token": "9953d3986d219dd9581981420c4cc240d1b1a715",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1795,9 +1795,6 @@
             "value": true
         },
         "responsive_web_grok_share_attachment_enabled": {
-            "value": true
-        },
-        "responsive_web_grok_show_android_promo_banner": {
             "value": true
         },
         "responsive_web_grok_show_button_is_ad": {
@@ -3640,6 +3637,9 @@
         },
         "xchat_discard_events_with_invalid_signature": {
             "value": false
+        },
+        "xchat_emit_while_pulling": {
+            "value": true
         },
         "xchat_enable_av": {
             "value": false
@@ -7468,6 +7468,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "payments_chat_support_enabled": {
+            "name": "payments_chat_support_enabled",
+            "type": "string"
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -9043,8 +9047,7 @@
         },
         "responsive_web_grok_show_android_promo_banner": {
             "name": "responsive_web_grok_show_android_promo_banner",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_grok_add_response_num_retries": {
             "name": "responsive_web_grok_add_response_num_retries",
@@ -14595,6 +14598,11 @@
         "xchat_enable_set_nickname": {
             "name": "xchat_enable_set_nickname",
             "type": "string"
+        },
+        "xchat_emit_while_pulling": {
+            "name": "xchat_emit_while_pulling",
+            "type": "boolean",
+            "defaultValue": true
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
