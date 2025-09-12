@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9953d3986d219dd9581981420c4cc240d1b1a715",
+    "feature_set_token": "e58e4b68e73714b127b8733dbc300aa03e64ae69",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3639,7 +3639,7 @@
             "value": false
         },
         "xchat_emit_while_pulling": {
-            "value": true
+            "value": false
         },
         "xchat_enable_av": {
             "value": false
@@ -13628,6 +13628,10 @@
             "name": "unified_cards_preview_skip_details_disabled",
             "type": "string"
         },
+        "unified_cards_preview_skip_details_disabled_budget_aware_experiment_id": {
+            "name": "unified_cards_preview_skip_details_disabled_budget_aware_experiment_id",
+            "type": "string"
+        },
         "unified_cards_always_skip_details_for_promoted_content": {
             "name": "unified_cards_always_skip_details_for_promoted_content",
             "type": "string"
@@ -14430,6 +14434,10 @@
             "name": "x_jetfuel_enable_v2_sdk",
             "type": "string"
         },
+        "x_jetfuel_base_url": {
+            "name": "x_jetfuel_base_url",
+            "type": "string"
+        },
         "xchat_sign_messages": {
             "name": "xchat_sign_messages",
             "type": "boolean",
@@ -14602,7 +14610,19 @@
         "xchat_emit_while_pulling": {
             "name": "xchat_emit_while_pulling",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
+        },
+        "xchat_enable_forward_message": {
+            "name": "xchat_enable_forward_message",
+            "type": "string"
+        },
+        "xchat_max_group_size_for_remove_info_item": {
+            "name": "xchat_max_group_size_for_remove_info_item",
+            "type": "string"
+        },
+        "xchat_allow_legacy_protocol": {
+            "name": "xchat_allow_legacy_protocol",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
