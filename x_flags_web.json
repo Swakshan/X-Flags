@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "34f1d1a37e0b19c35049610396179b01dd6de588",
+    "feature_set_token": "16b1575ef9d1eb67f7f29f2f0f64a055c1cb01e0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3654,7 +3654,7 @@
             "value": true
         },
         "xchat_enable_local_pagination": {
-            "value": false
+            "value": true
         },
         "xchat_enable_message_requests": {
             "value": false
@@ -6262,10 +6262,7 @@
         "home_nav_upgrade_upsell_17384": {
             "name": "home_nav_upgrade_upsell_17384",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "upgrade"
-            ]
+            "enumeration_values": []
         },
         "home_nav_upsell_age_gating_android_mobile_web_17535": {
             "name": "home_nav_upsell_age_gating_android_mobile_web_17535",
@@ -14593,7 +14590,7 @@
         "xchat_enable_local_pagination": {
             "name": "xchat_enable_local_pagination",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_local_pagination_page_size": {
             "name": "xchat_local_pagination_page_size",
@@ -14622,6 +14619,10 @@
         },
         "xchat_allow_legacy_protocol": {
             "name": "xchat_allow_legacy_protocol",
+            "type": "string"
+        },
+        "xchat_conversation_message_search_enabled": {
+            "name": "xchat_conversation_message_search_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
