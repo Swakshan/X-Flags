@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "66b3a070e042e6f9ef1f871f751008765fc3698d",
+    "feature_set_token": "c98ea5e70a5fd62ebac0ae0cfa51eda3a78c3d15",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3548,6 +3548,9 @@
                 "3_1485707239990054912"
             ]
         },
+        "unified_cards_hide_collection_ad_card_details": {
+            "value": true
+        },
         "unified_cards_install_button_redesign_enabled": {
             "value": true
         },
@@ -3654,7 +3657,7 @@
             "value": false
         },
         "xchat_discard_events_with_invalid_signature": {
-            "value": false
+            "value": true
         },
         "xchat_emit_while_pulling": {
             "value": false
@@ -3687,7 +3690,7 @@
             "value": false
         },
         "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
-            "value": 5
+            "value": 30
         },
         "xchat_inbox_conversation_event_limit": {
             "value": 5
@@ -13718,6 +13721,11 @@
             "name": "unified_cards_docked_media_destinations_disabled",
             "type": "string"
         },
+        "unified_cards_hide_collection_ad_card_details": {
+            "name": "unified_cards_hide_collection_ad_card_details",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "unified_cards_collection_ads_convert_to_image_website_card": {
             "name": "unified_cards_collection_ads_convert_to_image_website_card",
             "type": "boolean",
@@ -14533,7 +14541,7 @@
         "xchat_discard_events_with_invalid_signature": {
             "name": "xchat_discard_events_with_invalid_signature",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
@@ -14615,7 +14623,7 @@
         "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
             "name": "xchat_hybrid_pull_eagerly_fetch_history_after_seconds",
             "type": "number",
-            "defaultValue": 5
+            "defaultValue": 30
         },
         "xchat_inbox_conversation_limit": {
             "name": "xchat_inbox_conversation_limit",
