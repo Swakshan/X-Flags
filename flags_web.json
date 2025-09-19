@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c98ea5e70a5fd62ebac0ae0cfa51eda3a78c3d15",
+    "feature_set_token": "675e3465bc8bc99e9070ae99e9864ca04d47ace3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1102,6 +1102,9 @@
             "value": false
         },
         "payments_cash_deposits_enabled": {
+            "value": false
+        },
+        "payments_chat_support_enabled": {
             "value": false
         },
         "payments_cheques_deposits_enabled": {
@@ -7488,7 +7491,8 @@
         },
         "payments_chat_support_enabled": {
             "name": "payments_chat_support_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
@@ -12726,6 +12730,10 @@
         },
         "syscache_vo_paywall_enabled": {
             "name": "syscache_vo_paywall_enabled",
+            "type": "string"
+        },
+        "syscache_suggestions_enabled": {
+            "name": "syscache_suggestions_enabled",
             "type": "string"
         },
         "system_theme_toggle_enabled": {
