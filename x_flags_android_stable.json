@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "43245f536e442aa154435d510ee82bec7efed1a8",
+        "feature_set_token": "6f1dc9be1e14bc7822d61b375c12d8680d52e015",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -397,6 +397,9 @@
                 "value": true
             },
             "android_ad_formats_swipable_media_prevent_sidebar_conflict_enabled": {
+                "value": false
+            },
+            "android_ad_formats_unified_cards_trim_zero_width_characters_enabled": {
                 "value": false
             },
             "android_ads_notification_channel_enabled": {
@@ -1131,6 +1134,9 @@
             "android_new_vod_audio_device_control_disabled": {
                 "value": true
             },
+            "android_non_home_timeline_hoisting_enabled": {
+                "value": false
+            },
             "android_notification_account_settings_multiselect_enabled": {
                 "value": false
             },
@@ -1613,6 +1619,9 @@
             },
             "author_moderated_replies_urt_container_enabled": {
                 "value": false
+            },
+            "av_chat_android_incoming_call_acceleration": {
+                "value": "None"
             },
             "av_chat_android_pip_mode_drag_threshold": {
                 "value": 150.0
@@ -2948,7 +2957,7 @@
                 "value": false
             },
             "grok_translations_repost_auto_translation_parsing_fix_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_timeline_user_bio_auto_translation_is_enabled": {
                 "value": false
@@ -3583,6 +3592,9 @@
                 "value": true
             },
             "onboarding_wtf_dismiss_htl_refresh_enabled": {
+                "value": false
+            },
+            "payments_automated_direct_deposits_enabled": {
                 "value": false
             },
             "payments_card_spend_enabled": {
@@ -4966,6 +4978,9 @@
             "unified_cards_follow_card_consumption_enabled": {
                 "value": true
             },
+            "unified_cards_hide_collection_ad_card_details": {
+                "value": false
+            },
             "unified_cards_json_parsing_failure_sampling_rate_android": {
                 "value": 100.0
             },
@@ -5200,7 +5215,7 @@
                 "value": 200.0
             },
             "xchat_discard_events_with_invalid_signature": {
-                "value": false
+                "value": true
             },
             "xchat_enable_av": {
                 "value": false
@@ -5209,6 +5224,9 @@
                 "value": false
             },
             "xchat_enable_eu_report": {
+                "value": false
+            },
+            "xchat_enable_forward_message": {
                 "value": false
             },
             "xchat_enable_local_pagination": {
@@ -5224,7 +5242,7 @@
                 "value": false
             },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
-                "value": 5.0
+                "value": -1.0
             },
             "xchat_inbox_conversation_event_limit": {
                 "value": 5.0
@@ -5237,6 +5255,9 @@
             },
             "xchat_max_group_size": {
                 "value": 250.0
+            },
+            "xchat_max_group_size_for_remove_info_item": {
+                "value": 100.0
             },
             "xchat_process_events_in_batch": {
                 "value": false
@@ -5357,6 +5378,7 @@
         "soft_interventions_engagement_nudge_m1_c_11710",
         "android_lower_bitrate_video_india_14097",
         "ad_formats_instream_redesign_android_10417",
+        "android_home_timeline_mark_as_unlimited_timeline_17650",
         "mr_android_custom_push_v1_11928",
         "android_notification_drawer_limit_13128",
         "grok_auto_translate_17494",
@@ -5401,7 +5423,6 @@
         "mr_client_init_lo_static_push_14979",
         "good_click_reactivity_all_users_15540",
         "personalization_holdback_2022_13469",
-        "ios_ad_formats_docked_media_disabled_17620",
         "immersive_media_viewer_android_16367",
         "upsell_api_user_profile_parity_test_android_17525",
         "mr_tweet_media_on_push_android_9818",
@@ -5533,7 +5554,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "9a4a2e4e5b8ad098cfd0bea647dd8394f91c8396",
-        "experiments": "9a4a2e4e5b8ad098cfd0bea647dd8394f91c8396"
+        "feature_switches": "68bdc1224728c21789ac3bdaac91e1db48d34bc7",
+        "experiments": "68bdc1224728c21789ac3bdaac91e1db48d34bc7"
     }
 }
