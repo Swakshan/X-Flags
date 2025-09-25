@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "cf71297e449067669b2b6be4c25d3bb001306e97",
+    "feature_set_token": "631b243dd27c2fd0642b8803c2bdcc51eb05e673",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3221,6 +3221,9 @@
         "syscache_entrypoint_vo_portal_url": {
             "value": ""
         },
+        "syscache_vo_paywall_enabled": {
+            "value": false
+        },
         "system_theme_toggle_enabled": {
             "value": true
         },
@@ -3648,7 +3651,7 @@
             "value": false
         },
         "xchat_allow_legacy_protocol": {
-            "value": false
+            "value": true
         },
         "xchat_catch_coroutine_exceptions": {
             "value": false
@@ -7493,6 +7496,10 @@
             "name": "payments_chat_support_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "payments_payments_atm_map_enabled": {
+            "name": "payments_payments_atm_map_enabled",
+            "type": "string"
         },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
@@ -11637,6 +11644,14 @@
             "name": "subscriptions_features_syscache_write",
             "type": "string"
         },
+        "subscriptions_features_premium_syscache_read": {
+            "name": "subscriptions_features_premium_syscache_read",
+            "type": "string"
+        },
+        "subscriptions_features_premium_syscache_write": {
+            "name": "subscriptions_features_premium_syscache_write",
+            "type": "string"
+        },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
             "type": "boolean",
@@ -12730,7 +12745,8 @@
         },
         "syscache_vo_paywall_enabled": {
             "name": "syscache_vo_paywall_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "syscache_suggestions_enabled": {
             "name": "syscache_suggestions_enabled",
@@ -14719,7 +14735,7 @@
         "xchat_allow_legacy_protocol": {
             "name": "xchat_allow_legacy_protocol",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_conversation_message_search_enabled": {
             "name": "xchat_conversation_message_search_enabled",
