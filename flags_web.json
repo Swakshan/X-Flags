@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "631b243dd27c2fd0642b8803c2bdcc51eb05e673",
+    "feature_set_token": "e03192379d01dbd241949285e41f66de13cb0d94",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2985,6 +2985,9 @@
             "value": false
         },
         "subscriptions_offers_localized_pricing_enabled": {
+            "value": false
+        },
+        "subscriptions_offers_special_perk_enabled": {
             "value": false
         },
         "subscriptions_premium_experiment_nav_text": {
@@ -12048,7 +12051,8 @@
         },
         "subscriptions_offers_special_perk_enabled": {
             "name": "subscriptions_offers_special_perk_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
