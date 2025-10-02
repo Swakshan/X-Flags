@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6041e3dd18027de59d0f397a97bbd6df84de5328",
+    "feature_set_token": "2ed364ff277592ed027985633a43a67fb8517a89",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1633,7 +1633,7 @@
             "value": false
         },
         "responsive_web_grok_analysis_button_from_backend": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_analyze_button_fetch_trends_enabled": {
             "value": false
@@ -7501,6 +7501,10 @@
             "name": "payments_atm_map_enabled",
             "type": "string"
         },
+        "payments_half_cover_notices_enabled": {
+            "name": "payments_half_cover_notices_enabled",
+            "type": "string"
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -8927,7 +8931,7 @@
         "responsive_web_grok_analysis_button_from_backend": {
             "name": "responsive_web_grok_analysis_button_from_backend",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_show_message_reply_button": {
             "name": "responsive_web_grok_show_message_reply_button",
@@ -13741,6 +13745,10 @@
             "name": "unified_cards_hide_collection_ad_card_details",
             "type": "boolean",
             "defaultValue": true
+        },
+        "unified_cards_component_reminder_enabled": {
+            "name": "unified_cards_component_reminder_enabled",
+            "type": "string"
         },
         "unified_cards_collection_ads_convert_to_image_website_card": {
             "name": "unified_cards_collection_ads_convert_to_image_website_card",
