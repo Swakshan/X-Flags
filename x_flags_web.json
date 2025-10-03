@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2ed364ff277592ed027985633a43a67fb8517a89",
+    "feature_set_token": "f8a493a634a595b84ab5be4b00eefa5c8168d04d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1586,9 +1586,6 @@
         },
         "responsive_web_exodus_enabled": {
             "value": false
-        },
-        "responsive_web_explorer_ads_enabled": {
-            "value": true
         },
         "responsive_web_extension_compatibility_hide": {
             "value": false
@@ -3684,7 +3681,7 @@
             "value": false
         },
         "xchat_enable_local_pagination": {
-            "value": true
+            "value": false
         },
         "xchat_enable_media_conv_info": {
             "value": false
@@ -4352,6 +4349,10 @@
         },
         "branded_features_custom_screenshots_enabled": {
             "name": "branded_features_custom_screenshots_enabled",
+            "type": "string"
+        },
+        "branded_features_custom_screenshots_on_htl_enabled": {
+            "name": "branded_features_custom_screenshots_on_htl_enabled",
             "type": "string"
         },
         "branded_like_preview_enabled": {
@@ -7505,6 +7506,10 @@
             "name": "payments_half_cover_notices_enabled",
             "type": "string"
         },
+        "payments_contacts_institutions_enabled": {
+            "name": "payments_contacts_institutions_enabled",
+            "type": "string"
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -8507,11 +8512,6 @@
             "name": "responsive_web_exodus_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "responsive_web_explorer_ads_enabled": {
-            "name": "responsive_web_explorer_ads_enabled",
-            "type": "boolean",
-            "defaultValue": true
         },
         "responsive_web_extension_compatibility_hide": {
             "name": "responsive_web_extension_compatibility_hide",
@@ -10756,6 +10756,10 @@
             "type": "string",
             "defaultValue": ""
         },
+        "rweb_xchat_lazy_starter": {
+            "name": "rweb_xchat_lazy_starter",
+            "type": "string"
+        },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
             "type": "boolean",
@@ -12120,6 +12124,10 @@
             "name": "subscriptions_premium_hub_updated_theme_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_premium_hub_x_lite_alpha_enabled": {
+            "name": "subscriptions_premium_hub_x_lite_alpha_enabled",
+            "type": "string"
         },
         "subscriptions_premium_module_enabled": {
             "name": "subscriptions_premium_module_enabled",
@@ -14709,7 +14717,7 @@
         "xchat_enable_local_pagination": {
             "name": "xchat_enable_local_pagination",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xchat_local_pagination_page_size": {
             "name": "xchat_local_pagination_page_size",
