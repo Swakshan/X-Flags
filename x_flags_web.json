@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f8a493a634a595b84ab5be4b00eefa5c8168d04d",
+    "feature_set_token": "12d9555074b13ac724a49fd7a1a76fb9a96a74ec",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1736,6 +1736,9 @@
         },
         "responsive_web_grok_imggen_count": {
             "value": 4
+        },
+        "responsive_web_grok_latest_news_preset_enabled": {
+            "value": false
         },
         "responsive_web_grok_location_enabled": {
             "value": true
@@ -7510,6 +7513,10 @@
             "name": "payments_contacts_institutions_enabled",
             "type": "string"
         },
+        "payments_transaction_search_enabled": {
+            "name": "payments_transaction_search_enabled",
+            "type": "string"
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -8046,6 +8053,10 @@
             "name": "responsive_web_ad_revenue_sharing_setup_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled": {
+            "name": "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled",
+            "type": "string"
         },
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "name": "responsive_web_ad_revenue_sharing_number_of_impressions",
@@ -9233,6 +9244,11 @@
             "name": "responsive_web_grok_temporary_chat_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_grok_latest_news_preset_enabled": {
+            "name": "responsive_web_grok_latest_news_preset_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
