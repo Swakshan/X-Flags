@@ -7,16 +7,15 @@ A repo that keeps track of feature flags from different builds of 𝕏 (Twitter)
 ## Latest Feature Flags
 
 * **Android**
-    - [Alpha Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_android_alpha.json)
-    - [Beta Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_android_beta.json)
-    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_android_stable.json)
+    - [Alpha Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_android_alpha.json)
+    - [Beta Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_android_beta.json)
+    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_android_stable.json)
 
 * **iOS**
-    - [Stable Flags: iPhone](https://github.com/Swakshan/X-Flags/blob/main/flags_iphone_stable.json)
-    - [Stable Flags: iPad](https://github.com/Swakshan/X-Flags/blob/main/flags_ipad_stable.json)
+    - [Stable Flags: iPhone](https://github.com/Swakshan/X-Flags/blob/main/x_flags_ios_stable.json)
 
 * **Web**
-    - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/flags_web.json)
+    - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_web.json)
 
 
 ## FAQ
@@ -39,7 +38,7 @@ Feature flags are used by twitter employees to test new features before they are
 
 #### Is there a way to modify flags in web version ?
 
-Yes. Check out [x-feature-flags](https://github.com/yaroslav-n/x-feature-flags) by [Yaroslav](https://twitter.com/512x512/)
+Yes. Check out [x-feature-flags](https://chrome.google.com/webstore/detail/secret-twitter-features/phioeneleonlckednejcmajbkmhhiepm) by [Yaroslav](https://x.com/512x512/) & [Lohansimpson](https://x.com/lohansimpson/)
 
 #### Is there way for iOS users?
 
