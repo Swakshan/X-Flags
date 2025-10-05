@@ -41,7 +41,7 @@ def getChannelId():
 
 def getChannelLink():
     CHANNEL_NAME = getEnv("CHANNEL_NAME")
-    return f"t.me/{CHANNEL_NAME}/c"
+    return f"t.me/{CHANNEL_NAME}"
 
 
 def getPinMsgID(app: Application):

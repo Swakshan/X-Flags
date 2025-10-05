@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v20 : updated ReadMe"
+VER = "v20.00 : fix channel link"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
