@@ -50,7 +50,7 @@ jobs:
 
     - name: Download & Extract
       run: |
-        python src/main.py --app ${{ github.event.inputs.appname_input }} --platform ${{ github.event.inputs.platform_input }} --source ${{ github.event.inputs.source_input }}  --vername ${{ github.event.inputs.vername_input }}  --type ${{ github.event.inputs.type_input }}  --downLink ${{ github.event.inputs.downLink_input }}  --msgId ${{ github.event.inputs.msg_id_input }} ${{ env.DEBUG }}
+        python src/main.py --app ${{ github.event.inputs.appname_input }} --platform ${{ github.event.inputs.platform_input }} --source ${{ github.event.inputs.source_input }} --type ${{ github.event.inputs.type_input }}  --downLink ${{ github.event.inputs.downLink_input }}  --msgId ${{ github.event.inputs.msg_id_input }} --vername ${{ github.event.inputs.vername_input }} ${{ env.DEBUG }}
         
     - name: Add extracted file to Git
       id: vars

@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v20.00 : fix channel link"
+VER = "v20.01 : fix build"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -44,15 +44,15 @@ if not isDebug():
         shutil.rmtree(DUMMY_FOLDER)
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("app", help="App name - X/Grok",required=True)
-    parser.add_argument("type", help="Release type - Stable/Beta/Alpha")
-    parser.add_argument("platform", help="Platform - Android/iOS/Web",required=True)
-    parser.add_argument("source", help="Source - Manual/Web/apkMirror",required=True)
-    parser.add_argument("vername", help="Vername - Web/10.10-beta.1",required=True)
-    parser.add_argument("downLink", help="Download link",required=True)
-    parser.add_argument("msgId", help="Telegram message id")
+    parser.add_argument("-a","--app", help="App name - X/Grok")
+    parser.add_argument("-t","--type", help="Release type - Stable/Beta/Alpha")
+    parser.add_argument("-p","--platform", help="Platform - Android/iOS/Web")
+    parser.add_argument("-s","--source", help="Source - Manual/Web/apkMirror")
+    parser.add_argument("-v","--vername", help="Vername - Web/10.10-beta.1")
+    parser.add_argument("-d","--downLink", help="Download link")
+    parser.add_argument("-m","--msgId", help="Telegram message id")
     args = parser.parse_args()
-       
+    
     app = args.app.lower()
     typ = args.type.lower()
     plt = args.platform.lower()
@@ -68,3 +68,4 @@ if not isDebug():
     data = DATA(vername, down_link, msg_id, source, platform, typ, app)
     
     main(data)
+    
