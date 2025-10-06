@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v20.02 : fixes"
+VER = "v20.03 : fix parameters"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -47,29 +47,30 @@ if not isDebug():
     if os.path.exists(DUMMY_FOLDER):
         shutil.rmtree(DUMMY_FOLDER)
     
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-a","--app", help="App name - X/Grok")
-    parser.add_argument("-t","--type", help="Release type - Stable/Beta/Alpha")
-    parser.add_argument("-p","--platform", help="Platform - Android/iOS/Web")
-    parser.add_argument("-s","--source", help="Source - Manual/Web/apkMirror")
-    parser.add_argument("-v","--vername", help="Vername - Web/10.10-beta.1")
-    parser.add_argument("-d","--downLink", help="Download link")
-    parser.add_argument("-m","--msgId", help="Telegram message id")
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("-a","--app", help="App name - X/Grok")
+    # parser.add_argument("-t","--type", help="Release type - Stable/Beta/Alpha")
+    # parser.add_argument("-p","--platform", help="Platform - Android/iOS/Web")
+    # parser.add_argument("-s","--source", help="Source - Manual/Web/apkMirror")
+    # parser.add_argument("-v","--vername", help="Vername - Web/10.10-beta.1")
+    # parser.add_argument("-d","--downLink", help="Download link")
+    # parser.add_argument("-m","--msgId", help="Telegram message id")
+    # args = parser.parse_args()
+    args = sys.argv
     
-    app = args.app.lower()
-    typ = args.type.lower()
-    plt = args.platform.lower()
-    src = args.source.lower()
-    vername = args.vername
-    down_link = args.downLink
-    msg_id = args.msgId
+    app = args[1].lower()
+    plt = args[2].lower()
+    src = args[3].lower()
+    typ = args[4].lower()
+    down_link = args[5]
+    msg_id = args[6]
+    vername = args[7]
 
     app = Application(app)
     typ = ReleaseType(typ)
     platform = Platform(plt)
     source = Source(src)
     data = DATA(vername, down_link, msg_id, source, platform, typ, app)
-    
+    print(f"DATA = {DATA}")
     main(data)
     
