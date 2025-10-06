@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v20.01 : fix build"
+VER = "v20.02 : fixes"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -28,16 +28,20 @@ def main(data:DATA):
     # move existing/default flags to old flags
     shutil.move(flagFileName, OLD_FILE_NAME)
     
+    sts = False
     app:Application = data.app
-    printCmd(f" processing {app.value}")
+    printCmd(f"processing {app.value}")
     if app == Application.X:
-        xProcess(data,flagFileName)
-        
-    # new flags as default flags
-    shutil.copy(NEW_FILE_NAME, flagFileName)
+        sts = xProcess(data,flagFileName)
     
-    printCmd(f" comparing flags")
-    compareFlags()
+    if sts:
+        # new flags as default flags
+        shutil.copy(NEW_FILE_NAME, flagFileName)
+        
+        printCmd(f"comparing flags")
+        compareFlags()
+    else:
+        print("Status: False")
     
 if not isDebug():
     if os.path.exists(DUMMY_FOLDER):

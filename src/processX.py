@@ -27,7 +27,7 @@ def process(data:DATA,flagFileName:str):
 
         if platform == Platform.WEB:
             vername = data.vername
-            sha, hash = vername.split("||")
+            sha, hash = vername.split("::")
             fs = webfeatureSwitches(hash)
             # create the flags in existing flags
             writeJson(flagFileName, fs)
