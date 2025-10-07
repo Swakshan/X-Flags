@@ -97,7 +97,7 @@ class DATA:
         rd = f"{emoji} *{appName.upper()} Update* {emoji}\n"
         rd = f"{rd}\n_Platform:_ *{platform.title()}*"
         if platform == Platform.WEB.value:
-            rd = f"{rd}\n_Hash_:\n`{vername.split("||")[0]}`"
+            rd = f"{rd}\n_Hash_:\n`{vername.split("::")[0]}`"
             linkRowFormer("Web Link", link)
             linkRow = linkRow[:-3] + "\n"
         else:
