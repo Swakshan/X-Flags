@@ -36,7 +36,7 @@ def isDebug():
 
 
 def getChannelId():
-    return getEnv("TEST_CHANNEL_ID") if isDebug() else getEnv("CHANNEL_ID")
+    return getEnv("CHANNEL_ID")
 
 
 def getChannelLink():

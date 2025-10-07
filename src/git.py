@@ -12,7 +12,7 @@ s = manifest['sts']
 if s:
     data:DATA = DATA.fromJSON(manifest)
     vername = data.vername
-    vername = vername[:5] if data.platform == Platform.WEB else vername
+    vername = "web: "+vername[:5] if data.platform == Platform.WEB else vername
     commitMsg = f"🤖: {vername}"
 
     MAIL_ID = "41898282+github-actions[bot]@users.noreply.github.com"
