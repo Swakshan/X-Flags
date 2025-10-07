@@ -3654,7 +3654,7 @@
             "value": true
         },
         "xchat_catch_coroutine_exceptions": {
-            "value": true
+            "value": false
         },
         "xchat_conversation_event_limit": {
             "value": 200
@@ -7517,14 +7517,6 @@
             "name": "payments_transaction_search_enabled",
             "type": "string"
         },
-        "payments_lock_unlock_individual_cards_enabled": {
-            "name": "payments_lock_unlock_individual_cards_enabled",
-            "type": "string"
-        },
-        "payments_customer_onboarding_steps_enabled": {
-            "name": "payments_customer_onboarding_steps_enabled",
-            "type": "string"
-        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -7757,6 +7749,11 @@
         },
         "profile_page_upsells_swapper_non_english_17208": {
             "name": "profile_page_upsells_swapper_non_english_17208",
+            "type": "experiment",
+            "enumeration_values": []
+        },
+        "project_jiminy_article_web_11673": {
+            "name": "project_jiminy_article_web_11673",
             "type": "experiment",
             "enumeration_values": []
         },
@@ -8101,6 +8098,11 @@
         },
         "responsive_web_api_transition_enabled": {
             "name": "responsive_web_api_transition_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "responsive_web_article_nudge_enabled": {
+            "name": "responsive_web_article_nudge_enabled",
             "type": "boolean",
             "defaultValue": true
         },
@@ -14741,7 +14743,7 @@
         "xchat_catch_coroutine_exceptions": {
             "name": "xchat_catch_coroutine_exceptions",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xchat_enable_set_nickname": {
             "name": "xchat_enable_set_nickname",
