@@ -10,7 +10,7 @@ def santizeText(txt):
   return txt
 
 def sendMsg(text,tag="untitled"):
-    printCmd("Telegram sending message")
+    printSubCmd("Telegram sending message")
     BOT_TOKEN = getEnv("BOT_TOKEN")
     channel_id = getChannelId()
     tele_api_send_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage'
@@ -27,7 +27,7 @@ def sendMsg(text,tag="untitled"):
         if req.status_code==200:
             new_msg_id = pkjson['result']['message_id']
             rd = new_msg_id
-            printCmd(f"Telegram Uploaded: {tag}")
+            printSubCmd(f"Telegram Uploaded: {tag}")
             # pinMsg(chat_id,new_msg_id,tag)
         else:
             printSubCmd("Telegram action failed","x")

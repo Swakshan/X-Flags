@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v20.04 : fix channel id"
+VER = "v20.05 : fix tele"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
