@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b40884cb44285e7af797dbe1e05d1c3b63fdc71d",
+    "feature_set_token": "75becd705af3d1fe86a5c56d8827c8117d3957c9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2875,6 +2875,9 @@
         },
         "subscriptions_feature_premium_jobs": {
             "value": true
+        },
+        "subscriptions_features_syscache_read": {
+            "value": false
         },
         "subscriptions_gifting_help_url": {
             "value": "https://x.com/messages/compose?recipient_id=1399766153053061121"
@@ -11715,7 +11718,8 @@
         },
         "subscriptions_features_syscache_read": {
             "name": "subscriptions_features_syscache_read",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_features_syscache_write": {
             "name": "subscriptions_features_syscache_write",
