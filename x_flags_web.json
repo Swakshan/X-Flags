@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "75becd705af3d1fe86a5c56d8827c8117d3957c9",
+    "feature_set_token": "3e40bb64285adb690a989532e53e78eee808e796",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1123,6 +1123,9 @@
             "value": false
         },
         "payments_interest_enabled": {
+            "value": false
+        },
+        "payments_lock_unlock_individual_cards_enabled": {
             "value": false
         },
         "payments_passkey_onboarding_enabled": {
@@ -2524,6 +2527,9 @@
             "value": true
         },
         "rweb_premium_business_rebranding_entry_point_removed": {
+            "value": true
+        },
+        "rweb_premium_business_rebranding_governments_enabled": {
             "value": true
         },
         "rweb_premium_business_rebranding_landing_page_enabled": {
@@ -7540,7 +7546,8 @@
         },
         "payments_lock_unlock_individual_cards_enabled": {
             "name": "payments_lock_unlock_individual_cards_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_customer_onboarding_steps_enabled": {
             "name": "payments_customer_onboarding_steps_enabled",
@@ -12835,6 +12842,10 @@
             "name": "syscache_suggestions_enabled",
             "type": "string"
         },
+        "syscache_web_view_issue_double_load_enabled": {
+            "name": "syscache_web_view_issue_double_load_enabled",
+            "type": "string"
+        },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
             "type": "boolean",
@@ -14847,6 +14858,10 @@
         },
         "xchat_inbox_conversation_local_pagination_page_size": {
             "name": "xchat_inbox_conversation_local_pagination_page_size",
+            "type": "string"
+        },
+        "xchat_allow_legacy_message_requests": {
+            "name": "xchat_allow_legacy_message_requests",
             "type": "string"
         },
         "xprofile_editing_enabled": {
