@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "4fc6aae59e3ae920caa21773c83ea99a20611577",
+    "feature_set_token": "0c5bf6769e76e3b3db29c6e01f18381d767e8250",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1296,6 +1296,9 @@
         "responsive_web_account_analytics_timeseries_enabled": {
             "value": true
         },
+        "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled": {
+            "value": false
+        },
         "responsive_web_ad_revenue_sharing_enabled": {
             "value": true
         },
@@ -2164,7 +2167,7 @@
             "value": true
         },
         "responsive_web_ssr_send_likes_in_title_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_stripe_account_creation_enabled": {
             "value": true
@@ -8098,7 +8101,8 @@
         },
         "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled": {
             "name": "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "name": "responsive_web_ad_revenue_sharing_number_of_impressions",
@@ -9828,7 +9832,7 @@
         "responsive_web_ssr_send_likes_in_title_enabled": {
             "name": "responsive_web_ssr_send_likes_in_title_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_stripe_account_creation_enabled": {
             "name": "responsive_web_stripe_account_creation_enabled",
@@ -12213,6 +12217,10 @@
         },
         "subscriptions_premium_hub_x_lite_alpha_enabled": {
             "name": "subscriptions_premium_hub_x_lite_alpha_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_x_lite_alpha_premium_enabled": {
+            "name": "subscriptions_premium_hub_x_lite_alpha_premium_enabled",
             "type": "string"
         },
         "subscriptions_premium_module_enabled": {
