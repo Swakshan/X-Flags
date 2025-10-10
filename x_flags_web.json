@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3e40bb64285adb690a989532e53e78eee808e796",
+    "feature_set_token": "4fc6aae59e3ae920caa21773c83ea99a20611577",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2619,6 +2619,9 @@
         "rweb_xchat_old_dms_inbox_item": {
             "value": true
         },
+        "rweb_xchat_profile_redirect_enabled": {
+            "value": false
+        },
         "rweb_xp_forwarded_for_enabled": {
             "value": false
         },
@@ -3790,9 +3793,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "rweb_xchat_profile_redirect_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -10840,6 +10840,11 @@
             "name": "rweb_xchat_lazy_starter",
             "type": "string"
         },
+        "rweb_xchat_profile_redirect_enabled": {
+            "name": "rweb_xchat_profile_redirect_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
             "type": "boolean",
@@ -12844,6 +12849,10 @@
         },
         "syscache_web_view_issue_double_load_enabled": {
             "name": "syscache_web_view_issue_double_load_enabled",
+            "type": "string"
+        },
+        "syscache_web_view_issue_multiple_load_enabled": {
+            "name": "syscache_web_view_issue_multiple_load_enabled",
             "type": "string"
         },
         "system_theme_toggle_enabled": {
@@ -14862,6 +14871,10 @@
         },
         "xchat_allow_legacy_message_requests": {
             "name": "xchat_allow_legacy_message_requests",
+            "type": "string"
+        },
+        "xchat_allow_legacy_media_uploads": {
+            "name": "xchat_allow_legacy_media_uploads",
             "type": "string"
         },
         "xprofile_editing_enabled": {
