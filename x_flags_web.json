@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "af9b6dcef8a385d16fefd118bc6f07fd16ec3ce4",
+    "feature_set_token": "fd1c7bf58b248d59c66146aac253302feaf3f156",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1338,6 +1338,9 @@
         "responsive_web_author_labels_handle_label_enabled": {
             "value": false
         },
+        "responsive_web_birdwatch_admitted_user_setting_enabled": {
+            "value": false
+        },
         "responsive_web_birdwatch_consumption_enabled": {
             "value": true
         },
@@ -2535,6 +2538,9 @@
         "rweb_premium_business_rebranding_governments_enabled": {
             "value": true
         },
+        "rweb_premium_business_rebranding_hiring_url_redirect_enabled": {
+            "value": true
+        },
         "rweb_premium_business_rebranding_landing_page_enabled": {
             "value": true
         },
@@ -2892,10 +2898,10 @@
             "value": true
         },
         "subscriptions_features_syscache_read": {
-            "value": false
+            "value": true
         },
         "subscriptions_features_syscache_write": {
-            "value": false
+            "value": true
         },
         "subscriptions_gifting_help_url": {
             "value": "https://x.com/messages/compose?recipient_id=1399766153053061121"
@@ -3696,7 +3702,7 @@
             "value": false
         },
         "xchat_allow_legacy_protocol": {
-            "value": true
+            "value": false
         },
         "xchat_catch_coroutine_exceptions": {
             "value": true
@@ -3807,9 +3813,6 @@
             "value": false
         },
         "xprofile_work_history_enabled": {
-            "value": true
-        },
-        "rweb_premium_business_rebranding_hiring_url_redirect_enabled": {
             "value": true
         }
     },
@@ -8358,7 +8361,8 @@
         },
         "responsive_web_birdwatch_admitted_user_setting_enabled": {
             "name": "responsive_web_birdwatch_admitted_user_setting_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -10703,6 +10707,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "rweb_premium_business_rebranding_hiring_url_redirect_enabled": {
+            "name": "rweb_premium_business_rebranding_hiring_url_redirect_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "rweb_quick_promote_boost_enabled": {
             "name": "rweb_quick_promote_boost_enabled",
             "type": "boolean",
@@ -11771,12 +11780,12 @@
         "subscriptions_features_syscache_read": {
             "name": "subscriptions_features_syscache_read",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_features_syscache_write": {
             "name": "subscriptions_features_syscache_write",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_features_premium_syscache_read": {
             "name": "subscriptions_features_premium_syscache_read",
@@ -12906,6 +12915,10 @@
         },
         "syscache_web_view_v2_reload_enabled": {
             "name": "syscache_web_view_v2_reload_enabled",
+            "type": "string"
+        },
+        "syscache_waitlist_enabled": {
+            "name": "syscache_waitlist_enabled",
             "type": "string"
         },
         "system_theme_toggle_enabled": {
@@ -14899,7 +14912,7 @@
         "xchat_allow_legacy_protocol": {
             "name": "xchat_allow_legacy_protocol",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xchat_conversation_message_search_enabled": {
             "name": "xchat_conversation_message_search_enabled",
