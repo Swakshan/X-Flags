@@ -3270,13 +3270,13 @@
             "value": false
         },
         "syscache_entrypoint_vo_portal_enabled": {
-            "value": false
+            "value": true
         },
         "syscache_entrypoint_vo_portal_url": {
-            "value": ""
+            "value": "https://handles.x.com"
         },
         "syscache_vo_paywall_enabled": {
-            "value": false
+            "value": true
         },
         "system_theme_toggle_enabled": {
             "value": true
@@ -3738,7 +3738,7 @@
             "value": false
         },
         "xchat_enable_forward_message": {
-            "value": false
+            "value": true
         },
         "xchat_enable_local_pagination": {
             "value": false
@@ -7598,6 +7598,10 @@
             "name": "payments_card_name_suggestions_enabled",
             "type": "string"
         },
+        "payments_transfer_link_enabled": {
+            "name": "payments_transfer_link_enabled",
+            "type": "string"
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -8370,6 +8374,11 @@
         },
         "responsive_web_birdwatch_admitted_user_setting_enabled": {
             "name": "responsive_web_birdwatch_admitted_user_setting_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_birdwatch_home_page_enabled": {
+            "name": "responsive_web_birdwatch_home_page_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -10896,7 +10905,8 @@
         },
         "rweb_xchat_lazy_starter": {
             "name": "rweb_xchat_lazy_starter",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_xchat_profile_redirect_enabled": {
             "name": "rweb_xchat_profile_redirect_enabled",
@@ -12859,10 +12869,6 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "syscache_ui_enabled": {
-            "name": "syscache_ui_enabled",
-            "type": "string"
-        },
         "syscache_white_glove_enabled": {
             "name": "syscache_white_glove_enabled",
             "type": "string"
@@ -12886,7 +12892,7 @@
         "syscache_entrypoint_vo_portal_enabled": {
             "name": "syscache_entrypoint_vo_portal_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "syscache_entrypoint_settings_enabled": {
             "name": "syscache_entrypoint_settings_enabled",
@@ -12899,12 +12905,12 @@
         "syscache_entrypoint_vo_portal_url": {
             "name": "syscache_entrypoint_vo_portal_url",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "https://handles.x.com"
         },
         "syscache_vo_paywall_enabled": {
             "name": "syscache_vo_paywall_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "syscache_suggestions_enabled": {
             "name": "syscache_suggestions_enabled",
@@ -12929,6 +12935,15 @@
         "syscache_waitlist_enabled": {
             "name": "syscache_waitlist_enabled",
             "type": "string"
+        },
+        "syscache_premium_upsell_enabled": {
+            "name": "syscache_premium_upsell_enabled",
+            "type": "string"
+        },
+        "syscache_entrypoint_vo_portal_basic_users_enabled": {
+            "name": "syscache_entrypoint_vo_portal_basic_users_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
@@ -14911,7 +14926,7 @@
         "xchat_enable_forward_message": {
             "name": "xchat_enable_forward_message",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_max_group_size_for_remove_info_item": {
             "name": "xchat_max_group_size_for_remove_info_item",
@@ -14957,6 +14972,14 @@
             "name": "xchat_max_users_to_fetch_per_request",
             "type": "number",
             "defaultValue": 100
+        },
+        "xchat_continue_previous_inbox_pagination": {
+            "name": "xchat_continue_previous_inbox_pagination",
+            "type": "string"
+        },
+        "xchat_share_post": {
+            "name": "xchat_share_post",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
