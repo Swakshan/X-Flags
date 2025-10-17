@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "817b291dfd45c94e2a02e9e5265a3a4da55f949d",
+    "feature_set_token": "ab11859fbd16a2b5e5a9fd8bd8a8aa2efafb0d35",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3264,13 +3264,16 @@
             "value": true
         },
         "syscache_entrypoint_vo_portal_basic_users_enabled": {
-            "value": false
+            "value": true
         },
         "syscache_entrypoint_vo_portal_enabled": {
             "value": true
         },
         "syscache_entrypoint_vo_portal_url": {
             "value": "https://handles.x.com"
+        },
+        "syscache_syscache_pb_sidebar_handles_enabled": {
+            "value": false
         },
         "syscache_vo_paywall_enabled": {
             "value": true
@@ -12934,11 +12937,16 @@
         "syscache_entrypoint_vo_portal_basic_users_enabled": {
             "name": "syscache_entrypoint_vo_portal_basic_users_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "syscache_updated_business_upgrade_url_enabled": {
             "name": "syscache_updated_business_upgrade_url_enabled",
             "type": "string"
+        },
+        "syscache_syscache_pb_sidebar_handles_enabled": {
+            "name": "syscache_syscache_pb_sidebar_handles_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
