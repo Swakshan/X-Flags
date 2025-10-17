@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ab11859fbd16a2b5e5a9fd8bd8a8aa2efafb0d35",
+    "feature_set_token": "94d50dc992716eabcefdeb736986d80baa4cd7fd",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -508,6 +508,9 @@
             "value": false
         },
         "creator_monetization_web_tips_onboarding_enabled": {
+            "value": false
+        },
+        "creator_studio_nav_enabled": {
             "value": false
         },
         "creator_subscriptions_connect_tab_enabled": {
@@ -3264,7 +3267,7 @@
             "value": true
         },
         "syscache_entrypoint_vo_portal_basic_users_enabled": {
-            "value": true
+            "value": false
         },
         "syscache_entrypoint_vo_portal_enabled": {
             "value": true
@@ -4969,6 +4972,11 @@
         "creator_monetization_ticket_spaces_creation_enabled": {
             "name": "creator_monetization_ticket_spaces_creation_enabled",
             "type": "string"
+        },
+        "creator_studio_nav_enabled": {
+            "name": "creator_studio_nav_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "creator_monetization_ticket_spaces_application_enabled": {
             "name": "creator_monetization_ticket_spaces_application_enabled",
@@ -12937,7 +12945,7 @@
         "syscache_entrypoint_vo_portal_basic_users_enabled": {
             "name": "syscache_entrypoint_vo_portal_basic_users_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "syscache_updated_business_upgrade_url_enabled": {
             "name": "syscache_updated_business_upgrade_url_enabled",
@@ -14982,6 +14990,10 @@
         },
         "xchat_share_post": {
             "name": "xchat_share_post",
+            "type": "string"
+        },
+        "xchat_show_safety_number_ui": {
+            "name": "xchat_show_safety_number_ui",
             "type": "string"
         },
         "xprofile_editing_enabled": {
