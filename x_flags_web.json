@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "088df5e35024d442565589b08bd11215077696b8",
+    "feature_set_token": "09632265ae6cee96cbc8c7b30a499cf627ddb042",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1845,9 +1845,6 @@
         "responsive_web_grok_show_message_reply_button": {
             "value": true
         },
-        "responsive_web_grok_show_translation_source_lang": {
-            "value": true
-        },
         "responsive_web_grok_sport_cards_enabled": {
             "value": true
         },
@@ -2086,6 +2083,9 @@
             "value": false
         },
         "responsive_web_professional_journeys_holdback_enabled": {
+            "value": false
+        },
+        "responsive_web_profile_about_enabled": {
             "value": false
         },
         "responsive_web_profile_redirect_enabled": {
@@ -3829,6 +3829,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "responsive_web_grok_enable_video_gen_on_image_preview": {
+            "value": false
         }
     },
     "debug": {
@@ -9296,8 +9299,7 @@
         },
         "responsive_web_grok_show_translation_source_lang": {
             "name": "responsive_web_grok_show_translation_source_lang",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "responsive_web_grok_outage_banner_message": {
             "name": "responsive_web_grok_outage_banner_message",
@@ -9726,6 +9728,11 @@
         },
         "responsive_web_professional_journeys_holdback_enabled": {
             "name": "responsive_web_professional_journeys_holdback_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_profile_about_enabled": {
+            "name": "responsive_web_profile_about_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -14999,6 +15006,10 @@
         },
         "xchat_use_info_items_for_sorting": {
             "name": "xchat_use_info_items_for_sorting",
+            "type": "string"
+        },
+        "xchat_create_ckey_canxchatdm": {
+            "name": "xchat_create_ckey_canxchatdm",
             "type": "string"
         },
         "xprofile_editing_enabled": {
