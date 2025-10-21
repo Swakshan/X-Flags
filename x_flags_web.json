@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "94d50dc992716eabcefdeb736986d80baa4cd7fd",
+    "feature_set_token": "088df5e35024d442565589b08bd11215077696b8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3265,6 +3265,9 @@
         },
         "super_follow_web_onboarding_enabled": {
             "value": true
+        },
+        "syscache_entrypoint_settings_enabled": {
+            "value": false
         },
         "syscache_entrypoint_vo_portal_basic_users_enabled": {
             "value": false
@@ -12895,7 +12898,8 @@
         },
         "syscache_entrypoint_settings_enabled": {
             "name": "syscache_entrypoint_settings_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "syscache_theme_toggle_enabled": {
             "name": "syscache_theme_toggle_enabled",
