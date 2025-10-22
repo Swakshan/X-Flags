@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "09632265ae6cee96cbc8c7b30a499cf627ddb042",
+    "feature_set_token": "9c0157dcefd18d27592bd75def6f141a2d5331d2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1125,6 +1125,9 @@
         "payments_forward_with_enabled": {
             "value": false
         },
+        "payments_half_cover_notices_enabled": {
+            "value": false
+        },
         "payments_interest_enabled": {
             "value": false
         },
@@ -1701,6 +1704,9 @@
         "responsive_web_grok_enable_deepersearch": {
             "value": true
         },
+        "responsive_web_grok_enable_video_gen_on_image_preview": {
+            "value": false
+        },
         "responsive_web_grok_fade_in_animation_v2_enabled": {
             "value": true
         },
@@ -2087,6 +2093,9 @@
         },
         "responsive_web_profile_about_enabled": {
             "value": false
+        },
+        "responsive_web_profile_about_pilot": {
+            "value": []
         },
         "responsive_web_profile_redirect_enabled": {
             "value": false
@@ -3829,9 +3838,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_grok_enable_video_gen_on_image_preview": {
-            "value": false
         }
     },
     "debug": {
@@ -7576,7 +7582,8 @@
         },
         "payments_half_cover_notices_enabled": {
             "name": "payments_half_cover_notices_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_contacts_institutions_enabled": {
             "name": "payments_contacts_institutions_enabled",
@@ -9350,6 +9357,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_grok_enable_video_gen_on_image_preview": {
+            "name": "responsive_web_grok_enable_video_gen_on_image_preview",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -9735,6 +9747,11 @@
             "name": "responsive_web_profile_about_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_profile_about_pilot": {
+            "name": "responsive_web_profile_about_pilot",
+            "type": "object",
+            "defaultValue": []
         },
         "responsive_web_profile_redirect_enabled": {
             "name": "responsive_web_profile_redirect_enabled",
@@ -10916,10 +10933,6 @@
         },
         "rweb_xchat_lazy_starter": {
             "name": "rweb_xchat_lazy_starter",
-            "type": "string"
-        },
-        "rweb_xchat_profile_redirect_enabled": {
-            "name": "rweb_xchat_profile_redirect_enabled",
             "type": "string"
         },
         "rweb_xp_forwarded_for_enabled": {
@@ -12297,6 +12310,14 @@
             "name": "subscriptions_premium_hub_x_lite_alpha_premium_enabled",
             "type": "string"
         },
+        "subscriptions_premium_hub_handles_card_enabled": {
+            "name": "subscriptions_premium_hub_handles_card_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_handles_url": {
+            "name": "subscriptions_premium_hub_handles_url",
+            "type": "string"
+        },
         "subscriptions_premium_module_enabled": {
             "name": "subscriptions_premium_module_enabled",
             "type": "boolean",
@@ -12963,6 +12984,14 @@
             "name": "syscache_syscache_pb_sidebar_handles_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "syscache_outage_banner_enabled": {
+            "name": "syscache_outage_banner_enabled",
+            "type": "string"
+        },
+        "syscache_web_view_v3_reload_enabled": {
+            "name": "syscache_web_view_v3_reload_enabled",
+            "type": "string"
         },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
