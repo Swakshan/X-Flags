@@ -69,7 +69,7 @@ def getAPKMCode(app: Application):
     
 def getAPKMSlug(app: Application):
     if app == Application.X:
-        return "x-formerly-twitter"
+        return "x"
 
     if app == Application.GROK:
         return "grok-ai-assistant"
