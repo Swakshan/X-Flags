@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "dd3db1ca630837943cb7e4b21270161ae97f9d6b",
+    "feature_set_token": "49770654dafd24bb07232f99e9743bedd83c9002",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2714,6 +2714,9 @@
         "subscriptions_feature_premium_jobs": {
             "value": true
         },
+        "subscriptions_features_premium_syscache_write": {
+            "value": false
+        },
         "subscriptions_features_syscache_read": {
             "value": true
         },
@@ -3061,6 +3064,9 @@
         },
         "syscache_entrypoint_vo_portal_url": {
             "value": "https://handles.x.com"
+        },
+        "syscache_handle_share_banner_enabled": {
+            "value": false
         },
         "syscache_syscache_pb_sidebar_handles_enabled": {
             "value": false
@@ -11416,7 +11422,8 @@
         },
         "subscriptions_features_premium_syscache_write": {
             "name": "subscriptions_features_premium_syscache_write",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
@@ -12557,7 +12564,8 @@
         },
         "syscache_handle_share_banner_enabled": {
             "name": "syscache_handle_share_banner_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
