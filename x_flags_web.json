@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "854035f6905793baab658eacac7c20e5a168035f",
+    "feature_set_token": "dd3db1ca630837943cb7e4b21270161ae97f9d6b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2440,6 +2440,9 @@
             "value": ""
         },
         "rweb_xchat_debug_enabled": {
+            "value": false
+        },
+        "rweb_xchat_lazy_starter": {
             "value": false
         },
         "rweb_xchat_logs": {
@@ -10513,7 +10516,8 @@
         },
         "rweb_xchat_lazy_starter": {
             "name": "rweb_xchat_lazy_starter",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
@@ -12549,6 +12553,10 @@
         },
         "syscache_web_view_v3_reload_enabled": {
             "name": "syscache_web_view_v3_reload_enabled",
+            "type": "string"
+        },
+        "syscache_handle_share_banner_enabled": {
+            "name": "syscache_handle_share_banner_enabled",
             "type": "string"
         },
         "system_theme_toggle_enabled": {
