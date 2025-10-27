@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0ce7570564678f93fab3dcb08b18a0c70719c076",
+    "feature_set_token": "854035f6905793baab658eacac7c20e5a168035f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2163,6 +2163,9 @@
         "responsive_web_user_badge_education_get_verified_button_enabled": {
             "value": true
         },
+        "responsive_web_user_spectral_key_enabled": {
+            "value": false
+        },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
             "value": 3000.0
         },
@@ -3595,9 +3598,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_user_spectral_key_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -6464,10 +6464,7 @@
         "ios_no_ad_dropping_17457": {
             "name": "ios_no_ad_dropping_17457",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "ios_premium_paywall_preloaded_webview_enabled": {
             "name": "ios_premium_paywall_preloaded_webview_enabled",
@@ -9807,6 +9804,11 @@
             "name": "responsive_web_use_app_prompt_copy_variant",
             "type": "string",
             "defaultValue": "prompt_better"
+        },
+        "responsive_web_user_spectral_key_enabled": {
+            "name": "responsive_web_user_spectral_key_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_user_badge_education_redesign_enabled": {
             "name": "responsive_web_user_badge_education_redesign_enabled",
