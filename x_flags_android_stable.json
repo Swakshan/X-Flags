@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "cc643f88fd4bad4acf7f74235e5d25b35f8437f6",
+        "feature_set_token": "63a8a6c1f58c7e24650192e5784a4f891e8c8920",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -391,6 +391,9 @@
                 "value": "utm_source=x"
             },
             "android_ad_formats_log_zero_height_impression_errors": {
+                "value": false
+            },
+            "android_ad_formats_media_component_render_overlay_enabled": {
                 "value": false
             },
             "android_ad_formats_skip_zero_height_impressions": {
@@ -3654,6 +3657,9 @@
             "payments_tracing_reports_enabled": {
                 "value": false
             },
+            "payments_transfer_link_enabled": {
+                "value": false
+            },
             "payments_wires_enabled": {
                 "value": false
             },
@@ -5236,19 +5242,22 @@
                 "value": false
             },
             "xchat_allow_legacy_protocol": {
+                "value": true
+            },
+            "xchat_allow_profile_dm": {
                 "value": false
             },
             "xchat_android_screenshot_detection_enabled": {
                 "value": false
-            },
-            "xchat_catch_coroutine_exceptions": {
-                "value": true
             },
             "xchat_continue_previous_inbox_pagination": {
                 "value": false
             },
             "xchat_conversation_event_limit": {
                 "value": 200.0
+            },
+            "xchat_create_ckey_canxchatdm": {
+                "value": false
             },
             "xchat_enable_av": {
                 "value": false
@@ -5308,6 +5317,12 @@
                 "value": 500.0
             },
             "xchat_screenshot_prevention_enabled": {
+                "value": false
+            },
+            "xchat_share_post": {
+                "value": false
+            },
+            "xchat_show_safety_number_ui": {
                 "value": false
             },
             "xchat_throttle_badge_counts": {
@@ -5581,7 +5596,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "ec90ff6d392bf3bca8c745c235164199a03dd3e5",
-        "experiments": "ec90ff6d392bf3bca8c745c235164199a03dd3e5"
+        "feature_switches": "620c1b653a1090f51411b8629645740080621a51",
+        "experiments": "620c1b653a1090f51411b8629645740080621a51"
     }
 }
