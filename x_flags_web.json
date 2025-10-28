@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "49770654dafd24bb07232f99e9743bedd83c9002",
+    "feature_set_token": "270f8715d98b124d0d314c85daa977cded077401",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2442,9 +2442,6 @@
         "rweb_xchat_debug_enabled": {
             "value": false
         },
-        "rweb_xchat_lazy_starter": {
-            "value": false
-        },
         "rweb_xchat_logs": {
             "value": false
         },
@@ -3607,6 +3604,12 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "rweb_xchat_drawer_enabled": {
+            "value": false
+        },
+        "rweb_xchat_share_sheet_enabled": {
+            "value": false
         }
     },
     "debug": {
@@ -10522,8 +10525,7 @@
         },
         "rweb_xchat_lazy_starter": {
             "name": "rweb_xchat_lazy_starter",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
