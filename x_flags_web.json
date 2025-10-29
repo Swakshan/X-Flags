@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "270f8715d98b124d0d314c85daa977cded077401",
+    "feature_set_token": "d17dc53c60981a47e7baf6454eda5498cb7a682f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2442,6 +2442,9 @@
         "rweb_xchat_debug_enabled": {
             "value": false
         },
+        "rweb_xchat_drawer_enabled": {
+            "value": false
+        },
         "rweb_xchat_logs": {
             "value": false
         },
@@ -2450,6 +2453,9 @@
         },
         "rweb_xchat_old_dms_inbox_item": {
             "value": true
+        },
+        "rweb_xchat_share_sheet_enabled": {
+            "value": false
         },
         "rweb_xp_forwarded_for_enabled": {
             "value": false
@@ -3063,7 +3069,7 @@
             "value": "https://handles.x.com"
         },
         "syscache_handle_share_banner_enabled": {
-            "value": false
+            "value": true
         },
         "syscache_syscache_pb_sidebar_handles_enabled": {
             "value": false
@@ -3604,12 +3610,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "rweb_xchat_drawer_enabled": {
-            "value": false
-        },
-        "rweb_xchat_share_sheet_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -7370,6 +7370,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "post_filtering_feature_premium_plus_17771": {
+            "name": "post_filtering_feature_premium_plus_17771",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "post_filtering"
+            ]
+        },
         "premium_business_fourth_card_entry_point_17715": {
             "name": "premium_business_fourth_card_entry_point_17715",
             "type": "experiment",
@@ -10527,6 +10535,16 @@
             "name": "rweb_xchat_lazy_starter",
             "type": "string"
         },
+        "rweb_xchat_drawer_enabled": {
+            "name": "rweb_xchat_drawer_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_xchat_share_sheet_enabled": {
+            "name": "rweb_xchat_share_sheet_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
             "type": "boolean",
@@ -12567,7 +12585,7 @@
         "syscache_handle_share_banner_enabled": {
             "name": "syscache_handle_share_banner_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
@@ -14606,6 +14624,14 @@
         },
         "xchat_allow_profile_dm": {
             "name": "xchat_allow_profile_dm",
+            "type": "string"
+        },
+        "xchat_inbox_conversation_rotate_keys": {
+            "name": "xchat_inbox_conversation_rotate_keys",
+            "type": "string"
+        },
+        "xchat_use_popular_convos": {
+            "name": "xchat_use_popular_convos",
             "type": "string"
         },
         "xprofile_editing_enabled": {
