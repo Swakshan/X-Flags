@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d17dc53c60981a47e7baf6454eda5498cb7a682f",
+    "feature_set_token": "d9291e187873f10febc0521e830ba157c7136ba0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2718,7 +2718,7 @@
             "value": true
         },
         "subscriptions_features_premium_syscache_write": {
-            "value": false
+            "value": true
         },
         "subscriptions_features_syscache_read": {
             "value": true
@@ -3057,7 +3057,7 @@
             "value": true
         },
         "syscache_entrypoint_settings_enabled": {
-            "value": false
+            "value": true
         },
         "syscache_entrypoint_vo_portal_basic_users_enabled": {
             "value": true
@@ -11443,7 +11443,7 @@
         "subscriptions_features_premium_syscache_write": {
             "name": "subscriptions_features_premium_syscache_write",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
@@ -12516,7 +12516,7 @@
         "syscache_entrypoint_settings_enabled": {
             "name": "syscache_entrypoint_settings_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "syscache_theme_toggle_enabled": {
             "name": "syscache_theme_toggle_enabled",
@@ -14632,6 +14632,10 @@
         },
         "xchat_use_popular_convos": {
             "name": "xchat_use_popular_convos",
+            "type": "string"
+        },
+        "xchat_hybrid_pull_wait_for_keypair_before_fetching": {
+            "name": "xchat_hybrid_pull_wait_for_keypair_before_fetching",
             "type": "string"
         },
         "xprofile_editing_enabled": {
