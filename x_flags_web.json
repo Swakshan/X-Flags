@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d9291e187873f10febc0521e830ba157c7136ba0",
+    "feature_set_token": "735870a7595cdcc8e98a9889dcf21d79ef070144",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2729,6 +2729,9 @@
         "subscriptions_gifting_help_url": {
             "value": "https://x.com/messages/compose?recipient_id=1399766153053061121"
         },
+        "subscriptions_gifting_premium_intervals_enabled": {
+            "value": true
+        },
         "subscriptions_gifting_premium_intro_copy_enabled": {
             "value": false
         },
@@ -3503,6 +3506,9 @@
         "xchat_catch_coroutine_exceptions": {
             "value": true
         },
+        "xchat_continue_previous_inbox_pagination": {
+            "value": false
+        },
         "xchat_conversation_event_limit": {
             "value": 200
         },
@@ -3542,6 +3548,9 @@
         "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
             "value": -1
         },
+        "xchat_hybrid_pull_wait_for_keypair_before_fetching": {
+            "value": false
+        },
         "xchat_inbox_conversation_event_limit": {
             "value": 5
         },
@@ -3556,6 +3565,9 @@
         },
         "xchat_inbox_conversation_local_pagination_page_size": {
             "value": 20
+        },
+        "xchat_inbox_conversation_rotate_keys": {
+            "value": false
         },
         "xchat_local_pagination_page_size": {
             "value": 50
@@ -3581,7 +3593,16 @@
         "xchat_screenshot_prevention_enabled": {
             "value": false
         },
+        "xchat_show_safety_number_ui": {
+            "value": false
+        },
         "xchat_throttle_badge_counts": {
+            "value": false
+        },
+        "xchat_use_info_items_for_sorting": {
+            "value": false
+        },
+        "xchat_use_popular_convos": {
             "value": false
         },
         "xchat_user_event_limit": {
@@ -11445,6 +11466,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "subscriptions_features_premium_real_syscache_read": {
+            "name": "subscriptions_features_premium_real_syscache_read",
+            "type": "string"
+        },
+        "subscriptions_features_premium_real_syscache_write": {
+            "name": "subscriptions_features_premium_real_syscache_write",
+            "type": "string"
+        },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
             "type": "boolean",
@@ -11467,6 +11496,11 @@
             "name": "subscriptions_gifting_premium_intro_copy_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_gifting_premium_intervals_enabled": {
+            "name": "subscriptions_gifting_premium_intervals_enabled",
+            "type": "boolean",
+            "defaultValue": true
         },
         "subscriptions_inapp_grok": {
             "name": "subscriptions_inapp_grok",
@@ -14604,7 +14638,8 @@
         },
         "xchat_continue_previous_inbox_pagination": {
             "name": "xchat_continue_previous_inbox_pagination",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_share_post": {
             "name": "xchat_share_post",
@@ -14612,11 +14647,13 @@
         },
         "xchat_show_safety_number_ui": {
             "name": "xchat_show_safety_number_ui",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_use_info_items_for_sorting": {
             "name": "xchat_use_info_items_for_sorting",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_create_ckey_canxchatdm": {
             "name": "xchat_create_ckey_canxchatdm",
@@ -14628,15 +14665,18 @@
         },
         "xchat_inbox_conversation_rotate_keys": {
             "name": "xchat_inbox_conversation_rotate_keys",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_use_popular_convos": {
             "name": "xchat_use_popular_convos",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_hybrid_pull_wait_for_keypair_before_fetching": {
             "name": "xchat_hybrid_pull_wait_for_keypair_before_fetching",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
