@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "735870a7595cdcc8e98a9889dcf21d79ef070144",
+    "feature_set_token": "1449274e6510f5a4ce634b67d43ca23baea86e79",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1223,6 +1223,12 @@
         },
         "responsive_web_account_access_language_lo_splash_sidebar": {
             "value": "control"
+        },
+        "responsive_web_ad_formats_hide_vanity_for_business_account": {
+            "value": false
+        },
+        "responsive_web_ad_formats_media_overlay_enabled": {
+            "value": false
         },
         "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled": {
             "value": false
@@ -7843,6 +7849,16 @@
             "type": "string",
             "defaultValue": "control"
         },
+        "responsive_web_ad_formats_media_overlay_enabled": {
+            "name": "responsive_web_ad_formats_media_overlay_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_ad_formats_hide_vanity_for_business_account": {
+            "name": "responsive_web_ad_formats_hide_vanity_for_business_account",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
             "type": "boolean",
@@ -13614,6 +13630,14 @@
         },
         "unified_cards_component_reminder_enabled": {
             "name": "unified_cards_component_reminder_enabled",
+            "type": "string"
+        },
+        "unified_cards_clip_long_media_promoted_content_enabled": {
+            "name": "unified_cards_clip_long_media_promoted_content_enabled",
+            "type": "string"
+        },
+        "unified_cards_clip_long_media_aspect_ratio": {
+            "name": "unified_cards_clip_long_media_aspect_ratio",
             "type": "string"
         },
         "unified_cards_collection_ads_convert_to_image_website_card": {
