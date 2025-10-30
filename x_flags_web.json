@@ -3519,7 +3519,7 @@
             "value": 200
         },
         "xchat_conversation_message_search_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_emit_while_pulling": {
             "value": true
@@ -3543,7 +3543,7 @@
             "value": false
         },
         "xchat_enable_media_conv_info": {
-            "value": false
+            "value": true
         },
         "xchat_enable_message_requests": {
             "value": false
@@ -3597,7 +3597,7 @@
             "value": 500
         },
         "xchat_screenshot_prevention_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_show_safety_number_ui": {
             "value": false
@@ -7378,6 +7378,10 @@
         },
         "payments_chat_support_for_txns_enabled": {
             "name": "payments_chat_support_for_txns_enabled",
+            "type": "string"
+        },
+        "payments_add_security_key_enabled": {
+            "name": "payments_add_security_key_enabled",
             "type": "string"
         },
         "payments_tracing_zipkin_enabled": {
@@ -14503,7 +14507,7 @@
         "xchat_screenshot_prevention_enabled": {
             "name": "xchat_screenshot_prevention_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_pull_events_in_batch": {
             "name": "xchat_pull_events_in_batch",
@@ -14580,7 +14584,7 @@
         "xchat_enable_media_conv_info": {
             "name": "xchat_enable_media_conv_info",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_enable_bottom_typing_indicator": {
             "name": "xchat_enable_bottom_typing_indicator",
@@ -14628,7 +14632,7 @@
         "xchat_conversation_message_search_enabled": {
             "name": "xchat_conversation_message_search_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_inbox_conversation_hydrate_users": {
             "name": "xchat_inbox_conversation_hydrate_users",
