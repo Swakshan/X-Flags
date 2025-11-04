@@ -3631,12 +3631,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "payments_qr_onboarding_enabled": {
-            "value": false
-        },
-        "payments_qr_onboarding_mobile_link_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -7228,8 +7222,7 @@
         },
         "payments_qr_onboarding_enabled": {
             "name": "payments_qr_onboarding_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_pin_login_enabled": {
             "name": "payments_pin_login_enabled",
@@ -7275,8 +7268,7 @@
         },
         "payments_qr_onboarding_mobile_link_enabled": {
             "name": "payments_qr_onboarding_mobile_link_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_settings_sections_enabled": {
             "name": "payments_settings_sections_enabled",
@@ -12640,6 +12632,10 @@
             "name": "syscache_handle_share_banner_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "syscache_request_pre_actions_enabled": {
+            "name": "syscache_request_pre_actions_enabled",
+            "type": "string"
         },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
