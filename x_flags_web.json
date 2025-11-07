@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "cfd048f566c91a1bd93380505dc832051339b64c",
+    "feature_set_token": "1c4092ef68629d8eba5952f6d664defb7af841a4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1222,7 +1222,7 @@
             "value": true
         },
         "responsive_web_ad_formats_media_overlay_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled": {
             "value": false
@@ -3631,6 +3631,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "oauth_trusted_developer_badge_enabled": {
+            "value": false
         }
     },
     "debug": {
@@ -7220,10 +7223,6 @@
             "name": "payments_qr_code_enabled",
             "type": "string"
         },
-        "payments_qr_onboarding_enabled": {
-            "name": "payments_qr_onboarding_enabled",
-            "type": "string"
-        },
         "payments_pin_login_enabled": {
             "name": "payments_pin_login_enabled",
             "type": "string"
@@ -7264,10 +7263,6 @@
         },
         "payments_settings_notifications_enabled": {
             "name": "payments_settings_notifications_enabled",
-            "type": "string"
-        },
-        "payments_qr_onboarding_mobile_link_enabled": {
-            "name": "payments_qr_onboarding_mobile_link_enabled",
             "type": "string"
         },
         "payments_settings_sections_enabled": {
@@ -7848,7 +7843,7 @@
         "responsive_web_ad_formats_media_overlay_enabled": {
             "name": "responsive_web_ad_formats_media_overlay_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_ad_formats_hide_vanity_for_business_account": {
             "name": "responsive_web_ad_formats_hide_vanity_for_business_account",
@@ -14732,6 +14727,10 @@
         },
         "xchat_unified_tab_min_snowflake_user_id": {
             "name": "xchat_unified_tab_min_snowflake_user_id",
+            "type": "string"
+        },
+        "xchat_fetch_legacy_group_details": {
+            "name": "xchat_fetch_legacy_group_details",
             "type": "string"
         },
         "xprofile_editing_enabled": {
