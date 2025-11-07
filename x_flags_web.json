@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "1c4092ef68629d8eba5952f6d664defb7af841a4",
+    "feature_set_token": "620adc2b3da41af963d804f13b147a417f0a1e49",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -984,6 +984,9 @@
         "netzdg_in_spaces_enabled": {
             "value": false
         },
+        "oauth_trusted_developer_badge_enabled": {
+            "value": false
+        },
         "ocf_2fa_enrollment_bouncer_enabled": {
             "value": true
         },
@@ -1047,9 +1050,6 @@
         "payments_1password_history_fix_enabled": {
             "value": true
         },
-        "payments_account_details_enabled": {
-            "value": false
-        },
         "payments_automated_direct_deposits_enabled": {
             "value": false
         },
@@ -1063,9 +1063,6 @@
             "value": false
         },
         "payments_cheques_deposits_enabled": {
-            "value": false
-        },
-        "payments_cheques_enabled": {
             "value": false
         },
         "payments_crb_iframe_delay_msecs": {
@@ -1086,12 +1083,6 @@
         "payments_passkey_onboarding_enabled": {
             "value": false
         },
-        "payments_pin_enabled": {
-            "value": false
-        },
-        "payments_settings_documents_enabled": {
-            "value": false
-        },
         "payments_tasks_carousel_enabled": {
             "value": false
         },
@@ -1102,9 +1093,6 @@
             "value": false
         },
         "payments_transfer_methods_enabled": {
-            "value": false
-        },
-        "payments_wires_enabled": {
             "value": false
         },
         "premium_content_api_read_enabled": {
@@ -1288,6 +1276,9 @@
             "value": false
         },
         "responsive_web_birdwatch_home_page_enabled": {
+            "value": false
+        },
+        "responsive_web_birdwatch_live_note_enabled": {
             "value": false
         },
         "responsive_web_birdwatch_match_page_enabled": {
@@ -3507,7 +3498,7 @@
             "value": true
         },
         "xchat_continue_previous_inbox_pagination": {
-            "value": false
+            "value": true
         },
         "xchat_conversation_event_limit": {
             "value": 200
@@ -3631,9 +3622,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "oauth_trusted_developer_badge_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -7069,6 +7057,11 @@
                 "top"
             ]
         },
+        "oauth_trusted_developer_badge_enabled": {
+            "name": "oauth_trusted_developer_badge_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "ocf_2fa_enrollment_bouncer_enabled": {
             "name": "ocf_2fa_enrollment_bouncer_enabled",
             "type": "boolean",
@@ -7194,8 +7187,7 @@
         },
         "payments_pin_enabled": {
             "name": "payments_pin_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_interest_enabled": {
             "name": "payments_interest_enabled",
@@ -7203,8 +7195,7 @@
         },
         "payments_account_details_enabled": {
             "name": "payments_account_details_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_cards_as_payment_method_enabled": {
             "name": "payments_cards_as_payment_method_enabled",
@@ -7212,8 +7203,7 @@
         },
         "payments_settings_documents_enabled": {
             "name": "payments_settings_documents_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_pin_link_payment_methods_enabled": {
             "name": "payments_pin_link_payment_methods_enabled",
@@ -7279,13 +7269,11 @@
         },
         "payments_wires_enabled": {
             "name": "payments_wires_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_cheques_enabled": {
             "name": "payments_cheques_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_withdraw_wires_enabled": {
             "name": "payments_withdraw_wires_enabled",
@@ -8100,7 +8088,8 @@
         },
         "responsive_web_birdwatch_live_note_enabled": {
             "name": "responsive_web_birdwatch_live_note_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -13618,6 +13607,14 @@
             "name": "unified_cards_preview_skip_details_disabled_budget_aware_experiment_id",
             "type": "string"
         },
+        "unified_cards_preview_skip_details_disabled_for_app_store_ads": {
+            "name": "unified_cards_preview_skip_details_disabled_for_app_store_ads",
+            "type": "string"
+        },
+        "unified_cards_preview_skip_details_disabled_for_app_store_ads_budget_aware_experiment_id": {
+            "name": "unified_cards_preview_skip_details_disabled_for_app_store_ads_budget_aware_experiment_id",
+            "type": "string"
+        },
         "unified_cards_always_skip_details_for_promoted_content": {
             "name": "unified_cards_always_skip_details_for_promoted_content",
             "type": "string"
@@ -14670,7 +14667,7 @@
         "xchat_continue_previous_inbox_pagination": {
             "name": "xchat_continue_previous_inbox_pagination",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_share_post": {
             "name": "xchat_share_post",
