@@ -1708,7 +1708,7 @@
             "value": true
         },
         "responsive_web_grok_user_active_seconds_enable": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_user_seconds_debug": {
             "value": false
@@ -3622,6 +3622,27 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "xchat_allow_profile_dm": {
+            "value": false
+        },
+        "xchat_fetch_legacy_group_details": {
+            "value": false
+        },
+        "xchat_quick_reply_enabled": {
+            "value": true
+        },
+        "xchat_search_frequency_weight": {
+            "value": 0.6
+        },
+        "xchat_search_recency_weight": {
+            "value": 0.2
+        },
+        "xchat_search_repetition_weight": {
+            "value": 0.2
+        },
+        "xchat_share_post": {
+            "value": false
         }
     },
     "debug": {
@@ -8549,7 +8570,7 @@
         "responsive_web_grok_user_active_seconds_enable": {
             "name": "responsive_web_grok_user_active_seconds_enable",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_grok_post_understanding_button_fetch_trends_enabled": {
             "name": "responsive_web_grok_post_understanding_button_fetch_trends_enabled",
@@ -10522,10 +10543,6 @@
             "name": "rweb_video_tagging_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "rweb_xchat_enabled": {
-            "name": "rweb_xchat_enabled",
-            "type": "string"
         },
         "rweb_xchat_debug_enabled": {
             "name": "rweb_xchat_debug_enabled",
@@ -14501,8 +14518,7 @@
         },
         "xchat_process_events_in_batch": {
             "name": "xchat_process_events_in_batch",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "xchat_screenshot_prevention_enabled": {
             "name": "xchat_screenshot_prevention_enabled",
@@ -14511,8 +14527,7 @@
         },
         "xchat_pull_events_in_batch": {
             "name": "xchat_pull_events_in_batch",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "xchat_throttle_badge_counts": {
             "name": "xchat_throttle_badge_counts",
@@ -14586,10 +14601,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "xchat_enable_bottom_typing_indicator": {
-            "name": "xchat_enable_bottom_typing_indicator",
-            "type": "string"
-        },
         "xchat_enable_local_pagination": {
             "name": "xchat_enable_local_pagination",
             "type": "boolean",
@@ -14602,8 +14613,7 @@
         },
         "xchat_catch_coroutine_exceptions": {
             "name": "xchat_catch_coroutine_exceptions",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "xchat_enable_set_nickname": {
             "name": "xchat_enable_set_nickname",
@@ -14626,8 +14636,7 @@
         },
         "xchat_allow_legacy_protocol": {
             "name": "xchat_allow_legacy_protocol",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "xchat_conversation_message_search_enabled": {
             "name": "xchat_conversation_message_search_enabled",
@@ -14671,7 +14680,8 @@
         },
         "xchat_share_post": {
             "name": "xchat_share_post",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_show_safety_number_ui": {
             "name": "xchat_show_safety_number_ui",
@@ -14689,7 +14699,8 @@
         },
         "xchat_allow_profile_dm": {
             "name": "xchat_allow_profile_dm",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_inbox_conversation_rotate_keys": {
             "name": "xchat_inbox_conversation_rotate_keys",
@@ -14708,19 +14719,23 @@
         },
         "xchat_quick_reply_enabled": {
             "name": "xchat_quick_reply_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "xchat_search_frequency_weight": {
             "name": "xchat_search_frequency_weight",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 0.6
         },
         "xchat_search_recency_weight": {
             "name": "xchat_search_recency_weight",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 0.2
         },
         "xchat_search_repetition_weight": {
             "name": "xchat_search_repetition_weight",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 0.2
         },
         "xchat_unified_tab_min_snowflake_user_id": {
             "name": "xchat_unified_tab_min_snowflake_user_id",
@@ -14728,6 +14743,15 @@
         },
         "xchat_fetch_legacy_group_details": {
             "name": "xchat_fetch_legacy_group_details",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_auto_upgrade_legacy_groups": {
+            "name": "xchat_auto_upgrade_legacy_groups",
+            "type": "string"
+        },
+        "xchat_allow_legacy_group_member_add": {
+            "name": "xchat_allow_legacy_group_member_add",
             "type": "string"
         },
         "xprofile_editing_enabled": {
