@@ -985,7 +985,7 @@
             "value": false
         },
         "oauth_trusted_developer_badge_enabled": {
-            "value": false
+            "value": true
         },
         "ocf_2fa_enrollment_bouncer_enabled": {
             "value": true
@@ -3489,7 +3489,7 @@
             "value": true
         },
         "xchat_allow_legacy_message_requests": {
-            "value": false
+            "value": true
         },
         "xchat_allow_legacy_protocol": {
             "value": true
@@ -7081,7 +7081,7 @@
         "oauth_trusted_developer_badge_enabled": {
             "name": "oauth_trusted_developer_badge_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "ocf_2fa_enrollment_bouncer_enabled": {
             "name": "ocf_2fa_enrollment_bouncer_enabled",
@@ -12646,6 +12646,10 @@
             "name": "syscache_syscache_request_pre_actions_in_webview_enabled",
             "type": "string"
         },
+        "syscache_show_live_drops_enabled": {
+            "name": "syscache_show_live_drops_enabled",
+            "type": "string"
+        },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
             "type": "boolean",
@@ -14661,7 +14665,7 @@
         "xchat_allow_legacy_message_requests": {
             "name": "xchat_allow_legacy_message_requests",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_allow_legacy_media_uploads": {
             "name": "xchat_allow_legacy_media_uploads",
