@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e0bf107ffdd8efcec853e1faf2b97c63f9571330",
+    "feature_set_token": "6603d2bab240b066602a9a7e831ac5801155d88a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1075,9 +1075,6 @@
             "value": false
         },
         "payments_half_cover_notices_enabled": {
-            "value": false
-        },
-        "payments_lock_unlock_individual_cards_enabled": {
             "value": false
         },
         "payments_passkey_onboarding_enabled": {
@@ -2433,9 +2430,6 @@
         "rweb_xchat_debug_enabled": {
             "value": false
         },
-        "rweb_xchat_drawer_enabled": {
-            "value": false
-        },
         "rweb_xchat_logs": {
             "value": false
         },
@@ -2444,9 +2438,6 @@
         },
         "rweb_xchat_old_dms_inbox_item": {
             "value": true
-        },
-        "rweb_xchat_share_sheet_enabled": {
-            "value": false
         },
         "rweb_xp_forwarded_for_enabled": {
             "value": false
@@ -3604,6 +3595,9 @@
         },
         "xchat_throttle_badge_counts": {
             "value": false
+        },
+        "xchat_unified_tab_min_snowflake_user_id": {
+            "value": ""
         },
         "xchat_use_info_items_for_sorting": {
             "value": false
@@ -7343,8 +7337,7 @@
         },
         "payments_lock_unlock_individual_cards_enabled": {
             "name": "payments_lock_unlock_individual_cards_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_customer_onboarding_steps_enabled": {
             "name": "payments_customer_onboarding_steps_enabled",
@@ -10569,13 +10562,11 @@
         },
         "rweb_xchat_drawer_enabled": {
             "name": "rweb_xchat_drawer_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_xchat_share_sheet_enabled": {
             "name": "rweb_xchat_share_sheet_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
@@ -14739,7 +14730,8 @@
         },
         "xchat_unified_tab_min_snowflake_user_id": {
             "name": "xchat_unified_tab_min_snowflake_user_id",
-            "type": "string"
+            "type": "string",
+            "defaultValue": ""
         },
         "xchat_fetch_legacy_group_details": {
             "name": "xchat_fetch_legacy_group_details",
