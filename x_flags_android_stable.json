@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "364ff50755e598b408c09becf5aaa8c8c8ab3c94",
+        "feature_set_token": "f4c16ea0c37bb0444efd7a0383ee16a847f64bd5",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -397,7 +397,7 @@
                 "value": false
             },
             "android_ad_formats_media_component_render_overlay_enabled": {
-                "value": false
+                "value": true
             },
             "android_ad_formats_skip_zero_height_impressions": {
                 "value": true
@@ -4901,6 +4901,12 @@
             "unified_cards_chrome_vanity_url_label_enabled": {
                 "value": true
             },
+            "unified_cards_clip_long_media_aspect_ratio": {
+                "value": 0.8
+            },
+            "unified_cards_clip_long_media_promoted_content_enabled": {
+                "value": false
+            },
             "unified_cards_collection_ads_convert_to_image_website_card": {
                 "value": false
             },
@@ -5257,7 +5263,7 @@
                 "value": false
             },
             "xchat_allow_legacy_message_requests": {
-                "value": false
+                "value": true
             },
             "xchat_allow_legacy_protocol": {
                 "value": true
@@ -5269,13 +5275,10 @@
                 "value": false
             },
             "xchat_continue_previous_inbox_pagination": {
-                "value": false
+                "value": true
             },
             "xchat_conversation_event_limit": {
                 "value": 200.0
-            },
-            "xchat_create_ckey_canxchatdm": {
-                "value": true
             },
             "xchat_enable_av": {
                 "value": false
@@ -5295,26 +5298,26 @@
             "xchat_enable_message_requests": {
                 "value": false
             },
+            "xchat_fetch_legacy_group_details": {
+                "value": false
+            },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
                 "value": -1.0
-            },
-            "xchat_hybrid_pull_wait_for_keypair_before_fetching": {
-                "value": false
             },
             "xchat_inbox_conversation_event_limit": {
                 "value": 5.0
             },
             "xchat_inbox_conversation_hydrate_users": {
-                "value": false
+                "value": true
             },
             "xchat_inbox_conversation_limit": {
                 "value": 20.0
             },
             "xchat_inbox_conversation_local_pagination": {
-                "value": false
+                "value": true
             },
             "xchat_inbox_conversation_local_pagination_page_size": {
-                "value": 50.0
+                "value": 20.0
             },
             "xchat_inbox_conversation_rotate_keys": {
                 "value": false
@@ -5331,11 +5334,23 @@
             "xchat_max_users_to_fetch_per_request": {
                 "value": 100.0
             },
+            "xchat_quick_reply_enabled": {
+                "value": true
+            },
             "xchat_sample_observation_queries": {
                 "value": 500.0
             },
             "xchat_screenshot_prevention_enabled": {
                 "value": false
+            },
+            "xchat_search_frequency_weight": {
+                "value": 0.6
+            },
+            "xchat_search_recency_weight": {
+                "value": 0.2
+            },
+            "xchat_search_repetition_weight": {
+                "value": 0.2
             },
             "xchat_share_post": {
                 "value": false
@@ -5345,6 +5360,9 @@
             },
             "xchat_throttle_badge_counts": {
                 "value": false
+            },
+            "xchat_unified_tab_min_snowflake_user_id": {
+                "value": ""
             },
             "xchat_use_info_items_for_sorting": {
                 "value": false
@@ -5620,7 +5638,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "f8398481f8254f024f7e52ff0468ae1bfbc07858",
-        "experiments": "f8398481f8254f024f7e52ff0468ae1bfbc07858"
+        "feature_switches": "f7d142f4cc490ca7bcee2a3b9a1f9c2cdb298c1e",
+        "experiments": "f7d142f4cc490ca7bcee2a3b9a1f9c2cdb298c1e"
     }
 }
