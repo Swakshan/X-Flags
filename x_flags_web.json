@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fd30ca09d05a4f139801eedf34316787d4829f2f",
+    "feature_set_token": "a4782fa007b647ba7d0cdb5c6f22d0182ade40ac",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3519,7 +3519,7 @@
             "value": true
         },
         "xchat_enable_local_pagination": {
-            "value": false
+            "value": true
         },
         "xchat_enable_media_conv_info": {
             "value": true
@@ -10032,10 +10032,7 @@
         "revamped_news_17375": {
             "name": "revamped_news_17375",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "rweb_age_assurance_flow_enabled": {
             "name": "rweb_age_assurance_flow_enabled",
@@ -11957,6 +11954,10 @@
         },
         "subscriptions_premium_hub_handles_url": {
             "name": "subscriptions_premium_hub_handles_url",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_retention_offer_card_enabled": {
+            "name": "subscriptions_premium_hub_retention_offer_card_enabled",
             "type": "string"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
@@ -14595,7 +14596,7 @@
         "xchat_enable_local_pagination": {
             "name": "xchat_enable_local_pagination",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_local_pagination_page_size": {
             "name": "xchat_local_pagination_page_size",
