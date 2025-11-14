@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e611ce808f83581317536fc720791a4a7c8c295c",
+    "feature_set_token": "fe1e3b39097e081b1ec7bccdcb15baf4c29e3fbc",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -985,7 +985,7 @@
             "value": false
         },
         "oauth_trusted_developer_badge_enabled": {
-            "value": true
+            "value": false
         },
         "ocf_2fa_enrollment_bouncer_enabled": {
             "value": true
@@ -3059,6 +3059,9 @@
         "syscache_handle_share_banner_enabled": {
             "value": true
         },
+        "syscache_premium_cancel_flow_warning_enabed": {
+            "value": false
+        },
         "syscache_syscache_pb_sidebar_handles_enabled": {
             "value": false
         },
@@ -3576,6 +3579,9 @@
             "value": 0.2
         },
         "xchat_show_safety_number_ui": {
+            "value": false
+        },
+        "xchat_strip_media_metadata": {
             "value": false
         },
         "xchat_throttle_badge_counts": {
@@ -7054,7 +7060,7 @@
         "oauth_trusted_developer_badge_enabled": {
             "name": "oauth_trusted_developer_badge_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "ocf_2fa_enrollment_bouncer_enabled": {
             "name": "ocf_2fa_enrollment_bouncer_enabled",
@@ -8083,6 +8089,10 @@
             "name": "responsive_web_birdwatch_live_note_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_birdwatch_note_internal_insights_enabled": {
+            "name": "responsive_web_birdwatch_note_internal_insights_enabled",
+            "type": "string"
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -12624,7 +12634,8 @@
         },
         "syscache_premium_cancel_flow_warning_enabed": {
             "name": "syscache_premium_cancel_flow_warning_enabed",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "system_theme_toggle_enabled": {
             "name": "system_theme_toggle_enabled",
@@ -14730,6 +14741,15 @@
             "name": "xchat_allow_legacy_group_member_add",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xchat_strip_media_metadata": {
+            "name": "xchat_strip_media_metadata",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xchat_allow_latest_ckey_failure_for_one_on_one": {
+            "name": "xchat_allow_latest_ckey_failure_for_one_on_one",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
