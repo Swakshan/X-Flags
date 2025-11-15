@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b3128837fa7858ef6b9d5c637f1f86057d30ab7b",
+    "feature_set_token": "69b5156d1e3cea96095d5c2aaad8ad0be7146ebf",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2720,6 +2720,9 @@
         "subscriptions_gifting_premium_intro_copy_enabled": {
             "value": false
         },
+        "subscriptions_gifting_tooltip_enabled": {
+            "value": false
+        },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": false
         },
@@ -3043,6 +3046,9 @@
         },
         "super_follow_web_onboarding_enabled": {
             "value": true
+        },
+        "syscache_business_cancel_flow_warning_enabed": {
+            "value": false
         },
         "syscache_entrypoint_settings_enabled": {
             "value": true
@@ -3488,6 +3494,9 @@
         "x_jetfuel_enable_test_cluster": {
             "value": false
         },
+        "x_jetfuel_use_new_api_url": {
+            "value": true
+        },
         "xchat_allow_legacy_group_member_add": {
             "value": false
         },
@@ -3622,15 +3631,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "subscriptions_gifting_tooltip_enabled": {
-            "value": false
-        },
-        "syscache_business_cancel_flow_warning_enabed": {
-            "value": false
-        },
-        "x_jetfuel_use_new_api_url": {
-            "value": false
         }
     },
     "debug": {
@@ -7068,11 +7068,7 @@
         "news_sidebar_with_fatigue_17488": {
             "name": "news_sidebar_with_fatigue_17488",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "personalized",
-                "top"
-            ]
+            "enumeration_values": []
         },
         "oauth_trusted_developer_badge_enabled": {
             "name": "oauth_trusted_developer_badge_enabled",
@@ -14496,7 +14492,7 @@
         "x_jetfuel_use_new_api_url": {
             "name": "x_jetfuel_use_new_api_url",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_sign_messages": {
             "name": "xchat_sign_messages",
