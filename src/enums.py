@@ -21,9 +21,9 @@ class Source(Enum):
     WEB = "web"
     IOS = "stable_ios"
     APT = "aptoide"
-    APKC = "apkCombo"
-    APKM = "apkMirror"
-    APKP = "apkPure"
+    APKC = "apkcombo"
+    APKM = "apkmirror"
+    APKP = "apkpure"
     UPTO = "uptodown"
     DK= "DontKnow"
 
