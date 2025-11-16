@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v21 : update iphone flag extraction, added back ipad and include version code for iOS"
+VER = "v21.01 : update headers"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -68,7 +68,7 @@ if not isDebug():
     app = Application(app)
     typ = ReleaseType(typ)
     platform = Platform(plt)
-    source = Source(src)
+    source = Source(src.strip())
     data = DATA(vername, down_link, msg_id, source, platform, typ, app,vercode)
     print(f"DATA = {DATA}")
     main(data)
