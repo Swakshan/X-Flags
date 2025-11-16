@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "425aff26f216280b2cb80ca5640dbceb5b57631d",
+        "feature_set_token": "e9782521a703dcb4ebc6cce531487cc93f093f5e",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -281,7 +281,7 @@
                 "value": true
             },
             "ad_formats_immersive_web_card_cta_enabled": {
-                "value": false
+                "value": true
             },
             "ad_formats_ratings_promo_image_and_video_app_card_enabled": {
                 "value": false
@@ -2116,7 +2116,7 @@
                 "value": true
             },
             "grok_ios_edit_photo_post_button_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_enhanced_markdown_enabled": {
                 "value": true
@@ -2189,9 +2189,6 @@
             },
             "grok_ios_photo_uploads_enabled": {
                 "value": false
-            },
-            "grok_ios_post_details_analyze_button_enabled": {
-                "value": true
             },
             "grok_ios_profile_summary_enabled": {
                 "value": true
@@ -2534,6 +2531,15 @@
             },
             "home_timeline_sticky_new_tweets_pill_manual_refresh_duration": {
                 "value": 120.0
+            },
+            "home_timeline_uprank_unseen_tweets_enabled": {
+                "value": false
+            },
+            "home_timeline_uprank_unseen_tweets_list_count_needed": {
+                "value": 0.0
+            },
+            "home_timeline_uprank_unseen_tweets_max_count": {
+                "value": 0.0
             },
             "home_timeline_viewport_aware_cache_clearing": {
                 "value": false
@@ -2950,6 +2956,9 @@
                 "value": false
             },
             "ios_dm_dash_share_sheet_enabled": {
+                "value": false
+            },
+            "ios_dm_dash_top_cursor_enabled": {
                 "value": false
             },
             "ios_double_max_zoom_for_4k_images_enabled": {
@@ -3608,6 +3617,9 @@
             "ios_twitter_text_editor_mentions_color_bugfix": {
                 "value": true
             },
+            "ios_ui_2025_refresh_grouped_action_buttons_enabled": {
+                "value": false
+            },
             "ios_ui_bar_button_item_v2": {
                 "value": true
             },
@@ -3691,6 +3703,12 @@
             },
             "ios_video_transcode_720p_h264_bitrate": {
                 "value": 4500000.0
+            },
+            "ios_video_transcode_bypass_max_output_bitrate": {
+                "value": false
+            },
+            "ios_video_transcode_passthrough_on_transmux": {
+                "value": false
             },
             "ios_video_transcode_should_remove_disabled_tracks": {
                 "value": true
@@ -4197,13 +4215,7 @@
             "media_tab_immersive_v2_additional_haptics_enabled": {
                 "value": false
             },
-            "media_tab_immersive_v2_broadcast_swipes_enabled": {
-                "value": true
-            },
             "media_tab_immersive_v2_enabled": {
-                "value": false
-            },
-            "media_tab_immersive_v2_for_broadcasts_enabled": {
                 "value": false
             },
             "media_tab_initial_segment": {
@@ -4241,6 +4253,9 @@
             },
             "media_tab_vertical_video_tweet_detail_base_width_ratio": {
                 "value": 0.72
+            },
+            "media_upload_4k_enabled": {
+                "value": false
             },
             "media_upload_all_performance_logging_enabled": {
                 "value": false
@@ -4331,6 +4346,9 @@
             },
             "newscamera_tweet_background_fullscreen_consumption_enabled": {
                 "value": true
+            },
+            "newscamera_tweet_background_htl_consumption_enabled": {
+                "value": false
             },
             "newscamera_tweet_background_playback_enabled": {
                 "value": false
@@ -9270,6 +9288,24 @@
             "premium_business_ios_nav_promo_prem_plus_only_enabled": {
                 "value": false
             },
+            "premium_webview_paywall_debug_mode_enabled": {
+                "value": false
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_display_type_gate_fs_name_1": {
+                "value": "Full"
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_display_type_gate_fs_name_2": {
+                "value": "Full"
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_display_type_gate_fs_name_3": {
+                "value": "Full"
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_display_type_gate_fs_name_4": {
+                "value": "Full"
+            },
+            "premium_webview_paywall_subscriptions_journey_paywall_display_type_gate_fs_name_5": {
+                "value": "Full"
+            },
             "premium_webview_paywall_subscriptions_journey_paywall_variant_gate_fs_name_1": {
                 "value": ""
             },
@@ -10063,9 +10099,6 @@
             },
             "subscriptions_upsells_premium_home_nav": {
                 "value": "premium_upsell_upgrade"
-            },
-            "subscriptions_upsells_reply_boost_button_text_variant": {
-                "value": ""
             },
             "subscriptions_upsells_reply_boost_dismiss_for_seconds": {
                 "value": 1209600.0
@@ -10862,7 +10895,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "c603ef07528e69b98de227bf2e2188bbd4a4b2cd",
-        "experiments": "c603ef07528e69b98de227bf2e2188bbd4a4b2cd"
+        "feature_switches": "aa2c27b7f208d7968386321970e3848814753e87",
+        "experiments": "aa2c27b7f208d7968386321970e3848814753e87"
     }
 }
