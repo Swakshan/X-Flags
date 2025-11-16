@@ -13,6 +13,7 @@ A repo that keeps track of feature flags from different builds of 𝕏 (Twitter)
 
 * **iOS**
     - [Stable Flags: iPhone](https://github.com/Swakshan/X-Flags/blob/main/x_flags_ios_stable.json)
+    - [Stable Flags: iPad](https://github.com/Swakshan/X-Flags/blob/main/x_flags_ipad_stable.json)
 
 * **Web**
     - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_web.json)

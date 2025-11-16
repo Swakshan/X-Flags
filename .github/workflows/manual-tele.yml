@@ -19,6 +19,9 @@ on:
       vername_input:
         description: 'Enter the vername'
         required: true
+      vercode_input:
+        description: 'Enter the vercode'
+        required: true
       downLink_input:
         description: 'Enter Download Link'
         required: true
@@ -50,7 +53,7 @@ jobs:
 
     - name: Download & Extract
       run: |
-        python src/main.py ${{ github.event.inputs.appname_input }} ${{ github.event.inputs.platform_input }} ${{ github.event.inputs.source_input }} ${{ github.event.inputs.type_input }} ${{ github.event.inputs.downLink_input }} ${{ github.event.inputs.msg_id_input }} ${{ github.event.inputs.vername_input }} ${{ env.DEBUG }}
+        python src/main.py ${{ github.event.inputs.appname_input }} ${{ github.event.inputs.platform_input }} ${{ github.event.inputs.source_input }} ${{ github.event.inputs.type_input }} ${{ github.event.inputs.downLink_input }} ${{ github.event.inputs.msg_id_input }} ${{ github.event.inputs.vername_input }} ${{ github.event.inputs.vercode_input }} ${{ env.DEBUG }}
         
     - name: Add extracted file to Git
       id: vars

@@ -33,7 +33,7 @@ jobs:
 
     - name: Download & Extract
       run: |
-        python src/main.py ${{ github.event.client_payload.app }} ${{ github.event.client_payload.platform }} ${{ github.event.client_payload.source }}  ${{ github.event.client_payload.type }} ${{ github.event.client_payload.downLink }} ${{ github.event.client_payload.msgId }} ${{ github.event.client_payload.vername }} ${{ env.DEBUG }}
+        python src/main.py ${{ github.event.client_payload.app }} ${{ github.event.client_payload.platform }} ${{ github.event.client_payload.source }}  ${{ github.event.client_payload.type }} ${{ github.event.client_payload.downLink }} ${{ github.event.client_payload.msgId }} ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.vercode }} ${{ env.DEBUG }}
 
     - name: Add extracted file to Git
       id: vars

@@ -35,15 +35,11 @@ def process(data:DATA,flagFileName:str):
             sts = True
 
         elif platform == Platform.IOS:
-            if ".json" in down_link:
-                downloader(url=down_link, filePath=NEW_FILE_NAME, isJson=True)
-                
-            else:
-                downloader(down_link)
-                s = unzipper(platform)
-                
-                if not s:
-                    raise Exception("Error unzipping")
+            downloader(down_link)
+            s = unzipper(platform)
+            
+            if not s:
+                raise Exception("Error unzipping")
             sts = True
 
         elif platform == Platform.ANDROID:

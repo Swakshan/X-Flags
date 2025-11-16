@@ -28,7 +28,11 @@ REPO_NAME = "X-Flags"
 
 
 def getEnv(data):
-    return os.environ.get(data)
+    try:
+        return os.environ.get(data)
+    except Exception as e:
+        print(str(e))
+        return "0"
 
 
 def isDebug():
@@ -36,7 +40,7 @@ def isDebug():
 
 
 def getChannelId():
-    return getEnv("CHANNEL_ID")
+    return getEnv("CHANNEL_ID_TEST") if isDebug() else getEnv("CHANNEL_ID")
 
 
 def getChannelLink():

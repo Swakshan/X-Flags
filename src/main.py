@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v20.1 : update apkm slug"
+VER = "v21 : update iphone flag extraction, added back ipad and include version code for iOS"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -30,13 +30,21 @@ def main(data:DATA):
     
     sts = False
     app:Application = data.app
+    plt:Platform = data.platform
+    
     printCmd(f"processing {app.value}")
     if app == Application.X:
+        if plt == Platform.IOS:
+            # move existing/default ipad flags to old flags
+            shutil.move(flagFileName.replace("ios","ipad"), OLD_FILE_NAME+"_2")
+            
         sts = xProcess(data,flagFileName)
     
     if sts:
         # new flags as default flags
         shutil.copy(NEW_FILE_NAME, flagFileName)
+        if plt == Platform.IOS and app == Application.X:
+            shutil.copy(NEW_FILE_NAME+"_2",flagFileName.replace("ios","ipad"))
         
         printCmd(f"comparing flags")
         compareFlags()
@@ -46,16 +54,6 @@ def main(data:DATA):
 if not isDebug():
     if os.path.exists(DUMMY_FOLDER):
         shutil.rmtree(DUMMY_FOLDER)
-    
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("-a","--app", help="App name - X/Grok")
-    # parser.add_argument("-t","--type", help="Release type - Stable/Beta/Alpha")
-    # parser.add_argument("-p","--platform", help="Platform - Android/iOS/Web")
-    # parser.add_argument("-s","--source", help="Source - Manual/Web/apkMirror")
-    # parser.add_argument("-v","--vername", help="Vername - Web/10.10-beta.1")
-    # parser.add_argument("-d","--downLink", help="Download link")
-    # parser.add_argument("-m","--msgId", help="Telegram message id")
-    # args = parser.parse_args()
     args = sys.argv
     
     app = args[1].lower()
@@ -65,12 +63,13 @@ if not isDebug():
     down_link = args[5]
     msg_id = args[6]
     vername = args[7]
+    vercode = args[8]
 
     app = Application(app)
     typ = ReleaseType(typ)
     platform = Platform(plt)
     source = Source(src)
-    data = DATA(vername, down_link, msg_id, source, platform, typ, app)
+    data = DATA(vername, down_link, msg_id, source, platform, typ, app,vercode)
     print(f"DATA = {DATA}")
     main(data)
     

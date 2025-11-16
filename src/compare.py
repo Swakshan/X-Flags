@@ -2,6 +2,7 @@ from constants import OLD_FILE_NAME,NEW_FILE_NAME,CHANGES_FILE_NAME,MANIFEST_FIL
 from enums import Platform,Application
 from model import DATA
 from basics import writeJson,readJson,printSubCmd
+import os
 
 def compareFlags():
     def getValue(config:dict):
@@ -13,60 +14,74 @@ def compareFlags():
             return config['defaultValue']
         return ""
     
+    def createChangesFile(data:DATA,new_file_name,old_file_name,changes_file_name):
+        old_file = readJson(old_file_name)
+        new_file = readJson(new_file_name)
+        
+        new_flags = {}
+        old_flags = {}
+        new_debug_flags = {}
+        old_debug_flags = {}
+        
+        if data.app == Application.X:
+            if data.platform == Platform.WEB:
+                new_flags = new_file['config']
+                old_flags = old_file['config']
+                
+                new_debug_flags = list(new_file['debug'].keys())
+                old_debug_flags = list(old_file['debug'].keys())
+            else:
+                new_flags = new_file['default']['config']
+                old_flags = old_file['default']['config']
+                if data.platform == Platform.ANDROID:
+                    new_debug_flags = new_file['experiment_names']
+                    old_debug_flags = old_file['experiment_names']
+            
+        
+        old_flags_copy = old_flags.copy()
+        old_debug_flags_copy = old_debug_flags.copy()
+        
+        FLAGS = {'added':{},'updated':0,'removed':0}
+        for flag in new_flags:
+            flag_value = getValue(new_flags[flag])
+            
+            if flag not in old_flags: # If the flag is present in new but not in old.
+                FLAGS['added'][flag] = type(flag_value).__name__
+                
+            else: # If the flag is present in old check if removed or updated.
+                if flag_value != getValue(old_flags[flag]): # If the flag value is updated.
+                    FLAGS['updated']+=1
+                old_flags_copy.pop(flag) # Remove that flag from old flags to calculate removed flags
+        
+        FLAGS['removed'] = len(old_flags_copy)
+        
+        DEBUG_FLAGS = {'added':[],'removed':0}
+        for flag in new_debug_flags:
+            if flag not in old_debug_flags:
+                DEBUG_FLAGS['added'].append(flag)
+            else:
+                old_debug_flags_copy.remove(flag)
+        DEBUG_FLAGS['removed'] = len(old_debug_flags_copy)
+        
+        CHANGES = {'flags':FLAGS,'debug_flags':DEBUG_FLAGS}
+        
+        writeJson(changes_file_name,CHANGES)
+        
     manifest = readJson(MANIFEST_FILE_NAME)
     if not manifest['sts']:
         raise Exception("Status is false so skipping change compare")
     
     data:DATA = DATA.fromJSON(manifest)
     
-    old_file = readJson(OLD_FILE_NAME)
-    new_file = readJson(NEW_FILE_NAME)
-    if data.app == Application.X:
-        if data.platform == Platform.WEB:
-            new_flags = new_file['config']
-            old_flags = old_file['config']
-            
-            new_debug_flags = list(new_file['debug'].keys())
-            old_debug_flags = list(old_file['debug'].keys())
-        else:
-            new_flags = new_file['default']['config']
-            old_flags = old_file['default']['config']
-            
-            new_debug_flags = new_file['experiment_names']
-            old_debug_flags = old_file['experiment_names']
+    createChangesFile(data,NEW_FILE_NAME,OLD_FILE_NAME,CHANGES_FILE_NAME)
+    
+    ipadFileNameExt =  "_2"
+    if os.path.exists(OLD_FILE_NAME+ipadFileNameExt):
+        createChangesFile(data,NEW_FILE_NAME+ipadFileNameExt,OLD_FILE_NAME+ipadFileNameExt,CHANGES_FILE_NAME+ipadFileNameExt)
         
-    
-    old_flags_copy = old_flags.copy()
-    old_debug_flags_copy = old_debug_flags.copy()
-    
-    FLAGS = {'added':{},'updated':0,'removed':0}
-    for flag in new_flags:
-        flag_value = getValue(new_flags[flag])
-        
-        if flag not in old_flags: # If the flag is present in new but not in old.
-            FLAGS['added'][flag] = type(flag_value).__name__
-            
-        else: # If the flag is present in old check if removed or updated.
-            if flag_value != getValue(old_flags[flag]): # If the flag value is updated.
-                FLAGS['updated']+=1
-            old_flags_copy.pop(flag) # Remove that flag from old flags to calculate removed flags
-    
-    FLAGS['removed'] = len(old_flags_copy)
-    
-    DEBUG_FLAGS = {'added':[],'removed':0}
-    for flag in new_debug_flags:
-        if flag not in old_debug_flags:
-            DEBUG_FLAGS['added'].append(flag)
-        else:
-            old_debug_flags_copy.remove(flag)
-    DEBUG_FLAGS['removed'] = len(old_debug_flags_copy)
-    
-    CHANGES = {'flags':FLAGS,'debug_flags':DEBUG_FLAGS}
-    
-    writeJson(CHANGES_FILE_NAME,CHANGES)
 
 
-def commitLinkFormat(flag_data):
+def commitLinkFormat(flag_data,include_added=False):
     def countFormat(count, ns="Flags"):
         if not count:
             return False
@@ -74,6 +89,9 @@ def commitLinkFormat(flag_data):
         f = ns if count > 1 else ns[:-1]
         return f"{count} {f}"
 
+    # include added flags for X ipad
+    new_flag_limit = -1 if include_added else NEW_FLAG_LIMIT
+    
     msg = ""
     for key in flag_data:
         flag_det = flag_data[key]
@@ -82,7 +100,7 @@ def commitLinkFormat(flag_data):
             c = 0
             if func == "added":
                 c = len(flag_det['added'])
-                if c < NEW_FLAG_LIMIT:
+                if c < new_flag_limit :
                     continue
             else:
                 c = flag_det[func]
@@ -94,7 +112,7 @@ def commitLinkFormat(flag_data):
     return msg
 
 
-def flagMessage():
+def flagMessage(data:DATA):
     printSubCmd("forming Telegram flag message")
     SHA = getEnv("GIT_COMMIT_SHA")
     flag_details = readJson(CHANGES_FILE_NAME)
@@ -133,5 +151,13 @@ def flagMessage():
         
     elif not nfC and not dfC:
         rd = f"{rd}\nNo New Flags\n{l}"
-    rd = f"{rd}\n[{commit_link_str}]({commit_link})"
+        
+    if data.platform == Platform.IOS and data.app == Application.X:
+        rd = f"{rd}\n__iPhone__:\n[{commit_link_str}]({commit_link})"
+        
+        flag_details = readJson(CHANGES_FILE_NAME+"_2")
+        commit_link_str = commitLinkFormat(flag_details,True)
+        rd = f"{rd}\n__iPad__:\n[{commit_link_str}]({commit_link})"
+    else:
+        rd = f"{rd}\n[{commit_link_str}]({commit_link})"
     return rd

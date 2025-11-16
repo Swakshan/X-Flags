@@ -9,7 +9,7 @@ from constants import (
 from enums import *
 class DATA:
     def __init__(
-        self, vername, link, msg_id, src, platform, typ, app, isPairip=False
+        self, vername, link, msg_id, src, platform, typ, app, vercode,isPairip=False,
     ) -> None:
         self.vername = vername
         self.link = link
@@ -28,25 +28,8 @@ class DATA:
             self.emoji = "🤖"
         else:
             print("WTF: app name")
-        self.vercode = self.vercodeMaker()
+        self.vercode = vercode
         
-    def vercodeMaker(self):
-        vername = self.vername
-        if self.platform == Platform.ANDROID:
-            vercode = (
-                vername.replace("-alpha.", "20")
-                .replace("-beta.", "10")
-                .replace("-release.", "00")
-            )
-            sps = vercode.split(".")
-            midCode = "%02d" % int(sps[1])
-            return "3" + sps[0] + midCode + sps[len(sps) - 1]
-        elif self.platform == Platform.IOS:
-            return "3" + vername.replace(".", "")
-        elif self.platform == Platform.WEB:
-            return vername
-        else:
-            raise Exception("Cant make vercode")
     @classmethod
     def fromJSON(self, json_map: dict):
         src = Source(json_map["src"])
@@ -61,6 +44,7 @@ class DATA:
             plt,
             typ,
             app,
+            json_map["vercode"],
             json_map["pairip"],
         )
     def toJSON(self):
@@ -68,12 +52,14 @@ class DATA:
         rd["msg_id"] = self.msg_id
         rd["src"] = self.src.value
         rd["vername"] = self.vername
+        rd["vercode"] = self.vercode
         rd["type"] = self.typ.value
         rd["platform"] = self.platform.value
         rd["app"] = self.app.value
         rd["link"] = self.link
         rd["pairip"] = self.pairip
         return rd
+    
     def teleMsg(self,flagData):
         global linkRow, linkCount
         linkRow = ""
@@ -95,7 +81,10 @@ class DATA:
         link = self.link
         vername = self.vername
         rd = f"{emoji} *{appName.upper()} Update* {emoji}\n"
-        rd = f"{rd}\n_Platform:_ *{platform.title()}*"
+        platformText = platform.title()
+        if platform == Platform.IOS.value:
+            platformText = "iOS"
+        rd = f"{rd}\n_Platform:_ *{platformText}*"
         if platform == Platform.WEB.value:
             rd = f"{rd}\n_Hash_:\n`{vername.split("::")[0]}`"
             linkRowFormer("Web Link", link)
@@ -103,15 +92,17 @@ class DATA:
         else:
             rd = f"{rd}\n_Type:_ *{typ.upper()}*"
             rd = f"{rd}\n_Version:_ `{vername}`"
-            if self.app == Application.X:
-                rd = f"{rd}\n_Vercode:_ `{self.vercode}`"
-            prStr = (
-                "🚫App contains PairipLib🚫"
-                if self.pairip
-                else "❇️App does not contain PairipLib❇️"
-            )
-            rd = f"{rd}\n\n{prStr}"
+            rd = f"{rd}\n_Vercode:_ `{self.vercode}`"
+            
         if platform == Platform.ANDROID.value:
+            if self.app == Application.X:
+                prStr = (
+                    "🚫App contains PairipLib🚫"
+                    if self.pairip
+                    else "❇️App does not contain PairipLib❇️"
+                )
+                rd = f"{rd}\n\n{prStr}"
+                
             pkgName = getPackageName(self.app)
             apkmCode = getAPKMCode(self.app)
             apkmSlug = getAPKMSlug(self.app)

@@ -79,12 +79,19 @@ def unzipper(platform):
             return extract(FLAG_FILE, NEW_FILE_NAME)
 
     elif platform == Platform.IOS:
-        rd2 = False
         FLAG_FOLDER = "Payload/Twitter.app"
-        FLAG_FILE = f"{FLAG_FOLDER}/fs_embedded_defaults_production.json"
+        f1 = False
+        f2 = False
         
+        FLAG_FILE = f"{FLAG_FOLDER}/fs_embedded_defaults_production.json"
         if FLAG_FILE in file_list:
-            return extract(FLAG_FILE, NEW_FILE_NAME)
+            f1 = extract(FLAG_FILE, NEW_FILE_NAME)
+            
+        FLAG_FILE = f"{FLAG_FOLDER}/fs_embedded_defaults_ipad_production.json"
+        if FLAG_FILE in file_list:
+            f2 = extract(FLAG_FILE, NEW_FILE_NAME+"_2")
+        
+        return f1 & f2
         
     return False
 
