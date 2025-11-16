@@ -8,7 +8,8 @@ import zipfile
 import os
 import shutil
 from apkutils import APK
-from tqdm import tqdm    
+from tqdm import tqdm
+from appData import apkM,apkCombo,
 
 def downloader(url, filePath=ZIP_FILE, isJson=False):
     if os.path.exists(filePath):
