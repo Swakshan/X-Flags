@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0f90c93f3b19058061733f0d9adf8a5ea8084e5a",
+    "feature_set_token": "861acb725af711a49dedcad3f5df18595e080faa",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1053,6 +1053,9 @@
         "payments_1password_history_fix_enabled": {
             "value": true
         },
+        "payments_access_fetch_enabled": {
+            "value": false
+        },
         "payments_automated_direct_deposits_enabled": {
             "value": false
         },
@@ -1070,9 +1073,6 @@
         },
         "payments_crb_iframe_delay_msecs": {
             "value": 1000.0
-        },
-        "payments_enabled": {
-            "value": false
         },
         "payments_forward_with_enabled": {
             "value": false
@@ -1291,6 +1291,9 @@
             "value": true
         },
         "responsive_web_birdwatch_netzdg_enabled": {
+            "value": false
+        },
+        "responsive_web_birdwatch_note_internal_insights_enabled": {
             "value": false
         },
         "responsive_web_birdwatch_note_limit_enabled": {
@@ -3375,6 +3378,9 @@
         "twitter_delegate_subscriber_limit": {
             "value": 25
         },
+        "twitter_jetfuel_use_new_api_url": {
+            "value": true
+        },
         "ucpd_enabled": {
             "value": true
         },
@@ -3382,7 +3388,7 @@
             "value": 0.8
         },
         "unified_cards_clip_long_media_promoted_content_enabled": {
-            "value": false
+            "value": true
         },
         "unified_cards_collection_ads_convert_to_image_website_card": {
             "value": false
@@ -3633,9 +3639,6 @@
             "value": false
         },
         "xprofile_work_history_enabled": {
-            "value": true
-        },
-        "twitter_jetfuel_use_new_api_url": {
             "value": true
         }
     },
@@ -7197,8 +7200,7 @@
         },
         "payments_enabled": {
             "name": "payments_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "payments_pin_enabled": {
             "name": "payments_pin_enabled",
@@ -7372,6 +7374,11 @@
         "payments_add_security_key_enabled": {
             "name": "payments_add_security_key_enabled",
             "type": "string"
+        },
+        "payments_access_fetch_enabled": {
+            "name": "payments_access_fetch_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
@@ -8115,7 +8122,8 @@
         },
         "responsive_web_birdwatch_note_internal_insights_enabled": {
             "name": "responsive_web_birdwatch_note_internal_insights_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -13465,6 +13473,11 @@
             "type": "number",
             "defaultValue": 25
         },
+        "twitter_jetfuel_use_new_api_url": {
+            "name": "twitter_jetfuel_use_new_api_url",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "ucpd_enabled": {
             "name": "ucpd_enabled",
             "type": "boolean",
@@ -13688,7 +13701,7 @@
         "unified_cards_clip_long_media_promoted_content_enabled": {
             "name": "unified_cards_clip_long_media_promoted_content_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "unified_cards_clip_long_media_aspect_ratio": {
             "name": "unified_cards_clip_long_media_aspect_ratio",
