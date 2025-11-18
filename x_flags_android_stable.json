@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "7ef4feb1da6674b439df8f8520184edd3487e1d6",
+        "feature_set_token": "a12e0c48f15ca8db24fa10b9da6267bc282cf787",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3621,6 +3621,9 @@
             "payments_automated_direct_deposits_enabled": {
                 "value": false
             },
+            "payments_card_name_suggestions_enabled": {
+                "value": false
+            },
             "payments_cash_deposits_enabled": {
                 "value": false
             },
@@ -5256,10 +5259,19 @@
             "x_lite_in_tfa_enabled": {
                 "value": false
             },
+            "x_lite_in_tfa_premium_any_enabled": {
+                "value": false
+            },
             "x_lite_in_tfa_premium_plus_enabled": {
                 "value": false
             },
             "x_lite_notifications_android_enabled": {
+                "value": false
+            },
+            "xchat_allow_latest_ckey_failure_for_one_on_one": {
+                "value": false
+            },
+            "xchat_allow_legacy_group_member_add": {
                 "value": false
             },
             "xchat_allow_legacy_message_requests": {
@@ -5268,10 +5280,10 @@
             "xchat_allow_legacy_protocol": {
                 "value": true
             },
-            "xchat_allow_profile_dm": {
+            "xchat_android_screenshot_detection_enabled": {
                 "value": false
             },
-            "xchat_android_screenshot_detection_enabled": {
+            "xchat_auto_upgrade_legacy_groups": {
                 "value": false
             },
             "xchat_continue_previous_inbox_pagination": {
@@ -5318,9 +5330,6 @@
             },
             "xchat_inbox_conversation_local_pagination_page_size": {
                 "value": 20.0
-            },
-            "xchat_inbox_conversation_rotate_keys": {
-                "value": true
             },
             "xchat_local_pagination_page_size": {
                 "value": 50.0
@@ -5487,6 +5496,7 @@
         "mr_global_user_retention_holdback_10725",
         "unified_events_ml_ranker_non_us_9499",
         "ad_formats_android_flybys_6875",
+        "ad_spacing_enforcement_timeline_impact_17825",
         "unified_card_playable_android_12346",
         "tune_autoplay_17291",
         "android_growth_performance_holdback_optimize_fragment_registry_arg_maps_15805",
@@ -5636,5 +5646,9 @@
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "d22f9a83676b425cd7727f1385f8497a193d147e",
+        "experiments": "d22f9a83676b425cd7727f1385f8497a193d147e"
+    }
 }
