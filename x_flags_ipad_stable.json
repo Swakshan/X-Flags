@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "9f6eaf4ce425b5d94a9249ae3ce6ab0439f91702",
+        "feature_set_token": "35bb6c10d2696c1864fd33bbad1217d4d693481f",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -1968,6 +1968,9 @@
             "explore_relaunch_live_chat_repost_messages_enabled": {
                 "value": false
             },
+            "explore_relaunch_live_scheduled_alert_enabled": {
+                "value": false
+            },
             "explore_relaunch_non_interruptive_repost_flow_enabled": {
                 "value": true
             },
@@ -2073,20 +2076,29 @@
             "grok_chat_download_standalone_button_enabled": {
                 "value": true
             },
+            "grok_deeplinking_for_share_enabled": {
+                "value": true
+            },
             "grok_edit_with_grok_button_under_post_focal_enabled": {
                 "value": true
             },
             "grok_edit_with_grok_button_under_post_include_grok_image_annotation_in_graphql": {
-                "value": false
+                "value": true
             },
             "grok_edit_with_grok_button_under_post_preview_enabled": {
                 "value": true
+            },
+            "grok_explain_download_banner_enabled": {
+                "value": false
             },
             "grok_explain_post_detail_enabled": {
                 "value": false
             },
             "grok_inline_sharecard_image_enabled": {
                 "value": true
+            },
+            "grok_ios_app_campaign_chat_opened_from_analyze": {
+                "value": "https://apps.apple.com/app/apple-store/id6670324846?pt=126952307&ct=Chat%20Opened%20From%20Analyze&mt=8"
             },
             "grok_ios_app_campaign_get_grok_home_timeline": {
                 "value": "https://apps.apple.com/app/apple-store/id6670324846?pt=126952307&ct=X%20Home%20Timeline%20Get%20Grok&mt=8"
@@ -3401,6 +3413,9 @@
             "ios_tav_autoplay_bitrate_for_high_quality": {
                 "value": 2000000.0
             },
+            "ios_tav_autoplay_bitrate_for_high_quality_on_wifi": {
+                "value": 2000000.0
+            },
             "ios_tav_debug_player_domain_switch_enabled": {
                 "value": false
             },
@@ -3672,6 +3687,9 @@
                 "value": true
             },
             "ios_tweet_promote_button_sent_tweet_toast_enabled": {
+                "value": true
+            },
+            "ios_tweet_promote_button_timeline_enabled": {
                 "value": false
             },
             "ios_twitter_text_editor_mentions_color_bugfix": {
@@ -3689,14 +3707,8 @@
             "ios_ui_docked_upload_control_bar_enabled": {
                 "value": true
             },
-            "ios_ui_feedback_tip_limit": {
-                "value": 5.0
-            },
-            "ios_ui_feedback_tip_randomizer_value": {
-                "value": 5.0
-            },
-            "ios_ui_feedback_tip_variant": {
-                "value": 0.0
+            "ios_ui_feedback_tip_v2_enabled": {
+                "value": false
             },
             "ios_ui_inline_actions_tip_ddg_variant": {
                 "value": 0.0
@@ -3744,9 +3756,6 @@
                 "value": 9.0
             },
             "ios_ui_status_attachment_reuse_fix_enabled": {
-                "value": false
-            },
-            "ios_ui_timeline_follow_from_avatar_enabled": {
                 "value": false
             },
             "ios_ui_timeline_gestures_by_default_enabled": {
@@ -4320,6 +4329,15 @@
             "media_tab_immersive_v2_enabled": {
                 "value": false
             },
+            "media_tab_immersive_v2_status_line_count": {
+                "value": 1.0
+            },
+            "media_tab_immersive_v2_swipe_nux_enabled": {
+                "value": false
+            },
+            "media_tab_immersive_v2_swipe_nux_videos_threshold": {
+                "value": 3.0
+            },
             "media_tab_initial_segment": {
                 "value": ""
             },
@@ -4469,6 +4487,9 @@
             },
             "newscamera_tweet_background_playback_enabled": {
                 "value": true
+            },
+            "newscamera_tweet_background_render_media_only_enabled": {
+                "value": false
             },
             "newscamera_tweet_capture_1080p_enabled": {
                 "value": true
@@ -8925,6 +8946,15 @@
             "onboarding_bonus_follow_profile_navigation_enabled": {
                 "value": true
             },
+            "onboarding_new_local_push_reminder_to_finish_enabled": {
+                "value": false
+            },
+            "onboarding_new_local_push_reminder_to_finish_wait_time_seconds": {
+                "value": 0.0
+            },
+            "onboarding_new_push_request_enabled": {
+                "value": false
+            },
             "onboarding_new_users_ntab_filter_control_tooltip_hiding_enabled": {
                 "value": false
             },
@@ -9055,6 +9085,9 @@
                 "value": false
             },
             "payments_passkey_onboarding_enabled": {
+                "value": false
+            },
+            "payments_pin_enabled": {
                 "value": false
             },
             "payments_pin_link_payment_methods_enabled": {
@@ -11018,7 +11051,7 @@
                 "value": false
             },
             "x_jetfuel_enable_test_cluster": {
-                "value": false
+                "value": true
             },
             "x_jetfuel_enable_v2_sdk": {
                 "value": false
@@ -11069,7 +11102,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "f490ad386f3e0cd43fa6a925a7adcd92b1b05fe0",
-        "experiments": "f490ad386f3e0cd43fa6a925a7adcd92b1b05fe0"
+        "feature_switches": "78a246e8a634bcca087179bbb104fbecc0973bf0",
+        "experiments": "78a246e8a634bcca087179bbb104fbecc0973bf0"
     }
 }
