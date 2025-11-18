@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "861acb725af711a49dedcad3f5df18595e080faa",
+    "feature_set_token": "57a92b5661558e352ee8a8636d0bba20869cd042",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1057,10 +1057,10 @@
             "value": false
         },
         "payments_automated_direct_deposits_enabled": {
-            "value": false
+            "value": true
         },
         "payments_card_spend_enabled": {
-            "value": false
+            "value": true
         },
         "payments_cash_deposits_enabled": {
             "value": false
@@ -1075,25 +1075,25 @@
             "value": 1000.0
         },
         "payments_forward_with_enabled": {
-            "value": false
+            "value": true
         },
         "payments_half_cover_notices_enabled": {
             "value": false
         },
         "payments_passkey_onboarding_enabled": {
-            "value": false
+            "value": true
         },
         "payments_tasks_carousel_enabled": {
-            "value": false
+            "value": true
         },
         "payments_tracing_reports_enabled": {
             "value": false
         },
         "payments_transaction_search_enabled": {
-            "value": false
+            "value": true
         },
         "payments_transfer_methods_enabled": {
-            "value": false
+            "value": true
         },
         "premium_content_api_read_enabled": {
             "value": false
@@ -1917,9 +1917,6 @@
         "responsive_web_profile_about_enabled": {
             "value": false
         },
-        "responsive_web_profile_about_pilot": {
-            "value": []
-        },
         "responsive_web_profile_redirect_enabled": {
             "value": false
         },
@@ -2706,7 +2703,7 @@
             "value": true
         },
         "subscriptions_features_premium_real_syscache_write": {
-            "value": false
+            "value": true
         },
         "subscriptions_features_premium_syscache_write": {
             "value": true
@@ -7237,22 +7234,22 @@
         "payments_card_spend_enabled": {
             "name": "payments_card_spend_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_forward_with_enabled": {
             "name": "payments_forward_with_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_passkey_onboarding_enabled": {
             "name": "payments_passkey_onboarding_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_tasks_carousel_enabled": {
             "name": "payments_tasks_carousel_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_crb_iframe_delay_msecs": {
             "name": "payments_crb_iframe_delay_msecs",
@@ -7262,7 +7259,7 @@
         "payments_transfer_methods_enabled": {
             "name": "payments_transfer_methods_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_transfer_funding_sources_enabled": {
             "name": "payments_transfer_funding_sources_enabled",
@@ -7313,7 +7310,7 @@
         "payments_automated_direct_deposits_enabled": {
             "name": "payments_automated_direct_deposits_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_1password_history_fix_enabled": {
             "name": "payments_1password_history_fix_enabled",
@@ -7341,7 +7338,7 @@
         "payments_transaction_search_enabled": {
             "name": "payments_transaction_search_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_lock_unlock_individual_cards_enabled": {
             "name": "payments_lock_unlock_individual_cards_enabled",
@@ -9443,8 +9440,7 @@
         },
         "responsive_web_profile_about_pilot": {
             "name": "responsive_web_profile_about_pilot",
-            "type": "object",
-            "defaultValue": []
+            "type": "string"
         },
         "responsive_web_profile_redirect_enabled": {
             "name": "responsive_web_profile_redirect_enabled",
@@ -11506,7 +11502,7 @@
         "subscriptions_features_premium_real_syscache_write": {
             "name": "subscriptions_features_premium_real_syscache_write",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_feature_organization_affiliates": {
             "name": "subscriptions_feature_organization_affiliates",
