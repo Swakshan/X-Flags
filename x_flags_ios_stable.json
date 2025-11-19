@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "fce553865064fbba65cb1745c244a295a50d8fc2",
+        "feature_set_token": "c19940fd8237143e34b05b94eaa7d17060bc5b2a",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2337,6 +2337,9 @@
             "grok_sharecard_post_preview_enabled": {
                 "value": false
             },
+            "grok_translations_bio_auto_translation_is_enabled": {
+                "value": false
+            },
             "grok_translations_bio_inline_translation_is_enabled": {
                 "value": false
             },
@@ -3043,18 +3046,18 @@
                 "value": false
             },
             "ios_dm_dash_legacy_share_sheet_action_enabled": {
-                "value": false
+                "value": true
             },
             "ios_dm_dash_lite_onboarding_enabled": {
                 "value": false
-            },
-            "ios_dm_dash_messages_list_rewrite_enabled": {
-                "value": true
             },
             "ios_dm_dash_remove_vanishing_mode_enabled": {
                 "value": true
             },
             "ios_dm_dash_screenshot_detection_enabled": {
+                "value": false
+            },
+            "ios_dm_dash_screenshot_prevention_enabled": {
                 "value": false
             },
             "ios_dm_dash_secret_dm_creation_disabled": {
@@ -3674,6 +3677,9 @@
             "ios_tweet_promote_button_author_label_enabled": {
                 "value": false
             },
+            "ios_tweet_promote_button_boost_again_in_top_toolbar_enabled": {
+                "value": false
+            },
             "ios_tweet_promote_button_composer_bottom_placement_enabled": {
                 "value": false
             },
@@ -3753,7 +3759,7 @@
                 "value": false
             },
             "ios_ui_inline_actions_tip_ddg_variant": {
-                "value": 0.0
+                "value": 1.0
             },
             "ios_ui_inline_actions_tip_enabled": {
                 "value": true
@@ -9334,7 +9340,9 @@
                     "messages:open_notification_render",
                     "messages:open_notification_render_warm",
                     "messages:first_message_api",
-                    "messages:first_message_api_warm"
+                    "messages:first_message_api_warm",
+                    "money:auth-session-creation",
+                    "money:fingerprinting"
                 ]
             },
             "periscope_is_typing_indicator_enabled": {
@@ -11150,7 +11158,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "dc73feba5eec67ad3d76d77a20092b3a651d471a",
-        "experiments": "dc73feba5eec67ad3d76d77a20092b3a651d471a"
+        "feature_switches": "b0cfbf79767c68536781bbf08d198bbfc8324ee6",
+        "experiments": "b0cfbf79767c68536781bbf08d198bbfc8324ee6"
     }
 }
