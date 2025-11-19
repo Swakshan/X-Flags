@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "94f4cf6098dc7e830af5107a4c65acfb690de7e9",
+        "feature_set_token": "e9b2d7f6c92190d5c81cd8136fbaaa7eb0aa8da2",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2442,6 +2442,9 @@
             "home_timeline_client_deduping_using_impression_cache_enabled": {
                 "value": true
             },
+            "home_timeline_cold_start_loading_deferral_seconds": {
+                "value": 0.0
+            },
             "home_timeline_extended_reactivity_session_length_in_minutes": {
                 "value": 30.0
             },
@@ -3055,6 +3058,9 @@
                 "value": false
             },
             "ios_dm_dash_pin_to_bottom_v2_enabled": {
+                "value": false
+            },
+            "ios_dm_dash_push_notification_override_enabled": {
                 "value": false
             },
             "ios_dm_dash_remove_vanishing_mode_enabled": {
@@ -3753,7 +3759,7 @@
                 "value": true
             },
             "ios_ui_carousels_with_engagement_bar_enabled": {
-                "value": false
+                "value": true
             },
             "ios_ui_chirp_ui_account_spoofing_font_style_enabled": {
                 "value": true
@@ -3768,7 +3774,7 @@
                 "value": true
             },
             "ios_ui_hide_play_button_videos_in_htl": {
-                "value": false
+                "value": true
             },
             "ios_ui_inline_actions_tip_ddg_variant": {
                 "value": 0.0
@@ -4390,6 +4396,9 @@
                 "value": true
             },
             "media_tab_immersive_v2_enabled": {
+                "value": false
+            },
+            "media_tab_immersive_v2_handle_photos_enabled": {
                 "value": false
             },
             "media_tab_immersive_v2_not_interested_button_enabled": {
@@ -9121,7 +9130,7 @@
                 ]
             },
             "payments_client_attestation_create_auth_session_enabled": {
-                "value": false
+                "value": true
             },
             "payments_crb_iframe_delay_msecs": {
                 "value": 1000.0
@@ -10083,6 +10092,9 @@
             },
             "standardized_nudges_toxicity": {
                 "value": true
+            },
+            "subscriptions_advanced_commerce_api_for_super_follow_enabled": {
+                "value": false
             },
             "subscriptions_advanced_search_enabled": {
                 "value": true
@@ -11179,7 +11191,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "72c8aaed97816e4df79db2bc4d25b348e34a460e",
-        "experiments": "72c8aaed97816e4df79db2bc4d25b348e34a460e"
+        "feature_switches": "34fca58b1ba7ac87f603ba5d557c3dbdb5540a9a",
+        "experiments": "34fca58b1ba7ac87f603ba5d557c3dbdb5540a9a"
     }
 }
