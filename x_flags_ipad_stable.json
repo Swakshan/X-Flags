@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "da581e15de0a776c56777764f730e2226eed1e0d",
+        "feature_set_token": "73c345428bc5daff0b8bfefc89a71949d044e2e5",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -1969,7 +1969,7 @@
                 "value": 5.0
             },
             "explore_relaunch_live_chat_repost_messages_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_live_scheduled_alert_enabled": {
                 "value": true
@@ -2344,6 +2344,9 @@
                 "value": false
             },
             "grok_translations_bio_translation_is_enabled": {
+                "value": false
+            },
+            "grok_translations_immersive_auto_translate_is_enabled": {
                 "value": false
             },
             "grok_translations_poll_translation_is_enabled": {
@@ -2769,9 +2772,6 @@
             "immersive_ios_animations_improved_animations_enabled": {
                 "value": false
             },
-            "immersive_ios_animations_refactor_enabled": {
-                "value": true
-            },
             "immersive_player_long_press_to_2x_speed_default_speed": {
                 "value": 2.0
             },
@@ -3040,7 +3040,7 @@
                 "value": true
             },
             "ios_dm_dash_inbox_pills_enabled": {
-                "value": false
+                "value": true
             },
             "ios_dm_dash_invite_user_alert_enabled": {
                 "value": false
@@ -3049,6 +3049,9 @@
                 "value": true
             },
             "ios_dm_dash_lite_onboarding_enabled": {
+                "value": false
+            },
+            "ios_dm_dash_pin_to_bottom_v2_enabled": {
                 "value": false
             },
             "ios_dm_dash_remove_vanishing_mode_enabled": {
@@ -3065,6 +3068,9 @@
             },
             "ios_dm_dash_share_sheet_enabled": {
                 "value": false
+            },
+            "ios_dm_dash_share_sheet_variant": {
+                "value": 1.0
             },
             "ios_dm_dash_top_cursor_enabled": {
                 "value": false
@@ -3150,6 +3156,9 @@
                 ]
             },
             "ios_notification_redesign_enabled": {
+                "value": false
+            },
+            "ios_notification_redesign_timestamp_enabled": {
                 "value": false
             },
             "ios_notifications_auth_bg_task_enabled": {
@@ -3408,9 +3417,6 @@
                 "value": true
             },
             "ios_show_inline_actions_timeline_settings_enabled": {
-                "value": true
-            },
-            "ios_smart_features_similar_posts_link_in_post_view": {
                 "value": true
             },
             "ios_spaces_device_follow_multi_select_enabled": {
@@ -3731,6 +3737,9 @@
             "ios_tweet_promote_button_sent_tweet_toast_enabled": {
                 "value": true
             },
+            "ios_tweet_promote_button_simple_promote_flow_v2_enabled": {
+                "value": false
+            },
             "ios_tweet_promote_button_timeline_enabled": {
                 "value": false
             },
@@ -3759,7 +3768,7 @@
                 "value": false
             },
             "ios_ui_inline_actions_tip_ddg_variant": {
-                "value": 1.0
+                "value": 0.0
             },
             "ios_ui_inline_actions_tip_enabled": {
                 "value": true
@@ -4380,14 +4389,8 @@
             "media_tab_immersive_v2_enabled": {
                 "value": false
             },
-            "media_tab_immersive_v2_landscape_replies_enabled": {
-                "value": true
-            },
             "media_tab_immersive_v2_not_interested_button_enabled": {
                 "value": true
-            },
-            "media_tab_immersive_v2_status_line_count": {
-                "value": 3.0
             },
             "media_tab_immersive_v2_swipe_nux_enabled": {
                 "value": true
@@ -4450,7 +4453,7 @@
                 "value": false
             },
             "media_upload_quality_reduced_tooltip_enabled": {
-                "value": false
+                "value": true
             },
             "media_upload_quality_tooltip_enabled": {
                 "value": false
@@ -4462,7 +4465,7 @@
                 "value": true
             },
             "media_upload_video_quality_selector_for_all_qualities_enabled": {
-                "value": false
+                "value": true
             },
             "misinfo_label_redesign_enabled": {
                 "value": true
@@ -4537,7 +4540,7 @@
                 "value": false
             },
             "newscamera_tweet_background_render_media_only_enabled": {
-                "value": false
+                "value": true
             },
             "ntab_graphql_chrome_page_enabled": {
                 "value": false
@@ -9138,6 +9141,12 @@
             "payments_tasks_carousel_enabled": {
                 "value": false
             },
+            "payments_tracing_errors_full_text_enabled": {
+                "value": false
+            },
+            "payments_tracing_zipkin_enabled": {
+                "value": false
+            },
             "payments_wires_enabled": {
                 "value": false
             },
@@ -10502,6 +10511,9 @@
             "tweet_context_basketball_enabled": {
                 "value": true
             },
+            "tweet_context_is_enabled": {
+                "value": false
+            },
             "tweet_convo_ads_spine_click_logging_enabled": {
                 "value": true
             },
@@ -11100,6 +11112,9 @@
             "xchat_max_group_size": {
                 "value": 200.0
             },
+            "xchat_out_of_order_fanout_validation_enabled": {
+                "value": false
+            },
             "xchat_send_graphql_logs": {
                 "value": false
             },
@@ -11158,7 +11173,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "b0cfbf79767c68536781bbf08d198bbfc8324ee6",
-        "experiments": "b0cfbf79767c68536781bbf08d198bbfc8324ee6"
+        "feature_switches": "ec13deaccdbf8d582b11eea71017e9facfb725db",
+        "experiments": "ec13deaccdbf8d582b11eea71017e9facfb725db"
     }
 }
