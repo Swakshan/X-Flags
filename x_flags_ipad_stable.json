@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "1eea39a8f163d5bc2100f40e5ba60de9f5c93587",
+        "feature_set_token": "162ae62456d82f5dcf3594886bbed46d905a6b4a",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -557,7 +557,7 @@
                 "value": false
             },
             "branded_features_is_branded_likes_on_tweet_content_enabled": {
-                "value": false
+                "value": true
             },
             "branded_features_search_overlay_animations_enabled": {
                 "value": false
@@ -2502,6 +2502,9 @@
             "grok_timeline_create_own_button_variant": {
                 "value": "button"
             },
+            "grok_timeline_create_own_grok_logo_enabled": {
+                "value": false
+            },
             "grok_timeline_create_own_is_enabled": {
                 "value": true
             },
@@ -3046,6 +3049,9 @@
             "ios_ad_formats_media_component_aspect_ratio_capped": {
                 "value": false
             },
+            "ios_ad_formats_media_component_render_overlay_dpa_enabled": {
+                "value": false
+            },
             "ios_ad_formats_media_scaled_to_fit": {
                 "value": false
             },
@@ -3292,6 +3298,9 @@
             "ios_delay_backstop_prompt_bucket_type": {
                 "value": "none"
             },
+            "ios_detailed_logging_enabled": {
+                "value": false
+            },
             "ios_diffable_datasources_enabled": {
                 "value": false
             },
@@ -3299,6 +3308,9 @@
                 "value": true
             },
             "ios_dm_dash_attachment_picker_v2_recents_enabled": {
+                "value": false
+            },
+            "ios_dm_dash_conversation_data_fetch_enabled": {
                 "value": false
             },
             "ios_dm_dash_dm_tab_enabled": {
@@ -3327,6 +3339,9 @@
             },
             "ios_dm_dash_messages_list_animated_update_enabled": {
                 "value": false
+            },
+            "ios_dm_dash_money_in_navbar_enabled": {
+                "value": true
             },
             "ios_dm_dash_scroll_to_unread_enabled": {
                 "value": false
@@ -3401,6 +3416,9 @@
             "ios_in_app_article_webview_enabled": {
                 "value": false
             },
+            "ios_in_app_article_webview_handle_x_articles_enabled": {
+                "value": false
+            },
             "ios_in_app_article_webview_haptics_enabled": {
                 "value": false
             },
@@ -3411,8 +3429,12 @@
                 "value": [
                     "twitch.com",
                     "twitch.tv",
-                    "nytimes.com"
+                    "nytimes.com",
+                    "huffpost.com"
                 ]
+            },
+            "ios_in_app_article_webview_js_to_handle_custom_scrollview_events_enabled": {
+                "value": true
             },
             "ios_in_app_article_webview_nav_back_in_webview_enabled": {
                 "value": true
@@ -3702,6 +3724,11 @@
             },
             "ios_profile_bio_translation_enabled": {
                 "value": true
+            },
+            "ios_profile_dm_xchat_user_override_list": {
+                "value": [
+                    "1930548797563973633"
+                ]
             },
             "ios_profile_header_rendering_debug_enabled": {
                 "value": false
@@ -11599,6 +11626,9 @@
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
                 "value": -1.0
             },
+            "xchat_hybrid_pull_wait_for_keypair_before_fetching": {
+                "value": false
+            },
             "xchat_inbox_conversation_event_limit": {
                 "value": 5.0
             },
@@ -11653,6 +11683,9 @@
             "xchat_use_info_items_for_sorting": {
                 "value": false
             },
+            "xchat_use_popular_convos": {
+                "value": false
+            },
             "xchat_user_event_limit": {
                 "value": 500.0
             },
@@ -11705,7 +11738,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "0e3de6d22eb3e432deadb730216bd29980d0eccd",
-        "experiments": "0e3de6d22eb3e432deadb730216bd29980d0eccd"
+        "feature_switches": "ec7d852f69c03ffe800b8da27f7ccd7c1617f202",
+        "experiments": "ec7d852f69c03ffe800b8da27f7ccd7c1617f202"
     }
 }
