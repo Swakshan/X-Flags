@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "4287ad86e45db76a6fdfd00715f0969a453e95c1",
+        "feature_set_token": "12217e8827934734873479d6b28cf161f9c49e45",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2429,6 +2429,9 @@
             },
             "grok_ios_search_with_typeahead_enabled": {
                 "value": false
+            },
+            "grok_ios_show_most_recent_conversation_if_created_within_x_seconds_ago": {
+                "value": 0.0
             },
             "grok_ios_show_nux_enabled": {
                 "value": false
@@ -10089,13 +10092,13 @@
                 "value": true
             },
             "ranked_following_home_timeline_enabled_as_default": {
-                "value": false
+                "value": true
             },
             "ranked_following_home_timeline_min_follow_count": {
-                "value": 0.0
+                "value": 100.0
             },
             "ranked_following_home_timeline_tab_enabled": {
-                "value": false
+                "value": true
             },
             "reaper_app_launch_initialization_enabled": {
                 "value": false
@@ -11647,7 +11650,7 @@
                 "value": false
             },
             "xchat_enable_local_pagination": {
-                "value": true
+                "value": false
             },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
                 "value": -1.0
@@ -11755,7 +11758,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "fadfdd46ab8436ffa3fd8c20df7a2d59785fb5ac",
-        "experiments": "fadfdd46ab8436ffa3fd8c20df7a2d59785fb5ac"
+        "feature_switches": "8e72d86af4c31e056a966cb590e417fa905bb46b",
+        "experiments": "8e72d86af4c31e056a966cb590e417fa905bb46b"
     }
 }
