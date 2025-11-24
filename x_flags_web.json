@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c74d433b345d34dba135c1a0f94e00ac26e63328",
+    "feature_set_token": "06625ffea8c773c2fd65d948033e79e1dab067f5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2706,7 +2706,7 @@
             "value": false
         },
         "subscriptions_gifting_tooltip_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": false
@@ -3579,7 +3579,7 @@
             "value": 0.2
         },
         "xchat_show_inbox_categories": {
-            "value": true
+            "value": false
         },
         "xchat_show_safety_number_ui": {
             "value": false
@@ -5755,10 +5755,7 @@
         "get_verified_visitor_upsell_minimum_account_age_web_17506": {
             "name": "get_verified_visitor_upsell_minimum_account_age_web_17506",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "graduated_access_user_prompt_enabled": {
             "name": "graduated_access_user_prompt_enabled",
@@ -11356,7 +11353,7 @@
         "subscriptions_gifting_tooltip_enabled": {
             "name": "subscriptions_gifting_tooltip_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_inapp_grok": {
             "name": "subscriptions_inapp_grok",
@@ -14635,10 +14632,14 @@
         "xchat_show_inbox_categories": {
             "name": "xchat_show_inbox_categories",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xchat_eagerly_observe_conv_list": {
             "name": "xchat_eagerly_observe_conv_list",
+            "type": "string"
+        },
+        "xchat_ios_max_io_threads": {
+            "name": "xchat_ios_max_io_threads",
             "type": "string"
         },
         "xprofile_editing_enabled": {
