@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d0ff2cc2a9051de54a0294cae5053bd71c3aff77",
+    "feature_set_token": "3947d0f83400f83c966464121910bc1415437f65",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2419,6 +2419,9 @@
             "value": true
         },
         "rweb_xchat_sentry_enabled": {
+            "value": false
+        },
+        "rweb_xchat_sqlite_logs": {
             "value": false
         },
         "rweb_xp_forwarded_for_enabled": {
@@ -10405,7 +10408,8 @@
         },
         "rweb_xchat_sqlite_logs": {
             "name": "rweb_xchat_sqlite_logs",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
@@ -11691,18 +11695,6 @@
         },
         "subscriptions_offers_promotional_enabled": {
             "name": "subscriptions_offers_promotional_enabled",
-            "type": "string"
-        },
-        "subscriptions_offers_promotional_premium_hub_card_enabled": {
-            "name": "subscriptions_offers_promotional_premium_hub_card_enabled",
-            "type": "string"
-        },
-        "subscriptions_offers_promotional_premium_monthly_enabled": {
-            "name": "subscriptions_offers_promotional_premium_monthly_enabled",
-            "type": "string"
-        },
-        "subscriptions_offers_group_id_key": {
-            "name": "subscriptions_offers_group_id_key",
             "type": "string"
         },
         "subscriptions_offers_churn_prevention_enabled": {
