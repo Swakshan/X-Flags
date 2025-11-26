@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "35f41c6dcac938155fdff14c35622b3d8aad11af",
+    "feature_set_token": "ba5b08cec7e05569611a73cf4bf706e63dcbf7f8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1198,6 +1198,9 @@
             "value": 5
         },
         "responsive_web_ad_revenue_sharing_setup_enabled": {
+            "value": false
+        },
+        "responsive_web_ad_revenue_sharing_subscriptions_dashboard_redirect_enabled": {
             "value": false
         },
         "responsive_web_ad_revenue_sharing_total_earnings_enabled": {
@@ -2809,6 +2812,9 @@
         },
         "subscriptions_marketing_page_offer_ends_at_msec": {
             "value": 1739246400000.0
+        },
+        "subscriptions_marketing_page_retention_paywall_new_button_label": {
+            "value": false
         },
         "subscriptions_marketing_page_social_proof_enabled": {
             "value": false
@@ -7710,6 +7716,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_ad_revenue_sharing_subscriptions_dashboard_redirect_enabled": {
+            "name": "responsive_web_ad_revenue_sharing_subscriptions_dashboard_redirect_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "name": "responsive_web_ad_revenue_sharing_number_of_impressions",
             "type": "number",
@@ -11740,6 +11751,11 @@
         },
         "subscriptions_marketing_page_new_disclaimer_enabled": {
             "name": "subscriptions_marketing_page_new_disclaimer_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_marketing_page_retention_paywall_new_button_label": {
+            "name": "subscriptions_marketing_page_retention_paywall_new_button_label",
             "type": "boolean",
             "defaultValue": false
         },
