@@ -10,11 +10,17 @@ import shutil
 from apkutils import APK
 from tqdm import tqdm
 from appData import apkM,apkCombo
+import gdown
 
 def downloader(url, filePath=ZIP_FILE, isJson=False):
     if os.path.exists(filePath):
         printSubCmd(f"{filePath} exists" , "!")
         return True
+    
+    if "drive.google.com" in url:
+        gdown.download(url, ZIP_FILE, quiet=False,fuzzy=True)
+        return True
+    
     response = requests.get(url, stream=True, headers=headers())
     if not isJson:
         total_size_in_bytes = int(response.headers.get('content-length', 0))

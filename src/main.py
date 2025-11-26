@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v21.03 : update imports"
+VER = "v21.1 : support gdrive links"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -70,6 +70,6 @@ if not isDebug():
     platform = Platform(plt)
     source = Source(src.strip())
     data = DATA(vername, down_link, msg_id, source, platform, typ, app,vercode)
-    print(f"DATA = {DATA}")
+    
     main(data)
     
