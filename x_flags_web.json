@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "148e07628ba7a970ae7bd1d8ce94ebf15aaee164",
+    "feature_set_token": "82549dab8fb770144f0b269267479d8066432409",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -877,7 +877,7 @@
             "value": true
         },
         "longform_notetweets_composer_upsell_enabled": {
-            "value": true
+            "value": false
         },
         "longform_notetweets_composition_without_claims_enabled": {
             "value": false
@@ -2706,10 +2706,10 @@
             "value": true
         },
         "subscriptions_gifting_tooltip_discount_label": {
-            "value": false
+            "value": true
         },
         "subscriptions_gifting_tooltip_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": false
@@ -2922,7 +2922,7 @@
             "value": ""
         },
         "subscriptions_upsells_post_details_analytics_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_post_engagements_enabled": {
             "value": false
@@ -3634,6 +3634,18 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "responsive_web_grok_analyze_education_days_threshold": {
+            "value": 30
+        },
+        "responsive_web_grok_enable_grok_analyze_education": {
+            "value": false
+        },
+        "responsive_web_grok_enable_grok_tab_education": {
+            "value": false
+        },
+        "responsive_web_grok_tab_education_days_threshold": {
+            "value": 30
         }
     },
     "debug": {
@@ -6655,7 +6667,7 @@
         "longform_notetweets_composer_upsell_enabled": {
             "name": "longform_notetweets_composer_upsell_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "longform_notetweets_scheduling_non_reply_enabled": {
             "name": "longform_notetweets_scheduling_non_reply_enabled",
@@ -11358,12 +11370,12 @@
         "subscriptions_gifting_tooltip_enabled": {
             "name": "subscriptions_gifting_tooltip_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_gifting_tooltip_discount_label": {
             "name": "subscriptions_gifting_tooltip_discount_label",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_inapp_grok": {
             "name": "subscriptions_inapp_grok",
@@ -12001,7 +12013,7 @@
         "subscriptions_upsells_post_details_analytics_enabled": {
             "name": "subscriptions_upsells_post_details_analytics_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_ios_premium_right_nav_button_variant": {
             "name": "subscriptions_upsells_ios_premium_right_nav_button_variant",
