@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v21.1 : support gdrive links"
+VER = "v21.1 : rearrange arguments"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -55,21 +55,21 @@ if not isDebug():
     if os.path.exists(DUMMY_FOLDER):
         shutil.rmtree(DUMMY_FOLDER)
     args = sys.argv
-    
+
     app = args[1].lower()
     plt = args[2].lower()
     src = args[3].lower()
     typ = args[4].lower()
-    down_link = args[5]
-    msg_id = args[6]
-    vername = args[7]
-    vercode = args[8]
+    msg_id = args[5]
+    vername = args[6]
+    vercode = args[7]
+    down_link = args[8]
 
     app = Application(app)
     typ = ReleaseType(typ)
     platform = Platform(plt)
     source = Source(src.strip())
-    data = DATA(vername, down_link, msg_id, source, platform, typ, app,vercode)
-    
+    data:DATA = DATA(vername, down_link, msg_id, source, platform, typ, app,vercode)
+
     main(data)
     
