@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "87af647ff31895dbdfd19a585fe650f655ff2b74",
+        "feature_set_token": "49e5a2b64ac487e8fb6aff3c91f474b7248592ae",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1392,6 +1392,9 @@
             "android_timeline_hydration_caching_size": {
                 "value": 10.0
             },
+            "android_timeline_linger_flush_on_scroll_idle": {
+                "value": false
+            },
             "android_timeline_module_children_dedup_by_group_id_enabled": {
                 "value": true
             },
@@ -1565,6 +1568,9 @@
             },
             "android_video_transcode_force_video_transcode_enabled": {
                 "value": false
+            },
+            "android_video_transcode_media_h265_transcoder_codec_enabled": {
+                "value": true
             },
             "android_video_transcode_pipeline_retry_enabled": {
                 "value": true
@@ -3397,6 +3403,15 @@
             "media_upload_local_tweet_video_performance_logging_enabled": {
                 "value": false
             },
+            "media_upload_xlite_4k_enabled": {
+                "value": true
+            },
+            "media_upload_xlite_full_hd_enabled": {
+                "value": true
+            },
+            "media_upload_xlite_max_parallel_segment_uploads": {
+                "value": 5.0
+            },
             "memory_metric_enabled": {
                 "value": false
             },
@@ -3592,55 +3607,55 @@
                 "value": false
             },
             "payments_atm_map_enabled": {
-                "value": false
+                "value": true
             },
             "payments_card_name_suggestions_enabled": {
-                "value": false
+                "value": true
             },
             "payments_cash_deposits_enabled": {
-                "value": false
+                "value": true
             },
             "payments_chat_support_enabled": {
-                "value": false
+                "value": true
             },
             "payments_cheques_deposits_enabled": {
                 "value": false
             },
             "payments_cheques_enabled": {
-                "value": false
+                "value": true
             },
             "payments_contacts_institutions_enabled": {
-                "value": false
+                "value": true
             },
             "payments_environment_default_value": {
                 "value": ""
             },
             "payments_forward_with_enabled": {
-                "value": false
+                "value": true
             },
             "payments_half_cover_notices_enabled": {
-                "value": false
+                "value": true
             },
             "payments_lock_unlock_individual_cards_enabled": {
-                "value": false
+                "value": true
             },
             "payments_mailing_address_enabled": {
-                "value": false
+                "value": true
             },
             "payments_offboard_enabled": {
-                "value": false
+                "value": true
             },
             "payments_passkey_onboarding_enabled": {
-                "value": false
+                "value": true
             },
             "payments_pin_enabled": {
-                "value": false
+                "value": true
             },
             "payments_shutdown_enabled": {
                 "value": false
             },
             "payments_tasks_carousel_enabled": {
-                "value": false
+                "value": true
             },
             "payments_tracing_reports_enabled": {
                 "value": false
@@ -3649,10 +3664,10 @@
                 "value": false
             },
             "payments_wires_enabled": {
-                "value": false
+                "value": true
             },
             "payments_withdraw_wires_enabled": {
-                "value": false
+                "value": true
             },
             "people_discovery_live_sync_enabled": {
                 "value": true
@@ -3711,6 +3726,9 @@
             "photo_upload_preserve_exif_data_enabled": {
                 "value": true
             },
+            "photo_upload_transcode_xlite_enabled": {
+                "value": true
+            },
             "photo_wait_time_enabled": {
                 "value": true
             },
@@ -3728,6 +3746,15 @@
             },
             "photos_segmented_upload_segment_size_wifi": {
                 "value": 3145728.0
+            },
+            "photos_segmented_upload_xlite_segment_size_good_kb": {
+                "value": 128.0
+            },
+            "photos_segmented_upload_xlite_segment_size_great_kb": {
+                "value": 512.0
+            },
+            "photos_segmented_upload_xlite_segment_size_poor_kb": {
+                "value": 64.0
             },
             "place_picker_new_data_provider": {
                 "value": true
@@ -5122,6 +5149,18 @@
             "videos_segmented_upload_segment_size_wifi": {
                 "value": 972800.0
             },
+            "videos_segmented_upload_xlite_segment_size_good_kb": {
+                "value": 512.0
+            },
+            "videos_segmented_upload_xlite_segment_size_great_kb": {
+                "value": 950.0
+            },
+            "videos_segmented_upload_xlite_segment_size_min_kb": {
+                "value": 64.0
+            },
+            "videos_segmented_upload_xlite_segment_size_poor_kb": {
+                "value": 128.0
+            },
             "view_counts_everywhere_api_enabled": {
                 "value": true
             },
@@ -5609,7 +5648,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "a94942fc75d7002bd8555f653c8cd0465968783e",
-        "experiments": "a94942fc75d7002bd8555f653c8cd0465968783e"
+        "feature_switches": "ab714b0d3bead6e54e6dd30ea081eaf0404b6a00",
+        "experiments": "ab714b0d3bead6e54e6dd30ea081eaf0404b6a00"
     }
 }
