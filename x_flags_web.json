@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "baaf5289df8292c8240bffe0b6d48747965b2e7e",
+    "feature_set_token": "3051ca65309dee51d325878a6261b1adeece7753",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1496,6 +1496,12 @@
         },
         "responsive_web_grok_analyze_post_followups_enabled": {
             "value": false
+        },
+        "responsive_web_grok_analyze_tooltip_delay_ms": {
+            "value": 2500
+        },
+        "responsive_web_grok_analyze_tooltip_show_probability_percentage": {
+            "value": 20
         },
         "responsive_web_grok_api_enable_grok_host": {
             "value": true
@@ -8920,6 +8926,16 @@
             "name": "responsive_web_grok_tab_education_days_threshold",
             "type": "number",
             "defaultValue": 30
+        },
+        "responsive_web_grok_analyze_tooltip_show_probability_percentage": {
+            "name": "responsive_web_grok_analyze_tooltip_show_probability_percentage",
+            "type": "number",
+            "defaultValue": 20
+        },
+        "responsive_web_grok_analyze_tooltip_delay_ms": {
+            "name": "responsive_web_grok_analyze_tooltip_delay_ms",
+            "type": "number",
+            "defaultValue": 2500
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
