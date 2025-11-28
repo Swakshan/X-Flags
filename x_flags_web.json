@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3051ca65309dee51d325878a6261b1adeece7753",
+    "feature_set_token": "392712c4be074cd023462074001dbd863f5c8c2d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2837,6 +2837,9 @@
         "subscriptions_offers_localized_pricing_enabled": {
             "value": false
         },
+        "subscriptions_offers_premium_nav_indicator_enabled": {
+            "value": false
+        },
         "subscriptions_offers_special_perk_enabled": {
             "value": false
         },
@@ -2913,7 +2916,7 @@
             "value": ""
         },
         "subscriptions_upsells_get_verified_button_promo_variant_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_get_verified_button_variant": {
             "value": ""
@@ -2925,7 +2928,7 @@
             "value": true
         },
         "subscriptions_upsells_get_verified_profile_card_promo_variant_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_get_verified_profile_card_variant": {
             "value": "variant_a"
@@ -3443,6 +3446,9 @@
         "unified_cards_install_button_redesign_enabled": {
             "value": true
         },
+        "unified_cards_use_subtitle_as_vanity_fallback_in_collection": {
+            "value": false
+        },
         "user_ad_accounts_config_enabled": {
             "value": false
         },
@@ -3529,6 +3535,12 @@
         },
         "x_jetfuel_enable_test_cluster": {
             "value": false
+        },
+        "x_jetfuel_event_screen_migration_enabled": {
+            "value": false
+        },
+        "x_jetfuel_event_screen_migration_skip_ids": {
+            "value": []
         },
         "x_jetfuel_use_new_api_url": {
             "value": true
@@ -6050,16 +6062,6 @@
             "name": "home_nav_upgrade_upsell_17384",
             "type": "experiment",
             "enumeration_values": []
-        },
-        "home_nav_upsell_age_gating_android_mobile_web_17535": {
-            "name": "home_nav_upsell_age_gating_android_mobile_web_17535",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "client",
-                "upsell_api_no_age_gating",
-                "upsell_api_with_age_gating"
-            ]
         },
         "home_timeline_features_holdback_7823": {
             "name": "home_timeline_features_holdback_7823",
@@ -11804,6 +11806,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "subscriptions_offers_premium_nav_indicator_enabled": {
+            "name": "subscriptions_offers_premium_nav_indicator_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
             "type": "boolean",
@@ -12283,12 +12290,12 @@
         "subscriptions_upsells_get_verified_button_promo_variant_enabled": {
             "name": "subscriptions_upsells_get_verified_button_promo_variant_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_get_verified_profile_card_promo_variant_enabled": {
             "name": "subscriptions_upsells_get_verified_profile_card_promo_variant_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_sidebar_default_promo_variant_enabled": {
             "name": "subscriptions_upsells_sidebar_default_promo_variant_enabled",
@@ -13633,6 +13640,11 @@
             "name": "unified_cards_destination_url_params_enabled",
             "type": "string"
         },
+        "unified_cards_use_subtitle_as_vanity_fallback_in_collection": {
+            "name": "unified_cards_use_subtitle_as_vanity_fallback_in_collection",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "unified_cards_collection_ads_convert_to_image_website_card": {
             "name": "unified_cards_collection_ads_convert_to_image_website_card",
             "type": "boolean",
@@ -14437,6 +14449,16 @@
             "name": "x_jetfuel_use_new_api_url",
             "type": "boolean",
             "defaultValue": true
+        },
+        "x_jetfuel_event_screen_migration_enabled": {
+            "name": "x_jetfuel_event_screen_migration_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "x_jetfuel_event_screen_migration_skip_ids": {
+            "name": "x_jetfuel_event_screen_migration_skip_ids",
+            "type": "object",
+            "defaultValue": []
         },
         "xchat_sign_messages": {
             "name": "xchat_sign_messages",
