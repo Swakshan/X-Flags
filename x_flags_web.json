@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "392712c4be074cd023462074001dbd863f5c8c2d",
+    "feature_set_token": "52fef10485c32183399800929cbfe0ed9eb16eae",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1502,6 +1502,9 @@
         },
         "responsive_web_grok_analyze_tooltip_show_probability_percentage": {
             "value": 20
+        },
+        "responsive_web_grok_api_debug_grok_header": {
+            "value": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "value": true
@@ -8939,6 +8942,11 @@
             "type": "number",
             "defaultValue": 2500
         },
+        "responsive_web_grok_api_debug_grok_header": {
+            "name": "responsive_web_grok_api_debug_grok_header",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
             "type": "boolean",
@@ -13714,34 +13722,22 @@
         "upsell_api_user_profile_analytics_card_android_17526": {
             "name": "upsell_api_user_profile_analytics_card_android_17526",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "analytics_card"
-            ]
+            "enumeration_values": []
         },
         "upsell_api_user_profile_get_verified_card_ios_17524": {
             "name": "upsell_api_user_profile_get_verified_card_ios_17524",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "get_verified_card_rotation"
-            ]
+            "enumeration_values": []
         },
         "upsell_api_user_profile_parity_test_android_17525": {
             "name": "upsell_api_user_profile_parity_test_android_17525",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "upsell_api"
-            ]
+            "enumeration_values": []
         },
         "upsell_api_user_profile_parity_test_ios_17521": {
             "name": "upsell_api_user_profile_parity_test_ios_17521",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "upsell_api"
-            ]
+            "enumeration_values": []
         },
         "user_ad_accounts_config_enabled": {
             "name": "user_ad_accounts_config_enabled",
