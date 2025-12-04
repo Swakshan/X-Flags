@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "026a96d87c6e959ddbe5ce94af20b1157a496874",
+    "feature_set_token": "9036130c33b45c9bc5ffe61b574fb6558388642e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3615,7 +3615,7 @@
             "value": 50
         },
         "xchat_max_group_size": {
-            "value": 250
+            "value": 275
         },
         "xchat_max_group_size_for_remove_info_item": {
             "value": 100
@@ -3625,6 +3625,9 @@
         },
         "xchat_quick_reply_enabled": {
             "value": true
+        },
+        "xchat_render_av_info_items_as_messages": {
+            "value": false
         },
         "xchat_sample_observation_queries": {
             "value": 500
@@ -3664,6 +3667,9 @@
         },
         "xchat_user_event_limit": {
             "value": 500
+        },
+        "xchat_web_react_blob_url_management": {
+            "value": false
         },
         "xprofile_consumption_enabled": {
             "value": true
@@ -4012,11 +4018,6 @@
             "name": "ads_spacing_client_fallback_minimum_spacing_verified_blue",
             "type": "number",
             "defaultValue": 3
-        },
-        "analytics_upsell_test_17216": {
-            "name": "analytics_upsell_test_17216",
-            "type": "experiment",
-            "enumeration_values": []
         },
         "arkose_challenge_open_app_dev": {
             "name": "arkose_challenge_open_app_dev",
@@ -5823,11 +5824,6 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "get_verified_visitor_upsell_minimum_account_age_web_17506": {
-            "name": "get_verified_visitor_upsell_minimum_account_age_web_17506",
-            "type": "experiment",
-            "enumeration_values": []
-        },
         "graduated_access_user_prompt_enabled": {
             "name": "graduated_access_user_prompt_enabled",
             "type": "boolean",
@@ -6445,11 +6441,6 @@
         "ios_premium_paywall_preloaded_webview_direct_upgrade_enabled": {
             "name": "ios_premium_paywall_preloaded_webview_direct_upgrade_enabled",
             "type": "string"
-        },
-        "ios_reply_boost_upsell_holdback_17222": {
-            "name": "ios_reply_boost_upsell_holdback_17222",
-            "type": "experiment",
-            "enumeration_values": []
         },
         "krs_registration_enabled": {
             "name": "krs_registration_enabled",
@@ -7302,11 +7293,6 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "premium_get_verified_upsell_basic_tier_web_17332": {
-            "name": "premium_get_verified_upsell_basic_tier_web_17332",
-            "type": "experiment",
-            "enumeration_values": []
-        },
         "premium_home_nav_upgrade_upsell__variant_key_fs": {
             "name": "premium_home_nav_upgrade_upsell__variant_key_fs",
             "type": "string",
@@ -7314,11 +7300,6 @@
         },
         "premium_paywall_feature_highlights_17499": {
             "name": "premium_paywall_feature_highlights_17499",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "premium_reply_boost_popup_web_17100": {
-            "name": "premium_reply_boost_popup_web_17100",
             "type": "experiment",
             "enumeration_values": []
         },
@@ -7460,16 +7441,6 @@
             "name": "profile_label_improvements_pcf_edit_profile_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "profile_page_upsells_swapper_17161": {
-            "name": "profile_page_upsells_swapper_17161",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "profile_page_upsells_swapper_non_english_17208": {
-            "name": "profile_page_upsells_swapper_non_english_17208",
-            "type": "experiment",
-            "enumeration_values": []
         },
         "promoted_badge_placement_circle_icon": {
             "name": "promoted_badge_placement_circle_icon",
@@ -13723,26 +13694,6 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "upsell_api_user_profile_analytics_card_android_17526": {
-            "name": "upsell_api_user_profile_analytics_card_android_17526",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "upsell_api_user_profile_get_verified_card_ios_17524": {
-            "name": "upsell_api_user_profile_get_verified_card_ios_17524",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "upsell_api_user_profile_parity_test_android_17525": {
-            "name": "upsell_api_user_profile_parity_test_android_17525",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "upsell_api_user_profile_parity_test_ios_17521": {
-            "name": "upsell_api_user_profile_parity_test_ios_17521",
-            "type": "experiment",
-            "enumeration_values": []
-        },
         "user_ad_accounts_config_enabled": {
             "name": "user_ad_accounts_config_enabled",
             "type": "boolean",
@@ -13789,11 +13740,6 @@
         },
         "viewcounts_everywhere_16084": {
             "name": "viewcounts_everywhere_16084",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "visitor_get_verified_profile_card_upsell_test_17303": {
-            "name": "visitor_get_verified_profile_card_upsell_test_17303",
             "type": "experiment",
             "enumeration_values": []
         },
@@ -14479,7 +14425,7 @@
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
             "type": "number",
-            "defaultValue": 250
+            "defaultValue": 275
         },
         "xchat_enable_av": {
             "name": "xchat_enable_av",
@@ -14773,7 +14719,8 @@
         },
         "xchat_render_av_info_items_as_messages": {
             "name": "xchat_render_av_info_items_as_messages",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_grok_analyze_enabled": {
             "name": "xchat_grok_analyze_enabled",
@@ -14781,7 +14728,8 @@
         },
         "xchat_web_react_blob_url_management": {
             "name": "xchat_web_react_blob_url_management",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
