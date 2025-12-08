@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f06f30e861f31cf7172abf1d05f687cb460bdd2b",
+    "feature_set_token": "d2472bfff2ea786c3696a36d560a3af059e46aa0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1333,6 +1333,9 @@
             "value": "off"
         },
         "responsive_web_card_preconnect_enabled": {
+            "value": false
+        },
+        "responsive_web_card_reminder_enabled": {
             "value": false
         },
         "responsive_web_carousel_v2_cards_non_safari_enabled": {
@@ -3672,7 +3675,7 @@
             "value": 500
         },
         "xchat_web_react_blob_url_management": {
-            "value": false
+            "value": true
         },
         "xprofile_consumption_enabled": {
             "value": true
@@ -3697,9 +3700,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_card_reminder_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -5875,10 +5875,7 @@
         "grok_auto_translate_rweb_17544": {
             "name": "grok_auto_translate_rweb_17544",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "grok_button_on_every_post_17085": {
             "name": "grok_button_on_every_post_17085",
@@ -7709,6 +7706,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_ad_revenue_sharing_onboarding_redirect_enabled": {
+            "name": "responsive_web_ad_revenue_sharing_onboarding_redirect_enabled",
+            "type": "string"
+        },
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "name": "responsive_web_ad_revenue_sharing_number_of_impressions",
             "type": "number",
@@ -7959,6 +7960,11 @@
         },
         "responsive_web_card_preconnect_enabled": {
             "name": "responsive_web_card_preconnect_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_card_reminder_enabled": {
+            "name": "responsive_web_card_reminder_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -8927,6 +8933,18 @@
             "name": "responsive_web_grok_disable_new_conversation_url_reset",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_video_upload_enabled": {
+            "name": "responsive_web_grok_video_upload_enabled",
+            "type": "string"
+        },
+        "responsive_web_grok_analyze_tooltip_17895": {
+            "name": "responsive_web_grok_analyze_tooltip_17895",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -14740,7 +14758,7 @@
         "xchat_web_react_blob_url_management": {
             "name": "xchat_web_react_blob_url_management",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_ask_grok_enabled": {
             "name": "xchat_ask_grok_enabled",
