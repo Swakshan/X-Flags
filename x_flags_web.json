@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d2472bfff2ea786c3696a36d560a3af059e46aa0",
+    "feature_set_token": "5b21e13adeb4c4ce6cfca2318a95c515447ffd23",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1188,6 +1188,9 @@
         "responsive_web_ad_formats_media_overlay_enabled": {
             "value": true
         },
+        "responsive_web_ad_revenue_sharing_bounce_all_legacy_to_creator_studio_enabled": {
+            "value": false
+        },
         "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled": {
             "value": false
         },
@@ -1196,6 +1199,9 @@
         },
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "value": 5
+        },
+        "responsive_web_ad_revenue_sharing_onboarding_redirect_enabled": {
+            "value": false
         },
         "responsive_web_ad_revenue_sharing_setup_enabled": {
             "value": false
@@ -7708,7 +7714,13 @@
         },
         "responsive_web_ad_revenue_sharing_onboarding_redirect_enabled": {
             "name": "responsive_web_ad_revenue_sharing_onboarding_redirect_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_ad_revenue_sharing_bounce_all_legacy_to_creator_studio_enabled": {
+            "name": "responsive_web_ad_revenue_sharing_bounce_all_legacy_to_creator_studio_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "name": "responsive_web_ad_revenue_sharing_number_of_impressions",
@@ -11823,6 +11835,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "subscriptions_offers_in_tier_switch_enabled": {
+            "name": "subscriptions_offers_in_tier_switch_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
             "type": "boolean",
@@ -14766,6 +14782,14 @@
         },
         "xchat_emit_conv_upgraded_info_item": {
             "name": "xchat_emit_conv_upgraded_info_item",
+            "type": "string"
+        },
+        "xchat_clear_chat_enabled": {
+            "name": "xchat_clear_chat_enabled",
+            "type": "string"
+        },
+        "xchat_max_attachments_per_message": {
+            "name": "xchat_max_attachments_per_message",
             "type": "string"
         },
         "xprofile_editing_enabled": {
