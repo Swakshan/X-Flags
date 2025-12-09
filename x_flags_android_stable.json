@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "fa139f143b951e9b572326c13051a7010c3188d2",
+        "feature_set_token": "ad023111863e7f1c228b3195d403f43c6e91d5b0",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3828,6 +3828,15 @@
             "promoted_event_anomaly_detector_video_website_state_machine_enabled": {
                 "value": false
             },
+            "ranked_following_home_timeline_enabled_as_default": {
+                "value": true
+            },
+            "ranked_following_home_timeline_min_follow_count": {
+                "value": 100.0
+            },
+            "ranked_following_home_timeline_tab_enabled": {
+                "value": false
+            },
             "recent_search_limit_count": {
                 "value": 5.0
             },
@@ -5466,6 +5475,7 @@
         "android_network_host_warming_7062",
         "notifications_incremental_holdback_2022h2_13461",
         "dm_server_side_conversation_search_11680",
+        "android_ranked_following_17892",
         "dm_conversation_modular_search_ux_12344",
         "android_collect_database_perf_metrics_14254",
         "vertical_video_cards_android_17234",
@@ -5477,6 +5487,7 @@
         "soft_interventions_engagement_nudge_m1_c_11710",
         "android_lower_bitrate_video_india_14097",
         "ad_formats_instream_redesign_android_10417",
+        "ranked_following_17833",
         "android_home_timeline_mark_as_unlimited_timeline_17650",
         "mr_android_custom_push_v1_11928",
         "android_notification_drawer_limit_13128",
@@ -5495,6 +5506,7 @@
         "followers_you_know_profile_android_8098",
         "spaces_host_analytics_holdback_14239",
         "spaces_search_holdback_12894",
+        "ranked_following_extend_duration_17883",
         "android_device_follow_without_follow_15236",
         "android_larger_sru_segment_sizes_13549",
         "android_use_payload_count_in_drawer_9807",
@@ -5648,7 +5660,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "7e41aa7bb5508791eada6c3f754c2db70a569226",
-        "experiments": "7e41aa7bb5508791eada6c3f754c2db70a569226"
+        "feature_switches": "496cb1eafec909bb944cde0b3a63cbfb3f250b75",
+        "experiments": "496cb1eafec909bb944cde0b3a63cbfb3f250b75"
     }
 }
