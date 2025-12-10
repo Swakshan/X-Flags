@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "b904c4caa5895dcd8fe13c7c97fb13601b81e44e",
+        "feature_set_token": "78b871883a705f5a57f00c9f2fb80d8f6d72a52e",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2292,18 +2292,6 @@
             "grok_ios_feedback_menu_enabled": {
                 "value": true
             },
-            "grok_ios_file_upload_pdf_enabled": {
-                "value": true
-            },
-            "grok_ios_file_upload_spreadsheet_enabled": {
-                "value": true
-            },
-            "grok_ios_file_upload_text_enabled": {
-                "value": true
-            },
-            "grok_ios_file_upload_word_enabled": {
-                "value": true
-            },
             "grok_ios_followup_suggestions_enabled": {
                 "value": true
             },
@@ -2342,9 +2330,6 @@
             },
             "grok_ios_image_source_enabled": {
                 "value": false
-            },
-            "grok_ios_image_upload_enabled": {
-                "value": true
             },
             "grok_ios_load_preferred_prompts_from_home_for_images_enabled": {
                 "value": false
@@ -2684,7 +2669,8 @@
                     "20793816",
                     "16101626",
                     "4503599668262652",
-                    "4503599728040676"
+                    "4503599728040676",
+                    "1996538807404113920"
                 ]
             },
             "home_timeline_client_deduping_max_recent_cache_entries": {
@@ -3089,6 +3075,12 @@
             "ios_ad_formats_viewable_impressions": {
                 "value": false
             },
+            "ios_ad_formats_web_view_keyboard_appear_logging_enabled": {
+                "value": true
+            },
+            "ios_ad_formats_web_view_link_click_new_logging_enabled": {
+                "value": true
+            },
             "ios_age_assurance_show_age_verification_flow": {
                 "value": true
             },
@@ -3386,6 +3378,9 @@
             "ios_flush_scribe_recurring_task_interval": {
                 "value": 10.0
             },
+            "ios_follow_graphql_enabled": {
+                "value": false
+            },
             "ios_graduated_access_fetch_enabled": {
                 "value": true
             },
@@ -3453,7 +3448,7 @@
                 "value": false
             },
             "ios_in_app_article_webview_full_sheet_for_sticky_elements_exclude_sites_enabled": {
-                "value": false
+                "value": true
             },
             "ios_in_app_article_webview_handle_x_articles_enabled": {
                 "value": false
@@ -3469,7 +3464,8 @@
                     "twitch.com",
                     "twitch.tv",
                     "nytimes.com",
-                    "huffpost.com"
+                    "huffpost.com",
+                    "bloomberg.com"
                 ]
             },
             "ios_in_app_article_webview_js_to_handle_custom_scrollview_events_enabled": {
@@ -3628,12 +3624,6 @@
                 "value": true
             },
             "ios_ntab_forward_feedback_server_driven_enabled": {
-                "value": false
-            },
-            "ios_ntab_forward_feedback_tombstoning_enabled": {
-                "value": false
-            },
-            "ios_ntab_forward_feedback_undo_tombstone_enabled": {
                 "value": false
             },
             "ios_ntab_legacy_voice_room_card_view_enabled": {
@@ -11624,6 +11614,12 @@
             "x_jetfuel_enable_v2_sdk": {
                 "value": true
             },
+            "x_jetfuel_event_screen_migration_enabled": {
+                "value": false
+            },
+            "x_jetfuel_event_screen_migration_skip_ids": {
+                "value": []
+            },
             "xchat_allow_legacy_group_member_add": {
                 "value": true
             },
@@ -11634,6 +11630,9 @@
                 "value": 200.0
             },
             "xchat_eagerly_observe_conv_list": {
+                "value": false
+            },
+            "xchat_emit_conv_upgraded_info_item": {
                 "value": false
             },
             "xchat_enable_drafts": {
@@ -11662,6 +11661,9 @@
             },
             "xchat_local_pagination_page_size": {
                 "value": 50.0
+            },
+            "xchat_max_attachments_per_message": {
+                "value": 1.0
             },
             "xchat_max_group_size": {
                 "value": 275.0
@@ -11700,7 +11702,7 @@
                 "value": false
             },
             "xchat_unified_tab_min_snowflake_user_id": {
-                "value": ""
+                "value": "0"
             },
             "xchat_use_info_items_for_sorting": {
                 "value": true
@@ -11757,7 +11759,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "3be6dc0e7df35e9311e6ac7fa72ef86622b834ac",
-        "experiments": "3be6dc0e7df35e9311e6ac7fa72ef86622b834ac"
+        "feature_switches": "adcf3930c5237a6f390ebf13bdd6d18595226945",
+        "experiments": "adcf3930c5237a6f390ebf13bdd6d18595226945"
     }
 }
