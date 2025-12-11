@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6c6420df89f3d96c582709e9f9451686276e85c7",
+    "feature_set_token": "0b04b221f0d648c8a1b7b321e8774155e46eb2da",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1363,9 +1363,6 @@
             "value": true
         },
         "responsive_web_chat_enabled": {
-            "value": true
-        },
-        "responsive_web_collection_ads_enabled": {
             "value": true
         },
         "responsive_web_commerce_shop_spotlight_enabled": {
@@ -3441,9 +3438,6 @@
         "unified_cards_clip_long_media_promoted_content_enabled": {
             "value": true
         },
-        "unified_cards_collection_ads_convert_to_image_website_card": {
-            "value": false
-        },
         "unified_cards_details_component_title_max_lines": {
             "value": 2
         },
@@ -3577,6 +3571,9 @@
         },
         "xchat_allow_legacy_message_requests": {
             "value": true
+        },
+        "xchat_ask_grok_enabled": {
+            "value": false
         },
         "xchat_auto_upgrade_legacy_groups": {
             "value": false
@@ -8029,11 +8026,6 @@
             "name": "responsive_web_client_backoff_10535",
             "type": "experiment",
             "enumeration_values": []
-        },
-        "responsive_web_collection_ads_enabled": {
-            "name": "responsive_web_collection_ads_enabled",
-            "type": "boolean",
-            "defaultValue": true
         },
         "responsive_web_commerce_shop_spotlight_enabled": {
             "name": "responsive_web_commerce_shop_spotlight_enabled",
@@ -13669,6 +13661,10 @@
             "name": "unified_cards_always_skip_details_for_promoted_content",
             "type": "string"
         },
+        "unified_cards_always_skip_details_for_promoted_content_budget_aware_experiment_id": {
+            "name": "unified_cards_always_skip_details_for_promoted_content_budget_aware_experiment_id",
+            "type": "string"
+        },
         "unified_cards_docked_media_destinations_disabled": {
             "name": "unified_cards_docked_media_destinations_disabled",
             "type": "string"
@@ -13700,19 +13696,6 @@
             "name": "unified_cards_use_subtitle_as_vanity_fallback_in_collection",
             "type": "boolean",
             "defaultValue": true
-        },
-        "unified_cards_collection_ads_convert_to_image_website_card": {
-            "name": "unified_cards_collection_ads_convert_to_image_website_card",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "unified_cards_collection_ads_interaction_type": {
-            "name": "unified_cards_collection_ads_interaction_type",
-            "type": "string"
-        },
-        "unified_cards_collection_ads_is_enabled": {
-            "name": "unified_cards_collection_ads_is_enabled",
-            "type": "string"
         },
         "unified_cards_dpa_cta_button_alignment_fix_enabled": {
             "name": "unified_cards_dpa_cta_button_alignment_fix_enabled",
@@ -13751,21 +13734,6 @@
             "name": "unified_cards_dpa_hide_vanity",
             "type": "boolean",
             "defaultValue": true
-        },
-        "unified_cards_image_collection_website_android_15244": {
-            "name": "unified_cards_image_collection_website_android_15244",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "unified_cards_image_collection_website_ios_15245": {
-            "name": "unified_cards_image_collection_website_ios_15245",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "unified_cards_image_collection_website_rweb_15246": {
-            "name": "unified_cards_image_collection_website_rweb_15246",
-            "type": "experiment",
-            "enumeration_values": []
         },
         "user_ad_accounts_config_enabled": {
             "name": "user_ad_accounts_config_enabled",
@@ -14806,7 +14774,8 @@
         },
         "xchat_ask_grok_enabled": {
             "name": "xchat_ask_grok_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_emit_conv_upgraded_info_item": {
             "name": "xchat_emit_conv_upgraded_info_item",
