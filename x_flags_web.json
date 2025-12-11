@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9e3fd6a650ac6f92230ea82f1869958255cef04a",
+    "feature_set_token": "9f6a4868994a8228e8a7e24858e9d48b60e93fd6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2196,6 +2196,9 @@
         "responsive_web_verified_organizations_new_year_offer_enabled": {
             "value": true
         },
+        "responsive_web_verified_organizations_offer_description_enabled": {
+            "value": false
+        },
         "responsive_web_verified_organizations_paid_to_invoice_enabled": {
             "value": false
         },
@@ -2296,9 +2299,6 @@
             "value": false
         },
         "rweb_enable_logged_out_search_search_bar_enabled": {
-            "value": false
-        },
-        "rweb_home_compact_timeline_enabled": {
             "value": false
         },
         "rweb_home_jot_migrate_enabled": {
@@ -2846,6 +2846,9 @@
         "subscriptions_offers_dynamic_upsells_enabled": {
             "value": false
         },
+        "subscriptions_offers_in_tier_switch_enabled": {
+            "value": false
+        },
         "subscriptions_offers_localized_pricing_enabled": {
             "value": false
         },
@@ -2861,6 +2864,9 @@
         "subscriptions_premium_experiment_nav_text": {
             "value": false
         },
+        "subscriptions_premium_hub_ad_free_link_enabled": {
+            "value": false
+        },
         "subscriptions_premium_hub_insights_block_enabled": {
             "value": true
         },
@@ -2868,7 +2874,7 @@
             "value": true
         },
         "subscriptions_premium_tiers_default_interval": {
-            "value": "Year"
+            "value": "Month"
         },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerified"
@@ -3624,7 +3630,7 @@
             "value": 50
         },
         "xchat_max_group_size": {
-            "value": 275
+            "value": 300
         },
         "xchat_max_group_size_for_remove_info_item": {
             "value": 100
@@ -3666,7 +3672,7 @@
             "value": false
         },
         "xchat_unified_tab_min_snowflake_user_id": {
-            "value": ""
+            "value": "0"
         },
         "xchat_use_info_items_for_sorting": {
             "value": true
@@ -9903,6 +9909,11 @@
             "name": "responsive_web_verified_organizations_handles_marketing_content_enabled",
             "type": "string"
         },
+        "responsive_web_verified_organizations_offer_description_enabled": {
+            "name": "responsive_web_verified_organizations_offer_description_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
             "type": "boolean",
@@ -10163,8 +10174,7 @@
         },
         "rweb_home_compact_timeline_enabled": {
             "name": "rweb_home_compact_timeline_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_home_jot_migrate_enabled": {
             "name": "rweb_home_jot_migrate_enabled",
@@ -10500,6 +10510,14 @@
             "name": "rweb_xchat_sqlite_logs",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_xchat_dogfood_logs_enabled": {
+            "name": "rweb_xchat_dogfood_logs_enabled",
+            "type": "string"
+        },
+        "rweb_xchat_log_snapshot_enabled": {
+            "name": "rweb_xchat_log_snapshot_enabled",
+            "type": "string"
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
@@ -11833,7 +11851,8 @@
         },
         "subscriptions_offers_in_tier_switch_enabled": {
             "name": "subscriptions_offers_in_tier_switch_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
@@ -11922,6 +11941,11 @@
             "name": "subscriptions_premium_hub_retention_offer_card_enabled",
             "type": "string"
         },
+        "subscriptions_premium_hub_ad_free_link_enabled": {
+            "name": "subscriptions_premium_hub_ad_free_link_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "string"
@@ -11954,7 +11978,7 @@
         "subscriptions_premium_tiers_default_interval": {
             "name": "subscriptions_premium_tiers_default_interval",
             "type": "string",
-            "defaultValue": "Year"
+            "defaultValue": "Month"
         },
         "subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled": {
             "name": "subscriptions_premium_tiers_deeplink_with_tier_and_plan_enabled",
@@ -14466,7 +14490,7 @@
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
             "type": "number",
-            "defaultValue": 275
+            "defaultValue": 300
         },
         "xchat_enable_av": {
             "name": "xchat_enable_av",
@@ -14718,7 +14742,7 @@
         "xchat_unified_tab_min_snowflake_user_id": {
             "name": "xchat_unified_tab_min_snowflake_user_id",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "0"
         },
         "xchat_fetch_legacy_group_details": {
             "name": "xchat_fetch_legacy_group_details",
@@ -14786,6 +14810,10 @@
         },
         "xchat_max_attachments_per_message": {
             "name": "xchat_max_attachments_per_message",
+            "type": "string"
+        },
+        "xchat_update_fetched_range_in_txn": {
+            "name": "xchat_update_fetched_range_in_txn",
             "type": "string"
         },
         "xprofile_editing_enabled": {
