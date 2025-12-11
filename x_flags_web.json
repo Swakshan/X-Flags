@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0b04b221f0d648c8a1b7b321e8774155e46eb2da",
+    "feature_set_token": "9db15df16ce1d768e3e3eb1bd2898e578c74ee1d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1070,6 +1070,12 @@
         },
         "payments_transaction_search_enabled": {
             "value": true
+        },
+        "premium_business_offers_banner_portal_basic_tier": {
+            "value": false
+        },
+        "premium_business_offers_banner_sidebar_basic_tier": {
+            "value": false
         },
         "premium_content_api_read_enabled": {
             "value": false
@@ -2332,7 +2338,7 @@
             "value": true
         },
         "rweb_media_upload_refactor_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_mixed_media_uploads_cap": {
             "value": 4
@@ -2438,6 +2444,9 @@
         },
         "rweb_xchat_debug_enabled": {
             "value": false
+        },
+        "rweb_xchat_log_snapshot_enabled": {
+            "value": true
         },
         "rweb_xchat_logs": {
             "value": false
@@ -7295,6 +7304,16 @@
                 "business_card_on_paywall"
             ]
         },
+        "premium_business_offers_banner_portal_basic_tier": {
+            "name": "premium_business_offers_banner_portal_basic_tier",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "premium_business_offers_banner_sidebar_basic_tier": {
+            "name": "premium_business_offers_banner_sidebar_basic_tier",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
@@ -10229,7 +10248,7 @@
         "rweb_media_upload_refactor_enabled": {
             "name": "rweb_media_upload_refactor_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_mixed_media_uploads_enabled": {
             "name": "rweb_mixed_media_uploads_enabled",
@@ -10512,7 +10531,8 @@
         },
         "rweb_xchat_log_snapshot_enabled": {
             "name": "rweb_xchat_log_snapshot_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
