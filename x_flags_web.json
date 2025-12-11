@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9f6a4868994a8228e8a7e24858e9d48b60e93fd6",
+    "feature_set_token": "6c6420df89f3d96c582709e9f9451686276e85c7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2791,6 +2791,9 @@
         },
         "subscriptions_management_fetch_next_billing_time": {
             "value": true
+        },
+        "subscriptions_management_manage_subtext_update_enabled": {
+            "value": false
         },
         "subscriptions_management_query_active_price": {
             "value": true
@@ -11620,6 +11623,11 @@
             "name": "subscriptions_management_billing_label_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_management_manage_subtext_update_enabled": {
+            "name": "subscriptions_management_manage_subtext_update_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_syscache_content_enabled": {
             "name": "subscriptions_marketing_page_syscache_content_enabled",
