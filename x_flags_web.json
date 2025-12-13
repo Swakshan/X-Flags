@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9db15df16ce1d768e3e3eb1bd2898e578c74ee1d",
+    "feature_set_token": "2ca1ffec710c7f08e504fa6959abef172d08013e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -433,9 +433,6 @@
             "value": true
         },
         "c9s_tweet_anatomy_moderator_badge_enabled": {
-            "value": true
-        },
-        "card_detail_compact_enabled": {
             "value": true
         },
         "communities_adult_content_setting_display": {
@@ -1195,7 +1192,7 @@
             "value": true
         },
         "responsive_web_ad_revenue_sharing_bounce_all_legacy_to_creator_studio_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_ad_revenue_sharing_dashboard_redirect_enabled": {
             "value": false
@@ -1491,6 +1488,9 @@
         "responsive_web_grok_05221996": {
             "value": false
         },
+        "responsive_web_grok_05231996": {
+            "value": ""
+        },
         "responsive_web_grok_allow_youtube_embeds": {
             "value": false
         },
@@ -1605,8 +1605,14 @@
         "responsive_web_grok_imagine_annotation_enabled": {
             "value": true
         },
+        "responsive_web_grok_imagine_composer_enabled": {
+            "value": false
+        },
         "responsive_web_grok_imagine_in_composer_enabled": {
             "value": true
+        },
+        "responsive_web_grok_imagine_profile_edit_enabled": {
+            "value": false
         },
         "responsive_web_grok_img_composer": {
             "value": true
@@ -1619,6 +1625,9 @@
         },
         "responsive_web_grok_location_enabled": {
             "value": true
+        },
+        "responsive_web_grok_media_attribution_route_to_imagine_composer": {
+            "value": false
         },
         "responsive_web_grok_outage_banner_message": {
             "value": ""
@@ -1708,6 +1717,9 @@
             "value": true
         },
         "responsive_web_grok_text_selection_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_tweet_media_edit_image_button_enabled": {
             "value": false
         },
         "responsive_web_grok_tweet_translation": {
@@ -2303,6 +2315,9 @@
         },
         "rweb_enable_logged_out_search_search_bar_enabled": {
             "value": false
+        },
+        "rweb_home_connect_in_menu_min_follows": {
+            "value": 100
         },
         "rweb_home_jot_migrate_enabled": {
             "value": true
@@ -3564,7 +3579,9 @@
             "value": false
         },
         "x_jetfuel_event_screen_migration_skip_ids": {
-            "value": []
+            "value": [
+                "1914593913903493120"
+            ]
         },
         "x_jetfuel_use_new_api_url": {
             "value": true
@@ -4721,16 +4738,6 @@
             "name": "c9s_community_searchtags_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "card_detail_compact_enabled": {
-            "name": "card_detail_compact_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "card_detail_compact_16577": {
-            "name": "card_detail_compact_16577",
-            "type": "experiment",
-            "enumeration_values": []
         },
         "communities_community_detail_sorting_enabled": {
             "name": "communities_community_detail_sorting_enabled",
@@ -7742,7 +7749,7 @@
         "responsive_web_ad_revenue_sharing_bounce_all_legacy_to_creator_studio_enabled": {
             "name": "responsive_web_ad_revenue_sharing_bounce_all_legacy_to_creator_studio_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_ad_revenue_sharing_number_of_impressions": {
             "name": "responsive_web_ad_revenue_sharing_number_of_impressions",
@@ -8966,6 +8973,31 @@
             "name": "responsive_web_grok_video_upload_enabled",
             "type": "string"
         },
+        "responsive_web_grok_imagine_composer_enabled": {
+            "name": "responsive_web_grok_imagine_composer_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_imagine_profile_edit_enabled": {
+            "name": "responsive_web_grok_imagine_profile_edit_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_media_attribution_route_to_imagine_composer": {
+            "name": "responsive_web_grok_media_attribution_route_to_imagine_composer",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_tweet_media_edit_image_button_enabled": {
+            "name": "responsive_web_grok_tweet_media_edit_image_button_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_05231996": {
+            "name": "responsive_web_grok_05231996",
+            "type": "string",
+            "defaultValue": ""
+        },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
             "type": "experiment",
@@ -10186,9 +10218,10 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "rweb_home_compact_timeline_enabled": {
-            "name": "rweb_home_compact_timeline_enabled",
-            "type": "string"
+        "rweb_home_connect_in_menu_min_follows": {
+            "name": "rweb_home_connect_in_menu_min_follows",
+            "type": "number",
+            "defaultValue": 100
         },
         "rweb_home_jot_migrate_enabled": {
             "name": "rweb_home_jot_migrate_enabled",
@@ -14465,7 +14498,9 @@
         "x_jetfuel_event_screen_migration_skip_ids": {
             "name": "x_jetfuel_event_screen_migration_skip_ids",
             "type": "object",
-            "defaultValue": []
+            "defaultValue": [
+                "1914593913903493120"
+            ]
         },
         "xchat_sign_messages": {
             "name": "xchat_sign_messages",
@@ -14811,6 +14846,10 @@
         },
         "xchat_update_fetched_range_in_txn": {
             "name": "xchat_update_fetched_range_in_txn",
+            "type": "string"
+        },
+        "xchat_show_troubleshooting_settings": {
+            "name": "xchat_show_troubleshooting_settings",
             "type": "string"
         },
         "xprofile_editing_enabled": {
