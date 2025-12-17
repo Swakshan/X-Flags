@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ca5cdae3e6317515101f32af93dda4194f912f8f",
+    "feature_set_token": "92ba668bd4dce1cae441c14c477ff4e172bdd229",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1720,6 +1720,12 @@
             "value": true
         },
         "responsive_web_grok_text_selection_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_tweet_actions_edit_image_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_tweet_media_detail_edit_image_button_enabled": {
             "value": false
         },
         "responsive_web_grok_tweet_media_edit_image_button_enabled": {
@@ -3757,6 +3763,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "subscriptions_upsells_vo_premium_business_rebranding_free_gold_account": {
+            "value": "keep_your_gold_checkmark"
         }
     },
     "debug": {
@@ -9038,6 +9047,16 @@
             "type": "string",
             "defaultValue": ""
         },
+        "responsive_web_grok_tweet_actions_edit_image_enabled": {
+            "name": "responsive_web_grok_tweet_actions_edit_image_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_tweet_media_detail_edit_image_button_enabled": {
+            "name": "responsive_web_grok_tweet_media_detail_edit_image_button_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
             "type": "experiment",
@@ -11952,6 +11971,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "subscriptions_offers_upgrade_offer_sidebar_upsell_enabled": {
+            "name": "subscriptions_offers_upgrade_offer_sidebar_upsell_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
             "type": "boolean",
@@ -12043,6 +12066,10 @@
             "name": "subscriptions_premium_hub_ad_free_link_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_premium_hub_upgrade_offer_card_enabled": {
+            "name": "subscriptions_premium_hub_upgrade_offer_card_enabled",
+            "type": "string"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
