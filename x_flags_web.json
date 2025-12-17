@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "92ba668bd4dce1cae441c14c477ff4e172bdd229",
+    "feature_set_token": "c5542a9bdc80447d1bd2a445eb88e46ab3c0f035",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1075,13 +1075,13 @@
             "value": false
         },
         "premium_business_offers_nav_indicator_enabled": {
-            "value": true
+            "value": false
         },
         "premium_business_offers_navbar_premium_signup_hidden": {
-            "value": true
+            "value": false
         },
         "premium_business_offers_signup_navbar_tab_enabled": {
-            "value": true
+            "value": false
         },
         "premium_content_api_read_enabled": {
             "value": false
@@ -2894,6 +2894,9 @@
         "subscriptions_offers_special_perk_enabled": {
             "value": false
         },
+        "subscriptions_offers_upgrade_offer_sidebar_upsell_enabled": {
+            "value": false
+        },
         "subscriptions_offers_user_location_is_usa": {
             "value": false
         },
@@ -3094,6 +3097,9 @@
         },
         "subscriptions_upsells_vo_nav_decoration_variant": {
             "value": "30_percent_off"
+        },
+        "subscriptions_upsells_vo_premium_business_rebranding_free_gold_account": {
+            "value": "keep_your_gold_checkmark"
         },
         "subscriptions_upsells_vo_premium_business_rebranding_variant": {
             "value": "variant_a"
@@ -3763,9 +3769,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "subscriptions_upsells_vo_premium_business_rebranding_free_gold_account": {
-            "value": "keep_your_gold_checkmark"
         }
     },
     "debug": {
@@ -7352,17 +7355,17 @@
         "premium_business_offers_signup_navbar_tab_enabled": {
             "name": "premium_business_offers_signup_navbar_tab_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "premium_business_offers_navbar_premium_signup_hidden": {
             "name": "premium_business_offers_navbar_premium_signup_hidden",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "premium_business_offers_nav_indicator_enabled": {
             "name": "premium_business_offers_nav_indicator_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "premium_business_offers_discount_label_enabled": {
             "name": "premium_business_offers_discount_label_enabled",
@@ -7535,6 +7538,14 @@
             "name": "promoted_badge_placement_position",
             "type": "string",
             "defaultValue": ""
+        },
+        "ranked_following_web_17931": {
+            "name": "ranked_following_web_17931",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "recruiting_verified_orgs_admin_enabled": {
             "name": "recruiting_verified_orgs_admin_enabled",
@@ -11973,7 +11984,8 @@
         },
         "subscriptions_offers_upgrade_offer_sidebar_upsell_enabled": {
             "name": "subscriptions_offers_upgrade_offer_sidebar_upsell_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_experiment_nav_text": {
             "name": "subscriptions_premium_experiment_nav_text",
@@ -12494,6 +12506,11 @@
             "name": "subscriptions_upsells_vo_premium_business_rebranding_variant",
             "type": "string",
             "defaultValue": "variant_a"
+        },
+        "subscriptions_upsells_vo_premium_business_rebranding_free_gold_account": {
+            "name": "subscriptions_upsells_vo_premium_business_rebranding_free_gold_account",
+            "type": "string",
+            "defaultValue": "keep_your_gold_checkmark"
         },
         "subscriptions_verification_info_enabled": {
             "name": "subscriptions_verification_info_enabled",
