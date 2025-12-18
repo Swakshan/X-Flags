@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "837304f3145ff523816ed16e8fc9ed3af1f6603e",
+    "feature_set_token": "b959911c8773a0354e622e238be8b2f282b07bc6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1194,6 +1194,9 @@
         "responsive_web_account_access_language_lo_splash_sidebar": {
             "value": "control"
         },
+        "responsive_web_ad_formats_enable_dismiss_in_home_urt": {
+            "value": false
+        },
         "responsive_web_ad_formats_hide_vanity_for_business_account": {
             "value": false
         },
@@ -1579,7 +1582,7 @@
             "value": false
         },
         "responsive_web_grok_file_max_size": {
-            "value": 33554432
+            "value": 50000000.0
         },
         "responsive_web_grok_file_upload_enabled": {
             "value": true
@@ -7792,6 +7795,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_ad_formats_enable_dismiss_in_home_urt": {
+            "name": "responsive_web_ad_formats_enable_dismiss_in_home_urt",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
             "type": "boolean",
@@ -8383,7 +8391,7 @@
         "responsive_web_grok_file_max_size": {
             "name": "responsive_web_grok_file_max_size",
             "type": "number",
-            "defaultValue": 33554432
+            "defaultValue": 50000000.0
         },
         "responsive_web_grok_file_compression_enabled": {
             "name": "responsive_web_grok_file_compression_enabled",
