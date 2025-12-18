@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7b7d68c426f273292b0b462f57fb485d9a21c0fe",
+    "feature_set_token": "837304f3145ff523816ed16e8fc9ed3af1f6603e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1200,6 +1200,9 @@
         "responsive_web_ad_formats_media_overlay_enabled": {
             "value": true
         },
+        "responsive_web_ad_formats_website_cta_enabled": {
+            "value": true
+        },
         "responsive_web_ad_revenue_sharing_bounce_all_legacy_to_creator_studio_enabled": {
             "value": true
         },
@@ -1609,6 +1612,9 @@
             "value": true
         },
         "responsive_web_grok_imagine_composer_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_imagine_explore_enabled": {
             "value": false
         },
         "responsive_web_grok_imagine_in_composer_enabled": {
@@ -3770,9 +3776,6 @@
             "value": false
         },
         "xprofile_work_history_enabled": {
-            "value": true
-        },
-        "responsive_web_ad_formats_website_cta_enabled": {
             "value": true
         }
     },
@@ -7784,6 +7787,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_ad_formats_website_cta_enabled": {
+            "name": "responsive_web_ad_formats_website_cta_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "responsive_web_ad_revenue_sharing_enabled": {
             "name": "responsive_web_ad_revenue_sharing_enabled",
             "type": "boolean",
@@ -9072,6 +9080,15 @@
             "name": "responsive_web_grok_tweet_media_detail_edit_image_button_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_imagine_explore_enabled": {
+            "name": "responsive_web_grok_imagine_explore_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_image_comparison_enabled": {
+            "name": "responsive_web_grok_image_comparison_enabled",
+            "type": "string"
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
