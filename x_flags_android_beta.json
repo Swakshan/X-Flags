@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "76743df37134fca9ca015880dc39bf33a99e87ae",
+        "feature_set_token": "ada0cc7b0e7c20384d96cdf6c601b8f5553917b1",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -416,6 +416,9 @@
             },
             "android_ad_formats_unified_cards_trim_zero_width_characters_enabled": {
                 "value": true
+            },
+            "android_ad_formats_vanity_url_string_fallback_enabled": {
+                "value": false
             },
             "android_ad_formats_web_view_link_click_new_logging_enabled": {
                 "value": false
@@ -879,6 +882,9 @@
             "android_fab_events_sample_size": {
                 "value": 10000.0
             },
+            "android_fab_go_live_premium_gating_enabled": {
+                "value": false
+            },
             "android_fetch_notification_channels_via_network": {
                 "value": false
             },
@@ -1079,6 +1085,9 @@
             },
             "android_linger_impression_flush_before_upload_enabled": {
                 "value": true
+            },
+            "android_linger_scribe_monotonic_clock_enabled": {
+                "value": false
             },
             "android_live_spaces_notification_channel_enabled": {
                 "value": true
@@ -1663,6 +1672,9 @@
                 "value": 800.0
             },
             "author_moderated_replies_urt_container_enabled": {
+                "value": false
+            },
+            "av_chat_android_dev_logs_to_analytics_enabled": {
                 "value": false
             },
             "av_chat_android_incoming_call_acceleration": {
@@ -5326,7 +5338,7 @@
                 "value": false
             },
             "xchat_auto_upgrade_legacy_groups": {
-                "value": false
+                "value": true
             },
             "xchat_clear_chat_enabled": {
                 "value": false
@@ -5539,6 +5551,7 @@
         "followers_you_know_profile_android_8098",
         "spaces_host_analytics_holdback_14239",
         "spaces_search_holdback_12894",
+        "android_linger_flush_on_view_recycle_17914",
         "ranked_following_extend_duration_17883",
         "android_device_follow_without_follow_15236",
         "android_larger_sru_segment_sizes_13549",
@@ -5692,7 +5705,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "79b3717ec9ea76db2d31662406d958bf5b5fc568",
-        "experiments": "79b3717ec9ea76db2d31662406d958bf5b5fc568"
+        "feature_switches": "9d569bc6b52bc455fb0729b227e710b0b3493eff",
+        "experiments": "9d569bc6b52bc455fb0729b227e710b0b3493eff"
     }
 }
