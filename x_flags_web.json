@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ce04048b0c8810e738877636e66037e8d714a65f",
+    "feature_set_token": "b183358026fe24e52e9d5c2cadd4c3d481c09e42",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2217,6 +2217,9 @@
         "responsive_web_user_spectral_key_enabled": {
             "value": false
         },
+        "responsive_web_verified_ntab_hidden": {
+            "value": false
+        },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
             "value": 3000.0
         },
@@ -3807,9 +3810,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_verified_ntab_hidden": {
-            "value": false
         }
     },
     "debug": {
@@ -9988,6 +9988,11 @@
             "name": "responsive_web_user_badge_education_get_verified_button_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_verified_ntab_hidden": {
+            "name": "responsive_web_verified_ntab_hidden",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_verified_organizations_full_access_annual_enabled": {
             "name": "responsive_web_verified_organizations_full_access_annual_enabled",
