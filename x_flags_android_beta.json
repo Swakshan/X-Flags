@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "ada0cc7b0e7c20384d96cdf6c601b8f5553917b1",
+        "feature_set_token": "fb05e8b814f2f78fca646727f5a425d8413b5570",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1081,7 +1081,7 @@
                 "value": true
             },
             "android_linger_flush_on_view_recycle": {
-                "value": false
+                "value": true
             },
             "android_linger_impression_flush_before_upload_enabled": {
                 "value": true
@@ -3642,12 +3642,6 @@
             "payments_add_security_key_enabled": {
                 "value": false
             },
-            "payments_atm_map_enabled": {
-                "value": true
-            },
-            "payments_card_name_suggestions_enabled": {
-                "value": true
-            },
             "payments_cash_deposits_enabled": {
                 "value": true
             },
@@ -3657,12 +3651,6 @@
             "payments_cheques_deposits_enabled": {
                 "value": false
             },
-            "payments_cheques_enabled": {
-                "value": true
-            },
-            "payments_contacts_institutions_enabled": {
-                "value": true
-            },
             "payments_environment_default_value": {
                 "value": ""
             },
@@ -3670,12 +3658,6 @@
                 "value": true
             },
             "payments_half_cover_notices_enabled": {
-                "value": true
-            },
-            "payments_lock_unlock_individual_cards_enabled": {
-                "value": true
-            },
-            "payments_mailing_address_enabled": {
                 "value": true
             },
             "payments_offboard_enabled": {
@@ -3690,20 +3672,11 @@
             "payments_shutdown_enabled": {
                 "value": false
             },
-            "payments_tasks_carousel_enabled": {
-                "value": true
-            },
             "payments_tracing_reports_enabled": {
                 "value": true
             },
             "payments_transfer_link_enabled": {
                 "value": false
-            },
-            "payments_wires_enabled": {
-                "value": true
-            },
-            "payments_withdraw_wires_enabled": {
-                "value": true
             },
             "people_discovery_live_sync_enabled": {
                 "value": true
@@ -3987,7 +3960,7 @@
                 "value": 100.0
             },
             "scribe_interval_seconds": {
-                "value": 10.0
+                "value": 60.0
             },
             "scribe_livepipeline_events_enabled": {
                 "value": true
@@ -5331,14 +5304,20 @@
             "x_lite_notifications_android_enabled": {
                 "value": false
             },
-            "xchat_allow_legacy_group_member_add": {
-                "value": true
+            "xchat_additional_reply_preview_validation_required_seqnum": {
+                "value": 0.0
+            },
+            "xchat_additional_reply_preview_validation_send": {
+                "value": false
             },
             "xchat_ask_grok_enabled": {
                 "value": false
             },
             "xchat_auto_upgrade_legacy_groups": {
                 "value": true
+            },
+            "xchat_av_call_start_should_notify": {
+                "value": false
             },
             "xchat_clear_chat_enabled": {
                 "value": false
@@ -5350,10 +5329,7 @@
                 "value": false
             },
             "xchat_emit_conv_upgraded_info_item": {
-                "value": false
-            },
-            "xchat_enable_av": {
-                "value": false
+                "value": true
             },
             "xchat_enable_drafts": {
                 "value": false
@@ -5367,9 +5343,6 @@
             "xchat_enable_message_requests": {
                 "value": false
             },
-            "xchat_fetch_legacy_group_details": {
-                "value": true
-            },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
                 "value": -1.0
             },
@@ -5378,9 +5351,6 @@
             },
             "xchat_inbox_conversation_limit": {
                 "value": 20.0
-            },
-            "xchat_inbox_conversation_local_pagination": {
-                "value": true
             },
             "xchat_inbox_conversation_local_pagination_page_size": {
                 "value": 20.0
@@ -5406,9 +5376,6 @@
             "xchat_sample_observation_queries": {
                 "value": 500.0
             },
-            "xchat_screenshot_prevention_enabled": {
-                "value": false
-            },
             "xchat_search_frequency_weight": {
                 "value": 0.6
             },
@@ -5417,6 +5384,9 @@
             },
             "xchat_search_repetition_weight": {
                 "value": 0.2
+            },
+            "xchat_share_to_ig_story": {
+                "value": false
             },
             "xchat_show_inbox_categories": {
                 "value": true
@@ -5427,17 +5397,8 @@
             "xchat_show_troubleshooting_settings": {
                 "value": true
             },
-            "xchat_throttle_badge_counts": {
-                "value": false
-            },
             "xchat_unified_tab_min_snowflake_user_id": {
                 "value": "0"
-            },
-            "xchat_update_fetched_range_in_txn": {
-                "value": true
-            },
-            "xchat_use_info_items_for_sorting": {
-                "value": true
             },
             "xchat_use_popular_convos": {
                 "value": false
@@ -5704,7 +5665,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "2969f061b2524b4afc081ffbea7c957989898e56",
-        "experiments": "2969f061b2524b4afc081ffbea7c957989898e56"
+        "feature_switches": "acfe60fbb3359c681dc8ecb2a2acb12a66a5d127",
+        "experiments": "acfe60fbb3359c681dc8ecb2a2acb12a66a5d127"
     }
 }
