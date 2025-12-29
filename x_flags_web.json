@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "98d3b39c706f94abeddf3b8252c75bf39a32c736",
+    "feature_set_token": "73a70cbf4e4ebf2f13073717f12191823f153958",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2527,6 +2527,9 @@
             "value": false
         },
         "rweb_xchat_sqlite_logs": {
+            "value": false
+        },
+        "rweb_xchat_standalone_avcall_enabled": {
             "value": false
         },
         "rweb_xp_forwarded_for_enabled": {
@@ -10769,7 +10772,8 @@
         },
         "rweb_xchat_standalone_avcall_enabled": {
             "name": "rweb_xchat_standalone_avcall_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
