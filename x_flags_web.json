@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "73a70cbf4e4ebf2f13073717f12191823f153958",
+    "feature_set_token": "ee93fdca8685d69333acf2fca80535bb83c8f677",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1655,6 +1655,9 @@
         },
         "responsive_web_grok_latest_news_preset_enabled": {
             "value": true
+        },
+        "responsive_web_grok_link_edit_image_to_grok_com_enabled": {
+            "value": false
         },
         "responsive_web_grok_location_enabled": {
             "value": true
@@ -3662,7 +3665,7 @@
             "value": true
         },
         "xchat_ask_grok_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_auto_upgrade_legacy_groups": {
             "value": true
@@ -6419,6 +6422,14 @@
             "name": "identity_verification_vendor_idv_migration_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "imagine_on_x_web_hover_edit_image_button_17967": {
+            "name": "imagine_on_x_web_hover_edit_image_button_17967",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "hide_edit_image_on_hover"
+            ]
         },
         "immersive_viewer_enable_profile_viewer": {
             "name": "immersive_viewer_enable_profile_viewer",
@@ -9186,6 +9197,10 @@
             "name": "responsive_web_grok_media_attribution_imagine_force_show",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_link_edit_image_to_grok_com_enabled": {
+            "name": "responsive_web_grok_link_edit_image_to_grok_com_enabled",
+            "type": "string"
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -15059,7 +15074,7 @@
         "xchat_ask_grok_enabled": {
             "name": "xchat_ask_grok_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_emit_conv_upgraded_info_item": {
             "name": "xchat_emit_conv_upgraded_info_item",
