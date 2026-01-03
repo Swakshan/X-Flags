@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b890d32aee2eee3558df40be7f6a574a0c5e4631",
+    "feature_set_token": "e3262fb2f860634ac615935970ec864ee834b249",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1541,6 +1541,9 @@
         },
         "responsive_web_grok_analyze_tooltip_show_probability_percentage": {
             "value": 20
+        },
+        "responsive_web_grok_annotations_enabled": {
+            "value": false
         },
         "responsive_web_grok_api_enable_grok_host": {
             "value": true
@@ -9216,7 +9219,8 @@
         },
         "responsive_web_grok_annotations_enabled": {
             "name": "responsive_web_grok_annotations_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -10677,10 +10681,7 @@
         "rweb_tweet_detail_prefetch_17619": {
             "name": "rweb_tweet_detail_prefetch_17619",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "rweb_tweets_boosting_enabled": {
             "name": "rweb_tweets_boosting_enabled",
