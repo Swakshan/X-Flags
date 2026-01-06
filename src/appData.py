@@ -1,5 +1,4 @@
-import requests
-import json
+import requests,json,re
 from bs4 import BeautifulSoup as bs
 from pprint import pprint
 from urllib.parse import unquote
@@ -34,6 +33,22 @@ def apkCombo(url):
         link = link.replace(proxyUrl, '')
     return unquote(link)
 
+#Credits: HerrErde/SubwaySurfers-Api
+def apkPure(package_name,version):
+    api = f"https://api.pureapk.com/m/v3/cms/app_version?hl=en-US&package_name={package_name}"
+    hdr['x-sv'] = "29"
+    hdr['x-abis'] = "arm64-v8a"
+    hdr['x-gp'] = "1"
+    
+    req = requests.get(api, headers=hdr)
+    if req.status_code != 200:
+        raise Exception("apkPure API failed")
+    res = re.findall(rb"[\x20-\x7E]{4,}", req.content)
+    apkPversion:str = res[3].decode("utf-8")
+    if not apkPversion.startswith(version):
+        print(apkPversion,version,end="\n")
+        raise Exception("apkPure API doesnt have "+version)
+    return res[11].decode("utf-8")
 
 def apkM(url):
     pS:bs = beautifulSoup(url)

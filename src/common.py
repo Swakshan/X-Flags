@@ -1,7 +1,7 @@
 from enums import Source, Platform, ReleaseType
 
-from constants import (ZIP_FILE, EXTRACT_FOLDER, PKG_NAME, NEW_FILE_NAME,
-                       headers, getEnv)
+from constants import (ZIP_FILE, EXTRACT_FOLDER, NEW_FILE_NAME,
+                       headers, getEnv, getPackageName)
 from basics import get_exception, readJson, writeJson,printSubCmd
 import requests
 import zipfile
@@ -9,8 +9,9 @@ import os
 import shutil
 from apkutils import APK
 from tqdm import tqdm
-from appData import apkM,apkCombo
+from appData import apkM,apkCombo,apkPure
 import gdown
+from model import DATA
 
 def downloader(url, filePath=ZIP_FILE, isJson=False):
     if os.path.exists(filePath):
@@ -38,15 +39,21 @@ def downloader(url, filePath=ZIP_FILE, isJson=False):
         js = response.json()
         writeJson(filePath, js)
 
-def downloadAndroid(url, source):
+def downloadAndroid(data:DATA):
+    url = data.link
+    source = data.src
     down_link = None
+    
     if source == Source.APKM:
         down_link = apkM(url)
 
     elif source == Source.APKC:
         down_link = apkCombo(url)
+        
+    elif source == Source.APKP:
+        down_link = apkPure(getPackageName(data.app),data.vername)
 
-    elif source == Source.APT or source == Source.APKP or Source.MAN:
+    elif source == Source.APT or Source.MAN:
         down_link = url
 
     else:
@@ -54,7 +61,9 @@ def downloadAndroid(url, source):
     printSubCmd("Downloading " + down_link + " from: " + source.value)
     downloader(url=down_link)
 
-def unzipper(platform):
+def unzipper(data:DATA):
+    platform = data.platform
+    
     def extract(src, new_name):
         zip_obj.extract(src, path=EXTRACT_FOLDER)
         fg = readJson(EXTRACT_FOLDER + src)
@@ -67,7 +76,7 @@ def unzipper(platform):
     if platform == Platform.ANDROID:
         FLAG_FOLDER = "res/raw"
         FLAG_FILE = f"{FLAG_FOLDER}/feature_switch_manifest"
-        apk_name_1 = f"{PKG_NAME}.apk"
+        apk_name_1 = getPackageName(data)+".apk"
         apk_name_2 = f"base.apk"
         
         if apk_name_1 in file_list or apk_name_2 in file_list:

@@ -12,8 +12,6 @@ def getRootDir():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     return os.path.dirname(current_dir)
 
-APP_NAME = "Twitter"
-PKG_NAME = 'com.twitter.android'
 DUMMY_FOLDER = getRootDir() + '/dummy/'
 ZIP_FILE = DUMMY_FOLDER + 'app.zip'
 EXTRACT_FOLDER = DUMMY_FOLDER + 'Extracted/'

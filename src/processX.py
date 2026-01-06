@@ -21,7 +21,6 @@ def process(data:DATA,flagFileName:str):
         app = data.app
         typ = data.typ
         platform = data.platform
-        source = data.src
         down_link = data.link
         
 
@@ -36,16 +35,16 @@ def process(data:DATA,flagFileName:str):
 
         elif platform == Platform.IOS:
             downloader(down_link)
-            s = unzipper(platform)
+            s = unzipper(data)
             
             if not s:
                 raise Exception("Error unzipping")
             sts = True
 
         elif platform == Platform.ANDROID:
-            downloadAndroid(down_link,source)
+            downloadAndroid(data)
 
-            s = unzipper(platform)
+            s = unzipper(data)
             if not s:
                 raise Exception("Error unzipping")
 
