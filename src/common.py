@@ -76,7 +76,7 @@ def unzipper(data:DATA):
     if platform == Platform.ANDROID:
         FLAG_FOLDER = "res/raw"
         FLAG_FILE = f"{FLAG_FOLDER}/feature_switch_manifest"
-        apk_name_1 = getPackageName(data)+".apk"
+        apk_name_1 = getPackageName(data.app)+".apk"
         apk_name_2 = f"base.apk"
         
         if apk_name_1 in file_list or apk_name_2 in file_list:
