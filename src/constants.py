@@ -36,22 +36,25 @@ def getEnv(data):
 def isDebug():
     return int(getEnv("DEBUG"))
 
-
 def getChannelId():
-    return getEnv("CHANNEL_ID_TEST") if isDebug() else getEnv("CHANNEL_ID")
+    return getEnv("CHANNEL_ID")
 
+def getChannelName():
+    return getChannelId().replace("-100","") if isDebug() else getEnv("CHANNEL_NAME")
 
-def getChannelLink():
-    CHANNEL_NAME = getEnv("CHANNEL_NAME")
-    return f"t.me/{CHANNEL_NAME}"
-
+def getTopicID(app: Application):
+    debug = isDebug()
+    if app == Application.X:
+       return getEnv("TOPIC_ID_X")
+    if app == Application.GROK:
+       return getEnv("TOPIC_ID_GROK")
 
 def getPinMsgID(app: Application):
     if app == Application.X:
-        return getEnv("X_PIN_MSG")
+        return getEnv("PINNED_MSG_X")
 
     if app == Application.GROK:
-        return getEnv("GROK_PIN_MSG")
+        return getEnv("PINNED_MSG_GROK")
 
 
 def getPackageName(app: Application):

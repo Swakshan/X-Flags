@@ -1,15 +1,17 @@
 from compare import flagMessage
-from constants import MANIFEST_FILE_NAME,getEnv,isDebug
+from constants import MANIFEST_FILE_NAME,getEnv,isDebug,getTopicID
 from basics import readJson,printSubCmd
-from tele import editMsg,sendMsg
+from tele import editMsg
 from model import DATA
 
 def sendMessage(manifest):
     data:DATA = DATA.fromJSON(manifest)
-    
+
     flagMsg = flagMessage(data)
     teleMsg = data.teleMsg(flagMsg)
-    editMsg(data.msg_id,teleMsg)
+    
+    topicId = getTopicID(data.app)
+    editMsg(msgId=data.msg_id,text=teleMsg,topic_id=topicId)
 
 if not isDebug():
     manifest = readJson(MANIFEST_FILE_NAME)

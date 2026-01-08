@@ -1,9 +1,10 @@
 from constants import (
-    getChannelLink,
+    getChannelName,
     getAPKMCode,
     getAPKMSlug,
     getPackageName,
     getPinMsgID,
+    getTopicID,
     MANIFEST_FILE_NAME,
 )
 from enums import *
@@ -60,6 +61,15 @@ class DATA:
         rd["pairip"] = self.pairip
         return rd
     
+    def __msgLinkGenerator(self):
+        tele_link = "https://t.me"
+        chn_name = getChannelName()
+        topic_id = getTopicID(self.app)
+        pin_msg_id = getPinMsgID(self.app)
+        if int(topic_id):
+            return f"{tele_link}/c/{chn_name}/{topic_id}/{pin_msg_id}"
+        return f"{tele_link}/{chn_name}/{pin_msg_id}"
+    
     def teleMsg(self,flagData):
         global linkRow, linkCount
         linkRow = ""
@@ -73,7 +83,8 @@ class DATA:
             else:
                 linkRow += "\n"
             linkCount += 1
-        pin_link = f"{getChannelLink()}/{getPinMsgID(self.app)}"
+        
+        pin_link = self.__msgLinkGenerator()
         appName = self.app.value
         platform = self.platform.value
         typ = self.typ.value

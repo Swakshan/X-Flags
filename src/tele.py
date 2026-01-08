@@ -9,7 +9,7 @@ def santizeText(txt):
     txt = txt.replace(ch,f'\\{ch}')
   return txt
 
-def sendMsg(text,tag="untitled"):
+def sendMsg(text,topic_id="0",tag="untitled"):
     printSubCmd("Telegram sending message")
     BOT_TOKEN = getEnv("BOT_TOKEN")
     channel_id = getChannelId()
@@ -21,6 +21,8 @@ def sendMsg(text,tag="untitled"):
         "disable_web_page_preview":1,
         "parse_mode" : "MarkdownV2"
     }
+    if int(topic_id):
+        cont['message_thread_id'] = topic_id
     try:
         req = requests.post(tele_api_send_msg,data=cont)
         pkjson = req.json()
@@ -38,12 +40,12 @@ def sendMsg(text,tag="untitled"):
         print(get_exception())
         return False
 
-def editMsg(msgId,txt):
+def editMsg(msgId,text,topic_id="0"):
     printSubCmd("Telegram editting message")
     BOT_TOKEN = getEnv("BOT_TOKEN")
     channel_id = getChannelId()
     tele_api_edit_msg = 'https://api.telegram.org/bot'+BOT_TOKEN+'/editMessageText'
-    txt = santizeText(txt)
+    txt = santizeText(text)
     cont = {
         "chat_id":channel_id,
         "message_id":msgId,
@@ -51,6 +53,8 @@ def editMsg(msgId,txt):
         "disable_web_page_preview":1,
         "parse_mode" : "MarkdownV2",
     }
+    if int(topic_id):
+        cont['message_thread_id'] = topic_id
     try:
         req = requests.post(tele_api_edit_msg,data=cont)
     
