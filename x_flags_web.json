@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "acbdbaf6fac0cf3dc3143edf2edf5c2ee29f9d8b",
+    "feature_set_token": "d4c50b0600a053e6d5220c5a3738890088ad1990",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1684,7 +1684,7 @@
             "value": false
         },
         "responsive_web_grok_outage_banner_message": {
-            "value": "We are experiencing issues with Grok at the moment. Grok may be unable to reply."
+            "value": ""
         },
         "responsive_web_grok_personality": {
             "value": true
@@ -2440,7 +2440,7 @@
             "value": true
         },
         "rweb_premium_business_rebranding_entry_point_removed": {
-            "value": true
+            "value": false
         },
         "rweb_premium_business_rebranding_governments_enabled": {
             "value": true
@@ -2471,6 +2471,9 @@
         },
         "rweb_search_media_enabled": {
             "value": true
+        },
+        "rweb_session_binding_enabled": {
+            "value": false
         },
         "rweb_sourcemap_migration": {
             "value": false
@@ -5904,6 +5907,10 @@
             "name": "explore_relaunch_immersive_prefetch_enabled_no_impression",
             "type": "string"
         },
+        "explore_relaunch_non_interruptive_post_interactions_flow_enabled": {
+            "name": "explore_relaunch_non_interruptive_post_interactions_flow_enabled",
+            "type": "string"
+        },
         "focused_timeline_actions_onboarding_likes": {
             "name": "focused_timeline_actions_onboarding_likes",
             "type": "number",
@@ -7424,6 +7431,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "post_ctas_grok_web_v0_18008": {
+            "name": "post_ctas_grok_web_v0_18008",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "post_filtering_feature_premium_plus_17771": {
             "name": "post_filtering_feature_premium_plus_17771",
             "type": "experiment",
@@ -7479,6 +7494,14 @@
             "name": "premium_failed_payment_profile_card_17219",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "premium_hide_basic_tier_web_18010": {
+            "name": "premium_hide_basic_tier_web_18010",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "premium_home_nav_upgrade_upsell__variant_key_fs": {
             "name": "premium_home_nav_upgrade_upsell__variant_key_fs",
@@ -9074,7 +9097,7 @@
         "responsive_web_grok_outage_banner_message": {
             "name": "responsive_web_grok_outage_banner_message",
             "type": "string",
-            "defaultValue": "We are experiencing issues with Grok at the moment. Grok may be unable to reply."
+            "defaultValue": ""
         },
         "responsive_web_grok_bio_auto_translation_in_followers_enabled": {
             "name": "responsive_web_grok_bio_auto_translation_in_followers_enabled",
@@ -10247,14 +10270,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "retest_ai_news_sidebar_17829": {
-            "name": "retest_ai_news_sidebar_17829",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "personalized"
-            ]
-        },
         "revamped_login_page_web_17305": {
             "name": "revamped_login_page_web_17305",
             "type": "experiment",
@@ -10598,7 +10613,7 @@
         "rweb_premium_business_rebranding_entry_point_removed": {
             "name": "rweb_premium_business_rebranding_entry_point_removed",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "rweb_premium_business_rebranding_premium_paywall_enabled": {
             "name": "rweb_premium_business_rebranding_premium_paywall_enabled",
@@ -10648,6 +10663,11 @@
         "rweb_search_show_large_hashflag": {
             "name": "rweb_search_show_large_hashflag",
             "type": "string"
+        },
+        "rweb_session_binding_enabled": {
+            "name": "rweb_session_binding_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_sourcemap_migration": {
             "name": "rweb_sourcemap_migration",
@@ -12324,6 +12344,10 @@
             "name": "subscriptions_premium_tiers_hide_basic",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_premium_tiers_hide_basic_webview_paywall": {
+            "name": "subscriptions_premium_tiers_hide_basic_webview_paywall",
+            "type": "string"
         },
         "subscriptions_quick_free_trials_ui_enabled": {
             "name": "subscriptions_quick_free_trials_ui_enabled",
