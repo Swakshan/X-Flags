@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ec687364b8e8a451e6b8056a67437d2a0bfcbab5",
+    "feature_set_token": "acbdbaf6fac0cf3dc3143edf2edf5c2ee29f9d8b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1068,6 +1068,12 @@
         "payments_transaction_search_enabled": {
             "value": true
         },
+        "post_ctas_fetch_enabled": {
+            "value": false
+        },
+        "post_ctas_render_enabled": {
+            "value": false
+        },
         "premium_business_offers_banner_portal_basic_tier": {
             "value": false
         },
@@ -1678,7 +1684,7 @@
             "value": false
         },
         "responsive_web_grok_outage_banner_message": {
-            "value": ""
+            "value": "We are experiencing issues with Grok at the moment. Grok may be unable to reply."
         },
         "responsive_web_grok_personality": {
             "value": true
@@ -2974,6 +2980,9 @@
         },
         "subscriptions_premium_tiers_default_product": {
             "value": "BlueVerified"
+        },
+        "subscriptions_premium_tiers_hide_basic": {
+            "value": false
         },
         "subscriptions_premium_tiers_order_variant": {
             "value": "variant_a"
@@ -7405,6 +7414,16 @@
                 "treatment"
             ]
         },
+        "post_ctas_fetch_enabled": {
+            "name": "post_ctas_fetch_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "post_ctas_render_enabled": {
+            "name": "post_ctas_render_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "post_filtering_feature_premium_plus_17771": {
             "name": "post_filtering_feature_premium_plus_17771",
             "type": "experiment",
@@ -9055,7 +9074,7 @@
         "responsive_web_grok_outage_banner_message": {
             "name": "responsive_web_grok_outage_banner_message",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "We are experiencing issues with Grok at the moment. Grok may be unable to reply."
         },
         "responsive_web_grok_bio_auto_translation_in_followers_enabled": {
             "name": "responsive_web_grok_bio_auto_translation_in_followers_enabled",
@@ -12301,6 +12320,11 @@
             "type": "string",
             "defaultValue": "variant_a"
         },
+        "subscriptions_premium_tiers_hide_basic": {
+            "name": "subscriptions_premium_tiers_hide_basic",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "subscriptions_quick_free_trials_ui_enabled": {
             "name": "subscriptions_quick_free_trials_ui_enabled",
             "type": "boolean",
@@ -15142,6 +15166,10 @@
         },
         "xchat_share_to_ig_story": {
             "name": "xchat_share_to_ig_story",
+            "type": "string"
+        },
+        "xchat_voice_messages_enabled": {
+            "name": "xchat_voice_messages_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
