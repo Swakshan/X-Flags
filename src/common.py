@@ -51,7 +51,9 @@ def downloadAndroid(data:DATA):
         down_link = apkCombo(url)
         
     elif source == Source.APKP:
-        down_link = apkPure(getPackageName(data.app),data.vername)
+        down_link = url
+        if "download.cdnpure.com" not in down_link:
+            down_link = apkPure(getPackageName(data.app),data.vername)
 
     elif source == Source.APT or Source.MAN:
         down_link = url
