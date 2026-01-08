@@ -62,13 +62,13 @@ class DATA:
         return rd
     
     def __msgLinkGenerator(self):
-        tele_link = "https://t.me"
+        msgId = getPinMsgID(self.app)
         chn_name = getChannelName()
+        tele_link = f"https://t.me/{chn_name}"
         topic_id = getTopicID(self.app)
-        pin_msg_id = getPinMsgID(self.app)
         if int(topic_id):
-            return f"{tele_link}/c/{chn_name}/{topic_id}/{pin_msg_id}"
-        return f"{tele_link}/{chn_name}/{pin_msg_id}"
+            return f"{tele_link}/{topic_id}/{msgId}"
+        return f"{tele_link}/{msgId}"
     
     def teleMsg(self,flagData):
         global linkRow, linkCount

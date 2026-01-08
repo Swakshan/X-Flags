@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v22 : Added support for sending to telegram topic"
+VER = "v22.1 : update workflows"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)

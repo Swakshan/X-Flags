@@ -7,18 +7,10 @@ on:
 jobs:
   download-and-extract:
     runs-on: ubuntu-latest
-    env:
-      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-      CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-      CHANNEL_NAME: ${{ secrets.CHANNEL_NAME }}
-      X_PIN_MSG: ${{ secrets.X_PIN_MSG }}
-      DEBUG: ${{ secrets.DEBUG }}
-      SHARE_TO_TELE: ${{ secrets.SHARE_TO_TELE }}
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    
     
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -32,8 +24,10 @@ jobs:
 
 
     - name: Download & Extract
+      env:
+        DEBUG: ${{ secrets.DEBUG }}
       run: |
-        python src/main.py ${{ github.event.client_payload.app }} ${{ github.event.client_payload.platform }} ${{ github.event.client_payload.source }} ${{ github.event.client_payload.type }} ${{ github.event.client_payload.msgId }} ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }} ${{ env.DEBUG }}
+        python src/main.py ${{ github.event.client_payload.app }} ${{ github.event.client_payload.platform }} ${{ github.event.client_payload.source }} ${{ github.event.client_payload.type }} ${{ github.event.client_payload.msgId }} ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }}
 
     - name: Add extracted file to Git
       id: vars
@@ -53,5 +47,15 @@ jobs:
       uses: rlespinasse/git-commit-data-action@v1 
       
     - name: Changes to Telegram
+      env:
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        CHANNEL_NAME: ${{ secrets.CHANNEL_NAME }}
+        SHARE_TO_TELE: ${{ secrets.SHARE_TO_TELE }}
+        DEBUG: ${{ secrets.DEBUG }}
+        TOPIC_ID_X: ${{ secrets.TOPIC_ID_X }}
+        TOPIC_ID_GROK: ${{ secrets.TOPIC_ID_GROK }}
+        PINNED_MSG_X: ${{ secrets.PINNED_MSG_X }}
+        PINNED_MSG_GROK: ${{ secrets.PINNED_MSG_GROK }}
       run: |      
-        python src/sendTelegram.py ${{ env.BOT_TOKEN }} ${{ env.CHANNEL_ID }} ${{ env.CHANNEL_NAME }} ${{ env.X_PIN_MSG }} ${{ env.SHARE_TO_TELE }} ${{ env.DEBUG }}
+        python src/sendTelegram.py
