@@ -1,7 +1,7 @@
 
 # X (Twitter) Flags
 
-A repo that keeps track of feature flags from different builds of 𝕏 (Twitter) and update it to my [Telegram channel](https://telegram.me/twitter_app_flags)
+A repo that keeps track of feature flags from different builds of 𝕏 (Twitter) and update it to my [Telegram channel](https://telegram.me/x_builds)
 
 
 ## Latest Feature Flags
@@ -31,7 +31,7 @@ We can use xposed/lsposed module like [TwiFucker](https://github.com/Dr-TSNG/Twi
 
 #### How to get notified when there is a build released ?
 
-Check out my [Telegram Channel](https://telegram.me/twitter_app_flags) to keep track of new releases.
+Check out my [Telegram Channel](https://telegram.me/x_builds) to keep track of new releases.
 
 #### Is it safe to modify the flags ?
 
