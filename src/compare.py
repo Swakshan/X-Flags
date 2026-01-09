@@ -23,7 +23,7 @@ def compareFlags():
         new_debug_flags = {}
         old_debug_flags = {}
         
-        if data.app == Application.X:
+        if data.app in [Application.X,Application.XLITE]:
             if data.platform == Platform.WEB:
                 new_flags = new_file['config']
                 old_flags = old_file['config']

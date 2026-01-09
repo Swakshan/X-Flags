@@ -23,8 +23,11 @@ class DATA:
         self.pairip = isPairip
         self.emoji = "⚠️"
         self.changeLogs = ""  # grok and IOS has
+        
         if app == Application.X:
             self.emoji = "𝕏"
+        elif app == Application.XLITE:
+            self.emoji = "🚀"
         elif app == Application.GROK:
             self.emoji = "🤖"
         else:
@@ -61,8 +64,7 @@ class DATA:
         rd["pairip"] = self.pairip
         return rd
     
-    def __msgLinkGenerator(self):
-        msgId = getPinMsgID(self.app)
+    def __msgLinkGenerator(self,msgId):
         chn_name = getChannelName()
         tele_link = f"https://t.me/{chn_name}"
         topic_id = getTopicID(self.app)
@@ -84,7 +86,11 @@ class DATA:
                 linkRow += "\n"
             linkCount += 1
         
-        pin_link = self.__msgLinkGenerator()
+        pin_link = ""
+        pinMsgId = getPinMsgID(self.app)
+        #XLite doesnt have pin msg
+        if pinMsgId:
+            pin_link = self.__msgLinkGenerator(pinMsgId)
         appName = self.app.value
         platform = self.platform.value
         typ = self.typ.value
@@ -106,7 +112,7 @@ class DATA:
             rd = f"{rd}\n_Vercode:_ `{self.vercode}`"
             
         if platform == Platform.ANDROID.value:
-            if self.app == Application.X:
+            if self.app in [Application.X,Application.XLITE]:
                 prStr = (
                     "🚫App contains PairipLib🚫"
                     if self.pairip
@@ -135,7 +141,9 @@ class DATA:
         linkRow = linkRow + "\n" if linkRow[-2] == "|" else linkRow
         if len(self.changeLogs):
             rd = f"{rd}\n\n__Changelogs:__\n{self.changeLogs}"
-        rd = f"{rd}\n\n{linkRow}----------------------------\n[Other {appName.title()} Versions]({pin_link})"
+        rd = f"{rd}\n\n{linkRow}----------------------------"
+        if len(pin_link): #XLite doesnt have pin msg
+            rd = f"{rd}\n[Other {appName.title()} Versions]({pin_link})"
         rd = f"{rd}\n----------------------------\n{flagData}"
         rd = f"{rd}\n\n#{appName.capitalize()} #{typ} #{platform}"
         return rd

@@ -43,55 +43,60 @@ def getChannelName():
     return getChannelId().replace("-100","") if isDebug() else getEnv("CHANNEL_NAME")
 
 def getTopicID(app: Application):
-    debug = isDebug()
     if app == Application.X:
        return getEnv("TOPIC_ID_X")
     if app == Application.GROK:
        return getEnv("TOPIC_ID_GROK")
+    if app == Application.XLITE:
+       return getEnv("TOPIC_ID_XLITE")
 
 def getPinMsgID(app: Application):
     if app == Application.X:
         return getEnv("PINNED_MSG_X")
-
     if app == Application.GROK:
         return getEnv("PINNED_MSG_GROK")
+    #XLite doesnt have pin msg
+    return 0
 
 
 def getPackageName(app: Application):
     if app == Application.X:
         return "com.twitter.android"
-
     if app == Application.GROK:
         return "ai.x.grok"
+    if app == Application.XLITE:
+        return "com.x.android.lite"
 
 
 def getAPKMCode(app: Application):
     if app == Application.X:
         return "x-corp/twitter"
-
     if app == Application.GROK:
         return "xai/grok"
+    if app == Application.XLITE:
+        return "com.x.android.lite"
     
 def getAPKMSlug(app: Application):
     if app == Application.X:
         return "x"
-
     if app == Application.GROK:
         return "grok-ai-assistant"
+    if app == Application.XLITE:
+        return "x-corp/x-lite"
 
 
 def getUptoCode(app: Application):
     if app == Application.X:
         return "16792"
-
     if app == Application.GROK:
         return "1000312412"
+    if app == Application.XLITE:
+        return "1000449745"
 
 
 def getAppleStoreCode(app: Application):
     if app == Application.X:
         return "id333903271"
-
     if app == Application.GROK:
         return "id6670324846"
 

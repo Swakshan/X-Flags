@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v22.12 : update readMe"
+VER = "v22.5 : initial support for X lite"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -38,6 +38,8 @@ def main(data:DATA):
             # move existing/default ipad flags to old flags
             shutil.move(flagFileName.replace("ios","ipad"), OLD_FILE_NAME+"_2")
             
+        sts = xProcess(data,flagFileName)
+    elif app == Application.XLITE:
         sts = xProcess(data,flagFileName)
     
     if sts:

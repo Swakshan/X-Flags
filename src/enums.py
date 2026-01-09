@@ -4,6 +4,7 @@ from enum import Enum
 class Application(Enum):
     X = "x"
     GROK = "grok"
+    XLITE = "xlite"
 
 class Platform(Enum):
     ANDROID = "android"
