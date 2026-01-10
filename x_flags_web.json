@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d4c50b0600a053e6d5220c5a3738890088ad1990",
+    "feature_set_token": "3d73ca42b5c8bd6aa721fd5c3fc2b2b58d850be0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2987,6 +2987,9 @@
         "subscriptions_premium_tiers_hide_basic": {
             "value": false
         },
+        "subscriptions_premium_tiers_hide_basic_webview_paywall": {
+            "value": false
+        },
         "subscriptions_premium_tiers_order_variant": {
             "value": "variant_a"
         },
@@ -3846,6 +3849,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "responsive_web_priority_ntab_min_followers": {
+            "value": 500
         }
     },
     "debug": {
@@ -12297,6 +12303,10 @@
             "name": "subscriptions_premium_hub_upgrade_offer_card_enabled",
             "type": "string"
         },
+        "subscriptions_premium_hub_android_go_live_premium_gating_enabled": {
+            "name": "subscriptions_premium_hub_android_go_live_premium_gating_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "string"
@@ -12347,7 +12357,8 @@
         },
         "subscriptions_premium_tiers_hide_basic_webview_paywall": {
             "name": "subscriptions_premium_tiers_hide_basic_webview_paywall",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_quick_free_trials_ui_enabled": {
             "name": "subscriptions_quick_free_trials_ui_enabled",
@@ -14061,10 +14072,6 @@
             "name": "unified_cards_use_subtitle_as_vanity_fallback_in_collection",
             "type": "boolean",
             "defaultValue": true
-        },
-        "unified_cards_web_shop_now_bar_animation_delay": {
-            "name": "unified_cards_web_shop_now_bar_animation_delay",
-            "type": "string"
         },
         "unified_cards_dpa_cta_button_alignment_fix_enabled": {
             "name": "unified_cards_dpa_cta_button_alignment_fix_enabled",
