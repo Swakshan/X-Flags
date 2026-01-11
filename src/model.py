@@ -27,7 +27,7 @@ class DATA:
         if app == Application.X:
             self.emoji = "𝕏"
         elif app == Application.XLITE:
-            self.emoji = "🚀"
+            self.emoji = "⚡"
         elif app == Application.GROK:
             self.emoji = "🤖"
         else:
