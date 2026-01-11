@@ -97,7 +97,9 @@ class DATA:
         emoji = self.emoji
         link = self.link
         vername = self.vername
-        rd = f"{emoji} *{appName.upper()} Update* {emoji}\n"
+        
+        appNameSlug = appName.replace("lite","-lite")
+        rd = f"{emoji} *{appNameSlug.upper()} Update* {emoji}\n"
         platformText = platform.title()
         if platform == Platform.IOS.value:
             platformText = "iOS"
@@ -129,12 +131,15 @@ class DATA:
             apkm_vername = vername.replace(".", "-")
             apkm_verSlug = f"{apkmSlug}-{apkm_vername}"
             apkm_link = f"https://www.apkmirror.com/apk/{apkmCode}/{apkm_verSlug}-release/{apkm_verSlug}-android-apk-download/"
+            upto_link = f"https://{appNameSlug}.en.uptodown.com/android"
             
             if "aptoide" in link:
                 linkRowFormer("Aptoide", link)
             linkRowFormer("Play Store", ps_link)
             linkRowFormer("ApkMirror", apkm_link)
             linkRowFormer("APKPure", apkp_link)
+            linkRowFormer("Uptodown", upto_link)
+            
         elif platform == Platform.IOS.value:
             linkRowFormer("Apple Store", link)
             linkRow = linkRow[:-3] + "\n"
@@ -143,8 +148,8 @@ class DATA:
             rd = f"{rd}\n\n__Changelogs:__\n{self.changeLogs}"
         rd = f"{rd}\n\n{linkRow}----------------------------"
         if len(pin_link): #XLite doesnt have pin msg
-            rd = f"{rd}\n[Other {appName.title()} Versions]({pin_link})"
-        rd = f"{rd}\n----------------------------\n{flagData}"
+            rd = f"{rd}\n[Other {appName.title()} Versions]({pin_link})\n----------------------------"
+        rd = f"{rd}\n{flagData}"
         rd = f"{rd}\n\n#{appName.capitalize()} #{typ} #{platform}"
         return rd
     def __repr__(self):
