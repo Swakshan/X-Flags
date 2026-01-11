@@ -1,10 +1,10 @@
 
 # X (Twitter) Flags
 
-A repo that keeps track of feature flags from different builds of 𝕏 (Twitter) and update it to my [Telegram channel](https://telegram.me/x_builds)
+A repo that keeps track of feature flags from different builds of 𝕏 (Twitter) (and other X based applications) and update it to my [Telegram channel](https://telegram.me/x_builds)
 
 
-## Latest Feature Flags
+## Latest 𝕏 Feature Flags
 
 * **Android**
     - [Alpha Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_android_alpha.json)
@@ -18,6 +18,10 @@ A repo that keeps track of feature flags from different builds of 𝕏 (Twitter)
 * **Web**
     - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_web.json)
 
+## Latest 𝕏-Lite Feature Flags
+
+* **Android**
+    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/xlite_flags_android_stable.json)
 
 ## FAQ
 
