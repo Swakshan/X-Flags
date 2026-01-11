@@ -11,7 +11,7 @@ proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp
 def beautifulSoup(url,proxy=1):
     if proxy:
         url = proxyUrl+url
-    #print(url)
+    
     req = requests.get(url, headers=hdr)
     if req.status_code != 200:
         raise Exception("page not found:\nURL: "+url)
@@ -53,9 +53,12 @@ def apkPure(package_name,version):
 def apkM(url):
     pS:bs = beautifulSoup(url)
     downloadBtn = pS.find("a",{"class":"downloadButton"})
+    if not downloadBtn.find("span"):
+        redirectUrl = pS.find("div",{"class":"dowrap-break-all"}).find("a")['href']
+        urlSp = redirectUrl.split("/")
+        downUrl = url+"/"+urlSp[len(urlSp)-2]
+        return apkM(downUrl)
     downloadPage = downloadBtn['href']
-    # downloadBtnText = downloadBtn.text.strip().lower()
-    # is_bundle = True if "apk bundle" in downloadBtnText else False
     pS:bs = beautifulSoup(downloadPage,0)
 
     downloadLink = pS.find("a",{'id':'download-link'})['href']
