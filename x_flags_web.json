@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "79f712d78fad6b88c73ca1a067eb9093252aad39",
+    "feature_set_token": "c7e219e80695b12982e1df7ac734c779deb5a1f7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3852,6 +3852,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "responsive_web_card_image_poll_enabled": {
+            "value": false
         }
     },
     "debug": {
@@ -8114,6 +8117,10 @@
             "type": "number",
             "defaultValue": 2
         },
+        "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
+            "name": "responsive_web_birdwatch_suggestion_writer_impact_cutoff",
+            "type": "string"
+        },
         "responsive_web_birdwatch_netzdg_enabled": {
             "name": "responsive_web_birdwatch_netzdg_enabled",
             "type": "boolean",
@@ -11960,6 +11967,10 @@
             "name": "subscriptions_management_manage_subtext_update_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "subscriptions_management_tier_switch_polling_enabled": {
+            "name": "subscriptions_management_tier_switch_polling_enabled",
+            "type": "string"
         },
         "subscriptions_marketing_page_syscache_content_enabled": {
             "name": "subscriptions_marketing_page_syscache_content_enabled",
