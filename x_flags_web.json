@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c7e219e80695b12982e1df7ac734c779deb5a1f7",
+    "feature_set_token": "7b62755f74d31fa0a038a396d5092413389303e8",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1379,6 +1379,9 @@
         },
         "responsive_web_card_conversion_hoisted": {
             "value": "off"
+        },
+        "responsive_web_card_image_poll_enabled": {
+            "value": false
         },
         "responsive_web_card_preconnect_enabled": {
             "value": false
@@ -3852,9 +3855,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_card_image_poll_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -8222,6 +8222,11 @@
             "name": "responsive_web_card_conversion_hoisted",
             "type": "string",
             "defaultValue": "off"
+        },
+        "responsive_web_card_image_poll_enabled": {
+            "name": "responsive_web_card_image_poll_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_preconnect_enabled": {
             "name": "responsive_web_card_preconnect_enabled",
