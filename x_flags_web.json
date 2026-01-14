@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "cf6d4a8a9657d0dba7766a2f40f0eb7a8d71a2f4",
+    "feature_set_token": "d8df64f3e19d98edaf687ad0c21f39242ffc4c3f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -488,6 +488,12 @@
         },
         "communities_web_enable_tweet_community_results_fetch": {
             "value": true
+        },
+        "content_disclosure_creation_enabled": {
+            "value": false
+        },
+        "content_disclosure_indicator_enabled": {
+            "value": false
         },
         "creator_monetization_profile_subscription_tweets_tab_enabled": {
             "value": true
@@ -4975,6 +4981,16 @@
             "name": "community_notes_read_sources_nudge_16495",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "content_disclosure_indicator_enabled": {
+            "name": "content_disclosure_indicator_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "content_disclosure_creation_enabled": {
+            "name": "content_disclosure_creation_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "creator_studio_nav_enabled": {
             "name": "creator_studio_nav_enabled",
