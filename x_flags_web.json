@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7b62755f74d31fa0a038a396d5092413389303e8",
+    "feature_set_token": "23a214bcdd57c1bcea785165397a712b3e039833",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1364,6 +1364,9 @@
         },
         "responsive_web_birdwatch_site_enabled": {
             "value": true
+        },
+        "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
+            "value": 2
         },
         "responsive_web_birdwatch_top_contributor_enabled": {
             "value": true
@@ -3855,6 +3858,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "responsive_web_image_poll_composer_enabled": {
+            "value": false
         }
     },
     "debug": {
@@ -8119,7 +8125,8 @@
         },
         "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
             "name": "responsive_web_birdwatch_suggestion_writer_impact_cutoff",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 2
         },
         "responsive_web_birdwatch_netzdg_enabled": {
             "name": "responsive_web_birdwatch_netzdg_enabled",
@@ -10829,18 +10836,6 @@
             "name": "rweb_xchat_bug_report_url",
             "type": "string",
             "defaultValue": ""
-        },
-        "rweb_xchat_lazy_starter": {
-            "name": "rweb_xchat_lazy_starter",
-            "type": "string"
-        },
-        "rweb_xchat_drawer_enabled": {
-            "name": "rweb_xchat_drawer_enabled",
-            "type": "string"
-        },
-        "rweb_xchat_share_sheet_enabled": {
-            "name": "rweb_xchat_share_sheet_enabled",
-            "type": "string"
         },
         "rweb_xchat_sentry_enabled": {
             "name": "rweb_xchat_sentry_enabled",
