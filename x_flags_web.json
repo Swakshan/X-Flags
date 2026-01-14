@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "23a214bcdd57c1bcea785165397a712b3e039833",
+    "feature_set_token": "cf6d4a8a9657d0dba7766a2f40f0eb7a8d71a2f4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1828,6 +1828,9 @@
             "value": false
         },
         "responsive_web_home_pinned_timelines_prefetch_enabled": {
+            "value": false
+        },
+        "responsive_web_image_poll_composer_enabled": {
             "value": false
         },
         "responsive_web_impression_tracker_refactor_enabled": {
@@ -3858,9 +3861,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_image_poll_composer_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -9339,6 +9339,11 @@
         },
         "responsive_web_home_pinned_timelines_prefetch_enabled": {
             "name": "responsive_web_home_pinned_timelines_prefetch_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_image_poll_composer_enabled": {
+            "name": "responsive_web_image_poll_composer_enabled",
             "type": "boolean",
             "defaultValue": false
         },
