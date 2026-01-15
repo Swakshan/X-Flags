@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d8df64f3e19d98edaf687ad0c21f39242ffc4c3f",
+    "feature_set_token": "7f3fd852f7c3e969fd930cca1ff9c942912a470f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2917,6 +2917,9 @@
         },
         "subscriptions_management_renew_module_enabled": {
             "value": true
+        },
+        "subscriptions_management_tier_switch_polling_enabled": {
+            "value": false
         },
         "subscriptions_management_tier_switch_success_screen_enabled": {
             "value": true
@@ -11991,7 +11994,8 @@
         },
         "subscriptions_management_tier_switch_polling_enabled": {
             "name": "subscriptions_management_tier_switch_polling_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_syscache_content_enabled": {
             "name": "subscriptions_marketing_page_syscache_content_enabled",
