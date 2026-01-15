@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7f3fd852f7c3e969fd930cca1ff9c942912a470f",
+    "feature_set_token": "d4ca6e9c88c946f8358039e86dfbc67b284b8402",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2476,6 +2476,9 @@
             "value": false
         },
         "rweb_premium_business_rebranding_url_enabled": {
+            "value": true
+        },
+        "rweb_quick_promote_action_menu_enabled": {
             "value": true
         },
         "rweb_quick_promote_boost_enabled": {
@@ -10686,6 +10689,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "rweb_quick_promote_action_menu_enabled": {
+            "name": "rweb_quick_promote_action_menu_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "rweb_quick_promote_boost_enabled": {
             "name": "rweb_quick_promote_boost_enabled",
             "type": "boolean",
@@ -15250,6 +15258,10 @@
         },
         "xchat_voice_messages_enabled": {
             "name": "xchat_voice_messages_enabled",
+            "type": "string"
+        },
+        "xchat_standalone_push_notifications": {
+            "name": "xchat_standalone_push_notifications",
             "type": "string"
         },
         "xprofile_editing_enabled": {
