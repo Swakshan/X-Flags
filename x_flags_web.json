@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d4ca6e9c88c946f8358039e86dfbc67b284b8402",
+    "feature_set_token": "4413967663b2b80e3b30aea7c4f765ff5c205abb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3873,6 +3873,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "premium_paywall_on_app_load_min_account_age_days": {
+            "value": 60
         }
     },
     "debug": {
@@ -7561,6 +7564,14 @@
             "name": "premium_verified_icon_logo_update_web_17126",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "premium_web_tier_switching_overhaul_18028": {
+            "name": "premium_web_tier_switching_overhaul_18028",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "premium_webview_paywall_offer_video_url": {
             "name": "premium_webview_paywall_offer_video_url",
