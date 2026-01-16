@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "4413967663b2b80e3b30aea7c4f765ff5c205abb",
+    "feature_set_token": "b3578b8f73ba6d281299f631222838608b34eccc",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1112,6 +1112,9 @@
         },
         "premium_paywall_on_app_load_fatigue_version": {
             "value": 1
+        },
+        "premium_paywall_on_app_load_min_account_age_days": {
+            "value": 60
         },
         "premium_webview_paywall_force_premium_tier_enabled": {
             "value": false
@@ -3153,7 +3156,7 @@
             "value": false
         },
         "subscriptions_upsells_reply_boost_popup_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_reply_boost_variant": {
             "value": ""
@@ -3873,9 +3876,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "premium_paywall_on_app_load_min_account_age_days": {
-            "value": 60
         }
     },
     "debug": {
@@ -7559,6 +7559,19 @@
             "name": "premium_paywall_on_app_load_fatigue_version",
             "type": "number",
             "defaultValue": 1
+        },
+        "premium_paywall_on_app_load_min_account_age_days": {
+            "name": "premium_paywall_on_app_load_min_account_age_days",
+            "type": "number",
+            "defaultValue": 60
+        },
+        "premium_reply_boost_popup_web_17100": {
+            "name": "premium_reply_boost_popup_web_17100",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "holdback"
+            ]
         },
         "premium_verified_icon_logo_update_web_17126": {
             "name": "premium_verified_icon_logo_update_web_17126",
@@ -12638,7 +12651,7 @@
         "subscriptions_upsells_reply_boost_popup_enabled": {
             "name": "subscriptions_upsells_reply_boost_popup_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_reply_boost_show_for_seconds": {
             "name": "subscriptions_upsells_reply_boost_show_for_seconds",
@@ -15277,6 +15290,14 @@
         },
         "xchat_local_drafts": {
             "name": "xchat_local_drafts",
+            "type": "string"
+        },
+        "xchat_enable_ratcheting": {
+            "name": "xchat_enable_ratcheting",
+            "type": "string"
+        },
+        "xchat_ratchet_group_id_threshold": {
+            "name": "xchat_ratchet_group_id_threshold",
             "type": "string"
         },
         "xprofile_editing_enabled": {
