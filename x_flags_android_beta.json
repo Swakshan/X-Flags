@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "092eb5b605e1e83ae2982c650b070695c7718628",
+        "feature_set_token": "ec8dc6e3fa126fccf2751960f90f47fcd0533fa7",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -391,7 +391,7 @@
                 "value": true
             },
             "android_ad_formats_disable_actions_for_dpa_ads": {
-                "value": false
+                "value": true
             },
             "android_ad_formats_google_play_install_referrer_enabled": {
                 "value": true
@@ -4737,11 +4737,7 @@
                 "value": false
             },
             "traffic_fallback_host_map": {
-                "value": [
-                    "api.twitter.com|dc.cftls.t.co",
-                    "api-stream.twitter.com|dc.cftls.t.co",
-                    "api-settings.twitter.com|dc.cftls.t.co"
-                ]
+                "value": []
             },
             "traffic_fallback_host_policy_min_requests": {
                 "value": 1.0
@@ -5543,6 +5539,7 @@
         "arabic_toxic_reply_nudge_14746",
         "customer_journey_loggedin_incremental_holdback_2022h1_12420",
         "android_tweet_detail_activity_tweet_view_holder_pool_enabled_15268",
+        "linger_impression_stopwatch_android_18030",
         "android_youtube_card_16442",
         "android_simple_linger_17609",
         "media_selector_ordered_numbers_14598",
@@ -5662,7 +5659,6 @@
         "account_search_incremental_holdback_2022h2_13500",
         "android_skip_statuses_7456",
         "professional_viewer_holdback_13026",
-        "android_cold_start_auto_refresh_16706",
         "birdwatch_crowd_13489",
         "tweet_details_remove_status_groups_query_15714",
         "account_search_incremental_holdback_2022h1_12467",
@@ -5676,7 +5672,6 @@
         "spaces_holdback_11943",
         "unified_card_android_sdc_vs_mdc_13954",
         "personalization_holdback_2023h1_14799",
-        "ios_cold_start_auto_refresh_16508",
         "backend_events_global_holdback_7355",
         "search_incremental_holdback_2022h2_13463",
         "android_growth_performance_holdback_perf_optimize_video_relayout_15269",
@@ -5705,7 +5700,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "f6a4e1efd106a7dcff17c87c4dbc1626fd3ad827",
-        "experiments": "f6a4e1efd106a7dcff17c87c4dbc1626fd3ad827"
+        "feature_switches": "45f5be069dbe0d1c061b3873b7c987120ca6a440",
+        "experiments": "45f5be069dbe0d1c061b3873b7c987120ca6a440"
     }
 }
