@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b3578b8f73ba6d281299f631222838608b34eccc",
+    "feature_set_token": "6ad59082a4c6376833ae79e8303c223bcdb080a2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3056,6 +3056,9 @@
         "subscriptions_upsells_articles_post_composer_promo_variant_enabled": {
             "value": false
         },
+        "subscriptions_upsells_articles_profile_promo_variant_enabled": {
+            "value": false
+        },
         "subscriptions_upsells_bookmarks_screen_enabled": {
             "value": false
         },
@@ -3065,6 +3068,9 @@
         "subscriptions_upsells_dm_card_enabled": {
             "value": false
         },
+        "subscriptions_upsells_edit_post_promo_variant_enabled": {
+            "value": false
+        },
         "subscriptions_upsells_explore_sidebar_analytics_upsell_enabled": {
             "value": false
         },
@@ -3072,7 +3078,7 @@
             "value": ""
         },
         "subscriptions_upsells_get_verified_button_promo_variant_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_get_verified_button_variant": {
             "value": ""
@@ -3084,7 +3090,7 @@
             "value": true
         },
         "subscriptions_upsells_get_verified_profile_card_promo_variant_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_get_verified_profile_card_variant": {
             "value": "variant_a"
@@ -3094,6 +3100,9 @@
         },
         "subscriptions_upsells_get_verified_profile_rotation_enabled": {
             "value": true
+        },
+        "subscriptions_upsells_highlights_profile_promo_variant_enabled": {
+            "value": false
         },
         "subscriptions_upsells_home_nav_migration_enabled": {
             "value": false
@@ -3126,7 +3135,7 @@
             "value": "default"
         },
         "subscriptions_upsells_premium_home_nav_promo_variant_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_premium_nav_migration_enabled": {
             "value": true
@@ -3171,7 +3180,7 @@
             "value": false
         },
         "subscriptions_upsells_sidebar_default_promo_variant_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_upsells_track_interactions_enabled": {
             "value": true
@@ -12774,22 +12783,22 @@
         "subscriptions_upsells_get_verified_button_promo_variant_enabled": {
             "name": "subscriptions_upsells_get_verified_button_promo_variant_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_get_verified_profile_card_promo_variant_enabled": {
             "name": "subscriptions_upsells_get_verified_profile_card_promo_variant_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_sidebar_default_promo_variant_enabled": {
             "name": "subscriptions_upsells_sidebar_default_promo_variant_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_premium_home_nav_promo_variant_enabled": {
             "name": "subscriptions_upsells_premium_home_nav_promo_variant_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_upsells_articles_post_composer_promo_variant_enabled": {
             "name": "subscriptions_upsells_articles_post_composer_promo_variant_enabled",
@@ -12798,6 +12807,21 @@
         },
         "subscriptions_upsells_post_analytics_promo_variant_enabled": {
             "name": "subscriptions_upsells_post_analytics_promo_variant_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_upsells_edit_post_promo_variant_enabled": {
+            "name": "subscriptions_upsells_edit_post_promo_variant_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_upsells_articles_profile_promo_variant_enabled": {
+            "name": "subscriptions_upsells_articles_profile_promo_variant_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_upsells_highlights_profile_promo_variant_enabled": {
+            "name": "subscriptions_upsells_highlights_profile_promo_variant_enabled",
             "type": "boolean",
             "defaultValue": false
         },
