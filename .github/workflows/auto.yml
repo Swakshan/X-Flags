@@ -55,6 +55,7 @@ jobs:
         DEBUG: ${{ secrets.DEBUG }}
         TOPIC_ID_X: ${{ secrets.TOPIC_ID_X }}
         TOPIC_ID_GROK: ${{ secrets.TOPIC_ID_GROK }}
+        TOPIC_ID_XLITE: ${{ secrets.TOPIC_ID_XLITE }}
         PINNED_MSG_X: ${{ secrets.PINNED_MSG_X }}
         PINNED_MSG_GROK: ${{ secrets.PINNED_MSG_GROK }}
       run: |      
