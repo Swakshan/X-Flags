@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7ed1c887b5e88121e6228c70a7cc1250551c6384",
+    "feature_set_token": "304f416d8cce8432f9793790de750a131c5bedd7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -724,7 +724,7 @@
             "value": 30000.0
         },
         "gryphon_timeline_polling_overrides": {
-            "value": "explore,,60000"
+            "value": "explore,,60000;search,latest,60000"
         },
         "gryphon_timeline_polling_top_interval_ms": {
             "value": 120000.0
@@ -2508,6 +2508,9 @@
         "rweb_ssp_ads_enabled": {
             "value": false
         },
+        "rweb_ssp_ads_refresh_enabled": {
+            "value": true
+        },
         "rweb_starter_packs_topics_tab_enabled": {
             "value": false
         },
@@ -3881,9 +3884,6 @@
             "value": false
         },
         "xprofile_work_history_enabled": {
-            "value": true
-        },
-        "rweb_ssp_ads_refresh_enabled": {
             "value": true
         }
     },
@@ -6165,7 +6165,7 @@
         "gryphon_timeline_polling_overrides": {
             "name": "gryphon_timeline_polling_overrides",
             "type": "string",
-            "defaultValue": "explore,,60000"
+            "defaultValue": "explore,,60000;search,latest,60000"
         },
         "gryphon_underground_enabled": {
             "name": "gryphon_underground_enabled",
@@ -10786,6 +10786,11 @@
             "name": "rweb_ssp_ads_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_ssp_ads_refresh_enabled": {
+            "name": "rweb_ssp_ads_refresh_enabled",
+            "type": "boolean",
+            "defaultValue": true
         },
         "rweb_starter_packs_topics_tab_enabled": {
             "name": "rweb_starter_packs_topics_tab_enabled",
