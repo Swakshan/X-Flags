@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b295a85daaff5bca556df88f93a8d2568eebb2c9",
+    "feature_set_token": "54041186ab750decc1d91978f96d4993adb62ee0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1684,7 +1684,7 @@
             "value": true
         },
         "responsive_web_grok_link_edit_image_to_grok_com_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_location_enabled": {
             "value": true
@@ -5087,6 +5087,10 @@
         },
         "creator_subscriptions_idv_onboarding_enabled": {
             "name": "creator_subscriptions_idv_onboarding_enabled",
+            "type": "string"
+        },
+        "creator_subscriptions_auto_onboard_enabled": {
+            "name": "creator_subscriptions_auto_onboard_enabled",
             "type": "string"
         },
         "creator_subscriptions_subscriber_count_min_displayed": {
@@ -9324,7 +9328,7 @@
         "responsive_web_grok_link_edit_image_to_grok_com_enabled": {
             "name": "responsive_web_grok_link_edit_image_to_grok_com_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_imagine_native_share_enabled": {
             "name": "responsive_web_grok_imagine_native_share_enabled",
@@ -14920,14 +14924,6 @@
             "type": "object",
             "defaultValue": [
                 "2000461415727931396"
-            ]
-        },
-        "x_web_edit_image_redirect_to_grok_imagine_18022": {
-            "name": "x_web_edit_image_redirect_to_grok_imagine_18022",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "member"
             ]
         },
         "xchat_sign_messages": {
