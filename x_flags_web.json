@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0825b976c54163e357f4b528bb1bacffc04048e3",
+    "feature_set_token": "31ecae683d9ed2943122a9c394af3060302a56f7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1568,6 +1568,9 @@
         },
         "responsive_web_grok_api_enable_grok_host": {
             "value": true
+        },
+        "responsive_web_grok_article_cover_image_gen_enabled": {
+            "value": false
         },
         "responsive_web_grok_atgrok_sample_rate": {
             "value": 0.5
@@ -3885,9 +3888,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_grok_article_cover_image_gen_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -9348,6 +9348,11 @@
         },
         "responsive_web_grok_annotations_enabled": {
             "name": "responsive_web_grok_annotations_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_article_cover_image_gen_enabled": {
+            "name": "responsive_web_grok_article_cover_image_gen_enabled",
             "type": "boolean",
             "defaultValue": false
         },
