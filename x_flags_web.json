@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "304f416d8cce8432f9793790de750a131c5bedd7",
+    "feature_set_token": "0825b976c54163e357f4b528bb1bacffc04048e3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3885,6 +3885,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "responsive_web_grok_article_cover_image_gen_enabled": {
+            "value": false
         }
     },
     "debug": {
@@ -7475,6 +7478,14 @@
             "name": "post_ctas_render_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "post_ctas_grok_ios_v0_18047": {
+            "name": "post_ctas_grok_ios_v0_18047",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "post_ctas_grok_web_v0_18008": {
             "name": "post_ctas_grok_web_v0_18008",
