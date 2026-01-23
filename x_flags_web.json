@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "31ecae683d9ed2943122a9c394af3060302a56f7",
+    "feature_set_token": "8c2044afe94c5a31f5bb50f33ea64e86b62cf064",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1080,6 +1080,9 @@
         "post_ctas_render_enabled": {
             "value": false
         },
+        "post_ctas_surfaces_enabled": {
+            "value": []
+        },
         "premium_business_offers_banner_portal_basic_tier": {
             "value": false
         },
@@ -1570,7 +1573,7 @@
             "value": true
         },
         "responsive_web_grok_article_cover_image_gen_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_atgrok_sample_rate": {
             "value": 0.5
@@ -7479,6 +7482,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "post_ctas_surfaces_enabled": {
+            "name": "post_ctas_surfaces_enabled",
+            "type": "object",
+            "defaultValue": []
+        },
         "post_ctas_grok_ios_v0_18047": {
             "name": "post_ctas_grok_ios_v0_18047",
             "type": "experiment",
@@ -7550,6 +7558,14 @@
             "name": "premium_failed_payment_profile_card_17219",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "premium_hide_basic_tier_ios_18053": {
+            "name": "premium_hide_basic_tier_ios_18053",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "premium_hide_basic_tier_web_18010": {
             "name": "premium_hide_basic_tier_web_18010",
@@ -9354,7 +9370,7 @@
         "responsive_web_grok_article_cover_image_gen_enabled": {
             "name": "responsive_web_grok_article_cover_image_gen_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
