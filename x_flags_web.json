@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "82e04ffa80be76e91a6677da7d306068ebcbb45e",
+    "feature_set_token": "7aaaa56c35511c5978c325c2edff0361bd50f403",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1702,7 +1702,7 @@
             "value": false
         },
         "responsive_web_grok_outage_banner_message": {
-            "value": ""
+            "value": "We are experiencing issues with Grok at the moment. Grok may be unable to reply."
         },
         "responsive_web_grok_personality": {
             "value": true
@@ -9188,7 +9188,7 @@
         "responsive_web_grok_outage_banner_message": {
             "name": "responsive_web_grok_outage_banner_message",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "We are experiencing issues with Grok at the moment. Grok may be unable to reply."
         },
         "responsive_web_grok_bio_auto_translation_in_followers_enabled": {
             "name": "responsive_web_grok_bio_auto_translation_in_followers_enabled",
@@ -13173,6 +13173,10 @@
         },
         "syscache_brokered_requests_enabled": {
             "name": "syscache_brokered_requests_enabled",
+            "type": "string"
+        },
+        "syscache_x_api_handle_search_redirect_url": {
+            "name": "syscache_x_api_handle_search_redirect_url",
             "type": "string"
         },
         "system_theme_toggle_enabled": {
