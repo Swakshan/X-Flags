@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a9f2e1167e8ae7ee362246db40efdfe90ef141d1",
+    "feature_set_token": "4841fc50cea4bc6cb5477388734a9c9224a27599",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3005,8 +3005,8 @@
         "subscriptions_premium_hub_insights_block_enabled": {
             "value": true
         },
-        "subscriptions_premium_hub_updated_theme_enabled": {
-            "value": true
+        "subscriptions_premium_hub_more_benefits_section_enabled": {
+            "value": false
         },
         "subscriptions_premium_tiers_default_interval": {
             "value": "Month"
@@ -12385,8 +12385,7 @@
         },
         "subscriptions_premium_hub_updated_theme_enabled": {
             "name": "subscriptions_premium_hub_updated_theme_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "subscriptions_premium_hub_x_lite_alpha_enabled": {
             "name": "subscriptions_premium_hub_x_lite_alpha_enabled",
@@ -12423,7 +12422,8 @@
         },
         "subscriptions_premium_hub_more_benefits_section_enabled": {
             "name": "subscriptions_premium_hub_more_benefits_section_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
@@ -13185,6 +13185,10 @@
         },
         "syscache_handle_reset_banner_enabled": {
             "name": "syscache_handle_reset_banner_enabled",
+            "type": "string"
+        },
+        "syscache_stripe_account_precheck_enabled": {
+            "name": "syscache_stripe_account_precheck_enabled",
             "type": "string"
         },
         "system_theme_toggle_enabled": {
@@ -15363,6 +15367,14 @@
         },
         "xchat_ratchet_group_id_threshold": {
             "name": "xchat_ratchet_group_id_threshold",
+            "type": "string"
+        },
+        "xchat_passcode_options_enabled": {
+            "name": "xchat_passcode_options_enabled",
+            "type": "string"
+        },
+        "xchat_enable_forward_message_v2": {
+            "name": "xchat_enable_forward_message_v2",
             "type": "string"
         },
         "xprofile_editing_enabled": {
