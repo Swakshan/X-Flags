@@ -70,14 +70,18 @@ def xManifestSwitches(hash):
     FS_URL = f"https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.{hash}.js"
     req = requests.get(FS_URL,headers=hdr)
     res = req.text
+    
     res = res[res.find("{"):res.find("}}};")]
-
     res = res.replace("!0","true\n").replace("!1","false\n")
     res = res.replace("},",'},"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
     res = res.replace("feature_set_token:",'"feature_set_token":').replace(',config:',',"config":').replace(',"debug:',',"debug":').replace(',enumeration_values',',"enumeration_values"')
     res = res.replace('"":','":').replace(":.",":0.")
     res = res+"}}}"
-
+    
+    hex_values = re.findall(r'0x[0-9a-fA-F]+', res)
+    for h in hex_values:
+        res = res.replace(str(h),str(int(h, 16)))
+        
     return json.loads(res)
 
 def xWebFlags():
