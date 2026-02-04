@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f1c227666deba52cd54acb061cdabdf979cdff7c",
+    "feature_set_token": "77247d7efd95c1d84c2131a310a08864d31c10e0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1393,7 +1393,7 @@
             "value": "off"
         },
         "responsive_web_card_image_poll_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_card_preconnect_enabled": {
             "value": false
@@ -1840,7 +1840,7 @@
             "value": false
         },
         "responsive_web_image_poll_composer_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_impression_tracker_refactor_enabled": {
             "value": true
@@ -3319,9 +3319,6 @@
         },
         "trusted_friends_consumption_enabled": {
             "value": true
-        },
-        "trusted_friends_tweet_creation_enabled": {
-            "value": false
         },
         "tv_app_casting_log_focused_element_every_10s": {
             "value": false
@@ -8323,7 +8320,7 @@
         "responsive_web_card_image_poll_enabled": {
             "name": "responsive_web_card_image_poll_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_card_preconnect_enabled": {
             "name": "responsive_web_card_preconnect_enabled",
@@ -9435,7 +9432,7 @@
         "responsive_web_image_poll_composer_enabled": {
             "name": "responsive_web_image_poll_composer_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_impression_tracker_refactor_enabled": {
             "name": "responsive_web_impression_tracker_refactor_enabled",
@@ -13573,8 +13570,7 @@
         },
         "trusted_friends_tweet_creation_enabled": {
             "name": "trusted_friends_tweet_creation_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "trusted_friends_api_enabled": {
             "name": "trusted_friends_api_enabled",
@@ -15419,6 +15415,14 @@
         },
         "xchat_enable_av_group": {
             "name": "xchat_enable_av_group",
+            "type": "string"
+        },
+        "xchat_forward_media_max_size_mb": {
+            "name": "xchat_forward_media_max_size_mb",
+            "type": "string"
+        },
+        "xchat_forward_media_max_conversations": {
+            "name": "xchat_forward_media_max_conversations",
             "type": "string"
         },
         "xprofile_editing_enabled": {
