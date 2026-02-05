@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "01b02bf5b275a06c1427bcf45c09820678933097",
+    "feature_set_token": "ee50148d36d182c4476683fabf38055f12bf6129",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1312,7 +1312,7 @@
             "value": false
         },
         "responsive_web_birdwatch_live_note_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_birdwatch_match_page_enabled": {
             "value": true
@@ -1351,7 +1351,7 @@
             "value": true
         },
         "responsive_web_birdwatch_public_suggestions_tab_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_birdwatch_rating_crowd_enabled": {
             "value": true
@@ -1564,7 +1564,7 @@
             "value": 20
         },
         "responsive_web_grok_annotations_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_api_enable_grok_host": {
             "value": true
@@ -5991,6 +5991,10 @@
             "name": "explore_relaunch_non_interruptive_post_interactions_flow_enabled",
             "type": "string"
         },
+        "explore_relaunch_non_interruptive_grok_analyze_flow_enabled": {
+            "name": "explore_relaunch_non_interruptive_grok_analyze_flow_enabled",
+            "type": "string"
+        },
         "focused_timeline_actions_onboarding_likes": {
             "name": "focused_timeline_actions_onboarding_likes",
             "type": "number",
@@ -8299,7 +8303,7 @@
         "responsive_web_birdwatch_live_note_enabled": {
             "name": "responsive_web_birdwatch_live_note_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_birdwatch_note_internal_insights_enabled": {
             "name": "responsive_web_birdwatch_note_internal_insights_enabled",
@@ -8313,7 +8317,7 @@
         "responsive_web_birdwatch_public_suggestions_tab_enabled": {
             "name": "responsive_web_birdwatch_public_suggestions_tab_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_birdwatch_suggestions_report_enabled": {
             "name": "responsive_web_birdwatch_suggestions_report_enabled",
@@ -9369,7 +9373,7 @@
         "responsive_web_grok_annotations_enabled": {
             "name": "responsive_web_grok_annotations_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_article_cover_image_gen_enabled": {
             "name": "responsive_web_grok_article_cover_image_gen_enabled",
@@ -15435,6 +15439,10 @@
         },
         "xchat_forward_media_max_conversations": {
             "name": "xchat_forward_media_max_conversations",
+            "type": "string"
+        },
+        "xchat_av_call_card_interaction_enabled": {
+            "name": "xchat_av_call_card_interaction_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
