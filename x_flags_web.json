@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7983dfdf492de1a93f085a083920e0c726a93c9a",
+    "feature_set_token": "d9ea01440de3dac36e99ceb7fe50917aa834ace6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -512,9 +512,6 @@
         },
         "creator_subscriptions_email_share_enabled": {
             "value": true
-        },
-        "creator_subscriptions_quote_tweet_preview_enabled": {
-            "value": false
         },
         "creator_subscriptions_subscribe_action_tweet_menu_enabled": {
             "value": true
@@ -5197,8 +5194,7 @@
         },
         "creator_subscriptions_quote_tweet_preview_enabled": {
             "name": "creator_subscriptions_quote_tweet_preview_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "creator_subscriptions_subscribe_button_immersive_enabled": {
             "name": "creator_subscriptions_subscribe_button_immersive_enabled",
@@ -15488,6 +15484,10 @@
             "name": "xchat_av_call_card_interaction_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xchat_observe_inbox_users_enabled": {
+            "name": "xchat_observe_inbox_users_enabled",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
