@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "323c832e32c3306027d3c2d780cc0dd7919e3322",
+    "feature_set_token": "b4c74b665e2786a7124f844da7429e81b5195186",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2572,7 +2572,7 @@
             "value": true
         },
         "rweb_xchat_sentry_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_xchat_sqlite_logs": {
             "value": false
@@ -2865,7 +2865,7 @@
             "value": false
         },
         "subscriptions_gifting_tooltip_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_hide_ad_upsell_enabled": {
             "value": false
@@ -3773,7 +3773,7 @@
             "value": false
         },
         "xchat_enable_forward_message_v2": {
-            "value": false
+            "value": true
         },
         "xchat_enable_local_pagination": {
             "value": true
@@ -7547,14 +7547,6 @@
                 "treatment"
             ]
         },
-        "post_filtering_feature_premium_plus_17771": {
-            "name": "post_filtering_feature_premium_plus_17771",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "post_filtering"
-            ]
-        },
         "premium_business_fourth_card_entry_point_17715": {
             "name": "premium_business_fourth_card_entry_point_17715",
             "type": "experiment",
@@ -7813,6 +7805,14 @@
             "name": "profile_label_improvements_pcf_edit_profile_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "profile_sorting_experiment_18158": {
+            "name": "profile_sorting_experiment_18158",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "profile_sorting_enabled"
+            ]
         },
         "promoted_badge_placement_circle_icon": {
             "name": "promoted_badge_placement_circle_icon",
@@ -10977,7 +10977,7 @@
         "rweb_xchat_sentry_enabled": {
             "name": "rweb_xchat_sentry_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_xchat_sqlite_logs": {
             "name": "rweb_xchat_sqlite_logs",
@@ -11967,7 +11967,7 @@
         "subscriptions_gifting_tooltip_enabled": {
             "name": "subscriptions_gifting_tooltip_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_gifting_tooltip_discount_label": {
             "name": "subscriptions_gifting_tooltip_discount_label",
@@ -15456,7 +15456,7 @@
         "xchat_enable_forward_message_v2": {
             "name": "xchat_enable_forward_message_v2",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_settings_enabled": {
             "name": "xchat_settings_enabled",
