@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b4c74b665e2786a7124f844da7429e81b5195186",
+    "feature_set_token": "ea967efccbe5c3cba88efcc68f50830f7f2a6a65",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2982,7 +2982,7 @@
             "value": false
         },
         "subscriptions_offers_premium_nav_indicator_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_offers_special_perk_enabled": {
             "value": false
@@ -7488,8 +7488,8 @@
             "name": "payments_transfer_link_enabled",
             "type": "string"
         },
-        "payments_chat_support_for_txns_enabled": {
-            "name": "payments_chat_support_for_txns_enabled",
+        "payments_chat_support_for_limits_enabled": {
+            "name": "payments_chat_support_for_limits_enabled",
             "type": "string"
         },
         "payments_add_security_key_enabled": {
@@ -7508,14 +7508,6 @@
             "name": "payments_tracing_reports_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "paywall_on_web_app_open_17963": {
-            "name": "paywall_on_web_app_open_17963",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
         },
         "post_ctas_fetch_enabled": {
             "name": "post_ctas_fetch_enabled",
@@ -7550,10 +7542,7 @@
         "premium_business_fourth_card_entry_point_17715": {
             "name": "premium_business_fourth_card_entry_point_17715",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "business_card_on_paywall"
-            ]
+            "enumeration_values": []
         },
         "premium_business_offers_banner_portal_basic_tier": {
             "name": "premium_business_offers_banner_portal_basic_tier",
@@ -12361,7 +12350,7 @@
         "subscriptions_offers_premium_nav_indicator_enabled": {
             "name": "subscriptions_offers_premium_nav_indicator_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_offers_in_tier_switch_enabled": {
             "name": "subscriptions_offers_in_tier_switch_enabled",
@@ -12481,6 +12470,14 @@
             "name": "subscriptions_premium_hub_more_benefits_section_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_premium_hub_verification_block_enabled": {
+            "name": "subscriptions_premium_hub_verification_block_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_level_up_content_block_enabled": {
+            "name": "subscriptions_premium_hub_level_up_content_block_enabled",
+            "type": "string"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
