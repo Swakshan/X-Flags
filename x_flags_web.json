@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "d214e5d73ae7e9d35bb8048204c467ecc08a8bb1",
+    "feature_set_token": "d1419e61376c7505d69391fd21149fde845a9dac",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1375,7 +1375,7 @@
             "value": 2
         },
         "responsive_web_birdwatch_suggestions_report_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_birdwatch_top_contributor_enabled": {
             "value": true
@@ -2576,6 +2576,9 @@
         },
         "rweb_xchat_sqlite_logs": {
             "value": false
+        },
+        "rweb_xchat_standalone_avcall_enabled": {
+            "value": true
         },
         "rweb_xp_forwarded_for_enabled": {
             "value": false
@@ -7493,6 +7496,10 @@
             "name": "payments_add_security_key_enabled",
             "type": "string"
         },
+        "payments_complete_onboarding_enabled": {
+            "name": "payments_complete_onboarding_enabled",
+            "type": "string"
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -8328,7 +8335,7 @@
         "responsive_web_birdwatch_suggestions_report_enabled": {
             "name": "responsive_web_birdwatch_suggestions_report_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -10977,6 +10984,11 @@
         },
         "rweb_xchat_log_snapshot_enabled": {
             "name": "rweb_xchat_log_snapshot_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
+        "rweb_xchat_standalone_avcall_enabled": {
+            "name": "rweb_xchat_standalone_avcall_enabled",
             "type": "boolean",
             "defaultValue": true
         },
