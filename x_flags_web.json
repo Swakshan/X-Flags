@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "eb9025806c7c2e6b22b35cf866c3bd49d6839c91",
+    "feature_set_token": "11c03ef2faf568b6d1dcaeb0554e718ac6fc01b9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1117,7 +1117,7 @@
             "value": false
         },
         "premium_webview_paywall_intro_offer_title_new_copy_enabled": {
-            "value": false
+            "value": true
         },
         "premium_webview_paywall_offer_variant": {
             "value": "thanksgiving2025"
@@ -1311,6 +1311,9 @@
         "responsive_web_birdwatch_home_page_enabled": {
             "value": false
         },
+        "responsive_web_birdwatch_live_note_classification_enabled": {
+            "value": false
+        },
         "responsive_web_birdwatch_live_note_enabled": {
             "value": true
         },
@@ -1375,7 +1378,7 @@
             "value": true
         },
         "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
-            "value": 2
+            "value": 0
         },
         "responsive_web_birdwatch_suggestions_report_enabled": {
             "value": true
@@ -1397,6 +1400,12 @@
         },
         "responsive_web_card_image_poll_enabled": {
             "value": true
+        },
+        "responsive_web_card_image_poll_shuffle_enabled": {
+            "value": false
+        },
+        "responsive_web_card_image_poll_sort_by_vote_count_enabled": {
+            "value": false
         },
         "responsive_web_card_preconnect_enabled": {
             "value": false
@@ -1727,6 +1736,12 @@
         },
         "responsive_web_grok_profile_summary_min_posts": {
             "value": 15
+        },
+        "responsive_web_grok_promo_modal_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_promo_modal_variant": {
+            "value": "imagine_launch"
         },
         "responsive_web_grok_prompt_edit_enabled": {
             "value": true
@@ -2450,6 +2465,12 @@
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "value": true
+        },
+        "rweb_navbar_grok_indicator_enabled": {
+            "value": false
+        },
+        "rweb_navbar_grok_indicator_item_count": {
+            "value": 0
         },
         "rweb_panning_nav_behavior": {
             "value": true
@@ -3839,6 +3860,12 @@
             "value": 100
         },
         "xchat_notification_attachment": {
+            "value": false
+        },
+        "xchat_observe_inbox_users_enabled": {
+            "value": false
+        },
+        "xchat_observe_inbox_users_in_memory": {
             "value": false
         },
         "xchat_passcode_options_enabled": {
@@ -7746,7 +7773,7 @@
         "premium_webview_paywall_intro_offer_title_new_copy_enabled": {
             "name": "premium_webview_paywall_intro_offer_title_new_copy_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -8228,7 +8255,7 @@
         "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
             "name": "responsive_web_birdwatch_suggestion_writer_impact_cutoff",
             "type": "number",
-            "defaultValue": 2
+            "defaultValue": 0
         },
         "responsive_web_birdwatch_netzdg_enabled": {
             "name": "responsive_web_birdwatch_netzdg_enabled",
@@ -8320,7 +8347,8 @@
         },
         "responsive_web_birdwatch_live_note_classification_enabled": {
             "name": "responsive_web_birdwatch_live_note_classification_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_birdwatch_note_internal_insights_enabled": {
             "name": "responsive_web_birdwatch_note_internal_insights_enabled",
@@ -8350,6 +8378,16 @@
             "name": "responsive_web_card_image_poll_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_card_image_poll_shuffle_enabled": {
+            "name": "responsive_web_card_image_poll_shuffle_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_card_image_poll_sort_by_vote_count_enabled": {
+            "name": "responsive_web_card_image_poll_sort_by_vote_count_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_preconnect_enabled": {
             "name": "responsive_web_card_preconnect_enabled",
@@ -9396,6 +9434,20 @@
             "name": "responsive_web_grok_article_cover_image_gen_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_promo_modal_enabled": {
+            "name": "responsive_web_grok_promo_modal_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_grok_promo_modal_variant": {
+            "name": "responsive_web_grok_promo_modal_variant",
+            "type": "string",
+            "defaultValue": "imagine_launch"
+        },
+        "responsive_web_grok_promo_modal_min_account_age_days": {
+            "name": "responsive_web_grok_promo_modal_min_account_age_days",
+            "type": "string"
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -10716,6 +10768,20 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "rweb_navbar_grok_indicator_enabled": {
+            "name": "rweb_navbar_grok_indicator_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_navbar_grok_indicator_item_count": {
+            "name": "rweb_navbar_grok_indicator_item_count",
+            "type": "number",
+            "defaultValue": 0
+        },
+        "rweb_navbar_grok_indicator_min_account_age_days": {
+            "name": "rweb_navbar_grok_indicator_min_account_age_days",
+            "type": "string"
+        },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
             "type": "experiment",
@@ -11697,6 +11763,14 @@
         },
         "subscriptions_advanced_commerce_api_for_super_follow_enabled": {
             "name": "subscriptions_advanced_commerce_api_for_super_follow_enabled",
+            "type": "string"
+        },
+        "subscriptions_tweet_preview_redesign_enabled": {
+            "name": "subscriptions_tweet_preview_redesign_enabled",
+            "type": "string"
+        },
+        "subscriptions_new_post_badge_design_enabled": {
+            "name": "subscriptions_new_post_badge_design_enabled",
             "type": "string"
         },
         "subscriptions_cta_on_replies_enabled": {
@@ -14304,6 +14378,14 @@
             "name": "unified_cards_promoted_link_preview_disabled",
             "type": "string"
         },
+        "unified_cards_video_start_on_tap_enabled": {
+            "name": "unified_cards_video_start_on_tap_enabled",
+            "type": "string"
+        },
+        "unified_cards_video_expand_enabled": {
+            "name": "unified_cards_video_expand_enabled",
+            "type": "string"
+        },
         "unified_cards_dpa_cta_button_alignment_fix_enabled": {
             "name": "unified_cards_dpa_cta_button_alignment_fix_enabled",
             "type": "string"
@@ -15508,11 +15590,13 @@
         },
         "xchat_observe_inbox_users_enabled": {
             "name": "xchat_observe_inbox_users_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_observe_inbox_users_in_memory": {
             "name": "xchat_observe_inbox_users_in_memory",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
