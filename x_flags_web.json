@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "eb9025806c7c2e6b22b35cf866c3bd49d6839c91",
+    "feature_set_token": "aa38e41ef73a5a48e4175ff01b90fad1d5929aeb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1311,6 +1311,9 @@
         "responsive_web_birdwatch_home_page_enabled": {
             "value": false
         },
+        "responsive_web_birdwatch_live_note_classification_enabled": {
+            "value": false
+        },
         "responsive_web_birdwatch_live_note_enabled": {
             "value": true
         },
@@ -1375,7 +1378,7 @@
             "value": true
         },
         "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
-            "value": 2
+            "value": 0
         },
         "responsive_web_birdwatch_suggestions_report_enabled": {
             "value": true
@@ -3839,6 +3842,12 @@
             "value": 100
         },
         "xchat_notification_attachment": {
+            "value": false
+        },
+        "xchat_observe_inbox_users_enabled": {
+            "value": false
+        },
+        "xchat_observe_inbox_users_in_memory": {
             "value": false
         },
         "xchat_passcode_options_enabled": {
@@ -8228,7 +8237,7 @@
         "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
             "name": "responsive_web_birdwatch_suggestion_writer_impact_cutoff",
             "type": "number",
-            "defaultValue": 2
+            "defaultValue": 0
         },
         "responsive_web_birdwatch_netzdg_enabled": {
             "name": "responsive_web_birdwatch_netzdg_enabled",
@@ -8320,7 +8329,8 @@
         },
         "responsive_web_birdwatch_live_note_classification_enabled": {
             "name": "responsive_web_birdwatch_live_note_classification_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_birdwatch_note_internal_insights_enabled": {
             "name": "responsive_web_birdwatch_note_internal_insights_enabled",
@@ -11699,6 +11709,14 @@
             "name": "subscriptions_advanced_commerce_api_for_super_follow_enabled",
             "type": "string"
         },
+        "subscriptions_tweet_preview_redesign_enabled": {
+            "name": "subscriptions_tweet_preview_redesign_enabled",
+            "type": "string"
+        },
+        "subscriptions_new_post_badge_design_enabled": {
+            "name": "subscriptions_new_post_badge_design_enabled",
+            "type": "string"
+        },
         "subscriptions_cta_on_replies_enabled": {
             "name": "subscriptions_cta_on_replies_enabled",
             "type": "string"
@@ -14304,6 +14322,10 @@
             "name": "unified_cards_promoted_link_preview_disabled",
             "type": "string"
         },
+        "unified_cards_video_start_on_tap_enabled": {
+            "name": "unified_cards_video_start_on_tap_enabled",
+            "type": "string"
+        },
         "unified_cards_dpa_cta_button_alignment_fix_enabled": {
             "name": "unified_cards_dpa_cta_button_alignment_fix_enabled",
             "type": "string"
@@ -15508,11 +15530,13 @@
         },
         "xchat_observe_inbox_users_enabled": {
             "name": "xchat_observe_inbox_users_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_observe_inbox_users_in_memory": {
             "name": "xchat_observe_inbox_users_in_memory",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
