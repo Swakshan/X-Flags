@@ -12,8 +12,9 @@ from tqdm import tqdm
 from appData import apkM,apkCombo,apkPure
 import gdown
 from model import DATA
+from megaloader import extract 
 
-def downloader(url, filePath=ZIP_FILE, headers=headers(), isJson=False):
+def downloader(url, filePath=ZIP_FILE, isJson=False):
     if os.path.exists(filePath):
         printSubCmd(f"{filePath} exists" , "!")
         return True
@@ -22,7 +23,13 @@ def downloader(url, filePath=ZIP_FILE, headers=headers(), isJson=False):
         gdown.download(url, ZIP_FILE, quiet=False,fuzzy=True,resume=True)
         return True
     
-    response = requests.get(url, stream=True, headers=headers)
+    hdr=headers()
+    if "pixeldrain.com" in url:
+        download_item = list(extract(url))[0]
+        url = download_item.download_url
+        hdr = download_item.headers
+        
+    response = requests.get(url, stream=True, headers=hdr)
     if not isJson:
         total_size_in_bytes = int(response.headers.get('content-length', 0))
         block_size = 1024  
