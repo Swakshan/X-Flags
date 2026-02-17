@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "11c03ef2faf568b6d1dcaeb0554e718ac6fc01b9",
+    "feature_set_token": "b5cede639d8afaa032ac48cc5b4f8fbe9fd026df",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2286,6 +2286,12 @@
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
             "value": 3000.0
         },
+        "responsive_web_verified_organizations_enterprise_insights_enabled": {
+            "value": false
+        },
+        "responsive_web_verified_organizations_enterprise_tier": {
+            "value": false
+        },
         "responsive_web_verified_organizations_free_to_invoice_enabled": {
             "value": false
         },
@@ -2454,14 +2460,8 @@
         "rweb_media_multi_requests_enabled": {
             "value": true
         },
-        "rweb_media_upload_refactor_enabled": {
-            "value": true
-        },
         "rweb_mixed_media_uploads_cap": {
             "value": 4
-        },
-        "rweb_mixed_media_uploads_enabled": {
-            "value": true
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "value": true
@@ -10374,11 +10374,13 @@
         },
         "responsive_web_verified_organizations_enterprise_insights_enabled": {
             "name": "responsive_web_verified_organizations_enterprise_insights_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_verified_organizations_enterprise_tier": {
             "name": "responsive_web_verified_organizations_enterprise_tier",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_verified_organizations_new_support_entry_enabled": {
             "name": "responsive_web_verified_organizations_new_support_entry_enabled",
@@ -10752,15 +10754,9 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "rweb_media_upload_refactor_enabled": {
-            "name": "rweb_media_upload_refactor_enabled",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "rweb_mixed_media_uploads_enabled": {
             "name": "rweb_mixed_media_uploads_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_mixed_media_uploads_cap": {
             "name": "rweb_mixed_media_uploads_cap",
