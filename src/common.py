@@ -13,19 +13,19 @@ from appData import apkM,apkCombo,apkPure
 import gdown
 from model import DATA
 
-def downloader(url, filePath=ZIP_FILE, isJson=False):
+def downloader(url, filePath=ZIP_FILE, headers=headers(), isJson=False):
     if os.path.exists(filePath):
         printSubCmd(f"{filePath} exists" , "!")
         return True
     
     if "drive.google.com" in url:
-        gdown.download(url, ZIP_FILE, quiet=False,fuzzy=True)
+        gdown.download(url, ZIP_FILE, quiet=False,fuzzy=True,resume=True)
         return True
     
-    response = requests.get(url, stream=True, headers=headers())
+    response = requests.get(url, stream=True, headers=headers)
     if not isJson:
         total_size_in_bytes = int(response.headers.get('content-length', 0))
-        block_size = 1024  # 1 Kibibyte
+        block_size = 1024  
         progress_bar = tqdm(total=total_size_in_bytes,
                             unit='iB',
                             unit_scale=True)
