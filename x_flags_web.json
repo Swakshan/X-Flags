@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b5cede639d8afaa032ac48cc5b4f8fbe9fd026df",
+    "feature_set_token": "5976695ba3f2cb4aede06546c8c1266daf5f5639",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -512,6 +512,9 @@
         },
         "creator_subscriptions_email_share_enabled": {
             "value": true
+        },
+        "creator_subscriptions_revamp_enabled": {
+            "value": false
         },
         "creator_subscriptions_subscribe_action_tweet_menu_enabled": {
             "value": true
@@ -1740,6 +1743,9 @@
         "responsive_web_grok_promo_modal_enabled": {
             "value": false
         },
+        "responsive_web_grok_promo_modal_min_account_age_days": {
+            "value": 60
+        },
         "responsive_web_grok_promo_modal_variant": {
             "value": "imagine_launch"
         },
@@ -2471,6 +2477,9 @@
         },
         "rweb_navbar_grok_indicator_item_count": {
             "value": 0
+        },
+        "rweb_navbar_grok_indicator_min_account_age_days": {
+            "value": 60
         },
         "rweb_panning_nav_behavior": {
             "value": true
@@ -3863,7 +3872,7 @@
             "value": false
         },
         "xchat_observe_inbox_users_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_observe_inbox_users_in_memory": {
             "value": false
@@ -5247,6 +5256,11 @@
             "name": "creator_subscriptions_eligibility_impressions",
             "type": "number",
             "defaultValue": 5000000.0
+        },
+        "creator_subscriptions_revamp_enabled": {
+            "name": "creator_subscriptions_revamp_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "current_stack_follow_card_android_14711": {
             "name": "current_stack_follow_card_android_14711",
@@ -9447,7 +9461,8 @@
         },
         "responsive_web_grok_promo_modal_min_account_age_days": {
             "name": "responsive_web_grok_promo_modal_min_account_age_days",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 60
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -10780,7 +10795,8 @@
         },
         "rweb_navbar_grok_indicator_min_account_age_days": {
             "name": "rweb_navbar_grok_indicator_min_account_age_days",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 60
         },
         "rweb_open_in_app_prompt_non_gdpr_markets_11892": {
             "name": "rweb_open_in_app_prompt_non_gdpr_markets_11892",
@@ -15591,7 +15607,7 @@
         "xchat_observe_inbox_users_enabled": {
             "name": "xchat_observe_inbox_users_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_observe_inbox_users_in_memory": {
             "name": "xchat_observe_inbox_users_in_memory",
