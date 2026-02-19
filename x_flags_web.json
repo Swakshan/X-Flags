@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "377e13252610150d34a6facabb2d137e7cdbcb11",
+    "feature_set_token": "84589a5b756ea6224efbe0c3351732b648629e25",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1051,6 +1051,9 @@
             "value": true
         },
         "payments_chat_support_enabled": {
+            "value": false
+        },
+        "payments_chat_support_for_limits_enabled": {
             "value": false
         },
         "payments_cheques_deposits_enabled": {
@@ -2790,7 +2793,7 @@
             "value": true
         },
         "subscriptions_branding_checkmark_logo_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_enabled": {
             "value": true
@@ -3800,6 +3803,9 @@
             "value": true
         },
         "xchat_enable_message_requests": {
+            "value": false
+        },
+        "xchat_enable_ratcheting": {
             "value": false
         },
         "xchat_enabled_inbox_pill_counts": {
@@ -7519,7 +7525,8 @@
         },
         "payments_chat_support_for_limits_enabled": {
             "name": "payments_chat_support_for_limits_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_add_security_key_enabled": {
             "name": "payments_add_security_key_enabled",
@@ -11747,6 +11754,10 @@
             "name": "subscriptions_cta_on_replies_enabled",
             "type": "string"
         },
+        "subscriptions_new_paywall_enabled": {
+            "name": "subscriptions_new_paywall_enabled",
+            "type": "string"
+        },
         "subscriptions_blue_premium_labeling_enabled": {
             "name": "subscriptions_blue_premium_labeling_enabled",
             "type": "boolean",
@@ -11772,7 +11783,7 @@
         "subscriptions_branding_checkmark_logo_enabled": {
             "name": "subscriptions_branding_checkmark_logo_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_feature_1005": {
             "name": "subscriptions_feature_1005",
@@ -15513,7 +15524,8 @@
         },
         "xchat_enable_ratcheting": {
             "name": "xchat_enable_ratcheting",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_ratchet_group_id_threshold": {
             "name": "xchat_ratchet_group_id_threshold",
