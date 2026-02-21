@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7cc15ed7321771fa45981ada5d5e1e3b55415cd4",
+    "feature_set_token": "91aa70080ec128e6d86bf9a39bc3cfc8f953d4f4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -488,6 +488,9 @@
         },
         "communities_web_enable_tweet_community_results_fetch": {
             "value": true
+        },
+        "content_disclosure_ai_generated_creation_enabled": {
+            "value": false
         },
         "content_disclosure_creation_enabled": {
             "value": false
@@ -3260,9 +3263,6 @@
         "super_follow_subscriptions_tax_calculation_enabled": {
             "value": true
         },
-        "super_follow_tweet_label_redesign_enabled": {
-            "value": true
-        },
         "super_follow_web_application_enabled": {
             "value": false
         },
@@ -5094,7 +5094,8 @@
         },
         "content_disclosure_ai_generated_creation_enabled": {
             "name": "content_disclosure_ai_generated_creation_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "creator_studio_nav_enabled": {
             "name": "creator_studio_nav_enabled",
@@ -13136,8 +13137,7 @@
         },
         "super_follow_tweet_label_redesign_enabled": {
             "name": "super_follow_tweet_label_redesign_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "super_follow_share_url_update_to_subscriptions_enabled": {
             "name": "super_follow_share_url_update_to_subscriptions_enabled",
@@ -15609,6 +15609,10 @@
         },
         "xchat_drop_sigs_after_seq_num": {
             "name": "xchat_drop_sigs_after_seq_num",
+            "type": "string"
+        },
+        "xchat_enable_av_mobile": {
+            "name": "xchat_enable_av_mobile",
             "type": "string"
         },
         "xprofile_editing_enabled": {
