@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "91aa70080ec128e6d86bf9a39bc3cfc8f953d4f4",
+    "feature_set_token": "c6c9dd4562ea7ed490dd1a42378f3c82df69ed93",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -671,9 +671,6 @@
         },
         "graphql_is_translatable_rweb_tweet_is_translatable_enabled": {
             "value": true
-        },
-        "graphql_mutation_update_mode": {
-            "value": "graphql_only"
         },
         "grok_settings_age_restriction_enabled": {
             "value": true
@@ -1386,6 +1383,12 @@
         "responsive_web_birdwatch_site_enabled": {
             "value": true
         },
+        "responsive_web_birdwatch_suggestion_rating_impact_cutoff": {
+            "value": 1
+        },
+        "responsive_web_birdwatch_suggestion_rating_impact_enabled": {
+            "value": false
+        },
         "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
             "value": 0
         },
@@ -1681,7 +1684,7 @@
             "value": false
         },
         "responsive_web_grok_imagine_in_composer_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_grok_imagine_native_share_enabled": {
             "value": false
@@ -2540,9 +2543,6 @@
         },
         "rweb_starter_packs_topics_tab_enabled": {
             "value": false
-        },
-        "rweb_timeline_inline_show_more_enabled": {
-            "value": true
         },
         "rweb_tipjar_consumption_enabled": {
             "value": false
@@ -5097,6 +5097,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "content_disclosure_ai_generated_c2pa_detection_enabled": {
+            "name": "content_disclosure_ai_generated_c2pa_detection_enabled",
+            "type": "string"
+        },
         "creator_studio_nav_enabled": {
             "name": "creator_studio_nav_enabled",
             "type": "boolean",
@@ -6136,11 +6140,6 @@
             "name": "graphql_is_translatable_rweb_tweet_is_translatable_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "graphql_mutation_update_mode": {
-            "name": "graphql_mutation_update_mode",
-            "type": "string",
-            "defaultValue": "graphql_only"
         },
         "grok_3_mini_vs_grok_2_business_classifications_verify_your_business_button_17573": {
             "name": "grok_3_mini_vs_grok_2_business_classifications_verify_your_business_button_17573",
@@ -8261,11 +8260,13 @@
         },
         "responsive_web_birdwatch_suggestion_rating_impact_enabled": {
             "name": "responsive_web_birdwatch_suggestion_rating_impact_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_birdwatch_suggestion_rating_impact_cutoff": {
             "name": "responsive_web_birdwatch_suggestion_rating_impact_cutoff",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 1
         },
         "responsive_web_birdwatch_netzdg_enabled": {
             "name": "responsive_web_birdwatch_netzdg_enabled",
@@ -9291,7 +9292,7 @@
         "responsive_web_grok_imagine_in_composer_enabled": {
             "name": "responsive_web_grok_imagine_in_composer_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_grok_image_lazyload_enabled": {
             "name": "responsive_web_grok_image_lazyload_enabled",
@@ -9447,6 +9448,10 @@
         },
         "responsive_web_grok_promo_modal_min_account_age_days": {
             "name": "responsive_web_grok_promo_modal_min_account_age_days",
+            "type": "string"
+        },
+        "responsive_web_grok_voice_mode_enabled": {
+            "name": "responsive_web_grok_voice_mode_enabled",
             "type": "string"
         },
         "responsive_web_grok_analyze_tooltip_17895": {
@@ -10927,11 +10932,6 @@
             "name": "rweb_starter_packs_topics_tab_enabled",
             "type": "boolean",
             "defaultValue": false
-        },
-        "rweb_timeline_inline_show_more_enabled": {
-            "name": "rweb_timeline_inline_show_more_enabled",
-            "type": "boolean",
-            "defaultValue": true
         },
         "rweb_tipjar_consumption_enabled": {
             "name": "rweb_tipjar_consumption_enabled",
@@ -15625,6 +15625,10 @@
         },
         "xchat_enable_av_mobile": {
             "name": "xchat_enable_av_mobile",
+            "type": "string"
+        },
+        "xchat_fetch_read_events_in_inbox": {
+            "name": "xchat_fetch_read_events_in_inbox",
             "type": "string"
         },
         "xprofile_editing_enabled": {
