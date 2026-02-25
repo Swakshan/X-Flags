@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c6c9dd4562ea7ed490dd1a42378f3c82df69ed93",
+    "feature_set_token": "80eb7c241e33b7dc447d2efca5a2e58abc4d8132",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1066,7 +1066,7 @@
             "value": true
         },
         "payments_half_cover_notices_enabled": {
-            "value": false
+            "value": true
         },
         "payments_passkey_onboarding_enabled": {
             "value": true
@@ -3794,7 +3794,7 @@
             "value": false
         },
         "xchat_enable_forward_message_v2": {
-            "value": true
+            "value": false
         },
         "xchat_enable_local_pagination": {
             "value": true
@@ -7496,7 +7496,7 @@
         "payments_half_cover_notices_enabled": {
             "name": "payments_half_cover_notices_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_contacts_institutions_enabled": {
             "name": "payments_contacts_institutions_enabled",
@@ -15564,7 +15564,7 @@
         "xchat_enable_forward_message_v2": {
             "name": "xchat_enable_forward_message_v2",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xchat_settings_enabled": {
             "name": "xchat_settings_enabled",
@@ -15629,6 +15629,18 @@
         },
         "xchat_fetch_read_events_in_inbox": {
             "name": "xchat_fetch_read_events_in_inbox",
+            "type": "string"
+        },
+        "xchat_enable_in_memory_event_retry": {
+            "name": "xchat_enable_in_memory_event_retry",
+            "type": "string"
+        },
+        "xchat_av_pip_enabled": {
+            "name": "xchat_av_pip_enabled",
+            "type": "string"
+        },
+        "xchat_max_group_size_for_live_read_receipts": {
+            "name": "xchat_max_group_size_for_live_read_receipts",
             "type": "string"
         },
         "xprofile_editing_enabled": {
