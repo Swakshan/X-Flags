@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "80eb7c241e33b7dc447d2efca5a2e58abc4d8132",
+    "feature_set_token": "0625004ecd741b194246fce798daa9d08cffee3a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1840,6 +1840,9 @@
             "value": 5000.0
         },
         "responsive_web_grok_v2_upsell_enabled": {
+            "value": false
+        },
+        "responsive_web_grok_voice_mode_enabled": {
             "value": false
         },
         "responsive_web_grok_web_results": {
@@ -3799,9 +3802,6 @@
         "xchat_enable_local_pagination": {
             "value": true
         },
-        "xchat_enable_media_conv_info": {
-            "value": true
-        },
         "xchat_enable_message_requests": {
             "value": false
         },
@@ -3905,7 +3905,7 @@
             "value": false
         },
         "xchat_show_safety_number_ui": {
-            "value": false
+            "value": true
         },
         "xchat_show_troubleshooting_settings": {
             "value": true
@@ -9452,7 +9452,8 @@
         },
         "responsive_web_grok_voice_mode_enabled": {
             "name": "responsive_web_grok_voice_mode_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -15290,11 +15291,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "xchat_enable_media_conv_info": {
-            "name": "xchat_enable_media_conv_info",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "xchat_enable_local_pagination": {
             "name": "xchat_enable_local_pagination",
             "type": "boolean",
@@ -15375,7 +15371,7 @@
         "xchat_show_safety_number_ui": {
             "name": "xchat_show_safety_number_ui",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_use_info_items_for_sorting": {
             "name": "xchat_use_info_items_for_sorting",
