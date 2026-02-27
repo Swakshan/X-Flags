@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6b7d1de1be88094c43602132724d18424f597996",
+    "feature_set_token": "ccadcb18eb1e138077242ff1e232f50338128fa5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -490,6 +490,9 @@
             "value": true
         },
         "content_disclosure_ai_generated_creation_enabled": {
+            "value": false
+        },
+        "content_disclosure_ai_generated_indicator_enabled": {
             "value": false
         },
         "content_disclosure_creation_enabled": {
@@ -2282,6 +2285,9 @@
         },
         "responsive_web_user_badge_education_get_verified_button_enabled": {
             "value": true
+        },
+        "responsive_web_user_premium_user_gate": {
+            "value": false
         },
         "responsive_web_user_spectral_key_enabled": {
             "value": true
@@ -5105,7 +5111,8 @@
         },
         "content_disclosure_ai_generated_indicator_enabled": {
             "name": "content_disclosure_ai_generated_indicator_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "content_disclosure_ai_generated_creation_enabled": {
             "name": "content_disclosure_ai_generated_creation_enabled",
@@ -7842,6 +7849,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "profile_sorting_global_premium_18234": {
+            "name": "profile_sorting_global_premium_18234",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "enabled"
+            ]
+        },
         "promoted_badge_placement_circle_icon": {
             "name": "promoted_badge_placement_circle_icon",
             "type": "string"
@@ -10304,7 +10319,8 @@
         },
         "responsive_web_user_premium_user_gate": {
             "name": "responsive_web_user_premium_user_gate",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_user_badge_education_redesign_enabled": {
             "name": "responsive_web_user_badge_education_redesign_enabled",
@@ -12581,6 +12597,10 @@
         },
         "subscriptions_premium_hub_highlights_enabled": {
             "name": "subscriptions_premium_hub_highlights_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_supergrok_card_enabled": {
+            "name": "subscriptions_premium_hub_supergrok_card_enabled",
             "type": "string"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
