@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0d3d26c4888e75c83fa9530eed200377c4d2271b",
+    "feature_set_token": "31ae05abe14d57f824d89311c3305b83abf5d23b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -302,6 +302,9 @@
         },
         "articles_rest_api_enabled": {
             "value": true
+        },
+        "av_chat_encryption_enabled": {
+            "value": false
         },
         "blue_business_admin_sidebar_module_enabled": {
             "value": true
@@ -1082,6 +1085,9 @@
         },
         "payments_transaction_search_enabled": {
             "value": true
+        },
+        "people_search_interests_filter_enabled": {
+            "value": false
         },
         "post_ctas_fetch_enabled": {
             "value": false
@@ -3775,6 +3781,9 @@
         "xchat_av_call_start_should_notify": {
             "value": false
         },
+        "xchat_av_pip_enabled": {
+            "value": false
+        },
         "xchat_clear_chat_enabled": {
             "value": false
         },
@@ -3798,6 +3807,9 @@
         },
         "xchat_enable_av_group": {
             "value": true
+        },
+        "xchat_enable_av_mobile": {
+            "value": false
         },
         "xchat_enable_batch_sql_events": {
             "value": false
@@ -4417,6 +4429,231 @@
         },
         "articles_native_navigation_timeout_seconds": {
             "name": "articles_native_navigation_timeout_seconds",
+            "type": "string"
+        },
+        "av_chat_dms_call_menu_enabled": {
+            "name": "av_chat_dms_call_menu_enabled",
+            "type": "string"
+        },
+        "av_chat_notification_routing_enabled": {
+            "name": "av_chat_notification_routing_enabled",
+            "type": "string"
+        },
+        "av_chat_ios_pushkit_token_registration_enabled": {
+            "name": "av_chat_ios_pushkit_token_registration_enabled",
+            "type": "string"
+        },
+        "av_chat_user_settings_ui_enabled": {
+            "name": "av_chat_user_settings_ui_enabled",
+            "type": "string"
+        },
+        "av_chat_user_settings_api_enabled": {
+            "name": "av_chat_user_settings_api_enabled",
+            "type": "string"
+        },
+        "av_chat_docking_enabled": {
+            "name": "av_chat_docking_enabled",
+            "type": "string"
+        },
+        "av_chat_android_system_calling_enabled": {
+            "name": "av_chat_android_system_calling_enabled",
+            "type": "string"
+        },
+        "av_chat_enhanced_calls_privacy_enabled": {
+            "name": "av_chat_enhanced_calls_privacy_enabled",
+            "type": "string"
+        },
+        "av_chat_ios_pushkit_unregistration_setting_enabled": {
+            "name": "av_chat_ios_pushkit_unregistration_setting_enabled",
+            "type": "string"
+        },
+        "av_chat_user_settings_ui_show_everyone_option": {
+            "name": "av_chat_user_settings_ui_show_everyone_option",
+            "type": "string"
+        },
+        "av_chat_android_pip_mode_drag_threshold": {
+            "name": "av_chat_android_pip_mode_drag_threshold",
+            "type": "string"
+        },
+        "av_chat_set_rtc_configurations_to_fix_ios_call_screen": {
+            "name": "av_chat_set_rtc_configurations_to_fix_ios_call_screen",
+            "type": "string"
+        },
+        "av_chat_live_kit_enabled": {
+            "name": "av_chat_live_kit_enabled",
+            "type": "string"
+        },
+        "av_chat_live_kit_debug_url": {
+            "name": "av_chat_live_kit_debug_url",
+            "type": "string"
+        },
+        "av_chat_live_kit_debug_token1": {
+            "name": "av_chat_live_kit_debug_token1",
+            "type": "string"
+        },
+        "av_chat_live_kit_debug_token2": {
+            "name": "av_chat_live_kit_debug_token2",
+            "type": "string"
+        },
+        "av_chat_call_waiting_timeout_sec": {
+            "name": "av_chat_call_waiting_timeout_sec",
+            "type": "string"
+        },
+        "av_chat_live_kit_room_url": {
+            "name": "av_chat_live_kit_room_url",
+            "type": "string"
+        },
+        "av_chat_ice_restart_on_failure_enabled": {
+            "name": "av_chat_ice_restart_on_failure_enabled",
+            "type": "string"
+        },
+        "av_chat_log_statistics_report_on_failure_enabled": {
+            "name": "av_chat_log_statistics_report_on_failure_enabled",
+            "type": "string"
+        },
+        "av_chat_serial_audio_session_init_enabled": {
+            "name": "av_chat_serial_audio_session_init_enabled",
+            "type": "string"
+        },
+        "av_chat_auth_check_before_polling_enabled": {
+            "name": "av_chat_auth_check_before_polling_enabled",
+            "type": "string"
+        },
+        "av_chat_activate_audio_session_by_call_kit_enabled": {
+            "name": "av_chat_activate_audio_session_by_call_kit_enabled",
+            "type": "string"
+        },
+        "av_chat_broadcast_status_polling_timeout_sec": {
+            "name": "av_chat_broadcast_status_polling_timeout_sec",
+            "type": "string"
+        },
+        "av_chat_android_poll_signaling_backoff_interval_ms": {
+            "name": "av_chat_android_poll_signaling_backoff_interval_ms",
+            "type": "string"
+        },
+        "av_chat_android_poll_signaling_maximum_interval_ms": {
+            "name": "av_chat_android_poll_signaling_maximum_interval_ms",
+            "type": "string"
+        },
+        "av_chat_show_incoming_call_on_top_presented_enabled": {
+            "name": "av_chat_show_incoming_call_on_top_presented_enabled",
+            "type": "string"
+        },
+        "av_chat_end_call_when_declined_enabled": {
+            "name": "av_chat_end_call_when_declined_enabled",
+            "type": "string"
+        },
+        "av_chat_suspend_audio_session_on_incoming_push_enabled": {
+            "name": "av_chat_suspend_audio_session_on_incoming_push_enabled",
+            "type": "string"
+        },
+        "av_chat_suspend_immersive_while_call_is_established_enabled": {
+            "name": "av_chat_suspend_immersive_while_call_is_established_enabled",
+            "type": "string"
+        },
+        "av_chat_defer_audio_session_is_active_check_enabled": {
+            "name": "av_chat_defer_audio_session_is_active_check_enabled",
+            "type": "string"
+        },
+        "av_chat_android_poll_signaling_interval_ms": {
+            "name": "av_chat_android_poll_signaling_interval_ms",
+            "type": "string"
+        },
+        "av_chat_android_send_offer_asap_enabled": {
+            "name": "av_chat_android_send_offer_asap_enabled",
+            "type": "string"
+        },
+        "av_chat_is_main_actor_coordinator_enabled": {
+            "name": "av_chat_is_main_actor_coordinator_enabled",
+            "type": "string"
+        },
+        "av_chat_android_send_offer_when_disconnected_enabled": {
+            "name": "av_chat_android_send_offer_when_disconnected_enabled",
+            "type": "string"
+        },
+        "av_chat_android_send_offer_without_ice_restart_enabled": {
+            "name": "av_chat_android_send_offer_without_ice_restart_enabled",
+            "type": "string"
+        },
+        "av_chat_android_send_signal_analytics_enabled": {
+            "name": "av_chat_android_send_signal_analytics_enabled",
+            "type": "string"
+        },
+        "av_chat_is_audio_session_activation_delegation_enabled": {
+            "name": "av_chat_is_audio_session_activation_delegation_enabled",
+            "type": "string"
+        },
+        "av_chat_is_add_ice_candidates_after_local_sdp_is_set_enabled": {
+            "name": "av_chat_is_add_ice_candidates_after_local_sdp_is_set_enabled",
+            "type": "string"
+        },
+        "av_chat_android_incoming_call_acceleration": {
+            "name": "av_chat_android_incoming_call_acceleration",
+            "type": "string"
+        },
+        "av_chat_is_fulfill_on_send_answer_enabled": {
+            "name": "av_chat_is_fulfill_on_send_answer_enabled",
+            "type": "string"
+        },
+        "av_chat_android_send_batch_request_enabled": {
+            "name": "av_chat_android_send_batch_request_enabled",
+            "type": "string"
+        },
+        "av_chat_is_ambient_sound_v2_enabled": {
+            "name": "av_chat_is_ambient_sound_v2_enabled",
+            "type": "string"
+        },
+        "av_chat_is_end_call_audio_signal_v2_enabled": {
+            "name": "av_chat_is_end_call_audio_signal_v2_enabled",
+            "type": "string"
+        },
+        "av_chat_is_call_kit_manager_update_enabled": {
+            "name": "av_chat_is_call_kit_manager_update_enabled",
+            "type": "string"
+        },
+        "av_chat_is_xchat_group_calls_enabled": {
+            "name": "av_chat_is_xchat_group_calls_enabled",
+            "type": "string"
+        },
+        "av_chat_answer_incoming_call_before_presenting_ui_enabled": {
+            "name": "av_chat_answer_incoming_call_before_presenting_ui_enabled",
+            "type": "string"
+        },
+        "av_chat_sending_end_call_messages_in_xchat_enabled": {
+            "name": "av_chat_sending_end_call_messages_in_xchat_enabled",
+            "type": "string"
+        },
+        "av_chat_xchat_group_calls_v2_enabled": {
+            "name": "av_chat_xchat_group_calls_v2_enabled",
+            "type": "string"
+        },
+        "av_chat_android_dev_logs_to_analytics_enabled": {
+            "name": "av_chat_android_dev_logs_to_analytics_enabled",
+            "type": "string"
+        },
+        "av_chat_android_av_calling_inside_xlite_enabled": {
+            "name": "av_chat_android_av_calling_inside_xlite_enabled",
+            "type": "string"
+        },
+        "av_chat_android_av_calling_inside_tfa_enabled": {
+            "name": "av_chat_android_av_calling_inside_tfa_enabled",
+            "type": "string"
+        },
+        "av_chat_android_av_calling_new_version_enabled": {
+            "name": "av_chat_android_av_calling_new_version_enabled",
+            "type": "string"
+        },
+        "av_chat_encryption_enabled": {
+            "name": "av_chat_encryption_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "av_chat_android_call_encryption_enabled": {
+            "name": "av_chat_android_call_encryption_enabled",
+            "type": "string"
+        },
+        "av_chat_xchat_group_calls_music_enabled": {
+            "name": "av_chat_xchat_group_calls_music_enabled",
             "type": "string"
         },
         "backend_timelines_parent_group_meta_3627": {
@@ -7592,6 +7829,15 @@
             "name": "payments_tracing_reports_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "people_search_messages_tab_enabled": {
+            "name": "people_search_messages_tab_enabled",
+            "type": "string"
+        },
+        "people_search_interests_filter_enabled": {
+            "name": "people_search_interests_filter_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "post_ctas_fetch_enabled": {
             "name": "post_ctas_fetch_enabled",
@@ -15669,7 +15915,8 @@
         },
         "xchat_enable_av_mobile": {
             "name": "xchat_enable_av_mobile",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_fetch_read_events_in_inbox": {
             "name": "xchat_fetch_read_events_in_inbox",
@@ -15683,7 +15930,8 @@
         },
         "xchat_av_pip_enabled": {
             "name": "xchat_av_pip_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_max_group_size_for_live_read_receipts": {
             "name": "xchat_max_group_size_for_live_read_receipts",
@@ -15694,6 +15942,10 @@
             "name": "xchat_enable_batch_sql_events",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xchat_pause_coroutines_on_app_bg": {
+            "name": "xchat_pause_coroutines_on_app_bg",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
