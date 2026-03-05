@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5de36dff47d216b31620e4a70633534266c3ad96",
+    "feature_set_token": "22d77528b178a0b5b959aa6d903ca2470d0ad876",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -523,7 +523,7 @@
             "value": true
         },
         "creator_subscriptions_revamp_enabled": {
-            "value": false
+            "value": true
         },
         "creator_subscriptions_subscribe_action_tweet_menu_enabled": {
             "value": true
@@ -1565,6 +1565,9 @@
         },
         "responsive_web_grok_05231996": {
             "value": ""
+        },
+        "responsive_web_grok_420_toggle_enabled": {
+            "value": true
         },
         "responsive_web_grok_allow_youtube_embeds": {
             "value": false
@@ -3827,7 +3830,7 @@
             "value": true
         },
         "xchat_enable_in_memory_event_retry": {
-            "value": true
+            "value": false
         },
         "xchat_enable_local_pagination": {
             "value": true
@@ -5532,7 +5535,7 @@
         "creator_subscriptions_revamp_enabled": {
             "name": "creator_subscriptions_revamp_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "current_stack_follow_card_android_14711": {
             "name": "current_stack_follow_card_android_14711",
@@ -9736,6 +9739,11 @@
             "name": "responsive_web_grok_voice_mode_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_grok_420_toggle_enabled": {
+            "name": "responsive_web_grok_420_toggle_enabled",
+            "type": "boolean",
+            "defaultValue": true
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -15926,7 +15934,7 @@
         "xchat_enable_in_memory_event_retry": {
             "name": "xchat_enable_in_memory_event_retry",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xchat_av_pip_enabled": {
             "name": "xchat_av_pip_enabled",
@@ -15945,6 +15953,10 @@
         },
         "xchat_pause_coroutines_on_app_bg": {
             "name": "xchat_pause_coroutines_on_app_bg",
+            "type": "string"
+        },
+        "xchat_observe_inbox_categories_separately": {
+            "name": "xchat_observe_inbox_categories_separately",
             "type": "string"
         },
         "xprofile_editing_enabled": {
