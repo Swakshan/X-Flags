@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "358128aa0afe52d293e2372f5e5a48d50fe433d6",
+    "feature_set_token": "6dad7d9f407533d4515262c31ec0b6f9605c60da",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -4004,10 +4004,10 @@
             "value": true
         },
         "xprofile_consumption_enabled": {
-            "value": true
+            "value": false
         },
         "xprofile_editing_enabled": {
-            "value": true
+            "value": false
         },
         "xprofile_emojis_enabled": {
             "value": true
@@ -11556,6 +11556,10 @@
             "name": "scribe_http_operation_oauth_event_sample_size",
             "type": "string"
         },
+        "scribe_device_status_enabled": {
+            "name": "scribe_device_status_enabled",
+            "type": "string"
+        },
         "search_results_disable_latest_tab_when_logged_out": {
             "name": "search_results_disable_latest_tab_when_logged_out",
             "type": "boolean",
@@ -16010,12 +16014,12 @@
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xprofile_consumption_enabled": {
             "name": "xprofile_consumption_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xprofile_emojis_enabled": {
             "name": "xprofile_emojis_enabled",
