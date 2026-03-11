@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f0a2859b669d473af3633447ec779c5bd523eb9a",
+    "feature_set_token": "2358f8d41e71dcb523d6f1e7e567cfc226834fd4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1399,7 +1399,7 @@
             "value": 1
         },
         "responsive_web_birdwatch_suggestion_rating_impact_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_birdwatch_suggestion_writer_impact_cutoff": {
             "value": 0
@@ -8544,7 +8544,7 @@
         "responsive_web_birdwatch_suggestion_rating_impact_enabled": {
             "name": "responsive_web_birdwatch_suggestion_rating_impact_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_birdwatch_suggestion_rating_impact_cutoff": {
             "name": "responsive_web_birdwatch_suggestion_rating_impact_cutoff",
@@ -15845,6 +15845,10 @@
         },
         "xchat_pay_button_enabled": {
             "name": "xchat_pay_button_enabled",
+            "type": "string"
+        },
+        "xchat_inbox_conversation_limit_subsequent": {
+            "name": "xchat_inbox_conversation_limit_subsequent",
             "type": "string"
         },
         "xprofile_editing_enabled": {
