@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2358f8d41e71dcb523d6f1e7e567cfc226834fd4",
+    "feature_set_token": "dae14a184d3e6bad5f63a9436204cdab29283d64",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1128,6 +1128,9 @@
         "premium_paywall_on_app_load_fatigue_version": {
             "value": 1
         },
+        "premium_paywall_on_app_load_journey_enabled": {
+            "value": false
+        },
         "premium_paywall_on_app_load_min_account_age_days": {
             "value": 60
         },
@@ -1781,6 +1784,9 @@
         },
         "responsive_web_grok_prompt_edit_enabled": {
             "value": true
+        },
+        "responsive_web_grok_redirect_enabled": {
+            "value": false
         },
         "responsive_web_grok_regen_configs": {
             "value": false
@@ -4002,9 +4008,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_grok_redirect_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -7956,6 +7959,11 @@
             "type": "number",
             "defaultValue": 60
         },
+        "premium_paywall_on_app_load_journey_enabled": {
+            "name": "premium_paywall_on_app_load_journey_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "premium_reply_boost_popup_web_17100": {
             "name": "premium_reply_boost_popup_web_17100",
             "type": "experiment",
@@ -9770,6 +9778,11 @@
             "name": "responsive_web_grok_media_block_edit_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_grok_redirect_enabled": {
+            "name": "responsive_web_grok_redirect_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -15852,6 +15865,10 @@
         },
         "xchat_inbox_conversation_limit_subsequent": {
             "name": "xchat_inbox_conversation_limit_subsequent",
+            "type": "string"
+        },
+        "xchat_send_franking_data": {
+            "name": "xchat_send_franking_data",
             "type": "string"
         },
         "xprofile_editing_enabled": {
