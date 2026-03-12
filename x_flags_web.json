@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "dae14a184d3e6bad5f63a9436204cdab29283d64",
+    "feature_set_token": "49697062aeb270e2565582c390d8033c605febf0",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1786,7 +1786,7 @@
             "value": true
         },
         "responsive_web_grok_redirect_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_regen_configs": {
             "value": false
@@ -7824,6 +7824,10 @@
             "name": "payments_chat_support_for_transactions_enabled",
             "type": "string"
         },
+        "payments_international_wires_enabled": {
+            "name": "payments_international_wires_enabled",
+            "type": "string"
+        },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
             "type": "string"
@@ -9782,7 +9786,7 @@
         "responsive_web_grok_redirect_enabled": {
             "name": "responsive_web_grok_redirect_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
@@ -15869,6 +15873,18 @@
         },
         "xchat_send_franking_data": {
             "name": "xchat_send_franking_data",
+            "type": "string"
+        },
+        "xchat_drop_messages_failing_franking_verification": {
+            "name": "xchat_drop_messages_failing_franking_verification",
+            "type": "string"
+        },
+        "xchat_franking_required_after_seq_num": {
+            "name": "xchat_franking_required_after_seq_num",
+            "type": "string"
+        },
+        "xchat_enforce_media_hash_verification": {
+            "name": "xchat_enforce_media_hash_verification",
             "type": "string"
         },
         "xprofile_editing_enabled": {
