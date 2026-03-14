@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6d7e10a9813388d282923af79b750de162b321ac",
+    "feature_set_token": "5230930f9d87f764ca6bd8c24fc9e9d0e57d0caa",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2589,6 +2589,9 @@
         "rweb_starter_packs_topics_tab_enabled": {
             "value": false
         },
+        "rweb_timeline_simple_conversation_control_education_enabled": {
+            "value": false
+        },
         "rweb_tipjar_consumption_enabled": {
             "value": false
         },
@@ -3048,6 +3051,9 @@
             "value": false
         },
         "subscriptions_offers_localized_pricing_enabled": {
+            "value": false
+        },
+        "subscriptions_offers_paywall_urgent_heading_enabled": {
             "value": false
         },
         "subscriptions_offers_premium_nav_indicator_enabled": {
@@ -7841,6 +7847,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "paywall_on_web_app_open_backend_controlled_18294": {
+            "name": "paywall_on_web_app_open_backend_controlled_18294",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "people_search_messages_tab_enabled": {
             "name": "people_search_messages_tab_enabled",
             "type": "string"
@@ -11277,6 +11291,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "rweb_timeline_simple_conversation_control_education_enabled": {
+            "name": "rweb_timeline_simple_conversation_control_education_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_tipjar_consumption_enabled": {
             "name": "rweb_tipjar_consumption_enabled",
             "type": "boolean",
@@ -12796,6 +12815,11 @@
         },
         "subscriptions_offers_upgrade_offer_home_nav_upsell_enabled": {
             "name": "subscriptions_offers_upgrade_offer_home_nav_upsell_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_offers_paywall_urgent_heading_enabled": {
+            "name": "subscriptions_offers_paywall_urgent_heading_enabled",
             "type": "boolean",
             "defaultValue": false
         },
