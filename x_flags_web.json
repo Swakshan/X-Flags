@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5230930f9d87f764ca6bd8c24fc9e9d0e57d0caa",
+    "feature_set_token": "2771d1360a7615ab6c4c7a468ae7aff1bdcf2f7f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -491,6 +491,9 @@
         },
         "communities_web_enable_tweet_community_results_fetch": {
             "value": true
+        },
+        "content_disclosure_ai_generated_c2pa_detection_enabled": {
+            "value": false
         },
         "content_disclosure_ai_generated_creation_enabled": {
             "value": true
@@ -5376,7 +5379,8 @@
         },
         "content_disclosure_ai_generated_c2pa_detection_enabled": {
             "name": "content_disclosure_ai_generated_c2pa_detection_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "creator_studio_nav_enabled": {
             "name": "creator_studio_nav_enabled",
@@ -14774,6 +14778,10 @@
             "name": "unified_cards_force_show_cta_bar_card_types",
             "type": "string"
         },
+        "unified_cards_app_store_download_bar_enabled": {
+            "name": "unified_cards_app_store_download_bar_enabled",
+            "type": "string"
+        },
         "unified_cards_dpa_cta_button_alignment_fix_enabled": {
             "name": "unified_cards_dpa_cta_button_alignment_fix_enabled",
             "type": "string"
@@ -15909,6 +15917,10 @@
         },
         "xchat_enforce_media_hash_verification": {
             "name": "xchat_enforce_media_hash_verification",
+            "type": "string"
+        },
+        "xchat_enable_default_disappearing_messages_setting": {
+            "name": "xchat_enable_default_disappearing_messages_setting",
             "type": "string"
         },
         "xprofile_editing_enabled": {
