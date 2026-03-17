@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "beeb5fb170948dd42d8ece05e0e399c2189a1cf5",
+        "feature_set_token": "f21aa1473f269e1704d17a90da3875f9d47bd13f",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -5528,6 +5528,9 @@
             "xchat_drafts_in_inbox_preview": {
                 "value": false
             },
+            "xchat_drop_messages_failing_franking_verification": {
+                "value": false
+            },
             "xchat_drop_sigs_after_seq_num": {
                 "value": 9.223372036854776e+18
             },
@@ -5546,6 +5549,9 @@
             "xchat_enable_forward_message_v2": {
                 "value": false
             },
+            "xchat_enable_franking_report": {
+                "value": false
+            },
             "xchat_enable_in_memory_event_retry": {
                 "value": false
             },
@@ -5558,11 +5564,17 @@
             "xchat_enable_share_message_v2": {
                 "value": false
             },
+            "xchat_enforce_media_hash_verification": {
+                "value": false
+            },
             "xchat_forward_media_max_conversations": {
                 "value": 5.0
             },
             "xchat_forward_media_max_size_mb": {
                 "value": 100.0
+            },
+            "xchat_franking_required_after_seq_num": {
+                "value": 9.223372036854776e+18
             },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
                 "value": -1.0
@@ -5572,6 +5584,9 @@
             },
             "xchat_inbox_conversation_limit": {
                 "value": 20.0
+            },
+            "xchat_inbox_conversation_limit_subsequent": {
+                "value": 100.0
             },
             "xchat_inbox_conversation_local_pagination_page_size": {
                 "value": 20.0
@@ -5638,6 +5653,9 @@
             },
             "xchat_search_repetition_weight": {
                 "value": 0.2
+            },
+            "xchat_send_franking_data": {
+                "value": false
             },
             "xchat_settings_enabled": {
                 "value": false
@@ -5924,7 +5942,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "3b3de32116b54e1cc9b3766b2cca710f1a24e8ff",
-        "experiments": "3b3de32116b54e1cc9b3766b2cca710f1a24e8ff"
+        "feature_switches": "daab71d173210d3a31fab6a2e1b6001aca8fe68e",
+        "experiments": "daab71d173210d3a31fab6a2e1b6001aca8fe68e"
     }
 }
