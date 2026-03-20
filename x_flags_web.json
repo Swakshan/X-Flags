@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "84d8a1466d9d1f3a6bc3b8934a211325743c9dbb",
+    "feature_set_token": "0b9824f82ec3bf2e3ded13884322761afbeb1d3e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2632,7 +2632,7 @@
             "value": ""
         },
         "rweb_xchat_categories_dropdown": {
-            "value": false
+            "value": true
         },
         "rweb_xchat_debug_enabled": {
             "value": false
@@ -3821,7 +3821,7 @@
             "value": 200
         },
         "xchat_drafts_bump_to_top": {
-            "value": false
+            "value": true
         },
         "xchat_drafts_in_inbox_preview": {
             "value": true
@@ -3944,7 +3944,7 @@
             "value": false
         },
         "xchat_observe_inbox_categories_separately": {
-            "value": false
+            "value": true
         },
         "xchat_observe_inbox_users_enabled": {
             "value": true
@@ -11468,7 +11468,11 @@
         "rweb_xchat_categories_dropdown": {
             "name": "rweb_xchat_categories_dropdown",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
+        },
+        "rweb_xchat_search_redesign": {
+            "name": "rweb_xchat_search_redesign",
+            "type": "string"
         },
         "rweb_xp_forwarded_for_enabled": {
             "name": "rweb_xp_forwarded_for_enabled",
@@ -15931,7 +15935,7 @@
         "xchat_observe_inbox_categories_separately": {
             "name": "xchat_observe_inbox_categories_separately",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_drafts_in_inbox_preview": {
             "name": "xchat_drafts_in_inbox_preview",
@@ -15981,7 +15985,23 @@
         "xchat_drafts_bump_to_top": {
             "name": "xchat_drafts_bump_to_top",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
+        },
+        "xchat_ratchet_group_id_threshold_str": {
+            "name": "xchat_ratchet_group_id_threshold_str",
+            "type": "string"
+        },
+        "xchat_additional_reply_preview_validation_required_seqnum_str": {
+            "name": "xchat_additional_reply_preview_validation_required_seqnum_str",
+            "type": "string"
+        },
+        "xchat_drop_sigs_after_seq_num_str": {
+            "name": "xchat_drop_sigs_after_seq_num_str",
+            "type": "string"
+        },
+        "xchat_franking_required_after_seq_num_str": {
+            "name": "xchat_franking_required_after_seq_num_str",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
