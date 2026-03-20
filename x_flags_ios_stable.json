@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "6469c101164f162569872428f1d40aeb4f03f94b",
+        "feature_set_token": "079f63e0f151315f81fae6eff286b08fe3e287d9",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2480,13 +2480,13 @@
                 "value": "button"
             },
             "grok_timeline_create_own_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_timeline_create_own_is_enabled_detail_page": {
-                "value": false
+                "value": true
             },
             "grok_timeline_create_own_is_enabled_quoted_status": {
-                "value": false
+                "value": true
             },
             "grok_timeline_create_own_title": {
                 "value": ""
@@ -2687,6 +2687,9 @@
                 "value": 0.0
             },
             "home_timeline_cold_start_restart_from_top_min_background_minutes": {
+                "value": 0.0
+            },
+            "home_timeline_cold_start_stale_cache_threshold_minutes": {
                 "value": 0.0
             },
             "home_timeline_cold_start_uprank_unseen_tweets_list_count_needed": {
@@ -9460,7 +9463,7 @@
                 "value": true
             },
             "onboarding_new_add_existing_account_enabled": {
-                "value": true
+                "value": false
             },
             "onboarding_new_connect_tab_contacts_enabled": {
                 "value": false
@@ -11883,7 +11886,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "bec0ca1cd6b42602b94b467096a5cbee69fc5cb4",
-        "experiments": "bec0ca1cd6b42602b94b467096a5cbee69fc5cb4"
+        "feature_switches": "1e7d7539da47948aa96f1dcc320024f481ee4e2f",
+        "experiments": "1e7d7539da47948aa96f1dcc320024f481ee4e2f"
     }
 }
