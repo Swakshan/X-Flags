@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0b9824f82ec3bf2e3ded13884322761afbeb1d3e",
+    "feature_set_token": "3a1f577addd84f419910f3facc05946bd0839363",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2632,7 +2632,7 @@
             "value": ""
         },
         "rweb_xchat_categories_dropdown": {
-            "value": true
+            "value": false
         },
         "rweb_xchat_debug_enabled": {
             "value": false
@@ -3944,7 +3944,7 @@
             "value": false
         },
         "xchat_observe_inbox_categories_separately": {
-            "value": true
+            "value": false
         },
         "xchat_observe_inbox_users_enabled": {
             "value": true
@@ -11468,7 +11468,7 @@
         "rweb_xchat_categories_dropdown": {
             "name": "rweb_xchat_categories_dropdown",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "rweb_xchat_search_redesign": {
             "name": "rweb_xchat_search_redesign",
@@ -15935,7 +15935,7 @@
         "xchat_observe_inbox_categories_separately": {
             "name": "xchat_observe_inbox_categories_separately",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "xchat_drafts_in_inbox_preview": {
             "name": "xchat_drafts_in_inbox_preview",
@@ -16001,6 +16001,10 @@
         },
         "xchat_franking_required_after_seq_num_str": {
             "name": "xchat_franking_required_after_seq_num_str",
+            "type": "string"
+        },
+        "xchat_hide_pending_members_for_non_admin": {
+            "name": "xchat_hide_pending_members_for_non_admin",
             "type": "string"
         },
         "xprofile_editing_enabled": {
