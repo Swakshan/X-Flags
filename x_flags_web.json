@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b8aa2497e2f6b12b9a58c2b75178076e365cf605",
+    "feature_set_token": "cfbd6b1e9ab67db77863a3c491f487e8965dc0d2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2130,9 +2130,6 @@
         "responsive_web_report_page_not_found": {
             "value": false
         },
-        "responsive_web_saved_search_enabled": {
-            "value": false
-        },
         "responsive_web_scheduling_threads_enabled": {
             "value": false
         },
@@ -2176,7 +2173,7 @@
             "value": true
         },
         "responsive_web_subscribers_ntab_for_creators_enabled": {
-            "value": true
+            "value": false
         },
         "responsive_web_subscriptions_setting_enabled": {
             "value": true
@@ -3410,18 +3407,6 @@
         "tv_app_samsung_exit_configuration": {
             "value": "EXIT"
         },
-        "tweet_awards_web_coin_purchase_enabled": {
-            "value": false
-        },
-        "tweet_awards_web_coin_purchase_sandbox_enabled": {
-            "value": false
-        },
-        "tweet_awards_web_non_focal_tweet_coins_enabled": {
-            "value": false
-        },
-        "tweet_awards_web_tipping_enabled": {
-            "value": false
-        },
         "tweet_limited_actions_config_community_tweet_community_deleted": {
             "value": [
                 "add_to_bookmarks",
@@ -3977,7 +3962,7 @@
             "value": true
         },
         "xchat_resolve_unencrypted_media_locally": {
-            "value": false
+            "value": true
         },
         "xchat_sample_observation_queries": {
             "value": 500
@@ -10447,11 +10432,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "responsive_web_saved_search_enabled": {
-            "name": "responsive_web_saved_search_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "responsive_web_scheduling_enabled": {
             "name": "responsive_web_scheduling_enabled",
             "type": "string"
@@ -10541,7 +10521,7 @@
         "responsive_web_subscribers_ntab_for_creators_enabled": {
             "name": "responsive_web_subscribers_ntab_for_creators_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "responsive_web_subscriptions_setting_enabled": {
             "name": "responsive_web_subscriptions_setting_enabled",
@@ -14290,62 +14270,6 @@
             "type": "string",
             "defaultValue": "EXIT"
         },
-        "tweet_awards_htl_awards_action_bar_enabled": {
-            "name": "tweet_awards_htl_awards_action_bar_enabled",
-            "type": "string"
-        },
-        "tweet_awards_htl_send_awards_button_enabled": {
-            "name": "tweet_awards_htl_send_awards_button_enabled",
-            "type": "string"
-        },
-        "tweet_awards_tweet_api_enabled": {
-            "name": "tweet_awards_tweet_api_enabled",
-            "type": "string"
-        },
-        "tweet_awards_web_coin_purchase_enabled": {
-            "name": "tweet_awards_web_coin_purchase_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "tweet_awards_web_coin_purchase_sandbox_enabled": {
-            "name": "tweet_awards_web_coin_purchase_sandbox_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "tweet_awards_web_tipping_enabled": {
-            "name": "tweet_awards_web_tipping_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "tweet_awards_is_status_inline_awards_button_enabled": {
-            "name": "tweet_awards_is_status_inline_awards_button_enabled",
-            "type": "string"
-        },
-        "tweet_awards_is_status_awards_summary_enabled": {
-            "name": "tweet_awards_is_status_awards_summary_enabled",
-            "type": "string"
-        },
-        "tweet_awards_is_status_awards_nux_enabled": {
-            "name": "tweet_awards_is_status_awards_nux_enabled",
-            "type": "string"
-        },
-        "tweet_awards_tweet_details_summary_row_limit": {
-            "name": "tweet_awards_tweet_details_summary_row_limit",
-            "type": "string"
-        },
-        "tweet_awards_by_category_threshold": {
-            "name": "tweet_awards_by_category_threshold",
-            "type": "string"
-        },
-        "tweet_awards_monetization_webview_enabled": {
-            "name": "tweet_awards_monetization_webview_enabled",
-            "type": "string"
-        },
-        "tweet_awards_web_non_focal_tweet_coins_enabled": {
-            "name": "tweet_awards_web_non_focal_tweet_coins_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "tweet_limited_actions_config_dpa_enabled": {
             "name": "tweet_limited_actions_config_dpa_enabled",
             "type": "boolean",
@@ -16012,7 +15936,7 @@
         "xchat_resolve_unencrypted_media_locally": {
             "name": "xchat_resolve_unencrypted_media_locally",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_enable_share_message_v2": {
             "name": "xchat_enable_share_message_v2",
