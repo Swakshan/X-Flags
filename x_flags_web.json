@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "265c0d67065be2bb30080e0bdf8832cf5f136a90",
+    "feature_set_token": "6c7357141b3f89f6dd12d5ebc32af64dc3ada239",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -748,6 +748,9 @@
             "value": false
         },
         "gryphon_upgrade_premium_plus_banner_enabled": {
+            "value": false
+        },
+        "gryphon_upgrade_premium_plus_eu_copy_enabled": {
             "value": false
         },
         "gryphon_video_docking_enabled": {
@@ -5747,10 +5750,7 @@
         "discounted_premium_gifting_tooltip_17862": {
             "name": "discounted_premium_gifting_tooltip_17862",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "holdback"
-            ]
+            "enumeration_values": []
         },
         "dm_char_limit": {
             "name": "dm_char_limit",
@@ -6715,6 +6715,11 @@
         },
         "gryphon_upgrade_premium_plus_banner_enabled": {
             "name": "gryphon_upgrade_premium_plus_banner_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "gryphon_upgrade_premium_plus_eu_copy_enabled": {
+            "name": "gryphon_upgrade_premium_plus_eu_copy_enabled",
             "type": "boolean",
             "defaultValue": false
         },
