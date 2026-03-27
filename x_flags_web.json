@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6c7357141b3f89f6dd12d5ebc32af64dc3ada239",
+    "feature_set_token": "2c0823de41fe84c9c0f832c9542e17b3b5c5436e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -304,7 +304,7 @@
             "value": true
         },
         "av_chat_encryption_enabled": {
-            "value": false
+            "value": true
         },
         "av_chat_xchat_emoji_reactions_enabled": {
             "value": false
@@ -506,6 +506,11 @@
         },
         "content_disclosure_ai_generated_indicator_enabled": {
             "value": true
+        },
+        "content_disclosure_c2pa_detection_exemption_list": {
+            "value": [
+                "Adobe Photoshop"
+            ]
         },
         "content_disclosure_creation_enabled": {
             "value": true
@@ -748,10 +753,7 @@
             "value": false
         },
         "gryphon_upgrade_premium_plus_banner_enabled": {
-            "value": false
-        },
-        "gryphon_upgrade_premium_plus_eu_copy_enabled": {
-            "value": false
+            "value": true
         },
         "gryphon_video_docking_enabled": {
             "value": true
@@ -1723,6 +1725,9 @@
             "value": false
         },
         "responsive_web_grok_img_composer": {
+            "value": true
+        },
+        "responsive_web_grok_img_composer_redirect_to_grok_com_imagine": {
             "value": true
         },
         "responsive_web_grok_imggen_count": {
@@ -2979,6 +2984,9 @@
             "value": false
         },
         "subscriptions_management_failed_payment_message_premium_enabled": {
+            "value": false
+        },
+        "subscriptions_management_failed_payment_paywall_banner_enabled": {
             "value": false
         },
         "subscriptions_management_failed_payment_profile_card_enabled": {
@@ -4685,7 +4693,7 @@
         "av_chat_encryption_enabled": {
             "name": "av_chat_encryption_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "av_chat_android_call_encryption_enabled": {
             "name": "av_chat_android_call_encryption_enabled",
@@ -4702,6 +4710,10 @@
         },
         "av_chat_group_e2ee_joiner_enabled": {
             "name": "av_chat_group_e2ee_joiner_enabled",
+            "type": "string"
+        },
+        "av_chat_android_group_calling_enabled": {
+            "name": "av_chat_android_group_calling_enabled",
             "type": "string"
         },
         "backend_timelines_parent_group_meta_3627": {
@@ -5545,7 +5557,10 @@
         },
         "content_disclosure_c2pa_detection_exemption_list": {
             "name": "content_disclosure_c2pa_detection_exemption_list",
-            "type": "string"
+            "type": "object",
+            "defaultValue": [
+                "Adobe Photoshop"
+            ]
         },
         "creator_studio_nav_enabled": {
             "name": "creator_studio_nav_enabled",
@@ -6716,12 +6731,7 @@
         "gryphon_upgrade_premium_plus_banner_enabled": {
             "name": "gryphon_upgrade_premium_plus_banner_enabled",
             "type": "boolean",
-            "defaultValue": false
-        },
-        "gryphon_upgrade_premium_plus_eu_copy_enabled": {
-            "name": "gryphon_upgrade_premium_plus_eu_copy_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "gryphon_video_docking_enabled": {
             "name": "gryphon_video_docking_enabled",
@@ -9962,6 +9972,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_grok_img_composer_redirect_to_grok_com_imagine": {
+            "name": "responsive_web_grok_img_composer_redirect_to_grok_com_imagine",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
             "type": "experiment",
@@ -12733,6 +12748,11 @@
             "name": "subscriptions_management_tier_switch_polling_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "subscriptions_management_failed_payment_paywall_banner_enabled": {
+            "name": "subscriptions_management_failed_payment_paywall_banner_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_syscache_content_enabled": {
             "name": "subscriptions_marketing_page_syscache_content_enabled",
