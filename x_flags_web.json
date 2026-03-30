@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2c0823de41fe84c9c0f832c9542e17b3b5c5436e",
+    "feature_set_token": "2783fc36382cc7b65f27028e71c0d7110a483b7d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2513,6 +2513,9 @@
         "rweb_media_carousel_enabled": {
             "value": false
         },
+        "rweb_media_multi_requests_default_pool_size": {
+            "value": 1
+        },
         "rweb_media_multi_requests_enabled": {
             "value": true
         },
@@ -2652,7 +2655,7 @@
             "value": true
         },
         "rweb_xchat_search_redesign": {
-            "value": false
+            "value": true
         },
         "rweb_xchat_sentry_enabled": {
             "value": true
@@ -3805,7 +3808,7 @@
             "value": false
         },
         "xchat_clear_chat_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_conversation_event_limit": {
             "value": 200
@@ -5528,6 +5531,10 @@
         },
         "composer_unified_persistence_enabled": {
             "name": "composer_unified_persistence_enabled",
+            "type": "string"
+        },
+        "composer_composition_signals_enabled": {
+            "name": "composer_composition_signals_enabled",
             "type": "string"
         },
         "content_disclosure_indicator_enabled": {
@@ -11286,6 +11293,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "rweb_media_multi_requests_default_pool_size": {
+            "name": "rweb_media_multi_requests_default_pool_size",
+            "type": "number",
+            "defaultValue": 1
+        },
         "rweb_media_multi_requests_enabled": {
             "name": "rweb_media_multi_requests_enabled",
             "type": "boolean",
@@ -11601,7 +11613,7 @@
         "rweb_xchat_search_redesign": {
             "name": "rweb_xchat_search_redesign",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "sc_mock_data_enabled": {
             "name": "sc_mock_data_enabled",
@@ -15834,7 +15846,7 @@
         "xchat_clear_chat_enabled": {
             "name": "xchat_clear_chat_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_max_attachments_per_message": {
             "name": "xchat_max_attachments_per_message",
@@ -16081,6 +16093,10 @@
         },
         "xchat_enable_in_memory_event_retry_bottom_cursor": {
             "name": "xchat_enable_in_memory_event_retry_bottom_cursor",
+            "type": "string"
+        },
+        "xchat_streamed_link_preview": {
+            "name": "xchat_streamed_link_preview",
             "type": "string"
         },
         "xprofile_editing_enabled": {
