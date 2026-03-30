@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2783fc36382cc7b65f27028e71c0d7110a483b7d",
+    "feature_set_token": "148e5201f23f2a707fc740448a964f2b1298c4e6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2021,6 +2021,9 @@
         "responsive_web_multiple_account_limit": {
             "value": 5
         },
+        "responsive_web_native_bridge_allowed_methods": {
+            "value": []
+        },
         "responsive_web_not_a_bot_signups_enabled": {
             "value": false
         },
@@ -2990,7 +2993,7 @@
             "value": false
         },
         "subscriptions_management_failed_payment_paywall_banner_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_management_failed_payment_profile_card_enabled": {
             "value": false
@@ -6617,11 +6620,6 @@
         },
         "grok_analyze_holdout_17047": {
             "name": "grok_analyze_holdout_17047",
-            "type": "experiment",
-            "enumeration_values": []
-        },
-        "grok_auto_translate_rweb_17544": {
-            "name": "grok_auto_translate_rweb_17544",
             "type": "experiment",
             "enumeration_values": []
         },
@@ -10266,6 +10264,11 @@
             "type": "number",
             "defaultValue": 5
         },
+        "responsive_web_native_bridge_allowed_methods": {
+            "name": "responsive_web_native_bridge_allowed_methods",
+            "type": "object",
+            "defaultValue": []
+        },
         "responsive_web_not_a_bot_signups_enabled": {
             "name": "responsive_web_not_a_bot_signups_enabled",
             "type": "boolean",
@@ -12764,7 +12767,7 @@
         "subscriptions_management_failed_payment_paywall_banner_enabled": {
             "name": "subscriptions_management_failed_payment_paywall_banner_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_marketing_page_syscache_content_enabled": {
             "name": "subscriptions_marketing_page_syscache_content_enabled",
@@ -16097,6 +16100,14 @@
         },
         "xchat_streamed_link_preview": {
             "name": "xchat_streamed_link_preview",
+            "type": "string"
+        },
+        "xchat_enable_reaction_notifs": {
+            "name": "xchat_enable_reaction_notifs",
+            "type": "string"
+        },
+        "xchat_voice_messages_transcription_enabled": {
+            "name": "xchat_voice_messages_transcription_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
