@@ -12,7 +12,6 @@ from tqdm import tqdm
 from appData import apkM,apkCombo,apkPure
 import gdown
 from model import DATA
-from megaloader import extract 
 
 def downloader(url, filePath=ZIP_FILE, isJson=False):
     if os.path.exists(filePath):
@@ -25,9 +24,7 @@ def downloader(url, filePath=ZIP_FILE, isJson=False):
     
     hdr=headers()
     if "pixeldrain.com" in url:
-        download_item = list(extract(url))[0]
-        url = download_item.download_url
-        hdr = download_item.headers
+        url = url.replace("/u/","/api/file/") +"?download"
         
     response = requests.get(url, stream=True, headers=hdr)
     if not isJson:
