@@ -4,6 +4,7 @@ from pprint import pprint
 from urllib.parse import unquote
 from datetime import datetime
 from constants import headers
+import curl_cffi
 
 hdr = headers()
 proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="
@@ -12,7 +13,7 @@ def beautifulSoup(url,proxy=1):
     if proxy:
         url = proxyUrl+url
     
-    req = requests.get(url, headers=hdr)
+    req = curl_cffi.get(url, impersonate="chrome")
     if req.status_code != 200:
         raise Exception("page not found:\nURL: "+url)
     
@@ -51,7 +52,7 @@ def apkPure(package_name,version):
     return res[11].decode("utf-8")
 
 def apkM(url):
-    pS:bs = beautifulSoup(url)
+    pS:bs = beautifulSoup(url,0)
     downloadBtn = pS.find("a",{"class":"downloadButton"})
     if not downloadBtn.find("span"):
         redirectUrl = pS.find("div",{"class":"dowrap-break-all"}).find("a")['href']
