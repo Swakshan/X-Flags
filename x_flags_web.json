@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "148e5201f23f2a707fc740448a964f2b1298c4e6",
+    "feature_set_token": "029e541278e0de4d4bac1b8ad228347dd39d5269",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -497,6 +497,9 @@
         },
         "composer_add_geo_network_conversation_controls": {
             "value": true
+        },
+        "composer_composition_signals_enabled": {
+            "value": false
         },
         "content_disclosure_ai_generated_c2pa_detection_enabled": {
             "value": true
@@ -1063,6 +1066,9 @@
         },
         "payments_1password_history_fix_enabled": {
             "value": true
+        },
+        "payments_auth_token_enabled": {
+            "value": false
         },
         "payments_cash_deposits_enabled": {
             "value": true
@@ -4722,6 +4728,10 @@
             "name": "av_chat_android_group_calling_enabled",
             "type": "string"
         },
+        "av_chat_group_e2ee_creator_enabled": {
+            "name": "av_chat_group_e2ee_creator_enabled",
+            "type": "string"
+        },
         "backend_timelines_parent_group_meta_3627": {
             "name": "backend_timelines_parent_group_meta_3627",
             "type": "experiment",
@@ -5538,7 +5548,8 @@
         },
         "composer_composition_signals_enabled": {
             "name": "composer_composition_signals_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "content_disclosure_indicator_enabled": {
             "name": "content_disclosure_indicator_enabled",
@@ -8017,6 +8028,11 @@
         "payments_international_wires_enabled": {
             "name": "payments_international_wires_enabled",
             "type": "string"
+        },
+        "payments_auth_token_enabled": {
+            "name": "payments_auth_token_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_tracing_zipkin_enabled": {
             "name": "payments_tracing_zipkin_enabled",
@@ -16116,6 +16132,14 @@
         },
         "xchat_voice_messages_transcription_enabled": {
             "name": "xchat_voice_messages_transcription_enabled",
+            "type": "string"
+        },
+        "xchat_grpc_chat_page_enabled": {
+            "name": "xchat_grpc_chat_page_enabled",
+            "type": "string"
+        },
+        "xchat_self_custody_enabled": {
+            "name": "xchat_self_custody_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
