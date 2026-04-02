@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "029e541278e0de4d4bac1b8ad228347dd39d5269",
+    "feature_set_token": "15e399bacb76a6ea3635e9237d80dceec74cd64d",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -714,7 +714,7 @@
             "value": true
         },
         "gryphon_hide_quick_promote": {
-            "value": false
+            "value": true
         },
         "gryphon_live_timelines_enabled": {
             "value": true
@@ -6685,7 +6685,7 @@
         "gryphon_hide_quick_promote": {
             "name": "gryphon_hide_quick_promote",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "gryphon_live_timelines_enabled": {
             "name": "gryphon_live_timelines_enabled",
@@ -16140,6 +16140,10 @@
         },
         "xchat_self_custody_enabled": {
             "name": "xchat_self_custody_enabled",
+            "type": "string"
+        },
+        "xchat_send_signature_protocol_version": {
+            "name": "xchat_send_signature_protocol_version",
             "type": "string"
         },
         "xprofile_editing_enabled": {
