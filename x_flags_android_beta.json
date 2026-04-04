@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "db7e8771b985cc23a7b906db3b85711f425e49c1",
+        "feature_set_token": "6cea0bf7f6863cdfdc8491f5c9e6e76cf0c3ea08",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -3184,6 +3184,9 @@
             "home_timeline_bottom_cursor_max_retries": {
                 "value": 3.0
             },
+            "home_timeline_client_deduping_skip_adjacent_to_ads": {
+                "value": false
+            },
             "home_timeline_disable_home_scroll_position_restoration_on_cold_launch_enabled": {
                 "value": true
             },
@@ -5571,7 +5574,7 @@
                 "value": false
             },
             "xchat_enable_in_memory_event_retry": {
-                "value": false
+                "value": true
             },
             "xchat_enable_in_memory_event_retry_bottom_cursor": {
                 "value": false
@@ -5637,7 +5640,7 @@
                 "value": true
             },
             "xchat_observe_inbox_users_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_passcode_options_enabled": {
                 "value": false
@@ -5679,6 +5682,9 @@
                 "value": 500.0
             },
             "xchat_voice_messages_enabled": {
+                "value": false
+            },
+            "xchat_voice_messages_transcription_enabled": {
                 "value": false
             },
             "xlite_articles_audio_enabled": {
@@ -5848,6 +5854,7 @@
         "android_database_flushing_recreate_dbs_15390",
         "android_increase_priority_magic_recs_channel_10923",
         "android_static_lo_push_badging_15710",
+        "android_enable_dedup_skip_adjacent_to_ads_18354",
         "android_prefetch_promoted_content_18127",
         "vqv_client_events_short_videos_17472",
         "project_jiminy_humanization_nudge_android_11630",
@@ -5855,7 +5862,7 @@
         "viewcounts_everywhere_16084",
         "media_quick_reply_8079",
         "android_dynamic_ntab_14305",
-        "grok_auto_translate_ios_17529",
+        "ios_client_deduping_skip_adjacent_to_ads_18370",
         "android_o_clear_notifications_on_ntab_impression_8473",
         "android_preloaded_notifications_12303",
         "x_lite_in_tfa_new_users_indonesia_18113",
@@ -5955,7 +5962,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "053d411fe07e5a2b08c3f14309566cd04d621c8a",
-        "experiments": "053d411fe07e5a2b08c3f14309566cd04d621c8a"
+        "feature_switches": "ae07a836d06ba40b761df166e614c35b3e5eacd4",
+        "experiments": "ae07a836d06ba40b761df166e614c35b3e5eacd4"
     }
 }
