@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "de4f528dfbbabceef229512af177ebf26b857bb1",
+    "feature_set_token": "d9ecd73fa5b6cfc0f8b200efa72544718ab84fa2",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3985,7 +3985,7 @@
             "value": false
         },
         "xchat_streamed_link_preview": {
-            "value": false
+            "value": true
         },
         "xchat_throttle_badge_counts": {
             "value": false
@@ -4691,6 +4691,10 @@
         },
         "av_chat_group_e2ee_creator_enabled": {
             "name": "av_chat_group_e2ee_creator_enabled",
+            "type": "string"
+        },
+        "av_chat_audio_session_manual_activation_fix_enabled": {
+            "name": "av_chat_audio_session_manual_activation_fix_enabled",
             "type": "string"
         },
         "backend_timelines_parent_group_meta_3627": {
@@ -9978,10 +9982,7 @@
         "responsive_web_grok_analyze_tooltip_17895": {
             "name": "responsive_web_grok_analyze_tooltip_17895",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "responsive_web_grok_api_enable_grok_host": {
             "name": "responsive_web_grok_api_enable_grok_host",
@@ -16075,7 +16076,7 @@
         "xchat_streamed_link_preview": {
             "name": "xchat_streamed_link_preview",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_enable_reaction_notifs": {
             "name": "xchat_enable_reaction_notifs",
@@ -16101,6 +16102,10 @@
             "name": "xchat_send_signature_protocol_version",
             "type": "number",
             "defaultValue": 4
+        },
+        "xchat_voice_messages_rendering_enabled": {
+            "name": "xchat_voice_messages_rendering_enabled",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
