@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "76d05891461ef50637667c74fbaf9b1e2ce1b348",
+    "feature_set_token": "6a43749596626e31a180fedfa28f2f1e1e47bc0e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1632,19 +1632,19 @@
             "value": true
         },
         "responsive_web_grok_bio_auto_translation_in_followers_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_bio_auto_translation_in_search_is_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_bio_auto_translation_is_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_community_note_auto_translation_is_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_community_note_translation_is_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_debug_enabled": {
             "value": false
@@ -1776,7 +1776,7 @@
             "value": false
         },
         "responsive_web_grok_post_inline_translation_is_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_post_understanding_button_on_all_posts": {
             "value": false
@@ -1842,7 +1842,7 @@
             "value": false
         },
         "responsive_web_grok_show_grok_translated_post": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_show_message_post_button": {
             "value": true
@@ -1872,7 +1872,7 @@
             "value": false
         },
         "responsive_web_grok_tweet_translation": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_tweet_translation_limit": {
             "value": 5000.0
@@ -6599,12 +6599,12 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "grok_auto_translate_worldwide_18369": {
-            "name": "grok_auto_translate_worldwide_18369",
+        "grok_auto_translate_worldwide_holdback_18413": {
+            "name": "grok_auto_translate_worldwide_holdback_18413",
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "holdback"
             ]
         },
         "grok_button_on_every_post_17085": {
@@ -9457,7 +9457,7 @@
         "responsive_web_grok_tweet_translation": {
             "name": "responsive_web_grok_tweet_translation",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_feed": {
             "name": "responsive_web_grok_feed",
@@ -9616,7 +9616,7 @@
         "responsive_web_grok_show_grok_translated_post": {
             "name": "responsive_web_grok_show_grok_translated_post",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_enable_deepersearch": {
             "name": "responsive_web_grok_enable_deepersearch",
@@ -9683,7 +9683,7 @@
         "responsive_web_grok_post_inline_translation_is_enabled": {
             "name": "responsive_web_grok_post_inline_translation_is_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_images_card_enabled": {
             "name": "responsive_web_grok_images_card_enabled",
@@ -9692,7 +9692,7 @@
         "responsive_web_grok_bio_auto_translation_is_enabled": {
             "name": "responsive_web_grok_bio_auto_translation_is_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_download_favicons": {
             "name": "responsive_web_grok_download_favicons",
@@ -9721,12 +9721,12 @@
         "responsive_web_grok_community_note_translation_is_enabled": {
             "name": "responsive_web_grok_community_note_translation_is_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_community_note_auto_translation_is_enabled": {
             "name": "responsive_web_grok_community_note_auto_translation_is_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_enable_model_steer_buttons": {
             "name": "responsive_web_grok_enable_model_steer_buttons",
@@ -9753,12 +9753,12 @@
         "responsive_web_grok_bio_auto_translation_in_followers_enabled": {
             "name": "responsive_web_grok_bio_auto_translation_in_followers_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_bio_auto_translation_in_search_is_enabled": {
             "name": "responsive_web_grok_bio_auto_translation_in_search_is_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_grok_imagine_annotation_enabled": {
             "name": "responsive_web_grok_imagine_annotation_enabled",
