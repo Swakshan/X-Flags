@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6a43749596626e31a180fedfa28f2f1e1e47bc0e",
+    "feature_set_token": "9d954ba0894bf0b15d7b3a52f25bdb58261545c6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -304,7 +304,7 @@
             "value": true
         },
         "av_chat_encryption_enabled": {
-            "value": true
+            "value": false
         },
         "av_chat_xchat_emoji_reactions_enabled": {
             "value": false
@@ -3997,7 +3997,7 @@
             "value": 500
         },
         "xchat_voice_messages_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_voice_messages_transcription_enabled": {
             "value": false
@@ -4345,6 +4345,10 @@
             "type": "number",
             "defaultValue": 3
         },
+        "ads_spacing_client_fallback_top_down_enabled": {
+            "name": "ads_spacing_client_fallback_top_down_enabled",
+            "type": "string"
+        },
         "arkose_challenge_open_app_dev": {
             "name": "arkose_challenge_open_app_dev",
             "type": "string",
@@ -4666,7 +4670,7 @@
         "av_chat_encryption_enabled": {
             "name": "av_chat_encryption_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "av_chat_android_call_encryption_enabled": {
             "name": "av_chat_android_call_encryption_enabled",
@@ -15868,7 +15872,7 @@
         "xchat_voice_messages_enabled": {
             "name": "xchat_voice_messages_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_standalone_push_notifications": {
             "name": "xchat_standalone_push_notifications",
