@@ -8024,12 +8024,12 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "paywall_on_web_app_open_backend_controlled_18294": {
-            "name": "paywall_on_web_app_open_backend_controlled_18294",
+        "paywall_on_web_app_open_backend_holdback_18421": {
+            "name": "paywall_on_web_app_open_backend_holdback_18421",
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "holdback"
             ]
         },
         "people_search_messages_tab_enabled": {
@@ -13136,6 +13136,10 @@
         },
         "subscriptions_premium_hub_supergrok_card_enabled": {
             "name": "subscriptions_premium_hub_supergrok_card_enabled",
+            "type": "string"
+        },
+        "subscriptions_premium_hub_redesigned_icons_enabled": {
+            "name": "subscriptions_premium_hub_redesigned_icons_enabled",
             "type": "string"
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
