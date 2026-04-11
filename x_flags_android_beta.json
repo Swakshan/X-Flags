@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "ec612de8f0909912cff584af73cff2bbc2d06118",
+        "feature_set_token": "5a692f4aead964b495646028938ad307f08d9424",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -461,6 +461,9 @@
             },
             "android_ad_formats_xlite_ad_spacing_filter_enabled": {
                 "value": true
+            },
+            "android_ad_formats_xlite_browser_destination_prefetching_enabled": {
+                "value": false
             },
             "android_ads_notification_channel_enabled": {
                 "value": true
@@ -2860,6 +2863,9 @@
             "double_tap_to_like_user_setting_enabled": {
                 "value": false
             },
+            "drafts_remote_syncing_tfa": {
+                "value": false
+            },
             "dsa_encrypted_dms_report_flow_enabled": {
                 "value": false
             },
@@ -3122,37 +3128,37 @@
                 "value": true
             },
             "grok_translations_bio_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_bio_inline_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_bio_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_community_note_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_community_note_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_notification_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_poll_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_post_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_post_feedback_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_post_inline_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_post_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_repost_auto_translation_parsing_fix_enabled": {
                 "value": true
@@ -3161,7 +3167,7 @@
                 "value": true
             },
             "grok_translations_timeline_user_bio_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "growth_acquisition_redirect_to_login": {
                 "value": ""
@@ -5604,7 +5610,7 @@
                 "value": false
             },
             "xchat_enable_forward_message_v2": {
-                "value": false
+                "value": true
             },
             "xchat_enable_franking_report": {
                 "value": false
@@ -5712,7 +5718,7 @@
                 "value": false
             },
             "xchat_send_franking_data": {
-                "value": false
+                "value": true
             },
             "xchat_send_signature_protocol_version": {
                 "value": 4.0
@@ -5730,7 +5736,7 @@
                 "value": 500.0
             },
             "xchat_voice_messages_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_voice_messages_transcription_enabled": {
                 "value": false
@@ -5881,6 +5887,7 @@
         "current_stack_follow_experiment_ios_14713",
         "mr_client_init_lo_static_push_14979",
         "good_click_reactivity_all_users_15540",
+        "grok_auto_translate_worldwide_holdback_18413",
         "personalization_holdback_2022_13469",
         "x_lite_in_tfa_new_users_turkey_18045",
         "immersive_media_viewer_android_16367",
