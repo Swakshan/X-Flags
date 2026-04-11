@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "fc0ab36b83e729237acb98d915a36a6961beef66",
+        "feature_set_token": "a154d59ef305f36d62734c99b74640720785bcb1",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2059,7 +2059,7 @@
                 "value": true
             },
             "explore_relaunch_non_interruptive_bookmarks_flow_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_override_load_page_video_range_values_enabled": {
                 "value": true
@@ -2144,6 +2144,9 @@
             },
             "graphql_unified_card_enabled": {
                 "value": true
+            },
+            "grok_account_auth_share_enabled": {
+                "value": false
             },
             "grok_ask_grok_button_under_post_focal_enabled": {
                 "value": true
@@ -2733,9 +2736,6 @@
             "home_timeline_cold_start_viewport_aware_loading": {
                 "value": false
             },
-            "home_timeline_cold_start_viewport_update_fix_enabled": {
-                "value": true
-            },
             "home_timeline_deduping_remove_ads_with_changed_adjacent_posts": {
                 "value": false
             },
@@ -3294,6 +3294,9 @@
             "ios_client_performance_push_notification_rate_limit_max_events": {
                 "value": 1000.0
             },
+            "ios_client_performance_quoted_status_nesting_cap_enabled": {
+                "value": false
+            },
             "ios_client_performance_recurring_task_service_active_account_flush_promoted_events_trigger_on_registration_enabled": {
                 "value": true
             },
@@ -3439,9 +3442,6 @@
                 "value": "none"
             },
             "ios_detailed_logging_assimilation_scribing_enabled": {
-                "value": false
-            },
-            "ios_detailed_logging_enabled": {
                 "value": false
             },
             "ios_detailed_logging_hydration_duration_scribing_threshold_ms": {
@@ -4358,7 +4358,7 @@
                 "value": 0.0
             },
             "ios_ui_remove_urls_jf_attachment_posts": {
-                "value": false
+                "value": true
             },
             "ios_ui_shows_vertical_scroll_indicator_enabled": {
                 "value": true
@@ -9563,6 +9563,9 @@
             "onboarding_new_fallback": {
                 "value": false
             },
+            "onboarding_new_jetfuel_phone_settings_enabled": {
+                "value": false
+            },
             "onboarding_new_keychain_login_enabled": {
                 "value": false
             },
@@ -9712,6 +9715,9 @@
             },
             "payments_crb_iframe_delay_msecs": {
                 "value": 1000.0
+            },
+            "payments_enabled": {
+                "value": false
             },
             "payments_forward_with_enabled": {
                 "value": true
@@ -11766,7 +11772,7 @@
                 "value": false
             },
             "x_ios_photo_editor_chat_enabled": {
-                "value": false
+                "value": true
             },
             "x_ios_photo_editor_enabled": {
                 "value": true
@@ -11945,7 +11951,7 @@
                 "value": false
             },
             "xchat_send_franking_data": {
-                "value": false
+                "value": true
             },
             "xchat_send_signature_protocol_version": {
                 "value": 4.0
@@ -11957,6 +11963,9 @@
                 "value": 500.0
             },
             "xchat_voice_messages_enabled": {
+                "value": true
+            },
+            "xchat_voice_messages_rendering_enabled": {
                 "value": true
             },
             "xchat_voice_messages_transcription_enabled": {
@@ -12005,7 +12014,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "b378dd7c42f5b91d2f787f24a30bacd1312f4087",
-        "experiments": "b378dd7c42f5b91d2f787f24a30bacd1312f4087"
+        "feature_switches": "8819f98499cf6aeb3e21b81d1e4ead0986ee4cde",
+        "experiments": "8819f98499cf6aeb3e21b81d1e4ead0986ee4cde"
     }
 }
