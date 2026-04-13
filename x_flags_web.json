@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bd46bc2a104cd4fcd645e09511012fa28235f21f",
+    "feature_set_token": "9e880c977dc72967bcb1e56f7bb5adb53c9a1720",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2576,6 +2576,9 @@
         "rweb_premium_business_rebranding_url_enabled": {
             "value": true
         },
+        "rweb_promoted_tweet_max_text_lines": {
+            "value": 2
+        },
         "rweb_quick_promote_action_menu_enabled": {
             "value": true
         },
@@ -4031,9 +4034,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "rweb_promoted_tweet_max_text_lines": {
-            "value": 2
         }
     },
     "debug": {
@@ -11488,6 +11488,11 @@
             "name": "rweb_premium_business_rebranding_hiring_url_redirect_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_promoted_tweet_max_text_lines": {
+            "name": "rweb_promoted_tweet_max_text_lines",
+            "type": "number",
+            "defaultValue": 2
         },
         "rweb_quick_promote_action_menu_enabled": {
             "name": "rweb_quick_promote_action_menu_enabled",
