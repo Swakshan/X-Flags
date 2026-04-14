@@ -8,7 +8,7 @@ from basics import printCmd
 from compare import compareFlags
 import argparse
 
-VER = "v22.58 : remove library for pixeldrain downloading"
+VER = "v22.581 : ]remove 'Fuzzy' arg from gdrive downloader"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)

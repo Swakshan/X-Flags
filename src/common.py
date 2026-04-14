@@ -19,7 +19,7 @@ def downloader(url, filePath=ZIP_FILE, isJson=False):
         return True
     
     if "drive.google.com" in url:
-        gdown.download(url, ZIP_FILE, quiet=False,fuzzy=True,resume=True)
+        gdown.download(url, ZIP_FILE, quiet=False, resume=True)
         return True
     
     hdr=headers()
