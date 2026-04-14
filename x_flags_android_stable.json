@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "53b942bd6a727cdd6037ddec1a6af88e6885242c",
+        "feature_set_token": "a2a6cb79fe7b45a077751581a1e9a2f5aea30225",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -461,6 +461,9 @@
             },
             "android_ad_formats_xlite_ad_spacing_filter_enabled": {
                 "value": true
+            },
+            "android_ad_formats_xlite_browser_destination_prefetching_enabled": {
+                "value": false
             },
             "android_ads_notification_channel_enabled": {
                 "value": true
@@ -1259,6 +1262,15 @@
             },
             "android_notification_drawer_limit_pre_q": {
                 "value": 50.0
+            },
+            "android_notification_redesign_hide_verified_tab": {
+                "value": false
+            },
+            "android_notification_redesign_minimum_followers_to_show_priority_tab": {
+                "value": -1.0
+            },
+            "android_notification_redesign_priority_inbox_enabled": {
+                "value": false
             },
             "android_notification_search_subscribe_enabled": {
                 "value": false
@@ -2855,6 +2867,9 @@
                 "value": false
             },
             "double_tap_to_like_user_setting_enabled": {
+                "value": false
+            },
+            "drafts_remote_syncing_tfa": {
                 "value": false
             },
             "dsa_encrypted_dms_report_flow_enabled": {
@@ -4634,7 +4649,7 @@
                 "value": true
             },
             "subscriptions_feature_1003": {
-                "value": true
+                "value": false
             },
             "subscriptions_feature_1005": {
                 "value": false
@@ -5601,7 +5616,7 @@
                 "value": false
             },
             "xchat_enable_forward_message_v2": {
-                "value": false
+                "value": true
             },
             "xchat_enable_franking_report": {
                 "value": false
@@ -5709,7 +5724,7 @@
                 "value": false
             },
             "xchat_send_franking_data": {
-                "value": false
+                "value": true
             },
             "xchat_send_signature_protocol_version": {
                 "value": 4.0
@@ -5853,6 +5868,7 @@
         "ranked_following_extend_duration_17883",
         "android_device_follow_without_follow_15236",
         "android_larger_sru_segment_sizes_13549",
+        "home_tabbed_timeline_18427",
         "android_use_payload_count_in_drawer_9807",
         "android_high_priority_notification_channels_holdback_11422",
         "mr_global_user_retention_holdback_10725",
@@ -5940,11 +5956,9 @@
         "android_static_lo_push_rotation_15709",
         "x_lite_in_tfa_new_users_indonesia_aus_new_zeland_18261",
         "mr_override_notifs_relevancy_decay_v3_13161",
-        "post_ctas_grok_web_v0_18008",
         "responsive_web_client_backoff_10535",
         "tweet_card_producer_experiment_9434",
         "moments_new_share_experiment_variants_13919",
-        "post_ctas_grok_ios_v0_18047",
         "android_hls_dynamic_manifests_12518",
         "home_spaces_holdback_12863",
         "explore_longterm_holdback_10250",
@@ -5960,6 +5974,7 @@
         "android_disable_bottom_paging_policy_home_16915",
         "android_video_transcode_exoplayer_source_14593",
         "dm_voice_messages_11154",
+        "android_ntab_redesign_with_priority_18387",
         "android_immersive_not_interested_18173",
         "android_scribe_frequent_collect_and_upload_linger_17854",
         "ios_vanity_url_website_cards_16576",
@@ -6010,7 +6025,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "883dd261ed0824c45c89238c90eb5bc07a2a4015",
-        "experiments": "883dd261ed0824c45c89238c90eb5bc07a2a4015"
+        "feature_switches": "7a0d0e6d3260b17f110666f695778789f785b40f",
+        "experiments": "7a0d0e6d3260b17f110666f695778789f785b40f"
     }
 }
