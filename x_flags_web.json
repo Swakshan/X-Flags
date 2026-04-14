@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3017730924c8c37f87bbb3f4baab87c60102f8b6",
+    "feature_set_token": "9e880c977dc72967bcb1e56f7bb5adb53c9a1720",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1167,7 +1167,7 @@
             "value": true
         },
         "premium_webview_paywall_tier_switch_upgrade_disclaimer_enabled": {
-            "value": true
+            "value": false
         },
         "premium_webview_paywall_video_url": {
             "value": "https://abs.twimg.com/videos/grok-4-key-visual.mp4"
@@ -2465,9 +2465,6 @@
         "rweb_analytics_xweb_content_page": {
             "value": true
         },
-        "rweb_cashtags_enabled": {
-            "value": false
-        },
         "rweb_client_transaction_id_enabled": {
             "value": false
         },
@@ -2580,7 +2577,7 @@
             "value": true
         },
         "rweb_promoted_tweet_max_text_lines": {
-            "value": 0
+            "value": 2
         },
         "rweb_quick_promote_action_menu_enabled": {
             "value": true
@@ -4711,18 +4708,6 @@
         },
         "av_chat_audio_session_manual_activation_fix_enabled": {
             "name": "av_chat_audio_session_manual_activation_fix_enabled",
-            "type": "string"
-        },
-        "av_chat_audio_check_after_timeout_enabled": {
-            "name": "av_chat_audio_check_after_timeout_enabled",
-            "type": "string"
-        },
-        "av_chat_conversation_id_comparison_enabled": {
-            "name": "av_chat_conversation_id_comparison_enabled",
-            "type": "string"
-        },
-        "av_chat_callkit_unknown_provider_reset_enabled": {
-            "name": "av_chat_callkit_unknown_provider_reset_enabled",
             "type": "string"
         },
         "backend_timelines_parent_group_meta_3627": {
@@ -8368,16 +8353,12 @@
         "premium_webview_paywall_tier_switch_upgrade_disclaimer_enabled": {
             "name": "premium_webview_paywall_tier_switch_upgrade_disclaimer_enabled",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "premium_webview_paywall_intro_offer_title_new_copy_enabled": {
             "name": "premium_webview_paywall_intro_offer_title_new_copy_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "premium_webview_paywall_nova_purchase_variant": {
-            "name": "premium_webview_paywall_nova_purchase_variant",
-            "type": "string"
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -11290,11 +11271,6 @@
             "type": "boolean",
             "defaultValue": false
         },
-        "rweb_cashtags_enabled": {
-            "name": "rweb_cashtags_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
         "rweb_client_transaction_id_enabled": {
             "name": "rweb_client_transaction_id_enabled",
             "type": "boolean",
@@ -11524,7 +11500,7 @@
         "rweb_promoted_tweet_max_text_lines": {
             "name": "rweb_promoted_tweet_max_text_lines",
             "type": "number",
-            "defaultValue": 0
+            "defaultValue": 2
         },
         "rweb_quick_promote_action_menu_enabled": {
             "name": "rweb_quick_promote_action_menu_enabled",
@@ -11738,14 +11714,6 @@
             "name": "rweb_xchat_search_redesign",
             "type": "boolean",
             "defaultValue": true
-        },
-        "rweb_xchat_delegate_accounts_enabled": {
-            "name": "rweb_xchat_delegate_accounts_enabled",
-            "type": "string"
-        },
-        "rweb_xchat_ws_only_when_active": {
-            "name": "rweb_xchat_ws_only_when_active",
-            "type": "string"
         },
         "sc_mock_data_enabled": {
             "name": "sc_mock_data_enabled",
