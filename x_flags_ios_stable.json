@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "de33f2d10d5bc77e26efaeb84fb219732bc1d5b7",
+        "feature_set_token": "4933b061dc8fc8b7507d2525d184e746901a227f",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -412,6 +412,9 @@
             "author_moderated_replies_urt_container_enabled": {
                 "value": false
             },
+            "av_chat_audio_check_after_timeout_enabled": {
+                "value": false
+            },
             "av_chat_audio_session_manual_activation_fix_enabled": {
                 "value": false
             },
@@ -420,6 +423,12 @@
             },
             "av_chat_call_waiting_timeout_sec": {
                 "value": 30.0
+            },
+            "av_chat_callkit_unknown_provider_reset_enabled": {
+                "value": false
+            },
+            "av_chat_conversation_id_comparison_enabled": {
+                "value": false
             },
             "av_chat_dms_call_menu_enabled": {
                 "value": true
@@ -2226,6 +2235,9 @@
             "grok_imagine_download_grok_button_variant": {
                 "value": "button"
             },
+            "grok_imagine_grok_signature_video_edit_lock_enabled": {
+                "value": false
+            },
             "grok_imagine_inter_app_transfer_image_enabled": {
                 "value": false
             },
@@ -2305,7 +2317,7 @@
                 "value": false
             },
             "grok_ios_author_view_analyze_button_via_backend_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_background_tasks_enabled": {
                 "value": true
@@ -3517,15 +3529,12 @@
                 "value": false
             },
             "ios_home_timeline_external_status_injections_fetch_tweet_facepile_enabled": {
-                "value": false
+                "value": true
             },
             "ios_home_timeline_external_status_injections_from_links_enabled": {
                 "value": false
             },
             "ios_home_timeline_external_status_injections_from_notifications_enabled": {
-                "value": false
-            },
-            "ios_home_timeline_external_status_injections_on_cold_start_enabled": {
                 "value": false
             },
             "ios_home_timeline_items_refactor_v2_enabled": {
@@ -4015,6 +4024,12 @@
             "ios_tab_bar_default_show_profile": {
                 "value": false
             },
+            "ios_tab_bar_gesture_rework_enabled": {
+                "value": false
+            },
+            "ios_tab_bar_tab_switch_transition_enabled": {
+                "value": false
+            },
             "ios_tabbed_explore_trending_tab_enabled": {
                 "value": false
             },
@@ -4359,6 +4374,12 @@
             },
             "ios_ui_multi_media_carousel_enabled": {
                 "value": false
+            },
+            "ios_ui_multi_media_carousel_height_ratio": {
+                "value": 0.68
+            },
+            "ios_ui_multi_media_carousel_max_item_width_ratio": {
+                "value": 0.8
             },
             "ios_ui_navigation_push_pop_animation_duration": {
                 "value": 0.2
@@ -4940,6 +4961,9 @@
             "media_poll_shuffle_poll_choices": {
                 "value": false
             },
+            "media_tab_auto_opened_immersive_from_deep_link_enabled": {
+                "value": false
+            },
             "media_tab_debug_force_load_status_id": {
                 "value": ""
             },
@@ -4973,6 +4997,9 @@
             "media_tab_immersive_repost_button_does_embed_enabled": {
                 "value": true
             },
+            "media_tab_immersive_share_uses_video_url": {
+                "value": false
+            },
             "media_tab_immersive_v2_cta_shimmer_streak_animation_enabled": {
                 "value": true
             },
@@ -4986,7 +5013,7 @@
                 "value": 0.0
             },
             "media_tab_profile_videos_tab_column_cards_layout_enabled": {
-                "value": false
+                "value": true
             },
             "media_tab_vertical_photo_enabled": {
                 "value": true
@@ -9728,9 +9755,6 @@
             "payments_chat_support_for_limits_enabled": {
                 "value": false
             },
-            "payments_chat_support_for_transactions_enabled": {
-                "value": true
-            },
             "payments_complete_onboarding_enabled": {
                 "value": true
             },
@@ -9742,6 +9766,12 @@
             },
             "payments_forward_with_enabled": {
                 "value": true
+            },
+            "payments_secondary_accounts_enabled": {
+                "value": false
+            },
+            "payments_shared_accounts_enabled": {
+                "value": false
             },
             "payments_shutdown_enabled": {
                 "value": false
@@ -10116,6 +10146,9 @@
             },
             "premium_webview_paywall_debug_mode_enabled": {
                 "value": false
+            },
+            "premium_webview_paywall_nova_purchase_variant": {
+                "value": ""
             },
             "premium_webview_paywall_stripe_enabled": {
                 "value": false
@@ -11936,7 +11969,7 @@
                 "value": 100.0
             },
             "xchat_observe_inbox_categories_separately": {
-                "value": false
+                "value": true
             },
             "xchat_observe_inbox_users_enabled": {
                 "value": true
@@ -12035,7 +12068,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "3ae491eda6d85ac184f83dbf8a0a9d25af165243",
-        "experiments": "3ae491eda6d85ac184f83dbf8a0a9d25af165243"
+        "feature_switches": "4441a118e0234e30a6f2078a1059a1e3c597c089",
+        "experiments": "4441a118e0234e30a6f2078a1059a1e3c597c089"
     }
 }
