@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "eb960bd80a1ba4d4164cee0cc4e7e94661ac42bb",
+    "feature_set_token": "e76e71943a6083b12841600e167d78f45bf33dff",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1550,9 +1550,6 @@
         "responsive_web_enhance_cards_enabled": {
             "value": false
         },
-        "responsive_web_exodus_enabled": {
-            "value": false
-        },
         "responsive_web_extension_compatibility_hide": {
             "value": false
         },
@@ -2539,6 +2536,9 @@
         },
         "rweb_mixed_media_uploads_cap": {
             "value": 4
+        },
+        "rweb_modal_animation_enabled": {
+            "value": false
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "value": true
@@ -8450,10 +8450,7 @@
         "ranked_following_web_17931": {
             "name": "ranked_following_web_17931",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "recruiting_verified_orgs_admin_enabled": {
             "name": "recruiting_verified_orgs_admin_enabled",
@@ -9190,11 +9187,6 @@
         },
         "responsive_web_enhance_cards_enabled": {
             "name": "responsive_web_enhance_cards_enabled",
-            "type": "boolean",
-            "defaultValue": false
-        },
-        "responsive_web_exodus_enabled": {
-            "name": "responsive_web_exodus_enabled",
             "type": "boolean",
             "defaultValue": false
         },
@@ -11431,6 +11423,15 @@
             "name": "rweb_mixed_media_uploads_cap",
             "type": "number",
             "defaultValue": 4
+        },
+        "rweb_modal_animation_enabled": {
+            "name": "rweb_modal_animation_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_modal_rewb_modal_animation_duration_ms": {
+            "name": "rweb_modal_rewb_modal_animation_duration_ms",
+            "type": "string"
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
