@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e76e71943a6083b12841600e167d78f45bf33dff",
+    "feature_set_token": "78d11cd74d32e37c90a64ef147b98f492a848498",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -717,7 +717,7 @@
             "value": true
         },
         "gryphon_hide_quick_promote": {
-            "value": true
+            "value": false
         },
         "gryphon_live_timelines_enabled": {
             "value": true
@@ -1072,6 +1072,15 @@
         },
         "payments_1password_history_fix_enabled": {
             "value": true
+        },
+        "payments_assets_activate_card_dark_video_url": {
+            "value": ""
+        },
+        "payments_assets_activate_card_light_video_url": {
+            "value": ""
+        },
+        "payments_assets_activate_card_video_ratio": {
+            "value": 1
         },
         "payments_auth_token_enabled": {
             "value": true
@@ -2463,7 +2472,7 @@
             "value": true
         },
         "rweb_cashtags_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_client_transaction_id_enabled": {
             "value": false
@@ -2658,6 +2667,9 @@
             "value": true
         },
         "rweb_xchat_debug_enabled": {
+            "value": false
+        },
+        "rweb_xchat_delegate_accounts_enabled": {
             "value": false
         },
         "rweb_xchat_dogfood_logs_enabled": {
@@ -6715,7 +6727,7 @@
         "gryphon_hide_quick_promote": {
             "name": "gryphon_hide_quick_promote",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "gryphon_live_timelines_enabled": {
             "name": "gryphon_live_timelines_enabled",
@@ -8131,6 +8143,21 @@
         "payments_shared_accounts_enabled": {
             "name": "payments_shared_accounts_enabled",
             "type": "string"
+        },
+        "payments_assets_activate_card_dark_video_url": {
+            "name": "payments_assets_activate_card_dark_video_url",
+            "type": "string",
+            "defaultValue": ""
+        },
+        "payments_assets_activate_card_light_video_url": {
+            "name": "payments_assets_activate_card_light_video_url",
+            "type": "string",
+            "defaultValue": ""
+        },
+        "payments_assets_activate_card_video_ratio": {
+            "name": "payments_assets_activate_card_video_ratio",
+            "type": "number",
+            "defaultValue": 1
         },
         "payments_auth_token_enabled": {
             "name": "payments_auth_token_enabled",
@@ -11285,7 +11312,7 @@
         "rweb_cashtags_enabled": {
             "name": "rweb_cashtags_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_client_transaction_id_enabled": {
             "name": "rweb_client_transaction_id_enabled",
@@ -11742,7 +11769,8 @@
         },
         "rweb_xchat_delegate_accounts_enabled": {
             "name": "rweb_xchat_delegate_accounts_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_xchat_ws_only_when_active": {
             "name": "rweb_xchat_ws_only_when_active",
@@ -16262,6 +16290,10 @@
         },
         "xchat_load_all_messages": {
             "name": "xchat_load_all_messages",
+            "type": "string"
+        },
+        "xchat_markdown_rendering_enabled": {
+            "name": "xchat_markdown_rendering_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
