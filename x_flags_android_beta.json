@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "61f8de7e41f3cbe2aa26bcaf362c78d0bdd3941f",
+        "feature_set_token": "f1b642dc2be9f5812c468ce111835b1b1ad3d6f2",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1730,6 +1730,9 @@
             },
             "app_attest_client_data_enabled": {
                 "value": false
+            },
+            "app_attest_discard_when_logged_out_enabled": {
+                "value": true
             },
             "app_attest_enabled": {
                 "value": true
@@ -3879,6 +3882,9 @@
             "payments_half_cover_notices_enabled": {
                 "value": true
             },
+            "payments_international_wires_enabled": {
+                "value": false
+            },
             "payments_offboard_enabled": {
                 "value": true
             },
@@ -5570,7 +5576,16 @@
             "x_lite_in_tfa_enabled": {
                 "value": false
             },
+            "x_lite_in_tfa_for_existing_users_enabled": {
+                "value": false
+            },
+            "x_lite_in_tfa_for_existing_users_exit_enabled": {
+                "value": false
+            },
             "x_lite_in_tfa_for_new_users_enabled": {
+                "value": false
+            },
+            "x_lite_in_tfa_for_new_users_exit_enabled": {
                 "value": false
             },
             "x_lite_in_tfa_new_user_min_snowflake_user_id": {
@@ -5719,9 +5734,6 @@
             },
             "xchat_ratchet_group_id_threshold": {
                 "value": 9.223372036854776e+18
-            },
-            "xchat_resolve_unencrypted_media_locally": {
-                "value": true
             },
             "xchat_sample_observation_queries": {
                 "value": 500.0
@@ -6011,6 +6023,7 @@
         "tweet_card_consumer_experiment_9435",
         "home_timeline_spheres_sticky_tabs_enabled_holdback_16232",
         "spaces_holdback_11943",
+        "x_lite_in_tfa_new_users_tur_nz_au_ca_id_18447",
         "unified_card_android_sdc_vs_mdc_13954",
         "personalization_holdback_2023h1_14799",
         "backend_events_global_holdback_7355",
@@ -6040,7 +6053,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "08ae89f10e3922a02d3647fcb847751fce56865a",
-        "experiments": "08ae89f10e3922a02d3647fcb847751fce56865a"
+        "feature_switches": "aded91d1bb6d43532a945a629fdc410a3ca4d846",
+        "experiments": "aded91d1bb6d43532a945a629fdc410a3ca4d846"
     }
 }
