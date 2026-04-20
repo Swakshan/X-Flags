@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "09188b2f77d829a603edf8883c3cca5d2d77f02b",
+    "feature_set_token": "3b17c9c204182959ddb0ab69d2bd551072912645",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -975,7 +975,7 @@
             "value": 21660
         },
         "media_async_upload_longer_video_max_video_size": {
-            "value": 8388608
+            "value": 8192
         },
         "media_async_upload_longer_video_resolution_selector": {
             "value": false
@@ -1158,7 +1158,7 @@
             "value": 1
         },
         "premium_paywall_on_app_load_journey_enabled": {
-            "value": false
+            "value": true
         },
         "premium_paywall_on_app_load_min_account_age_days": {
             "value": 60
@@ -2345,6 +2345,9 @@
         "responsive_web_use_app_prompt_enabled": {
             "value": false
         },
+        "responsive_web_use_new_onboarding": {
+            "value": false
+        },
         "responsive_web_user_badge_education_get_verified_button_enabled": {
             "value": true
         },
@@ -2547,7 +2550,7 @@
             "value": 4
         },
         "rweb_modal_animation_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_modal_animation_timing_function": {
             "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
@@ -7690,7 +7693,7 @@
         "media_async_upload_longer_video_max_video_size": {
             "name": "media_async_upload_longer_video_max_video_size",
             "type": "number",
-            "defaultValue": 8388608
+            "defaultValue": 8192
         },
         "media_async_upload_max_image_size": {
             "name": "media_async_upload_max_image_size",
@@ -8303,7 +8306,7 @@
         "premium_paywall_on_app_load_journey_enabled": {
             "name": "premium_paywall_on_app_load_journey_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "premium_reply_boost_popup_web_17100": {
             "name": "premium_reply_boost_popup_web_17100",
@@ -10962,6 +10965,11 @@
             "type": "string",
             "defaultValue": "prompt_better"
         },
+        "responsive_web_use_new_onboarding": {
+            "name": "responsive_web_use_new_onboarding",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_user_spectral_key_enabled": {
             "name": "responsive_web_user_spectral_key_enabled",
             "type": "boolean",
@@ -11463,7 +11471,7 @@
         "rweb_modal_animation_enabled": {
             "name": "rweb_modal_animation_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_modal_rewb_modal_animation_duration_ms": {
             "name": "rweb_modal_rewb_modal_animation_duration_ms",
