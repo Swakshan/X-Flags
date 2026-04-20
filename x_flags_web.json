@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "78d11cd74d32e37c90a64ef147b98f492a848498",
+    "feature_set_token": "09188b2f77d829a603edf8883c3cca5d2d77f02b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2548,6 +2548,15 @@
         },
         "rweb_modal_animation_enabled": {
             "value": false
+        },
+        "rweb_modal_animation_timing_function": {
+            "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "rweb_modal_overlay_color_dark": {
+            "value": "rgba(255, 255, 255, 0.08)"
+        },
+        "rweb_modal_overlay_color_light": {
+            "value": "rgba(180, 180, 182, 0.5)"
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "value": true
@@ -11459,6 +11468,21 @@
         "rweb_modal_rewb_modal_animation_duration_ms": {
             "name": "rweb_modal_rewb_modal_animation_duration_ms",
             "type": "string"
+        },
+        "rweb_modal_animation_timing_function": {
+            "name": "rweb_modal_animation_timing_function",
+            "type": "string",
+            "defaultValue": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "rweb_modal_overlay_color_light": {
+            "name": "rweb_modal_overlay_color_light",
+            "type": "string",
+            "defaultValue": "rgba(180, 180, 182, 0.5)"
+        },
+        "rweb_modal_overlay_color_dark": {
+            "name": "rweb_modal_overlay_color_dark",
+            "type": "string",
+            "defaultValue": "rgba(255, 255, 255, 0.08)"
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
