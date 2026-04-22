@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5c99849823b12de480033d68435a1a897551f587",
+    "feature_set_token": "06bf3e802a6297899c8d045b8e00e5bebf99578b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2554,6 +2554,9 @@
         },
         "rweb_modal_animation_timing_function": {
             "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "rweb_modal_composer_animation_enabled": {
+            "value": false
         },
         "rweb_modal_overlay_color_dark": {
             "value": "rgba(0, 0, 0, 0.5)"
@@ -6889,12 +6892,12 @@
             "type": "experiment",
             "enumeration_values": []
         },
-        "home_tabbed_timeline_18427": {
-            "name": "home_tabbed_timeline_18427",
+        "home_tabbed_timeline_holdback_18429": {
+            "name": "home_tabbed_timeline_holdback_18429",
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "holdback"
             ]
         },
         "home_timeline_features_holdback_7823": {
@@ -11491,6 +11494,11 @@
             "name": "rweb_modal_overlay_color_dark",
             "type": "string",
             "defaultValue": "rgba(0, 0, 0, 0.5)"
+        },
+        "rweb_modal_composer_animation_enabled": {
+            "name": "rweb_modal_composer_animation_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_mvr_blurred_media_interstitial_enabled": {
             "name": "rweb_mvr_blurred_media_interstitial_enabled",
