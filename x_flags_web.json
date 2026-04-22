@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0cbbaa96761bdf3bfa4bc4711f7ef1a490d4c34b",
+    "feature_set_token": "b5844ebb7216cf34737cb3a248884f2ce8a756d1",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3067,6 +3067,9 @@
         "subscriptions_management_use_active_price": {
             "value": true
         },
+        "subscriptions_marketing_page_compare_table_ctas_enabled": {
+            "value": false
+        },
         "subscriptions_marketing_page_discounts_enabled": {
             "value": true
         },
@@ -3095,6 +3098,9 @@
             "value": false
         },
         "subscriptions_marketing_page_social_proof_enabled": {
+            "value": false
+        },
+        "subscriptions_marketing_page_stripe_optimization_enabled": {
             "value": false
         },
         "subscriptions_mute_ad_upsell_enabled": {
@@ -8262,6 +8268,14 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "premium_compare_table_ctas_18473": {
+            "name": "premium_compare_table_ctas_18473",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "premium_content_api_read_enabled": {
             "name": "premium_content_api_read_enabled",
             "type": "boolean",
@@ -8284,6 +8298,14 @@
             "name": "premium_home_nav_upgrade_upsell__variant_key_fs",
             "type": "string",
             "defaultValue": ""
+        },
+        "premium_mobile_web_optimized_stripe_checkout_18468": {
+            "name": "premium_mobile_web_optimized_stripe_checkout_18468",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "premium_paywall_feature_highlights_17499": {
             "name": "premium_paywall_feature_highlights_17499",
@@ -9025,6 +9047,10 @@
             "name": "responsive_web_birdwatch_suggestions_report_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_birdwatch_crowd_nmr_pivots_enabled": {
+            "name": "responsive_web_birdwatch_crowd_nmr_pivots_enabled",
+            "type": "string"
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -13167,11 +13193,13 @@
         },
         "subscriptions_marketing_page_stripe_optimization_enabled": {
             "name": "subscriptions_marketing_page_stripe_optimization_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_marketing_page_compare_table_ctas_enabled": {
             "name": "subscriptions_marketing_page_compare_table_ctas_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_offers_promotional_enabled": {
             "name": "subscriptions_offers_promotional_enabled",
@@ -16346,6 +16374,10 @@
         },
         "xchat_fetch_messages_from_push_handler": {
             "name": "xchat_fetch_messages_from_push_handler",
+            "type": "string"
+        },
+        "xchat_enable_message_requests_attachments": {
+            "name": "xchat_enable_message_requests_attachments",
             "type": "string"
         },
         "xprofile_editing_enabled": {
