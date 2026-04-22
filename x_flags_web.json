@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "06bf3e802a6297899c8d045b8e00e5bebf99578b",
+    "feature_set_token": "0cbbaa96761bdf3bfa4bc4711f7ef1a490d4c34b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -443,6 +443,9 @@
         },
         "co_timeline_reset_period_minutes": {
             "value": 20
+        },
+        "co_timeline_topic_filter_enabled": {
+            "value": false
         },
         "communities_adult_content_setting_display": {
             "value": true
@@ -3961,7 +3964,7 @@
             "value": 1
         },
         "xchat_max_group_size": {
-            "value": 300
+            "value": 350
         },
         "xchat_max_group_size_for_live_read_receipts": {
             "value": 50
@@ -5336,7 +5339,8 @@
         },
         "co_timeline_topic_filter_enabled": {
             "name": "co_timeline_topic_filter_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "co_timeline_premium_upsell_on_about_this_profile_enabled": {
             "name": "co_timeline_premium_upsell_on_about_this_profile_enabled",
@@ -15881,7 +15885,7 @@
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
             "type": "number",
-            "defaultValue": 300
+            "defaultValue": 350
         },
         "xchat_enable_av": {
             "name": "xchat_enable_av",
