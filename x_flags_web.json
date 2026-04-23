@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "b5844ebb7216cf34737cb3a248884f2ce8a756d1",
+    "feature_set_token": "db7c29e74f65e1c4754f890ceda9b029ce45d967",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1348,6 +1348,9 @@
         },
         "responsive_web_birdwatch_country_allowed": {
             "value": true
+        },
+        "responsive_web_birdwatch_crowd_nmr_pivots_enabled": {
+            "value": false
         },
         "responsive_web_birdwatch_enforce_author_user_quotas": {
             "value": true
@@ -9050,7 +9053,8 @@
         },
         "responsive_web_birdwatch_crowd_nmr_pivots_enabled": {
             "name": "responsive_web_birdwatch_crowd_nmr_pivots_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
