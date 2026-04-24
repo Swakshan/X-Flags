@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5c193f82711cafef0e865ef17db598d7e9f5f7e5",
+    "feature_set_token": "10056cca66e24f08804d2be8e073ca05d1a9f4cd",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2720,6 +2720,9 @@
         "rweb_xchat_standalone_avcall_enabled": {
             "value": true
         },
+        "rweb_xchat_ws_only_when_active": {
+            "value": false
+        },
         "sc_mock_data_enabled": {
             "value": false
         },
@@ -3924,6 +3927,9 @@
         "xchat_enable_message_requests": {
             "value": false
         },
+        "xchat_enable_message_requests_attachments": {
+            "value": false
+        },
         "xchat_enable_ratcheting": {
             "value": false
         },
@@ -3933,7 +3939,13 @@
         "xchat_enable_share_message_v2": {
             "value": false
         },
+        "xchat_enable_single_message_locking": {
+            "value": false
+        },
         "xchat_enforce_media_hash_verification": {
+            "value": false
+        },
+        "xchat_fetch_messages_from_push_handler": {
             "value": false
         },
         "xchat_forward_media_max_conversations": {
@@ -3969,11 +3981,17 @@
         "xchat_inbox_conversation_local_pagination_page_size": {
             "value": 20
         },
+        "xchat_invalid_sig_log_after_seq_num_str": {
+            "value": "2044000000000000000"
+        },
         "xchat_ios_max_io_threads": {
             "value": 0
         },
         "xchat_local_pagination_page_size": {
             "value": 50
+        },
+        "xchat_markdown_rendering_enabled": {
+            "value": false
         },
         "xchat_max_attachments_per_message": {
             "value": 1
@@ -11862,7 +11880,8 @@
         },
         "rweb_xchat_ws_only_when_active": {
             "name": "rweb_xchat_ws_only_when_active",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_xchat_remove_x_pro_dms": {
             "name": "rweb_xchat_remove_x_pro_dms",
@@ -16390,11 +16409,13 @@
         },
         "xchat_enable_single_message_locking": {
             "name": "xchat_enable_single_message_locking",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_invalid_sig_log_after_seq_num_str": {
             "name": "xchat_invalid_sig_log_after_seq_num_str",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "2044000000000000000"
         },
         "xchat_load_all_messages": {
             "name": "xchat_load_all_messages",
@@ -16402,15 +16423,18 @@
         },
         "xchat_markdown_rendering_enabled": {
             "name": "xchat_markdown_rendering_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_fetch_messages_from_push_handler": {
             "name": "xchat_fetch_messages_from_push_handler",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_enable_message_requests_attachments": {
             "name": "xchat_enable_message_requests_attachments",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_enable_undecryptable_tombstones": {
             "name": "xchat_enable_undecryptable_tombstones",
