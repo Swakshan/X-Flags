@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e9d47359d8af3dce11b8cb0c3be3636886ff22d0",
+    "feature_set_token": "5c193f82711cafef0e865ef17db598d7e9f5f7e5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2480,8 +2480,14 @@
         "rweb_analytics_xweb_content_page": {
             "value": true
         },
+        "rweb_cashtags_composer_enabled": {
+            "value": false
+        },
         "rweb_cashtags_enabled": {
             "value": true
+        },
+        "rweb_cashtags_trade_deeplink_enabled": {
+            "value": false
         },
         "rweb_client_transaction_id_enabled": {
             "value": false
@@ -2684,14 +2690,11 @@
         "rweb_xchat_bug_report_url": {
             "value": ""
         },
-        "rweb_xchat_categories_dropdown": {
-            "value": true
-        },
         "rweb_xchat_debug_enabled": {
             "value": false
         },
         "rweb_xchat_delegate_accounts_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_xchat_dogfood_logs_enabled": {
             "value": false
@@ -2705,7 +2708,7 @@
         "rweb_xchat_old_dms_inbox_item": {
             "value": true
         },
-        "rweb_xchat_search_redesign": {
+        "rweb_xchat_remove_x_pro_dms": {
             "value": true
         },
         "rweb_xchat_sentry_enabled": {
@@ -4079,9 +4082,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "rweb_cashtags_trade_deeplink_enabled": {
-            "value": false
         }
     },
     "debug": {
@@ -11374,6 +11374,16 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "rweb_cashtags_composer_enabled": {
+            "name": "rweb_cashtags_composer_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "rweb_cashtags_trade_deeplink_enabled": {
+            "name": "rweb_cashtags_trade_deeplink_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "rweb_client_transaction_id_enabled": {
             "name": "rweb_client_transaction_id_enabled",
             "type": "boolean",
@@ -11486,6 +11496,14 @@
             "name": "rweb_master_detail_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_media_carousel_18474": {
+            "name": "rweb_media_carousel_18474",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "rweb_media_carousel_enabled": {
             "name": "rweb_media_carousel_enabled",
@@ -11837,24 +11855,19 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "rweb_xchat_categories_dropdown": {
-            "name": "rweb_xchat_categories_dropdown",
-            "type": "boolean",
-            "defaultValue": true
-        },
-        "rweb_xchat_search_redesign": {
-            "name": "rweb_xchat_search_redesign",
-            "type": "boolean",
-            "defaultValue": true
-        },
         "rweb_xchat_delegate_accounts_enabled": {
             "name": "rweb_xchat_delegate_accounts_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_xchat_ws_only_when_active": {
             "name": "rweb_xchat_ws_only_when_active",
             "type": "string"
+        },
+        "rweb_xchat_remove_x_pro_dms": {
+            "name": "rweb_xchat_remove_x_pro_dms",
+            "type": "boolean",
+            "defaultValue": true
         },
         "sc_mock_data_enabled": {
             "name": "sc_mock_data_enabled",
