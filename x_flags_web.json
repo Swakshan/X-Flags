@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "10056cca66e24f08804d2be8e073ca05d1a9f4cd",
+    "feature_set_token": "3602e0d5526e11e3c44b73a0e3acb7c53cc85f1b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1111,6 +1111,12 @@
         },
         "payments_passkey_onboarding_enabled": {
             "value": true
+        },
+        "payments_secondary_accounts_enabled": {
+            "value": false
+        },
+        "payments_shared_accounts_enabled": {
+            "value": false
         },
         "payments_tracing_reports_enabled": {
             "value": true
@@ -8190,11 +8196,13 @@
         },
         "payments_secondary_accounts_enabled": {
             "name": "payments_secondary_accounts_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_shared_accounts_enabled": {
             "name": "payments_shared_accounts_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_assets_activate_card_dark_video_url": {
             "name": "payments_assets_activate_card_dark_video_url",
