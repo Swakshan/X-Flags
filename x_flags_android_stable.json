@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "873b8568494f80f8e551b6e50a252e5d90e06763",
+        "feature_set_token": "208de91ceba3efb560701062bb344c02bea3d678",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1112,6 +1112,9 @@
             },
             "android_in_app_browser_bridging_append_click_id_enabled": {
                 "value": false
+            },
+            "android_in_memory_client_events_interval": {
+                "value": 15.0
             },
             "android_initial_timeline_load_count": {
                 "value": 35.0
@@ -4194,7 +4197,7 @@
                 "value": 100.0
             },
             "scribe_interval_seconds": {
-                "value": 60.0
+                "value": 10.0
             },
             "scribe_livepipeline_events_enabled": {
                 "value": true
@@ -5679,7 +5682,7 @@
                 "value": false
             },
             "xchat_hide_pending_members_for_non_admin": {
-                "value": false
+                "value": true
             },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
                 "value": -1.0
@@ -5702,11 +5705,14 @@
             "xchat_local_pagination_page_size": {
                 "value": 50.0
             },
+            "xchat_markdown_rendering_enabled": {
+                "value": false
+            },
             "xchat_max_attachments_per_message": {
                 "value": 1.0
             },
             "xchat_max_group_size": {
-                "value": 300.0
+                "value": 350.0
             },
             "xchat_max_group_size_for_live_read_receipts": {
                 "value": 50.0
@@ -5902,6 +5908,7 @@
         "tune_autoplay_17291",
         "android_growth_performance_holdback_optimize_fragment_registry_arg_maps_15805",
         "android_enable_inline_reply_in_push_notifications_10192",
+        "android_in_memory_client_events_interval_18476",
         "stations_tab_all_users_15284",
         "professionals_link_profile_spotlight_15605",
         "space_dock_reaction_14567",
@@ -6049,7 +6056,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "b8e050b61e9b522c6c5c0d2292e2020eaca5a721",
-        "experiments": "b8e050b61e9b522c6c5c0d2292e2020eaca5a721"
+        "feature_switches": "6a3f7c617fd3565bf3375f4f7b23efe0f7be349b",
+        "experiments": "6a3f7c617fd3565bf3375f4f7b23efe0f7be349b"
     }
 }
