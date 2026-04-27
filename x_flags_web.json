@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3602e0d5526e11e3c44b73a0e3acb7c53cc85f1b",
+    "feature_set_token": "576f11cd40739ba64d8815e9e44fbaea4b31e1af",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2487,7 +2487,7 @@
             "value": true
         },
         "rweb_cashtags_composer_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_cashtags_enabled": {
             "value": true
@@ -3931,7 +3931,7 @@
             "value": true
         },
         "xchat_enable_message_requests": {
-            "value": false
+            "value": true
         },
         "xchat_enable_message_requests_attachments": {
             "value": false
@@ -5681,6 +5681,10 @@
         },
         "content_disclosure_ai_generated_grok_media_auto_show_made_with_ai_enabled": {
             "name": "content_disclosure_ai_generated_grok_media_auto_show_made_with_ai_enabled",
+            "type": "string"
+        },
+        "content_disclosure_grok_signature_detection": {
+            "name": "content_disclosure_grok_signature_detection",
             "type": "string"
         },
         "creator_studio_nav_enabled": {
@@ -11407,7 +11411,7 @@
         "rweb_cashtags_composer_enabled": {
             "name": "rweb_cashtags_composer_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_cashtags_trade_deeplink_enabled": {
             "name": "rweb_cashtags_trade_deeplink_enabled",
@@ -16026,7 +16030,7 @@
         "xchat_enable_message_requests": {
             "name": "xchat_enable_message_requests",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_user_event_limit": {
             "name": "xchat_user_event_limit",
