@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "e4b5d12a0ec95cddf26d8a07c4f8cf600fba46bb",
+        "feature_set_token": "f417df8b133735255a3961205ef1c717959d5a6c",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1113,6 +1113,9 @@
             "android_in_app_browser_bridging_append_click_id_enabled": {
                 "value": false
             },
+            "android_in_memory_client_events_interval": {
+                "value": 15.0
+            },
             "android_initial_timeline_load_count": {
                 "value": 35.0
             },
@@ -1727,6 +1730,9 @@
             },
             "android_xiaomi_reflection_on_notification_object": {
                 "value": true
+            },
+            "app_attest_android_hardware_enabled": {
+                "value": false
             },
             "app_attest_client_data_enabled": {
                 "value": false
@@ -5603,6 +5609,12 @@
             "x_lite_spaces_enabled": {
                 "value": false
             },
+            "x_lite_spaces_mini_bar_mic_button_enabled": {
+                "value": false
+            },
+            "x_lite_spaces_mini_bar_reaction_button_enabled": {
+                "value": false
+            },
             "xchat_additional_reply_preview_validation_required_seqnum": {
                 "value": 0.0
             },
@@ -5660,10 +5672,16 @@
             "xchat_enable_message_requests": {
                 "value": false
             },
+            "xchat_enable_message_requests_attachments": {
+                "value": false
+            },
             "xchat_enable_ratcheting": {
                 "value": false
             },
             "xchat_enable_share_message_v2": {
+                "value": false
+            },
+            "xchat_enable_undecryptable_tombstones": {
                 "value": false
             },
             "xchat_enforce_media_hash_verification": {
@@ -5682,7 +5700,7 @@
                 "value": false
             },
             "xchat_hide_pending_members_for_non_admin": {
-                "value": false
+                "value": true
             },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
                 "value": -1.0
@@ -5908,6 +5926,7 @@
         "tune_autoplay_17291",
         "android_growth_performance_holdback_optimize_fragment_registry_arg_maps_15805",
         "android_enable_inline_reply_in_push_notifications_10192",
+        "android_in_memory_client_events_interval_18476",
         "stations_tab_all_users_15284",
         "professionals_link_profile_spotlight_15605",
         "space_dock_reaction_14567",
@@ -6055,7 +6074,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "bf9e3c68dbd17cd93a1c441c49f78b3c1d1d27b7",
-        "experiments": "bf9e3c68dbd17cd93a1c441c49f78b3c1d1d27b7"
+        "feature_switches": "9f82f0f17b08478df5512853e338150b6342096d",
+        "experiments": "9f82f0f17b08478df5512853e338150b6342096d"
     }
 }
