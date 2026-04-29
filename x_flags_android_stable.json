@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "208de91ceba3efb560701062bb344c02bea3d678",
+        "feature_set_token": "0cd214e1c99526f3031abf51f0b4fbe8a8fd9a42",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1727,6 +1727,9 @@
             },
             "android_xiaomi_reflection_on_notification_object": {
                 "value": true
+            },
+            "app_attest_android_hardware_enabled": {
+                "value": false
             },
             "app_attest_client_data_enabled": {
                 "value": false
@@ -4837,6 +4840,9 @@
             "subscriptions_verification_info_verified_since_enabled": {
                 "value": true
             },
+            "subscriptions_verified_to_premium_enabled": {
+                "value": false
+            },
             "super_follow_android_web_subscription_enabled": {
                 "value": true
             },
@@ -5595,12 +5601,18 @@
                 "value": true
             },
             "x_lite_in_tfa_premium_plus_enabled": {
-                "value": false
+                "value": true
             },
             "x_lite_notifications_android_enabled": {
                 "value": false
             },
             "x_lite_spaces_enabled": {
+                "value": false
+            },
+            "x_lite_spaces_mini_bar_mic_button_enabled": {
+                "value": false
+            },
+            "x_lite_spaces_mini_bar_reaction_button_enabled": {
                 "value": false
             },
             "xchat_additional_reply_preview_validation_required_seqnum": {
@@ -5660,10 +5672,16 @@
             "xchat_enable_message_requests": {
                 "value": false
             },
+            "xchat_enable_message_requests_attachments": {
+                "value": false
+            },
             "xchat_enable_ratcheting": {
                 "value": false
             },
             "xchat_enable_share_message_v2": {
+                "value": false
+            },
+            "xchat_enable_undecryptable_tombstones": {
                 "value": false
             },
             "xchat_enforce_media_hash_verification": {
@@ -5841,7 +5859,6 @@
         "ios_client_performance_warm_launch_jump_home_regression_fix_15260",
         "randomized_ip_0_14856",
         "android_home_timeline_warm_start_refresh_bg_min_16934",
-        "x_lite_in_tfa_new_users_3_17977",
         "android_send_immersive_stream_results_events_17290",
         "android_lazy_ally_strings_16343",
         "tap_to_search_android_15785",
@@ -5926,7 +5943,6 @@
         "good_click_reactivity_all_users_15540",
         "grok_auto_translate_worldwide_holdback_18413",
         "personalization_holdback_2022_13469",
-        "x_lite_in_tfa_new_users_turkey_18045",
         "immersive_media_viewer_android_16367",
         "mr_tweet_media_on_push_android_9818",
         "ads_in_tweet_conversation_m2_contrasts_13063",
@@ -5958,12 +5974,10 @@
         "ios_client_deduping_skip_adjacent_to_ads_18370",
         "android_o_clear_notifications_on_ntab_impression_8473",
         "android_preloaded_notifications_12303",
-        "x_lite_in_tfa_new_users_indonesia_18113",
         "project_friday_brazil_turkey_11604",
         "android_device_follow_tweet_layout_notifications_14569",
         "tweet_card_organic_aggregatable_notifications_9483",
         "english_reply_nudge_experimental_toxicity_model_15220",
-        "x_lite_in_tfa_new_users_tur_nz_au_in_ca_18317",
         "customer_retention_overall_holdback_10754",
         "android_main_full_immerisve_holdbback_16366",
         "android_region_adaptive_video_upload_quality_15794",
@@ -5984,7 +5998,6 @@
         "lonely_birds_workstream_long_term_holdback_consumer_11996",
         "project_nah_on_home_ranked_ios_15173",
         "android_static_lo_push_rotation_15709",
-        "x_lite_in_tfa_new_users_indonesia_aus_new_zeland_18261",
         "mr_override_notifs_relevancy_decay_v3_13161",
         "responsive_web_client_backoff_10535",
         "tweet_card_producer_experiment_9434",
@@ -6056,7 +6069,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "6a3f7c617fd3565bf3375f4f7b23efe0f7be349b",
-        "experiments": "6a3f7c617fd3565bf3375f4f7b23efe0f7be349b"
+        "feature_switches": "b09334b32c770599c6209fb10f2fddaef48dda0c",
+        "experiments": "b09334b32c770599c6209fb10f2fddaef48dda0c"
     }
 }
