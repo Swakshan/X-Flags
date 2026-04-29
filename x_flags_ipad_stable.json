@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "4d9262ca6ac28ff89fcef3dd1890dde7c373dc59",
+        "feature_set_token": "f33cc3a3cf6cf0621ee48eb48b3d8248d55db595",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2319,6 +2319,9 @@
             "grok_ios_app_campaign_create_own_video": {
                 "value": "https://apps.apple.com/app/apple-store/id6670324846?pt=126952307&ct=X%20Make%20Your%20Own%20Video&mt=8"
             },
+            "grok_ios_app_campaign_direct_grokapp_flow": {
+                "value": "https://apps.apple.com/app/grok-ai-chat-video/id6670324846?ppid=09d36316-1e42-4eb5-b2b4-7139ec4d1254"
+            },
             "grok_ios_app_campaign_get_grok_home_timeline": {
                 "value": "https://apps.apple.com/app/apple-store/id6670324846?pt=126952307&ct=X%20Home%20Timeline%20Get%20Grok&mt=8"
             },
@@ -3523,7 +3526,7 @@
                 "value": true
             },
             "ios_dm_dash_mr_enabled": {
-                "value": true
+                "value": false
             },
             "ios_dm_dash_prioritize_push_toggle_enabled": {
                 "value": true
@@ -5134,6 +5137,9 @@
             },
             "media_upload_stop_idle_timer_while_upload_enabled": {
                 "value": true
+            },
+            "media_upload_video_captions_enabled": {
+                "value": false
             },
             "media_upload_video_quality_selector_enabled": {
                 "value": true
@@ -12152,7 +12158,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "c0f54c5455cdb030f2cef1ff13b8de3fd0996ef3",
-        "experiments": "c0f54c5455cdb030f2cef1ff13b8de3fd0996ef3"
+        "feature_switches": "457a0a2b2eb52aff6a008dd0dcf63e8d04f7f2c4",
+        "experiments": "457a0a2b2eb52aff6a008dd0dcf63e8d04f7f2c4"
     }
 }
