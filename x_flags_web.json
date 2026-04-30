@@ -7843,6 +7843,15 @@
             "name": "media_edge_to_edge_large_text_enabled",
             "type": "string"
         },
+        "media_upload_append_multi_18509": {
+            "name": "media_upload_append_multi_18509",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment_24m_chunk",
+                "treatment_96m_chunk"
+            ]
+        },
         "media_upload_speed_optimization_17008": {
             "name": "media_upload_speed_optimization_17008",
             "type": "experiment",
@@ -8238,6 +8247,10 @@
         },
         "payments_prefill_identity_enabled": {
             "name": "payments_prefill_identity_enabled",
+            "type": "string"
+        },
+        "payments_scheduled_payments_enabled": {
+            "name": "payments_scheduled_payments_enabled",
             "type": "string"
         },
         "payments_assets_activate_card_dark_video_url": {
