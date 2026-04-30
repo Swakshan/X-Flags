@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5614763a73cca875c2acec5f54998decd59bb2d5",
+    "feature_set_token": "fc78dd50a0bd34e5af5fb78c59269000ef471134",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3797,7 +3797,7 @@
             "value": true
         },
         "video_attribution_display_over_video_cards_enabled": {
-            "value": false
+            "value": true
         },
         "video_upload_metadata_title_enabled": {
             "value": false
@@ -3949,7 +3949,7 @@
             "value": true
         },
         "xchat_enable_franking_report": {
-            "value": false
+            "value": true
         },
         "xchat_enable_in_memory_event_retry": {
             "value": true
@@ -7417,6 +7417,14 @@
         "ios_premium_paywall_preloaded_webview_direct_upgrade_enabled": {
             "name": "ios_premium_paywall_preloaded_webview_direct_upgrade_enabled",
             "type": "string"
+        },
+        "ios_video_attribution_label_18512": {
+            "name": "ios_video_attribution_label_18512",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "krs_registration_enabled": {
             "name": "krs_registration_enabled",
@@ -15370,7 +15378,7 @@
         "video_attribution_display_over_video_cards_enabled": {
             "name": "video_attribution_display_over_video_cards_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "video_attribution_display_in_immersive_enabled": {
             "name": "video_attribution_display_in_immersive_enabled",
@@ -16445,7 +16453,7 @@
         "xchat_enable_franking_report": {
             "name": "xchat_enable_franking_report",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_drafts_bump_to_top": {
             "name": "xchat_drafts_bump_to_top",
