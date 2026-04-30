@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6553b32336ac04ac21d0e3620663b9bd37f49af0",
+    "feature_set_token": "e3db789bbac0c76e945fe08a53e34a4d3c0a50d9",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2017,6 +2017,21 @@
         },
         "responsive_web_media_download_video_share_menu_enabled": {
             "value": true
+        },
+        "responsive_web_media_upload_appendmulti_enabled": {
+            "value": false
+        },
+        "responsive_web_media_upload_appendmulti_max_request_bytes": {
+            "value": 100663296
+        },
+        "responsive_web_media_upload_appendmulti_max_segment_bytes": {
+            "value": 8388608
+        },
+        "responsive_web_media_upload_appendmulti_min_file_bytes": {
+            "value": 1048576
+        },
+        "responsive_web_media_upload_appendmulti_min_segment_bytes": {
+            "value": 262144
         },
         "responsive_web_media_upload_limit_2g": {
             "value": 250
@@ -4112,6 +4127,9 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "responsive_web_use_new_landing_page": {
+            "value": false
         }
     },
     "debug": {
@@ -10454,6 +10472,31 @@
             "name": "responsive_web_media_upload_target_jpg_pixels_per_byte",
             "type": "number",
             "defaultValue": 6
+        },
+        "responsive_web_media_upload_appendmulti_enabled": {
+            "name": "responsive_web_media_upload_appendmulti_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_media_upload_appendmulti_max_request_bytes": {
+            "name": "responsive_web_media_upload_appendmulti_max_request_bytes",
+            "type": "number",
+            "defaultValue": 100663296
+        },
+        "responsive_web_media_upload_appendmulti_max_segment_bytes": {
+            "name": "responsive_web_media_upload_appendmulti_max_segment_bytes",
+            "type": "number",
+            "defaultValue": 8388608
+        },
+        "responsive_web_media_upload_appendmulti_min_segment_bytes": {
+            "name": "responsive_web_media_upload_appendmulti_min_segment_bytes",
+            "type": "number",
+            "defaultValue": 262144
+        },
+        "responsive_web_media_upload_appendmulti_min_file_bytes": {
+            "name": "responsive_web_media_upload_appendmulti_min_file_bytes",
+            "type": "number",
+            "defaultValue": 1048576
         },
         "responsive_web_media_upload_md5_hashing_enabled": {
             "name": "responsive_web_media_upload_md5_hashing_enabled",
