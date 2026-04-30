@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "e3db789bbac0c76e945fe08a53e34a4d3c0a50d9",
+    "feature_set_token": "fb968698eeab21919490c9422e9658f0dc1c9eff",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2375,6 +2375,9 @@
         "responsive_web_use_app_prompt_enabled": {
             "value": false
         },
+        "responsive_web_use_new_landing_page": {
+            "value": false
+        },
         "responsive_web_use_new_onboarding": {
             "value": false
         },
@@ -4127,9 +4130,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_use_new_landing_page": {
-            "value": false
         }
     },
     "debug": {
@@ -11103,6 +11103,11 @@
             "name": "responsive_web_use_app_prompt_copy_variant",
             "type": "string",
             "defaultValue": "prompt_better"
+        },
+        "responsive_web_use_new_landing_page": {
+            "name": "responsive_web_use_new_landing_page",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_use_new_onboarding": {
             "name": "responsive_web_use_new_onboarding",
