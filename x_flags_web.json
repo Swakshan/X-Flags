@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fb968698eeab21919490c9422e9658f0dc1c9eff",
+    "feature_set_token": "5614763a73cca875c2acec5f54998decd59bb2d5",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2032,6 +2032,9 @@
         },
         "responsive_web_media_upload_appendmulti_min_segment_bytes": {
             "value": 262144
+        },
+        "responsive_web_media_upload_appendmulti_target_wire_send_time_ms": {
+            "value": 30000.0
         },
         "responsive_web_media_upload_limit_2g": {
             "value": 250
@@ -10510,6 +10513,11 @@
             "name": "responsive_web_media_upload_appendmulti_min_file_bytes",
             "type": "number",
             "defaultValue": 1048576
+        },
+        "responsive_web_media_upload_appendmulti_target_wire_send_time_ms": {
+            "name": "responsive_web_media_upload_appendmulti_target_wire_send_time_ms",
+            "type": "number",
+            "defaultValue": 30000.0
         },
         "responsive_web_media_upload_md5_hashing_enabled": {
             "name": "responsive_web_media_upload_md5_hashing_enabled",
