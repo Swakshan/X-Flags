@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fc78dd50a0bd34e5af5fb78c59269000ef471134",
+    "feature_set_token": "a7720c952754ec823839b8a84a6ad4b481f819c6",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2073,7 +2073,10 @@
             "value": 5
         },
         "responsive_web_native_bridge_allowed_methods": {
-            "value": []
+            "value": [
+                "toast",
+                "slideshow"
+            ]
         },
         "responsive_web_not_a_bot_signups_enabled": {
             "value": false
@@ -7212,6 +7215,10 @@
             "name": "hometimeline_pinned_tabs_enable_loading_shimmer",
             "type": "string"
         },
+        "hometimeline_pinned_tabs_topics_premium_upsell_enabled": {
+            "name": "hometimeline_pinned_tabs_topics_premium_upsell_enabled",
+            "type": "string"
+        },
         "hometimeline_pinned_tabs_pinned_trailing_accessory_enabled": {
             "name": "hometimeline_pinned_tabs_pinned_trailing_accessory_enabled",
             "type": "string"
@@ -10578,7 +10585,10 @@
         "responsive_web_native_bridge_allowed_methods": {
             "name": "responsive_web_native_bridge_allowed_methods",
             "type": "object",
-            "defaultValue": []
+            "defaultValue": [
+                "toast",
+                "slideshow"
+            ]
         },
         "responsive_web_not_a_bot_signups_enabled": {
             "name": "responsive_web_not_a_bot_signups_enabled",
