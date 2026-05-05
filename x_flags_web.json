@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a7720c952754ec823839b8a84a6ad4b481f819c6",
+    "feature_set_token": "d823a09eede7d07b30eb0113b478ff0b1fb25b86",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3961,7 +3961,7 @@
             "value": true
         },
         "xchat_enable_message_requests": {
-            "value": false
+            "value": true
         },
         "xchat_enable_message_requests_attachments": {
             "value": false
@@ -16145,7 +16145,7 @@
         "xchat_enable_message_requests": {
             "name": "xchat_enable_message_requests",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_user_event_limit": {
             "name": "xchat_user_event_limit",
@@ -16569,6 +16569,10 @@
         },
         "xchat_enable_undecryptable_tombstones": {
             "name": "xchat_enable_undecryptable_tombstones",
+            "type": "string"
+        },
+        "xchat_separate_reactions_table_enabled": {
+            "name": "xchat_separate_reactions_table_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
