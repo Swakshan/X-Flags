@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8300977631e795ad371af147a550c32daa708825",
+    "feature_set_token": "fb985583f28b8dc5c2c355fa3650e0a124cb2123",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1382,6 +1382,9 @@
         "responsive_web_birdwatch_match_page_enabled": {
             "value": true
         },
+        "responsive_web_birdwatch_media_history_enabled": {
+            "value": false
+        },
         "responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff": {
             "value": 2
         },
@@ -2512,6 +2515,9 @@
         },
         "rweb_analytics_xweb_content_page": {
             "value": true
+        },
+        "rweb_cashtags_composer_attachment_enabled": {
+            "value": false
         },
         "rweb_cashtags_composer_enabled": {
             "value": true
@@ -9162,7 +9168,8 @@
         },
         "responsive_web_birdwatch_media_history_enabled": {
             "name": "responsive_web_birdwatch_media_history_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -11521,7 +11528,8 @@
         },
         "rweb_cashtags_composer_attachment_enabled": {
             "name": "rweb_cashtags_composer_attachment_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_cashtags_trade_deeplink_enabled": {
             "name": "rweb_cashtags_trade_deeplink_enabled",
@@ -15396,6 +15404,10 @@
         },
         "video_attribution_display_in_immersive_enabled": {
             "name": "video_attribution_display_in_immersive_enabled",
+            "type": "string"
+        },
+        "video_attribution_opens_immersive_enabled": {
+            "name": "video_attribution_opens_immersive_enabled",
             "type": "string"
         },
         "video_tagging_13525": {
