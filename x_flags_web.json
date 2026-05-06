@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fb985583f28b8dc5c2c355fa3650e0a124cb2123",
+    "feature_set_token": "00a4e25f28d6639da96681b421a92e443cafaa02",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -814,6 +814,15 @@
         },
         "home_timeline_spheres_ranking_mode_control_enabled": {
             "value": false
+        },
+        "hometimeline_pinned_tabs_limit": {
+            "value": 10
+        },
+        "hometimeline_pinned_tabs_management_pinnedsection_inline_limit": {
+            "value": 3
+        },
+        "hometimeline_pinned_tabs_management_topics_inline_limit": {
+            "value": 8
         },
         "hometimeline_pinned_tabs_topics_enabled": {
             "value": false
@@ -7207,15 +7216,18 @@
         },
         "hometimeline_pinned_tabs_management_topics_inline_limit": {
             "name": "hometimeline_pinned_tabs_management_topics_inline_limit",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 8
         },
         "hometimeline_pinned_tabs_management_pinnedsection_inline_limit": {
             "name": "hometimeline_pinned_tabs_management_pinnedsection_inline_limit",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 3
         },
         "hometimeline_pinned_tabs_limit": {
             "name": "hometimeline_pinned_tabs_limit",
-            "type": "string"
+            "type": "number",
+            "defaultValue": 10
         },
         "hometimeline_pinned_tabs_enable_loading_shimmer": {
             "name": "hometimeline_pinned_tabs_enable_loading_shimmer",
@@ -7949,6 +7961,14 @@
             "name": "netzdg_in_loggedout_posts_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "new_signup_web_18526": {
+            "name": "new_signup_web_18526",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
         },
         "oauth_trusted_developer_badge_enabled": {
             "name": "oauth_trusted_developer_badge_enabled",
