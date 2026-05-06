@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "00a4e25f28d6639da96681b421a92e443cafaa02",
+    "feature_set_token": "8b57b2401f90111e4e615cacd222fe28492b7b99",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2225,6 +2225,9 @@
         "responsive_web_send_jetfuel_preview_image_enabled": {
             "value": true
         },
+        "responsive_web_service_worker_update_toast_interval_hours": {
+            "value": 0
+        },
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "value": true
         },
@@ -4151,9 +4154,6 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
-        },
-        "responsive_web_service_worker_update_toast_interval_hours": {
-            "value": 0
         }
     },
     "debug": {
@@ -10851,6 +10851,11 @@
             "name": "responsive_web_send_jetfuel_preview_image_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "responsive_web_service_worker_update_toast_interval_hours": {
+            "name": "responsive_web_service_worker_update_toast_interval_hours",
+            "type": "number",
+            "defaultValue": 0
         },
         "responsive_web_share_only_tweet_url_omit_title_and_text": {
             "name": "responsive_web_share_only_tweet_url_omit_title_and_text",
