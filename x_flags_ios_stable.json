@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "317e141ee3f44f2a140d75e92b52974ca24ffb12",
+        "feature_set_token": "62f80480f144dc2f420ba6d3cc9c38188c6eba2a",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -1381,7 +1381,7 @@
                 "value": false
             },
             "commerce_initiative_new_badge_for_shopping_dash_enabled": {
-                "value": true
+                "value": false
             },
             "commerce_initiative_product_card_sharing_enabled": {
                 "value": false
@@ -1390,7 +1390,7 @@
                 "value": false
             },
             "commerce_initiative_shop_module_button_dominant_color_enabled": {
-                "value": true
+                "value": false
             },
             "commerce_initiative_shop_module_button_enabled": {
                 "value": false
@@ -2155,7 +2155,7 @@
                 "value": true
             },
             "graphql_unified_card_enabled": {
-                "value": true
+                "value": false
             },
             "grok_account_auth_share_enabled": {
                 "value": true
@@ -3246,6 +3246,9 @@
             "ios_cashtags_composer_attachment_enabled": {
                 "value": false
             },
+            "ios_cashtags_composer_attachment_size_customization_enabled": {
+                "value": false
+            },
             "ios_cashtags_composer_contract_address_typeahead_enabled": {
                 "value": true
             },
@@ -3566,6 +3569,9 @@
             },
             "ios_home_timeline_external_status_injections_from_notifications_enabled": {
                 "value": true
+            },
+            "ios_home_timeline_items_refactor_unidirectional_scrolling": {
+                "value": false
             },
             "ios_home_timeline_items_refactor_v2_enabled": {
                 "value": false
@@ -3927,6 +3933,12 @@
             "ios_profile_upgrade_upsell_text_variant": {
                 "value": ""
             },
+            "ios_profile_visitor_upsell_dismiss_for_seconds": {
+                "value": 1209600.0
+            },
+            "ios_profile_visitor_upsell_enabled": {
+                "value": false
+            },
             "ios_rank_badge_enabled": {
                 "value": true
             },
@@ -3980,6 +3992,12 @@
             },
             "ios_scribe_loss_sample_rate_on_shelf_life": {
                 "value": "0"
+            },
+            "ios_segmented_controller_home_timeline_redesign_enabled": {
+                "value": false
+            },
+            "ios_segmented_controller_profile_redesign_enabled": {
+                "value": false
             },
             "ios_share_instagram_reply_conversation_enabled": {
                 "value": false
@@ -4126,9 +4144,6 @@
                 "value": "1"
             },
             "ios_tav_is_delta_hls_manifest_enabled": {
-                "value": true
-            },
-            "ios_tav_is_tav_zoom_layout_enabled": {
                 "value": true
             },
             "ios_tav_lhlslib_buffer_resilience": {
@@ -4410,23 +4425,11 @@
             "ios_ui_hide_cards_in_carousels_enabled": {
                 "value": true
             },
-            "ios_ui_hide_dividers_on_timelines": {
-                "value": false
-            },
             "ios_ui_hide_play_button_videos_in_htl": {
                 "value": true
             },
-            "ios_ui_inline_actions_tip_ddg_variant": {
-                "value": 0.0
-            },
             "ios_ui_inline_actions_tip_enabled": {
                 "value": true
-            },
-            "ios_ui_like_as_first_action": {
-                "value": false
-            },
-            "ios_ui_like_button_style_variant": {
-                "value": 0.0
             },
             "ios_ui_minimum_wide_bar_width": {
                 "value": 0.0
@@ -4446,12 +4449,6 @@
             "ios_ui_neutral_gray_palette_enabled": {
                 "value": false
             },
-            "ios_ui_not_interested_dismiss_button_in_author_view": {
-                "value": false
-            },
-            "ios_ui_overlay_feedback_actions_variant": {
-                "value": 0.0
-            },
             "ios_ui_promoted_tweet_custom_max_text_lines": {
                 "value": 0.0
             },
@@ -4463,9 +4460,6 @@
             },
             "ios_ui_shows_vertical_scroll_indicator_enabled": {
                 "value": true
-            },
-            "ios_ui_smaller_author_view_name_and_username_fonts_enabled": {
-                "value": false
             },
             "ios_ui_standard_avatar_height_lh_units": {
                 "value": 2.29
@@ -9853,6 +9847,9 @@
             "payments_prefill_identity_enabled": {
                 "value": false
             },
+            "payments_scheduled_payments_enabled": {
+                "value": false
+            },
             "payments_secondary_accounts_enabled": {
                 "value": false
             },
@@ -11329,7 +11326,7 @@
                 "value": true
             },
             "unified_cards_ad_metadata_container_dynamic_card_content_query_enabled": {
-                "value": true
+                "value": false
             },
             "unified_cards_always_skip_details_for_promoted_content": {
                 "value": false
@@ -11668,6 +11665,9 @@
             "video_attribution_display_over_video_cards_enabled": {
                 "value": true
             },
+            "video_attribution_opens_immersive_enabled": {
+                "value": false
+            },
             "video_carousel_module_context_style": {
                 "value": "views"
             },
@@ -11989,7 +11989,7 @@
                 "value": true
             },
             "xchat_enable_message_requests": {
-                "value": false
+                "value": true
             },
             "xchat_enable_message_requests_attachments": {
                 "value": false
@@ -12161,5 +12161,9 @@
     },
     "embedded_experiments": [],
     "requires_restart": [],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "7dc9d21a72be4dea6f03125a55c569019a3ceabb",
+        "experiments": "7dc9d21a72be4dea6f03125a55c569019a3ceabb"
+    }
 }
