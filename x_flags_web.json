@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8b57b2401f90111e4e615cacd222fe28492b7b99",
+    "feature_set_token": "c0ed077370bdfcfbfe16216c3e7abf4ae54fa07f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1180,6 +1180,9 @@
         },
         "premium_paywall_on_app_load_min_account_age_days": {
             "value": 60
+        },
+        "premium_webview_paywall_custom_timelines_feature_enabled": {
+            "value": false
         },
         "premium_webview_paywall_force_premium_tier_enabled": {
             "value": false
@@ -2529,7 +2532,7 @@
             "value": true
         },
         "rweb_cashtags_composer_attachment_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_cashtags_composer_enabled": {
             "value": true
@@ -4154,6 +4157,12 @@
         },
         "xprofile_work_history_enabled": {
             "value": true
+        },
+        "xstudio_embed_origin": {
+            "value": "https://studio.x.com"
+        },
+        "xstudio_rweb_live_studio_enabled": {
+            "value": false
         }
     },
     "debug": {
@@ -7443,7 +7452,8 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "treatment",
+                "treatment_opens_immersive"
             ]
         },
         "krs_registration_enabled": {
@@ -8569,6 +8579,11 @@
         "premium_webview_paywall_nova_purchase_variant": {
             "name": "premium_webview_paywall_nova_purchase_variant",
             "type": "string"
+        },
+        "premium_webview_paywall_custom_timelines_feature_enabled": {
+            "name": "premium_webview_paywall_custom_timelines_feature_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -11549,7 +11564,7 @@
         "rweb_cashtags_composer_attachment_enabled": {
             "name": "rweb_cashtags_composer_attachment_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_cashtags_trade_deeplink_enabled": {
             "name": "rweb_cashtags_trade_deeplink_enabled",
@@ -16672,6 +16687,24 @@
         },
         "xprofile_section_visibility_enabled": {
             "name": "xprofile_section_visibility_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "xstudio_qp_boost_again_button_enabled": {
+            "name": "xstudio_qp_boost_again_button_enabled",
+            "type": "string"
+        },
+        "xstudio_qp_top_likers_enabled": {
+            "name": "xstudio_qp_top_likers_enabled",
+            "type": "string"
+        },
+        "xstudio_embed_origin": {
+            "name": "xstudio_embed_origin",
+            "type": "string",
+            "defaultValue": "https://studio.x.com"
+        },
+        "xstudio_rweb_live_studio_enabled": {
+            "name": "xstudio_rweb_live_studio_enabled",
             "type": "boolean",
             "defaultValue": false
         },
