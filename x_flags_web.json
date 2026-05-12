@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "43adef71bcdedc171697934b424ed8a74aca0643",
+    "feature_set_token": "c7ecbe48296494c2b89893f303b3164dd3484dc1",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -518,7 +518,9 @@
         },
         "content_disclosure_c2pa_detection_exemption_list": {
             "value": [
-                "Adobe Photoshop"
+                "Adobe Photoshop",
+                "Adobe Firefly",
+                "Canva AI"
             ]
         },
         "content_disclosure_creation_enabled": {
@@ -5740,7 +5742,9 @@
             "name": "content_disclosure_c2pa_detection_exemption_list",
             "type": "object",
             "defaultValue": [
-                "Adobe Photoshop"
+                "Adobe Photoshop",
+                "Adobe Firefly",
+                "Canva AI"
             ]
         },
         "content_disclosure_ai_generated_grok_media_auto_show_made_with_ai_enabled": {
@@ -11570,6 +11574,10 @@
             "name": "rweb_analytics_post_details_realtime_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_analytics_control_v2_enabled": {
+            "name": "rweb_analytics_control_v2_enabled",
+            "type": "string"
         },
         "rweb_cashtags_enabled": {
             "name": "rweb_cashtags_enabled",
