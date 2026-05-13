@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "fe2e80a53f88cca63e1de1f97a462fb02096c524",
+    "feature_set_token": "13e74536f3f5d13c801449bc37229f5c8705c7e7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1187,7 +1187,7 @@
             "value": 60
         },
         "premium_webview_paywall_custom_timelines_feature_enabled": {
-            "value": false
+            "value": true
         },
         "premium_webview_paywall_force_premium_tier_enabled": {
             "value": false
@@ -2681,6 +2681,9 @@
             "value": true
         },
         "rweb_quick_promote_boost_enabled": {
+            "value": false
+        },
+        "rweb_quick_promote_third_party_boost_enabled": {
             "value": false
         },
         "rweb_recommendations_sidebar_graphql_enabled": {
@@ -8610,7 +8613,7 @@
         "premium_webview_paywall_custom_timelines_feature_enabled": {
             "name": "premium_webview_paywall_custom_timelines_feature_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "professional_launchpad_m1_enabled": {
             "name": "professional_launchpad_m1_enabled",
@@ -11874,6 +11877,11 @@
             "name": "rweb_quick_promote_action_menu_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "rweb_quick_promote_third_party_boost_enabled": {
+            "name": "rweb_quick_promote_third_party_boost_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "rweb_quick_promote_boost_enabled": {
             "name": "rweb_quick_promote_boost_enabled",
@@ -15518,6 +15526,14 @@
             "type": "experiment",
             "enumeration_values": []
         },
+        "visitor_get_verified_profile_card_upsell_test_android_18565": {
+            "name": "visitor_get_verified_profile_card_upsell_test_android_18565",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "vo_upsell_enabled": {
             "name": "vo_upsell_enabled",
             "type": "boolean",
@@ -16676,6 +16692,10 @@
         },
         "xchat_work_manager_size_limit": {
             "name": "xchat_work_manager_size_limit",
+            "type": "string"
+        },
+        "xchat_admin_settings": {
+            "name": "xchat_admin_settings",
             "type": "string"
         },
         "xprofile_editing_enabled": {
