@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "366dae280b96bbd42ed0150a98685b0331a20390",
+        "feature_set_token": "b18835f28abc98a27df3e8279d6c27783bb85838",
         "config": {
             "ads_spacing_client_fallback_minimum_spacing": {
                 "value": 3.0
@@ -22,6 +22,12 @@
             },
             "android_anr_reporting_timeout_ms": {
                 "value": 5000.0
+            },
+            "android_audio_avatar_ring_htl_enabled": {
+                "value": true
+            },
+            "android_audio_avatar_ring_profile_enabled": {
+                "value": true
             },
             "android_cashtags_composer_typeahead_enabled": {
                 "value": false
@@ -75,6 +81,9 @@
                 "value": false
             },
             "android_webview_js_set_theme_enabled": {
+                "value": false
+            },
+            "android_webview_link_post_detail_external_js_enabled": {
                 "value": false
             },
             "android_webview_pool_enabled": {
@@ -511,6 +520,9 @@
             "payments_complete_onboarding_enabled": {
                 "value": true
             },
+            "payments_enabled": {
+                "value": false
+            },
             "payments_environment_default_value": {
                 "value": ""
             },
@@ -596,7 +608,7 @@
                 "value": true
             },
             "subscriptions_feature_1003": {
-                "value": true
+                "value": false
             },
             "subscriptions_feature_1014": {
                 "value": true
@@ -882,18 +894,21 @@
         "android_media_playback_prefetch_incremental_18376",
         "ios_true_aspect_ratio_photos_on_timelines_18327",
         "ranked_following_extend_duration_17883",
+        "home_tabbed_timeline_18427",
         "ad_spacing_enforcement_timeline_impact_17825",
         "grok_auto_translate_worldwide_holdback_18413",
         "x_lite_in_tfa_new_users_turkey_18045",
         "x_lite_in_tfa_new_users_indonesia_18113",
         "x_lite_in_tfa_new_users_tur_nz_au_in_ca_18317",
         "x_lite_in_tfa_new_users_indonesia_aus_new_zeland_18261",
+        "home_spaces_holdback_12863",
         "ios_no_ad_dropping_17457",
-        "android_scribe_frequent_collect_and_upload_linger_17854"
+        "android_scribe_frequent_collect_and_upload_linger_17854",
+        "spaces_holdback_11943"
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "4efe78735fb79844c96e8a947afa48884336cab1",
-        "experiments": "4efe78735fb79844c96e8a947afa48884336cab1"
+        "feature_switches": "436c3546aa46bdc0c52c0e20763594a4ebb419b6",
+        "experiments": "436c3546aa46bdc0c52c0e20763594a4ebb419b6"
     }
 }
