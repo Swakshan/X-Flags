@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c7ecbe48296494c2b89893f303b3164dd3484dc1",
+    "feature_set_token": "fe2e80a53f88cca63e1de1f97a462fb02096c524",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3209,6 +3209,9 @@
         },
         "subscriptions_premium_hub_ad_free_link_enabled": {
             "value": true
+        },
+        "subscriptions_premium_hub_boost_block_enabled": {
+            "value": false
         },
         "subscriptions_premium_hub_insights_block_enabled": {
             "value": true
@@ -13624,7 +13627,8 @@
         },
         "subscriptions_premium_hub_boost_block_enabled": {
             "name": "subscriptions_premium_hub_boost_block_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
