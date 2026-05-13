@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "36122c1f7616ee342cb3cbef601c2585930dd3c1",
+        "feature_set_token": "426c0d6b180f6ac234c42f147702107d1f469131",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -25,6 +25,9 @@
             },
             "android_ad_formats_xlite_ad_spacing_filter_enabled": {
                 "value": true
+            },
+            "android_ad_formats_xlite_browser_destination_prefetching_enabled": {
+                "value": false
             },
             "android_anr_reporting_timeout_ms": {
                 "value": 5000.0
@@ -68,7 +71,22 @@
             "android_media_playback_prefetch_xlite_incremental_enabled": {
                 "value": false
             },
+            "android_notification_redesign_minimum_followers_to_show_priority_tab": {
+                "value": 500.0
+            },
+            "android_notification_redesign_priority_inbox_enabled": {
+                "value": true
+            },
             "android_ocf_whatsapp_verification_choice_enabled": {
+                "value": false
+            },
+            "android_should_badge_oppo_launchers": {
+                "value": true
+            },
+            "android_should_badge_transsion_launchers": {
+                "value": true
+            },
+            "android_should_badge_vivo_launchers": {
                 "value": false
             },
             "android_video_transcode_media_h265_transcoder_codec_enabled": {
@@ -445,6 +463,9 @@
             "growth_acquisition_redirect_to_login": {
                 "value": ""
             },
+            "hometimeline_pinned_tabs_limit": {
+                "value": 10.0
+            },
             "hometimeline_pinned_tabs_settings_enabled": {
                 "value": true
             },
@@ -518,7 +539,7 @@
                 "value": false
             },
             "payments_auth_token_enabled": {
-                "value": false
+                "value": true
             },
             "payments_business_onboarding_support": {
                 "value": []
@@ -533,9 +554,6 @@
                 "value": false
             },
             "payments_cheques_deposits_enabled": {
-                "value": true
-            },
-            "payments_complete_onboarding_enabled": {
                 "value": true
             },
             "payments_enabled": {
@@ -586,6 +604,12 @@
             "photos_segmented_upload_xlite_segment_size_poor_kb": {
                 "value": 64.0
             },
+            "post_ctas_fetch_enabled": {
+                "value": false
+            },
+            "post_ctas_render_enabled": {
+                "value": false
+            },
             "prelude_android_client_key": {
                 "value": "sdk_xsRhlDo8aszYizt2cKTmPZhn0O58kyeIKKGG"
             },
@@ -614,7 +638,7 @@
                 "value": true
             },
             "scribe_interval_seconds": {
-                "value": 60.0
+                "value": 10.0
             },
             "search_features_advanced_search_m2_verified_filter_enabled": {
                 "value": false
@@ -739,6 +763,12 @@
             "x_lite_notifications_permission_prompt_enabled": {
                 "value": true
             },
+            "x_lite_profile_photos_videos_tabs_enabled": {
+                "value": false
+            },
+            "x_lite_profile_sticky_tabs_enabled": {
+                "value": false
+            },
             "x_lite_spaces_enabled": {
                 "value": false
             },
@@ -805,6 +835,9 @@
             "xchat_enforce_media_hash_verification": {
                 "value": false
             },
+            "xchat_fetch_messages_from_push_handler": {
+                "value": false
+            },
             "xchat_forward_media_max_conversations": {
                 "value": 5.0
             },
@@ -848,7 +881,7 @@
                 "value": 1.0
             },
             "xchat_max_group_size": {
-                "value": 300.0
+                "value": 350.0
             },
             "xchat_max_group_size_for_live_read_receipts": {
                 "value": 50.0
@@ -904,12 +937,6 @@
             "xchat_user_event_limit": {
                 "value": 500.0
             },
-            "xchat_voice_messages_enabled": {
-                "value": true
-            },
-            "xchat_voice_messages_rendering_enabled": {
-                "value": true
-            },
             "xchat_voice_messages_transcription_enabled": {
                 "value": false
             },
@@ -928,27 +955,35 @@
     "embedded_experiments": [],
     "requires_restart": [],
     "experiment_names": [
+        "android_transsion_badging_experiment_15156",
         "x_lite_in_tfa_new_users_3_17977",
         "ios_promoted_force_cta_bar_18232",
+        "customer_retention_overall_holdback_2021_11652",
         "android_media_playback_prefetch_incremental_18376",
+        "notifications_incremental_holdback_2022h2_13461",
         "ios_true_aspect_ratio_photos_on_timelines_18327",
+        "notifications_incremental_holdback_2023h1_14753",
         "ranked_following_extend_duration_17883",
-        "home_tabbed_timeline_18427",
+        "mr_global_user_retention_holdback_10725",
         "ad_spacing_enforcement_timeline_impact_17825",
         "grok_auto_translate_worldwide_holdback_18413",
         "x_lite_in_tfa_new_users_turkey_18045",
         "x_lite_in_tfa_new_users_indonesia_18113",
         "x_lite_in_tfa_new_users_tur_nz_au_in_ca_18317",
+        "customer_retention_overall_holdback_10754",
         "x_lite_in_tfa_new_users_indonesia_aus_new_zeland_18261",
         "home_spaces_holdback_12863",
         "ios_no_ad_dropping_17457",
         "android_scribe_frequent_collect_and_upload_linger_17854",
+        "android_vivo_badging_experiment_8942",
         "spaces_holdback_11943",
-        "x_lite_in_tfa_new_users_tur_nz_au_ca_id_18447"
+        "x_lite_in_tfa_new_users_tur_nz_au_ca_id_18447",
+        "customer_retention_notifs_2021_holdback_11678",
+        "home_tabbed_timeline_holdback_18429"
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "088615d1bf59629d083051edef9a5f48e1763de0",
-        "experiments": "088615d1bf59629d083051edef9a5f48e1763de0"
+        "feature_switches": "ebd147e443dd3861b937fe79f80374519af1a5f0",
+        "experiments": "ebd147e443dd3861b937fe79f80374519af1a5f0"
     }
 }
