@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "b18835f28abc98a27df3e8279d6c27783bb85838",
+        "feature_set_token": "7919268a0c88a968e517fc01e9163d523eddfcf0",
         "config": {
             "ads_spacing_client_fallback_minimum_spacing": {
                 "value": 3.0
@@ -46,6 +46,9 @@
             },
             "android_cashtags_trade_deeplink_enabled": {
                 "value": false
+            },
+            "android_cashtags_trade_deeplink_url": {
+                "value": ""
             },
             "android_deeplink_oauth_in_app_enabled": {
                 "value": true
@@ -100,6 +103,12 @@
             },
             "audience_control_narrowcast_post_creation_api_enabled": {
                 "value": false
+            },
+            "author_moderated_replies_author_enabled": {
+                "value": true
+            },
+            "author_moderated_replies_consumer_enabled": {
+                "value": true
             },
             "av_chat_android_av_calling_inside_xlite_enabled": {
                 "value": false
@@ -433,6 +442,9 @@
             "hometimeline_pinned_tabs_settings_enabled": {
                 "value": true
             },
+            "hometimeline_pinned_tabs_topics_enabled": {
+                "value": false
+            },
             "identity_verification_consent_opt_in_by_default_enabled": {
                 "value": true
             },
@@ -532,6 +544,9 @@
             "payments_half_cover_notices_enabled": {
                 "value": true
             },
+            "payments_international_wires_enabled": {
+                "value": false
+            },
             "payments_offboard_enabled": {
                 "value": true
             },
@@ -594,6 +609,9 @@
             },
             "scribe_interval_seconds": {
                 "value": 60.0
+            },
+            "search_features_advanced_search_m2_verified_filter_enabled": {
+                "value": false
             },
             "spaces_2022_h2_spaces_communities": {
                 "value": true
@@ -661,6 +679,9 @@
             "x_android_jetfuel_global_trending_home_enabled": {
                 "value": false
             },
+            "x_android_timeline_multi_media_carousel_enabled": {
+                "value": false
+            },
             "x_castle_android_production_api_key": {
                 "value": "pk_JCd5PXLQaxvtdFhyrh7URMsHjfNEvf37"
             },
@@ -688,7 +709,16 @@
             "x_lite_in_tfa_enabled": {
                 "value": false
             },
+            "x_lite_in_tfa_for_existing_users_enabled": {
+                "value": false
+            },
+            "x_lite_in_tfa_for_existing_users_exit_enabled": {
+                "value": false
+            },
             "x_lite_in_tfa_for_new_users_enabled": {
+                "value": false
+            },
+            "x_lite_in_tfa_for_new_users_exit_enabled": {
                 "value": false
             },
             "x_lite_in_tfa_premium_any_enabled": {
@@ -766,6 +796,9 @@
             "xchat_enable_share_message_v2": {
                 "value": false
             },
+            "xchat_enable_single_message_locking": {
+                "value": false
+            },
             "xchat_enforce_media_hash_verification": {
                 "value": false
             },
@@ -799,6 +832,9 @@
             "xchat_inbox_conversation_local_pagination_page_size": {
                 "value": 20.0
             },
+            "xchat_invalid_sig_log_after_seq_num_str": {
+                "value": "2044000000000000000"
+            },
             "xchat_local_pagination_page_size": {
                 "value": 50.0
             },
@@ -831,9 +867,6 @@
             },
             "xchat_ratchet_group_id_threshold_str": {
                 "value": "9223372036854775807"
-            },
-            "xchat_resolve_unencrypted_media_locally": {
-                "value": true
             },
             "xchat_sample_observation_queries": {
                 "value": 500.0
@@ -904,11 +937,12 @@
         "home_spaces_holdback_12863",
         "ios_no_ad_dropping_17457",
         "android_scribe_frequent_collect_and_upload_linger_17854",
-        "spaces_holdback_11943"
+        "spaces_holdback_11943",
+        "x_lite_in_tfa_new_users_tur_nz_au_ca_id_18447"
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "436c3546aa46bdc0c52c0e20763594a4ebb419b6",
-        "experiments": "436c3546aa46bdc0c52c0e20763594a4ebb419b6"
+        "feature_switches": "5b48e9501289636214fe55255f2d94627a342348",
+        "experiments": "5b48e9501289636214fe55255f2d94627a342348"
     }
 }
