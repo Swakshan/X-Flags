@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "418d08aa3ad6ad27b3dd25406f130ed37646f59d",
+        "feature_set_token": "ac3ef8f2bd8f7aed6291355e3babbc6e3d22128d",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -71,6 +71,9 @@
             "android_global_navigation_top_level_monetization_enabled": {
                 "value": true
             },
+            "android_home_timeline_status_injections_facepile_enabled": {
+                "value": false
+            },
             "android_linger_impression_flush_before_upload_enabled": {
                 "value": true
             },
@@ -94,9 +97,6 @@
             },
             "android_should_badge_vivo_launchers": {
                 "value": false
-            },
-            "android_system_dns_cache_enabled": {
-                "value": true
             },
             "android_system_dns_timeout_ms": {
                 "value": 15000.0
@@ -673,6 +673,9 @@
             "subscriptions_blue_verified_eligibility_check_enabled": {
                 "value": true
             },
+            "subscriptions_enabled": {
+                "value": false
+            },
             "subscriptions_feature_1001": {
                 "value": false
             },
@@ -694,8 +697,26 @@
             "subscriptions_per_post_in_thread": {
                 "value": true
             },
+            "subscriptions_upsells_analytics_profile_enabled": {
+                "value": false
+            },
             "subscriptions_upsells_get_verified_profile": {
                 "value": true
+            },
+            "subscriptions_upsells_get_verified_profile_card": {
+                "value": false
+            },
+            "subscriptions_upsells_get_verified_profile_rotation_enabled": {
+                "value": false
+            },
+            "subscriptions_upsells_home_nav_premium_tier_check_enabled": {
+                "value": true
+            },
+            "subscriptions_upsells_premium_home_nav": {
+                "value": "premium_upsell_upgrade"
+            },
+            "subscriptions_upsells_premium_percent_off": {
+                "value": 30.0
             },
             "subscriptions_upsells_verified_profile_visitor_upsell_enabled": {
                 "value": false
@@ -812,6 +833,9 @@
                 "value": 604800.0
             },
             "x_lite_quick_promote_enabled": {
+                "value": false
+            },
+            "x_lite_quick_promote_native_flow_enabled": {
                 "value": false
             },
             "x_lite_quick_promote_nux_enabled": {
@@ -1045,5 +1069,9 @@
         "customer_retention_notifs_2021_holdback_11678",
         "home_tabbed_timeline_holdback_18429"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "9b845e73b1683f639feeafa6569c2c0088f0b023",
+        "experiments": "9b845e73b1683f639feeafa6569c2c0088f0b023"
+    }
 }
