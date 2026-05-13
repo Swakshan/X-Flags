@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "a1d2925fb33613a0034da9f28e216246c38551ea",
+        "feature_set_token": "1894fa772b22ea55552252c3f7130fc217248f5d",
         "config": {
             "ads_spacing_client_fallback_minimum_spacing": {
                 "value": 3.0
@@ -84,6 +84,9 @@
                 "value": true
             },
             "android_webview_url_prefetch_enabled": {
+                "value": false
+            },
+            "app_attest_android_hardware_enabled": {
                 "value": false
             },
             "audience_control_narrowcast_post_creation_api_enabled": {
@@ -392,28 +395,28 @@
                 "value": true
             },
             "grok_translations_bio_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_bio_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_community_note_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_community_note_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_notification_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_poll_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_post_auto_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_post_translation_is_enabled": {
-                "value": false
+                "value": true
             },
             "growth_acquisition_redirect_to_login": {
                 "value": ""
@@ -433,6 +436,9 @@
             "legacy_deciders_scribe_status_linger_minimum_threshold": {
                 "value": 0.5
             },
+            "link_post_detail_sheet_enabled": {
+                "value": false
+            },
             "longform_notetweets_composition_without_claims_enabled": {
                 "value": false
             },
@@ -447,6 +453,9 @@
             },
             "media_poll_shuffle_poll_choices": {
                 "value": true
+            },
+            "media_tab_vertical_photo_enabled": {
+                "value": false
             },
             "media_tab_vertical_video_enabled": {
                 "value": true
@@ -725,7 +734,7 @@
                 "value": false
             },
             "xchat_enable_forward_message_v2": {
-                "value": false
+                "value": true
             },
             "xchat_enable_franking_report": {
                 "value": false
@@ -827,7 +836,7 @@
                 "value": false
             },
             "xchat_send_franking_data": {
-                "value": false
+                "value": true
             },
             "xchat_send_signature_protocol_version": {
                 "value": 4.0
@@ -838,14 +847,11 @@
             "xchat_share_to_ig_story": {
                 "value": true
             },
-            "xchat_streamed_link_preview": {
-                "value": true
-            },
             "xchat_user_event_limit": {
                 "value": 500.0
             },
             "xchat_voice_messages_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_voice_messages_rendering_enabled": {
                 "value": true
@@ -871,8 +877,10 @@
         "x_lite_in_tfa_new_users_3_17977",
         "ios_promoted_force_cta_bar_18232",
         "android_media_playback_prefetch_incremental_18376",
+        "ios_true_aspect_ratio_photos_on_timelines_18327",
         "ranked_following_extend_duration_17883",
         "ad_spacing_enforcement_timeline_impact_17825",
+        "grok_auto_translate_worldwide_holdback_18413",
         "x_lite_in_tfa_new_users_turkey_18045",
         "x_lite_in_tfa_new_users_indonesia_18113",
         "x_lite_in_tfa_new_users_tur_nz_au_in_ca_18317",
@@ -882,7 +890,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "c3c13aa2d358c2d0547a850c18d771e24b0d36bd",
-        "experiments": "c3c13aa2d358c2d0547a850c18d771e24b0d36bd"
+        "feature_switches": "cd4c1ca181f8613a4f1c5c6c77cf607d7104bee8",
+        "experiments": "cd4c1ca181f8613a4f1c5c6c77cf607d7104bee8"
     }
 }
