@@ -2,13 +2,13 @@ import os, shutil, sys
 from constants import isDebug, getRootDir, DUMMY_FOLDER, MAIN_FOLDER,OLD_FILE_NAME,NEW_FILE_NAME,FLAGS_FOLDER
 from enums import Application, ReleaseType, Platform, Source
 from common import writeJson, readJson, get_exception
-from processX import process as xProcess
+from process import processX
 from model import DATA
 from basics import printCmd,printSubCmd
 from compare import compareFlags
 import argparse
 
-VER = "v22.8 : refactor folder structure"
+VER = "v23 : Added support for xchat ios"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -22,6 +22,14 @@ def flagName(data:DATA):
     flagFileName +=".json"
     return f"{FLAGS_FOLDER}/{app}/{flagFileName}"
 
+def restoreFlags(data:DATA):
+    flagFileName = flagName(data)
+    
+    printSubCmd("Restore old flags","*")
+    shutil.move(OLD_FILE_NAME, flagFileName)
+    if data.platform == Platform.IOS:
+        shutil.move(OLD_FILE_NAME+"_2", flagFileName.replace("ios","ipad"))
+
 def main(data:DATA):
     flagFileName = flagName(data)
     
@@ -33,19 +41,18 @@ def main(data:DATA):
     plt:Platform = data.platform
     
     printCmd(f"processing {app.value}")
-    if app == Application.X:
+    if app in [Application.X,Application.XCHAT]:
         if plt == Platform.IOS:
             # move existing/default ipad flags to old flags
             shutil.move(flagFileName.replace("ios","ipad"), OLD_FILE_NAME+"_2")
-            
-        sts = xProcess(data,flagFileName)
+        sts = processX(data,flagFileName)
     elif app == Application.XLITE:
-        sts = xProcess(data,flagFileName)
+        sts = processX(data,flagFileName)
     
     if sts:
         # new flags as default flags
         shutil.copy(NEW_FILE_NAME, flagFileName)
-        if plt == Platform.IOS and app == Application.X:
+        if plt == Platform.IOS and app in [Application.X,Application.XCHAT]:
             shutil.copy(NEW_FILE_NAME+"_2",flagFileName.replace("ios","ipad"))
         
         printCmd(f"comparing flags")
@@ -53,9 +60,9 @@ def main(data:DATA):
     else:
         print("Status: False")
         if isDebug():
-            printSubCmd("Restore old flags","*")
-            shutil.move(OLD_FILE_NAME, flagFileName)
-    
+            restoreFlags()
+            
+            
 if not isDebug():
     if os.path.exists(DUMMY_FOLDER):
         shutil.rmtree(DUMMY_FOLDER)

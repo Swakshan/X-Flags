@@ -14,7 +14,7 @@ from common import downloader,downloadAndroid,pairipDetector,unzipper
 from model import DATA
 from appData import webfeatureSwitches
 
-def process(data:DATA,flagFileName:str):
+def processX(data:DATA,flagFileName:str):
     sts = False
     try:
         isPairip = data.pairip

@@ -23,7 +23,7 @@ def compareFlags():
         new_debug_flags = {}
         old_debug_flags = {}
         
-        if data.app in [Application.X,Application.XLITE]:
+        if data.app is not Application.GROK:
             if data.platform == Platform.WEB:
                 new_flags = new_file['config']
                 old_flags = old_file['config']
@@ -152,7 +152,7 @@ def flagMessage(data:DATA):
     elif not nfC and not dfC:
         rd = f"{rd}\nNo New Flags\n{l}"
         
-    if data.platform == Platform.IOS and data.app == Application.X:
+    if data.platform == Platform.IOS and data.app in [Application.X,Application.XCHAT]:
         rd = f"{rd}\n__iPhone__:\n[{commit_link_str}]({commit_link})"
         
         flag_details = readJson(CHANGES_FILE_NAME+"_2")
