@@ -7,21 +7,21 @@ A repo that keeps track of feature flags from different builds of 𝕏 (Twitter)
 ## Latest 𝕏 Feature Flags
 
 * **Android**
-    - [Alpha Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_android_alpha.json)
-    - [Beta Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_android_beta.json)
-    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_android_stable.json)
+    - [Alpha Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/x/x_flags_android_alpha.json)
+    - [Beta Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/x/x_flags_android_beta.json)
+    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/x/x_flags_android_stable.json)
 
 * **iOS**
-    - [Stable Flags: iPhone](https://github.com/Swakshan/X-Flags/blob/main/x_flags_ios_stable.json)
-    - [Stable Flags: iPad](https://github.com/Swakshan/X-Flags/blob/main/x_flags_ipad_stable.json)
+    - [Stable Flags: iPhone](https://github.com/Swakshan/X-Flags/blob/main/flags/x/x_flags_ios_stable.json)
+    - [Stable Flags: iPad](https://github.com/Swakshan/X-Flags/blob/main/flags/x/x_flags_ipad_stable.json)
 
 * **Web**
-    - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/x_flags_web.json)
+    - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/x/x_flags_web.json)
 
 ## Latest 𝕏-Lite Feature Flags
 
 * **Android**
-    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/xlite_flags_android_stable.json)
+    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/xlite/xlite_flags_android_stable.json)
 
 ## FAQ
 

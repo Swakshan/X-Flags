@@ -10,13 +10,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v6
       with:
         python-version: '3.x'
-   
 
     - name: Install modules
       run: |
@@ -27,7 +26,7 @@ jobs:
       env:
         DEBUG: ${{ secrets.DEBUG }}
       run: |
-        python src/main.py ${{ github.event.client_payload.app }} ${{ github.event.client_payload.platform }} ${{ github.event.client_payload.source }} ${{ github.event.client_payload.type }} ${{ github.event.client_payload.msgId }} ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }}
+        python scripts/main.py ${{ github.event.client_payload.app }} ${{ github.event.client_payload.platform }} ${{ github.event.client_payload.source }} ${{ github.event.client_payload.type }} ${{ github.event.client_payload.msgId }} ${{ github.event.client_payload.vername }} ${{ github.event.client_payload.vercode }} ${{ github.event.client_payload.downLink }}
 
     - name: Add extracted file to Git
       id: vars
@@ -36,7 +35,7 @@ jobs:
         CHANGES=$(git diff --name-only origin/main)
         if [ -n "$CHANGES" ]; then
           echo "Changes found."
-          python src/git.py
+          python scripts/git.py
           echo "PUSH=1" >> $GITHUB_OUTPUT
         else
           echo "No changes found."
@@ -59,4 +58,4 @@ jobs:
         PINNED_MSG_X: ${{ secrets.PINNED_MSG_X }}
         PINNED_MSG_GROK: ${{ secrets.PINNED_MSG_GROK }}
       run: |      
-        python src/sendTelegram.py
+        python scripts/sendTelegram.py

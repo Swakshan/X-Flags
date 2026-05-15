@@ -1,14 +1,14 @@
 import os, shutil, sys
-from constants import isDebug, getRootDir, DUMMY_FOLDER, MAIN_FOLDER,OLD_FILE_NAME,NEW_FILE_NAME
+from constants import isDebug, getRootDir, DUMMY_FOLDER, MAIN_FOLDER,OLD_FILE_NAME,NEW_FILE_NAME,FLAGS_FOLDER
 from enums import Application, ReleaseType, Platform, Source
 from common import writeJson, readJson, get_exception
 from processX import process as xProcess
 from model import DATA
-from basics import printCmd
+from basics import printCmd,printSubCmd
 from compare import compareFlags
 import argparse
 
-VER = "v22.581 : ]remove 'Fuzzy' arg from gdrive downloader"
+VER = "v22.8 : refactor folder structure"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
@@ -20,7 +20,7 @@ def flagName(data:DATA):
     flagFileName = f"{app}_flags_{platform}"
     flagFileName = flagFileName if platform == Platform.WEB.value else f"{flagFileName}_{typ}"
     flagFileName +=".json"
-    return getRootDir()+"/"+flagFileName
+    return f"{FLAGS_FOLDER}/{app}/{flagFileName}"
 
 def main(data:DATA):
     flagFileName = flagName(data)
@@ -52,6 +52,9 @@ def main(data:DATA):
         compareFlags()
     else:
         print("Status: False")
+        if isDebug():
+            printSubCmd("Restore old flags","*")
+            shutil.move(OLD_FILE_NAME, flagFileName)
     
 if not isDebug():
     if os.path.exists(DUMMY_FOLDER):
