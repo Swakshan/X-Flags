@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "13e74536f3f5d13c801449bc37229f5c8705c7e7",
+    "feature_set_token": "b728e44883c3b9d8b2a3045c1a7209e02bf1746f",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -4116,7 +4116,7 @@
             "value": true
         },
         "xchat_send_signature_protocol_version": {
-            "value": 4
+            "value": 7
         },
         "xchat_settings_enabled": {
             "value": false
@@ -4475,10 +4475,7 @@
         "ad_spacing_enforcement_timeline_impact_17825": {
             "name": "ad_spacing_enforcement_timeline_impact_17825",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "no_ad_spacing"
-            ]
+            "enumeration_values": []
         },
         "ads_spacing_client_fallback_minimum_spacing": {
             "name": "ads_spacing_client_fallback_minimum_spacing",
@@ -9230,6 +9227,10 @@
             "name": "responsive_web_birdwatch_media_history_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "responsive_web_birdwatch_note_request_suggestion_enabled": {
+            "name": "responsive_web_birdwatch_note_request_suggestion_enabled",
+            "type": "string"
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -16639,7 +16640,7 @@
         "xchat_send_signature_protocol_version": {
             "name": "xchat_send_signature_protocol_version",
             "type": "number",
-            "defaultValue": 4
+            "defaultValue": 7
         },
         "xchat_voice_messages_rendering_enabled": {
             "name": "xchat_voice_messages_rendering_enabled",
@@ -16694,8 +16695,16 @@
             "name": "xchat_work_manager_size_limit",
             "type": "string"
         },
-        "xchat_admin_settings": {
-            "name": "xchat_admin_settings",
+        "xchat_group_admin_settings_enabled": {
+            "name": "xchat_group_admin_settings_enabled",
+            "type": "string"
+        },
+        "xchat_repair_groups_after_passcode_reset": {
+            "name": "xchat_repair_groups_after_passcode_reset",
+            "type": "string"
+        },
+        "xchat_dm_media_upload_workmanager_enabled": {
+            "name": "xchat_dm_media_upload_workmanager_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
