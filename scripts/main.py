@@ -8,7 +8,7 @@ from basics import printCmd,printSubCmd
 from compare import compareFlags
 import argparse
 
-VER = "v23 : Added support for xchat ios"
+VER = "v23.3 : Added support for xchat web"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
