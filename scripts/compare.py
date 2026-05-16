@@ -23,7 +23,7 @@ def compareFlags():
         new_debug_flags = {}
         old_debug_flags = {}
         
-        if data.app in [Application.X,Application.XLITE]:
+        if data.app is not Application.GROK:
             if data.platform == Platform.WEB:
                 new_flags = new_file['config']
                 old_flags = old_file['config']
@@ -43,13 +43,18 @@ def compareFlags():
         
         FLAGS = {'added':{},'updated':0,'removed':0}
         for flag in new_flags:
-            flag_value = getValue(new_flags[flag])
+            configValue = new_flags[flag]
+            # XChat flags will not contain dict. It directly has flag value.
+            flag_value = getValue(configValue) if type(configValue) == dict else configValue
             
             if flag not in old_flags: # If the flag is present in new but not in old.
                 FLAGS['added'][flag] = type(flag_value).__name__
                 
             else: # If the flag is present in old check if removed or updated.
-                if flag_value != getValue(old_flags[flag]): # If the flag value is updated.
+                oldConfigValue = old_flags[flag]
+                # XChat flags will not contain dict. It directly has flag value.
+                old_flag_value = getValue(oldConfigValue) if type(oldConfigValue) == dict else oldConfigValue
+                if flag_value != old_flag_value: # If the flag value is updated.
                     FLAGS['updated']+=1
                 old_flags_copy.pop(flag) # Remove that flag from old flags to calculate removed flags
         
@@ -152,7 +157,7 @@ def flagMessage(data:DATA):
     elif not nfC and not dfC:
         rd = f"{rd}\nNo New Flags\n{l}"
         
-    if data.platform == Platform.IOS and data.app == Application.X:
+    if data.platform == Platform.IOS and data.app in [Application.X,Application.XCHAT]:
         rd = f"{rd}\n__iPhone__:\n[{commit_link_str}]({commit_link})"
         
         flag_details = readJson(CHANGES_FILE_NAME+"_2")

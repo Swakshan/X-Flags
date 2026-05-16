@@ -5,6 +5,7 @@ class Application(Enum):
     X = "x"
     GROK = "grok"
     XLITE = "xlite"
+    XCHAT = "xchat"
 
 class Platform(Enum):
     ANDROID = "android"

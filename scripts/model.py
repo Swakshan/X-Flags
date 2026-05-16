@@ -30,6 +30,8 @@ class DATA:
             self.emoji = "⚡"
         elif app == Application.GROK:
             self.emoji = "🤖"
+        if app == Application.XCHAT:
+            self.emoji = "💬"
         else:
             print("WTF: app name")
         self.vercode = vercode

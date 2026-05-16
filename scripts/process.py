@@ -12,9 +12,9 @@ from basics import writeJson, readJson, get_exception
 from enums import Source, Platform, ReleaseType, Application
 from common import downloader,downloadAndroid,pairipDetector,unzipper
 from model import DATA
-from appData import webfeatureSwitches
+from appData import webfeatureSwitches,xChatWebFeatureSwitches
 
-def process(data:DATA,flagFileName:str):
+def processX(data:DATA,flagFileName:str):
     sts = False
     try:
         isPairip = data.pairip
@@ -26,8 +26,12 @@ def process(data:DATA,flagFileName:str):
 
         if platform == Platform.WEB:
             vername = data.vername
-            sha, hash = vername.split("::")
-            fs = webfeatureSwitches(hash)
+            if app == Application.X:
+                sha, hash = vername.split("::")
+                fs = webfeatureSwitches(hash)
+            elif app == Application.XCHAT:
+                hash = vername
+                fs = xChatWebFeatureSwitches(hash)
             # create the flags in existing flags
             writeJson(flagFileName, fs)
             writeJson(NEW_FILE_NAME,fs)

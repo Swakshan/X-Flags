@@ -50,12 +50,16 @@ def getTopicID(app: Application):
        return getEnv("TOPIC_ID_GROK")
     if app == Application.XLITE:
        return getEnv("TOPIC_ID_XLITE")
+    if app == Application.XCHAT:
+       return getEnv("TOPIC_ID_XCHAT")
 
 def getPinMsgID(app: Application):
     if app == Application.X:
         return getEnv("PINNED_MSG_X")
     if app == Application.GROK:
         return getEnv("PINNED_MSG_GROK")
+    if app == Application.XCHAT:
+        return getEnv("PINNED_MSG_XCHAT")
     #XLite doesnt have pin msg
     return 0
 
@@ -100,6 +104,8 @@ def getAppleStoreCode(app: Application):
         return "id333903271"
     if app == Application.GROK:
         return "id6670324846"
+    if app == Application.XCHAT:
+        return "id6760873038"
 
 
 def headers():

@@ -6,7 +6,7 @@ from model import DATA
 
 def sendMessage(manifest):
     data:DATA = DATA.fromJSON(manifest)
-
+    
     flagMsg = flagMessage(data)
     teleMsg = data.teleMsg(flagMsg)
     

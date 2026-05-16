@@ -5,6 +5,7 @@ from urllib.parse import unquote
 from datetime import datetime
 from constants import headers
 import curl_cffi
+import chompjs
 
 hdr = headers()
 proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="
@@ -67,23 +68,17 @@ def apkM(url):
     return downloadLink
 
 
+def formatWebFlags(res):
+    res = res.replace("!0","true\n").replace("!1","false\n")
+    return chompjs.parse_js_object(res)
+    
 def xManifestSwitches(hash):
     FS_URL = f"https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.{hash}.js"
     req = requests.get(FS_URL,headers=hdr)
     res = req.text
-    
-    res = res[res.find("{"):res.find("}}};")]
-    res = res.replace("!0","true\n").replace("!1","false\n")
-    res = res.replace("},",'},"').replace(':{value:','":{"value":').replace(':{name:','":{"name":').replace(',type:',',"type":').replace(',defaultValue:',',"defaultValue":')
-    res = res.replace("feature_set_token:",'"feature_set_token":').replace(',config:',',"config":').replace(',"debug:',',"debug":').replace(',enumeration_values',',"enumeration_values"')
-    res = res.replace('"":','":').replace(":.",":0.")
-    res = res+"}}}"
-    
-    hex_values = re.findall(r'0x[0-9a-fA-F]+', res)
-    for h in hex_values:
-        res = res.replace(str(h),str(int(h, 16)))
-        
-    return json.loads(res)
+    eHint = "}}};"
+    res = res[res.find("{"):res.find(eHint)+len(eHint)]
+    return formatWebFlags(res)
 
 def xWebFlags():
     link = "https://x.com"
@@ -114,4 +109,27 @@ def webfeatureSwitches(hash):
     token = xFlags['feature_set_token']
 
     return {"feature_set_token":token,"config":flags,"debug":manifestFlags['debug']}
+
+
+def xChatWebFeatureSwitches(hash):
+    jsUrl = f"https://chat.x.com/assets/entry-client-{hash}.js"
+    
+    req = requests.get(jsUrl, headers=hdr)
+    res = req.text
+    
+    sHint = "window.__INITIAL_DATA__?.dtabLocal"
+    res = res[res.find(sHint):]
+    
+    sHint = "=`"
+    eHint = "`,"
+    start = res.find(sHint)+len(sHint)
+    token = res[start:res.find(eHint)]
+    
+    eHint = "}),"
+    res = res[start:]
+    res = res[res.find("{"):res.find(eHint)+len(eHint)]
+    
+    flags = formatWebFlags(res)
+    return {"feature_set_token":token,"config":flags,"debug":{}}
+    
     

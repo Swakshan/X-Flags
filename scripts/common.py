@@ -1,4 +1,4 @@
-from enums import Source, Platform, ReleaseType
+from enums import Source, Platform, ReleaseType, Application
 
 from constants import (ZIP_FILE, EXTRACT_FOLDER, NEW_FILE_NAME,
                        headers, getEnv, getPackageName)
@@ -69,6 +69,7 @@ def downloadAndroid(data:DATA):
 
 def unzipper(data:DATA):
     platform = data.platform
+    app = data.app
     
     def extract(src, new_name):
         zip_obj.extract(src, path=EXTRACT_FOLDER)
@@ -82,7 +83,7 @@ def unzipper(data:DATA):
     if platform == Platform.ANDROID:
         FLAG_FOLDER = "res/raw"
         FLAG_FILE = f"{FLAG_FOLDER}/feature_switch_manifest"
-        apk_name_1 = getPackageName(data.app)+".apk"
+        apk_name_1 = getPackageName(app)+".apk"
         apk_name_2 = f"base.apk"
         
         if apk_name_1 in file_list or apk_name_2 in file_list:
@@ -101,7 +102,8 @@ def unzipper(data:DATA):
             return extract(FLAG_FILE, NEW_FILE_NAME)
 
     elif platform == Platform.IOS:
-        FLAG_FOLDER = "Payload/Twitter.app"
+        IOS_PKG_NAME = "Chat Production.app" if app == Application.XCHAT else "Twitter.app"
+        FLAG_FOLDER = f"Payload/{IOS_PKG_NAME}"
         f1 = False
         f2 = False
         
