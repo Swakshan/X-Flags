@@ -77,5 +77,7 @@ jobs:
         TOPIC_ID_XLITE: ${{ secrets.TOPIC_ID_XLITE }}
         PINNED_MSG_X: ${{ secrets.PINNED_MSG_X }}
         PINNED_MSG_GROK: ${{ secrets.PINNED_MSG_GROK }}
+        TOPIC_ID_XCHAT: ${{ secrets.TOPIC_ID_XCHAT }}
+        PINNED_MSG_XCHAT: ${{ secrets.PINNED_MSG_XCHAT }}
       run: |      
         python scripts/sendTelegram.py
