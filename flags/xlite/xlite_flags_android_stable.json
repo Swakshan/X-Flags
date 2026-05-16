@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "4f3e7241834c8f7e80b32d760fcfe3cc083968d5",
+        "feature_set_token": "8da710080265b3c0cfb814ecadf0c95cf7f8cd0b",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -83,6 +83,9 @@
             "android_media_playback_prefetch_xlite_incremental_enabled": {
                 "value": false
             },
+            "android_multi_account_badge_enabled": {
+                "value": true
+            },
             "android_notification_redesign_minimum_followers_to_show_priority_tab": {
                 "value": 500.0
             },
@@ -91,6 +94,9 @@
             },
             "android_ocf_whatsapp_verification_choice_enabled": {
                 "value": false
+            },
+            "android_profile_visitor_upsell_dismiss_for_seconds": {
+                "value": 1209600.0
             },
             "android_should_badge_oppo_launchers": {
                 "value": true
@@ -391,7 +397,9 @@
             },
             "content_disclosure_c2pa_detection_exemption_list": {
                 "value": [
-                    "Adobe Photoshop"
+                    "Adobe Photoshop",
+                    "Adobe Firefly",
+                    "Canva AI"
                 ]
             },
             "content_disclosure_creation_enabled": {
@@ -629,7 +637,7 @@
                 "value": false
             },
             "paywall_enabled": {
-                "value": false
+                "value": true
             },
             "photo_upload_transcode_xlite_enabled": {
                 "value": true
@@ -771,6 +779,9 @@
             },
             "unified_cards_limit_width_tweet_detail_ratio": {
                 "value": 0.7
+            },
+            "video_on_demand_heartbeat_interval_android": {
+                "value": 5.0
             },
             "video_promoted_logging_content_log_enabled": {
                 "value": true
@@ -1042,6 +1053,9 @@
             "xchat_ratchet_group_id_threshold_str": {
                 "value": "9223372036854775807"
             },
+            "xchat_repair_groups_after_passcode_reset": {
+                "value": false
+            },
             "xchat_sample_observation_queries": {
                 "value": 500.0
             },
@@ -1119,6 +1133,7 @@
         "spaces_multi_tab_14033",
         "customer_retention_overall_holdback_10754",
         "home_spaces_holdback_12863",
+        "visitor_get_verified_profile_card_upsell_test_android_18565",
         "spaces_topic_tab_14162",
         "ios_no_ad_dropping_17457",
         "android_scribe_frequent_collect_and_upload_linger_17854",
@@ -1128,7 +1143,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
-        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
+        "feature_switches": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c",
+        "experiments": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c"
     }
 }
