@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f18989fd22ab8d8feaed2dee05e53cbc738b706f",
+    "feature_set_token": "5b806a448f611e08bd53384eaa8e84f52422c3a7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2504,7 +2504,7 @@
             "value": true
         },
         "rweb_analytics_active_followers_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_audience_compact_mode": {
             "value": true
@@ -4212,6 +4212,9 @@
             "value": "https://studio.x.com"
         },
         "xstudio_rweb_live_studio_enabled": {
+            "value": false
+        },
+        "subscriptions_upsells_post_limit_toast": {
             "value": false
         }
     },
@@ -11650,7 +11653,7 @@
         "rweb_analytics_active_followers_enabled": {
             "name": "rweb_analytics_active_followers_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_cashtags_enabled": {
             "name": "rweb_cashtags_enabled",
