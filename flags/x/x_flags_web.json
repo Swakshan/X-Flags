@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "5b806a448f611e08bd53384eaa8e84f52422c3a7",
+    "feature_set_token": "60141688478b42332d23b26e682ba8a59ac328ec",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3366,6 +3366,9 @@
         "subscriptions_upsells_post_engagements_variant": {
             "value": "analytics_popup"
         },
+        "subscriptions_upsells_post_limit_toast": {
+            "value": false
+        },
         "subscriptions_upsells_premium_home_nav": {
             "value": "default"
         },
@@ -4212,9 +4215,6 @@
             "value": "https://studio.x.com"
         },
         "xstudio_rweb_live_studio_enabled": {
-            "value": false
-        },
-        "subscriptions_upsells_post_limit_toast": {
             "value": false
         }
     },
@@ -8553,6 +8553,14 @@
                 "holdback"
             ]
         },
+        "premium_upsell_post_creation_rate_limit_18594": {
+            "name": "premium_upsell_post_creation_rate_limit_18594",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "premium_webview_paywall_offer_video_url": {
             "name": "premium_webview_paywall_offer_video_url",
             "type": "string"
@@ -11655,6 +11663,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "rweb_analytics_hourly_overview_enabled": {
+            "name": "rweb_analytics_hourly_overview_enabled",
+            "type": "string"
+        },
         "rweb_cashtags_enabled": {
             "name": "rweb_cashtags_enabled",
             "type": "boolean",
@@ -14160,6 +14172,11 @@
         "subscriptions_upsells_verified_profile_visitor_upsell_redesign_enabled": {
             "name": "subscriptions_upsells_verified_profile_visitor_upsell_redesign_enabled",
             "type": "string"
+        },
+        "subscriptions_upsells_post_limit_toast": {
+            "name": "subscriptions_upsells_post_limit_toast",
+            "type": "boolean",
+            "defaultValue": false
         },
         "subscriptions_upsells_vo_premium_business_rebranding_variant": {
             "name": "subscriptions_upsells_vo_premium_business_rebranding_variant",
