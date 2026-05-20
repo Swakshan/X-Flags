@@ -1,12 +1,15 @@
 {
     "default": {
-        "feature_set_token": "f8b1d94d8aa79ee8cedea7c78a043790006d2adc",
+        "feature_set_token": "cbf842886589efe240160323ecc6e9c11bdf3339",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
             },
             "account_live_verification_check_region": {
                 "value": "us-east-1"
+            },
+            "account_live_verification_check_very_key": {
+                "value": "veryai_sdk_RzzaNjpXap2b6bdBVaXVTfOWXwP-CHGizH7WaUZuiSQ"
             },
             "ads_spacing_client_fallback_minimum_spacing": {
                 "value": 3.0
@@ -27,6 +30,9 @@
                 "value": true
             },
             "android_ad_formats_xlite_browser_destination_prefetching_enabled": {
+                "value": false
+            },
+            "android_ad_formats_xlite_open_video_viewer_enabled": {
                 "value": false
             },
             "android_anr_reporting_timeout_ms": {
@@ -606,6 +612,12 @@
             "payments_chat_support_for_limits_enabled": {
                 "value": false
             },
+            "payments_check_deposit_image_client_crop_enabled": {
+                "value": true
+            },
+            "payments_check_deposit_image_format": {
+                "value": "png"
+            },
             "payments_cheques_deposits_enabled": {
                 "value": true
             },
@@ -713,6 +725,9 @@
             },
             "subscriptions_blue_verified_eligibility_check_enabled": {
                 "value": true
+            },
+            "subscriptions_cancel_flow_enabled": {
+                "value": false
             },
             "subscriptions_dash_item_enabled": {
                 "value": true
@@ -902,6 +917,12 @@
             },
             "x_lite_notifications_permission_prompt_enabled": {
                 "value": true
+            },
+            "x_lite_profile_combined_photos_videos_enabled": {
+                "value": false
+            },
+            "x_lite_profile_combined_posts_highlights_enabled": {
+                "value": false
             },
             "x_lite_profile_photos_videos_tabs_enabled": {
                 "value": false
@@ -1184,7 +1205,6 @@
         "grok_auto_translate_worldwide_holdback_18413",
         "x_lite_in_tfa_existing_users_id_18525",
         "spaces_multi_tab_14033",
-        "profile_page_upsells_swapper_android_18566",
         "customer_retention_overall_holdback_10754",
         "home_spaces_holdback_12863",
         "visitor_get_verified_profile_card_upsell_test_android_18565",
@@ -1197,7 +1217,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
-        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
+        "feature_switches": "fecc27df7ace9069aca8deaeb353984a8b2fd59a",
+        "experiments": "fecc27df7ace9069aca8deaeb353984a8b2fd59a"
     }
 }
