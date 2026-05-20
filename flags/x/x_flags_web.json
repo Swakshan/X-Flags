@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0924bbd11cfcb08abe3ced67ca1ab1ef985212be",
+    "feature_set_token": "f7c57339293207539278fc657671d4e8fc52d9d7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2046,6 +2046,9 @@
         },
         "responsive_web_media_upload_appendmulti_enabled": {
             "value": false
+        },
+        "responsive_web_media_upload_appendmulti_max_concurrent_requests": {
+            "value": 1
         },
         "responsive_web_media_upload_appendmulti_max_request_bytes": {
             "value": 100663296
@@ -7952,7 +7955,7 @@
             "enumeration_values": [
                 "control",
                 "treatment_24m_chunk",
-                "treatment_96m_chunk"
+                "treatment_8m_chunk"
             ]
         },
         "media_upload_speed_optimization_17008": {
@@ -10657,6 +10660,11 @@
             "name": "responsive_web_media_upload_appendmulti_target_wire_send_time_ms",
             "type": "number",
             "defaultValue": 30000.0
+        },
+        "responsive_web_media_upload_appendmulti_max_concurrent_requests": {
+            "name": "responsive_web_media_upload_appendmulti_max_concurrent_requests",
+            "type": "number",
+            "defaultValue": 1
         },
         "responsive_web_media_upload_appendmulti_pre_read_blob": {
             "name": "responsive_web_media_upload_appendmulti_pre_read_blob",
