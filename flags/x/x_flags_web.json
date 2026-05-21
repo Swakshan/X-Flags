@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2cd37838dfb2be251532c66529d6a19a5aeb91f3",
+    "feature_set_token": "31c523b90e1eb631b2d5e9e90ff3353397168829",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1431,6 +1431,9 @@
         },
         "responsive_web_birdwatch_note_request_sources_enabled": {
             "value": true
+        },
+        "responsive_web_birdwatch_note_request_suggestion_enabled": {
+            "value": false
         },
         "responsive_web_birdwatch_note_writing_enabled": {
             "value": false
@@ -8730,6 +8733,16 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "profile_page_upsells_swapper_android_18566": {
+            "name": "profile_page_upsells_swapper_android_18566",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment_a",
+                "treatment_b",
+                "treatment_c"
+            ]
+        },
         "profile_sorting_global_premium_18234": {
             "name": "profile_sorting_global_premium_18234",
             "type": "experiment",
@@ -9297,7 +9310,8 @@
         },
         "responsive_web_birdwatch_note_request_suggestion_enabled": {
             "name": "responsive_web_birdwatch_note_request_suggestion_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -12897,6 +12911,10 @@
         },
         "subscriptions_new_paywall_enabled": {
             "name": "subscriptions_new_paywall_enabled",
+            "type": "string"
+        },
+        "subscriptions_creator_subscriptions_relationship_polling_enabled": {
+            "name": "subscriptions_creator_subscriptions_relationship_polling_enabled",
             "type": "string"
         },
         "subscriptions_blue_premium_labeling_enabled": {
@@ -16810,6 +16828,14 @@
         },
         "xchat_ckey_recovery_enabled": {
             "name": "xchat_ckey_recovery_enabled",
+            "type": "string"
+        },
+        "xchat_unread_mismatch_scribing_enabled": {
+            "name": "xchat_unread_mismatch_scribing_enabled",
+            "type": "string"
+        },
+        "xchat_message_composer_v2": {
+            "name": "xchat_message_composer_v2",
             "type": "string"
         },
         "xprofile_editing_enabled": {
