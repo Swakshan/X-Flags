@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "f7c57339293207539278fc657671d4e8fc52d9d7",
+    "feature_set_token": "2cd37838dfb2be251532c66529d6a19a5aeb91f3",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -5809,6 +5809,10 @@
             "name": "content_disclosure_grok_signature_detection",
             "type": "string"
         },
+        "content_disclosure_ai_generated_grok_signature_detection_enabled": {
+            "name": "content_disclosure_ai_generated_grok_signature_detection_enabled",
+            "type": "string"
+        },
         "creator_studio_nav_enabled": {
             "name": "creator_studio_nav_enabled",
             "type": "boolean",
@@ -7955,7 +7959,7 @@
             "enumeration_values": [
                 "control",
                 "treatment_24m_chunk",
-                "treatment_96m_chunk"
+                "treatment_8m_chunk"
             ]
         },
         "media_upload_speed_optimization_17008": {
@@ -8378,6 +8382,10 @@
         },
         "payments_scheduled_payments_enabled": {
             "name": "payments_scheduled_payments_enabled",
+            "type": "string"
+        },
+        "payments_analytics_enabled": {
+            "name": "payments_analytics_enabled",
             "type": "string"
         },
         "payments_assets_activate_card_dark_video_url": {
@@ -12607,10 +12615,7 @@
         "ssp_who_to_follow_web_18040": {
             "name": "ssp_who_to_follow_web_18040",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "ssp"
-            ]
+            "enumeration_values": []
         },
         "standardized_nudges_misinfo": {
             "name": "standardized_nudges_misinfo",
