@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "31c523b90e1eb631b2d5e9e90ff3353397168829",
+    "feature_set_token": "ce0e6c7d5c69aa7eecebc43123e1a33286ddb0db",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -4134,7 +4134,7 @@
             "value": "9223372036854775807"
         },
         "xchat_repair_groups_after_passcode_reset": {
-            "value": false
+            "value": true
         },
         "xchat_resolve_unencrypted_media_locally": {
             "value": true
@@ -16814,7 +16814,7 @@
         "xchat_repair_groups_after_passcode_reset": {
             "name": "xchat_repair_groups_after_passcode_reset",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_dm_media_upload_workmanager_enabled": {
             "name": "xchat_dm_media_upload_workmanager_enabled",
@@ -16836,6 +16836,10 @@
         },
         "xchat_message_composer_v2": {
             "name": "xchat_message_composer_v2",
+            "type": "string"
+        },
+        "xchat_enable_message_request_ui_v3": {
+            "name": "xchat_enable_message_request_ui_v3",
             "type": "string"
         },
         "xprofile_editing_enabled": {
