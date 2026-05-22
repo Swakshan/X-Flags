@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ce0e6c7d5c69aa7eecebc43123e1a33286ddb0db",
+    "feature_set_token": "3d53cd9b00a294aeedce0866c02b26ac7912cdfa",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2396,6 +2396,9 @@
             "value": true
         },
         "responsive_web_twitter_article_seed_tweet_enabled": {
+            "value": true
+        },
+        "responsive_web_twitter_article_table_enabled": {
             "value": true
         },
         "responsive_web_twitter_article_title_limit": {
@@ -11274,6 +11277,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_twitter_article_table_enabled": {
+            "name": "responsive_web_twitter_article_table_enabled",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "responsive_web_twitter_blue_subscriptions_disabled": {
             "name": "responsive_web_twitter_blue_subscriptions_disabled",
             "type": "boolean",
@@ -15639,7 +15647,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "holdback"
             ]
         },
         "vo_upsell_enabled": {
