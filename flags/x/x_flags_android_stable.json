@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "7addbb6ad9267a34e2075a9204f5594dab918aa6",
+        "feature_set_token": "9060746cde454c38634339389ad8787c3b81a681",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1418,6 +1418,15 @@
             },
             "android_profile_modules_fetch_enabled": {
                 "value": false
+            },
+            "android_profile_upgrade_upsell_dismiss_for_seconds": {
+                "value": 604800.0
+            },
+            "android_profile_upgrade_upsell_reappear_after_seconds": {
+                "value": 604800.0
+            },
+            "android_profile_upgrade_upsell_show_for_seconds": {
+                "value": 604800.0
             },
             "android_profile_visitor_upsell_dismiss_for_seconds": {
                 "value": 1209600.0
@@ -5672,6 +5681,12 @@
             "withhold_priority_mr_channels_new_user_days": {
                 "value": 0.0
             },
+            "x_android_apollo_graphql_accept_header": {
+                "value": "application/json"
+            },
+            "x_android_apollo_graphql_accept_header_override": {
+                "value": true
+            },
             "x_android_jetfuel_creator_studio_native_enabled": {
                 "value": false
             },
@@ -5892,7 +5907,7 @@
                 "value": 9.223372036854776e+18
             },
             "xchat_repair_groups_after_passcode_reset": {
-                "value": false
+                "value": true
             },
             "xchat_sample_observation_queries": {
                 "value": 500.0
@@ -6111,6 +6126,7 @@
         "android_increase_priority_magic_recs_channel_10923",
         "android_static_lo_push_badging_15710",
         "android_enable_dedup_skip_adjacent_to_ads_18354",
+        "profile_page_upsells_swapper_android_18566",
         "android_prefetch_promoted_content_18127",
         "vqv_client_events_short_videos_17472",
         "project_jiminy_humanization_nudge_android_11630",
@@ -6213,5 +6229,9 @@
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "fecc27df7ace9069aca8deaeb353984a8b2fd59a",
+        "experiments": "fecc27df7ace9069aca8deaeb353984a8b2fd59a"
+    }
 }
