@@ -46,6 +46,10 @@ def processX(data:DATA,flagFileName:str):
             sts = True
 
         elif platform == Platform.ANDROID:
+            if "::" in down_link:
+                baseFileId = down_link.split("::")[0]
+                data.link = f"https://pixeldrain.com/u/{baseFileId}"
+                
             downloadAndroid(data)
 
             s = unzipper(data)
