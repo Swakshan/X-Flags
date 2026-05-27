@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0d51bbe0c1dbe5a9993c41d07bb546bfe40f2357",
+    "feature_set_token": "7f522a8b6070cdefa6427e2730d9800815e6e07e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2048,13 +2048,13 @@
             "value": true
         },
         "responsive_web_media_upload_appendmulti_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_media_upload_appendmulti_max_concurrent_requests": {
-            "value": 1
+            "value": 4
         },
         "responsive_web_media_upload_appendmulti_max_request_bytes": {
-            "value": 100663296
+            "value": 25165824
         },
         "responsive_web_media_upload_appendmulti_max_segment_bytes": {
             "value": 8388608
@@ -2070,6 +2070,9 @@
         },
         "responsive_web_media_upload_appendmulti_target_wire_send_time_ms": {
             "value": 30000.0
+        },
+        "responsive_web_media_upload_host": {
+            "value": "upload.x.com"
         },
         "responsive_web_media_upload_limit_2g": {
             "value": 250
@@ -4234,9 +4237,6 @@
         },
         "xstudio_rweb_live_studio_enabled": {
             "value": false
-        },
-        "responsive_web_media_upload_host": {
-            "value": "upload.x.com"
         }
     },
     "debug": {
@@ -4557,6 +4557,14 @@
         "ads_spacing_client_fallback_top_down_enabled": {
             "name": "ads_spacing_client_fallback_top_down_enabled",
             "type": "string"
+        },
+        "appendmulti_with_h3_18622": {
+            "name": "appendmulti_with_h3_18622",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "fastly_h3_24_mb"
+            ]
         },
         "arkose_challenge_open_app_dev": {
             "name": "arkose_challenge_open_app_dev",
@@ -7976,8 +7984,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment_24m_chunk",
-                "treatment_8m_chunk"
+                "treatment_96_chunk"
             ]
         },
         "media_upload_speed_optimization_17008": {
@@ -8737,9 +8744,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment_a",
-                "treatment_b",
-                "treatment_c"
+                "holdback"
             ]
         },
         "profile_sorting_global_premium_18234": {
@@ -10652,15 +10657,20 @@
             "type": "number",
             "defaultValue": 6
         },
+        "responsive_web_media_upload_host": {
+            "name": "responsive_web_media_upload_host",
+            "type": "string",
+            "defaultValue": "upload.x.com"
+        },
         "responsive_web_media_upload_appendmulti_enabled": {
             "name": "responsive_web_media_upload_appendmulti_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_media_upload_appendmulti_max_request_bytes": {
             "name": "responsive_web_media_upload_appendmulti_max_request_bytes",
             "type": "number",
-            "defaultValue": 100663296
+            "defaultValue": 25165824
         },
         "responsive_web_media_upload_appendmulti_max_segment_bytes": {
             "name": "responsive_web_media_upload_appendmulti_max_segment_bytes",
@@ -10685,7 +10695,7 @@
         "responsive_web_media_upload_appendmulti_max_concurrent_requests": {
             "name": "responsive_web_media_upload_appendmulti_max_concurrent_requests",
             "type": "number",
-            "defaultValue": 1
+            "defaultValue": 4
         },
         "responsive_web_media_upload_appendmulti_pre_read_blob": {
             "name": "responsive_web_media_upload_appendmulti_pre_read_blob",
@@ -13008,6 +13018,10 @@
         },
         "subscriptions_feature_1008": {
             "name": "subscriptions_feature_1008",
+            "type": "string"
+        },
+        "subscriptions_feature_1008_sunset": {
+            "name": "subscriptions_feature_1008_sunset",
             "type": "string"
         },
         "subscriptions_feature_1013": {
