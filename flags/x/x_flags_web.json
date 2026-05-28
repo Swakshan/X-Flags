@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "57d997eaf47ed12f7f56ba1ca8faa60c24014db0",
+    "feature_set_token": "c9ac9ee1f7b1ca5eaadb18010612c8ab32affa9e",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3382,7 +3382,7 @@
             "value": "analytics_popup"
         },
         "subscriptions_upsells_post_limit_toast": {
-            "value": false
+            "value": true
         },
         "subscriptions_upsells_premium_home_nav": {
             "value": "default"
@@ -8571,14 +8571,6 @@
             "enumeration_values": [
                 "control",
                 "holdback"
-            ]
-        },
-        "premium_upsell_post_creation_rate_limit_18594": {
-            "name": "premium_upsell_post_creation_rate_limit_18594",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
             ]
         },
         "premium_webview_paywall_offer_video_url": {
@@ -14220,7 +14212,7 @@
         "subscriptions_upsells_post_limit_toast": {
             "name": "subscriptions_upsells_post_limit_toast",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_upsells_vo_premium_business_rebranding_variant": {
             "name": "subscriptions_upsells_vo_premium_business_rebranding_variant",
@@ -14381,6 +14373,10 @@
         },
         "super_follow_ios_stripe_payments": {
             "name": "super_follow_ios_stripe_payments",
+            "type": "string"
+        },
+        "super_follow_android_enabled": {
+            "name": "super_follow_android_enabled",
             "type": "string"
         },
         "super_follow_onboarding_granular_pricing_enabled": {
@@ -16869,6 +16865,14 @@
         },
         "xchat_enable_message_request_ui_v3": {
             "name": "xchat_enable_message_request_ui_v3",
+            "type": "string"
+        },
+        "xchat_max_message_plaintext_length_bytes": {
+            "name": "xchat_max_message_plaintext_length_bytes",
+            "type": "string"
+        },
+        "xchat_send_read_events_via_graphql": {
+            "name": "xchat_send_read_events_via_graphql",
             "type": "string"
         },
         "xprofile_editing_enabled": {
