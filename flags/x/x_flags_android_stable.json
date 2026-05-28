@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "8f03a3df8a5c7e3302733f1f27162d68c4a7e4cb",
+        "feature_set_token": "0c10abac4c8988bdf0c543c4535f989db195eb55",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1447,6 +1447,9 @@
                 "value": false
             },
             "android_quick_promote_button_label_update_enabled": {
+                "value": false
+            },
+            "android_quick_promote_native_flow_enabled": {
                 "value": false
             },
             "android_quick_promote_nux_type": {
@@ -4786,6 +4789,9 @@
             "subscriptions_feature_1008": {
                 "value": true
             },
+            "subscriptions_feature_1008_sunset": {
+                "value": true
+            },
             "subscriptions_feature_1009": {
                 "value": true
             },
@@ -4913,10 +4919,10 @@
                 "value": true
             },
             "subscriptions_upsells_get_verified_profile_card": {
-                "value": false
+                "value": true
             },
             "subscriptions_upsells_get_verified_profile_card_variant": {
-                "value": ""
+                "value": "variant_a"
             },
             "subscriptions_upsells_get_verified_profile_fatigue_enabled": {
                 "value": false
@@ -4925,7 +4931,7 @@
                 "value": 2.0
             },
             "subscriptions_upsells_get_verified_profile_rotation_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_upsells_home_nav_migration_enabled": {
                 "value": false
@@ -4973,6 +4979,9 @@
                 "value": true
             },
             "subscriptions_verified_to_premium_enabled": {
+                "value": false
+            },
+            "super_follow_android_enabled": {
                 "value": false
             },
             "super_follow_android_web_subscription_enabled": {
@@ -5756,6 +5765,9 @@
             "x_lite_notifications_android_enabled": {
                 "value": false
             },
+            "x_lite_spaces_android_emoji_reactions_enabled": {
+                "value": false
+            },
             "x_lite_spaces_android_speaking_enabled": {
                 "value": false
             },
@@ -6092,6 +6104,7 @@
         "media_selector_ordered_numbers_14598",
         "immersive_auto_play_next_16804",
         "x_lite_in_tfa_new_users_au_ca_in_nz_tr_18504",
+        "subscriptions_android_cancel_flow_18626",
         "randomized_ip_0_ios_andriod_15093",
         "notifications_incremental_holdback_2023h1_14753",
         "mr_override_notifs_nslots_relevancy_decay_android_12636",
@@ -6129,9 +6142,9 @@
         "mr_client_init_lo_static_push_14979",
         "good_click_reactivity_all_users_15540",
         "grok_auto_translate_worldwide_holdback_18413",
+        "x_lite_in_tfa_existing_users_id_v2_18579",
         "personalization_holdback_2022_13469",
         "immersive_media_viewer_android_16367",
-        "x_lite_in_tfa_existing_users_id_18525",
         "mr_tweet_media_on_push_android_9818",
         "ads_in_tweet_conversation_m2_contrasts_13063",
         "automated_accounts_label_12626",
@@ -6163,6 +6176,7 @@
         "ios_client_deduping_skip_adjacent_to_ads_18370",
         "android_o_clear_notifications_on_ntab_impression_8473",
         "android_preloaded_notifications_12303",
+        "subscriptions_android_cancel_churn_offer_18625",
         "project_friday_brazil_turkey_11604",
         "android_device_follow_tweet_layout_notifications_14569",
         "tweet_card_organic_aggregatable_notifications_9483",
@@ -6256,9 +6270,5 @@
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c",
-        "experiments": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c"
-    }
+    "supports_accessibility": []
 }
