@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c9ac9ee1f7b1ca5eaadb18010612c8ab32affa9e",
+    "feature_set_token": "64cd614261da1b19c2b45c77710e895f098d6619",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1433,7 +1433,7 @@
             "value": true
         },
         "responsive_web_birdwatch_note_request_suggestion_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_birdwatch_note_writing_enabled": {
             "value": false
@@ -3939,6 +3939,12 @@
         "web_video_transcribed_captions_enabled": {
             "value": true
         },
+        "x_android_apollo_graphql_accept_header": {
+            "value": "application/json"
+        },
+        "x_android_apollo_graphql_accept_header_override": {
+            "value": true
+        },
         "x_jetfuel_enable_test_cluster": {
             "value": false
         },
@@ -4126,6 +4132,9 @@
         },
         "xchat_media_resolve_threshold_slow_network_bytes_str": {
             "value": "10485760"
+        },
+        "xchat_message_composer_v2": {
+            "value": false
         },
         "xchat_observe_inbox_categories_separately": {
             "value": true
@@ -9307,7 +9316,7 @@
         "responsive_web_birdwatch_note_request_suggestion_enabled": {
             "name": "responsive_web_birdwatch_note_request_suggestion_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_card_conversion_hoisted": {
             "name": "responsive_web_card_conversion_hoisted",
@@ -14214,6 +14223,10 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "subscriptions_upsells_drawer_discount_enabled": {
+            "name": "subscriptions_upsells_drawer_discount_enabled",
+            "type": "string"
+        },
         "subscriptions_upsells_vo_premium_business_rebranding_variant": {
             "name": "subscriptions_upsells_vo_premium_business_rebranding_variant",
             "type": "string",
@@ -16284,6 +16297,16 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "x_android_apollo_graphql_accept_header": {
+            "name": "x_android_apollo_graphql_accept_header",
+            "type": "string",
+            "defaultValue": "application/json"
+        },
+        "x_android_apollo_graphql_accept_header_override": {
+            "name": "x_android_apollo_graphql_accept_header_override",
+            "type": "boolean",
+            "defaultValue": true
+        },
         "x_jetfuel_enable_test_cluster": {
             "name": "x_jetfuel_enable_test_cluster",
             "type": "boolean",
@@ -16329,6 +16352,15 @@
         "x_jetfuel_composer_preview_enabled": {
             "name": "x_jetfuel_composer_preview_enabled",
             "type": "string"
+        },
+        "x_lite_in_tfa_existing_users_ph_18617": {
+            "name": "x_lite_in_tfa_existing_users_ph_18617",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment_graphql_fix",
+                "treatment"
+            ]
         },
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
@@ -16861,7 +16893,8 @@
         },
         "xchat_message_composer_v2": {
             "name": "xchat_message_composer_v2",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_enable_message_request_ui_v3": {
             "name": "xchat_enable_message_request_ui_v3",
