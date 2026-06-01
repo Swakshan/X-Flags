@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "8e9c9c3e7e4a9a7a4c93d5fb6a2184c2e9cb56dc",
+        "feature_set_token": "45b1859b9546599913b2888e1c7e877a9479589a",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -25,6 +25,9 @@
             },
             "android_ad_formats_skip_zero_height_impressions": {
                 "value": true
+            },
+            "android_ad_formats_unified_card_post_text_max_lines": {
+                "value": 0.0
             },
             "android_ad_formats_xlite_ad_brand_safety_mode": {
                 "value": "off"
@@ -54,10 +57,10 @@
                 "value": false
             },
             "android_broadcast_live_progress_bar_enabled": {
-                "value": true
+                "value": false
             },
             "android_broadcast_replay_upgrade_enabled": {
-                "value": true
+                "value": false
             },
             "android_cashtags_composer_typeahead_enabled": {
                 "value": false
@@ -153,7 +156,7 @@
                 "value": false
             },
             "android_tweet_promote_button_booster_status_label_enabled": {
-                "value": false
+                "value": true
             },
             "android_video_transcode_media_h265_transcoder_codec_enabled": {
                 "value": true
@@ -1018,7 +1021,7 @@
                 "value": 604800.0
             },
             "x_lite_quick_promote_enabled": {
-                "value": false
+                "value": true
             },
             "x_lite_quick_promote_google_pay_enabled": {
                 "value": false
@@ -1090,6 +1093,9 @@
                 "value": false
             },
             "xchat_enable_franking_report": {
+                "value": false
+            },
+            "xchat_enable_message_request_ui_v3": {
                 "value": false
             },
             "xchat_enable_message_requests": {
@@ -1322,5 +1328,9 @@
         "spaces_holdback_11943",
         "customer_retention_notifs_2021_holdback_11678"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
+        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
+    }
 }
