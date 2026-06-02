@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "64cd614261da1b19c2b45c77710e895f098d6619",
+    "feature_set_token": "0310dadb4ead067b362e536904e0cc5b73dbf0fb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1143,6 +1143,9 @@
         },
         "payments_transaction_search_enabled": {
             "value": true
+        },
+        "payments_web_external_app_enabled": {
+            "value": false
         },
         "people_search_interests_filter_enabled": {
             "value": false
@@ -8438,6 +8441,11 @@
             "name": "payments_tracing_reports_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "payments_web_external_app_enabled": {
+            "name": "payments_web_external_app_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "paywall_on_web_app_open_backend_holdback_18421": {
             "name": "paywall_on_web_app_open_backend_holdback_18421",
