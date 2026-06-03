@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0310dadb4ead067b362e536904e0cc5b73dbf0fb",
+    "feature_set_token": "48309f8f5f379885fda1a5a5007fa4318498b888",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2741,7 +2741,7 @@
             "value": true
         },
         "rweb_ssp_ads_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_ssp_ads_refresh_enabled": {
             "value": true
@@ -12064,7 +12064,7 @@
         "rweb_ssp_ads_enabled": {
             "name": "rweb_ssp_ads_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_ssp_ads_refresh_enabled": {
             "name": "rweb_ssp_ads_refresh_enabled",
@@ -12649,11 +12649,6 @@
         "spaces_video_local_thumbnail_enabled": {
             "name": "spaces_video_local_thumbnail_enabled",
             "type": "string"
-        },
-        "ssp_who_to_follow_web_18040": {
-            "name": "ssp_who_to_follow_web_18040",
-            "type": "experiment",
-            "enumeration_values": []
         },
         "standardized_nudges_misinfo": {
             "name": "standardized_nudges_misinfo",
@@ -15647,6 +15642,10 @@
         },
         "video_attribution_source_tweet_scribe_enabled": {
             "name": "video_attribution_source_tweet_scribe_enabled",
+            "type": "string"
+        },
+        "video_attribution_quoted_source_tweet_scribe_enabled": {
+            "name": "video_attribution_quoted_source_tweet_scribe_enabled",
             "type": "string"
         },
         "video_tagging_13525": {
