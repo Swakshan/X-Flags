@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "48309f8f5f379885fda1a5a5007fa4318498b888",
+    "feature_set_token": "75751723164a252f736ff31a3ca115cc487018b4",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -4113,7 +4113,7 @@
             "value": 50
         },
         "xchat_markdown_rendering_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_max_attachments_per_message": {
             "value": 1
@@ -4206,7 +4206,7 @@
             "value": "0"
         },
         "xchat_unread_mismatch_scribing_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_user_event_limit": {
             "value": 500
@@ -13768,6 +13768,10 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "subscriptions_premium_hub_live_studio_enabled": {
+            "name": "subscriptions_premium_hub_live_studio_enabled",
+            "type": "string"
+        },
         "subscriptions_premium_tiers_marketing_page_enabled": {
             "name": "subscriptions_premium_tiers_marketing_page_enabled",
             "type": "string"
@@ -16360,15 +16364,6 @@
             "name": "x_jetfuel_composer_preview_enabled",
             "type": "string"
         },
-        "x_lite_in_tfa_existing_users_ph_18617": {
-            "name": "x_lite_in_tfa_existing_users_ph_18617",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment_graphql_fix",
-                "treatment"
-            ]
-        },
         "xchat_max_group_size": {
             "name": "xchat_max_group_size",
             "type": "number",
@@ -16832,7 +16827,7 @@
         "xchat_markdown_rendering_enabled": {
             "name": "xchat_markdown_rendering_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_fetch_messages_from_push_handler": {
             "name": "xchat_fetch_messages_from_push_handler",
@@ -16896,7 +16891,7 @@
         "xchat_unread_mismatch_scribing_enabled": {
             "name": "xchat_unread_mismatch_scribing_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_message_composer_v2": {
             "name": "xchat_message_composer_v2",
@@ -16917,6 +16912,10 @@
         },
         "xchat_url_preview_v2_enabled": {
             "name": "xchat_url_preview_v2_enabled",
+            "type": "string"
+        },
+        "xchat_plaintext_grok_enabled": {
+            "name": "xchat_plaintext_grok_enabled",
             "type": "string"
         },
         "xprofile_editing_enabled": {
