@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "210734edf3846122f99599c0381504281333c0d1",
+        "feature_set_token": "157c50d6ece042c7b6d00c78d6f97ccdd28db00c",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -1786,7 +1786,7 @@
                 "value": false
             },
             "android_x_lite_durable_post_actions_enabled": {
-                "value": true
+                "value": false
             },
             "android_xiaomi_reflection_on_notification_object": {
                 "value": true
@@ -4772,7 +4772,7 @@
                 "value": true
             },
             "subscriptions_cancel_flow_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_churn_prevention_offers": {
                 "value": ""
@@ -4933,8 +4933,11 @@
             "subscriptions_upsells_api_enabled": {
                 "value": false
             },
+            "subscriptions_upsells_articles_post_composer_promo_variant_enabled": {
+                "value": false
+            },
             "subscriptions_upsells_drawer_discount_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_upsells_get_verified_profile": {
                 "value": true
@@ -5783,6 +5786,9 @@
             "x_lite_in_tfa_premium_plus_enabled": {
                 "value": true
             },
+            "x_lite_infra_home_jtt_clear_cache_enabled": {
+                "value": false
+            },
             "x_lite_live_avatar_ring_enabled": {
                 "value": false
             },
@@ -5943,7 +5949,7 @@
                 "value": 50.0
             },
             "xchat_markdown_rendering_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_max_attachments_per_message": {
                 "value": 1.0
@@ -5976,6 +5982,9 @@
                 "value": false
             },
             "xchat_pay_button_enabled": {
+                "value": false
+            },
+            "xchat_plaintext_grok_enabled": {
                 "value": false
             },
             "xchat_ratchet_group_id_threshold": {
@@ -6018,7 +6027,7 @@
                 "value": true
             },
             "xchat_unread_mismatch_scribing_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_url_preview_v2_enabled": {
                 "value": true
@@ -6195,7 +6204,6 @@
         "good_click_reactivity_light_users_15539",
         "android_promoted_badge_placement_v3_12532",
         "soft_interventions_engagement_nudge_m1_11180",
-        "ios_video_attribution_source_tweet_scribe_18620",
         "current_stack_follow_experiment_ios_14713",
         "mr_client_init_lo_static_push_14979",
         "good_click_reactivity_all_users_15540",
@@ -6222,7 +6230,6 @@
         "android_database_flushing_recreate_dbs_15390",
         "android_increase_priority_magic_recs_channel_10923",
         "android_static_lo_push_badging_15710",
-        "android_enable_dedup_skip_adjacent_to_ads_18354",
         "profile_page_upsells_swapper_android_18566",
         "android_prefetch_promoted_content_18127",
         "vqv_client_events_short_videos_17472",
@@ -6330,5 +6337,9 @@
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c",
+        "experiments": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c"
+    }
 }
