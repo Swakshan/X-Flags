@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "395c6f7f08e334092fc9730732c21984c1df6b75",
+        "feature_set_token": "d72d2f2309797f573ca139d0d6ef58ed4dd395ac",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -157,6 +157,9 @@
             },
             "android_tweet_promote_button_booster_status_label_enabled": {
                 "value": true
+            },
+            "android_video_reaction_attribution_enabled": {
+                "value": false
             },
             "android_video_transcode_media_h265_transcoder_codec_enabled": {
                 "value": true
@@ -543,6 +546,18 @@
             "growth_acquisition_redirect_to_login": {
                 "value": ""
             },
+            "home_timeline_navigation_clear_cache_after_manual_jtt_enabled": {
+                "value": true
+            },
+            "home_timeline_navigation_clear_cache_autoload_bottom_after_manual_jtt_enabled": {
+                "value": true
+            },
+            "home_timeline_navigation_clear_cache_min_entries": {
+                "value": 10.0
+            },
+            "home_timeline_navigation_min_background_minutes": {
+                "value": 0.0
+            },
             "home_timeline_scroll_framerate_enabled": {
                 "value": true
             },
@@ -760,7 +775,7 @@
                 "value": true
             },
             "reply_dislike_android_enabled": {
-                "value": false
+                "value": true
             },
             "room_broadcast_status_polling_interval_ms": {
                 "value": 2000.0
@@ -824,6 +839,9 @@
             },
             "subscriptions_upsells_analytics_profile_enabled": {
                 "value": true
+            },
+            "subscriptions_upsells_articles_post_composer_promo_variant_enabled": {
+                "value": false
             },
             "subscriptions_upsells_drawer_discount_enabled": {
                 "value": true
@@ -950,6 +968,9 @@
             },
             "x_lite_composer_sync_draft_media_enabled": {
                 "value": false
+            },
+            "x_lite_in_app_update_enabled": {
+                "value": true
             },
             "x_lite_in_tfa_enabled": {
                 "value": false
@@ -1135,7 +1156,7 @@
                 "value": false
             },
             "xchat_fetch_messages_from_push_handler": {
-                "value": false
+                "value": true
             },
             "xchat_forward_media_max_conversations": {
                 "value": 5.0
@@ -1325,7 +1346,6 @@
         "ranked_following_extend_duration_17883",
         "mr_global_user_retention_holdback_10725",
         "ad_spacing_enforcement_timeline_impact_17825",
-        "ios_video_attribution_source_tweet_scribe_18620",
         "grok_auto_translate_worldwide_holdback_18413",
         "x_lite_in_tfa_existing_users_id_v2_18579",
         "spaces_multi_tab_14033",
@@ -1337,15 +1357,12 @@
         "home_spaces_holdback_12863",
         "visitor_get_verified_profile_card_upsell_test_android_18565",
         "spaces_topic_tab_14162",
+        "android_scroll_to_top_clear_cache_16550",
         "ios_no_ad_dropping_17457",
         "android_scribe_frequent_collect_and_upload_linger_17854",
         "android_vivo_badging_experiment_8942",
         "spaces_holdback_11943",
         "customer_retention_notifs_2021_holdback_11678"
     ],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
-        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
-    }
+    "supports_accessibility": []
 }
