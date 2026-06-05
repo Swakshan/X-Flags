@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "75751723164a252f736ff31a3ca115cc487018b4",
+    "feature_set_token": "351235218d5c991969acd7dbf97c3715cda5aa41",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -4080,7 +4080,7 @@
             "value": "9223372036854775807"
         },
         "xchat_group_admin_settings_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_grpc_chat_page_enabled": {
             "value": false
@@ -4569,14 +4569,6 @@
         "ads_spacing_client_fallback_top_down_enabled": {
             "name": "ads_spacing_client_fallback_top_down_enabled",
             "type": "string"
-        },
-        "appendmulti_with_h3_18622": {
-            "name": "appendmulti_with_h3_18622",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "fastly_h3_24_mb"
-            ]
         },
         "arkose_challenge_open_app_dev": {
             "name": "arkose_challenge_open_app_dev",
@@ -15657,6 +15649,14 @@
             "type": "experiment",
             "enumeration_values": []
         },
+        "video_upload_endpoint_18622": {
+            "name": "video_upload_endpoint_18622",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "cloudflare_v2_endpoint"
+            ]
+        },
         "video_upload_metadata_title_enabled": {
             "name": "video_upload_metadata_title_enabled",
             "type": "boolean",
@@ -16866,7 +16866,7 @@
         "xchat_group_admin_settings_enabled": {
             "name": "xchat_group_admin_settings_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_repair_groups_after_passcode_reset": {
             "name": "xchat_repair_groups_after_passcode_reset",
