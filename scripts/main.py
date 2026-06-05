@@ -8,7 +8,7 @@ from basics import printCmd,printSubCmd
 from compare import compareFlags
 import argparse
 
-VER = "v23.33 : Add support for split download links"
+VER = "v23.35 : Update xchat web cdn link"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)

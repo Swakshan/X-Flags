@@ -112,7 +112,7 @@ def webfeatureSwitches(hash):
 
 
 def xChatWebFeatureSwitches(hash):
-    jsUrl = f"https://chat.x.com/assets/entry-client-{hash}.js"
+    jsUrl = f"https://abs.twimg.com/x-web/xchat/assets/entry-client-{hash}.js"
     
     req = requests.get(jsUrl, headers=hdr)
     res = req.text
