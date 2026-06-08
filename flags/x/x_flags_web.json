@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "351235218d5c991969acd7dbf97c3715cda5aa41",
+    "feature_set_token": "ae85882bd2a05f3afc2117450f39bc39a1684348",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3981,7 +3981,7 @@
             "value": false
         },
         "xchat_ckey_recovery_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_clear_chat_enabled": {
             "value": true
@@ -12936,6 +12936,14 @@
             "name": "subscriptions_churn_prevention_offers",
             "type": "string"
         },
+        "subscriptions_android_paywall_on_app_load_enabled_18693": {
+            "name": "subscriptions_android_paywall_on_app_load_enabled_18693",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "subscriptions_blue_premium_labeling_enabled": {
             "name": "subscriptions_blue_premium_labeling_enabled",
             "type": "boolean",
@@ -14228,6 +14236,26 @@
         },
         "subscriptions_upsells_drawer_discount_enabled": {
             "name": "subscriptions_upsells_drawer_discount_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_get_verified_drawer_card_variant": {
+            "name": "subscriptions_upsells_get_verified_drawer_card_variant",
+            "type": "string"
+        },
+        "subscriptions_upsells_get_verified_drawer_pill_variant": {
+            "name": "subscriptions_upsells_get_verified_drawer_pill_variant",
+            "type": "string"
+        },
+        "subscriptions_upsells_get_verified_profile_discount_own_enabled": {
+            "name": "subscriptions_upsells_get_verified_profile_discount_own_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_get_verified_profile_discount_visitor_enabled": {
+            "name": "subscriptions_upsells_get_verified_profile_discount_visitor_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_get_verified_profile_discount_percent_off": {
+            "name": "subscriptions_upsells_get_verified_profile_discount_percent_off",
             "type": "string"
         },
         "subscriptions_upsells_vo_premium_business_rebranding_variant": {
@@ -16890,7 +16918,7 @@
         "xchat_ckey_recovery_enabled": {
             "name": "xchat_ckey_recovery_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_unread_mismatch_scribing_enabled": {
             "name": "xchat_unread_mismatch_scribing_enabled",
