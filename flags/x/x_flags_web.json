@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "ae85882bd2a05f3afc2117450f39bc39a1684348",
+    "feature_set_token": "a18b1f78e0f3089f70aa6952edbb569738cf126c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1115,7 +1115,7 @@
             "value": false
         },
         "payments_chat_support_for_limits_enabled": {
-            "value": false
+            "value": true
         },
         "payments_cheques_deposits_enabled": {
             "value": true
@@ -2218,6 +2218,12 @@
         "responsive_web_qp_two_screens_enabled": {
             "value": true
         },
+        "responsive_web_quick_promote_cta_enabled": {
+            "value": false
+        },
+        "responsive_web_quick_promote_high_budget_tier_enabled": {
+            "value": false
+        },
         "responsive_web_redux_use_fragment_enabled": {
             "value": false
         },
@@ -2528,7 +2534,7 @@
             "value": true
         },
         "rweb_analytics_control_v2_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_analytics_export_data_content_enabled": {
             "value": true
@@ -8365,7 +8371,7 @@
         "payments_chat_support_for_limits_enabled": {
             "name": "payments_chat_support_for_limits_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_add_security_key_enabled": {
             "name": "payments_add_security_key_enabled",
@@ -10928,6 +10934,16 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_quick_promote_cta_enabled": {
+            "name": "responsive_web_quick_promote_cta_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "responsive_web_quick_promote_high_budget_tier_enabled": {
+            "name": "responsive_web_quick_promote_high_budget_tier_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_redux_use_fragment_enabled": {
             "name": "responsive_web_redux_use_fragment_enabled",
             "type": "boolean",
@@ -11695,7 +11711,7 @@
         "rweb_analytics_control_v2_enabled": {
             "name": "rweb_analytics_control_v2_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_analytics_active_followers_enabled": {
             "name": "rweb_analytics_active_followers_enabled",
@@ -15674,6 +15690,10 @@
         },
         "video_attribution_quoted_source_tweet_scribe_enabled": {
             "name": "video_attribution_quoted_source_tweet_scribe_enabled",
+            "type": "string"
+        },
+        "video_attribution_author_id_scribe_enabled": {
+            "name": "video_attribution_author_id_scribe_enabled",
             "type": "string"
         },
         "video_tagging_13525": {
