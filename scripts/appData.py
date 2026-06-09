@@ -111,6 +111,27 @@ def webfeatureSwitches(hash):
     return {"feature_set_token":token,"config":flags,"debug":manifestFlags['debug']}
 
 
+def xChatOverloadedWebFlags():
+    try:
+        baseLink = "https://chat.x.com"
+        req = requests.get(baseLink, headers=hdr)
+        res = req.text
+        
+        startKey = "window.__INITIAL_DATA__ = "
+        endKey = "}};</"
+        
+        start = res.find(startKey)+len(startKey)
+        end = res.find(endKey,start)+2
+        
+        overloadedFlags = json.loads(res[start:end])
+        
+        if "features" in overloadedFlags:
+            return overloadedFlags['features']
+    except Exception as e:
+        print("FAILED: failed to fetch overloaded xchat flags")
+        print(e)
+    return {}
+
 def xChatWebFeatureSwitches(hash):
     jsUrl = f"https://abs.twimg.com/x-web/xchat/assets/entry-client-{hash}.js"
     
@@ -130,6 +151,12 @@ def xChatWebFeatureSwitches(hash):
     res = res[res.find("{"):res.find(eHint)+len(eHint)]
     
     flags = formatWebFlags(res)
-    return {"feature_set_token":token,"config":flags,"debug":{}}
+    overloadedFlags = xChatOverloadedWebFlags()
     
+    for ovrFlag in overloadedFlags:
+        flags[ovrFlag] = overloadedFlags[ovrFlag]
+        
+    return {"feature_set_token":token,"config":flags,"debug":{}}
+
+
     
