@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a4c6f9777195fb6f185b90d9badb64a63a9eaddc",
+    "feature_set_token": "280b7103af091e7ae2e4a8e1515947c70a6888eb",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2587,9 +2587,6 @@
         "rweb_cashtags_enabled": {
             "value": true
         },
-        "rweb_cashtags_trade_deeplink_enabled": {
-            "value": false
-        },
         "rweb_client_transaction_id_enabled": {
             "value": false
         },
@@ -3256,7 +3253,7 @@
             "value": true
         },
         "subscriptions_premium_hub_boost_block_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_premium_hub_insights_block_enabled": {
             "value": true
@@ -11751,8 +11748,7 @@
         },
         "rweb_cashtags_trade_deeplink_enabled": {
             "name": "rweb_cashtags_trade_deeplink_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_client_transaction_id_enabled": {
             "name": "rweb_client_transaction_id_enabled",
@@ -13797,7 +13793,7 @@
         "subscriptions_premium_hub_boost_block_enabled": {
             "name": "subscriptions_premium_hub_boost_block_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_premium_hub_live_studio_enabled": {
             "name": "subscriptions_premium_hub_live_studio_enabled",
