@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "cf1b29af57c1f73b189632b4c011920373c5caab",
+        "feature_set_token": "42fcc7e706bc6f552020e55350453bbc3df52b19",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -42,6 +42,9 @@
                 "value": true
             },
             "android_ad_formats_xlite_browser_destination_prefetching_enabled": {
+                "value": false
+            },
+            "android_ad_formats_xlite_dpa_spine_clicks_enabled": {
                 "value": false
             },
             "android_ad_formats_xlite_open_video_viewer_enabled": {
@@ -682,7 +685,7 @@
                 "value": true
             },
             "payments_chat_support_for_limits_enabled": {
-                "value": false
+                "value": true
             },
             "payments_check_deposit_image_client_crop_enabled": {
                 "value": true
@@ -701,6 +704,9 @@
             },
             "payments_forward_with_enabled": {
                 "value": true
+            },
+            "payments_funds_insurance_redesign_enabled": {
+                "value": false
             },
             "payments_half_cover_notices_enabled": {
                 "value": true
@@ -850,7 +856,7 @@
                 "value": true
             },
             "subscriptions_feature_offline_video": {
-                "value": false
+                "value": true
             },
             "subscriptions_gifting_premium_enabled": {
                 "value": false
@@ -868,7 +874,13 @@
                 "value": false
             },
             "subscriptions_upsells_drawer_discount_enabled": {
-                "value": false
+                "value": true
+            },
+            "subscriptions_upsells_get_verified_drawer_card_variant": {
+                "value": ""
+            },
+            "subscriptions_upsells_get_verified_drawer_pill_variant": {
+                "value": ""
             },
             "subscriptions_upsells_get_verified_profile": {
                 "value": true
@@ -878,6 +890,15 @@
             },
             "subscriptions_upsells_get_verified_profile_card_variant": {
                 "value": "variant_a"
+            },
+            "subscriptions_upsells_get_verified_profile_discount_own_enabled": {
+                "value": false
+            },
+            "subscriptions_upsells_get_verified_profile_discount_percent_off": {
+                "value": 0.0
+            },
+            "subscriptions_upsells_get_verified_profile_discount_visitor_enabled": {
+                "value": false
             },
             "subscriptions_upsells_get_verified_profile_rotation_enabled": {
                 "value": true
@@ -1098,6 +1119,9 @@
             "x_lite_quick_promote_nux_enabled": {
                 "value": false
             },
+            "x_lite_quick_promote_premium_paywall_enabled": {
+                "value": false
+            },
             "x_lite_quick_promote_xmoney_for_boost_enabled": {
                 "value": false
             },
@@ -1126,7 +1150,7 @@
                 "value": false
             },
             "xchat_ckey_recovery_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_conversation_event_limit": {
                 "value": 200.0
@@ -1228,7 +1252,7 @@
                 "value": 100.0
             },
             "xchat_max_message_plaintext_length_bytes": {
-                "value": 4096.0
+                "value": 11000.0
             },
             "xchat_max_users_to_fetch_per_request": {
                 "value": 100.0
@@ -1268,9 +1292,6 @@
             },
             "xchat_self_custody_enabled": {
                 "value": false
-            },
-            "xchat_send_read_events_via_graphql": {
-                "value": true
             },
             "xchat_send_signature_protocol_version": {
                 "value": 7.0
@@ -1342,7 +1363,6 @@
         "ios_promoted_force_cta_bar_video_only_18592",
         "customer_retention_overall_holdback_2021_11652",
         "android_media_playback_prefetch_incremental_18376",
-        "x_lite_in_tfa_existing_users_th_18588",
         "notifications_incremental_holdback_2022h2_13461",
         "ios_true_aspect_ratio_photos_on_timelines_18327",
         "x_lite_in_tfa_existing_users_id_v3_18671",
@@ -1364,6 +1384,7 @@
         "home_spaces_holdback_12863",
         "visitor_get_verified_profile_card_upsell_test_android_18565",
         "spaces_topic_tab_14162",
+        "subscriptions_android_paywall_on_app_load_enabled_18693",
         "android_scroll_to_top_clear_cache_16550",
         "ios_no_ad_dropping_17457",
         "android_scribe_frequent_collect_and_upload_linger_17854",
@@ -1372,9 +1393,5 @@
         "spaces_holdback_11943",
         "customer_retention_notifs_2021_holdback_11678"
     ],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c",
-        "experiments": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c"
-    }
+    "supports_accessibility": []
 }
