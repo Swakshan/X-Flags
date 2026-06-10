@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "280b7103af091e7ae2e4a8e1515947c70a6888eb",
+    "feature_set_token": "1859c6649e7e588284706f84526fc73136e6c39c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1356,6 +1356,9 @@
         },
         "responsive_web_alt_text_translations_enabled": {
             "value": true
+        },
+        "responsive_web_android_quick_promote_stripe_elements_enabled": {
+            "value": false
         },
         "responsive_web_api_transition_enabled": {
             "value": true
@@ -3193,7 +3196,7 @@
             "value": true
         },
         "subscriptions_marketing_page_grok_4_web_paywall": {
-            "value": true
+            "value": false
         },
         "subscriptions_marketing_page_include_tax_enabled": {
             "value": true
@@ -9072,6 +9075,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "responsive_web_android_quick_promote_stripe_elements_enabled": {
+            "name": "responsive_web_android_quick_promote_stripe_elements_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_api_transition_enabled": {
             "name": "responsive_web_api_transition_enabled",
             "type": "boolean",
@@ -13424,7 +13432,7 @@
         "subscriptions_marketing_page_grok_4_web_paywall": {
             "name": "subscriptions_marketing_page_grok_4_web_paywall",
             "type": "boolean",
-            "defaultValue": true
+            "defaultValue": false
         },
         "subscriptions_marketing_page_refresh_enabled": {
             "name": "subscriptions_marketing_page_refresh_enabled",
@@ -14273,12 +14281,20 @@
             "name": "subscriptions_upsells_get_verified_drawer_card_variant",
             "type": "string"
         },
+        "subscriptions_upsells_get_verified_drawer_card_position": {
+            "name": "subscriptions_upsells_get_verified_drawer_card_position",
+            "type": "string"
+        },
         "subscriptions_upsells_get_verified_drawer_pill_enabled": {
             "name": "subscriptions_upsells_get_verified_drawer_pill_enabled",
             "type": "string"
         },
         "subscriptions_upsells_get_verified_drawer_pill_variant": {
             "name": "subscriptions_upsells_get_verified_drawer_pill_variant",
+            "type": "string"
+        },
+        "subscriptions_upsells_get_verified_drawer_discount_enabled": {
+            "name": "subscriptions_upsells_get_verified_drawer_discount_enabled",
             "type": "string"
         },
         "subscriptions_upsells_get_verified_profile_discount_own_enabled": {
@@ -16993,6 +17009,10 @@
             "name": "xchat_keypair_recovery_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xchat_media_upload_io_batching_enabled": {
+            "name": "xchat_media_upload_io_batching_enabled",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
