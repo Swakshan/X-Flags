@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a0db4c8222e1e287caf5f7d32515e42aa5b6185a",
+    "feature_set_token": "dd84ad809431e23d9a0be8055aee08cc5e962265",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2591,7 +2591,7 @@
             "value": true
         },
         "rweb_cashtags_composer_attachment_size_customization_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_cashtags_composer_enabled": {
             "value": true
@@ -3233,6 +3233,9 @@
         },
         "subscriptions_offers_dynamic_upsells_enabled": {
             "value": true
+        },
+        "subscriptions_offers_go_for_launch_copy_enabled": {
+            "value": false
         },
         "subscriptions_offers_in_tier_switch_enabled": {
             "value": false
@@ -11789,7 +11792,7 @@
         "rweb_cashtags_composer_attachment_size_customization_enabled": {
             "name": "rweb_cashtags_composer_attachment_size_customization_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_client_transaction_id_enabled": {
             "name": "rweb_client_transaction_id_enabled",
@@ -13700,6 +13703,11 @@
         },
         "subscriptions_offers_paywall_urgent_heading_enabled": {
             "name": "subscriptions_offers_paywall_urgent_heading_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "subscriptions_offers_go_for_launch_copy_enabled": {
+            "name": "subscriptions_offers_go_for_launch_copy_enabled",
             "type": "boolean",
             "defaultValue": false
         },
