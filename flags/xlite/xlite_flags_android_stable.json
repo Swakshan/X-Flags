@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "096695fdc9668e78bdda1e5a33ef6910c18d38c9",
+        "feature_set_token": "5a0e4bf4bd510537a166924d8a98da6a5710c8f9",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -720,6 +720,9 @@
             "payments_funds_insurance_redesign_enabled": {
                 "value": false
             },
+            "payments_funds_insurance_sweep_enabled": {
+                "value": false
+            },
             "payments_half_cover_notices_enabled": {
                 "value": true
             },
@@ -749,6 +752,12 @@
             },
             "payments_shutdown_enabled": {
                 "value": false
+            },
+            "payments_support_grpc_enabled": {
+                "value": false
+            },
+            "payments_support_xchat_sessions_enabled": {
+                "value": true
             },
             "payments_tracing_reports_enabled": {
                 "value": true
@@ -925,7 +934,7 @@
                 "value": true
             },
             "subscriptions_upsells_premium_home_nav": {
-                "value": "premium_upsell_upgrade"
+                "value": ""
             },
             "subscriptions_upsells_premium_percent_off": {
                 "value": 30.0
@@ -949,7 +958,7 @@
                 "value": true
             },
             "thirdparty_boost_enabled": {
-                "value": false
+                "value": true
             },
             "thirdparty_boost_transparency_label_enabled": {
                 "value": false
@@ -1128,6 +1137,9 @@
             "x_lite_quick_promote_boost_side_menu_enabled": {
                 "value": true
             },
+            "x_lite_quick_promote_boost_side_menu_verified_enabled": {
+                "value": false
+            },
             "x_lite_quick_promote_conversation_prompt_interval_seconds": {
                 "value": 604800.0
             },
@@ -1144,7 +1156,7 @@
                 "value": false
             },
             "x_lite_quick_promote_premium_paywall_enabled": {
-                "value": false
+                "value": true
             },
             "x_lite_quick_promote_xmoney_for_boost_enabled": {
                 "value": false
@@ -1286,6 +1298,9 @@
             },
             "xchat_media_resolve_threshold_slow_network_bytes_str": {
                 "value": "10485760"
+            },
+            "xchat_media_upload_io_batching_enabled": {
+                "value": false
             },
             "xchat_message_composer_v2": {
                 "value": false
