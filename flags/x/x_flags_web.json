@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "8af9f78b033d6f7965bb916ca2fed2fb2a62f6a0",
+    "feature_set_token": "cd6c9ff0e1c19d619d473947ff659e84f9c12967",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -3966,6 +3966,9 @@
         "web_video_safari_hlsjs_enabled": {
             "value": true
         },
+        "web_video_teardown_listener_fix_enabled": {
+            "value": false
+        },
         "web_video_transcribed_captions_enabled": {
             "value": true
         },
@@ -4161,7 +4164,7 @@
             "value": 100
         },
         "xchat_max_message_plaintext_length_bytes": {
-            "value": 11000.0
+            "value": "11000"
         },
         "xchat_max_users_to_fetch_per_request": {
             "value": 100
@@ -4296,9 +4299,6 @@
             "value": "https://studio.x.com"
         },
         "xstudio_rweb_live_studio_enabled": {
-            "value": false
-        },
-        "web_video_teardown_listener_fix_enabled": {
             "value": false
         }
     },
@@ -15821,6 +15821,14 @@
             "name": "video_attribution_author_id_scribe_enabled",
             "type": "string"
         },
+        "video_playback_active_player_management_18757": {
+            "name": "video_playback_active_player_management_18757",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "healthy_playback"
+            ]
+        },
         "video_tagging_13525": {
             "name": "video_tagging_13525",
             "type": "experiment",
@@ -16480,6 +16488,11 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "web_video_teardown_listener_fix_enabled": {
+            "name": "web_video_teardown_listener_fix_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "web_video_transcribed_captions_enabled": {
             "name": "web_video_transcribed_captions_enabled",
             "type": "boolean",
@@ -17082,8 +17095,8 @@
         },
         "xchat_max_message_plaintext_length_bytes": {
             "name": "xchat_max_message_plaintext_length_bytes",
-            "type": "number",
-            "defaultValue": 11000.0
+            "type": "string",
+            "defaultValue": "11000"
         },
         "xchat_send_read_events_via_graphql": {
             "name": "xchat_send_read_events_via_graphql",
