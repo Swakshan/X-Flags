@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "6959698077c5c50ccf9c2cb85e34950f11ed1d0a",
+    "feature_set_token": "3e1a175ec27e38a901759cba2f941539e5f19ac7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1125,6 +1125,12 @@
         },
         "payments_forward_with_enabled": {
             "value": true
+        },
+        "payments_funds_insurance_redesign_enabled": {
+            "value": false
+        },
+        "payments_funds_insurance_sweep_enabled": {
+            "value": false
         },
         "payments_half_cover_notices_enabled": {
             "value": true
@@ -8505,6 +8511,16 @@
             "name": "payments_auth_token_enabled",
             "type": "boolean",
             "defaultValue": true
+        },
+        "payments_funds_insurance_redesign_enabled": {
+            "name": "payments_funds_insurance_redesign_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "payments_funds_insurance_sweep_enabled": {
+            "name": "payments_funds_insurance_sweep_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "payments_support_grpc_enabled": {
             "name": "payments_support_grpc_enabled",
