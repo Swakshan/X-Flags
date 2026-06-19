@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "0ba1d1c006ae1195bd1b877a99412547e30413a9",
+    "feature_set_token": "6959698077c5c50ccf9c2cb85e34950f11ed1d0a",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1139,7 +1139,7 @@
             "value": false
         },
         "payments_support_grpc_enabled": {
-            "value": false
+            "value": true
         },
         "payments_support_xchat_sessions_enabled": {
             "value": true
@@ -2633,7 +2633,7 @@
             "value": 100
         },
         "rweb_home_jot_context_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_home_jot_migrate_enabled": {
             "value": true
@@ -3960,6 +3960,9 @@
         "web_video_hlsjs_version": {
             "value": "1.5.0"
         },
+        "web_video_persist_bandwidth_estimate_enabled": {
+            "value": false
+        },
         "web_video_playback_rate_enabled": {
             "value": true
         },
@@ -3968,9 +3971,6 @@
         },
         "web_video_safari_hlsjs_enabled": {
             "value": true
-        },
-        "web_video_teardown_listener_fix_enabled": {
-            "value": false
         },
         "web_video_transcribed_captions_enabled": {
             "value": true
@@ -4305,9 +4305,6 @@
             "value": "https://studio.x.com"
         },
         "xstudio_rweb_live_studio_enabled": {
-            "value": false
-        },
-        "web_video_persist_bandwidth_estimate_enabled": {
             "value": false
         }
     },
@@ -6826,6 +6823,10 @@
             "name": "explore_relaunch_send_immersive_stream_results_events",
             "type": "string"
         },
+        "explore_relaunch_send_immersive_stream_linger_results_events": {
+            "name": "explore_relaunch_send_immersive_stream_linger_results_events",
+            "type": "string"
+        },
         "explore_relaunch_live_scheduled_alert_enabled": {
             "name": "explore_relaunch_live_scheduled_alert_enabled",
             "type": "string"
@@ -8508,7 +8509,7 @@
         "payments_support_grpc_enabled": {
             "name": "payments_support_grpc_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_support_xchat_sessions_enabled": {
             "name": "payments_support_xchat_sessions_enabled",
@@ -11921,7 +11922,7 @@
         "rweb_home_jot_context_enabled": {
             "name": "rweb_home_jot_context_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "rweb_home_preserve_entries_enabled": {
             "name": "rweb_home_preserve_entries_enabled",
@@ -15846,14 +15847,6 @@
             "name": "video_attribution_author_id_scribe_enabled",
             "type": "string"
         },
-        "video_playback_active_player_management_18757": {
-            "name": "video_playback_active_player_management_18757",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "healthy_playback"
-            ]
-        },
         "video_tagging_13525": {
             "name": "video_tagging_13525",
             "type": "experiment",
@@ -16488,6 +16481,19 @@
             "type": "string",
             "defaultValue": "1.5.0"
         },
+        "web_video_persist_bandwidth_estimate_enabled": {
+            "name": "web_video_persist_bandwidth_estimate_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
+        "web_video_playback_initial_rung_18785": {
+            "name": "web_video_playback_initial_rung_18785",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "web_video_playback_rate_enabled": {
             "name": "web_video_playback_rate_enabled",
             "type": "boolean",
@@ -16512,11 +16518,6 @@
             "name": "web_video_safari_hlsjs_enabled",
             "type": "boolean",
             "defaultValue": true
-        },
-        "web_video_teardown_listener_fix_enabled": {
-            "name": "web_video_teardown_listener_fix_enabled",
-            "type": "boolean",
-            "defaultValue": false
         },
         "web_video_transcribed_captions_enabled": {
             "name": "web_video_transcribed_captions_enabled",
@@ -17171,6 +17172,10 @@
         },
         "xchat_message_request_rate_limit_upsell": {
             "name": "xchat_message_request_rate_limit_upsell",
+            "type": "string"
+        },
+        "xchat_max_encrypted_payload_size_bytes": {
+            "name": "xchat_max_encrypted_payload_size_bytes",
             "type": "string"
         },
         "xprofile_editing_enabled": {
