@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "7aa503d9236299de243bf452bd6136f736312134",
+        "feature_set_token": "47c9eb3aa60191acee7a9266a14d036355ea8fd8",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -488,6 +488,9 @@
             },
             "android_ad_formats_xlite_open_video_viewer_enabled": {
                 "value": false
+            },
+            "android_ad_next_to_sensitive_content_scribe_enabled": {
+                "value": true
             },
             "android_ads_notification_channel_enabled": {
                 "value": true
@@ -1224,6 +1227,9 @@
             "android_media_ingest_tweet_uploader_repo_enabled": {
                 "value": true
             },
+            "android_media_playback_abr_conservative_fraction_enabled": {
+                "value": false
+            },
             "android_media_playback_async_codec_queueing_enabled": {
                 "value": false
             },
@@ -1242,6 +1248,9 @@
             "android_media_playback_prefetch_xlite_incremental_enabled": {
                 "value": false
             },
+            "android_media_playback_preload_network_profile_enabled": {
+                "value": false
+            },
             "android_media_playback_skip_ad_count_down_duration_ms": {
                 "value": 5000.0
             },
@@ -1258,6 +1267,9 @@
                 "value": 0.0
             },
             "android_media_playback_timeline_surface_view_enabled": {
+                "value": false
+            },
+            "android_media_playback_timeline_viewport_sizing_enabled": {
                 "value": false
             },
             "android_media_repo_skip_duplicate_add_media": {
@@ -3251,7 +3263,13 @@
             "grok_android_imagine_edit_image": {
                 "value": true
             },
+            "grok_android_imagine_image_transcoder_check_enabled": {
+                "value": true
+            },
             "grok_android_imagine_make_video": {
+                "value": true
+            },
+            "grok_android_imagine_video_transcoder_check_enabled": {
                 "value": true
             },
             "grok_android_model_selector_upsell_enabled": {
@@ -4031,16 +4049,16 @@
                 "value": false
             },
             "payments_add_security_key_enabled": {
-                "value": false
+                "value": true
             },
             "payments_assets_activate_card_dark_video_url": {
-                "value": ""
+                "value": "https://pbs.twimg.com/static/money/x-card-animation-v4.mp4"
             },
             "payments_assets_activate_card_light_video_url": {
-                "value": ""
+                "value": "https://pbs.twimg.com/static/money/x-card-animation-v4-white.mp4"
             },
             "payments_assets_activate_card_video_ratio": {
-                "value": 1.0
+                "value": 1.33
             },
             "payments_assets_onboarding_dark_video_url": {
                 "value": ""
@@ -4115,7 +4133,7 @@
                 "value": false
             },
             "payments_secondary_accounts_enabled": {
-                "value": false
+                "value": true
             },
             "payments_shared_accounts_enabled": {
                 "value": false
@@ -5099,6 +5117,9 @@
             "subscriptions_upsells_articles_post_composer_promo_variant_enabled": {
                 "value": false
             },
+            "subscriptions_upsells_bookmark_folders_enabled": {
+                "value": false
+            },
             "subscriptions_upsells_drawer_discount_enabled": {
                 "value": true
             },
@@ -5934,6 +5955,11 @@
             "x_android_jetfuel_global_trending_home_enabled": {
                 "value": false
             },
+            "x_android_jetfuel_google_credential_denylist": {
+                "value": [
+                    "oneplus-14"
+                ]
+            },
             "x_android_jetfuel_post_attachment_frames_enabled": {
                 "value": true
             },
@@ -6479,6 +6505,7 @@
         "ios_promoted_force_cta_bar_video_only_18592",
         "customer_retention_overall_holdback_2021_11652",
         "android_media_playback_prefetch_incremental_18376",
+        "x_lite_video_player_preload_manager_18805",
         "android_ntab_density_14775",
         "android_badging_holdback_8613",
         "x_lite_in_tfa_existing_users_india_18723",
@@ -6548,6 +6575,8 @@
         "good_click_reactivity_light_users_15539",
         "android_promoted_badge_placement_v3_12532",
         "soft_interventions_engagement_nudge_m1_11180",
+        "x_lite_video_player_load_control_18803",
+        "x_lite_video_player_pool_prewarm_18806",
         "current_stack_follow_experiment_ios_14713",
         "mr_client_init_lo_static_push_14979",
         "good_click_reactivity_all_users_15540",
@@ -6642,6 +6671,7 @@
         "android_immersive_not_interested_18173",
         "android_scribe_frequent_collect_and_upload_linger_17854",
         "ios_vanity_url_website_cards_16576",
+        "x_lite_video_player_all_improvements_18807",
         "foundations_incremental_holdback_2022h1_13201",
         "android_initiate_bottom_cursor_when_all_in_viewport_16467",
         "x_lite_custom_timeline_18781",
@@ -6679,6 +6709,7 @@
         "alt_text_in_edit_flow_android_9465",
         "x_lite_in_tfa_existing_users_india_v2_18767",
         "android_graphql_skip_api_profile_banner_extensions_16229",
+        "x_lite_video_player_async_codec_18804",
         "ntab_server_driven_display_14304",
         "targeted_project_friday_14037",
         "mr_override_notifications_global_holdback_11731",
