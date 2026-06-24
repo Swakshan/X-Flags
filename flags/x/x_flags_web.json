@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "3e67952bb2a3521d23d787d0b312002ed6d05cf7",
+    "feature_set_token": "a4f4e7d1b644578725f7e2a8a0c8ecb6851a259b",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2528,7 +2528,7 @@
             "value": false
         },
         "responsive_web_video_autoplay_bandwidth_threshold_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_video_pcomplete_enabled": {
             "value": true
@@ -2831,6 +2831,9 @@
             "value": true
         },
         "rweb_xchat_dogfood_logs_enabled": {
+            "value": false
+        },
+        "rweb_xchat_keyboard_nav_enabled": {
             "value": false
         },
         "rweb_xchat_logs": {
@@ -4203,6 +4206,9 @@
             "value": true
         },
         "xchat_message_composer_v2": {
+            "value": false
+        },
+        "xchat_message_request_rate_limit_upsell": {
             "value": false
         },
         "xchat_observe_inbox_categories_separately": {
@@ -11647,7 +11653,7 @@
         "responsive_web_video_autoplay_bandwidth_threshold_enabled": {
             "name": "responsive_web_video_autoplay_bandwidth_threshold_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
@@ -12382,7 +12388,8 @@
         },
         "rweb_xchat_keyboard_nav_enabled": {
             "name": "rweb_xchat_keyboard_nav_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "sc_mock_data_enabled": {
             "name": "sc_mock_data_enabled",
@@ -16445,14 +16452,6 @@
             "type": "boolean",
             "defaultValue": true
         },
-        "web_autoplay_threshold_18813": {
-            "name": "web_autoplay_threshold_18813",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
-        },
         "web_device_follow_without_follow_15235": {
             "name": "web_device_follow_without_follow_15235",
             "type": "experiment",
@@ -17205,7 +17204,8 @@
         },
         "xchat_message_request_rate_limit_upsell": {
             "name": "xchat_message_request_rate_limit_upsell",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_max_encrypted_payload_size_bytes": {
             "name": "xchat_max_encrypted_payload_size_bytes",
