@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "dbcf4b9391e278fe78ca22631448ab4e12509c32",
+    "feature_set_token": "3e67952bb2a3521d23d787d0b312002ed6d05cf7",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1097,13 +1097,13 @@
             "value": true
         },
         "payments_assets_activate_card_dark_video_url": {
-            "value": ""
+            "value": "https://pbs.twimg.com/static/money/x-card-animation-v4.mp4"
         },
         "payments_assets_activate_card_light_video_url": {
-            "value": ""
+            "value": "https://pbs.twimg.com/static/money/x-card-animation-v4-white.mp4"
         },
         "payments_assets_activate_card_video_ratio": {
-            "value": 1
+            "value": 1.33
         },
         "payments_auth_token_enabled": {
             "value": true
@@ -1139,7 +1139,7 @@
             "value": true
         },
         "payments_secondary_accounts_enabled": {
-            "value": false
+            "value": true
         },
         "payments_shared_accounts_enabled": {
             "value": false
@@ -2026,6 +2026,9 @@
         "responsive_web_live_commerce_enabled": {
             "value": false
         },
+        "responsive_web_live_scheduled_broadcast_countdown_enabled": {
+            "value": false
+        },
         "responsive_web_locale_context_direction_enabled": {
             "value": true
         },
@@ -2524,6 +2527,9 @@
         "responsive_web_verified_organizations_xbusiness_enabled": {
             "value": false
         },
+        "responsive_web_video_autoplay_bandwidth_threshold_enabled": {
+            "value": false
+        },
         "responsive_web_video_pcomplete_enabled": {
             "value": true
         },
@@ -2745,6 +2751,9 @@
         },
         "rweb_quick_promote_boost_enabled": {
             "value": false
+        },
+        "rweb_quick_promote_gold_verified_boost_enabled": {
+            "value": true
         },
         "rweb_quick_promote_third_party_boost_enabled": {
             "value": false
@@ -3235,7 +3244,7 @@
             "value": false
         },
         "subscriptions_marketing_page_stripe_optimization_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_mute_ad_upsell_enabled": {
             "value": false
@@ -3967,7 +3976,7 @@
             "value": "1.5.0"
         },
         "web_video_persist_bandwidth_estimate_enabled": {
-            "value": false
+            "value": true
         },
         "web_video_playback_rate_enabled": {
             "value": true
@@ -4059,7 +4068,7 @@
             "value": false
         },
         "xchat_enable_command_menu": {
-            "value": false
+            "value": true
         },
         "xchat_enable_default_disappearing_messages_setting": {
             "value": false
@@ -7579,10 +7588,7 @@
         "ios_no_ad_dropping_17457": {
             "name": "ios_no_ad_dropping_17457",
             "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "enumeration_values": []
         },
         "ios_premium_paywall_preloaded_webview_enabled": {
             "name": "ios_premium_paywall_preloaded_webview_enabled",
@@ -8461,7 +8467,7 @@
         "payments_secondary_accounts_enabled": {
             "name": "payments_secondary_accounts_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "payments_shared_accounts_enabled": {
             "name": "payments_shared_accounts_enabled",
@@ -8483,17 +8489,17 @@
         "payments_assets_activate_card_dark_video_url": {
             "name": "payments_assets_activate_card_dark_video_url",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "https://pbs.twimg.com/static/money/x-card-animation-v4.mp4"
         },
         "payments_assets_activate_card_light_video_url": {
             "name": "payments_assets_activate_card_light_video_url",
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "https://pbs.twimg.com/static/money/x-card-animation-v4-white.mp4"
         },
         "payments_assets_activate_card_video_ratio": {
             "name": "payments_assets_activate_card_video_ratio",
             "type": "number",
-            "defaultValue": 1
+            "defaultValue": 1.33
         },
         "payments_assets_onboarding_dark_video_url": {
             "name": "payments_assets_onboarding_dark_video_url",
@@ -8643,14 +8649,6 @@
             "name": "premium_home_nav_upgrade_upsell__variant_key_fs",
             "type": "string",
             "defaultValue": ""
-        },
-        "premium_mobile_web_optimized_stripe_checkout_18468": {
-            "name": "premium_mobile_web_optimized_stripe_checkout_18468",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
         },
         "premium_paywall_feature_highlights_17499": {
             "name": "premium_paywall_feature_highlights_17499",
@@ -10668,6 +10666,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_live_scheduled_broadcast_countdown_enabled": {
+            "name": "responsive_web_live_scheduled_broadcast_countdown_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_live_commerce_enabled": {
             "name": "responsive_web_live_commerce_enabled",
             "type": "boolean",
@@ -11641,6 +11644,11 @@
             "type": "boolean",
             "defaultValue": false
         },
+        "responsive_web_video_autoplay_bandwidth_threshold_enabled": {
+            "name": "responsive_web_video_autoplay_bandwidth_threshold_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "responsive_web_video_pcomplete_enabled": {
             "name": "responsive_web_video_pcomplete_enabled",
             "type": "boolean",
@@ -12158,6 +12166,11 @@
             "name": "rweb_quick_promote_boost_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "rweb_quick_promote_gold_verified_boost_enabled": {
+            "name": "rweb_quick_promote_gold_verified_boost_enabled",
+            "type": "boolean",
+            "defaultValue": true
         },
         "rweb_recommendations_sidebar_graphql_enabled": {
             "name": "rweb_recommendations_sidebar_graphql_enabled",
@@ -13731,7 +13744,7 @@
         "subscriptions_marketing_page_stripe_optimization_enabled": {
             "name": "subscriptions_marketing_page_stripe_optimization_enabled",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "subscriptions_marketing_page_compare_table_ctas_enabled": {
             "name": "subscriptions_marketing_page_compare_table_ctas_enabled",
@@ -14439,6 +14452,10 @@
         },
         "subscriptions_upsells_get_verified_profile_discount_percent_off": {
             "name": "subscriptions_upsells_get_verified_profile_discount_percent_off",
+            "type": "string"
+        },
+        "subscriptions_upsells_bookmark_folders_enabled": {
+            "name": "subscriptions_upsells_bookmark_folders_enabled",
             "type": "string"
         },
         "subscriptions_upsells_vo_premium_business_rebranding_variant": {
@@ -16428,6 +16445,14 @@
             "type": "boolean",
             "defaultValue": true
         },
+        "web_autoplay_threshold_18813": {
+            "name": "web_autoplay_threshold_18813",
+            "type": "experiment",
+            "enumeration_values": [
+                "control",
+                "treatment"
+            ]
+        },
         "web_device_follow_without_follow_15235": {
             "name": "web_device_follow_without_follow_15235",
             "type": "experiment",
@@ -16500,15 +16525,7 @@
         "web_video_persist_bandwidth_estimate_enabled": {
             "name": "web_video_persist_bandwidth_estimate_enabled",
             "type": "boolean",
-            "defaultValue": false
-        },
-        "web_video_playback_initial_rung_18785": {
-            "name": "web_video_playback_initial_rung_18785",
-            "type": "experiment",
-            "enumeration_values": [
-                "control",
-                "treatment"
-            ]
+            "defaultValue": true
         },
         "web_video_playback_rate_enabled": {
             "name": "web_video_playback_rate_enabled",
@@ -16637,7 +16654,7 @@
         "xchat_enable_command_menu": {
             "name": "xchat_enable_command_menu",
             "type": "boolean",
-            "defaultValue": false
+            "defaultValue": true
         },
         "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
             "name": "xchat_hybrid_pull_eagerly_fetch_history_after_seconds",
