@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "29a5ff1196c3630689d63a731bb7de5dc6c8b56e",
+        "feature_set_token": "ef59e66a3739c22382df5cf7886c8b56b7b72c8b",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -395,6 +395,9 @@
             },
             "android_active_user_header_enabled": {
                 "value": true
+            },
+            "android_active_user_header_enabled_account_scoped": {
+                "value": false
             },
             "android_ad_formats_app_store_force_play_store_modal": {
                 "value": false
@@ -1233,6 +1236,9 @@
             "android_media_playback_compose_player_surface_enabled": {
                 "value": false
             },
+            "android_media_playback_do_not_clear_surface_on_recycle_enabled": {
+                "value": false
+            },
             "android_media_playback_experimental_load_control_enabled": {
                 "value": false
             },
@@ -1864,6 +1870,9 @@
                 "value": true
             },
             "android_webview_url_prefetch_enabled": {
+                "value": false
+            },
+            "android_x_lite_durable_friendship_actions_enabled": {
                 "value": false
             },
             "android_x_lite_durable_post_actions_enabled": {
@@ -6388,10 +6397,10 @@
                 "value": false
             },
             "xlite_scribe_db_to_network_flush_interval_seconds": {
-                "value": 10.0
+                "value": 5.0
             },
             "xlite_scribe_memory_to_db_flush_interval_seconds": {
-                "value": 4.0
+                "value": 2.0
             },
             "xlite_scribe_safety_net_flush_interval_seconds": {
                 "value": 900.0
@@ -6622,6 +6631,7 @@
         "project_nah_on_home_ranked_ios_15173",
         "android_static_lo_push_rotation_15709",
         "mr_override_notifs_relevancy_decay_v3_13161",
+        "x_lite_video_do_not_clear_surface_on_recycle_18827",
         "responsive_web_client_backoff_10535",
         "tweet_card_producer_experiment_9434",
         "moments_new_share_experiment_variants_13919",
