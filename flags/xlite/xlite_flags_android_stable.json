@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "31196a387482a514ac03e55f8c55966f5834b815",
+        "feature_set_token": "bcaacdf8fc8a657b30b39180af492dd61c96b473",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -24,10 +24,10 @@
                 "value": "utm_source=x"
             },
             "android_ad_formats_sales_cta_bottom_bar_animation_delay_ms": {
-                "value": 0.0
+                "value": 3000.0
             },
             "android_ad_formats_sales_cta_bottom_bar_enabled": {
-                "value": false
+                "value": true
             },
             "android_ad_formats_skip_zero_height_impressions": {
                 "value": true
@@ -125,9 +125,6 @@
             "android_media_playback_async_codec_queueing_enabled": {
                 "value": false
             },
-            "android_media_playback_compose_player_surface_enabled": {
-                "value": false
-            },
             "android_media_playback_do_not_clear_surface_on_recycle_enabled": {
                 "value": false
             },
@@ -144,9 +141,6 @@
                 "value": false
             },
             "android_media_playback_preload_network_profile_enabled": {
-                "value": false
-            },
-            "android_media_playback_timeline_surface_view_enabled": {
                 "value": false
             },
             "android_media_playback_timeline_viewport_sizing_enabled": {
@@ -717,6 +711,15 @@
             "min_android_xlite_version": {
                 "value": 0.0
             },
+            "newscamera_tweet_background_consumption_enabled": {
+                "value": false
+            },
+            "newscamera_tweet_background_htl_consumption_enabled": {
+                "value": false
+            },
+            "newscamera_tweet_background_render_media_only_enabled": {
+                "value": false
+            },
             "ocf_2fa_enrollment_bouncer_enabled": {
                 "value": true
             },
@@ -745,13 +748,13 @@
                 "value": 1.33
             },
             "payments_assets_onboarding_dark_video_url": {
-                "value": ""
+                "value": "https://pbs.twimg.com/static/money/money-welcome-v2-dark.mp4"
             },
             "payments_assets_onboarding_light_video_url": {
-                "value": ""
+                "value": "https://pbs.twimg.com/static/money/money-welcome-v2-light.mp4"
             },
             "payments_assets_onboarding_video_ratio": {
-                "value": 1.0
+                "value": 0.76
             },
             "payments_business_onboarding_support": {
                 "value": []
@@ -793,7 +796,7 @@
                 "value": false
             },
             "payments_scheduled_payments_enabled": {
-                "value": false
+                "value": true
             },
             "payments_secondary_accounts_enabled": {
                 "value": true
@@ -961,7 +964,7 @@
                 "value": false
             },
             "subscriptions_is_blue_verified_review_status_profile_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_per_post_in_thread": {
                 "value": true
@@ -973,7 +976,7 @@
                 "value": false
             },
             "subscriptions_upsells_bookmark_folders_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_upsells_drawer_discount_enabled": {
                 "value": true
@@ -1100,7 +1103,8 @@
             },
             "x_android_jetfuel_google_credential_denylist": {
                 "value": [
-                    "oneplus-14"
+                    "oneplus-14",
+                    "lava-14"
                 ]
             },
             "x_android_timeline_multi_media_carousel_enabled": {
@@ -1418,6 +1422,9 @@
             "xchat_pay_button_enabled": {
                 "value": false
             },
+            "xchat_plaintext_grok_enabled": {
+                "value": false
+            },
             "xchat_ratchet_group_id_threshold_str": {
                 "value": "9223372036854775807"
             },
@@ -1527,8 +1534,6 @@
         "ios_promoted_force_cta_bar_18232",
         "ios_promoted_force_cta_bar_video_only_18592",
         "customer_retention_overall_holdback_2021_11652",
-        "android_media_playback_prefetch_incremental_18376",
-        "x_lite_video_player_preload_manager_18805",
         "x_lite_in_tfa_existing_users_india_18723",
         "notifications_incremental_holdback_2022h2_13461",
         "ios_true_aspect_ratio_photos_on_timelines_18327",
@@ -1541,8 +1546,6 @@
         "ranked_following_extend_duration_17883",
         "mr_global_user_retention_holdback_10725",
         "ad_spacing_enforcement_timeline_impact_17825",
-        "x_lite_video_player_load_control_18803",
-        "x_lite_video_player_pool_prewarm_18806",
         "grok_auto_translate_worldwide_holdback_18413",
         "x_lite_in_tfa_existing_users_id_v2_18579",
         "x_lite_in_tfa_existing_users_africa_18720",
@@ -1567,21 +1570,22 @@
         "android_scroll_to_top_clear_cache_16550",
         "ios_no_ad_dropping_17457",
         "android_scribe_frequent_collect_and_upload_linger_17854",
-        "x_lite_video_player_all_improvements_18807",
         "x_lite_custom_timeline_18781",
         "x_lite_in_tfa_existing_users_au_nz_2_18711",
+        "test_video_reactions_v1_17214",
         "android_vivo_badging_experiment_8942",
         "x_lite_in_tfa_existing_users_saudi_arabia_18721",
         "x_lite_in_tfa_existing_users_turkey_18722",
         "spaces_holdback_11943",
         "android_webview_preloaded_paywall_18775",
+        "x_lite_video_player_lower_abr_18852",
         "customer_retention_notifs_2021_holdback_11678",
         "x_lite_in_tfa_existing_users_india_v2_18767",
-        "x_lite_video_player_async_codec_18804"
+        "x_lite_video_player_timeline_viewport_sizing_18853"
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
-        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
+        "feature_switches": "9176cdce889589bd3ddc79b9d65bc950f9f4989e",
+        "experiments": "9176cdce889589bd3ddc79b9d65bc950f9f4989e"
     }
 }
