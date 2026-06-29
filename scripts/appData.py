@@ -35,22 +35,16 @@ def apkCombo(url):
         link = link.replace(proxyUrl, '')
     return unquote(link)
 
-#Credits: HerrErde/SubwaySurfers-Api
-def apkPure(package_name,version):
-    api = f"https://api.pureapk.com/m/v3/cms/app_version?hl=en-US&package_name={package_name}"
-    hdr['x-sv'] = "29"
-    hdr['x-abis'] = "arm64-v8a"
-    hdr['x-gp'] = "1"
-    
-    req = requests.get(api, headers=hdr)
+def apkPure(package_name):
+    api = f"https://tapi.pureapk.com/v3/get_app_his_version?package_name={package_name}&hl=en"
+    hdr['Ual-Access-Businessid'] = "projecta"
+    hdr['Ual-Access-ProjectA'] = '{"device_info":{"abis":["arm64-v8a"],"os_ver":"36"}'
+    req = requests.get(api, headers=hdr,timeout=5)
     if req.status_code != 200:
-        raise Exception("apkPure API failed")
-    res = re.findall(rb"[\x20-\x7E]{4,}", req.content)
-    apkPversion:str = res[3].decode("utf-8")
-    if not apkPversion.startswith(version):
-        print(apkPversion,version,end="\n")
-        raise Exception("apkPure API doesnt have "+version)
-    return res[11].decode("utf-8")
+        raise Exception(f"ApkPure statusCode:{req.status_code}")
+    res = req.json()
+    item = res['version_list'][0]
+    return item['asset']['url']
 
 def apkM(url):
     pS:bs = beautifulSoup(url,0)
