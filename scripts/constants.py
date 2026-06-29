@@ -63,7 +63,6 @@ def getPinMsgID(app: Application):
     #XLite doesnt have pin msg
     return 0
 
-
 def getPackageName(app: Application):
     if app == Application.X:
         return "com.twitter.android"
@@ -71,7 +70,17 @@ def getPackageName(app: Application):
         return "ai.x.grok"
     if app == Application.XLITE:
         return "com.x.android.lite"
+    if app == Application.XCHAT:
+        return "com.x.chat"
 
+def getAPKMSlug(app: Application):
+    if app == Application.X:
+        return "x"
+    if app == Application.GROK:
+        return "grok-smartest-ai-advisor"
+    if app == Application.XLITE:
+        return "x-lite"
+    #TODO XChat code for android
 
 def getAPKMCode(app: Application):
     if app == Application.X:
@@ -79,16 +88,8 @@ def getAPKMCode(app: Application):
     if app == Application.GROK:
         return "xai/grok"
     if app == Application.XLITE:
-        return "com.x.android.lite"
-    
-def getAPKMSlug(app: Application):
-    if app == Application.X:
-        return "x"
-    if app == Application.GROK:
-        return "grok-ai-assistant"
-    if app == Application.XLITE:
         return "x-corp/x-lite"
-
+    #TODO XChat code for android
 
 def getUptoCode(app: Application):
     if app == Application.X:
@@ -97,6 +98,18 @@ def getUptoCode(app: Application):
         return "1000312412"
     if app == Application.XLITE:
         return "1000449745"
+    if app == Application.XCHAT:
+        return "1000691307"
+
+def getUptoSlug(app: Application):
+    if app == Application.X:
+        return "twitter"
+    if app == Application.GROK:
+        return "grok"
+    if app == Application.XLITE:
+        return "x-lite"
+    if app == Application.XCHAT:
+        return "xchat-twitter"
 
 
 def getAppleStoreCode(app: Application):

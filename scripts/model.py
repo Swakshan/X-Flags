@@ -2,6 +2,7 @@ from constants import (
     getChannelName,
     getAPKMCode,
     getAPKMSlug,
+    getUptoSlug,
     getPackageName,
     getPinMsgID,
     getTopicID,
@@ -127,20 +128,27 @@ class DATA:
             pkgName = getPackageName(self.app)
             apkmCode = getAPKMCode(self.app)
             apkmSlug = getAPKMSlug(self.app)
+            uptoSlug = getUptoSlug(self.app)
             
             ps_link = "https://play.google.com/store/apps/details?id=" + pkgName
-            apkp_link = f"https://d.apkpure.com/b/XAPK/{pkgName}?versionCode={self.vercode}"
+            apkp_direct_link = f"https://d.apkpure.com/b/XAPK/{pkgName}?versionCode={self.vercode}"
+            apkp_link = f"https://m.apkpure.com/search/{pkgName}/download/{vername}"
+            
             apkm_vername = vername.replace(".", "-")
             apkm_verSlug = f"{apkmSlug}-{apkm_vername}"
             apkm_link = f"https://www.apkmirror.com/apk/{apkmCode}/{apkm_verSlug}-release/{apkm_verSlug}-android-apk-download/"
-            upto_link = f"https://{appNameSlug}.en.uptodown.com/android"
+            
+            upto_link = f"https://{uptoSlug}.en.uptodown.com/android"
             
             if "aptoide" in link:
                 linkRowFormer("Aptoide", link)
             linkRowFormer("Play Store", ps_link)
-            linkRowFormer("ApkMirror", apkm_link)
+            if apkmSlug:
+                linkRowFormer("ApkMirror", apkm_link)
             linkRowFormer("APKPure", apkp_link)
-            linkRowFormer("Uptodown", upto_link)
+            linkRowFormer("APKPure Direct", apkp_direct_link)
+            if uptoSlug:
+                linkRowFormer("Uptodown", upto_link)
             
         elif platform == Platform.IOS.value:
             linkRowFormer("Apple Store", link)
