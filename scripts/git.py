@@ -1,6 +1,6 @@
 import os
 from basics import readJson
-from constants import MANIFEST_FILE_NAME
+from constants import MANIFEST_FILE_NAME,getAppEmoji
 from enums import Platform
 from model import DATA
 
@@ -11,9 +11,11 @@ manifest = readJson(MANIFEST_FILE_NAME)
 s = manifest['sts']
 if s:
     data:DATA = DATA.fromJSON(manifest)
+    
+    emoji = getAppEmoji(data.app)
     vername = data.vername
     vername = "web: "+vername[:5] if data.platform == Platform.WEB else vername
-    commitMsg = f"🤖: {vername}"
+    commitMsg = f"{emoji}: {vername}"
 
     MAIL_ID = "41898282+github-actions[bot]@users.noreply.github.com"
     NAME = "github-actions[bot]"

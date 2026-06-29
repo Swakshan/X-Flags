@@ -1,4 +1,5 @@
 from constants import (
+    getAppEmoji,
     getChannelName,
     getAPKMCode,
     getAPKMSlug,
@@ -25,16 +26,7 @@ class DATA:
         self.emoji = "⚠️"
         self.changeLogs = ""  # grok and IOS has
         
-        if app == Application.X:
-            self.emoji = "𝕏"
-        elif app == Application.XLITE:
-            self.emoji = "⚡"
-        elif app == Application.GROK:
-            self.emoji = "🤖"
-        if app == Application.XCHAT:
-            self.emoji = "💬"
-        else:
-            print("WTF: app name")
+        self.emoji = getAppEmoji(app)
         self.vercode = vercode
         
     @classmethod

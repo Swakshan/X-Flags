@@ -43,6 +43,17 @@ def getChannelId():
 def getChannelName():
     return getChannelId().replace("-100","") if isDebug() else getEnv("CHANNEL_NAME")
 
+def getAppEmoji(app: Application):
+    if app == Application.X:
+        return "𝕏"
+    elif app == Application.XLITE:
+        return "⚡"
+    elif app == Application.GROK:
+        return "🤖"
+    if app == Application.XCHAT:
+        return "💬"
+    return "🤖"
+
 def getTopicID(app: Application):
     if app == Application.X:
        return getEnv("TOPIC_ID_X")
