@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "c4db20d9cf19f7e760e4ba948488a4a7ddceb5ff",
+        "feature_set_token": "a3707f65b4f87fbde79ba8cdaf08c5ee25c482ca",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -98,7 +98,7 @@
             "android_global_navigation_top_level_monetization_enabled": {
                 "value": true
             },
-            "android_home_back_confirm_exit_enabled": {
+            "android_home_back_open_for_you_on_app_restart_enabled": {
                 "value": false
             },
             "android_home_back_refresh_for_you_enabled": {
@@ -1212,6 +1212,12 @@
             "x_lite_media_controller_enabled": {
                 "value": false
             },
+            "x_lite_notifications_permission_banner_enabled": {
+                "value": true
+            },
+            "x_lite_notifications_permission_banner_respawn_time_in_seconds": {
+                "value": 2419200.0
+            },
             "x_lite_notifications_permission_prompt_enabled": {
                 "value": true
             },
@@ -1249,6 +1255,9 @@
                 "value": true
             },
             "x_lite_quick_promote_google_pay_enabled": {
+                "value": false
+            },
+            "x_lite_quick_promote_iap_enabled": {
                 "value": false
             },
             "x_lite_quick_promote_native_flow_enabled": {
@@ -1585,7 +1594,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
-        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
+        "feature_switches": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c",
+        "experiments": "f29bab35e72e6a9ba0b37b25d5c846be2c92518c"
     }
 }
