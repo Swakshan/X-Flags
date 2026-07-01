@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "bcaacdf8fc8a657b30b39180af492dd61c96b473",
+        "feature_set_token": "1d0a7f8d6a7f345d036c3f7af780885f0fc83e06",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -98,7 +98,7 @@
             "android_global_navigation_top_level_monetization_enabled": {
                 "value": true
             },
-            "android_home_back_confirm_exit_enabled": {
+            "android_home_back_open_for_you_on_app_restart_enabled": {
                 "value": false
             },
             "android_home_back_refresh_for_you_enabled": {
@@ -1212,6 +1212,12 @@
             "x_lite_media_controller_enabled": {
                 "value": false
             },
+            "x_lite_notifications_permission_banner_enabled": {
+                "value": true
+            },
+            "x_lite_notifications_permission_banner_respawn_time_in_seconds": {
+                "value": 2419200.0
+            },
             "x_lite_notifications_permission_prompt_enabled": {
                 "value": true
             },
@@ -1249,6 +1255,9 @@
                 "value": true
             },
             "x_lite_quick_promote_google_pay_enabled": {
+                "value": false
+            },
+            "x_lite_quick_promote_iap_enabled": {
                 "value": false
             },
             "x_lite_quick_promote_native_flow_enabled": {
