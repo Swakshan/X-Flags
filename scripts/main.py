@@ -8,7 +8,7 @@ from basics import printCmd,printSubCmd
 from compare import compareFlags
 import argparse
 
-VER = "v23.34 : include overloaded xchat web flags"
+VER = "v23.35 : include pairip indicator for all android applications in tele msg"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)

@@ -109,13 +109,12 @@ class DATA:
             rd = f"{rd}\n_Vercode:_ `{self.vercode}`"
             
         if platform == Platform.ANDROID.value:
-            if self.app in [Application.X,Application.XLITE]:
-                prStr = (
-                    "🚫App contains PairipLib🚫"
-                    if self.pairip
-                    else "❇️App does not contain PairipLib❇️"
-                )
-                rd = f"{rd}\n\n{prStr}"
+            prStr = (
+                "🚫App contains PairipLib🚫"
+                if self.pairip
+                else "❇️App does not contain PairipLib❇️"
+            )
+            rd = f"{rd}\n\n{prStr}"
                 
             pkgName = getPackageName(self.app)
             apkmCode = getAPKMCode(self.app)
