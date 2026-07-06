@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "a7a909b739c8075f4b7c260b66164754617d23c0",
+        "feature_set_token": "25b6852fbd37d822b8ca8644474bed7b4468c9bd",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2190,7 +2190,7 @@
                 "value": ""
             },
             "grok_ios_imagine_cta_focal_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_imagine_cta_priority_over_existing_grok_buttons_enabled": {
                 "value": false
@@ -2199,7 +2199,7 @@
                 "value": ""
             },
             "grok_ios_imagine_cta_profile_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_imagine_cta_profile_title_post_install": {
                 "value": ""
@@ -2214,13 +2214,13 @@
                 "value": ""
             },
             "grok_ios_imagine_cta_reply_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_imagine_cta_show_grok_logo_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_imagine_cta_timeline_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_imagine_cta_title_post_install": {
                 "value": ""
@@ -2442,7 +2442,7 @@
                 "value": true
             },
             "grok_translations_immersive_auto_translate_is_enabled": {
-                "value": false
+                "value": true
             },
             "grok_translations_ios_haptic_is_enabled": {
                 "value": true
@@ -3522,6 +3522,9 @@
             "ios_live_video_require_verified_to_chat": {
                 "value": true
             },
+            "ios_liveness_palm_vision_hand_pose_enabled": {
+                "value": false
+            },
             "ios_load_tavui_image_assets_asynchronously_enabled": {
                 "value": true
             },
@@ -4398,7 +4401,7 @@
                 "value": true
             },
             "ios_url_push_open_status_in_place_enabled": {
-                "value": false
+                "value": true
             },
             "ios_url_talon_bypass_enabled": {
                 "value": false
@@ -12034,9 +12037,5 @@
     },
     "embedded_experiments": [],
     "requires_restart": [],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
-        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
-    }
+    "supports_accessibility": []
 }
