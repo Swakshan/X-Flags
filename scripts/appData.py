@@ -76,9 +76,8 @@ def xManifestSwitches(hash):
 
 def xWebFlags():
     link = "https://x.com"
-    url = f"{proxyUrl}{link}"
-    
-    req = requests.get(url, headers=hdr)
+
+    req = requests.get(link, headers=hdr)
     res = req.text
 
     sHint = "window.__INITIAL_STATE__="
