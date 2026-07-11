@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "b9629af3762eda97a8796510887dbf0eb630abde",
+        "feature_set_token": "67a6e8d2e995082bc2be5437904498c8b119609a",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -491,6 +491,9 @@
             },
             "android_ad_formats_xlite_dpa_spine_clicks_enabled": {
                 "value": true
+            },
+            "android_ad_formats_xlite_linger_results_drop_quoted_item_enabled": {
+                "value": false
             },
             "android_ad_formats_xlite_open_video_viewer_enabled": {
                 "value": false
@@ -1272,6 +1275,9 @@
             "android_media_playback_preload_network_profile_enabled": {
                 "value": false
             },
+            "android_media_playback_preroll_play_once_per_session_enabled": {
+                "value": false
+            },
             "android_media_playback_skip_ad_count_down_duration_ms": {
                 "value": 5000.0
             },
@@ -1897,10 +1903,10 @@
                 "value": false
             },
             "android_x_lite_durable_friendship_actions_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_durable_post_actions_enabled": {
-                "value": false
+                "value": true
             },
             "android_xiaomi_reflection_on_notification_object": {
                 "value": true
@@ -3150,7 +3156,7 @@
                 "value": 5.0
             },
             "explore_relaunch_send_immersive_stream_linger_results_events": {
-                "value": true
+                "value": false
             },
             "explore_relaunch_send_immersive_stream_results_events": {
                 "value": false
@@ -6039,6 +6045,9 @@
             "x_lite_composer_sync_draft_media_enabled": {
                 "value": false
             },
+            "x_lite_immersive_send_stream_linger_results_events": {
+                "value": false
+            },
             "x_lite_immersive_send_stream_results_events": {
                 "value": true
             },
@@ -6213,8 +6222,11 @@
             "xchat_av_call_card_interaction_enabled": {
                 "value": false
             },
+            "xchat_batch_updates_for_bottom_cursor_processing": {
+                "value": false
+            },
             "xchat_ckey_recovery_enabled": {
-                "value": true
+                "value": false
             },
             "xchat_conversation_event_limit": {
                 "value": 200.0
@@ -6349,7 +6361,7 @@
                 "value": "11000"
             },
             "xchat_max_message_preview_size": {
-                "value": "500"
+                "value": "1000"
             },
             "xchat_max_users_to_fetch_per_request": {
                 "value": 100.0
@@ -6383,6 +6395,9 @@
             },
             "xchat_plaintext_grok_enabled": {
                 "value": false
+            },
+            "xchat_plaintext_grok_minimum_tier": {
+                "value": "PremiumPlus"
             },
             "xchat_ratchet_group_id_threshold": {
                 "value": 9.223372036854776e+18
@@ -6598,7 +6613,6 @@
         "customer_retention_overall_holdback_2021_11652",
         "android_ntab_density_14775",
         "android_badging_holdback_8613",
-        "x_lite_in_tfa_existing_users_india_18723",
         "android_timeline_hydration_caching_8919",
         "android_media_quick_reply_8106",
         "android_network_host_warming_7062",
@@ -6640,7 +6654,6 @@
         "spaces_host_analytics_holdback_14239",
         "spaces_search_holdback_12894",
         "android_linger_flush_on_view_recycle_17914",
-        "x_lite_in_tfa_existing_users_sea_18718",
         "ranked_following_extend_duration_17883",
         "android_device_follow_without_follow_15236",
         "android_larger_sru_segment_sizes_13549",
@@ -6674,7 +6687,6 @@
         "personalization_holdback_2022_13469",
         "immersive_media_viewer_android_16367",
         "mr_tweet_media_on_push_android_9818",
-        "x_lite_in_tfa_existing_users_africa_18720",
         "ads_in_tweet_conversation_m2_contrasts_13063",
         "automated_accounts_label_12626",
         "android_cct_to_webview_migration_13578",
@@ -6727,7 +6739,6 @@
         "spaces_android_graphql_holdback_14831",
         "ad_formats_android_display_session_7316",
         "explore_evd_longterm_holdback_10248",
-        "x_lite_in_tfa_existing_users_latam_18719",
         "android_bg_force_db_save_17610",
         "android_explore_performance_improvements_10979",
         "android_graphql_skip_api_media_color_palette_16228",
@@ -6738,8 +6749,8 @@
         "x_lite_glide_image_loading_18859",
         "mr_override_notifs_relevancy_decay_v3_13161",
         "responsive_web_client_backoff_10535",
-        "x_lite_in_tfa_new_users_jp_18902",
         "tweet_card_producer_experiment_9434",
+        "x_lite_in_tfa_existing_users_jp_18902",
         "moments_new_share_experiment_variants_13919",
         "x_lite_in_tfa_existing_users_au_nz_18639",
         "android_hls_dynamic_manifests_12518",
@@ -6780,9 +6791,7 @@
         "android_ads_carousel_fullwidth_18385",
         "onboarding_account_follow_prompt_context_line_ios_11156",
         "android_12_media_large_icon_holdback_13364",
-        "x_lite_in_tfa_existing_users_saudi_arabia_18721",
         "notifications_growth_logged_out_holdback_2023h1_14802",
-        "x_lite_in_tfa_existing_users_turkey_18722",
         "tweet_card_consumer_experiment_9435",
         "home_timeline_spheres_sticky_tabs_enabled_holdback_16232",
         "spaces_holdback_11943",
@@ -6799,7 +6808,6 @@
         "android_prefetch_notifications_india_13681",
         "customer_retention_notifs_2021_holdback_11678",
         "alt_text_in_edit_flow_android_9465",
-        "x_lite_in_tfa_existing_users_india_v2_18767",
         "subscriptions_android_long_post_upsell_18815",
         "android_graphql_skip_api_profile_banner_extensions_16229",
         "ntab_server_driven_display_14304",
@@ -6819,7 +6827,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
-        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
+        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
+        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
     }
 }
