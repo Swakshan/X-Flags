@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "cfbf2193340206e13b4607f98669b2507c3467bd",
+        "feature_set_token": "876bdde2e09e88ad95c385ab5d30b73e784ffc6c",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -161,6 +161,9 @@
             "android_media_playback_preload_network_profile_enabled": {
                 "value": false
             },
+            "android_media_playback_preroll_play_once_per_session_enabled": {
+                "value": false
+            },
             "android_media_playback_timeline_viewport_sizing_enabled": {
                 "value": false
             },
@@ -282,7 +285,7 @@
                 "value": false
             },
             "android_x_lite_durable_post_actions_enabled": {
-                "value": false
+                "value": true
             },
             "android_xlite_photo_editor_enabled": {
                 "value": false
@@ -831,12 +834,6 @@
             "payments_shutdown_min_android_version": {
                 "value": 312011000.0
             },
-            "payments_support_grpc_enabled": {
-                "value": true
-            },
-            "payments_support_xchat_sessions_enabled": {
-                "value": false
-            },
             "payments_tracing_reports_enabled": {
                 "value": true
             },
@@ -1164,6 +1161,9 @@
             "x_lite_composer_sync_draft_media_enabled": {
                 "value": false
             },
+            "x_lite_immersive_send_stream_linger_results_events": {
+                "value": false
+            },
             "x_lite_immersive_send_stream_results_events": {
                 "value": true
             },
@@ -1473,6 +1473,9 @@
             "xchat_plaintext_grok_enabled": {
                 "value": false
             },
+            "xchat_plaintext_grok_minimum_tier": {
+                "value": "PremiumPlus"
+            },
             "xchat_ratchet_group_id_threshold_str": {
                 "value": "9223372036854775807"
             },
@@ -1638,7 +1641,7 @@
         "ad_formats_android_display_session_7316",
         "x_lite_in_tfa_existing_users_latam_18719",
         "x_lite_glide_image_loading_18859",
-        "x_lite_in_tfa_new_users_jp_18902",
+        "x_lite_in_tfa_existing_users_jp_18902",
         "x_lite_in_tfa_existing_users_au_nz_18639",
         "home_spaces_holdback_12863",
         "visitor_get_verified_profile_card_upsell_test_android_18565",
