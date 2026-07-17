@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "09d1f4ed67a862f58962064790c1d5437a97c876",
+        "feature_set_token": "44d07e872d1ce369f871e0fe1896596ec1e2ab8c",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -111,7 +111,10 @@
                 "value": true
             },
             "android_home_back_open_for_you_on_app_restart_enabled": {
-                "value": false
+                "value": true
+            },
+            "android_home_back_open_for_you_on_app_restart_min_background_minutes": {
+                "value": 0.0
             },
             "android_home_back_refresh_for_you_enabled": {
                 "value": false
@@ -576,7 +579,7 @@
                 "value": false
             },
             "composer_android_xlite_post_upload_progress_timeout_seconds": {
-                "value": 30.0
+                "value": 300.0
             },
             "composer_android_xlite_post_upload_progress_tracking_edition2_enabled": {
                 "value": true
@@ -1673,6 +1676,7 @@
     "experiment_names": [
         "android_transsion_badging_experiment_15156",
         "spaces_2022_h2_holdback_13972",
+        "x_lite_video_reactions_v1_18939",
         "drawer_get_verified_upsell_android_test_18735",
         "ios_promoted_force_cta_bar_18232",
         "subscriptions_android_custom_color_upsell_18885",
