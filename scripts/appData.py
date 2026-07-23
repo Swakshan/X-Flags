@@ -6,6 +6,7 @@ from datetime import datetime
 from constants import headers
 import curl_cffi
 import chompjs
+from basics import writeFile,writeJson
 
 hdr = headers()
 proxyUrl = "https://translate.google.com/website?sl=ta&tl=en&hl=en&client=webapp&u="
@@ -74,32 +75,33 @@ def xManifestSwitches(hash):
     res = res[res.find("{"):res.find(eHint)+len(eHint)]
     return formatWebFlags(res)
 
-def xWebFlags():
+def xWebOverloadedWebFlags():
     link = "https://x.com"
-
     req = requests.get(link, headers=hdr)
     res = req.text
 
-    sHint = "window.__INITIAL_STATE__="
-    eHint = "window.__META_DATA__="
-    s = res.find(sHint) + len(sHint)
-    e = res[s:].find(eHint) + s - 1
-    fd = res[s:e]
-    flagData = json.loads(fd)
-    featureSwitch = flagData['featureSwitch']
-    token = featureSwitch["featureSetToken"]
+    startKey = "window.__INITIAL_DATA__="
+    endKey = ";;"
     
-    defaultConfig = featureSwitch['defaultConfig']
-    userFlag = featureSwitch['user']['config']
-    
-    flags = {**defaultConfig, **userFlag}
-    return {"feature_set_token":token,"config":flags}
+    start = res.find(startKey)+len(startKey)
+    end = res.find(endKey,start)
+   
+    output = {}
+    initialData = json.loads(res[start:end])
+    if "featureSwitchPayload" in initialData:
+        featureSwitchPayload = initialData['featureSwitchPayload']
+        if "features" in featureSwitchPayload:
+            features = featureSwitchPayload['features']
+            for key in features:
+                value = {"value":features[key]}
+                output[key] = value
+    return output
 
 def webfeatureSwitches(hash):    
-    xFlags = xWebFlags()
+    xFlags = xWebOverloadedWebFlags()
     manifestFlags = xManifestSwitches(hash)
-    flags = {**xFlags['config'],**manifestFlags['config']}
-    token = xFlags['feature_set_token']
+    flags = {**manifestFlags['config'],**xFlags}
+    token = manifestFlags['feature_set_token']
 
     return {"feature_set_token":token,"config":flags,"debug":manifestFlags['debug']}
 
