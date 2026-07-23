@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "7459786ce3047fd3d08368e5cf3a49d6821f2577",
+        "feature_set_token": "38e66e38bfda79e1dd0e186466c016ca564ed194",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -10656,6 +10656,9 @@
             "ssp_ads_google_native_ad_repository_scribe_enabled": {
                 "value": false
             },
+            "ssp_ads_google_native_ad_s2s_migration_enabled": {
+                "value": true
+            },
             "ssp_ads_home_client_only_integration": {
                 "value": false
             },
@@ -11789,7 +11792,7 @@
                 "value": false
             },
             "x_ios_photo_editor_adjustment_enabled": {
-                "value": false
+                "value": true
             },
             "x_ios_photo_editor_chat_enabled": {
                 "value": true
@@ -11845,7 +11848,7 @@
                 "value": true
             },
             "x_sports_nfl_t100_native_enabled": {
-                "value": false
+                "value": true
             },
             "xai_profile_redirect_enabled": {
                 "value": true
@@ -12113,9 +12116,5 @@
     },
     "embedded_experiments": [],
     "requires_restart": [],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "9176cdce889589bd3ddc79b9d65bc950f9f4989e",
-        "experiments": "9176cdce889589bd3ddc79b9d65bc950f9f4989e"
-    }
+    "supports_accessibility": []
 }
