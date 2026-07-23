@@ -1,7 +1,13 @@
 {
-    "feature_set_token": "1c937943eb729b07b6461b57282f42380d9e550f",
+    "feature_set_token": "5a58eaf33743d17059feb5a89b342f69280f27b6",
     "config": {
         "2fa_temporary_password_enabled": {
+            "value": false
+        },
+        "Arkose_rweb_hosted_page": {
+            "value": true
+        },
+        "Arkose_use_invisible_challenge_key": {
             "value": false
         },
         "account_country_setting_countries_whitelist": {
@@ -290,12 +296,6 @@
         },
         "arkose_challenge_signup_web_prod": {
             "value": "2CB16598-CB82-4CF7-B332-5990DB66F3AB"
-        },
-        "Arkose_rweb_hosted_page": {
-            "value": true
-        },
-        "Arkose_use_invisible_challenge_key": {
-            "value": false
         },
         "articles_preview_enabled": {
             "value": true
@@ -898,6 +898,9 @@
         "ios_premium_paywall_preloaded_webview_pagesheet_modal": {
             "value": true
         },
+        "jetfuel_forgot_password_migration_enabled": {
+            "value": false
+        },
         "krs_registration_enabled": {
             "value": false
         },
@@ -1013,7 +1016,7 @@
             "value": 5
         },
         "media_async_upload_max_video_duration": {
-            "value": 14460
+            "value": 1200
         },
         "media_async_upload_max_video_size": {
             "value": 512
@@ -2239,6 +2242,9 @@
         "responsive_web_profile_about_enabled": {
             "value": true
         },
+        "responsive_web_profile_redesign_enabled": {
+            "value": false
+        },
         "responsive_web_profile_redirect_enabled": {
             "value": true
         },
@@ -3355,7 +3361,7 @@
             "value": false
         },
         "subscriptions_sign_up_enabled": {
-            "value": false
+            "value": true
         },
         "subscriptions_stripe_testing": {
             "value": false
@@ -4064,11 +4070,17 @@
         "xchat_av_pip_enabled": {
             "value": false
         },
+        "xchat_batch_updates_for_bottom_cursor_processing": {
+            "value": true
+        },
         "xchat_ckey_recovery_enabled": {
             "value": false
         },
         "xchat_clear_chat_enabled": {
             "value": true
+        },
+        "xchat_composer_photo_editor_enabled": {
+            "value": false
         },
         "xchat_conversation_event_limit": {
             "value": 200
@@ -4181,6 +4193,9 @@
         "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
             "value": -1
         },
+        "xchat_inbox_checksum_scribing_enabled": {
+            "value": false
+        },
         "xchat_inbox_conversation_event_limit": {
             "value": 5
         },
@@ -4201,6 +4216,9 @@
         },
         "xchat_ios_max_io_threads": {
             "value": 64
+        },
+        "xchat_keep_db_when_processing_inbox_response": {
+            "value": false
         },
         "xchat_keypair_nuclear_reset_enabled": {
             "value": false
@@ -4256,6 +4274,9 @@
         "xchat_message_request_rate_limit_upsell": {
             "value": true
         },
+        "xchat_missing_messages_scribe_enabled": {
+            "value": true
+        },
         "xchat_observe_inbox_categories_separately": {
             "value": true
         },
@@ -4270,6 +4291,9 @@
         },
         "xchat_plaintext_grok_enabled": {
             "value": false
+        },
+        "xchat_plaintext_grok_minimum_tier": {
+            "value": "PremiumPlus"
         },
         "xchat_ratchet_group_id_threshold": {
             "value": 9223372036854775807
@@ -4371,6 +4395,9 @@
             "value": "https://studio.x.com"
         },
         "xstudio_rweb_live_studio_enabled": {
+            "value": true
+        },
+        "responsive_web_gpc_enabled": {
             "value": true
         }
     },
@@ -7779,6 +7806,11 @@
                 "treatment_opens_immersive"
             ]
         },
+        "jetfuel_forgot_password_migration_enabled": {
+            "name": "jetfuel_forgot_password_migration_enabled",
+            "type": "boolean",
+            "defaultValue": false
+        },
         "krs_registration_enabled": {
             "name": "krs_registration_enabled",
             "type": "boolean",
@@ -8119,7 +8151,7 @@
         "media_async_upload_max_video_duration": {
             "name": "media_async_upload_max_video_duration",
             "type": "number",
-            "defaultValue": 14460
+            "defaultValue": 1200
         },
         "media_async_upload_longer_video_max_video_duration": {
             "name": "media_async_upload_longer_video_max_video_duration",
@@ -11211,7 +11243,8 @@
         },
         "responsive_web_profile_redesign_enabled": {
             "name": "responsive_web_profile_redesign_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_profile_spotlight_v0_config": {
             "name": "responsive_web_profile_spotlight_v0_config",
@@ -17393,7 +17426,8 @@
         },
         "xchat_plaintext_grok_minimum_tier": {
             "name": "xchat_plaintext_grok_minimum_tier",
-            "type": "string"
+            "type": "string",
+            "defaultValue": "PremiumPlus"
         },
         "xchat_keypair_recovery_enabled": {
             "name": "xchat_keypair_recovery_enabled",
@@ -17450,7 +17484,8 @@
         },
         "xchat_batch_updates_for_bottom_cursor_processing": {
             "name": "xchat_batch_updates_for_bottom_cursor_processing",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "xchat_group_description_enabled": {
             "name": "xchat_group_description_enabled",
@@ -17458,19 +17493,23 @@
         },
         "xchat_composer_photo_editor_enabled": {
             "name": "xchat_composer_photo_editor_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_keep_db_when_processing_inbox_response": {
             "name": "xchat_keep_db_when_processing_inbox_response",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xchat_missing_messages_scribe_enabled": {
             "name": "xchat_missing_messages_scribe_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": true
         },
         "xchat_inbox_checksum_scribing_enabled": {
             "name": "xchat_inbox_checksum_scribing_enabled",
-            "type": "string"
+            "type": "boolean",
+            "defaultValue": false
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
