@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "2018e7b154ba9f4de774ef687cff7f5b8b5bc317",
+    "feature_set_token": "119e020fc8ea2a558cea9c9aeb37ffb981469a9c",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -1657,6 +1657,9 @@
         "responsive_web_framerate_tracking_home_enabled": {
             "value": false
         },
+        "responsive_web_gpc_enabled": {
+            "value": true
+        },
         "responsive_web_graphql_feedback": {
             "value": true
         },
@@ -2873,9 +2876,6 @@
             "value": false
         },
         "rweb_xchat_old_dms_inbox_item": {
-            "value": true
-        },
-        "rweb_xchat_remove_x_pro_dms": {
             "value": true
         },
         "rweb_xchat_scroller_rewrite_enabled": {
@@ -4395,9 +4395,6 @@
             "value": "https://studio.x.com"
         },
         "xstudio_rweb_live_studio_enabled": {
-            "value": true
-        },
-        "responsive_web_gpc_enabled": {
             "value": true
         }
     },
@@ -8683,6 +8680,10 @@
             "name": "payments_home_cards_wallet_layout_enabled",
             "type": "string"
         },
+        "payments_lexical_search_enabled": {
+            "name": "payments_lexical_search_enabled",
+            "type": "string"
+        },
         "payments_assets_activate_card_dark_video_url": {
             "name": "payments_assets_activate_card_dark_video_url",
             "type": "string",
@@ -9881,6 +9882,11 @@
             "name": "responsive_web_gif_ads_experiment_13757",
             "type": "experiment",
             "enumeration_values": []
+        },
+        "responsive_web_gpc_enabled": {
+            "name": "responsive_web_gpc_enabled",
+            "type": "boolean",
+            "defaultValue": false
         },
         "responsive_web_graphql_exclude_directive_enabled": {
             "name": "responsive_web_graphql_exclude_directive_enabled",
@@ -12594,8 +12600,7 @@
         },
         "rweb_xchat_remove_x_pro_dms": {
             "name": "rweb_xchat_remove_x_pro_dms",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_xchat_keyboard_nav_enabled": {
             "name": "rweb_xchat_keyboard_nav_enabled",
@@ -13338,7 +13343,7 @@
             "type": "experiment",
             "enumeration_values": [
                 "control",
-                "treatment"
+                "holdback"
             ]
         },
         "subscriptions_blue_premium_labeling_enabled": {
