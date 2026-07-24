@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "119e020fc8ea2a558cea9c9aeb37ffb981469a9c",
+    "feature_set_token": "2adfe0a3edbe1f463264b7b8fc321a74f85d81fe",
     "config": {
         "2fa_temporary_password_enabled": {
             "value": false
@@ -2860,9 +2860,6 @@
         "rweb_xchat_debug_enabled": {
             "value": false
         },
-        "rweb_xchat_delegate_accounts_enabled": {
-            "value": true
-        },
         "rweb_xchat_dogfood_logs_enabled": {
             "value": false
         },
@@ -2871,12 +2868,6 @@
         },
         "rweb_xchat_logs": {
             "value": false
-        },
-        "rweb_xchat_messages_sidebar_enabled": {
-            "value": false
-        },
-        "rweb_xchat_old_dms_inbox_item": {
-            "value": true
         },
         "rweb_xchat_scroller_rewrite_enabled": {
             "value": false
@@ -4345,9 +4336,6 @@
         },
         "xchat_throttle_badge_counts": {
             "value": false
-        },
-        "xchat_unified_tab_min_snowflake_user_id": {
-            "value": "0"
         },
         "xchat_unread_mismatch_scribing_enabled": {
             "value": true
@@ -12546,13 +12534,11 @@
         },
         "rweb_xchat_old_dms_inbox_item": {
             "name": "rweb_xchat_old_dms_inbox_item",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_xchat_messages_sidebar_enabled": {
             "name": "rweb_xchat_messages_sidebar_enabled",
-            "type": "boolean",
-            "defaultValue": false
+            "type": "string"
         },
         "rweb_xchat_logs": {
             "name": "rweb_xchat_logs",
@@ -12590,8 +12576,7 @@
         },
         "rweb_xchat_delegate_accounts_enabled": {
             "name": "rweb_xchat_delegate_accounts_enabled",
-            "type": "boolean",
-            "defaultValue": true
+            "type": "string"
         },
         "rweb_xchat_ws_only_when_active": {
             "name": "rweb_xchat_ws_only_when_active",
@@ -14700,6 +14685,26 @@
         },
         "subscriptions_upsells_long_video_upload_composer_enabled": {
             "name": "subscriptions_upsells_long_video_upload_composer_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_premium_home_nav_enabled": {
+            "name": "subscriptions_upsells_premium_home_nav_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_home_nav_follow_button_enabled": {
+            "name": "subscriptions_upsells_home_nav_follow_button_enabled",
+            "type": "string"
+        },
+        "subscriptions_upsells_home_nav_follow_min_following": {
+            "name": "subscriptions_upsells_home_nav_follow_min_following",
+            "type": "string"
+        },
+        "subscriptions_upsells_home_nav_follow_max_following": {
+            "name": "subscriptions_upsells_home_nav_follow_max_following",
+            "type": "string"
+        },
+        "subscriptions_upsells_premium_home_nav_offer_enabled": {
+            "name": "subscriptions_upsells_premium_home_nav_offer_enabled",
             "type": "string"
         },
         "subscriptions_upsells_vo_premium_business_rebranding_variant": {
@@ -16989,8 +16994,7 @@
         },
         "xchat_unified_tab_min_snowflake_user_id": {
             "name": "xchat_unified_tab_min_snowflake_user_id",
-            "type": "string",
-            "defaultValue": "0"
+            "type": "string"
         },
         "xchat_auto_upgrade_legacy_groups": {
             "name": "xchat_auto_upgrade_legacy_groups",
@@ -17511,6 +17515,10 @@
             "name": "xchat_inbox_checksum_scribing_enabled",
             "type": "boolean",
             "defaultValue": false
+        },
+        "xchat_realm_migration_local_key_fallback_enabled": {
+            "name": "xchat_realm_migration_local_key_fallback_enabled",
+            "type": "string"
         },
         "xprofile_editing_enabled": {
             "name": "xprofile_editing_enabled",
