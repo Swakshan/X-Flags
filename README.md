@@ -23,6 +23,18 @@ A repo that keeps track of feature flags from different builds of 𝕏 (Twitter)
 * **Android**
     - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/xlite/xlite_flags_android_stable.json)
 
+## Latest XChat Feature Flags
+
+* **Android**
+    - [Stable Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/xchat/xchat_flags_android_stable.json)
+
+* **iOS**
+    - [Stable Flags: iPhone](https://github.com/Swakshan/X-Flags/blob/main/flags/xchat/xchat_flags_ios_stable.json)
+    - [Stable Flags: iPad](https://github.com/Swakshan/X-Flags/blob/main/flags/x/x_flags_ipad_stable.json)
+
+* **Web**
+    - [Web Flags](https://github.com/Swakshan/X-Flags/blob/main/flags/x/xchat_flags_web.json)
+
 ## FAQ
 
 #### How to enable the flags ?
