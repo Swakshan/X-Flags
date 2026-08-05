@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "3e54a9b7ea03b71d73f48c124a2d4e866bd14e2b",
+        "feature_set_token": "d1460e186226d3dd625ac3dc946fddcd6191bf3b",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -811,6 +811,9 @@
                 "value": true
             },
             "android_cashtags_composer_attachment_enabled": {
+                "value": false
+            },
+            "android_cashtags_composer_attachment_modal_enabled": {
                 "value": false
             },
             "android_cashtags_composer_attachment_size_customization_enabled": {
@@ -1993,6 +1996,9 @@
                 "value": true
             },
             "android_x_lite_ssp_ads_enabled": {
+                "value": false
+            },
+            "android_x_lite_ssp_ads_immersive_exit_cache_clear_enabled": {
                 "value": false
             },
             "android_xiaomi_reflection_on_notification_object": {
@@ -3566,6 +3572,9 @@
             "highlights_tweets_tab_upsell_enabled": {
                 "value": true
             },
+            "home_timeline_autoplay_fast_scroll_suppression_enabled": {
+                "value": false
+            },
             "home_timeline_bottom_cursor_max_retries": {
                 "value": 3.0
             },
@@ -3990,6 +3999,9 @@
                 "value": true
             },
             "media_upload_local_tweet_video_performance_logging_enabled": {
+                "value": false
+            },
+            "media_upload_video_editor_thumbnail_enabled": {
                 "value": false
             },
             "media_upload_xlite_4k_enabled": {
@@ -6187,7 +6199,7 @@
                 "value": false
             },
             "x_android_jetfuel_timeline_remove_urls_for_posts_with_jetfuel_attachment": {
-                "value": false
+                "value": true
             },
             "x_android_timeline_friction_value": {
                 "value": 0.8
@@ -6414,58 +6426,22 @@
             "x_lite_quick_promote_xmoney_for_boost_enabled": {
                 "value": false
             },
-            "x_lite_spaces_anonymous_notice_enabled": {
+            "x_lite_spaces_ambient_music_enabled": {
                 "value": false
             },
             "x_lite_spaces_captions_enabled": {
                 "value": false
             },
-            "x_lite_spaces_comment_pill_updates_enabled": {
-                "value": false
-            },
             "x_lite_spaces_enabled": {
                 "value": true
             },
-            "x_lite_spaces_end_of_space_sheet_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_follow_host_banner_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_host_reminder_enabled": {
-                "value": false
-            },
             "x_lite_spaces_hosting_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_live_notification_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_menu_additions_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_mute_all_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_nux_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_participants_sheet_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_profile_sheet_v2_enabled": {
                 "value": false
             },
             "x_lite_spaces_scheduling_enabled": {
                 "value": false
             },
-            "x_lite_spaces_share_post_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_speak_request_alerts_enabled": {
-                "value": false
-            },
-            "x_lite_spaces_topics_enabled": {
+            "x_lite_spaces_voice_transformer_enabled": {
                 "value": false
             },
             "xai_profile_redirect_enabled": {
@@ -6485,9 +6461,6 @@
             },
             "xchat_ckey_recovery_enabled": {
                 "value": false
-            },
-            "xchat_ckey_sig_v6_enforce_after_seq_num_str": {
-                "value": "2082251782884425728"
             },
             "xchat_composer_photo_editor_enabled": {
                 "value": true
@@ -6583,7 +6556,7 @@
                 "value": -1.0
             },
             "xchat_inbox_checksum_scribing_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_inbox_conversation_event_limit": {
                 "value": 5.0
@@ -6655,6 +6628,9 @@
                 "value": true
             },
             "xchat_message_composer_v2": {
+                "value": false
+            },
+            "xchat_message_list_v2_enabled": {
                 "value": false
             },
             "xchat_message_request_rate_limit_upsell": {
@@ -6985,6 +6961,7 @@
         "x_lite_in_tfa_existing_users_id_v2_18579",
         "personalization_holdback_2022_13469",
         "x_lite_video_editor_19086",
+        "android_x_lite_ssp_ads_immersive_exit_cache_clear_enabled_19103",
         "immersive_media_viewer_android_16367",
         "mr_tweet_media_on_push_android_9818",
         "ads_in_tweet_conversation_m2_contrasts_13063",
@@ -7019,7 +6996,6 @@
         "android_timeline_media_carousel_18993",
         "android_dynamic_ntab_14305",
         "android_satisfaction_bottomsheet_18778",
-        "ssp_ads_client_only_integration_19025",
         "ios_client_deduping_skip_adjacent_to_ads_18370",
         "x_lite_in_tfa_existing_users_uk_ca_18814",
         "android_o_clear_notifications_on_ntab_impression_8473",
@@ -7140,9 +7116,5 @@
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
-        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
-    }
+    "supports_accessibility": []
 }
