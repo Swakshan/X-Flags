@@ -8,7 +8,7 @@ from basics import printCmd,printSubCmd
 from compare import compareFlags
 import argparse
 
-VER = "v23.40 : Update X Web flags extraction logic"
+VER = "v23.41 : Remove X Web debug flags"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)
