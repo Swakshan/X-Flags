@@ -27,8 +27,8 @@ def processX(data:DATA,flagFileName:str):
         if platform == Platform.WEB:
             vername = data.vername
             if app == Application.X:
-                sha, hash = vername.split("::")
-                fs = webfeatureSwitches(hash)
+                sha = vername.split("::")
+                fs = webfeatureSwitches()
             elif app == Application.XCHAT:
                 hash = vername
                 fs = xChatWebFeatureSwitches(hash)

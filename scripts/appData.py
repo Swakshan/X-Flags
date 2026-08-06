@@ -66,44 +66,24 @@ def apkM(url):
 def formatWebFlags(res):
     res = res.replace("!0","true\n").replace("!1","false\n")
     return chompjs.parse_js_object(res)
-    
-def xManifestSwitches(hash):
-    FS_URL = f"https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.{hash}.js"
-    req = requests.get(FS_URL,headers=hdr)
-    res = req.text
-    eHint = "}}};"
-    res = res[res.find("{"):res.find(eHint)+len(eHint)]
-    return formatWebFlags(res)
 
-def xWebOverloadedWebFlags():
-    link = "https://x.com"
+
+def webfeatureSwitches():    
+    link = "https://x.com/grok"
     req = requests.get(link, headers=hdr)
     res = req.text
 
-    startKey = "window.__INITIAL_DATA__="
-    endKey = ";;"
+    startKey = "window.__INITIAL_STATE__="
+    endKey = ";window.__META_DATA__="
     
     start = res.find(startKey)+len(startKey)
     end = res.find(endKey,start)
-   
-    output = {}
     initialData = json.loads(res[start:end])
-    if "featureSwitchPayload" in initialData:
-        featureSwitchPayload = initialData['featureSwitchPayload']
-        if "features" in featureSwitchPayload:
-            features = featureSwitchPayload['features']
-            for key in features:
-                value = {"value":features[key]}
-                output[key] = value
-    return output
-
-def webfeatureSwitches(hash):    
-    xFlags = xWebOverloadedWebFlags()
-    manifestFlags = xManifestSwitches(hash)
-    flags = {**manifestFlags['config'],**xFlags}
-    token = manifestFlags['feature_set_token']
-
-    return {"feature_set_token":token,"config":flags,"debug":manifestFlags['debug']}
+    featureSwitch = initialData['featureSwitch']
+    userFlagsConfig = featureSwitch['user']['config']
+    debug = featureSwitch['debug']
+    token = featureSwitch['featureSetToken']
+    return {"feature_set_token":token,"debug":debug,"config":userFlagsConfig}
 
 
 def xChatOverloadedWebFlags():
