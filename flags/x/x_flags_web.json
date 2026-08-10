@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "9682a2164ef3912a2b92754b397cbee95e1b91a4",
+    "feature_set_token": "2b045bd35c61620cc32b91ec23556c105ad55b8d",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -1137,7 +1137,7 @@
             "value": true
         },
         "payments_interest_details_with_boost_enabled": {
-            "value": false
+            "value": true
         },
         "payments_international_wires_enabled": {
             "value": false
@@ -1818,7 +1818,7 @@
             "value": true
         },
         "responsive_web_grok_imagine_banner_config": {
-            "value": "{&quot;preset&quot;:&quot;video&quot;,&quot;enabled&quot;:true,&quot;description&quot;:&quot;Turn your reference images into video. Keep characters and scenes consistent across every shot.&quot;}"
+            "value": "{&quot;preset&quot;:&quot;image&quot;,&quot;enabled&quot;:true,&quot;imageUrl&quot;:&quot;https://pbs.twimg.com/ext_tw_video_thumb/2085734353351372800/pu/img/yRIpEChZVF1fmSnl.jpg&quot;,&quot;videoUrl&quot;:&quot;https://video.twimg.com/ext_tw_video/2085734353351372800/pu/vid/avc1/480x270/OcQX19HK90NnyEqD.mp4&quot;,&quot;title&quot;:&quot;Introducing Image 2.0, from Grok Imagine&quot;,&quot;description&quot;:&quot;Our greatest leap in image quality yet, excelling at professional use and text detail.&quot;,&quot;buttonText&quot;:&quot;Try for free&quot;}"
         },
         "responsive_web_grok_imagine_composer_enabled": {
             "value": false
@@ -1849,6 +1849,9 @@
         },
         "responsive_web_grok_imggen_count": {
             "value": 4
+        },
+        "responsive_web_grok_inplace_auth_handoff_enabled": {
+            "value": false
         },
         "responsive_web_grok_latest_news_preset_enabled": {
             "value": true
@@ -2801,9 +2804,6 @@
         "rweb_session_binding_enabled": {
             "value": false
         },
-        "rweb_sourcemap_migration": {
-            "value": false
-        },
         "rweb_spaces_invite_search_enabled": {
             "value": true
         },
@@ -2864,6 +2864,9 @@
         "rweb_xchat_bug_report_url": {
             "value": ""
         },
+        "rweb_xchat_call_link_enabled": {
+            "value": false
+        },
         "rweb_xchat_call_window_enabled": {
             "value": false
         },
@@ -2873,10 +2876,10 @@
         "rweb_xchat_dogfood_logs_enabled": {
             "value": false
         },
-        "rweb_xchat_keyboard_nav_enabled": {
-            "value": true
-        },
         "rweb_xchat_logs": {
+            "value": false
+        },
+        "rweb_xchat_loudness_control_enabled": {
             "value": false
         },
         "rweb_xchat_scroller_rewrite_enabled": {
@@ -4146,6 +4149,9 @@
         "xchat_enable_in_memory_event_retry_bottom_cursor": {
             "value": true
         },
+        "xchat_enable_legacy_metadata_write": {
+            "value": true
+        },
         "xchat_enable_message_request_ui_v3": {
             "value": true
         },
@@ -4239,6 +4245,9 @@
         "xchat_keypair_recovery_enabled": {
             "value": false
         },
+        "xchat_liquid_glass_convo_header_enabled": {
+            "value": false
+        },
         "xchat_local_pagination_page_size": {
             "value": 50
         },
@@ -4282,6 +4291,9 @@
             "value": true
         },
         "xchat_message_composer_v2": {
+            "value": false
+        },
+        "xchat_message_list_v2_enabled": {
             "value": false
         },
         "xchat_message_request_rate_limit_upsell": {
