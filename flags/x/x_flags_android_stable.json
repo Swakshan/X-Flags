@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "f0ecd43030d2d4acd991cb961a12d1fb8c486095",
+        "feature_set_token": "4850116580ae61c0638c3b2f0fc6c6307a86fa46",
         "config": {
             "aaid_reset_prompt_enabled": {
                 "value": true
@@ -801,6 +801,9 @@
             "android_broadcast_live_progress_bar_enabled": {
                 "value": true
             },
+            "android_broadcast_playback_scribes_enabled": {
+                "value": true
+            },
             "android_broadcast_replay_upgrade_enabled": {
                 "value": true
             },
@@ -1345,7 +1348,7 @@
                 "value": 0.0
             },
             "android_media_playback_timeline_viewport_sizing_enabled": {
-                "value": false
+                "value": true
             },
             "android_media_playback_volume_key_audio_control_enabled": {
                 "value": false
@@ -1800,6 +1803,9 @@
             "android_video_downsize_lowpass_enabled": {
                 "value": false
             },
+            "android_video_hide_inline_progress_label_enabled": {
+                "value": false
+            },
             "android_video_interleaved_output_enabled": {
                 "value": true
             },
@@ -2005,6 +2011,9 @@
                 "value": false
             },
             "android_x_lite_ssp_ads_immersive_exit_cache_clear_enabled": {
+                "value": false
+            },
+            "android_x_lite_ssp_ads_prefetch_after_filter_enabled": {
                 "value": false
             },
             "android_xiaomi_reflection_on_notification_object": {
@@ -6292,7 +6301,7 @@
                 "value": false
             },
             "x_lite_in_tfa_for_new_users_enabled": {
-                "value": false
+                "value": true
             },
             "x_lite_in_tfa_for_new_users_exit_enabled": {
                 "value": false
@@ -6663,6 +6672,9 @@
             "xchat_pay_button_enabled": {
                 "value": false
             },
+            "xchat_pinned_messages_enabled": {
+                "value": false
+            },
             "xchat_plaintext_grok_enabled": {
                 "value": false
             },
@@ -6897,6 +6909,7 @@
         "android_client_init_mr_logged_in_15130",
         "ios_promoted_force_cta_bar_video_only_18592",
         "customer_retention_overall_holdback_2021_11652",
+        "android_cashtags_composer_19138",
         "android_ntab_density_14775",
         "android_badging_holdback_8613",
         "android_timeline_hydration_caching_8919",
@@ -6913,7 +6926,6 @@
         "current_stack_follow_card_android_14711",
         "android_media_fetch_thread_usage_6877",
         "soft_interventions_engagement_nudge_m1_c_11710",
-        "x_lite_in_tfa_existing_users_id_v3_18671",
         "android_lower_bitrate_video_india_14097",
         "ad_formats_instream_redesign_android_10417",
         "x_android_embedded_scrolling_speed_17992",
@@ -6931,8 +6943,8 @@
         "android_simple_linger_17609",
         "media_selector_ordered_numbers_14598",
         "immersive_auto_play_next_16804",
-        "x_lite_in_tfa_new_users_au_ca_in_nz_tr_18504",
         "subscriptions_android_cancel_flow_18626",
+        "x_lite_video_progress_19135",
         "android_grok_post_button_copy_19013",
         "randomized_ip_0_ios_andriod_15093",
         "notifications_incremental_holdback_2023h1_14753",
@@ -6972,7 +6984,6 @@
         "mr_client_init_lo_static_push_14979",
         "good_click_reactivity_all_users_15540",
         "grok_auto_translate_worldwide_holdback_18413",
-        "x_lite_in_tfa_existing_users_id_v2_18579",
         "personalization_holdback_2022_13469",
         "x_lite_video_editor_19086",
         "android_x_lite_ssp_ads_immersive_exit_cache_clear_enabled_19103",
@@ -7009,7 +7020,6 @@
         "android_dynamic_ntab_14305",
         "android_satisfaction_bottomsheet_18778",
         "ios_client_deduping_skip_adjacent_to_ads_18370",
-        "x_lite_in_tfa_existing_users_uk_ca_18814",
         "android_o_clear_notifications_on_ntab_impression_8473",
         "android_preloaded_notifications_12303",
         "subscriptions_android_cancel_churn_offer_18625",
@@ -7043,7 +7053,6 @@
         "mr_override_notifs_relevancy_decay_v3_13161",
         "responsive_web_client_backoff_10535",
         "tweet_card_producer_experiment_9434",
-        "x_lite_in_tfa_existing_users_jp_18902",
         "moments_new_share_experiment_variants_13919",
         "android_timeline_post_injection_19001",
         "android_hls_dynamic_manifests_12518",
@@ -7059,6 +7068,7 @@
         "android_scroll_to_top_clear_cache_16550",
         "ios_no_ad_dropping_17457",
         "onboarding_wtf_dismiss_htl_9346",
+        "android_x_lite_ssp_ads_gsig_starvation_immersive_bind_19122",
         "home_incremental_holdback_2023h1_14678",
         "silence_device_follow_push_12609",
         "android_disable_bottom_paging_policy_home_16915",
@@ -7082,6 +7092,7 @@
         "android_vivo_badging_experiment_8942",
         "android_async_video_player_view_enabled_v2_14672",
         "premium_android_webview_paywall_18306",
+        "x_lite_ad_prefetch_19136",
         "android_ads_carousel_fullwidth_18385",
         "onboarding_account_follow_prompt_context_line_ios_11156",
         "android_12_media_large_icon_holdback_13364",
@@ -7119,8 +7130,8 @@
         "tq_popular_topic_tweets_in_home_on_ios_11035",
         "spaces_hosting_19074",
         "x_lite_video_player_timeline_viewport_sizing_18853",
-        "x_lite_in_tfa_existing_users_south_korea_18903",
         "ios_logged_out_explore_15838",
+        "android_profile_connect_19137",
         "search_history_limit_increase_9244",
         "android_xiaomi_badging_experiment_8611"
     ],
