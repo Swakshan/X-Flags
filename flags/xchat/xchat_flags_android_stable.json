@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "63915fa885bf4ca96c63af9ab1f84eb33dc26262",
+        "feature_set_token": "077c7f1dd54cd3a7291d10fe785d83f582dd94b4",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -171,7 +171,7 @@
                 "value": false
             },
             "android_in_app_notification_redesign_enabled": {
-                "value": false
+                "value": true
             },
             "android_large_screens_horizontal_inset_enabled": {
                 "value": true
@@ -284,11 +284,29 @@
             "android_screen_performance_enabled": {
                 "value": false
             },
+            "android_scribe_article_dwell_linger_enabled": {
+                "value": false
+            },
+            "android_scribe_audio_article_dwell_linger_enabled": {
+                "value": false
+            },
+            "android_scribe_broadcast_dwell_linger_enabled": {
+                "value": false
+            },
             "android_scribe_conversation_reply_dwell_linger_enabled": {
                 "value": true
             },
             "android_scribe_conversation_reply_dwell_linger_start_delay_seconds": {
                 "value": 0.5
+            },
+            "android_scribe_link_post_detail_web_page_dwell_enabled": {
+                "value": false
+            },
+            "android_scribe_playback_dwell_flush_interval_seconds": {
+                "value": 300.0
+            },
+            "android_scribe_space_dwell_linger_enabled": {
+                "value": false
             },
             "android_should_badge_oppo_launchers": {
                 "value": true
@@ -312,7 +330,7 @@
                 "value": true
             },
             "android_tweet_promote_button_social_context_label_enabled": {
-                "value": false
+                "value": true
             },
             "android_twemoji_iran_flag_emoji_enabled": {
                 "value": true
@@ -399,13 +417,13 @@
                 "value": "both"
             },
             "android_x_lite_nfl_game_field_hide_scrimmage_line": {
-                "value": true
+                "value": false
             },
             "android_x_lite_nfl_game_field_midfield_logo": {
                 "value": "both"
             },
             "android_x_lite_nfl_game_hero_backdrop": {
-                "value": "tinted"
+                "value": "gradient"
             },
             "android_x_lite_nfl_game_odds_card_enabled": {
                 "value": false
@@ -414,7 +432,7 @@
                 "value": false
             },
             "android_x_lite_ssp_ads_ai_disclosure_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_ssp_ads_enabled": {
                 "value": false
@@ -900,6 +918,9 @@
             "legacy_deciders_scribe_status_linger_minimum_threshold": {
                 "value": 0.5
             },
+            "link_post_detail_native_oauth_consent_mode": {
+                "value": "consent"
+            },
             "link_post_detail_sheet_enabled": {
                 "value": true
             },
@@ -1043,6 +1064,9 @@
             },
             "payments_funds_insurance_sweep_enabled": {
                 "value": true
+            },
+            "payments_home_cards_wallet_layout_enabled": {
+                "value": false
             },
             "payments_interest_details_with_boost_enabled": {
                 "value": false
@@ -1557,6 +1581,9 @@
             "x_lite_composer_sync_draft_media_enabled": {
                 "value": false
             },
+            "x_lite_dismiss_ad_premium_upsell_enabled": {
+                "value": false
+            },
             "x_lite_immersive_gallery_swipe_enabled": {
                 "value": false
             },
@@ -1908,6 +1935,9 @@
             "xchat_max_attachments_per_message": {
                 "value": 10.0
             },
+            "xchat_max_group_description_length": {
+                "value": 500.0
+            },
             "xchat_max_group_size": {
                 "value": 1000.0
             },
@@ -1939,7 +1969,7 @@
                 "value": true
             },
             "xchat_message_composer_v2": {
-                "value": false
+                "value": true
             },
             "xchat_message_list_v2_enabled": {
                 "value": false
@@ -1970,9 +2000,6 @@
             },
             "xchat_realm_migration_local_key_fallback_enabled": {
                 "value": false
-            },
-            "xchat_repair_groups_after_passcode_reset": {
-                "value": true
             },
             "xchat_sample_observation_queries": {
                 "value": 500.0
@@ -2015,6 +2042,9 @@
             },
             "xchat_send_signature_protocol_version": {
                 "value": 7.0
+            },
+            "xchat_signature_required_after_seq_num_str": {
+                "value": "0"
             },
             "xchat_unread_mismatch_scribing_enabled": {
                 "value": true
@@ -2165,20 +2195,14 @@
         "android_scribe_frequent_collect_and_upload_linger_17854",
         "android_link_viewer_with_replies_19000",
         "test_video_reactions_v1_17214",
-        "android_tweet_promote_button_social_context_label_enabled_19070",
         "android_vivo_badging_experiment_8942",
         "subscriptions_android_home_nav_offer_19038",
         "android_webview_preloaded_paywall_18775",
         "x_lite_do_not_clear_video_surface_on_recycle_18965",
         "customer_retention_notifs_2021_holdback_11678",
         "subscriptions_android_long_post_upsell_18815",
-        "new_xchat_composer_18961",
         "x_lite_video_player_timeline_viewport_sizing_18853",
         "android_profile_connect_19137"
     ],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
-        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
-    }
+    "supports_accessibility": []
 }
