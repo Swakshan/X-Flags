@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "4aa80968bf372a3dca0b3e5cc3e5ca1251f3da69",
+        "feature_set_token": "63915fa885bf4ca96c63af9ab1f84eb33dc26262",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -389,6 +389,30 @@
             "android_x_lite_durable_post_actions_enabled": {
                 "value": true
             },
+            "android_x_lite_nfl_game_chat_enabled": {
+                "value": false
+            },
+            "android_x_lite_nfl_game_feed_enabled": {
+                "value": false
+            },
+            "android_x_lite_nfl_game_field_end_zone_style": {
+                "value": "both"
+            },
+            "android_x_lite_nfl_game_field_hide_scrimmage_line": {
+                "value": true
+            },
+            "android_x_lite_nfl_game_field_midfield_logo": {
+                "value": "both"
+            },
+            "android_x_lite_nfl_game_hero_backdrop": {
+                "value": "tinted"
+            },
+            "android_x_lite_nfl_game_odds_card_enabled": {
+                "value": false
+            },
+            "android_x_lite_nfl_gameday_enabled": {
+                "value": false
+            },
             "android_x_lite_ssp_ads_ai_disclosure_enabled": {
                 "value": false
             },
@@ -468,7 +492,7 @@
                 "value": true
             },
             "broadcast_live_chat_enabled": {
-                "value": false
+                "value": true
             },
             "broadcast_live_chat_input_max_char_limit": {
                 "value": 200.0
@@ -2152,5 +2176,9 @@
         "x_lite_video_player_timeline_viewport_sizing_18853",
         "android_profile_connect_19137"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
+        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
+    }
 }
