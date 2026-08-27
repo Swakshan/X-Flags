@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "086f820821c78da9071193d82b3eb99e180ff74d",
+        "feature_set_token": "6c91d3a52ea53943ade1ea35c5ea4bc26844b614",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -56,6 +56,9 @@
             "android_ad_formats_xlite_dpa_spine_clicks_enabled": {
                 "value": true
             },
+            "android_ad_formats_xlite_explore_scroll_debug_scribes_enabled": {
+                "value": true
+            },
             "android_ad_formats_xlite_linger_results_drop_quoted_item_enabled": {
                 "value": false
             },
@@ -70,6 +73,9 @@
             },
             "android_ad_formats_xlite_stream_results_drop_quoted_item_enabled": {
                 "value": false
+            },
+            "android_ad_formats_xlite_trend_items_debug_scribes_enabled": {
+                "value": true
             },
             "android_anr_reporting_timeout_ms": {
                 "value": 5000.0
@@ -105,7 +111,7 @@
                 "value": true
             },
             "android_broadcast_v2_ui_enabled": {
-                "value": false
+                "value": true
             },
             "android_cashtags_composer_attachment_enabled": {
                 "value": true
@@ -172,6 +178,9 @@
             },
             "android_home_timeline_status_injections_from_notifications_enabled": {
                 "value": false
+            },
+            "android_in_app_notification_push_reroute_enabled": {
+                "value": true
             },
             "android_in_app_notification_redesign_enabled": {
                 "value": true
@@ -450,7 +459,7 @@
                 "value": false
             },
             "android_x_lite_nfl_game_feed_pill_cooldown_seconds": {
-                "value": 120.0
+                "value": 240.0
             },
             "android_x_lite_nfl_game_field_end_zone_style": {
                 "value": "both"
@@ -951,6 +960,15 @@
             "grok_android_tab_tooltip_placeholder_name": {
                 "value": ""
             },
+            "grok_created_with_grok_label_domains": {
+                "value": []
+            },
+            "grok_created_with_grok_label_text": {
+                "value": ""
+            },
+            "grok_created_with_grok_label_url": {
+                "value": ""
+            },
             "grok_mobile_post_composer_is_enabled": {
                 "value": true
             },
@@ -1176,12 +1194,6 @@
             "payments_funds_availability_timeline_enabled": {
                 "value": true
             },
-            "payments_funds_insurance_redesign_enabled": {
-                "value": true
-            },
-            "payments_funds_insurance_sweep_enabled": {
-                "value": true
-            },
             "payments_home_cards_wallet_layout_enabled": {
                 "value": false
             },
@@ -1204,9 +1216,6 @@
                 "value": false
             },
             "payments_prefill_identity_enabled": {
-                "value": true
-            },
-            "payments_scheduled_payments_enabled": {
                 "value": true
             },
             "payments_secondary_accounts_enabled": {
@@ -1672,6 +1681,9 @@
                 "value": false
             },
             "x_android_timeline_multi_media_carousel_enabled": {
+                "value": true
+            },
+            "x_android_timeline_multi_media_carousel_in_quote_enabled": {
                 "value": true
             },
             "x_castle_android_production_api_key": {
@@ -2365,7 +2377,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "fecc27df7ace9069aca8deaeb353984a8b2fd59a",
-        "experiments": "fecc27df7ace9069aca8deaeb353984a8b2fd59a"
+        "feature_switches": "9176cdce889589bd3ddc79b9d65bc950f9f4989e",
+        "experiments": "9176cdce889589bd3ddc79b9d65bc950f9f4989e"
     }
 }
