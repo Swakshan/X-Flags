@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "c9a244defc0302d64a36f2354a5e8d7c1e3001fa",
+        "feature_set_token": "052180fd71f892de38cd93e98c4bbb8b2c3f29c3",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -177,7 +177,7 @@
                 "value": true
             },
             "android_home_timeline_status_injections_from_notifications_enabled": {
-                "value": false
+                "value": true
             },
             "android_in_app_notification_push_reroute_enabled": {
                 "value": true
@@ -444,10 +444,10 @@
                 "value": true
             },
             "android_x_lite_nfl_favorite_teams_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_field_route_tracer_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_game_chat_enabled": {
                 "value": false
@@ -456,7 +456,7 @@
                 "value": 12.0
             },
             "android_x_lite_nfl_game_feed_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_game_feed_pill_cooldown_seconds": {
                 "value": 240.0
@@ -471,10 +471,10 @@
                 "value": "both"
             },
             "android_x_lite_nfl_game_headshot_offset_y_percent": {
-                "value": 5.0
+                "value": -5.0
             },
             "android_x_lite_nfl_game_headshot_zoom_percent": {
-                "value": 30.0
+                "value": 20.0
             },
             "android_x_lite_nfl_game_hero_backdrop": {
                 "value": "gradient"
@@ -483,7 +483,7 @@
                 "value": 3.0
             },
             "android_x_lite_nfl_game_odds_card_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_game_odds_refresh_seconds": {
                 "value": 60.0
@@ -516,10 +516,10 @@
                 "value": 30.0
             },
             "android_x_lite_nfl_gameday_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_hub_home_timeline_tag": {
-                "value": "1925951614067650560"
+                "value": "1000000000000000005"
             },
             "android_x_lite_nfl_hub_idle_poll_seconds": {
                 "value": 300.0
@@ -528,16 +528,16 @@
                 "value": 30.0
             },
             "android_x_lite_nfl_hub_odds_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_profile_roster_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_profile_schedule_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_nfl_schedule_reminder_enabled": {
-                "value": false
+                "value": true
             },
             "android_x_lite_ssp_ads_ai_disclosure_enabled": {
                 "value": true
@@ -1942,7 +1942,7 @@
                 "value": true
             },
             "x_lite_tap_to_share_enabled": {
-                "value": true
+                "value": false
             },
             "xai_profile_redirect_enabled": {
                 "value": true
@@ -2136,6 +2136,9 @@
             "xchat_pay_button_enabled": {
                 "value": false
             },
+            "xchat_pin_signatures_enabled": {
+                "value": false
+            },
             "xchat_pinned_messages_enabled": {
                 "value": false
             },
@@ -2144,6 +2147,9 @@
             },
             "xchat_plaintext_grok_minimum_tier": {
                 "value": "PremiumPlus"
+            },
+            "xchat_pmk_bundle_signatures_enabled": {
+                "value": false
             },
             "xchat_ratchet_group_id_threshold_str": {
                 "value": "9223372036854775807"
@@ -2360,6 +2366,7 @@
         "subscriptions_android_upsell_drawer_discount_18634",
         "android_timeline_media_carousel_18993",
         "android_satisfaction_bottomsheet_18778",
+        "android_ntab_media_preview_19247",
         "subscriptions_android_cancel_churn_offer_18625",
         "grok_android_tab_tooltip_19150",
         "customer_retention_overall_holdback_10754",
@@ -2375,7 +2382,6 @@
         "android_immersive_gestures_19183",
         "xlite_drop_quoted_post_in_home_timeline_events_19022",
         "android_scribe_frequent_collect_and_upload_linger_17854",
-        "android_link_viewer_with_replies_19000",
         "test_video_reactions_v1_17214",
         "android_vivo_badging_experiment_8942",
         "android_youtube_video_inline_19181",
