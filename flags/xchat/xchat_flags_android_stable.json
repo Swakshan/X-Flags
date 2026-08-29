@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "6c91d3a52ea53943ade1ea35c5ea4bc26844b614",
+        "feature_set_token": "45e6b85731bde94ea5707adbf1ac30f1cc422998",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -95,6 +95,9 @@
             "android_audio_spaces_tab_pills_enabled": {
                 "value": false
             },
+            "android_broadcast_captions_enabled": {
+                "value": false
+            },
             "android_broadcast_dock_enabled": {
                 "value": true
             },
@@ -177,7 +180,7 @@
                 "value": true
             },
             "android_home_timeline_status_injections_from_notifications_enabled": {
-                "value": false
+                "value": true
             },
             "android_in_app_notification_push_reroute_enabled": {
                 "value": true
@@ -470,6 +473,9 @@
             "android_x_lite_nfl_game_field_midfield_logo": {
                 "value": "both"
             },
+            "android_x_lite_nfl_game_field_midfield_logo_scale_percent": {
+                "value": 100.0
+            },
             "android_x_lite_nfl_game_headshot_offset_y_percent": {
                 "value": 5.0
             },
@@ -519,7 +525,7 @@
                 "value": false
             },
             "android_x_lite_nfl_hub_home_timeline_tag": {
-                "value": "1925951614067650560"
+                "value": "1000000000000000005"
             },
             "android_x_lite_nfl_hub_idle_poll_seconds": {
                 "value": 300.0
@@ -1902,9 +1908,6 @@
             "x_lite_quick_promote_iap_enabled": {
                 "value": false
             },
-            "x_lite_quick_promote_native_flow_enabled": {
-                "value": true
-            },
             "x_lite_quick_promote_nux_enabled": {
                 "value": true
             },
@@ -1975,7 +1978,7 @@
                 "value": false
             },
             "xchat_drop_sigs_after_seq_num_str": {
-                "value": "2082251782884425728"
+                "value": "2071020753515446272"
             },
             "xchat_enable_batch_sql_events": {
                 "value": false
@@ -2128,12 +2131,15 @@
                 "value": true
             },
             "xchat_missing_messages_scribe_enabled": {
-                "value": true
+                "value": false
             },
             "xchat_passcode_options_enabled": {
                 "value": false
             },
             "xchat_pay_button_enabled": {
+                "value": false
+            },
+            "xchat_pin_signatures_enabled": {
                 "value": false
             },
             "xchat_pinned_messages_enabled": {
@@ -2144,6 +2150,9 @@
             },
             "xchat_plaintext_grok_minimum_tier": {
                 "value": "PremiumPlus"
+            },
+            "xchat_pmk_bundle_signatures_enabled": {
+                "value": false
             },
             "xchat_ratchet_group_id_threshold_str": {
                 "value": "9223372036854775807"
@@ -2192,6 +2201,9 @@
             },
             "xchat_send_signature_protocol_version": {
                 "value": 7.0
+            },
+            "xchat_settings_redesign_enabled": {
+                "value": false
             },
             "xchat_signature_required_after_seq_num_str": {
                 "value": "0"
@@ -2273,6 +2285,18 @@
             },
             "xlite_scribe_upload_batch_size": {
                 "value": 60.0
+            },
+            "xlite_video_fix_enabled": {
+                "value": true
+            },
+            "xlite_video_fix_video_view_visibility_gate_enabled": {
+                "value": true
+            },
+            "xlite_video_fix_view_threshold_duration_cap_enabled": {
+                "value": true
+            },
+            "xlite_video_fix_view_threshold_half_visibility_enabled": {
+                "value": true
             },
             "xlite_video_playback_chrome_on_arrival": {
                 "value": true
@@ -2363,7 +2387,6 @@
         "android_immersive_gestures_19183",
         "xlite_drop_quoted_post_in_home_timeline_events_19022",
         "android_scribe_frequent_collect_and_upload_linger_17854",
-        "android_link_viewer_with_replies_19000",
         "test_video_reactions_v1_17214",
         "android_vivo_badging_experiment_8942",
         "android_youtube_video_inline_19181",
@@ -2375,9 +2398,5 @@
         "subscriptions_android_long_post_upsell_18815",
         "x_lite_video_player_timeline_viewport_sizing_18853"
     ],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "9176cdce889589bd3ddc79b9d65bc950f9f4989e",
-        "experiments": "9176cdce889589bd3ddc79b9d65bc950f9f4989e"
-    }
+    "supports_accessibility": []
 }
