@@ -112,15 +112,16 @@ def xChatWebFeatureSwitches(hash):
     
     req = requests.get(jsUrl, headers=hdr)
     res = req.text
-    
-    sHint = "window.__INITIAL_DATA__?.dtabLocal"
-    res = res[res.find(sHint):]
+
+    sHint = "av_chat_xchat_emoji_reactions_enabled"
+    # Subtracting 100 so that the start point is before the token value.
+    res = res[res.find(sHint)-100:] 
     
     sHint = "=`"
     eHint = "`,"
     start = res.find(sHint)+len(sHint)
     token = res[start:res.find(eHint)]
-    
+
     eHint = "}),"
     res = res[start:]
     res = res[res.find("{"):res.find(eHint)+len(eHint)]

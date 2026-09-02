@@ -26,7 +26,7 @@ def readFile(filename):
 
 def writeFile(fileName,data):
     printSubCmd(f"Writing = {fileName}")
-    f = open(fileName, 'w')
+    f = open(fileName, 'w', encoding='utf-8')
     f.write(data)
     f.close()
 
