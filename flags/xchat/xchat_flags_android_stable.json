@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "27f5b1547daf55bf80fa917aa88ffdf9565b3c32",
+        "feature_set_token": "e55192ff7cccf902c5d117d0f387acb0e1886c2f",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -703,6 +703,9 @@
             },
             "broadcast_live_chat_input_max_char_limit": {
                 "value": 200.0
+            },
+            "broadcast_live_chat_user_batch_window_ms": {
+                "value": 500.0
             },
             "c9s_admin_tools_reported_tweets_enabled": {
                 "value": true
@@ -2557,5 +2560,9 @@
         "x_lite_video_player_immersive_start_improvement_19302",
         "x_lite_video_player_timeline_viewport_sizing_18853"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
+        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
+    }
 }
