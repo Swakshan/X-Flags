@@ -69,7 +69,7 @@ def formatWebFlags(res):
 
 
 def webfeatureSwitches():    
-    link = "https://x.com/grok"
+    link = "https://x.com/i/jf/onboarding/web"
     req = requests.get(link, headers=hdr)
     res = req.text
 
