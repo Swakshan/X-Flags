@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "b623a9f202c865cd6d5f6eaa61c7d2a7ec377488",
+        "feature_set_token": "2cef852e4824897a18215f6e71562ffbc4c9b36d",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -422,6 +422,9 @@
             "android_ui_nested_quote_tweet_preview_enabled": {
                 "value": true
             },
+            "android_ui_nested_quote_tweet_preview_hidden_for_matching_outer_authors_enabled": {
+                "value": false
+            },
             "android_ui_nested_quote_tweet_preview_hidden_for_trailing_newline_enabled": {
                 "value": false
             },
@@ -601,9 +604,6 @@
             },
             "android_x_lite_nfl_game_rush_depth_yards": {
                 "value": 0.0
-            },
-            "android_x_lite_nfl_game_share_chat_enabled": {
-                "value": true
             },
             "android_x_lite_nfl_game_stats_refresh_seconds": {
                 "value": 30.0
@@ -993,6 +993,9 @@
                 "value": true
             },
             "complat_enabled": {
+                "value": false
+            },
+            "complat_management_enabled": {
                 "value": false
             },
             "complat_webview_manage_url": {
@@ -2153,8 +2156,20 @@
             "x_lite_tap_to_share_enabled": {
                 "value": false
             },
+            "x_sports_dash_item_enabled": {
+                "value": false
+            },
             "x_sports_game_chat_should_hide_logos": {
                 "value": false
+            },
+            "x_sports_post_context_enabled": {
+                "value": false
+            },
+            "x_sports_post_context_min_spacing": {
+                "value": 0.0
+            },
+            "x_sports_post_context_same_game_min_spacing": {
+                "value": 5.0
             },
             "xai_profile_redirect_enabled": {
                 "value": true
@@ -2465,6 +2480,9 @@
             "xlite_immersive_replies_sheet_enabled": {
                 "value": true
             },
+            "xlite_immersive_replies_side_panel_enabled": {
+                "value": true
+            },
             "xlite_non_video_immersive_rendering_enabled": {
                 "value": true
             },
@@ -2584,6 +2602,7 @@
         "subscriptions_android_custom_color_upsell_18885",
         "ios_promoted_force_cta_bar_video_only_18592",
         "customer_retention_overall_holdback_2021_11652",
+        "sports_context_spacing_tweets_19381",
         "x_lite_image_placeholders_19134",
         "notifications_incremental_holdback_2022h2_13461",
         "ios_true_aspect_ratio_photos_on_timelines_18327",
