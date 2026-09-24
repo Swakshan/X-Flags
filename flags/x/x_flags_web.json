@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "abc098c93cb16086419bbb29e2e5a355844a66c1",
+    "feature_set_token": "34e5b086abf6e2c1d781d8f504c68bb246a1371f",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -255,6 +255,9 @@
         },
         "ads_spacing_client_fallback_minimum_spacing_verified_blue": {
             "value": 3
+        },
+        "android_ui_nested_quote_tweet_preview_enabled": {
+            "value": false
         },
         "arkose_challenge_login_web_devel": {
             "value": "DF58DD3B-DFCC-4502-91FA-EDC0DC385CFF"
@@ -734,6 +737,21 @@
         "grok_settings_restriction_age": {
             "value": 18
         },
+        "grok_translations_community_note_auto_translation_is_enabled": {
+            "value": false
+        },
+        "grok_translations_community_note_translation_is_enabled": {
+            "value": false
+        },
+        "grok_translations_post_auto_translation_is_enabled": {
+            "value": false
+        },
+        "grok_xweb_connectors_enabled": {
+            "value": false
+        },
+        "grok_xweb_skills_enabled": {
+            "value": false
+        },
         "gryphon_accountsync_polling_interval_ms": {
             "value": 300000
         },
@@ -879,6 +897,9 @@
             "value": true
         },
         "identity_verification_vendor_idv_migration_enabled": {
+            "value": false
+        },
+        "immersive_video_status_linkable_timestamps": {
             "value": false
         },
         "immersive_viewer_enable_profile_viewer": {
@@ -1113,10 +1134,10 @@
             "value": true
         },
         "payments_agent_connections_enabled": {
-            "value": false
+            "value": true
         },
         "payments_agent_connections_prefill_enabled": {
-            "value": true
+            "value": false
         },
         "payments_assets_activate_card_dark_video_url": {
             "value": "https://pbs.twimg.com/static/money/x-card-animation-v4.mp4"
@@ -1147,6 +1168,9 @@
         },
         "payments_crb_iframe_delay_msecs": {
             "value": 1000
+        },
+        "payments_csv_export_enabled": {
+            "value": false
         },
         "payments_forward_with_enabled": {
             "value": true
@@ -2243,6 +2267,9 @@
         "responsive_web_nfl_enabled": {
             "value": true
         },
+        "responsive_web_nfl_game_dock_enabled": {
+            "value": false
+        },
         "responsive_web_nfl_hub_home_tab_enabled": {
             "value": true
         },
@@ -2356,6 +2383,9 @@
         },
         "responsive_web_qp_boost_content_check_min_delay_seconds": {
             "value": 0
+        },
+        "responsive_web_qp_budgets_by_billing_currency_enabled": {
+            "value": false
         },
         "responsive_web_qp_full_popup_enabled": {
             "value": true
@@ -2620,6 +2650,9 @@
         },
         "responsive_web_verified_organizations_affiliate_fetch_limit": {
             "value": 3000
+        },
+        "responsive_web_verified_organizations_application_requirements_enabled": {
+            "value": false
         },
         "responsive_web_verified_organizations_enterprise_insights_enabled": {
             "value": false
@@ -2922,10 +2955,10 @@
             "value": true
         },
         "rweb_sports_post_context_footer_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_sports_post_context_header_enabled": {
-            "value": true
+            "value": false
         },
         "rweb_ssp_ads_enabled": {
             "value": false
@@ -2957,14 +2990,14 @@
         "rweb_under_the_hood_report_enabled": {
             "value": true
         },
+        "rweb_under_the_hood_report_jetfuel_enabled": {
+            "value": true
+        },
         "rweb_update_fatigue_switch_to_app_day_timeout": {
             "value": 7
         },
         "rweb_update_fatigue_switch_to_app_link": {
             "value": "BannerSwitchToApp"
-        },
-        "rweb_video_host_enabled": {
-            "value": false
         },
         "rweb_video_logged_in_analytics_enabled": {
             "value": true
@@ -2980,6 +3013,9 @@
         },
         "rweb_xchat_bug_report_url": {
             "value": ""
+        },
+        "rweb_xchat_call_health_enabled": {
+            "value": true
         },
         "rweb_xchat_call_link_enabled": {
             "value": false
@@ -2998,6 +3034,9 @@
         },
         "rweb_xchat_calls_whiteboard_enabled": {
             "value": false
+        },
+        "rweb_xchat_client_stats_enabled": {
+            "value": true
         },
         "rweb_xchat_debug_enabled": {
             "value": false
@@ -4049,6 +4088,9 @@
         "unified_cards_clip_long_media_promoted_content_enabled": {
             "value": true
         },
+        "unified_cards_destination_url_params_enabled": {
+            "value": false
+        },
         "unified_cards_details_component_title_max_lines": {
             "value": 2
         },
@@ -4183,16 +4225,11 @@
         "x_jetfuel_enable_test_cluster": {
             "value": false
         },
-        "x_jetfuel_event_screen_migration_enabled": {
-            "value": false
-        },
-        "x_jetfuel_event_screen_migration_skip_ids": {
-            "value": [
-                "2000461415727931396"
-            ]
-        },
         "x_jetfuel_use_new_api_url": {
             "value": true
+        },
+        "x_lite_quick_promote_analytics_banner_enabled": {
+            "value": false
         },
         "x_sports_game_chat_should_hide_logos": {
             "value": false
@@ -4204,7 +4241,7 @@
             "value": true
         },
         "x_sports_nfl_game_chat_team_pick_enabled": {
-            "value": false
+            "value": true
         },
         "x_sports_nfl_game_feed_enabled": {
             "value": true
@@ -4230,6 +4267,9 @@
         "x_sports_play_video_enabled": {
             "value": true
         },
+        "x_sports_post_context_enabled": {
+            "value": false
+        },
         "x_sports_post_context_min_spacing": {
             "value": 3
         },
@@ -4238,6 +4278,9 @@
         },
         "xai_profile_redirect_enabled": {
             "value": true
+        },
+        "xcall_link_devices_enabled": {
+            "value": false
         },
         "xchat_additional_reply_preview_validation_required_seqnum_str": {
             "value": "0"
