@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "2f5652dcba8e10c9a9a901060d0199cd707ebbf4",
+        "feature_set_token": "12aa1beedd50ddc5e850338473b6d2d0384ac97a",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2314,6 +2314,9 @@
             "grok_ios_grok_bot_post_cta_enabled": {
                 "value": false
             },
+            "grok_ios_grok_bot_post_cta_image_enabled": {
+                "value": false
+            },
             "grok_ios_grok_bot_post_cta_presence_max_age_seconds": {
                 "value": 2592000.0
             },
@@ -2585,6 +2588,9 @@
                 "value": false
             },
             "grok_ios_unify_code_block_parity_enabled": {
+                "value": false
+            },
+            "grok_ios_unify_dynamic_type_enabled": {
                 "value": false
             },
             "grok_ios_unify_file_upload_types_enabled": {
@@ -3374,7 +3380,7 @@
                 "value": false
             },
             "ios_ad_formats_long_press_for_skip_details_enabled": {
-                "value": false
+                "value": true
             },
             "ios_ad_formats_media_component_render_overlay_dpa_enabled": {
                 "value": true
@@ -5682,6 +5688,9 @@
                 "value": false
             },
             "media_upload_video_editor_cover_tooltip_enabled": {
+                "value": false
+            },
+            "media_upload_video_editor_crop_tab_enabled": {
                 "value": false
             },
             "media_upload_video_editor_download_enabled": {
@@ -12603,10 +12612,10 @@
                 "value": true
             },
             "x_sports_post_context_enabled": {
-                "value": false
+                "value": true
             },
             "x_sports_post_context_min_spacing": {
-                "value": 0.0
+                "value": 3.0
             },
             "x_sports_post_context_same_game_min_spacing": {
                 "value": 20.0
@@ -12904,5 +12913,9 @@
     },
     "embedded_experiments": [],
     "requires_restart": [],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "9f5b8d2fd0a7e5deda23894675bac24853f5b6c1",
+        "experiments": "9f5b8d2fd0a7e5deda23894675bac24853f5b6c1"
+    }
 }
