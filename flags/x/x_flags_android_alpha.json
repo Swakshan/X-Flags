@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "39d7ad76cfd850ca4cbb509d98d380125f029e08",
+        "feature_set_token": "55b59228304774161fb9b01b1f0951f370adae47",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -15,7 +15,7 @@
                 "value": "veryai_sdk_RzzaNjpXap2b6bdBVaXVTfOWXwP-CHGizH7WaUZuiSQ"
             },
             "ads_spacing_client_fallback_minimum_spacing": {
-                "value": 2.0
+                "value": 1.0
             },
             "android_ad_formats_google_play_inline_install_enabled": {
                 "value": false
@@ -632,7 +632,7 @@
                 "value": 20.0
             },
             "android_x_lite_nfl_game_hero_backdrop": {
-                "value": "gradient"
+                "value": "ripple"
             },
             "android_x_lite_nfl_game_hydrate_retry_seconds": {
                 "value": 3.0
@@ -1653,7 +1653,7 @@
                 "value": true
             },
             "spaces_live_chat_enabled": {
-                "value": false
+                "value": true
             },
             "ssp_ads_debug_mock_ads_enabled": {
                 "value": false
@@ -2132,8 +2132,17 @@
             "x_lite_immersive_send_stream_results_events": {
                 "value": true
             },
-            "x_lite_in_app_update_enabled": {
-                "value": true
+            "x_lite_in_app_update_blocking_versions": {
+                "value": []
+            },
+            "x_lite_in_app_update_cold_start_versions": {
+                "value": []
+            },
+            "x_lite_in_app_update_min_releases_behind": {
+                "value": 0.0
+            },
+            "x_lite_in_app_update_warm_start_versions": {
+                "value": []
             },
             "x_lite_in_tfa_enabled": {
                 "value": false
@@ -2366,10 +2375,16 @@
             "x_sports_game_chat_should_hide_logos": {
                 "value": false
             },
+            "x_sports_game_chat_team_pick_disabled_leagues": {
+                "value": []
+            },
             "x_sports_mlb_game_background_poll_interval_seconds": {
                 "value": 30.0
             },
             "x_sports_mlb_game_odds_card_enabled": {
+                "value": true
+            },
+            "x_sports_mlb_game_player_props_enabled": {
                 "value": true
             },
             "x_sports_mlb_game_selected_poll_interval_seconds": {
@@ -2377,6 +2392,9 @@
             },
             "x_sports_mlb_gameday_enabled": {
                 "value": false
+            },
+            "x_sports_mlb_team_notifications_enabled": {
+                "value": true
             },
             "x_sports_nba_game_odds_card_enabled": {
                 "value": false
@@ -2592,7 +2610,7 @@
                 "value": true
             },
             "xchat_molecule_enabled": {
-                "value": false
+                "value": true
             },
             "xchat_numbers_tray_location": {
                 "value": ""
@@ -2674,9 +2692,6 @@
             },
             "xchat_send_signature_protocol_version": {
                 "value": 7.0
-            },
-            "xchat_settings_redesign_enabled": {
-                "value": true
             },
             "xchat_signature_required_after_seq_num_str": {
                 "value": "9223372036854775806"
@@ -2849,12 +2864,14 @@
         "android_history_tab_19439",
         "spaces_2022_h2_holdback_13972",
         "drawer_get_verified_upsell_android_test_18735",
+        "android_volume_key_audio_control_19548",
         "ios_promoted_force_cta_bar_18232",
         "subscriptions_android_custom_color_upsell_18885",
         "ios_promoted_force_cta_bar_video_only_18592",
         "customer_retention_overall_holdback_2021_11652",
         "sports_context_spacing_tweets_19381",
         "x_lite_image_placeholders_19134",
+        "android_broadcast_dock_19549",
         "android_navigation_bottom_tabs_19185",
         "notifications_incremental_holdback_2022h2_13461",
         "ios_true_aspect_ratio_photos_on_timelines_18327",
@@ -2862,6 +2879,7 @@
         "xlite_always_start_app_at_for_you_premium_exempt_19276",
         "android_captions_immersive_19487",
         "grok_unification_free_users_19402",
+        "android_notification_toggles_prompt_19542",
         "paywall_on_web_app_open_backend_holdback_18421",
         "x_lite_native_media_picker_v1_19147",
         "android_youtube_card_16442",
@@ -2884,7 +2902,9 @@
         "fleetline_nfl_games_android_19437",
         "android_x_lite_immersive_promoted_cta_style_19378",
         "verified_to_premium_rebrand_usa_19345",
+        "xchat_open_inbox_prompt_19553",
         "android_larger_avatars_htl_19468",
+        "android_share_post_screenshot_19543",
         "spaces_multi_tab_14033",
         "android_home_cold_start_prefetch_19417",
         "profile_page_upsells_swapper_android_18566",
@@ -2895,6 +2915,7 @@
         "android_mute_button_htl_19307",
         "subscriptions_android_cancel_churn_offer_18625",
         "ios_1080p_for_all_19488",
+        "android_share_sheet_apps_grid_19544",
         "android_tablet_side_panel_immersive_19486",
         "grok_android_tab_tooltip_19150",
         "customer_retention_overall_holdback_10754",
@@ -2916,6 +2937,7 @@
         "xlite_drop_quoted_post_in_home_timeline_events_19022",
         "android_scribe_frequent_collect_and_upload_linger_17854",
         "xlite_reset_to_home_screen_holdback_19260",
+        "android_immersive_chrome_on_arrival_19546",
         "test_video_reactions_v1_17214",
         "android_vivo_badging_experiment_8942",
         "android_action_bar_font_scaling_19467",
@@ -2925,13 +2947,12 @@
         "x_lite_do_not_clear_video_surface_on_recycle_18965",
         "customer_retention_notifs_2021_holdback_11678",
         "subscriptions_android_long_post_upsell_18815",
+        "android_search_smart_pills_19552",
         "android_gallery_chrome_19485",
+        "android_home_header_slide_collapse_19545",
         "android_immersive_replies_only_19483",
+        "android_immersive_speed_hold_19547",
         "ios_x_sports_context_tags_holdback_19436"
     ],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "9176cdce889589bd3ddc79b9d65bc950f9f4989e",
-        "experiments": "9176cdce889589bd3ddc79b9d65bc950f9f4989e"
-    }
+    "supports_accessibility": []
 }
