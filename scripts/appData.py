@@ -113,9 +113,12 @@ def xChatWebFeatureSwitches(hash):
     req = requests.get(jsUrl, headers=hdr)
     res = req.text
 
-    sHint = "av_chat_xchat_emoji_reactions_enabled"
+    sHint = "android_ui_nested_quote_tweet_preview_enabled"
+    sIndex = res.find(sHint)
+    if sIndex<0:
+        raise Exception("XChat Web flag key not found")
     # Subtracting 100 so that the start point is before the token value.
-    res = res[res.find(sHint)-100:] 
+    res = res[sIndex-100:] 
     
     sHint = "=`"
     eHint = "`,"
