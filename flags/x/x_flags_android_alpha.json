@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "55b59228304774161fb9b01b1f0951f370adae47",
+        "feature_set_token": "91e519ea43f7bf4464ee4338ab13d0ca55faa472",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -844,8 +844,17 @@
             "av_chat_android_dev_logs_to_analytics_enabled": {
                 "value": true
             },
+            "av_chat_android_ice_presume_relay_writable_enabled": {
+                "value": true
+            },
             "av_chat_android_periscope_edge_proxied_hosts_enabled": {
                 "value": true
+            },
+            "av_chat_android_relay_first_connect_enabled": {
+                "value": true
+            },
+            "av_chat_android_relay_first_upgrade_delay_ms": {
+                "value": 3000.0
             },
             "av_chat_android_screenshare_ui_enabled": {
                 "value": true
@@ -1124,7 +1133,7 @@
                 "value": 120.0
             },
             "composer_android_xlite_post_upload_v2_enabled": {
-                "value": false
+                "value": true
             },
             "content_disclosure_ai_generated_c2pa_detection_enabled": {
                 "value": true
@@ -1171,6 +1180,9 @@
             },
             "feature_switches_configs_wait_before_kill_minutes": {
                 "value": 15.0
+            },
+            "global_mention_settings_enabled": {
+                "value": false
             },
             "gp_android_show_phone_number_and_email_hint": {
                 "value": "none"
@@ -1943,6 +1955,9 @@
             "timeline_auto_refresh_on_foreground_timeout_millis": {
                 "value": 60000.0
             },
+            "toxic_reply_filter_settings_enabled": {
+                "value": false
+            },
             "traffic_api_probe_requests_per_session": {
                 "value": 20.0
             },
@@ -1972,6 +1987,9 @@
             },
             "tweet_details_click_new_behavior_web_card_enabled": {
                 "value": false
+            },
+            "unified_cards_destination_url_params_enabled": {
+                "value": true
             },
             "unified_cards_force_show_cta_bar_card_types": {
                 "value": []
@@ -2069,6 +2087,9 @@
             "x_android_timeline_multi_media_carousel_in_quote_enabled": {
                 "value": true
             },
+            "x_android_timeline_photo_permalink_share_enabled": {
+                "value": true
+            },
             "x_android_timeline_post_text_max_lines": {
                 "value": 9.0
             },
@@ -2115,9 +2136,6 @@
                 "value": false
             },
             "x_lite_dismiss_ad_premium_upsell_enabled": {
-                "value": false
-            },
-            "x_lite_immersive_gallery_swipe_enabled": {
                 "value": false
             },
             "x_lite_immersive_landscape_video_top_offset_enabled": {
@@ -2209,6 +2227,9 @@
             },
             "x_lite_infra_image_trim_memory_handler_enabled": {
                 "value": true
+            },
+            "x_lite_infra_perf_diagnostics_enabled": {
+                "value": false
             },
             "x_lite_infra_session_energy_telemetry_enabled": {
                 "value": true
@@ -2378,10 +2399,23 @@
             "x_sports_game_chat_team_pick_disabled_leagues": {
                 "value": []
             },
+            "x_sports_hub_home_timeline_ids": {
+                "value": [
+                    "nfl:1925951614067650560",
+                    "ncaafb:1925951645872975873",
+                    "mlb:1925951672561319936"
+                ]
+            },
             "x_sports_mlb_game_background_poll_interval_seconds": {
                 "value": 30.0
             },
+            "x_sports_mlb_game_hot_zones_enabled": {
+                "value": false
+            },
             "x_sports_mlb_game_odds_card_enabled": {
+                "value": true
+            },
+            "x_sports_mlb_game_play_video_enabled": {
                 "value": true
             },
             "x_sports_mlb_game_player_props_enabled": {
@@ -2391,6 +2425,12 @@
                 "value": 10.0
             },
             "x_sports_mlb_gameday_enabled": {
+                "value": true
+            },
+            "x_sports_mlb_hub_media_tab_enabled": {
+                "value": true
+            },
+            "x_sports_mlb_profile_enabled": {
                 "value": false
             },
             "x_sports_mlb_team_notifications_enabled": {
@@ -2408,6 +2448,9 @@
             "x_sports_nfl_game_roster_enabled": {
                 "value": false
             },
+            "x_sports_nfl_hub_media_tab_enabled": {
+                "value": true
+            },
             "x_sports_post_context_enabled": {
                 "value": true
             },
@@ -2419,6 +2462,9 @@
             },
             "xai_profile_redirect_enabled": {
                 "value": true
+            },
+            "xcall_rtc_stats_report_interval_ms": {
+                "value": 0.0
             },
             "xcall_xchat_enabled": {
                 "value": false
@@ -2443,6 +2489,15 @@
             },
             "xchat_ckey_recovery_enabled": {
                 "value": false
+            },
+            "xchat_cold_inbox_suggestions_count": {
+                "value": 10.0
+            },
+            "xchat_cold_inbox_suggestions_enabled": {
+                "value": false
+            },
+            "xchat_cold_inbox_suggestions_max_convos": {
+                "value": 3.0
             },
             "xchat_composer_photo_editor_enabled": {
                 "value": true
@@ -2611,6 +2666,9 @@
             },
             "xchat_molecule_enabled": {
                 "value": true
+            },
+            "xchat_num_posts_to_cache_in_memory": {
+                "value": 500.0
             },
             "xchat_numbers_tray_location": {
                 "value": ""
@@ -2837,9 +2895,6 @@
             "xlite_video_playback_speed_tap_cycle": {
                 "value": true
             },
-            "xlite_video_playback_vertical_fill_enabled": {
-                "value": false
-            },
             "xlite_video_playback_vertical_fill_status_bar_top_enabled": {
                 "value": true
             },
@@ -2860,7 +2915,6 @@
         "android_notifications_prefetch_19482",
         "android_transsion_badging_experiment_15156",
         "android_animated_rating_stars_19442",
-        "x_lite_immersive_gallery_swipe_enabled_18999",
         "android_history_tab_19439",
         "spaces_2022_h2_holdback_13972",
         "drawer_get_verified_upsell_android_test_18735",
@@ -2913,6 +2967,7 @@
         "x_lite_haze_performance_config_19475",
         "android_satisfaction_bottomsheet_18778",
         "android_mute_button_htl_19307",
+        "android_ad_spacing_preserve_promoted_duplicates_19561",
         "subscriptions_android_cancel_churn_offer_18625",
         "ios_1080p_for_all_19488",
         "android_share_sheet_apps_grid_19544",
@@ -2935,6 +2990,7 @@
         "android_scroll_to_top_clear_cache_16550",
         "xlite_video_playback_vertical_fill_enabled_19398",
         "xlite_drop_quoted_post_in_home_timeline_events_19022",
+        "ios_composer_auto_open_editor_19562",
         "android_scribe_frequent_collect_and_upload_linger_17854",
         "xlite_reset_to_home_screen_holdback_19260",
         "android_immersive_chrome_on_arrival_19546",
@@ -2954,5 +3010,9 @@
         "android_immersive_speed_hold_19547",
         "ios_x_sports_context_tags_holdback_19436"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "9e131c608d1971caab90a5d92946db1c9c8566a4",
+        "experiments": "9e131c608d1971caab90a5d92946db1c9c8566a4"
+    }
 }
