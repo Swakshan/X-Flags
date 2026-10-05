@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "34e5b086abf6e2c1d781d8f504c68bb246a1371f",
+    "feature_set_token": "8f5eae586f2e95a0d357d3e5b88d0fbf267934a0",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -251,7 +251,7 @@
             "value": false
         },
         "ads_spacing_client_fallback_minimum_spacing": {
-            "value": 3
+            "value": 1
         },
         "ads_spacing_client_fallback_minimum_spacing_verified_blue": {
             "value": 3
@@ -366,9 +366,6 @@
         },
         "branded_like_preview_enabled": {
             "value": false
-        },
-        "broadcast_live_chat_enabled": {
-            "value": true
         },
         "broadcast_live_chat_input_max_char_limit": {
             "value": 200
@@ -508,10 +505,16 @@
         "communities_web_enable_tweet_community_results_fetch": {
             "value": true
         },
+        "complat_enabled": {
+            "value": false
+        },
         "complat_management_enabled": {
             "value": false
         },
         "complat_responsive_web_castle_minting_enabled": {
+            "value": false
+        },
+        "complat_x_migration_enabled": {
             "value": false
         },
         "composer_add_geo_network_conversation_controls": {
@@ -1640,6 +1643,9 @@
         "responsive_web_composer_configurable_video_player_enabled": {
             "value": false
         },
+        "responsive_web_composer_quote_video_toggle_enabled": {
+            "value": false
+        },
         "responsive_web_convert_card_video_to_gif_enabled": {
             "value": false
         },
@@ -1795,6 +1801,9 @@
         },
         "responsive_web_grok_bot_preset_title": {
             "value": "create_a_bot"
+        },
+        "responsive_web_grok_bot_top_banner_enabled": {
+            "value": false
         },
         "responsive_web_grok_build_tab_relabel_enabled": {
             "value": false
@@ -2157,7 +2166,7 @@
             "value": false
         },
         "responsive_web_live_video_viewer_session_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_livecut_native_share_enabled": {
             "value": true
@@ -2246,6 +2255,63 @@
         "responsive_web_messages_watch_info_interval_s": {
             "value": 600
         },
+        "responsive_web_mlb_athlete_tray_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_favorite_teams_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_game_animations_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_game_chat_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_game_feed_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_game_odds_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_hub_home_tab_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_hub_media_tab_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_lineup_season_stats_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_live_card_collapse_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_logged_out_game_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_pregame_matchup_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_profile_sports_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_reminder_snooze_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_reminders_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_scorecard_odds_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_sidebar_enabled": {
+            "value": true
+        },
+        "responsive_web_mlb_team_picker_enabled": {
+            "value": true
+        },
         "responsive_web_mobile_app_spotlight_v1_config": {
             "value": false
         },
@@ -2262,7 +2328,7 @@
             "value": true
         },
         "responsive_web_nested_quote_preview_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_nfl_enabled": {
             "value": true
@@ -2471,6 +2537,12 @@
         "responsive_web_sports_live_profile_rings_enabled": {
             "value": true
         },
+        "responsive_web_sports_profile_endpoint_enabled": {
+            "value": true
+        },
+        "responsive_web_sports_sidebar_league_logos_enabled": {
+            "value": true
+        },
         "responsive_web_spud_enabled": {
             "value": true
         },
@@ -2654,6 +2726,9 @@
         "responsive_web_verified_organizations_application_requirements_enabled": {
             "value": false
         },
+        "responsive_web_verified_organizations_application_two_column_enabled": {
+            "value": false
+        },
         "responsive_web_verified_organizations_enterprise_insights_enabled": {
             "value": false
         },
@@ -2762,6 +2837,9 @@
         "rweb_analytics_post_details_realtime_enabled": {
             "value": true
         },
+        "rweb_analytics_realtime_active_followers_enabled": {
+            "value": true
+        },
         "rweb_analytics_spaces_details_enabled": {
             "value": true
         },
@@ -2829,6 +2907,9 @@
             "value": true
         },
         "rweb_home_nav_single_direction_scroll_enabled": {
+            "value": false
+        },
+        "rweb_home_preserve_entries_enabled": {
             "value": false
         },
         "rweb_home_ranked_following_enabled": {
@@ -3229,9 +3310,6 @@
         "spaces_dtx_opus_dtx_enabled": {
             "value": false
         },
-        "spaces_live_chat_enabled": {
-            "value": false
-        },
         "spaces_video_admins_enabled": {
             "value": false
         },
@@ -3293,7 +3371,7 @@
             "value": true
         },
         "subscriptions_feature_can_gift_premium": {
-            "value": true
+            "value": false
         },
         "subscriptions_feature_create_premium_content": {
             "value": false
@@ -3338,7 +3416,7 @@
             "value": "https://x.com/messages/compose?recipient_id&#x3D;1399766153053061121"
         },
         "subscriptions_gifting_premium_intervals_enabled": {
-            "value": true
+            "value": false
         },
         "subscriptions_gifting_premium_intro_copy_enabled": {
             "value": false
@@ -4253,7 +4331,7 @@
             "value": false
         },
         "x_sports_nfl_game_roster_enabled": {
-            "value": false
+            "value": true
         },
         "x_sports_nfl_hub_home_timeline_tag": {
             "value": "1000000000000000005"
@@ -4262,7 +4340,7 @@
             "value": true
         },
         "x_sports_nfl_scorecard_odds_disabled": {
-            "value": true
+            "value": false
         },
         "x_sports_play_video_enabled": {
             "value": true
@@ -4278,6 +4356,9 @@
         },
         "xai_profile_redirect_enabled": {
             "value": true
+        },
+        "xcall_item_in_list_enabled": {
+            "value": false
         },
         "xcall_link_devices_enabled": {
             "value": false
@@ -4406,7 +4487,7 @@
             "value": false
         },
         "xchat_enable_numbers_premium": {
-            "value": false
+            "value": true
         },
         "xchat_enable_ratcheting": {
             "value": false
@@ -4591,9 +4672,6 @@
         "xchat_observe_inbox_users_enabled": {
             "value": true
         },
-        "xchat_passcode_options_enabled": {
-            "value": false
-        },
         "xchat_pay_button_enabled": {
             "value": true
         },
@@ -4658,7 +4736,7 @@
             "value": false
         },
         "xchat_settings_redesign_enabled": {
-            "value": false
+            "value": true
         },
         "xchat_share_to_ig_story": {
             "value": false
