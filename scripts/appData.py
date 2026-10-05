@@ -69,7 +69,7 @@ def formatWebFlags(res):
 
 
 def webfeatureSwitches():    
-    link = "https://x.com/i/jf/onboarding/web"
+    link = "https://x.com/1.1/help/settings.json?include_zero_rate=true"
     req = requests.get(link, headers=hdr)
     res = req.text
 
