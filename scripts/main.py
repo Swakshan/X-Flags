@@ -8,7 +8,7 @@ from basics import printCmd,printSubCmd
 from compare import compareFlags
 import argparse
 
-VER = "v23.48 : Update X web extraction url"
+VER = "v23.485 : Update Grok apkmirror slug"
 
 def flagName(data:DATA):
     os.makedirs(MAIN_FOLDER,exist_ok=True)

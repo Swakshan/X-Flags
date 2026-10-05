@@ -88,7 +88,7 @@ def getAPKMSlug(app: Application):
     if app == Application.X:
         return "x"
     if app == Application.GROK:
-        return "grok-smartest-ai-advisor"
+        return "grok"
     if app == Application.XLITE:
         return "x-lite"
     #TODO XChat code for android
@@ -97,7 +97,7 @@ def getAPKMCode(app: Application):
     if app == Application.X:
         return "x-corp/twitter"
     if app == Application.GROK:
-        return "xai/grok"
+        return "spacexai/grok"
     if app == Application.XLITE:
         return "x-corp/x-lite"
     #TODO XChat code for android
