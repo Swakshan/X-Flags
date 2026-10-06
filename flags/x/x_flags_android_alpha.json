@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "ba8b0aba986174a5a27725533691df22cd16311b",
+        "feature_set_token": "0c65c227eef957e2bef9eeb12211fee95875102c",
         "config": {
             "account_live_verification_check_pool_id": {
                 "value": "us-east-1:26f1ce13-b2b9-4162-b41d-7e43f93fc071"
@@ -48,7 +48,7 @@
                 "value": true
             },
             "android_ad_formats_xlite_ad_spacing_preserve_promoted_duplicates_enabled": {
-                "value": false
+                "value": true
             },
             "android_ad_formats_xlite_browser_destination_prefetching_enabled": {
                 "value": false
@@ -434,6 +434,9 @@
                 "value": 300.0
             },
             "android_scribe_space_dwell_linger_enabled": {
+                "value": true
+            },
+            "android_settings_redesign_enabled": {
                 "value": true
             },
             "android_should_badge_oppo_launchers": {
@@ -2036,6 +2039,9 @@
             "videos_segmented_upload_xlite_segment_size_poor_kb": {
                 "value": 128.0
             },
+            "voice_rooms_main_fab_creation_enabled": {
+                "value": false
+            },
             "x_android_conversation_prefetch_enabled": {
                 "value": true
             },
@@ -2400,7 +2406,9 @@
                 "value": [
                     "nfl:1925951614067650560",
                     "ncaafb:1925951645872975873",
-                    "mlb:1925951672561319936"
+                    "mlb:1925951672561319936",
+                    "nba:1925951454121967616",
+                    "nhl:1925951775544061952"
                 ]
             },
             "x_sports_mlb_batter_left_base_image_url": {
@@ -2441,6 +2449,9 @@
             },
             "x_sports_mlb_profile_enabled": {
                 "value": false
+            },
+            "x_sports_mlb_team_batter_artwork_enabled": {
+                "value": true
             },
             "x_sports_mlb_team_notifications_enabled": {
                 "value": true
@@ -2760,6 +2771,9 @@
             "xchat_self_custody_enabled": {
                 "value": false
             },
+            "xchat_send_contents_encryption_version": {
+                "value": 0.0
+            },
             "xchat_send_signature_protocol_version": {
                 "value": 7.0
             },
@@ -2779,7 +2793,7 @@
                 "value": false
             },
             "xchat_video_upload_processing_enabled_android": {
-                "value": false
+                "value": true
             },
             "xchat_voice_messages_transcription_enabled": {
                 "value": false
@@ -3010,6 +3024,7 @@
         "test_video_reactions_v1_17214",
         "android_vivo_badging_experiment_8942",
         "android_action_bar_font_scaling_19467",
+        "spaces_holdback_11943",
         "nfl_special_effects_htl_19497",
         "subscriptions_android_home_nav_offer_19038",
         "ios_video_editor_redesign_19471",
