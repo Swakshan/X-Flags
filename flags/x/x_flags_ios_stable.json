@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "7724f093b097cd787c76ad1560fa0f5c89de1eac",
+        "feature_set_token": "eada6b4c3b2ee50fce2d433af5acf2f4ebd03c64",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -1506,11 +1506,17 @@
             "complat_external_checkout_url": {
                 "value": ""
             },
+            "complat_force_finish_transactions": {
+                "value": false
+            },
             "complat_grok_web_signin_enabled": {
                 "value": false
             },
             "complat_grok_web_signin_link_path": {
                 "value": ""
+            },
+            "complat_grok_web_signin_pending_urls": {
+                "value": []
             },
             "complat_grok_web_signin_session_path": {
                 "value": ""
@@ -1519,16 +1525,19 @@
                 "value": 0.0
             },
             "complat_plan_name_plus": {
-                "value": "Plus"
+                "value": "Premium"
             },
             "complat_plan_name_premium": {
-                "value": "Premium"
+                "value": "Plus"
             },
             "complat_plan_name_super": {
                 "value": "Super"
             },
             "complat_plan_name_ultra": {
                 "value": "Ultra"
+            },
+            "complat_premium_hub_title": {
+                "value": ""
             },
             "complat_prewarm_disabled": {
                 "value": false
@@ -1539,8 +1548,29 @@
             "complat_upgrade_card_config": {
                 "value": ""
             },
+            "complat_webview_cookie_ttl_seconds": {
+                "value": 3600.0
+            },
             "complat_webview_manage_url": {
                 "value": ""
+            },
+            "complat_webview_memory_storage_enabled": {
+                "value": false
+            },
+            "complat_webview_preload_url": {
+                "value": ""
+            },
+            "complat_webview_storage_ttl_seconds": {
+                "value": 3600.0
+            },
+            "complat_webview_stored_signin_enabled": {
+                "value": false
+            },
+            "complat_webview_t1_host_enabled": {
+                "value": false
+            },
+            "complat_webview_t1_shell_preload_enabled": {
+                "value": false
             },
             "complat_webview_url": {
                 "value": ""
@@ -2750,6 +2780,9 @@
             "grok_ios_unify_gateway_image_edit_enabled": {
                 "value": false
             },
+            "grok_ios_unify_gateway_linked_foreground_recheck_enabled": {
+                "value": false
+            },
             "grok_ios_unify_gateway_live_sync_enabled": {
                 "value": false
             },
@@ -2799,7 +2832,7 @@
                 "value": false
             },
             "grok_ios_unify_link_entry_cancel_behavior": {
-                "value": "none"
+                "value": "button_only"
             },
             "grok_ios_unify_response_chrome_enabled": {
                 "value": false
@@ -3165,7 +3198,7 @@
                 "value": true
             },
             "home_timeline_flyby_promoted_impression_skip_dedup_cache_enabled": {
-                "value": false
+                "value": true
             },
             "home_timeline_foreground_refresh_min_background_seconds": {
                 "value": 0.0
@@ -3984,7 +4017,7 @@
                 "value": 20.0
             },
             "ios_home_timeline_filtered_timeline_refresh_requires_active_filter_enabled": {
-                "value": false
+                "value": true
             },
             "ios_home_timeline_items_refactor_bottom_backoff_network_failure_fast_retry_enabled": {
                 "value": false
@@ -11362,7 +11395,7 @@
                 "value": false
             },
             "spaces_dock_redesign_enabled": {
-                "value": false
+                "value": true
             },
             "spaces_dtx_opus_dtx_enabled": {
                 "value": false
@@ -11605,7 +11638,7 @@
                 "value": true
             },
             "subscriptions_feature_can_gift_premium": {
-                "value": true
+                "value": false
             },
             "subscriptions_feature_can_hide_checkmark": {
                 "value": false
@@ -11635,10 +11668,10 @@
                 "value": "https://x.com/messages/compose?recipient_id=1399766153053061121"
             },
             "subscriptions_gifting_polling_after_purchase_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_gifting_premium_enabled": {
-                "value": true
+                "value": false
             },
             "subscriptions_gifting_premium_intro_copy_enabled": {
                 "value": false
@@ -12629,7 +12662,7 @@
                 "value": true
             },
             "x_sports_mlb_game_odds_card_enabled": {
-                "value": false
+                "value": true
             },
             "x_sports_mlb_game_selected_poll_interval_seconds": {
                 "value": 10.0
@@ -12971,7 +13004,7 @@
                 "value": false
             },
             "xchat_molecule_enabled": {
-                "value": true
+                "value": false
             },
             "xchat_open_inbox_prompt_variant": {
                 "value": 0.0
@@ -13039,6 +13072,9 @@
             "xchat_xds_settings_enabled": {
                 "value": true
             },
+            "xlinks_identity_refresh_enabled": {
+                "value": false
+            },
             "xlinks_native_oauth_consent_mode": {
                 "value": "consent"
             },
@@ -13086,5 +13122,9 @@
     },
     "embedded_experiments": [],
     "requires_restart": [],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
+        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
+    }
 }
