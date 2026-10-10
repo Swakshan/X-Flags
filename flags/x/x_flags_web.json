@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a824ebf35a233ba909649f89651d92c02704ba04",
+    "feature_set_token": "713ef76c8c8788a4665707027e7a2bf469509d79",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -511,6 +511,9 @@
         "complat_management_enabled": {
             "value": false
         },
+        "complat_premium_hub_upgrade_card_enabled": {
+            "value": false
+        },
         "complat_responsive_web_castle_minting_enabled": {
             "value": false
         },
@@ -750,13 +753,16 @@
             "value": false
         },
         "grok_xweb_connectors_enabled": {
-            "value": false
+            "value": true
+        },
+        "grok_xweb_history_media_enabled": {
+            "value": true
         },
         "grok_xweb_skills_enabled": {
-            "value": false
+            "value": true
         },
         "grok_xweb_voice_mode_enabled": {
-            "value": false
+            "value": true
         },
         "gryphon_accountsync_polling_interval_ms": {
             "value": 300000
@@ -1239,6 +1245,9 @@
             "value": false
         },
         "people_search_interests_filter_enabled": {
+            "value": false
+        },
+        "photo_permalink_share_enabled": {
             "value": false
         },
         "post_ctas_fetch_enabled": {
@@ -2336,6 +2345,9 @@
         "responsive_web_ncaafb_logged_out_game_enabled": {
             "value": true
         },
+        "responsive_web_ncaafb_profile_sports_enabled": {
+            "value": true
+        },
         "responsive_web_nested_quote_preview_enabled": {
             "value": true
         },
@@ -2451,10 +2463,10 @@
             "value": false
         },
         "responsive_web_qp_boost_content_check_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_qp_boost_content_check_min_delay_seconds": {
-            "value": 0
+            "value": 11
         },
         "responsive_web_qp_budgets_by_billing_currency_enabled": {
             "value": true
@@ -4400,7 +4412,7 @@
             "value": true
         },
         "xcall_item_in_list_enabled": {
-            "value": false
+            "value": true
         },
         "xcall_link_devices_enabled": {
             "value": false
