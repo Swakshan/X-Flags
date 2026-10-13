@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "6f6eb30a89a50834a76c552d7eb3378aaa28c0ee",
+        "feature_set_token": "f9c314f7f1b16a1a2f17799ae789dd2199316210",
         "config": {
             "account_country_setting_countries_whitelist": {
                 "value": [
@@ -831,6 +831,21 @@
             "android_x_lite_coalesced_timeline_refresh_enabled": {
                 "value": true
             },
+            "android_x_lite_ncaafb_favorite_teams_enabled": {
+                "value": true
+            },
+            "android_x_lite_ncaafb_game_enabled": {
+                "value": true
+            },
+            "android_x_lite_ncaafb_hub_enabled": {
+                "value": true
+            },
+            "android_x_lite_ncaafb_odds_tab_enabled": {
+                "value": true
+            },
+            "android_x_lite_ncaafb_rankings_enabled": {
+                "value": true
+            },
             "android_x_lite_nfl_favorite_teams_enabled": {
                 "value": true
             },
@@ -1338,6 +1353,15 @@
             "complat_enabled": {
                 "value": false
             },
+            "complat_entitled_enabled": {
+                "value": false
+            },
+            "complat_entitled_webview_manage_url": {
+                "value": ""
+            },
+            "complat_entitled_webview_url": {
+                "value": ""
+            },
             "complat_management_enabled": {
                 "value": false
             },
@@ -1491,6 +1515,9 @@
             },
             "grok_android_tab_tooltip_placeholder_name": {
                 "value": ""
+            },
+            "grok_android_unify_gateway_image_edit_enabled": {
+                "value": false
             },
             "grok_created_with_grok_label_domains": {
                 "value": []
@@ -2695,6 +2722,9 @@
             "x_sports_mlb_game_background_poll_interval_seconds": {
                 "value": 30.0
             },
+            "x_sports_mlb_game_hero_highlights_enabled": {
+                "value": true
+            },
             "x_sports_mlb_game_hot_zones_enabled": {
                 "value": true
             },
@@ -3312,5 +3342,9 @@
         "ios_x_sports_context_tags_holdback_19436",
         "android_home_timeline_logo_pull_to_refresh_19583"
     ],
-    "supports_accessibility": []
+    "supports_accessibility": [],
+    "versions": {
+        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
+        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
+    }
 }
