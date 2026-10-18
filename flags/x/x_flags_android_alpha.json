@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "db649f4dd39bef92ee9b47c02a60d4631dc828f5",
+        "feature_set_token": "674b568aebab9c39569fd4f9b467849cb0f00c14",
         "config": {
             "account_country_setting_countries_whitelist": {
                 "value": [
@@ -1143,6 +1143,9 @@
             "broadcast_live_chat_redesign_enabled": {
                 "value": true
             },
+            "broadcast_live_chat_user_batch_max_size": {
+                "value": 100.0
+            },
             "broadcast_live_chat_user_batch_window_ms": {
                 "value": 1000.0
             },
@@ -1475,9 +1478,6 @@
                 "value": "try_grok"
             },
             "grok_android_download_grok_cta_enabled": {
-                "value": true
-            },
-            "grok_android_google_play_deep_link_redirect_enabled": {
                 "value": true
             },
             "grok_android_grok_backend_min_token_iat": {
@@ -1906,6 +1906,17 @@
             "ranked_following_home_timeline_tab_enabled": {
                 "value": true
             },
+            "restricted_client_shutdown_api_allow_list": {
+                "value": [
+                    ".*/1.1/help/settings.json.*",
+                    ".*/1.1/guest/activate.json.*",
+                    ".*/oauth2/token.*",
+                    ".*/1.1/jot.*"
+                ]
+            },
+            "restricted_client_shutdown_min_version_code": {
+                "value": 0.0
+            },
             "room_broadcast_status_polling_interval_ms": {
                 "value": 2000.0
             },
@@ -2129,7 +2140,7 @@
                 "value": false
             },
             "subscriptions_premium_hub_x_subscription_card_enabled": {
-                "value": false
+                "value": true
             },
             "subscriptions_upsell_visitor_verified_profile": {
                 "value": true
@@ -2355,6 +2366,9 @@
             },
             "x_android_navigation_notifications_prefetch_enabled": {
                 "value": true
+            },
+            "x_android_timeline_autoplay_scrolling_flag_on_low_end_soc_enabled": {
+                "value": false
             },
             "x_android_timeline_cold_start_prefetch_enabled": {
                 "value": true
@@ -2662,9 +2676,6 @@
             "x_lite_sports_live_profile_rings_enabled": {
                 "value": true
             },
-            "x_lite_tap_to_share_enabled": {
-                "value": false
-            },
             "x_sports_dash_item_enabled": {
                 "value": false
             },
@@ -2783,6 +2794,9 @@
             "xcall_sfu_ring_status_enabled": {
                 "value": true
             },
+            "xcall_tab_enabled": {
+                "value": false
+            },
             "xcall_xchat_enabled": {
                 "value": false
             },
@@ -2830,6 +2844,9 @@
             },
             "xchat_drop_sigs_after_seq_num_str": {
                 "value": "2055075687429046272"
+            },
+            "xchat_empty_chat_wave_enabled": {
+                "value": false
             },
             "xchat_enable_default_disappearing_messages_setting": {
                 "value": false
@@ -2892,6 +2909,9 @@
                 "value": false
             },
             "xchat_grok_bots_connect_on_start": {
+                "value": false
+            },
+            "xchat_grok_bots_native_x_connector": {
                 "value": false
             },
             "xchat_grok_bots_requires_account_link": {
@@ -3249,7 +3269,6 @@
         "mr_global_user_retention_holdback_10725",
         "android_timeline_media_pinch_zoom_19515",
         "android_full_hd_upsell_19180",
-        "android_media_editor_redesign_19441",
         "android_home_widgets_19666",
         "subscriptions_android_video_download_placement_19010",
         "android_video_attribution_scribe_19495",
@@ -3312,7 +3331,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "9f5b8d2fd0a7e5deda23894675bac24853f5b6c1",
-        "experiments": "9f5b8d2fd0a7e5deda23894675bac24853f5b6c1"
+        "feature_switches": "070636940959fda500476195d50d8ba3ae9a41d1",
+        "experiments": "070636940959fda500476195d50d8ba3ae9a41d1"
     }
 }
