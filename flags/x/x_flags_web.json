@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "7b5aeb415d22ad7bb27ae1981abc83d7e12b1bab",
+    "feature_set_token": "17718949a881d24409602fa80d66286a5900a9ff",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -785,6 +785,9 @@
         "grok_xweb_voice_mode_enabled": {
             "value": true
         },
+        "grok_xweb_voice_personality_enabled": {
+            "value": true
+        },
         "gryphon_accountsync_polling_interval_ms": {
             "value": 300000
         },
@@ -1266,6 +1269,9 @@
             "value": true
         },
         "payments_transfer_link_enabled": {
+            "value": false
+        },
+        "payments_web_advanced": {
             "value": false
         },
         "payments_web_external_app_enabled": {
@@ -1851,7 +1857,7 @@
             "value": "create_a_bot"
         },
         "responsive_web_grok_bot_top_banner_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_grok_build_tab_relabel_enabled": {
             "value": false
@@ -2115,7 +2121,7 @@
             "value": true
         },
         "responsive_web_grok_tweet_translation_limit": {
-            "value": 5000
+            "value": 50000
         },
         "responsive_web_grok_use_new_layout": {
             "value": true
@@ -2499,6 +2505,9 @@
             "value": false
         },
         "responsive_web_personalization_id_sync_enabled": {
+            "value": false
+        },
+        "responsive_web_personalization_id_sync_ios_webview_enabled": {
             "value": false
         },
         "responsive_web_pinned_replies_enabled": {
@@ -4355,7 +4364,7 @@
             "value": true
         },
         "web_video_player_size_cap_enabled": {
-            "value": false
+            "value": true
         },
         "web_video_prefetch_playlist_autoplay_disabled": {
             "value": false
