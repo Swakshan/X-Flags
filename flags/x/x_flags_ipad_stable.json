@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "173db6ae122c46d53aae008a83c2667e802ec0bf",
+        "feature_set_token": "191491846bbf6ca4062dd378584a9b5ea82b84fe",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -409,6 +409,9 @@
             "av_chat_ios_call_dismissal_docks_enabled": {
                 "value": true
             },
+            "av_chat_ios_call_intent_permissions_fetch_enabled": {
+                "value": true
+            },
             "av_chat_ios_call_recovery_enabled": {
                 "value": true
             },
@@ -422,7 +425,7 @@
                 "value": 3.0
             },
             "av_chat_ios_contacts_email_handle_for_everyone_enabled": {
-                "value": false
+                "value": true
             },
             "av_chat_ios_contacts_opt_in_prompt_cooldown_days": {
                 "value": 0.0
@@ -571,6 +574,9 @@
             "birdwatch_home_page_enabled": {
                 "value": false
             },
+            "birdwatch_home_timeline_community_analysis_enabled": {
+                "value": false
+            },
             "birdwatch_note_request_mobile_enabled": {
                 "value": true
             },
@@ -579,6 +585,9 @@
             },
             "birdwatch_pivot_hit_test_fix_enabled": {
                 "value": true
+            },
+            "birdwatch_post_detail_community_analysis_enabled": {
+                "value": false
             },
             "birdwatch_xchat_pivot_rendering_enabled": {
                 "value": true
@@ -1603,7 +1612,7 @@
                 "value": "Subscription"
             },
             "complat_upgrade_card_config": {
-                "value": ""
+                "value": "{\"card\":{\"title\":\"Unlock the new X Subscription\",\"description\":\"Get the benefits of \ud835\udd4f Premium, plus powerful AI tools like Grok Bot and Cursor \u2013 all in one simple plan.\",\"buttonTitle\":\"Get started\",\"localizations\":{\"ar\":{\"title\":\"\u0627\u0641\u062a\u062d X Subscription \u0627\u0644\u062c\u062f\u064a\u062f\",\"description\":\"\u0627\u062d\u0635\u0644 \u0639\u0644\u0649 \u0645\u0632\u0627\u064a\u0627 \ud835\udd4f Premium\u060c \u0628\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0623\u062f\u0648\u0627\u062a \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0642\u0648\u064a\u0629 \u0645\u062b\u0644 Grok Bot \u0648Cursor\u060c \u0643\u0644 \u0630\u0644\u0643 \u0641\u064a \u062e\u0637\u0629 \u0648\u0627\u062d\u062f\u0629 \u0628\u0633\u064a\u0637\u0629.\",\"buttonTitle\":\"\u0627\u0628\u062f\u0623 \u0627\u0644\u0622\u0646\"},\"bg\":{\"title\":\"\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u0442\u0435 \u043d\u043e\u0432\u0438\u044f X Subscription\",\"description\":\"\u041f\u043e\u043b\u0443\u0447\u0435\u0442\u0435 \u043f\u0440\u0435\u0434\u0438\u043c\u0441\u0442\u0432\u0430\u0442\u0430 \u043d\u0430 \ud835\udd4f Premium, \u043a\u0430\u043a\u0442\u043e \u0438 \u043c\u043e\u0449\u043d\u0438 \u0418\u0418 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438 \u043a\u0430\u0442\u043e Grok Bot \u0438 Cursor \u2013 \u0432\u0441\u0438\u0447\u043a\u043e \u0432 \u0435\u0434\u0438\u043d \u043f\u0440\u043e\u0441\u0442 \u043f\u043b\u0430\u043d.\",\"buttonTitle\":\"\u0417\u0430\u043f\u043e\u0447\u043d\u0435\u0442\u0435\"},\"bn\":{\"title\":\"\u09a8\u09a4\u09c1\u09a8 X Subscription \u0986\u09a8\u09b2\u0995 \u0995\u09b0\u09c1\u09a8\",\"description\":\"\ud835\udd4f Premium-\u098f\u09b0 \u09b8\u09c1\u09ac\u09bf\u09a7\u09be\u09b0 \u09aa\u09be\u09b6\u09be\u09aa\u09be\u09b6\u09bf Grok Bot \u098f\u09ac\u0982 Cursor-\u098f\u09b0 \u09ae\u09a4\u09cb \u09b6\u0995\u09cd\u09a4\u09bf\u09b6\u09be\u09b2\u09c0 \u098f\u0986\u0987 \u099f\u09c1\u09b2 \u09aa\u09be\u09a8 \u2013 \u09b8\u09ac\u0995\u09bf\u099b\u09c1 \u098f\u0995\u099f\u09bf \u09b8\u09b9\u099c \u09aa\u09cd\u09b2\u09cd\u09af\u09be\u09a8\u09c7\u0964\",\"buttonTitle\":\"\u09b6\u09c1\u09b0\u09c1 \u0995\u09b0\u09c1\u09a8\"},\"ca\":{\"title\":\"Desbloqueja la nova X Subscription\",\"description\":\"Obt\u00e9n els avantatges d\u2019\ud835\udd4f Premium, a m\u00e9s d\u2019eines d\u2019IA potents com Grok Bot i Cursor, tot en un sol pla senzill.\",\"buttonTitle\":\"Comen\u00e7a\"},\"cs\":{\"title\":\"Odemkn\u011bte nov\u00e9 X Subscription\",\"description\":\"Z\u00edskejte v\u00fdhody \ud835\udd4f Premium a k tomu v\u00fdkonn\u00e9 AI n\u00e1stroje jako Grok Bot a Cursor \u2013 v\u0161e v jednom jednoduch\u00e9m pl\u00e1nu.\",\"buttonTitle\":\"Za\u010d\u00edt\"},\"da\":{\"title\":\"L\u00e5s op for det nye X Subscription\",\"description\":\"F\u00e5 fordelene ved \ud835\udd4f Premium samt kraftfulde AI-v\u00e6rkt\u00f8jer som Grok Bot og Cursor \u2013 alt i \u00e9n enkel plan.\",\"buttonTitle\":\"Kom i gang\"},\"de\":{\"title\":\"Schalte die neue X Subscription frei\",\"description\":\"Erhalte die Vorteile von \ud835\udd4f Premium sowie leistungsstarke KI-Tools wie Grok Bot und Cursor \u2013 alles in einem einfachen Plan.\",\"buttonTitle\":\"Loslegen\"},\"el\":{\"title\":\"\u039e\u03b5\u03ba\u03bb\u03b5\u03b9\u03b4\u03ce\u03c3\u03c4\u03b5 \u03c4\u03b7 \u03bd\u03ad\u03b1 X Subscription\",\"description\":\"\u0391\u03c0\u03bf\u03ba\u03c4\u03ae\u03c3\u03c4\u03b5 \u03c4\u03b1 \u03bf\u03c6\u03ad\u03bb\u03b7 \u03c4\u03bf\u03c5 \ud835\udd4f Premium, \u03ba\u03b1\u03b8\u03ce\u03c2 \u03ba\u03b1\u03b9 \u03b9\u03c3\u03c7\u03c5\u03c1\u03ac \u03b5\u03c1\u03b3\u03b1\u03bb\u03b5\u03af\u03b1 AI \u03cc\u03c0\u03c9\u03c2 \u03c4\u03bf Grok Bot \u03ba\u03b1\u03b9 \u03c4\u03bf Cursor \u2013 \u03cc\u03bb\u03b1 \u03c3\u03b5 \u03ad\u03bd\u03b1 \u03b1\u03c0\u03bb\u03cc \u03c0\u03bb\u03ac\u03bd\u03bf.\",\"buttonTitle\":\"\u039e\u03b5\u03ba\u03b9\u03bd\u03ae\u03c3\u03c4\u03b5\"},\"es\":{\"title\":\"Desbloquea la nueva X Subscription\",\"description\":\"Obt\u00e9n los beneficios de \ud835\udd4f Premium, adem\u00e1s de potentes herramientas de IA como Grok Bot y Cursor, todo en un solo plan sencillo.\",\"buttonTitle\":\"Comenzar\"},\"fa\":{\"title\":\"\u0642\u0641\u0644 X Subscription \u062c\u062f\u06cc\u062f \u0631\u0627 \u0628\u0627\u0632 \u06a9\u0646\u06cc\u062f\",\"description\":\"\u0645\u0632\u0627\u06cc\u0627\u06cc \ud835\udd4f Premium \u0631\u0627 \u0628\u0647\u200c\u0647\u0645\u0631\u0627\u0647 \u0627\u0628\u0632\u0627\u0631\u0647\u0627\u06cc \u0642\u062f\u0631\u062a\u0645\u0646\u062f \u0647\u0648\u0634 \u0645\u0635\u0646\u0648\u0639\u06cc \u0645\u0627\u0646\u0646\u062f Grok Bot \u0648 Cursor \u062f\u0631\u06cc\u0627\u0641\u062a \u06a9\u0646\u06cc\u062f\u060c \u0647\u0645\u0647 \u062f\u0631 \u06cc\u06a9 \u0637\u0631\u062d \u0633\u0627\u062f\u0647.\",\"buttonTitle\":\"\u0634\u0631\u0648\u0639 \u06a9\u0646\u06cc\u062f\"},\"fi\":{\"title\":\"Avaa uusi X Subscription\",\"description\":\"Hanki \ud835\udd4f Premium -tilauksen edut sek\u00e4 tehokkaat teko\u00e4lyty\u00f6kalut, kuten Grok Bot ja Cursor \u2013 kaikki yhdess\u00e4 helpossa paketissa.\",\"buttonTitle\":\"Aloita\"},\"fil\":{\"title\":\"I-unlock ang bagong X Subscription\",\"description\":\"Makuha ang mga benepisyo ng \ud835\udd4f Premium, pati na rin ang mga makapangyarihang AI tool tulad ng Grok Bot at Cursor \u2013 lahat sa isang simpleng plano.\",\"buttonTitle\":\"Magsimula\"},\"fr\":{\"title\":\"D\u00e9bloquez la nouvelle X Subscription\",\"description\":\"Obtenez les avantages d\u2019\ud835\udd4f Premium, ainsi que des outils d\u2019IA puissants comme Grok Bot et Cursor \u2013 le tout dans un seul plan simple.\",\"buttonTitle\":\"Commencer\"},\"gu\":{\"title\":\"\u0aa8\u0ab5\u0ac1\u0a82 X Subscription \u0a85\u0aa8\u0ab2\u0ac9\u0a95 \u0a95\u0ab0\u0acb\",\"description\":\"\ud835\udd4f Premium \u0aa8\u0abe \u0ab2\u0abe\u0aad\u0acb \u0ab8\u0abe\u0aa5\u0ac7 Grok Bot \u0a85\u0aa8\u0ac7 Cursor \u0a9c\u0ac7\u0ab5\u0abe \u0ab6\u0a95\u0acd\u0aa4\u0abf\u0ab6\u0abe\u0ab3\u0ac0 AI \u0a9f\u0ac2\u0ab2\u0acd\u0ab8 \u0aae\u0ac7\u0ab3\u0ab5\u0acb \u2013 \u0aac\u0aa7\u0ac1\u0a82 \u0a8f\u0a95 \u0a9c \u0ab8\u0ab0\u0ab3 \u0aaa\u0acd\u0ab2\u0abe\u0aa8\u0aae\u0abe\u0a82.\",\"buttonTitle\":\"\u0ab6\u0ab0\u0ac2 \u0a95\u0ab0\u0acb\"},\"he\":{\"title\":\"\u05e7\u05d1\u05dc\u05d5 \u05d2\u05d9\u05e9\u05d4 \u05dc-X Subscription \u05d4\u05d7\u05d3\u05e9\",\"description\":\"\u05e7\u05d1\u05dc\u05d5 \u05d0\u05ea \u05d4\u05d9\u05ea\u05e8\u05d5\u05e0\u05d5\u05ea \u05e9\u05dc \ud835\udd4f Premium, \u05d5\u05d2\u05dd \u05db\u05dc\u05d9 AI \u05e2\u05d5\u05e6\u05de\u05ea\u05d9\u05d9\u05dd \u05db\u05de\u05d5 Grok Bot \u05d5-Cursor \u2013 \u05d4\u05db\u05d5\u05dc \u05d1\u05ea\u05d5\u05db\u05e0\u05d9\u05ea \u05d0\u05d7\u05ea \u05e4\u05e9\u05d5\u05d8\u05d4.\",\"buttonTitle\":\"\u05d4\u05ea\u05d7\u05d9\u05dc\u05d5\"},\"hi\":{\"title\":\"\u0928\u092f\u093e X Subscription \u0905\u0928\u0932\u0949\u0915 \u0915\u0930\u0947\u0902\",\"description\":\"\ud835\udd4f Premium \u0915\u0947 \u0932\u093e\u092d\u094b\u0902 \u0915\u0947 \u0938\u093e\u0925-\u0938\u093e\u0925 Grok Bot \u0914\u0930 Cursor \u091c\u0948\u0938\u0947 \u0936\u0915\u094d\u0924\u093f\u0936\u093e\u0932\u0940 AI \u091f\u0942\u0932\u094d\u0938 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0947\u0902 \u2013 \u0938\u092c \u0915\u0941\u091b \u090f\u0915 \u0939\u0940 \u0906\u0938\u093e\u0928 \u092a\u094d\u0932\u093e\u0928 \u092e\u0947\u0902\u0964\",\"buttonTitle\":\"\u0936\u0941\u0930\u0942 \u0915\u0930\u0947\u0902\"},\"hr\":{\"title\":\"Otklju\u010dajte novu X Subscription\",\"description\":\"Dobijte prednosti \ud835\udd4f Premium, kao i mo\u0107ne AI alate poput Grok Bot i Cursor \u2013 sve u jednom jednostavnom planu.\",\"buttonTitle\":\"Zapo\u010dnite\"},\"hu\":{\"title\":\"Oldja fel az \u00faj X Subscription csomagot\",\"description\":\"Szerezze meg az \ud835\udd4f Premium el\u0151nyeit, valamint olyan hat\u00e9kony AI-eszk\u00f6z\u00f6ket, mint a Grok Bot \u00e9s a Cursor \u2013 mindezt egyetlen egyszer\u0171 csomagban.\",\"buttonTitle\":\"Kezd\u00e9s\"},\"id\":{\"title\":\"Buka X Subscription baru\",\"description\":\"Dapatkan manfaat \ud835\udd4f Premium, ditambah alat AI canggih seperti Grok Bot dan Cursor \u2013 semuanya dalam satu paket sederhana.\",\"buttonTitle\":\"Mulai\"},\"it\":{\"title\":\"Sblocca la nuova X Subscription\",\"description\":\"Ottieni i vantaggi di \ud835\udd4f Premium, oltre a potenti strumenti di IA come Grok Bot e Cursor \u2013 tutto in un unico piano semplice.\",\"buttonTitle\":\"Inizia\"},\"ja\":{\"title\":\"\u65b0\u3057\u3044X Subscription\u3092\u624b\u306b\u5165\u308c\u3088\u3046\",\"description\":\"\ud835\udd4f Premium\u306e\u7279\u5178\u306b\u52a0\u3048\u3001Grok Bot\u3084Cursor\u306a\u3069\u306e\u5f37\u529b\u306aAI\u30c4\u30fc\u30eb\u3082\u3001\u3059\u3079\u3066\u30b7\u30f3\u30d7\u30eb\u306a1\u3064\u306e\u30d7\u30e9\u30f3\u3067\u3054\u5229\u7528\u3044\u305f\u3060\u3051\u307e\u3059\u3002\",\"buttonTitle\":\"\u59cb\u3081\u308b\"},\"kn\":{\"title\":\"\u0cb9\u0cca\u0cb8 X Subscription \u0c85\u0ca8\u0ccd\u200c\u0cb2\u0cbe\u0c95\u0ccd \u0cae\u0cbe\u0ca1\u0cbf\",\"description\":\"\ud835\udd4f Premium \u0caa\u0ccd\u0cb0\u0caf\u0ccb\u0c9c\u0ca8\u0c97\u0cb3 \u0c9c\u0cca\u0ca4\u0cc6\u0c97\u0cc6 Grok Bot \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 Cursor \u0ca8\u0c82\u0ca4\u0cb9 \u0cb6\u0c95\u0ccd\u0ca4\u0cbf\u0cb6\u0cbe\u0cb2\u0cbf AI \u0c9f\u0cc2\u0cb2\u0ccd\u200c\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf \u2013 \u0c8e\u0cb2\u0ccd\u0cb2\u0cb5\u0cc2 \u0c92\u0c82\u0ca6\u0cc7 \u0cb8\u0cb0\u0cb3 \u0caa\u0ccd\u0cb2\u0cbe\u0ca8\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf.\",\"buttonTitle\":\"\u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad\u0cbf\u0cb8\u0cbf\"},\"ko\":{\"title\":\"\uc0c8\ub85c\uc6b4 X Subscription\uc744 \ub9cc\ub098 \ubcf4\uc138\uc694\",\"description\":\"\ud835\udd4f Premium \ud61c\ud0dd\uc740 \ubb3c\ub860, Grok Bot\uacfc Cursor \uac19\uc740 \uac15\ub825\ud55c AI \ub3c4\uad6c\uae4c\uc9c0 \ud558\ub098\uc758 \uac04\ud3b8\ud55c \ud50c\ub79c\uc73c\ub85c \uc774\uc6a9\ud558\uc138\uc694.\",\"buttonTitle\":\"\uc2dc\uc791\ud558\uae30\"},\"mr\":{\"title\":\"\u0928\u0935\u0940\u0928 X Subscription \u0905\u0928\u0932\u0949\u0915 \u0915\u0930\u093e\",\"description\":\"\ud835\udd4f Premium \u091a\u094d\u092f\u093e \u092b\u093e\u092f\u0926\u094d\u092f\u093e\u0902\u0938\u094b\u092c\u0924\u091a Grok Bot \u0906\u0923\u093f Cursor \u0938\u093e\u0930\u0916\u0940 \u0936\u0915\u094d\u0924\u093f\u0936\u093e\u0932\u0940 AI \u0938\u093e\u0927\u0928\u0947 \u092e\u093f\u0933\u0935\u093e \u2013 \u0938\u0930\u094d\u0935 \u0915\u093e\u0939\u0940 \u090f\u0915\u093e\u091a \u0938\u094b\u092a\u094d\u092f\u093e \u092a\u094d\u0932\u0945\u0928\u092e\u0927\u094d\u092f\u0947.\",\"buttonTitle\":\"\u0938\u0941\u0930\u0942 \u0915\u0930\u093e\"},\"ms\":{\"title\":\"Buka X Subscription baharu\",\"description\":\"Dapatkan faedah \ud835\udd4f Premium, serta alat AI berkuasa seperti Grok Bot dan Cursor \u2013 semuanya dalam satu pelan yang mudah.\",\"buttonTitle\":\"Mulakan\"},\"nb\":{\"title\":\"L\u00e5s opp det nye X Subscription\",\"description\":\"F\u00e5 fordelene med \ud835\udd4f Premium samt kraftfulle AI-verkt\u00f8y som Grok Bot og Cursor \u2013 alt i \u00e9n enkel plan.\",\"buttonTitle\":\"Kom i gang\"},\"nl\":{\"title\":\"Ontgrendel de nieuwe X Subscription\",\"description\":\"Krijg de voordelen van \ud835\udd4f Premium, plus krachtige AI-tools zoals Grok Bot en Cursor \u2013 alles in \u00e9\u00e9n eenvoudig plan.\",\"buttonTitle\":\"Aan de slag\"},\"pl\":{\"title\":\"Odblokuj now\u0105 X Subscription\",\"description\":\"Zyskaj korzy\u015bci \ud835\udd4f Premium oraz pot\u0119\u017cne narz\u0119dzia AI, takie jak Grok Bot i Cursor \u2013 wszystko w jednym prostym planie.\",\"buttonTitle\":\"Zacznij\"},\"pt\":{\"title\":\"Desbloqueie a nova X Subscription\",\"description\":\"Obtenha os benef\u00edcios do \ud835\udd4f Premium, al\u00e9m de ferramentas de IA poderosas como Grok Bot e Cursor, tudo em um \u00fanico plano simples.\",\"buttonTitle\":\"Come\u00e7ar\"},\"ro\":{\"title\":\"Deblocheaz\u0103 noua X Subscription\",\"description\":\"Ob\u021bine beneficiile \ud835\udd4f Premium, precum \u0219i instrumente AI puternice, ca Grok Bot \u0219i Cursor \u2013 totul \u00eentr-un singur plan simplu.\",\"buttonTitle\":\"\u00cencepe\"},\"ru\":{\"title\":\"\u041e\u0442\u043a\u0440\u043e\u0439\u0442\u0435 \u043d\u043e\u0432\u0443\u044e X Subscription\",\"description\":\"\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u043f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \ud835\udd4f Premium, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043c\u043e\u0449\u043d\u044b\u0435 \u0418\u0418-\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b, \u0442\u0430\u043a\u0438\u0435 \u043a\u0430\u043a Grok Bot \u0438 Cursor, \u2014 \u0432\u0441\u0451 \u0432 \u043e\u0434\u043d\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u043e\u043c \u043f\u043b\u0430\u043d\u0435.\",\"buttonTitle\":\"\u041d\u0430\u0447\u0430\u0442\u044c\"},\"sk\":{\"title\":\"Odomknite nov\u00e9 X Subscription\",\"description\":\"Z\u00edskajte v\u00fdhody \ud835\udd4f Premium a k tomu v\u00fdkonn\u00e9 n\u00e1stroje AI ako Grok Bot a Cursor \u2013 v\u0161etko v jednom jednoduchom pl\u00e1ne.\",\"buttonTitle\":\"Za\u010da\u0165\"},\"sr\":{\"title\":\"\u041e\u0442\u043a\u0459\u0443\u0447\u0430\u0458\u0442\u0435 \u043d\u043e\u0432\u0443 X Subscription\",\"description\":\"\u0414\u043e\u0431\u0438\u0458\u0442\u0435 \u043f\u043e\u0433\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \ud835\udd4f Premium, \u043a\u0430\u043e \u0438 \u043c\u043e\u045b\u043d\u0435 AI \u0430\u043b\u0430\u0442\u0435 \u043a\u0430\u043e \u0448\u0442\u043e \u0441\u0443 Grok Bot \u0438 Cursor \u2013 \u0441\u0432\u0435 \u0443 \u0458\u0435\u0434\u043d\u043e\u043c \u0458\u0435\u0434\u043d\u043e\u0441\u0442\u0430\u0432\u043d\u043e\u043c \u043f\u043b\u0430\u043d\u0443.\",\"buttonTitle\":\"\u0417\u0430\u043f\u043e\u0447\u043d\u0438\u0442\u0435\"},\"sv\":{\"title\":\"L\u00e5s upp den nya X Subscription\",\"description\":\"F\u00e5 f\u00f6rdelarna med \ud835\udd4f Premium samt kraftfulla AI-verktyg som Grok Bot och Cursor \u2013 allt i en enkel plan.\",\"buttonTitle\":\"Kom ig\u00e5ng\"},\"ta\":{\"title\":\"\u0baa\u0bc1\u0ba4\u0bbf\u0baf X Subscription-\u0b90\u0ba4\u0bcd \u0ba4\u0bbf\u0bb1\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd\",\"description\":\"\ud835\udd4f Premium \u0ba8\u0ba9\u0bcd\u0bae\u0bc8\u0b95\u0bb3\u0bc1\u0b9f\u0ba9\u0bcd Grok Bot \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd Cursor \u0baa\u0bcb\u0ba9\u0bcd\u0bb1 \u0b9a\u0b95\u0bcd\u0ba4\u0bbf\u0bb5\u0bbe\u0baf\u0bcd\u0ba8\u0bcd\u0ba4 AI \u0b95\u0bb0\u0bc1\u0bb5\u0bbf\u0b95\u0bb3\u0bc8\u0baf\u0bc1\u0bae\u0bcd \u0baa\u0bc6\u0bb1\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u2013 \u0b85\u0ba9\u0bc8\u0ba4\u0bcd\u0ba4\u0bc1\u0bae\u0bcd \u0b92\u0bb0\u0bc7 \u0b8e\u0bb3\u0bbf\u0baf \u0ba4\u0bbf\u0b9f\u0bcd\u0b9f\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd.\",\"buttonTitle\":\"\u0ba4\u0bca\u0b9f\u0b99\u0bcd\u0b95\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd\"},\"th\":{\"title\":\"\u0e1b\u0e25\u0e14\u0e25\u0e47\u0e2d\u0e01 X Subscription \u0e43\u0e2b\u0e21\u0e48\",\"description\":\"\u0e23\u0e31\u0e1a\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e1b\u0e23\u0e30\u0e42\u0e22\u0e0a\u0e19\u0e4c\u0e02\u0e2d\u0e07 \ud835\udd4f Premium \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e21\u0e37\u0e2d AI \u0e17\u0e23\u0e07\u0e1e\u0e25\u0e31\u0e07\u0e2d\u0e22\u0e48\u0e32\u0e07 Grok Bot \u0e41\u0e25\u0e30 Cursor \u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14\u0e43\u0e19\u0e41\u0e1c\u0e19\u0e40\u0e14\u0e35\u0e22\u0e27\u0e17\u0e35\u0e48\u0e40\u0e23\u0e35\u0e22\u0e1a\u0e07\u0e48\u0e32\u0e22\",\"buttonTitle\":\"\u0e40\u0e23\u0e34\u0e48\u0e21\u0e15\u0e49\u0e19\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\"},\"tr\":{\"title\":\"Yeni X Subscription\u2019\u0131n kilidini a\u00e7\u0131n\",\"description\":\"\ud835\udd4f Premium avantajlar\u0131n\u0131 ve Grok Bot ile Cursor gibi g\u00fc\u00e7l\u00fc AI ara\u00e7lar\u0131n\u0131 al\u0131n \u2013 hepsi tek bir basit planda.\",\"buttonTitle\":\"Ba\u015flay\u0131n\"},\"uk\":{\"title\":\"\u0412\u0456\u0434\u043a\u0440\u0438\u0439\u0442\u0435 \u043d\u043e\u0432\u0443 X Subscription\",\"description\":\"\u041e\u0442\u0440\u0438\u043c\u0430\u0439\u0442\u0435 \u043f\u0435\u0440\u0435\u0432\u0430\u0433\u0438 \ud835\udd4f Premium, \u0430 \u0442\u0430\u043a\u043e\u0436 \u043f\u043e\u0442\u0443\u0436\u043d\u0456 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438 \u0428\u0406, \u044f\u043a-\u043e\u0442 Grok Bot \u0456 Cursor, \u2014 \u0443\u0441\u0435 \u0432 \u043e\u0434\u043d\u043e\u043c\u0443 \u043f\u0440\u043e\u0441\u0442\u043e\u043c\u0443 \u043f\u043b\u0430\u043d\u0456.\",\"buttonTitle\":\"\u041f\u043e\u0447\u0430\u0442\u0438\"},\"vi\":{\"title\":\"M\u1edf kh\u00f3a X Subscription m\u1edbi\",\"description\":\"Nh\u1eadn c\u00e1c l\u1ee3i \u00edch c\u1ee7a \ud835\udd4f Premium, c\u00f9ng c\u00e1c c\u00f4ng c\u1ee5 AI m\u1ea1nh m\u1ebd nh\u01b0 Grok Bot v\u00e0 Cursor \u2013 t\u1ea5t c\u1ea3 trong m\u1ed9t g\u00f3i \u0111\u01a1n gi\u1ea3n.\",\"buttonTitle\":\"B\u1eaft \u0111\u1ea7u\"},\"zh-Hans\":{\"title\":\"\u89e3\u9501\u5168\u65b0 X Subscription\",\"description\":\"\u83b7\u53d6 \ud835\udd4f Premium \u7684\u6743\u76ca\uff0c\u4ee5\u53ca Grok Bot \u548c Cursor \u7b49\u5f3a\u5927\u7684 AI \u5de5\u5177\u2014\u2014\u5c3d\u5728\u4e00\u4e2a\u7b80\u5355\u65b9\u6848\u4e2d\u3002\",\"buttonTitle\":\"\u5f00\u59cb\u4f7f\u7528\"},\"zh-Hant\":{\"title\":\"\u89e3\u9396\u5168\u65b0 X Subscription\",\"description\":\"\u7372\u53d6 \ud835\udd4f Premium \u7684\u6b0a\u76ca\uff0c\u4ee5\u53ca Grok Bot \u548c Cursor \u7b49\u5f37\u5927\u7684 AI \u5de5\u5177\u2014\u2014\u76e1\u5728\u4e00\u500b\u7c21\u55ae\u65b9\u6848\u4e2d\u3002\",\"buttonTitle\":\"\u958b\u59cb\u4f7f\u7528\"}}},\"tray\":{\"title\":\"To learn more, go to\\nx.com/subscription\",\"description\":\"Early access is only available on web.\",\"buttonTitle\":\"Got it\",\"localizations\":{\"ar\":{\"title\":\"\u0644\u0645\u0639\u0631\u0641\u0629 \u0627\u0644\u0645\u0632\u064a\u062f\u060c \u0627\u0646\u062a\u0642\u0644 \u0625\u0644\u0649\\nx.com/subscription\",\"description\":\"\u0627\u0644\u0648\u0635\u0648\u0644 \u0627\u0644\u0645\u0628\u0643\u0631 \u0645\u062a\u0627\u062d \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628 \u0641\u0642\u0637.\",\"buttonTitle\":\"\u0641\u0647\u0645\u062a\"},\"bg\":{\"title\":\"\u041d\u0430\u0443\u0447\u0435\u0442\u0435 \u043f\u043e\u0432\u0435\u0447\u0435 \u043d\u0430\\nx.com/subscription\",\"description\":\"\u0420\u0430\u043d\u043d\u0438\u044f\u0442 \u0434\u043e\u0441\u0442\u044a\u043f \u0435 \u043d\u0430\u043b\u0438\u0447\u0435\u043d \u0441\u0430\u043c\u043e \u0432 \u0443\u0435\u0431.\",\"buttonTitle\":\"\u0420\u0430\u0437\u0431\u0440\u0430\u0445\"},\"bn\":{\"title\":\"\u0986\u09b0\u0993 \u099c\u09be\u09a8\u09a4\u09c7 \u09af\u09be\u09a8\\nx.com/subscription\",\"description\":\"\u0985\u0997\u09cd\u09b0\u09bf\u09ae \u0985\u09cd\u09af\u09be\u0995\u09cd\u09b8\u09c7\u09b8 \u09b6\u09c1\u09a7\u09c1\u09ae\u09be\u09a4\u09cd\u09b0 \u0993\u09af\u09bc\u09c7\u09ac\u09c7 \u0989\u09aa\u09b2\u09ac\u09cd\u09a7\u0964\",\"buttonTitle\":\"\u09ac\u09c1\u099d\u09c7\u099b\u09bf\"},\"ca\":{\"title\":\"Per saber-ne m\u00e9s, ves a\\nx.com/subscription\",\"description\":\"L\u2019acc\u00e9s anticipat nom\u00e9s est\u00e0 disponible al web.\",\"buttonTitle\":\"Entesos\"},\"cs\":{\"title\":\"V\u00edce informac\u00ed najdete na\\nx.com/subscription\",\"description\":\"P\u0159\u00edstup v p\u0159edstihu je k dispozici pouze na webu.\",\"buttonTitle\":\"Rozum\u00edm\"},\"da\":{\"title\":\"L\u00e6s mere p\u00e5\\nx.com/subscription\",\"description\":\"Tidlig adgang er kun tilg\u00e6ngelig p\u00e5 webstedet.\",\"buttonTitle\":\"Forst\u00e5et\"},\"de\":{\"title\":\"Mehr erf\u00e4hrst du unter\\nx.com/subscription\",\"description\":\"Der fr\u00fche Zugriff ist nur im Web verf\u00fcgbar.\",\"buttonTitle\":\"Verstanden\"},\"el\":{\"title\":\"\u039c\u03ac\u03b8\u03b5\u03c4\u03b5 \u03c0\u03b5\u03c1\u03b9\u03c3\u03c3\u03cc\u03c4\u03b5\u03c1\u03b1 \u03c3\u03c4\u03bf\\nx.com/subscription\",\"description\":\"\u0397 \u03c0\u03c1\u03cc\u03c9\u03c1\u03b7 \u03c0\u03c1\u03cc\u03c3\u03b2\u03b1\u03c3\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b4\u03b9\u03b1\u03b8\u03ad\u03c3\u03b9\u03bc\u03b7 \u03bc\u03cc\u03bd\u03bf \u03c3\u03c4\u03bf web.\",\"buttonTitle\":\"\u03a4\u03bf \u03ba\u03b1\u03c4\u03ac\u03bb\u03b1\u03b2\u03b1\"},\"es\":{\"title\":\"Para saber m\u00e1s, ve a\\nx.com/subscription\",\"description\":\"El acceso anticipado solo est\u00e1 disponible en la web.\",\"buttonTitle\":\"Entendido\"},\"fa\":{\"title\":\"\u0627\u0637\u0644\u0627\u0639\u0627\u062a \u0628\u06cc\u0634\u062a\u0631 \u062f\u0631:\\nx.com/subscription\",\"description\":\"\u062f\u0633\u062a\u0631\u0633\u06cc \u0632\u0648\u062f\u0647\u0646\u06af\u0627\u0645 \u0641\u0642\u0637 \u062f\u0631 \u0648\u0628 \u062f\u0631 \u062f\u0633\u062a\u0631\u0633 \u0627\u0633\u062a.\",\"buttonTitle\":\"\u0645\u062a\u0648\u062c\u0647 \u0634\u062f\u0645\"},\"fi\":{\"title\":\"Lue lis\u00e4\u00e4 osoitteessa\\nx.com/subscription\",\"description\":\"Varhainen k\u00e4ytt\u00f6 on saatavilla vain verkossa.\",\"buttonTitle\":\"Selv\u00e4\"},\"fil\":{\"title\":\"Para matuto pa, pumunta sa\\nx.com/subscription\",\"description\":\"Available lang sa web ang maagang access.\",\"buttonTitle\":\"Nakuha ko\"},\"fr\":{\"title\":\"En savoir plus sur\\nx.com/subscription\",\"description\":\"L\u2019acc\u00e8s anticip\u00e9 est disponible uniquement sur le web.\",\"buttonTitle\":\"Compris\"},\"gu\":{\"title\":\"\u0ab5\u0aa7\u0ac1 \u0a9c\u0abe\u0aa3\u0ab5\u0abe \u0aae\u0abe\u0a9f\u0ac7, \u0a85\u0ab9\u0ac0\u0a82 \u0a9c\u0abe\u0a93\\nx.com/subscription\",\"description\":\"\u0ab5\u0ab9\u0ac7\u0ab2\u0acb \u0a8d\u0a95\u0acd\u0ab8\u0ac7\u0ab8 \u0aab\u0a95\u0acd\u0aa4 \u0ab5\u0ac7\u0aac \u0aaa\u0ab0 \u0a9c \u0a89\u0aaa\u0ab2\u0aac\u0acd\u0aa7 \u0a9b\u0ac7.\",\"buttonTitle\":\"\u0ab8\u0aae\u0a9c\u0abe\u0a88 \u0a97\u0aaf\u0ac1\u0a82\"},\"he\":{\"title\":\"\u05dc\u05de\u05d9\u05d3\u05e2 \u05e0\u05d5\u05e1\u05e3, \u05d4\u05d9\u05db\u05e0\u05e1\u05d5 \u05d0\u05dc\\nx.com/subscription\",\"description\":\"\u05d2\u05d9\u05e9\u05d4 \u05de\u05d5\u05e7\u05d3\u05de\u05ea \u05d6\u05de\u05d9\u05e0\u05d4 \u05e8\u05e7 \u05d1\u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8.\",\"buttonTitle\":\"\u05d4\u05d1\u05e0\u05ea\u05d9\"},\"hi\":{\"title\":\"\u0914\u0930 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092f\u0939\u093e\u0901 \u091c\u093e\u090f\u0901\\nx.com/subscription\",\"description\":\"\u091c\u0932\u094d\u0926 \u090f\u0915\u094d\u0938\u0947\u0938 \u0915\u0947\u0935\u0932 \u0935\u0947\u092c \u092a\u0930 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964\",\"buttonTitle\":\"\u0938\u092e\u091d \u0917\u092f\u093e\"},\"hr\":{\"title\":\"Saznajte vi\u0161e na\\nx.com/subscription\",\"description\":\"Rani pristup dostupan je samo na webu.\",\"buttonTitle\":\"Razumijem\"},\"hu\":{\"title\":\"Tov\u00e1bbi inform\u00e1ci\u00f3:\\nx.com/subscription\",\"description\":\"A korai hozz\u00e1f\u00e9r\u00e9s csak weben \u00e9rhet\u0151 el.\",\"buttonTitle\":\"\u00c9rtem\"},\"id\":{\"title\":\"Selengkapnya di\\nx.com/subscription\",\"description\":\"Akses awal hanya tersedia di web.\",\"buttonTitle\":\"Mengerti\"},\"it\":{\"title\":\"Per saperne di pi\u00f9, vai su\\nx.com/subscription\",\"description\":\"L\u2019accesso anticipato \u00e8 disponibile solo sul web.\",\"buttonTitle\":\"Ho capito\"},\"ja\":{\"title\":\"\u8a73\u3057\u304f\u306f\u6b21\u306e\u30da\u30fc\u30b8\u3092\u3054\u89a7\u304f\u3060\u3055\u3044\\nx.com/subscription\",\"description\":\"\u65e9\u671f\u30a2\u30af\u30bb\u30b9\u306f\u30a6\u30a7\u30d6\u3067\u306e\u307f\u3054\u5229\u7528\u3044\u305f\u3060\u3051\u307e\u3059\u3002\",\"buttonTitle\":\"\u4e86\u89e3\"},\"kn\":{\"title\":\"\u0c87\u0ca8\u0ccd\u0ca8\u0cb7\u0ccd\u0c9f\u0cc1 \u0ca4\u0cbf\u0cb3\u0cbf\u0caf\u0cb2\u0cc1 \u0c87\u0cb2\u0ccd\u0cb2\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0c97\u0cbf\\nx.com/subscription\",\"description\":\"\u0cae\u0cc1\u0c82\u0c9a\u0cbf\u0ca4 \u0caa\u0ccd\u0cb0\u0cb5\u0cc7\u0cb6 \u0cb5\u0cc6\u0cac\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0cc6.\",\"buttonTitle\":\"\u0c85\u0cb0\u0ccd\u0ca5\u0cb5\u0cbe\u0caf\u0cbf\u0ca4\u0cc1\"},\"ko\":{\"title\":\"\uc790\uc138\ud55c \ub0b4\uc6a9\uc740 \ub2e4\uc74c\uc5d0\uc11c \ud655\uc778\ud558\uc138\uc694\\nx.com/subscription\",\"description\":\"\uc5bc\ub9ac \uc561\uc138\uc2a4\ub294 \uc6f9\uc5d0\uc11c\ub9cc \uc774\uc6a9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\",\"buttonTitle\":\"\ud655\uc778\"},\"mr\":{\"title\":\"\u0905\u0927\u093f\u0915 \u091c\u093e\u0923\u0923\u094d\u092f\u093e\u0938\u093e\u0920\u0940 \u092f\u0947\u0925\u0947 \u091c\u093e\\nx.com/subscription\",\"description\":\"\u0932\u0935\u0915\u0930 \u0972\u0915\u094d\u0938\u0947\u0938 \u092b\u0915\u094d\u0924 \u0935\u0947\u092c\u0935\u0930 \u0909\u092a\u0932\u092c\u094d\u0927 \u0906\u0939\u0947.\",\"buttonTitle\":\"\u0938\u092e\u091c\u0932\u0947\"},\"ms\":{\"title\":\"Ketahui lagi di\\nx.com/subscription\",\"description\":\"Akses awal hanya tersedia di web.\",\"buttonTitle\":\"Faham\"},\"nb\":{\"title\":\"Finn ut mer p\u00e5\\nx.com/subscription\",\"description\":\"Tidlig tilgang er bare tilgjengelig p\u00e5 nett.\",\"buttonTitle\":\"Skj\u00f8nner\"},\"nl\":{\"title\":\"Meer informatie op\\nx.com/subscription\",\"description\":\"Vroege toegang is alleen beschikbaar op de website.\",\"buttonTitle\":\"Ik snap het\"},\"pl\":{\"title\":\"Dowiedz si\u0119 wi\u0119cej na\\nx.com/subscription\",\"description\":\"Wczesny dost\u0119p jest dost\u0119pny tylko w internecie.\",\"buttonTitle\":\"Rozumiem\"},\"pt\":{\"title\":\"Para saber mais, acesse\\nx.com/subscription\",\"description\":\"O acesso antecipado est\u00e1 dispon\u00edvel apenas na web.\",\"buttonTitle\":\"Entendido\"},\"ro\":{\"title\":\"Afl\u0103 mai multe pe\\nx.com/subscription\",\"description\":\"Accesul timpuriu este disponibil doar pe web.\",\"buttonTitle\":\"Am \u00een\u021beles\"},\"ru\":{\"title\":\"\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435 \u043d\u0430\\nx.com/subscription\",\"description\":\"\u0420\u0430\u043d\u043d\u0438\u0439 \u0434\u043e\u0441\u0442\u0443\u043f \u0434\u043e\u0441\u0442\u0443\u043f\u0435\u043d \u0442\u043e\u043b\u044c\u043a\u043e \u0432 \u0432\u0435\u0431-\u0432\u0435\u0440\u0441\u0438\u0438.\",\"buttonTitle\":\"\u041f\u043e\u043d\u044f\u0442\u043d\u043e\"},\"sk\":{\"title\":\"Viac inform\u00e1ci\u00ed na\\nx.com/subscription\",\"description\":\"Skor\u00fd pr\u00edstup je k dispoz\u00edcii len na webe.\",\"buttonTitle\":\"Rozumiem\"},\"sr\":{\"title\":\"\u0421\u0430\u0437\u043d\u0430\u0458\u0442\u0435 \u0432\u0438\u0448\u0435 \u043d\u0430\\nx.com/subscription\",\"description\":\"\u0420\u0430\u043d\u0438 \u043f\u0440\u0438\u0441\u0442\u0443\u043f \u0458\u0435 \u0434\u043e\u0441\u0442\u0443\u043f\u0430\u043d \u0441\u0430\u043c\u043e \u043d\u0430 \u0432\u0435\u0431\u0443.\",\"buttonTitle\":\"\u0420\u0430\u0437\u0443\u043c\u0435\u043c\"},\"sv\":{\"title\":\"L\u00e4s mer p\u00e5\\nx.com/subscription\",\"description\":\"Tidig \u00e5tkomst \u00e4r bara tillg\u00e4nglig p\u00e5 webben.\",\"buttonTitle\":\"Uppfattat\"},\"ta\":{\"title\":\"\u0bae\u0bc7\u0bb2\u0bc1\u0bae\u0bcd \u0b85\u0bb1\u0bbf\u0baf, \u0b87\u0b99\u0bcd\u0b95\u0bc7 \u0b9a\u0bc6\u0bb2\u0bcd\u0bb2\u0bb5\u0bc1\u0bae\u0bcd\\nx.com/subscription\",\"description\":\"\u0b86\u0bb0\u0bae\u0bcd\u0baa \u0b85\u0ba3\u0bc1\u0b95\u0bb2\u0bcd \u0b87\u0ba3\u0bc8\u0baf\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd \u0bae\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bc7 \u0b95\u0bbf\u0b9f\u0bc8\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd.\",\"buttonTitle\":\"\u0baa\u0bc1\u0bb0\u0bbf\u0ba8\u0bcd\u0ba4\u0ba4\u0bc1\"},\"th\":{\"title\":\"\u0e14\u0e39\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e40\u0e15\u0e34\u0e21\u0e44\u0e14\u0e49\u0e17\u0e35\u0e48\\nx.com/subscription\",\"description\":\"\u0e01\u0e32\u0e23\u0e40\u0e02\u0e49\u0e32\u0e16\u0e36\u0e07\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32\u0e43\u0e0a\u0e49\u0e44\u0e14\u0e49\u0e1a\u0e19\u0e40\u0e27\u0e47\u0e1a\u0e40\u0e17\u0e48\u0e32\u0e19\u0e31\u0e49\u0e19\",\"buttonTitle\":\"\u0e40\u0e02\u0e49\u0e32\u0e43\u0e08\u0e41\u0e25\u0e49\u0e27\"},\"tr\":{\"title\":\"Daha fazla bilgi i\u00e7in:\\nx.com/subscription\",\"description\":\"Erken eri\u015fim yaln\u0131zca webde kullan\u0131labilir.\",\"buttonTitle\":\"Anlad\u0131m\"},\"uk\":{\"title\":\"\u0414\u043e\u043a\u043b\u0430\u0434\u043d\u0456\u0448\u0435 \u043d\u0430\\nx.com/subscription\",\"description\":\"\u0420\u0430\u043d\u043d\u0456\u0439 \u0434\u043e\u0441\u0442\u0443\u043f \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u0438\u0439 \u043b\u0438\u0448\u0435 \u0443 \u0432\u0435\u0431-\u0432\u0435\u0440\u0441\u0456\u0457.\",\"buttonTitle\":\"\u0417\u0440\u043e\u0437\u0443\u043c\u0456\u043b\u043e\"},\"vi\":{\"title\":\"T\u00ecm hi\u1ec3u th\u00eam t\u1ea1i\\nx.com/subscription\",\"description\":\"Truy c\u1eadp s\u1edbm ch\u1ec9 kh\u1ea3 d\u1ee5ng tr\u00ean web.\",\"buttonTitle\":\"\u0110\u00e3 hi\u1ec3u\"},\"zh-Hans\":{\"title\":\"\u5982\u9700\u4e86\u89e3\u66f4\u591a\uff0c\u8bf7\u8bbf\u95ee\\nx.com/subscription\",\"description\":\"\u62a2\u5148\u4f53\u9a8c\u4ec5\u5728\u7f51\u9875\u7248\u63d0\u4f9b\u3002\",\"buttonTitle\":\"\u660e\u767d\u4e86\"},\"zh-Hant\":{\"title\":\"\u5982\u9700\u77ad\u89e3\u66f4\u591a\uff0c\u8acb\u524d\u5f80\\nx.com/subscription\",\"description\":\"\u6436\u5148\u9ad4\u9a57\u50c5\u5728\u7db2\u9801\u7248\u63d0\u4f9b\u3002\",\"buttonTitle\":\"\u77e5\u9053\u4e86\"}}}}"
             },
             "complat_webview_cookie_ttl_seconds": {
                 "value": 3600.0
@@ -1684,9 +1693,6 @@
             },
             "composer_media_hashtag_enabled": {
                 "value": false
-            },
-            "composer_post_audience_redesign_enabled": {
-                "value": true
             },
             "composer_protected_reply_info_enabled": {
                 "value": true
@@ -1995,7 +2001,7 @@
                 "value": true
             },
             "explore_relaunch_docked_broadcast_reopen_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_forward_buffering_indication_enabled": {
                 "value": true
@@ -2022,7 +2028,7 @@
                 "value": 604800.0
             },
             "explore_relaunch_immersive_repost_count_includes_quotes_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_items_left_fetch_threshold": {
                 "value": 5.0
@@ -2043,7 +2049,7 @@
                 "value": true
             },
             "explore_relaunch_live_scheduled_fixes_enabled": {
-                "value": false
+                "value": true
             },
             "explore_relaunch_live_scheduled_placeholder_image_url": {
                 "value": "https://ton.x.com/img/wallpapers/x-logo-dark.png"
@@ -2080,9 +2086,6 @@
             },
             "fleets_ios_live_pipeline_enabled": {
                 "value": false
-            },
-            "fleets_ios_nfl_games_enabled": {
-                "value": true
             },
             "fleets_ios_refresh_interval": {
                 "value": 300.0
@@ -2291,6 +2294,9 @@
             "grok_ios_analyze_ads_conversation_mode_enabled": {
                 "value": false
             },
+            "grok_ios_analyze_cached_reveal_enabled": {
+                "value": false
+            },
             "grok_ios_analyze_context_menu_enabled": {
                 "value": false
             },
@@ -2300,11 +2306,17 @@
             "grok_ios_analyze_long_press_context_menu_enabled": {
                 "value": true
             },
+            "grok_ios_analyze_prompt_card_sync_enabled": {
+                "value": false
+            },
             "grok_ios_analyze_prompt_chips_enabled": {
                 "value": false
             },
             "grok_ios_analyze_sheet_presentation_enabled": {
                 "value": true
+            },
+            "grok_ios_analyze_tray_morph_enabled": {
+                "value": false
             },
             "grok_ios_app_campaign_animate_with_grok": {
                 "value": "https://apps.apple.com/app/apple-store/id6670324846?pt=9551&ct=X%20Context%20Animate%20with%20Grok&mt=8"
@@ -2397,6 +2409,9 @@
             },
             "grok_ios_grok_bot_attribution_source": {
                 "value": "x_ios_grok_bot"
+            },
+            "grok_ios_grok_bot_banner_target_app": {
+                "value": "grok_bot"
             },
             "grok_ios_grok_bot_default_app_store_url": {
                 "value": "https://apps.apple.com/app/apple-store/id6794501026"
@@ -2511,6 +2526,9 @@
             },
             "grok_ios_grok_bot_reply_cta_presence_max_age_seconds": {
                 "value": 604800.0
+            },
+            "grok_ios_grok_bot_reply_cta_target_app": {
+                "value": "grok_bot"
             },
             "grok_ios_grok_bot_reply_cta_title": {
                 "value": ""
@@ -2740,6 +2758,9 @@
             "grok_ios_tab_badge_campaign_id": {
                 "value": ""
             },
+            "grok_ios_table_cell_line_breaks_enabled": {
+                "value": false
+            },
             "grok_ios_top_search_summary_collapse_on_scroll_enabled": {
                 "value": false
             },
@@ -2775,9 +2796,6 @@
             },
             "grok_ios_ui_migration_presets_enabled": {
                 "value": false
-            },
-            "grok_ios_unify_analyze_legacy_thinking_enabled": {
-                "value": true
             },
             "grok_ios_unify_code_block_parity_enabled": {
                 "value": false
@@ -2845,12 +2863,6 @@
             "grok_ios_unify_gateway_live_sync_enabled": {
                 "value": true
             },
-            "grok_ios_unify_gateway_loading_indicator_enabled": {
-                "value": true
-            },
-            "grok_ios_unify_gateway_loading_indicator_parity_enabled": {
-                "value": true
-            },
             "grok_ios_unify_gateway_primary_modes_only_enabled": {
                 "value": true
             },
@@ -2888,10 +2900,13 @@
                 "value": true
             },
             "grok_ios_unify_link_entry_cancel_behavior": {
-                "value": "button_only"
+                "value": "button_only_fallback_legacy"
             },
             "grok_ios_unify_live_sync_open_adopt_enabled": {
                 "value": true
+            },
+            "grok_ios_unify_oauth_authorize_handler_enabled": {
+                "value": false
             },
             "grok_ios_unify_persisted_leaf_enabled": {
                 "value": false
@@ -2930,7 +2945,7 @@
                 "value": true
             },
             "grok_ios_unify_voice_requires_link_enabled": {
-                "value": false
+                "value": true
             },
             "grok_ios_unify_voice_websocket_enabled": {
                 "value": true
@@ -2951,6 +2966,9 @@
                 "value": true
             },
             "grok_ios_v2_dash_new_badge_enabled": {
+                "value": false
+            },
+            "grok_ios_voice_interim_transcript_enabled": {
                 "value": false
             },
             "grok_ios_voice_mode_enabled": {
@@ -3126,12 +3144,6 @@
             },
             "highlights_tweets_tab_ui_enabled": {
                 "value": true
-            },
-            "home_timeline_app_launch_performance_prefetch_top_cursor_earlier_enabled": {
-                "value": false
-            },
-            "home_timeline_app_launch_performance_prefetch_top_cursor_quality_of_service": {
-                "value": 0.0
             },
             "home_timeline_bottom_cursor_tweet_distance_trigger": {
                 "value": 10.0
@@ -3310,15 +3322,6 @@
             "home_timeline_remove_jump_to_home_7161": {
                 "value": ""
             },
-            "home_timeline_retry_load_bottom_backoff_growth_factor_seconds": {
-                "value": 2.0
-            },
-            "home_timeline_retry_load_bottom_backoff_interval_seconds": {
-                "value": 5.0
-            },
-            "home_timeline_retry_load_bottom_backoff_max_retries": {
-                "value": 0.0
-            },
             "home_timeline_scribing_scroll_enabled": {
                 "value": false
             },
@@ -3371,10 +3374,7 @@
                 "value": false
             },
             "home_timeline_viewport_aware_hoisting_match_promoted_by_entry_id_enabled": {
-                "value": false
-            },
-            "home_timeline_warm_start_min_background_minutes": {
-                "value": -1.0
+                "value": true
             },
             "hometimeline_pinned_tabs_enable_loading_shimmer": {
                 "value": true
@@ -3673,6 +3673,9 @@
             "ios_beta_bug_button_email_flow_enabled": {
                 "value": false
             },
+            "ios_bookmarks_clear_all_empty_guard_enabled": {
+                "value": false
+            },
             "ios_boot_deeplink_defer_until_notifications_enabled": {
                 "value": true
             },
@@ -3773,9 +3776,6 @@
                 "value": false
             },
             "ios_client_performance_background_task_fixes_enabled": {
-                "value": false
-            },
-            "ios_client_performance_background_task_verbose_logging_enabled": {
                 "value": false
             },
             "ios_client_performance_coalesced_database_background_task_enabled": {
@@ -3901,6 +3901,15 @@
             "ios_client_performance_view_controller_scribe_fallback_enabled": {
                 "value": true
             },
+            "ios_composer_boost_upsell_cooldown_seconds": {
+                "value": 604800.0
+            },
+            "ios_composer_boost_upsell_enabled": {
+                "value": false
+            },
+            "ios_composer_boost_upsell_typing_pause_ms": {
+                "value": 2000.0
+            },
             "ios_composer_gif_picker_sentiment_chip_enabled": {
                 "value": false
             },
@@ -3919,6 +3928,9 @@
             "ios_composer_live_menu_sheet_enabled": {
                 "value": false
             },
+            "ios_composer_location_row_instant_hide_enabled": {
+                "value": false
+            },
             "ios_composer_poll_remove_restore_focus_enabled": {
                 "value": false
             },
@@ -3929,7 +3941,7 @@
                 "value": true
             },
             "ios_composer_quote_video_toggle_keeps_keyboard_enabled": {
-                "value": false
+                "value": true
             },
             "ios_composer_redesign_password": {
                 "value": ""
@@ -4042,6 +4054,9 @@
             "ios_follow_graphql_enabled": {
                 "value": false
             },
+            "ios_font_named_font_cache_enabled": {
+                "value": false
+            },
             "ios_font_navigation_title_semibold_enabled": {
                 "value": true
             },
@@ -4053,6 +4068,9 @@
             },
             "ios_graduated_access_user_prompt_enabled": {
                 "value": true
+            },
+            "ios_grok_deeplink_push_when_tab_hidden_enabled": {
+                "value": false
             },
             "ios_grok_generate_image_param_enabled": {
                 "value": false
@@ -4074,6 +4092,9 @@
             },
             "ios_home_timeline_external_status_injections_from_notifications_enabled": {
                 "value": true
+            },
+            "ios_home_timeline_external_status_injections_refresh_guard_seconds": {
+                "value": 0.0
             },
             "ios_home_timeline_external_status_injections_timeout_seconds": {
                 "value": 20.0
@@ -4218,7 +4239,7 @@
                 "value": true
             },
             "ios_inline_expand_read_more_show_less_button_enabled": {
-                "value": false
+                "value": true
             },
             "ios_inline_zoom_enabled": {
                 "value": false
@@ -4227,7 +4248,7 @@
                 "value": true
             },
             "ios_ipad_phone_navigation_enabled": {
-                "value": false
+                "value": true
             },
             "ios_jetfuel_grok_force_tray_enabled": {
                 "value": true
@@ -4320,6 +4341,9 @@
             },
             "ios_native_bridge_white_list_domain": {
                 "value": "x.com, x.ai, twitter.com, grok.com"
+            },
+            "ios_native_oauth2_consent_enabled": {
+                "value": true
             },
             "ios_notification_permissions_banner_enabled": {
                 "value": true
@@ -4519,6 +4543,9 @@
             "ios_profile_image_md5_hashing_enabled": {
                 "value": true
             },
+            "ios_profile_presence_refetch_enabled": {
+                "value": false
+            },
             "ios_profile_redesign_new_timelines_sorting_enabled": {
                 "value": true
             },
@@ -4637,6 +4664,9 @@
                 "value": true
             },
             "ios_scribe_playback_dwell_linger_enabled": {
+                "value": false
+            },
+            "ios_search_from_filter_return_keeps_text_enabled": {
                 "value": false
             },
             "ios_search_refresh_without_cursor_enabled": {
@@ -5044,9 +5074,6 @@
             "ios_tweet_promote_button_booster_status_label_enabled": {
                 "value": true
             },
-            "ios_tweet_promote_button_composer_bottom_placement_enabled": {
-                "value": false
-            },
             "ios_tweet_promote_button_conversation_prompt_interval_seconds": {
                 "value": 7776000.0
             },
@@ -5143,10 +5170,10 @@
             "ios_twitter_text_editor_mentions_color_bugfix": {
                 "value": true
             },
-            "ios_ui_carousels_with_engagement_bar_enabled": {
-                "value": true
-            },
             "ios_ui_clear_action_control_restore_fix_enabled": {
+                "value": false
+            },
+            "ios_ui_defer_background_appearance_changes_enabled": {
                 "value": false
             },
             "ios_ui_docked_upload_control_bar_enabled": {
@@ -5175,6 +5202,9 @@
             },
             "ios_ui_minimum_wide_bar_width": {
                 "value": 0.0
+            },
+            "ios_ui_multi_media_carousel_alt_text_enabled": {
+                "value": false
             },
             "ios_ui_multi_media_carousel_avatar_avoidance_enabled": {
                 "value": true
@@ -5738,33 +5768,6 @@
                     "set-cookie"
                 ]
             },
-            "logger_protected_status_keys_redaction_list": {
-                "value": [
-                    "text",
-                    "full_text",
-                    "entities",
-                    "geo",
-                    "coordinates",
-                    "card",
-                    "withheld_text",
-                    "withheld_entities",
-                    "collection",
-                    "quoted_status",
-                    "quoted_status_id",
-                    "quoted_status_id_str",
-                    "retweeted_status",
-                    "user",
-                    "in_reply_to_status_id",
-                    "in_reply_to_user_id",
-                    "in_reply_to_screen_name"
-                ]
-            },
-            "logger_protected_user_keys_redaction_list": {
-                "value": [
-                    "location",
-                    "description"
-                ]
-            },
             "logger_user_defaults_key_redaction_list": {
                 "value": [
                     "oauthtoken",
@@ -5945,6 +5948,9 @@
             "media_upload_composer_remote_video_poster_enabled": {
                 "value": false
             },
+            "media_upload_edited_on_x_posting_enabled": {
+                "value": true
+            },
             "media_upload_flow_logger_enabled": {
                 "value": true
             },
@@ -5981,8 +5987,14 @@
             "media_upload_video_editor_auto_generate_captions_enabled": {
                 "value": true
             },
+            "media_upload_video_editor_bubble_style_enabled": {
+                "value": false
+            },
             "media_upload_video_editor_captions_edit_enabled": {
                 "value": true
+            },
+            "media_upload_video_editor_captions_fat_karaoke_enabled": {
+                "value": false
             },
             "media_upload_video_editor_captions_grok_auto_correction_enabled": {
                 "value": false
@@ -5996,8 +6008,17 @@
             "media_upload_video_editor_captions_tooltip_enabled": {
                 "value": true
             },
+            "media_upload_video_editor_captions_word_karaoke_enabled": {
+                "value": false
+            },
+            "media_upload_video_editor_captions_yellow_karaoke_enabled": {
+                "value": false
+            },
             "media_upload_video_editor_color_eyedropper_enabled": {
                 "value": true
+            },
+            "media_upload_video_editor_comic_style_enabled": {
+                "value": false
             },
             "media_upload_video_editor_cover_crop_video_aspect_enabled": {
                 "value": true
@@ -6029,8 +6050,14 @@
             "media_upload_video_editor_redesign_enabled": {
                 "value": true
             },
+            "media_upload_video_editor_signature_style_enabled": {
+                "value": false
+            },
             "media_upload_video_editor_smooth_playhead_enabled": {
                 "value": true
+            },
+            "media_upload_video_editor_tallahassee_style_enabled": {
+                "value": false
             },
             "media_upload_video_editor_text_overlay_background_style": {
                 "value": "transparent"
@@ -6126,6 +6153,9 @@
                 "value": ""
             },
             "newscamera_gif_capture_enabled": {
+                "value": false
+            },
+            "newscamera_live_media_go_live_enabled": {
                 "value": false
             },
             "newscamera_tweet_background_consumption_enabled": {
@@ -10696,10 +10726,10 @@
                 "value": 1.33
             },
             "payments_assets_onboarding_dark_video_url": {
-                "value": "https://pbs.twimg.com/static/money/money-welcome-v6-dark.mp4"
+                "value": "https://pbs.twimg.com/static/money/money-welcome-v7-dark.mp4"
             },
             "payments_assets_onboarding_light_video_url": {
-                "value": "https://pbs.twimg.com/static/money/money-welcome-v6-light.mp4"
+                "value": "https://pbs.twimg.com/static/money/money-welcome-v7-light.mp4"
             },
             "payments_auth_token_with_jwt_enabled": {
                 "value": false
@@ -11091,7 +11121,16 @@
             "poll_swift_migration_polling_card_enabled": {
                 "value": false
             },
+            "post_about_collapsible_author_actions_enabled": {
+                "value": false
+            },
+            "post_about_community_notes_in_more_enabled": {
+                "value": false
+            },
             "post_about_grok_features_enabled": {
+                "value": false
+            },
+            "post_about_hide_grok_pills_enabled": {
                 "value": false
             },
             "post_about_tray_enabled": {
@@ -11687,9 +11726,6 @@
             "ssp_ads_spotlight": {
                 "value": false
             },
-            "ssp_ads_spotlight_ad_fetch_timeout_milliseconds": {
-                "value": 3000.0
-            },
             "ssp_ads_spotlight_client_only_integration": {
                 "value": false
             },
@@ -12026,32 +12062,8 @@
             "timeline_tile_custom_title_line_count": {
                 "value": 2.0
             },
-            "topics_context_controls_followed_variation": {
-                "value": "see_more"
-            },
-            "topics_context_controls_implicit_variation": {
-                "value": "see_more"
-            },
-            "topics_context_controls_inline_prompt_enabled": {
-                "value": false
-            },
-            "topics_context_disable_inline_not_interested": {
-                "value": false
-            },
-            "topics_context_follow_control_left_aligned_enabled": {
-                "value": true
-            },
             "topics_new_social_context_icon_color_enabled": {
                 "value": false
-            },
-            "topics_profile_entry_point_enabled": {
-                "value": true
-            },
-            "topics_recommended_new_social_context_enabled": {
-                "value": false
-            },
-            "topics_tweet_details_recommended_topic_context_enabled": {
-                "value": true
             },
             "toxic_reply_filter_inline_callout_enabled": {
                 "value": false
@@ -12513,6 +12525,12 @@
             "video_clipping_composer_entry_min_duration_sec": {
                 "value": 0.0
             },
+            "video_clipping_max_duration_fraction": {
+                "value": 0.3
+            },
+            "video_clipping_max_duration_sec": {
+                "value": 180.0
+            },
             "video_clipping_repost_menu_min_duration_sec": {
                 "value": 0.0
             },
@@ -12807,13 +12825,17 @@
             "x_sports_game_feed_default_latest_enabled": {
                 "value": false
             },
+            "x_sports_game_hero_highlights_enabled": {
+                "value": false
+            },
             "x_sports_hub_home_timeline_ids": {
                 "value": [
                     "nfl:1925951614067650560",
                     "ncaafb:1925951645872975873",
                     "mlb:1925951672561319936",
                     "nba:1925951454121967616",
-                    "nhl:1925951775544061952"
+                    "nhl:1925951775544061952",
+                    "formula_racing:1925950746756800513"
                 ]
             },
             "x_sports_mlb_game_background_poll_interval_seconds": {
@@ -13092,6 +13114,12 @@
             "xchat_grok_bots_connectors": {
                 "value": false
             },
+            "xchat_grok_bots_native_x_connector": {
+                "value": false
+            },
+            "xchat_grok_bots_push_prefetch": {
+                "value": false
+            },
             "xchat_grok_bots_requires_account_link": {
                 "value": false
             },
@@ -13102,6 +13130,9 @@
                 "value": 50.0
             },
             "xchat_grok_bots_voice_call": {
+                "value": false
+            },
+            "xchat_history_download_enabled": {
                 "value": false
             },
             "xchat_hybrid_pull_eagerly_fetch_history_after_seconds": {
@@ -13138,6 +13169,9 @@
                 "value": false
             },
             "xchat_keypair_nuclear_reset_enabled": {
+                "value": false
+            },
+            "xchat_latest_messages_notification_enabled": {
                 "value": false
             },
             "xchat_liquid_glass_convo_header_enabled": {
@@ -13315,7 +13349,7 @@
     "requires_restart": [],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "9f5b8d2fd0a7e5deda23894675bac24853f5b6c1",
-        "experiments": "9f5b8d2fd0a7e5deda23894675bac24853f5b6c1"
+        "feature_switches": "9e131c608d1971caab90a5d92946db1c9c8566a4",
+        "experiments": "9e131c608d1971caab90a5d92946db1c9c8566a4"
     }
 }
