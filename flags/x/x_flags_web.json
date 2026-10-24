@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "bbcebff7be1813f54b3f1d081d09d6e5b301f56d",
+    "feature_set_token": "b79999d6d570c4c27658409598a964adc0bcd6ba",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -1747,6 +1747,9 @@
         },
         "responsive_web_edit_tweet_upsell_enabled": {
             "value": true
+        },
+        "responsive_web_elections_enabled": {
+            "value": false
         },
         "responsive_web_element_size_impression_scribe_enabled": {
             "value": true
@@ -4366,8 +4369,17 @@
         "verified_vo_refreshed_advertising_screen_enabled": {
             "value": true
         },
+        "video_attribution_author_id_scribe_enabled": {
+            "value": true
+        },
         "video_attribution_display_over_video_cards_enabled": {
             "value": true
+        },
+        "video_attribution_quoted_source_tweet_scribe_enabled": {
+            "value": false
+        },
+        "video_attribution_source_tweet_scribe_enabled": {
+            "value": false
         },
         "video_clipping_attribution_enabled": {
             "value": false
@@ -4376,7 +4388,10 @@
             "value": 0.3
         },
         "video_clipping_max_duration_sec": {
-            "value": 180
+            "value": 60
+        },
+        "video_clipping_min_duration_sec": {
+            "value": 5
         },
         "video_upload_metadata_title_enabled": {
             "value": false
@@ -4465,6 +4480,9 @@
         "x_android_apollo_graphql_accept_header_override": {
             "value": true
         },
+        "x_elections_live_results_interval_seconds": {
+            "value": 360
+        },
         "x_jetfuel_enable_test_cluster": {
             "value": false
         },
@@ -4487,7 +4505,7 @@
                 "mlb:1925951672561319936",
                 "nba:1925951454121967616",
                 "nhl:1925951775544061952",
-                "formula_racing:1925950746756800513"
+                "f1:1925950746756800513"
             ]
         },
         "x_sports_ncaafb_game_chat_enabled": {
