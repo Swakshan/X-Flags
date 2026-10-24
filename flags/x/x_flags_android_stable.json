@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "5c2cad8dc8cd254413085ffa2d584d5b5be70485",
+        "feature_set_token": "e365cfa20adc1771e38cd84c165e0bc634c34fbb",
         "config": {
             "account_country_setting_countries_whitelist": {
                 "value": [
@@ -1555,6 +1555,9 @@
             "grok_android_unify_gateway_image_edit_enabled": {
                 "value": false
             },
+            "grok_bot_onboarding_show_all_enabled": {
+                "value": false
+            },
             "grok_created_with_grok_label_domains": {
                 "value": []
             },
@@ -2347,16 +2350,16 @@
                 "value": false
             },
             "video_clipping_composer_entry_min_duration_sec": {
-                "value": 0.0
+                "value": 120.0
             },
             "video_clipping_max_duration_fraction": {
                 "value": 0.3
             },
             "video_clipping_max_duration_sec": {
-                "value": 180.0
+                "value": 60.0
             },
             "video_clipping_repost_menu_min_duration_sec": {
-                "value": 0.0
+                "value": 120.0
             },
             "video_on_demand_heartbeat_interval_android": {
                 "value": 5.0
@@ -2728,7 +2731,7 @@
                     "mlb:1925951672561319936",
                     "nba:1925951454121967616",
                     "nhl:1925951775544061952",
-                    "formula_racing:1925950746756800513"
+                    "f1:1925950746756800513"
                 ]
             },
             "x_sports_mlb_batter_left_base_image_url": {
@@ -3161,7 +3164,7 @@
                 "value": false
             },
             "xchat_xds_tray_migration_enabled": {
-                "value": false
+                "value": true
             },
             "xlite_articles_audio_enabled": {
                 "value": false
@@ -3358,6 +3361,7 @@
         "ios_1080p_for_all_19488",
         "android_share_sheet_apps_grid_19544",
         "android_offline_hub_19711",
+        "android_video_buffering_indicator_19760",
         "grok_android_tab_tooltip_19150",
         "customer_retention_overall_holdback_10754",
         "android_profile_all_tab_19448",
@@ -3394,7 +3398,7 @@
     ],
     "supports_accessibility": [],
     "versions": {
-        "feature_switches": "9176cdce889589bd3ddc79b9d65bc950f9f4989e",
-        "experiments": "9176cdce889589bd3ddc79b9d65bc950f9f4989e"
+        "feature_switches": "b09334b32c770599c6209fb10f2fddaef48dda0c",
+        "experiments": "b09334b32c770599c6209fb10f2fddaef48dda0c"
     }
 }
