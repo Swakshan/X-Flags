@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "a921579bd24a7a89a5ce49e0484066fc2d460919",
+    "feature_set_token": "c9bf42c208e0631f7ea84ce6abfda02fc3a5b8a9",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -1199,6 +1199,9 @@
         "payments_international_wires_enabled": {
             "value": false
         },
+        "payments_posts_lpf_p2p_enabled": {
+            "value": false
+        },
         "payments_scheduled_payments_enabled": {
             "value": true
         },
@@ -1224,10 +1227,10 @@
             "value": true
         },
         "post_ctas_fetch_enabled": {
-            "value": false
+            "value": true
         },
         "post_ctas_render_enabled": {
-            "value": false
+            "value": true
         },
         "premium_business_offers_banner_portal_basic_tier": {
             "value": false
@@ -2622,13 +2625,13 @@
             "value": true
         },
         "responsive_web_scribe_conversation_reply_dwell_linger_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_scribe_conversation_reply_dwell_linger_start_delay_seconds": {
             "value": 0.5
         },
         "responsive_web_scribe_immersive_linger_flush_interval_seconds": {
-            "value": 0
+            "value": 10
         },
         "responsive_web_scribe_linger_fair_view_time_enabled": {
             "value": true
@@ -2652,7 +2655,7 @@
             "value": true
         },
         "responsive_web_scribe_nested_quoted_tweet_impression_enabled": {
-            "value": false
+            "value": true
         },
         "responsive_web_scroller_top_positioning_enabled": {
             "value": false
@@ -3112,6 +3115,9 @@
         },
         "rweb_premium_business_rebranding_url_enabled": {
             "value": true
+        },
+        "rweb_promoted_ad_from_domain_label_enabled": {
+            "value": false
         },
         "rweb_promoted_spine_clicks_enabled": {
             "value": false
