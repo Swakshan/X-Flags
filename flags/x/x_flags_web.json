@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "c9bf42c208e0631f7ea84ce6abfda02fc3a5b8a9",
+    "feature_set_token": "5c0947f43f2a5241109c6c3b6ad6c63497d5740b",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -2057,6 +2057,9 @@
         "responsive_web_grok_text_selection_enabled": {
             "value": false
         },
+        "responsive_web_grok_top_up_enabled": {
+            "value": true
+        },
         "responsive_web_grok_tweet_actions_edit_image_enabled": {
             "value": false
         },
@@ -2637,10 +2640,10 @@
             "value": true
         },
         "responsive_web_scribe_linger_fair_view_time_lower_bound": {
-            "value": 1
+            "value": 0.6
         },
         "responsive_web_scribe_linger_fair_view_time_upper_bound": {
-            "value": 0
+            "value": 0.1
         },
         "responsive_web_scribe_linger_monotonic_clock_enabled": {
             "value": true
@@ -3228,7 +3231,7 @@
             "value": false
         },
         "rweb_xchat_call_window_enabled": {
-            "value": false
+            "value": true
         },
         "rweb_xchat_calls_rtc_api_enabled": {
             "value": true
