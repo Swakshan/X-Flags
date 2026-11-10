@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "0c4eb72f2dd33abe76e0e18eb0b42f89ae590570",
+        "feature_set_token": "83f29cf42a0a8ee9570ef8812018d7fc2643de38",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -2467,19 +2467,23 @@
             "grok_ios_citations_enabled": {
                 "value": true
             },
-            "grok_ios_credit_top_up_auto_top_up_enabled": {
-                "value": false
-            },
             "grok_ios_credit_top_up_enabled": {
                 "value": false
             },
-            "grok_ios_credit_top_up_product_ids": {
-                "value": [
-                    "com.twitter.grok.credits.x.5",
-                    "com.twitter.grok.credits.x.20",
-                    "com.twitter.grok.credits.x.50",
-                    "com.twitter.grok.credits.x.100"
-                ]
+            "grok_ios_credit_top_up_free_reset_tray_copy": {
+                "value": ""
+            },
+            "grok_ios_credit_top_up_migration_intro_enabled": {
+                "value": false
+            },
+            "grok_ios_credit_top_up_unify_flow_enabled": {
+                "value": false
+            },
+            "grok_ios_credit_top_up_web_storefronts": {
+                "value": []
+            },
+            "grok_ios_credit_top_up_web_url": {
+                "value": ""
             },
             "grok_ios_disable_fun_mode_enabled": {
                 "value": true
@@ -3540,6 +3544,9 @@
             "ios_account_removal_persistence_enabled": {
                 "value": false
             },
+            "ios_ad_formats_ad_from_domain_label_enabled": {
+                "value": false
+            },
             "ios_ad_formats_avoid_should_skip_details_enabled": {
                 "value": false
             },
@@ -4177,6 +4184,7 @@
                     "app-va.tiktokv.com",
                     "marble.worldlabs.ai",
                     "apple.co",
+                    "tesla.com",
                     "Rendering issue reported; use browser as temporary patch:",
                     "trumpcard.gov"
                 ]
@@ -6204,9 +6212,6 @@
             },
             "navigation_bar_accessory_safe_area_enabled": {
                 "value": true
-            },
-            "navigation_bar_use_back_action": {
-                "value": false
             },
             "navigation_shared_helpers_enabled": {
                 "value": true
@@ -13357,6 +13362,9 @@
             },
             "xchat_media_resolve_threshold_slow_network_bytes_str": {
                 "value": "10485760"
+            },
+            "xchat_meet_link_enabled": {
+                "value": true
             },
             "xchat_message_grouping_window_seconds": {
                 "value": 3600.0
