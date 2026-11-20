@@ -1,5 +1,5 @@
 {
-    "feature_set_token": "09d8e1b24c936daaebb133706d1b6b93d4cb2db1",
+    "feature_set_token": "37d5bb5649095e046677cd29e2c92284f77fa555",
     "debug": {},
     "config": {
         "2fa_temporary_password_enabled": {
@@ -794,6 +794,9 @@
         "grok_translations_post_auto_translation_is_enabled": {
             "value": false
         },
+        "grok_xweb_bot_promotion_enabled": {
+            "value": true
+        },
         "grok_xweb_connectors_enabled": {
             "value": true
         },
@@ -999,6 +1002,24 @@
             "value": true
         },
         "krs_registration_enabled": {
+            "value": false
+        },
+        "live_clipping_attribution_enabled": {
+            "value": true
+        },
+        "live_clipping_default_duration_sec": {
+            "value": 60
+        },
+        "live_clipping_lookback_sec": {
+            "value": 0
+        },
+        "live_clipping_max_duration_sec": {
+            "value": 60
+        },
+        "live_clipping_min_duration_sec": {
+            "value": 5
+        },
+        "live_clipping_replay_enabled": {
             "value": false
         },
         "live_event_docking_enabled": {
@@ -4596,10 +4617,10 @@
             "value": false
         },
         "x_sports_post_context_min_spacing": {
-            "value": 25
+            "value": 5
         },
         "x_sports_post_context_same_game_min_spacing": {
-            "value": 25
+            "value": 10
         },
         "xcall_item_in_list_enabled": {
             "value": true
@@ -4788,9 +4809,6 @@
             "value": 50
         },
         "xchat_group_admin_settings_enabled": {
-            "value": true
-        },
-        "xchat_group_description_enabled": {
             "value": true
         },
         "xchat_grpc_chat_page_enabled": {
