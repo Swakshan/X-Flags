@@ -1,6 +1,6 @@
 {
     "default": {
-        "feature_set_token": "eda33ea16c22b3add90feaaf7f53c6f7daafaf86",
+        "feature_set_token": "b5a780725fc5b4cc6f77a7b538aae7e8b5693363",
         "config": {
             "2fa_temporary_password_enabled": {
                 "value": false
@@ -439,6 +439,12 @@
             "av_chat_ios_contacts_provider_enabled": {
                 "value": false
             },
+            "av_chat_ios_contacts_x_number_card_enabled": {
+                "value": false
+            },
+            "av_chat_ios_contacts_x_number_handle_enabled": {
+                "value": false
+            },
             "av_chat_ios_end_call_background_task_enabled": {
                 "value": true
             },
@@ -549,9 +555,6 @@
             },
             "av_chat_xchat_group_calls_camera_off_by_default_enabled": {
                 "value": true
-            },
-            "av_chat_xchat_group_calls_music_enabled": {
-                "value": false
             },
             "background_fetch_enabled": {
                 "value": false
@@ -681,6 +684,12 @@
             },
             "branded_like_preview_enabled": {
                 "value": false
+            },
+            "broadcast_go_live_eligibility_enabled": {
+                "value": false
+            },
+            "broadcast_go_live_min_followers": {
+                "value": 1000.0
             },
             "broadcast_live_chat_input_max_char_limit": {
                 "value": 200.0
@@ -1548,10 +1557,19 @@
             "community_notes_ios_preloaded_webview_note_route_enabled": {
                 "value": true
             },
+            "complat_app_open_paywall_bf_channel_enabled": {
+                "value": false
+            },
             "complat_app_open_paywall_enabled": {
                 "value": false
             },
             "complat_app_open_paywall_immediate_enabled": {
+                "value": false
+            },
+            "complat_app_open_paywall_legacy_subscribers_enabled": {
+                "value": false
+            },
+            "complat_app_open_paywall_show_on_timeout_enabled": {
                 "value": false
             },
             "complat_app_open_paywall_skip_org_adhoc_enabled": {
@@ -1562,6 +1580,12 @@
             },
             "complat_app_open_paywall_window_seconds": {
                 "value": 5.0
+            },
+            "complat_bf_deeplink_routes_enabled": {
+                "value": false
+            },
+            "complat_bf_post_purchase_bot_redirect_enabled": {
+                "value": false
             },
             "complat_content_ready_retry_enabled": {
                 "value": false
@@ -1632,6 +1656,9 @@
             "complat_plan_name_ultra": {
                 "value": "Ultra"
             },
+            "complat_post_purchase_destination_enabled": {
+                "value": false
+            },
             "complat_premium_hub_title": {
                 "value": ""
             },
@@ -1645,6 +1672,9 @@
                 "value": true
             },
             "complat_purchase_adopt_thrown_transaction_enabled": {
+                "value": false
+            },
+            "complat_sidebar_grok_bot_offer_entrypoint_enabled": {
                 "value": false
             },
             "complat_subscriptions_title": {
@@ -2204,8 +2234,11 @@
             "grok_ask_grok_button_under_post_preview_enabled": {
                 "value": true
             },
+            "grok_bot_access_with_template": {
+                "value": ""
+            },
             "grok_bot_attention_pill_enabled": {
-                "value": false
+                "value": true
             },
             "grok_bot_auto_review_settings_enabled": {
                 "value": true
@@ -2213,11 +2246,23 @@
             "grok_bot_auto_send_prompt_enabled": {
                 "value": false
             },
+            "grok_bot_auto_send_template_prompt": {
+                "value": "{\"black_friday\": {\"en\": \"Find me the best Black Friday deals\"}, \"bf_tvs\": {\"en\": \"Find me the best Black Friday deals on TVs\"}, \"bf_headphones\": {\"en\": \"Find me the best Black Friday deals on headphones\"}, \"bf_laptops\": {\"en\": \"Find me the best Black Friday deals on laptops\"}, \"bf_phones\": {\"en\": \"Find me the best Black Friday deals on phones\"}, \"bf_gaming\": {\"en\": \"Find me the best Black Friday deals on gaming\"}, \"bf_kitchen\": {\"en\": \"Find me the best Black Friday deals on kitchen essentials\"}, \"bf_smart_home\": {\"en\": \"Find me the best Black Friday deals on smart home devices\"}, \"bf_beauty\": {\"en\": \"Find me the best Black Friday deals on beauty products\"}, \"bf_fashion\": {\"en\": \"Find me the best Black Friday deals on fashion\"}, \"bf_shoes\": {\"en\": \"Find me the best Black Friday deals on shoes\"}, \"bf_toys\": {\"en\": \"Find me the best Black Friday deals on toys\"}, \"bf_home\": {\"en\": \"Find me the best Black Friday deals on home goods\"}, \"bf_vacuums\": {\"en\": \"Find me the best Black Friday deals on vacuums\"}, \"bf_smart_watches\": {\"en\": \"Find me the best Black Friday deals on smart watches\"}, \"bf_tablets\": {\"en\": \"Find me the best Black Friday deals on tablets\"}, \"bf_cameras\": {\"en\": \"Find me the best Black Friday deals on cameras\"}, \"bf_fitness\": {\"en\": \"Find me the best Black Friday deals on fitness gear\"}, \"bf_travel\": {\"en\": \"Find me the best Black Friday deals on travel gear\"}}"
+            },
+            "grok_bot_black_friday_offer_enabled": {
+                "value": false
+            },
             "grok_bot_card_image_cache_bounds_enabled": {
                 "value": false
             },
-            "grok_bot_dining_cards_enabled": {
+            "grok_bot_cart_subscribe_checkout_enabled": {
                 "value": false
+            },
+            "grok_bot_cta_copy": {
+                "value": "{\"localizations\":{\"ar\":{\"cartSubscribeAndCheckout\":\"\u0627\u0634\u062a\u0631\u0643 \u0648\u0623\u0643\u0645\u0644 \u0627\u0644\u0634\u0631\u0627\u0621\",\"blackFridayOffer\":\"\u0627\u062d\u0635\u0644 \u0639\u0644\u0649 \u0639\u0631\u0636 \u0627\u0644\u062c\u0645\u0639\u0629 \u0627\u0644\u0633\u0648\u062f\u0627\u0621\",\"subscribeAndBuy\":\"\u0627\u0634\u062a\u0631\u0643 \u0648\u0627\u0634\u062a\u0631\u0650\",\"subscribeAndBuyAccessibilityFormat\":\"\u0627\u0634\u062a\u0631\u0643 \u0648\u0627\u0634\u062a\u0631\u0650 \u0645\u0646 %@\"},\"bg\":{\"cartSubscribeAndCheckout\":\"\u0410\u0431\u043e\u043d\u0438\u0440\u0430\u0439 \u0441\u0435 \u0438 \u043f\u043b\u0430\u0442\u0438\",\"blackFridayOffer\":\"\u0412\u0437\u0435\u043c\u0438 Black Friday \u043e\u0444\u0435\u0440\u0442\u0430\u0442\u0430\",\"subscribeAndBuy\":\"\u0410\u0431\u043e\u043d\u0438\u0440\u0430\u0439 \u0441\u0435 \u0438 \u043a\u0443\u043f\u0438\",\"subscribeAndBuyAccessibilityFormat\":\"\u0410\u0431\u043e\u043d\u0438\u0440\u0430\u0439 \u0441\u0435 \u0438 \u043a\u0443\u043f\u0438 \u043e\u0442 %@\"},\"bn\":{\"cartSubscribeAndCheckout\":\"\u09b8\u09be\u09ac\u09b8\u09cd\u0995\u09cd\u09b0\u09be\u0987\u09ac \u0995\u09b0\u09c7 \u099a\u09c7\u0995\u0986\u0989\u099f \u0995\u09b0\u09c1\u09a8\",\"blackFridayOffer\":\"\u09ac\u09cd\u09b2\u09cd\u09af\u09be\u0995 \u09ab\u09cd\u09b0\u09be\u0987\u09a1\u09c7 \u0985\u09ab\u09be\u09b0 \u0997\u09cd\u09b0\u09b9\u09a3 \u0995\u09b0\u09c1\u09a8\",\"subscribeAndBuy\":\"\u09b8\u09be\u09ac\u09b8\u09cd\u0995\u09cd\u09b0\u09be\u0987\u09ac \u0995\u09b0\u09c7 \u0995\u09bf\u09a8\u09c1\u09a8\",\"subscribeAndBuyAccessibilityFormat\":\"\u09b8\u09be\u09ac\u09b8\u09cd\u0995\u09cd\u09b0\u09be\u0987\u09ac \u0995\u09b0\u09c7 %@ \u09a5\u09c7\u0995\u09c7 \u0995\u09bf\u09a8\u09c1\u09a8\"},\"ca\":{\"cartSubscribeAndCheckout\":\"Subscriu-te i paga\",\"blackFridayOffer\":\"Obt\u00e9n l'oferta del Black Friday\",\"subscribeAndBuy\":\"Subscriu-te i compra\",\"subscribeAndBuyAccessibilityFormat\":\"Subscriu-te i compra a %@\"},\"cs\":{\"cartSubscribeAndCheckout\":\"P\u0159edplatit a objednat\",\"blackFridayOffer\":\"Vyu\u017e\u00edt nab\u00eddku Black Friday\",\"subscribeAndBuy\":\"P\u0159edplatit a koupit\",\"subscribeAndBuyAccessibilityFormat\":\"P\u0159edplatit a koupit od %@\"},\"da\":{\"cartSubscribeAndCheckout\":\"Abonner og g\u00e5 til kassen\",\"blackFridayOffer\":\"F\u00e5 Black Friday-tilbuddet\",\"subscribeAndBuy\":\"Abonner og k\u00f8b\",\"subscribeAndBuyAccessibilityFormat\":\"Abonner og k\u00f8b hos %@\"},\"de\":{\"cartSubscribeAndCheckout\":\"Abonnieren und zur Kasse\",\"blackFridayOffer\":\"Black-Friday-Angebot sichern\",\"subscribeAndBuy\":\"Abonnieren und kaufen\",\"subscribeAndBuyAccessibilityFormat\":\"Abonnieren und bei %@ kaufen\"},\"el\":{\"cartSubscribeAndCheckout\":\"\u0395\u03b3\u03b3\u03c1\u03b1\u03c6\u03ae \u03ba\u03b1\u03b9 \u03bf\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b7 \u03b1\u03b3\u03bf\u03c1\u03ac\u03c2\",\"blackFridayOffer\":\"\u0391\u03c0\u03cc\u03ba\u03c4\u03b7\u03c3\u03b7 \u03c0\u03c1\u03bf\u03c3\u03c6\u03bf\u03c1\u03ac\u03c2 Black Friday\",\"subscribeAndBuy\":\"\u0395\u03b3\u03b3\u03c1\u03b1\u03c6\u03ae \u03ba\u03b1\u03b9 \u03b1\u03b3\u03bf\u03c1\u03ac\",\"subscribeAndBuyAccessibilityFormat\":\"\u0395\u03b3\u03b3\u03c1\u03b1\u03c6\u03ae \u03ba\u03b1\u03b9 \u03b1\u03b3\u03bf\u03c1\u03ac \u03b1\u03c0\u03cc %@\"},\"es\":{\"cartSubscribeAndCheckout\":\"Suscribirse y pagar\",\"blackFridayOffer\":\"Obtener oferta de Black Friday\",\"subscribeAndBuy\":\"Suscribirse y comprar\",\"subscribeAndBuyAccessibilityFormat\":\"Suscribirse y comprar en %@\"},\"fa\":{\"cartSubscribeAndCheckout\":\"\u0627\u0634\u062a\u0631\u0627\u06a9 \u0648 \u067e\u0631\u062f\u0627\u062e\u062a\",\"blackFridayOffer\":\"\u062f\u0631\u06cc\u0627\u0641\u062a \u067e\u06cc\u0634\u0646\u0647\u0627\u062f \u0628\u0644\u06a9 \u0641\u0631\u0627\u06cc\u062f\u06cc\",\"subscribeAndBuy\":\"\u0627\u0634\u062a\u0631\u0627\u06a9 \u0648 \u062e\u0631\u06cc\u062f\",\"subscribeAndBuyAccessibilityFormat\":\"\u0627\u0634\u062a\u0631\u0627\u06a9 \u0648 \u062e\u0631\u06cc\u062f \u0627\u0632 %@\"},\"fi\":{\"cartSubscribeAndCheckout\":\"Tilaa ja siirry kassalle\",\"blackFridayOffer\":\"Lunasta Black Friday -tarjous\",\"subscribeAndBuy\":\"Tilaa ja osta\",\"subscribeAndBuyAccessibilityFormat\":\"Tilaa ja osta myyj\u00e4lt\u00e4 %@\"},\"fil\":{\"cartSubscribeAndCheckout\":\"Mag-subscribe & mag-checkout\",\"blackFridayOffer\":\"Kunin ang Black Friday Offer\",\"subscribeAndBuy\":\"Mag-subscribe & bumili\",\"subscribeAndBuyAccessibilityFormat\":\"Mag-subscribe at bumili mula sa %@\"},\"fr\":{\"cartSubscribeAndCheckout\":\"S'abonner et commander\",\"blackFridayOffer\":\"Profiter de l'offre Black Friday\",\"subscribeAndBuy\":\"S'abonner et acheter\",\"subscribeAndBuyAccessibilityFormat\":\"S'abonner et acheter chez %@\"},\"gu\":{\"cartSubscribeAndCheckout\":\"\u0ab8\u0aac\u0acd\u0ab8\u0acd\u0a95\u0acd\u0ab0\u0abe\u0a87\u0aac \u0a95\u0ab0\u0ac0\u0aa8\u0ac7 \u0a9a\u0ac7\u0a95\u0a86\u0a89\u0a9f \u0a95\u0ab0\u0acb\",\"blackFridayOffer\":\"\u0aac\u0acd\u0ab2\u0ac7\u0a95 \u0aab\u0acd\u0ab0\u0abe\u0a87\u0aa1\u0ac7 \u0a91\u0aab\u0ab0 \u0aae\u0ac7\u0ab3\u0ab5\u0acb\",\"subscribeAndBuy\":\"\u0ab8\u0aac\u0acd\u0ab8\u0acd\u0a95\u0acd\u0ab0\u0abe\u0a87\u0aac \u0a95\u0ab0\u0ac0\u0aa8\u0ac7 \u0a96\u0ab0\u0ac0\u0aa6\u0acb\",\"subscribeAndBuyAccessibilityFormat\":\"\u0ab8\u0aac\u0acd\u0ab8\u0acd\u0a95\u0acd\u0ab0\u0abe\u0a87\u0aac \u0a95\u0ab0\u0ac0\u0aa8\u0ac7 %@ \u0aaa\u0ab0\u0aa5\u0ac0 \u0a96\u0ab0\u0ac0\u0aa6\u0acb\"},\"he\":{\"cartSubscribeAndCheckout\":\"\u05d4\u05e8\u05e9\u05de\u05d4 \u05d5\u05de\u05e2\u05d1\u05e8 \u05dc\u05e7\u05d5\u05e4\u05d4\",\"blackFridayOffer\":\"\u05de\u05d9\u05de\u05d5\u05e9 \u05de\u05d1\u05e6\u05e2 \u05d1\u05dc\u05d0\u05e7 \u05e4\u05e8\u05d9\u05d9\u05d3\u05d9\u05d9\",\"subscribeAndBuy\":\"\u05d4\u05e8\u05e9\u05de\u05d4 \u05d5\u05e8\u05db\u05d9\u05e9\u05d4\",\"subscribeAndBuyAccessibilityFormat\":\"\u05d4\u05e8\u05e9\u05de\u05d4 \u05d5\u05e8\u05db\u05d9\u05e9\u05d4 \u05de\u05be%@\"},\"hi\":{\"cartSubscribeAndCheckout\":\"\u0938\u092c\u0938\u094d\u0915\u094d\u0930\u093e\u0907\u092c \u0915\u0930\u0915\u0947 \u091a\u0947\u0915\u0906\u0909\u091f \u0915\u0930\u0947\u0902\",\"blackFridayOffer\":\"\u092c\u094d\u0932\u0948\u0915 \u092b\u094d\u0930\u093e\u0907\u0921\u0947 \u0911\u092b\u093c\u0930 \u0915\u094d\u0932\u0947\u092e \u0915\u0930\u0947\u0902\",\"subscribeAndBuy\":\"\u0938\u092c\u0938\u094d\u0915\u094d\u0930\u093e\u0907\u092c \u0915\u0930\u0915\u0947 \u0916\u0930\u0940\u0926\u0947\u0902\",\"subscribeAndBuyAccessibilityFormat\":\"\u0938\u092c\u0938\u094d\u0915\u094d\u0930\u093e\u0907\u092c \u0915\u0930\u0915\u0947 %@ \u0938\u0947 \u0916\u0930\u0940\u0926\u0947\u0902\"},\"hr\":{\"cartSubscribeAndCheckout\":\"Pretplati se i naru\u010di\",\"blackFridayOffer\":\"Iskoristi Black Friday ponudu\",\"subscribeAndBuy\":\"Pretplati se i kupi\",\"subscribeAndBuyAccessibilityFormat\":\"Pretplati se i kupi od %@\"},\"hu\":{\"cartSubscribeAndCheckout\":\"El\u0151fizet\u00e9s \u00e9s megrendel\u00e9s\",\"blackFridayOffer\":\"Black Friday-aj\u00e1nlat ig\u00e9nyl\u00e9se\",\"subscribeAndBuy\":\"El\u0151fizet\u00e9s \u00e9s v\u00e1s\u00e1rl\u00e1s\",\"subscribeAndBuyAccessibilityFormat\":\"El\u0151fizet\u00e9s \u00e9s v\u00e1s\u00e1rl\u00e1s az elad\u00f3t\u00f3l: %@\"},\"id\":{\"cartSubscribeAndCheckout\":\"Berlangganan dan bayar\",\"blackFridayOffer\":\"Klaim promo Black Friday\",\"subscribeAndBuy\":\"Berlangganan dan beli\",\"subscribeAndBuyAccessibilityFormat\":\"Berlangganan dan beli dari %@\"},\"it\":{\"cartSubscribeAndCheckout\":\"Abbonati e ordina\",\"blackFridayOffer\":\"Riscatta l'offerta Black Friday\",\"subscribeAndBuy\":\"Abbonati e acquista\",\"subscribeAndBuyAccessibilityFormat\":\"Abbonati e acquista da %@\"},\"ja\":{\"cartSubscribeAndCheckout\":\"\u30b5\u30d6\u30b9\u30af\u30e9\u30a4\u30d6\u3057\u3066\u6ce8\u6587\u624b\u7d9a\u304d\u3078\",\"blackFridayOffer\":\"\u30d6\u30e9\u30c3\u30af\u30d5\u30e9\u30a4\u30c7\u30fc\u30aa\u30d5\u30a1\u30fc\u3092\u53d7\u3051\u53d6\u308b\",\"subscribeAndBuy\":\"\u30b5\u30d6\u30b9\u30af\u30e9\u30a4\u30d6\u3057\u3066\u8cfc\u5165\",\"subscribeAndBuyAccessibilityFormat\":\"\u30b5\u30d6\u30b9\u30af\u30e9\u30a4\u30d6\u3057\u3066%@\u3067\u8cfc\u5165\"},\"kn\":{\"cartSubscribeAndCheckout\":\"\u0c9a\u0c82\u0ca6\u0cbe\u0ca6\u0cbe\u0cb0\u0cb0\u0cbe\u0c97\u0cbf \u0c9a\u0cc6\u0c95\u0ccd\u200c\u0c94\u0c9f\u0ccd \u0cae\u0cbe\u0ca1\u0cbf\",\"blackFridayOffer\":\"\u0cac\u0ccd\u0cb2\u0ccd\u0caf\u0cbe\u0c95\u0ccd \u0cab\u0ccd\u0cb0\u0cc8\u0ca1\u0cc7 \u0c86\u0cab\u0cb0\u0ccd \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf\",\"subscribeAndBuy\":\"\u0c9a\u0c82\u0ca6\u0cbe\u0ca6\u0cbe\u0cb0\u0cb0\u0cbe\u0c97\u0cbf \u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0cb8\u0cbf\",\"subscribeAndBuyAccessibilityFormat\":\"\u0c9a\u0c82\u0ca6\u0cbe\u0ca6\u0cbe\u0cb0\u0cb0\u0cbe\u0c97\u0cbf %@ \u0ca8\u0cbf\u0c82\u0ca6 \u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0cb8\u0cbf\"},\"ko\":{\"cartSubscribeAndCheckout\":\"\uad6c\ub3c5\ud558\uace0 \uc8fc\ubb38\ud558\uae30\",\"blackFridayOffer\":\"\ube14\ub799 \ud504\ub77c\uc774\ub370\uc774 \ud61c\ud0dd \ubc1b\uae30\",\"subscribeAndBuy\":\"\uad6c\ub3c5\ud558\uace0 \uad6c\ub9e4\ud558\uae30\",\"subscribeAndBuyAccessibilityFormat\":\"\uad6c\ub3c5\ud558\uace0 %@\uc5d0\uc11c \uad6c\ub9e4\ud558\uae30\"},\"mr\":{\"cartSubscribeAndCheckout\":\"\u0938\u0926\u0938\u094d\u092f\u0924\u093e \u0918\u0947\u090a\u0928 \u091a\u0947\u0915\u0906\u0909\u091f \u0915\u0930\u093e\",\"blackFridayOffer\":\"\u092c\u094d\u0932\u0945\u0915 \u092b\u094d\u0930\u093e\u092f\u0921\u0947 \u0911\u092b\u0930 \u092e\u093f\u0933\u0935\u093e\",\"subscribeAndBuy\":\"\u0938\u0926\u0938\u094d\u092f\u0924\u093e \u0918\u0947\u090a\u0928 \u0916\u0930\u0947\u0926\u0940 \u0915\u0930\u093e\",\"subscribeAndBuyAccessibilityFormat\":\"\u0938\u0926\u0938\u094d\u092f\u0924\u093e \u0918\u0947\u090a\u0928 %@ \u0915\u0921\u0942\u0928 \u0916\u0930\u0947\u0926\u0940 \u0915\u0930\u093e\"},\"ms\":{\"cartSubscribeAndCheckout\":\"Langgan dan bayar\",\"blackFridayOffer\":\"Dapatkan tawaran Black Friday\",\"subscribeAndBuy\":\"Langgan dan beli\",\"subscribeAndBuyAccessibilityFormat\":\"Langgan dan beli dari %@\"},\"nb\":{\"cartSubscribeAndCheckout\":\"Abonner og g\u00e5 til kassen\",\"blackFridayOffer\":\"F\u00e5 Black Friday-tilbudet\",\"subscribeAndBuy\":\"Abonner og kj\u00f8p\",\"subscribeAndBuyAccessibilityFormat\":\"Abonner og kj\u00f8p fra %@\"},\"nl\":{\"cartSubscribeAndCheckout\":\"Abonneren en afrekenen\",\"blackFridayOffer\":\"Black Friday-aanbieding claimen\",\"subscribeAndBuy\":\"Abonneren en kopen\",\"subscribeAndBuyAccessibilityFormat\":\"Abonneren en kopen bij %@\"},\"pl\":{\"cartSubscribeAndCheckout\":\"Subskrybuj i przejd\u017a do kasy\",\"blackFridayOffer\":\"Odbierz ofert\u0119 Black Friday\",\"subscribeAndBuy\":\"Subskrybuj i kup\",\"subscribeAndBuyAccessibilityFormat\":\"Subskrybuj i kup od %@\"},\"pt\":{\"cartSubscribeAndCheckout\":\"Assinar e finalizar compra\",\"blackFridayOffer\":\"Resgatar oferta da Black Friday\",\"subscribeAndBuy\":\"Assinar e comprar\",\"subscribeAndBuyAccessibilityFormat\":\"Assinar e comprar em %@\"},\"ro\":{\"cartSubscribeAndCheckout\":\"Aboneaz\u0103-te \u0219i pl\u0103te\u0219te\",\"blackFridayOffer\":\"Ob\u021bine oferta Black Friday\",\"subscribeAndBuy\":\"Aboneaz\u0103-te \u0219i cump\u0103r\u0103\",\"subscribeAndBuyAccessibilityFormat\":\"Aboneaz\u0103-te \u0219i cump\u0103r\u0103 de la %@\"},\"ru\":{\"cartSubscribeAndCheckout\":\"\u041f\u043e\u0434\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u0438 \u043e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437\",\"blackFridayOffer\":\"\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435 Black Friday\",\"subscribeAndBuy\":\"\u041f\u043e\u0434\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u0438 \u043a\u0443\u043f\u0438\u0442\u044c\",\"subscribeAndBuyAccessibilityFormat\":\"\u041f\u043e\u0434\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u0438 \u043a\u0443\u043f\u0438\u0442\u044c \u0443 %@\"},\"sk\":{\"cartSubscribeAndCheckout\":\"Predplati\u0165 a objedna\u0165\",\"blackFridayOffer\":\"Vyu\u017ei\u0165 ponuku Black Friday\",\"subscribeAndBuy\":\"Predplati\u0165 a k\u00fapi\u0165\",\"subscribeAndBuyAccessibilityFormat\":\"Predplati\u0165 a k\u00fapi\u0165 od predajcu %@\"},\"sr\":{\"cartSubscribeAndCheckout\":\"\u041f\u0440\u0435\u0442\u043f\u043b\u0430\u0442\u0438 \u0441\u0435 \u0438 \u043d\u0430\u0440\u0443\u0447\u0438\",\"blackFridayOffer\":\"\u0418\u0441\u043a\u043e\u0440\u0438\u0441\u0442\u0438 Black Friday \u043f\u043e\u043d\u0443\u0434\u0443\",\"subscribeAndBuy\":\"\u041f\u0440\u0435\u0442\u043f\u043b\u0430\u0442\u0438 \u0441\u0435 \u0438 \u043a\u0443\u043f\u0438\",\"subscribeAndBuyAccessibilityFormat\":\"\u041f\u0440\u0435\u0442\u043f\u043b\u0430\u0442\u0438 \u0441\u0435 \u0438 \u043a\u0443\u043f\u0438 \u043e\u0434 %@\"},\"sv\":{\"cartSubscribeAndCheckout\":\"Prenumerera och betala\",\"blackFridayOffer\":\"H\u00e4mta Black Friday-erbjudandet\",\"subscribeAndBuy\":\"Prenumerera och k\u00f6p\",\"subscribeAndBuyAccessibilityFormat\":\"Prenumerera och k\u00f6p fr\u00e5n %@\"},\"ta\":{\"cartSubscribeAndCheckout\":\"\u0b9a\u0ba8\u0bcd\u0ba4\u0bbe \u0baa\u0bc6\u0bb1\u0bcd\u0bb1\u0bc1 \u0b9a\u0bc6\u0b95\u0bcd\u0b85\u0bb5\u0bc1\u0b9f\u0bcd\",\"blackFridayOffer\":\"\u0baa\u0bbf\u0bb3\u0bbe\u0b95\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bc8\u0b9f\u0bc7 \u0b9a\u0bb2\u0bc1\u0b95\u0bc8\u0baf\u0bc8\u0baa\u0bcd \u0baa\u0bc6\u0bb1\u0bb5\u0bc1\u0bae\u0bcd\",\"subscribeAndBuy\":\"\u0b9a\u0ba8\u0bcd\u0ba4\u0bbe \u0baa\u0bc6\u0bb1\u0bcd\u0bb1\u0bc1 \u0bb5\u0bbe\u0b99\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd\",\"subscribeAndBuyAccessibilityFormat\":\"\u0b9a\u0ba8\u0bcd\u0ba4\u0bbe \u0baa\u0bc6\u0bb1\u0bcd\u0bb1\u0bc1 %@ \u0b87\u0b9f\u0bae\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0bb5\u0bbe\u0b99\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd\"},\"th\":{\"cartSubscribeAndCheckout\":\"\u0e2a\u0e21\u0e31\u0e04\u0e23\u0e2a\u0e21\u0e32\u0e0a\u0e34\u0e01\u0e41\u0e25\u0e30\u0e0a\u0e33\u0e23\u0e30\u0e40\u0e07\u0e34\u0e19\",\"blackFridayOffer\":\"\u0e23\u0e31\u0e1a\u0e02\u0e49\u0e2d\u0e40\u0e2a\u0e19\u0e2d\u0e41\u0e1a\u0e25\u0e47\u0e01\u0e1f\u0e23\u0e32\u0e22\u0e40\u0e14\u0e22\u0e4c\",\"subscribeAndBuy\":\"\u0e2a\u0e21\u0e31\u0e04\u0e23\u0e2a\u0e21\u0e32\u0e0a\u0e34\u0e01\u0e41\u0e25\u0e30\u0e0b\u0e37\u0e49\u0e2d\",\"subscribeAndBuyAccessibilityFormat\":\"\u0e2a\u0e21\u0e31\u0e04\u0e23\u0e2a\u0e21\u0e32\u0e0a\u0e34\u0e01\u0e41\u0e25\u0e30\u0e0b\u0e37\u0e49\u0e2d\u0e08\u0e32\u0e01 %@\"},\"tr\":{\"cartSubscribeAndCheckout\":\"Abone ol ve \u00f6demeye ge\u00e7\",\"blackFridayOffer\":\"Black Friday f\u0131rsat\u0131n\u0131 yakala\",\"subscribeAndBuy\":\"Abone ol ve sat\u0131n al\",\"subscribeAndBuyAccessibilityFormat\":\"Abone ol ve %@ \u00fczerinden sat\u0131n al\"},\"uk\":{\"cartSubscribeAndCheckout\":\"\u041f\u0456\u0434\u043f\u0438\u0441\u0430\u0442\u0438\u0441\u044f \u0439 \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438\",\"blackFridayOffer\":\"\u041e\u0442\u0440\u0438\u043c\u0430\u0442\u0438 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044e Black Friday\",\"subscribeAndBuy\":\"\u041f\u0456\u0434\u043f\u0438\u0441\u0430\u0442\u0438\u0441\u044f \u0439 \u043a\u0443\u043f\u0438\u0442\u0438\",\"subscribeAndBuyAccessibilityFormat\":\"\u041f\u0456\u0434\u043f\u0438\u0441\u0430\u0442\u0438\u0441\u044f \u0439 \u043a\u0443\u043f\u0438\u0442\u0438 \u0443 %@\"},\"vi\":{\"cartSubscribeAndCheckout\":\"\u0110\u0103ng k\u00fd v\u00e0 thanh to\u00e1n\",\"blackFridayOffer\":\"Nh\u1eadn \u01b0u \u0111\u00e3i Black Friday\",\"subscribeAndBuy\":\"\u0110\u0103ng k\u00fd v\u00e0 mua\",\"subscribeAndBuyAccessibilityFormat\":\"\u0110\u0103ng k\u00fd v\u00e0 mua t\u1eeb %@\"},\"zh-Hans\":{\"cartSubscribeAndCheckout\":\"\u8ba2\u9605\u5e76\u7ed3\u7b97\",\"blackFridayOffer\":\"\u9886\u53d6\u9ed1\u8272\u661f\u671f\u4e94\u4f18\u60e0\",\"subscribeAndBuy\":\"\u8ba2\u9605\u5e76\u8d2d\u4e70\",\"subscribeAndBuyAccessibilityFormat\":\"\u8ba2\u9605\u5e76\u4ece %@ \u8d2d\u4e70\"},\"zh-Hant\":{\"cartSubscribeAndCheckout\":\"\u8a02\u95b1\u4e26\u7d50\u5e33\",\"blackFridayOffer\":\"\u9818\u53d6\u9ed1\u8272\u661f\u671f\u4e94\u512a\u60e0\",\"subscribeAndBuy\":\"\u8a02\u95b1\u4e26\u8cfc\u8cb7\",\"subscribeAndBuyAccessibilityFormat\":\"\u8a02\u95b1\u4e26\u5f9e %@ \u8cfc\u8cb7\"}}}"
+            },
+            "grok_bot_dining_cards_enabled": {
+                "value": true
             },
             "grok_bot_fast_onboarding_enabled": {
                 "value": true
@@ -2229,7 +2274,7 @@
                 "value": true
             },
             "grok_bot_mcp_apps_enabled": {
-                "value": false
+                "value": true
             },
             "grok_bot_meeting_cards_enabled": {
                 "value": true
@@ -2256,7 +2301,7 @@
                 "value": true
             },
             "grok_bot_phone_verification_card_enabled": {
-                "value": false
+                "value": true
             },
             "grok_bot_profile_message_enabled": {
                 "value": true
@@ -2265,10 +2310,13 @@
                 "value": true
             },
             "grok_bot_purchase_pay_options_enabled": {
-                "value": false
+                "value": true
             },
             "grok_bot_rental_car_cards_enabled": {
-                "value": false
+                "value": true
+            },
+            "grok_bot_resources_card_enabled": {
+                "value": true
             },
             "grok_bot_send_to_bot_enabled": {
                 "value": false
@@ -2285,6 +2333,9 @@
             "grok_bot_show_all_bots_synced_enabled": {
                 "value": true
             },
+            "grok_bot_template_link_opens_bot_enabled": {
+                "value": false
+            },
             "grok_bot_training_optin_copy": {
                 "value": ""
             },
@@ -2297,11 +2348,17 @@
             "grok_bot_training_optin_one_time_enabled": {
                 "value": false
             },
+            "grok_bot_turn_block_recovery_enabled": {
+                "value": true
+            },
             "grok_bot_usage_warning_banner_enabled": {
                 "value": true
             },
             "grok_bot_xchat_eligible_tiers": {
                 "value": "premium_plus"
+            },
+            "grok_bot_xchat_free_tier_enabled": {
+                "value": false
             },
             "grok_bots_transcript_prefetch": {
                 "value": false
@@ -2836,14 +2893,8 @@
             "grok_ios_tweet_detail_followups_enabled": {
                 "value": false
             },
-            "grok_ios_ui_migration_presets_enabled": {
-                "value": false
-            },
             "grok_ios_unify_code_block_parity_enabled": {
                 "value": false
-            },
-            "grok_ios_unify_file_upload_types_enabled": {
-                "value": true
             },
             "grok_ios_unify_gateway_analyze_enabled": {
                 "value": true
@@ -2974,13 +3025,13 @@
             "grok_ios_unify_tool_cards_parity_enabled": {
                 "value": false
             },
-            "grok_ios_unify_voice_catalog_v2_enabled": {
-                "value": true
-            },
             "grok_ios_unread_indicator_enabled": {
                 "value": false
             },
             "grok_ios_upsell_free_hint_enabled": {
+                "value": false
+            },
+            "grok_ios_upsell_free_offers_exclude_supergrok_enabled": {
                 "value": false
             },
             "grok_ios_upsell_gating_views_enabled": {
@@ -3751,6 +3802,9 @@
             "ios_chrome_pin_during_activity_enabled": {
                 "value": false
             },
+            "ios_client_performance_account_user_refresh_interval_seconds": {
+                "value": 180.0
+            },
             "ios_client_performance_add_status_cell_autoplayable_once_per_visibility_call_enabled": {
                 "value": false
             },
@@ -3796,6 +3850,9 @@
             "ios_client_performance_docked_video_shadow_path_enabled": {
                 "value": true
             },
+            "ios_client_performance_feature_switch_refresh_limit_enabled": {
+                "value": false
+            },
             "ios_client_performance_filter_no_actual_canonical_status_change_notifications_enabled": {
                 "value": true
             },
@@ -3810,6 +3867,12 @@
             },
             "ios_client_performance_immersive_backdrop_low_resolution_enabled": {
                 "value": false
+            },
+            "ios_client_performance_inline_video_lazy_chrome_enabled": {
+                "value": false
+            },
+            "ios_client_performance_pinned_timelines_refetch_interval_seconds": {
+                "value": 5.0
             },
             "ios_client_performance_pre_clipped_avatar_images_enabled": {
                 "value": true
@@ -3872,6 +3935,12 @@
                 "value": true
             },
             "ios_client_performance_tav_playback_polling_reduced_enabled": {
+                "value": false
+            },
+            "ios_client_performance_termination_scribe_asynchronous_lifecycle_enabled": {
+                "value": false
+            },
+            "ios_client_performance_termination_scribe_details_enabled": {
                 "value": false
             },
             "ios_client_performance_termination_scribe_enabled": {
@@ -4019,6 +4088,12 @@
                 "value": false
             },
             "ios_conversation_timeline_known_posts_enabled": {
+                "value": true
+            },
+            "ios_conversation_timeline_known_posts_parents_enabled": {
+                "value": true
+            },
+            "ios_conversation_timeline_known_posts_replies_enabled": {
                 "value": false
             },
             "ios_conversation_timeline_updates_cache_ttl_seconds": {
@@ -4096,6 +4171,9 @@
             "ios_dm_dash_reaction_pop_enabled": {
                 "value": false
             },
+            "ios_dm_dash_reaction_slide_in_enabled": {
+                "value": false
+            },
             "ios_explore_global_search_tab_icon": {
                 "value": "search_stroke"
             },
@@ -4162,9 +4240,6 @@
             "ios_home_timeline_external_status_injections_timeout_seconds": {
                 "value": 20.0
             },
-            "ios_home_timeline_filtered_timeline_refresh_requires_active_filter_enabled": {
-                "value": true
-            },
             "ios_home_timeline_for_you_rewrite_enabled": {
                 "value": false
             },
@@ -4224,6 +4299,9 @@
             },
             "ios_home_timeline_logo_pull_to_refresh_tab_tap_undrawn_stretch": {
                 "value": 28.0
+            },
+            "ios_home_timeline_undo_enabled": {
+                "value": false
             },
             "ios_home_timeline_visible_first_boot_refresh_enabled": {
                 "value": false
@@ -4354,7 +4432,8 @@
             },
             "ios_in_app_article_webview_universal_link_handoff_domains": {
                 "value": [
-                    "tesla.com"
+                    "tesla.com",
+                    "playbookbot.com"
                 ]
             },
             "ios_in_app_article_webview_url_pill_share_enabled": {
@@ -4476,6 +4555,9 @@
             "ios_module_header_font_oct_2026_refresh_enabled": {
                 "value": true
             },
+            "ios_native_articles_enabled": {
+                "value": false
+            },
             "ios_native_bridge_debug_enabled": {
                 "value": true
             },
@@ -4531,7 +4613,7 @@
                 "value": 1.0
             },
             "ios_notifications_client_initiated_mr_loggedin_state_earliest_begin_interval_seconds": {
-                "value": 3600.0
+                "value": 604800.0
             },
             "ios_notifications_client_initiated_mr_loggedin_state_enabled": {
                 "value": false
@@ -4540,6 +4622,9 @@
                 "value": true
             },
             "ios_notifications_replies_mentions_device_follow_enabled": {
+                "value": false
+            },
+            "ios_notifications_settings_sports_configure_enabled": {
                 "value": false
             },
             "ios_ntab_legacy_voice_room_card_view_enabled": {
@@ -4557,9 +4642,6 @@
             "ios_ntab_urt_view_did_appear_throttle_rate": {
                 "value": 60.0
             },
-            "ios_onboarding_funnel_deeplink_enabled": {
-                "value": false
-            },
             "ios_onboarding_funnel_sensitive_content_prompt_enabled": {
                 "value": false
             },
@@ -4571,6 +4653,9 @@
             },
             "ios_performance_frame_drop_max_report_count": {
                 "value": 0.0
+            },
+            "ios_performance_metrickit_battery_drivers_scribe_enabled": {
+                "value": true
             },
             "ios_performance_metrickit_duration_seconds_disabled": {
                 "value": false
@@ -4767,7 +4852,13 @@
             "ios_scribe_conversation_reply_dwell_linger_start_delay_seconds": {
                 "value": 0.5
             },
+            "ios_scribe_covered_timeline_linger_fix_disabled": {
+                "value": false
+            },
             "ios_scribe_device_integrity_enabled": {
+                "value": true
+            },
+            "ios_scribe_device_status_audio_info_enabled": {
                 "value": true
             },
             "ios_scribe_device_status_storage_info_enabled": {
@@ -4925,9 +5016,6 @@
             },
             "ios_show_inline_actions_timeline_settings_enabled": {
                 "value": true
-            },
-            "ios_spaces_device_follow_multi_select_enabled": {
-                "value": false
             },
             "ios_spaces_link_load_error_alert_enabled": {
                 "value": true
@@ -5604,6 +5692,9 @@
             "ios_video_badges_broadcast_cards_redesign_enabled": {
                 "value": false
             },
+            "ios_video_clipping_live_replay_enabled": {
+                "value": false
+            },
             "ios_video_transcode_720p_h264_bitrate": {
                 "value": 4500000.0
             },
@@ -6111,6 +6202,9 @@
             },
             "media_tab_immersive_dock_morph_cover_fix_enabled": {
                 "value": true
+            },
+            "media_tab_immersive_dock_readiness_fix_enabled": {
+                "value": false
             },
             "media_tab_immersive_docked_player_mute_fix_enabled": {
                 "value": true
@@ -10938,12 +11032,6 @@
             "payments_assets_activate_card_video_ratio": {
                 "value": 1.33
             },
-            "payments_assets_onboarding_dark_video_url": {
-                "value": "https://pbs.twimg.com/static/money/money-welcome-v7-dark.mp4"
-            },
-            "payments_assets_onboarding_light_video_url": {
-                "value": "https://pbs.twimg.com/static/money/money-welcome-v7-light.mp4"
-            },
             "payments_auth_token_with_jwt_enabled": {
                 "value": false
             },
@@ -10967,6 +11055,9 @@
             },
             "payments_international_wires_enabled": {
                 "value": true
+            },
+            "payments_onboarding_level0_enabled": {
+                "value": false
             },
             "payments_onboarding_uk_pubkey_step_enabled": {
                 "value": false
@@ -11335,12 +11426,6 @@
                 "value": 5.0
             },
             "poll_swift_migration_polling_card_enabled": {
-                "value": false
-            },
-            "post_about_collapsible_author_actions_enabled": {
-                "value": false
-            },
-            "post_about_community_notes_in_more_enabled": {
                 "value": false
             },
             "post_about_grok_features_enabled": {
@@ -12974,6 +13059,12 @@
             "wtf_device_follow_nudge_turn_off_reactive_blending_enabled": {
                 "value": false
             },
+            "x_announcement_tray_enabled": {
+                "value": false
+            },
+            "x_announcement_tray_payload": {
+                "value": ""
+            },
             "x_elections_data_provider_profile": {
                 "value": "918169628"
             },
@@ -13051,6 +13142,9 @@
             "x_sports_game_athlete_share_enabled": {
                 "value": false
             },
+            "x_sports_game_carousel_disabled": {
+                "value": false
+            },
             "x_sports_game_chat_should_hide_logos": {
                 "value": false
             },
@@ -13064,7 +13158,9 @@
                 "value": []
             },
             "x_sports_game_odds_stats_leagues": {
-                "value": []
+                "value": [
+                    "nfl"
+                ]
             },
             "x_sports_grok_enabled": {
                 "value": true
@@ -13142,14 +13238,17 @@
             "x_sports_nhl_game_selected_poll_interval_seconds": {
                 "value": 1.0
             },
+            "x_sports_notification_game_prewarm_enabled": {
+                "value": false
+            },
             "x_sports_post_context_enabled": {
                 "value": true
             },
             "x_sports_post_context_min_spacing": {
-                "value": 25.0
+                "value": 5.0
             },
             "x_sports_post_context_same_game_min_spacing": {
-                "value": 25.0
+                "value": 10.0
             },
             "x_sports_soccer_game_background_poll_interval_seconds": {
                 "value": 30.0
@@ -13189,6 +13288,9 @@
             },
             "xcall_http3_host": {
                 "value": "api.x.com"
+            },
+            "xcall_invite_to_call_enabled": {
+                "value": false
             },
             "xcall_microphone_callkit_enabled": {
                 "value": true
@@ -13436,6 +13538,9 @@
             "xchat_fail_closed_unsigned_sends": {
                 "value": true
             },
+            "xchat_fetch_missing_fanout_events": {
+                "value": false
+            },
             "xchat_forward_media_max_conversations": {
                 "value": 5.0
             },
@@ -13446,7 +13551,10 @@
                 "value": "9223372036854775807"
             },
             "xchat_grok_bots": {
-                "value": false
+                "value": true
+            },
+            "xchat_grok_bots_claim_gating_enabled": {
+                "value": true
             },
             "xchat_grok_bots_connect_on_start": {
                 "value": false
@@ -13471,12 +13579,6 @@
             },
             "xchat_grok_bots_transcript_page_size": {
                 "value": 50.0
-            },
-            "xchat_grok_bots_voice_call": {
-                "value": false
-            },
-            "xchat_grok_bots_voice_call_engine_enabled": {
-                "value": true
             },
             "xchat_group_seen_counts_enabled": {
                 "value": false
@@ -13655,6 +13757,9 @@
             "xchat_send_franking_data": {
                 "value": true
             },
+            "xchat_send_gifs_as_videos": {
+                "value": false
+            },
             "xchat_send_signature_protocol_version": {
                 "value": 7.0
             },
@@ -13735,9 +13840,5 @@
     },
     "embedded_experiments": [],
     "requires_restart": [],
-    "supports_accessibility": [],
-    "versions": {
-        "feature_switches": "159d8b674c3769a7eec490967dd2e71076aca799",
-        "experiments": "159d8b674c3769a7eec490967dd2e71076aca799"
-    }
+    "supports_accessibility": []
 }
